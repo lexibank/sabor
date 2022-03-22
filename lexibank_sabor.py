@@ -23,10 +23,6 @@ from csvw.dsv import UnicodeWriter
 import json
 
 
-@attr.s
-class CustomConcept(Concept):
-    Tag = attr.ib(default=None)
-
 
 @attr.s
 class CustomLexeme(Lexeme):
@@ -40,7 +36,6 @@ class CustomLexeme(Lexeme):
 class Dataset(BaseDataset):
     dir = pathlib.Path(__file__).parent
     id = "sabor"
-    concept_class = CustomConcept
     lexeme_class = CustomLexeme
 
     def cmd_download(self, args):
@@ -96,7 +91,7 @@ class Dataset(BaseDataset):
                             Concepticon_ID=concept.concepticon_id,
                             Concepticon_Gloss=concept.concepticon_gloss
                             )
-            for form in language.forms_with_sounds:
+            for form in language.forms:
                 args.writer.add_form(
                         Language_ID=name[4:],
                         Parameter_ID=slug(form.concept.id, lowercase=False),
@@ -112,7 +107,7 @@ class Dataset(BaseDataset):
                 wold_languages[language.name] = language
         for name, language in wold_languages.items():
             args.writer.add_language(
-                    ID=language.id[4:],
+                    ID=language.id[5:],
                     Name=language.name,
                     Glottocode=language.glottocode,
                     Latitude=language.latitude,
@@ -121,7 +116,7 @@ class Dataset(BaseDataset):
                 if form.concept and form.concept.concepticon_gloss in concepts:
                     args.writer.add_form_with_segments(
                             Local_ID=form.id,
-                            Language_ID=form.language.id[4:],
+                            Language_ID=form.language.id[5:],
                             Parameter_ID=slug(form.concept.id, lowercase=False),
                             Borrowed=form.data["Borrowed"],
                             Borrowed_Score=form.data["Borrowed_score"],

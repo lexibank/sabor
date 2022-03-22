@@ -11,7 +11,7 @@
         {
             "rdf:about": "https://github.com/lexibank/sabor",
             "rdf:type": "prov:Entity",
-            "dc:created": "e70fe6b",
+            "dc:created": "3c3801f",
             "dc:title": "Repository"
         },
         {
@@ -67,7 +67,7 @@
     "tables": [
         {
             "dc:conformsTo": "http://cldf.clld.org/v1.0/terms.rdf#FormTable",
-            "dc:extent": 7869,
+            "dc:extent": 11322,
             "tableSchema": {
                 "columns": [
                     {
@@ -190,7 +190,7 @@
         },
         {
             "dc:conformsTo": "http://cldf.clld.org/v1.0/terms.rdf#LanguageTable",
-            "dc:extent": 5,
+            "dc:extent": 7,
             "tableSchema": {
                 "columns": [
                     {
@@ -256,7 +256,7 @@
         },
         {
             "dc:conformsTo": "http://cldf.clld.org/v1.0/terms.rdf#ParameterTable",
-            "dc:extent": 1275,
+            "dc:extent": 1308,
             "tableSchema": {
                 "columns": [
                     {
@@ -278,10 +278,6 @@
                     {
                         "datatype": "string",
                         "name": "Concepticon_Gloss"
-                    },
-                    {
-                        "datatype": "string",
-                        "name": "Tag"
                     }
                 ],
                 "primaryKey": [
