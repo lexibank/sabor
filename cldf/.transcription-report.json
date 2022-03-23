@@ -124,6 +124,9 @@
                 "o\u0303": [
                     "o\u0303"
                 ],
+                "o\u0303i\u0303": [
+                    "o\u0303i\u0303"
+                ],
                 "p": [
                     "p"
                 ],
@@ -517,6 +520,9 @@
                 "o\u0303": [
                     "o\u0303"
                 ],
+                "o\u0303i\u0303": [
+                    "o\u0303i\u0303"
+                ],
                 "p": [
                     "p"
                 ],
@@ -811,42 +817,8 @@
             }
         },
         "Portuguese": {
-            "bipa_errors": [
-                "<<c>>",
-                "<<->>",
-                "<<f>>",
-                "<<n>>",
-                "<<o>>",
-                "<<i>>",
-                "<<z>>",
-                "<<e>>",
-                "<<\u00ed>>",
-                "<<a>>",
-                "<<d>>",
-                "<<\u00e7>>",
-                "<<l>>",
-                "<<\u00ea>>",
-                "<<j>>",
-                "<<v>>",
-                "<<\u00e0>>",
-                "<<b>>",
-                "<<h>>",
-                "<<t>>",
-                "<<g>>",
-                "<<\u00e1>>",
-                "<<q>>",
-                "<<s>>",
-                "<<\u00fa>>",
-                "<<\u00e3>>",
-                "<<\u00f5>>",
-                "<<x>>",
-                "<<p>>",
-                "<<u>>",
-                "<<m>>",
-                "<<r>>",
-                "<<\u00e9>>"
-            ],
-            "general_errors": 825,
+            "bipa_errors": [],
+            "general_errors": 0,
             "replacements": {
                 "+": [
                     "+"
@@ -967,6 +939,9 @@
                 ],
                 "o\u0303": [
                     "o\u0303"
+                ],
+                "o\u0303i\u0303": [
+                    "o\u0303i\u0303"
                 ],
                 "p": [
                     "p"
@@ -1200,123 +1175,57 @@
                     "\u207fs"
                 ]
             },
-            "sclass_errors": [
-                "<<c>>",
-                "<<->>",
-                "<<f>>",
-                "<<n>>",
-                "<<o>>",
-                "<<i>>",
-                "<<z>>",
-                "<<e>>",
-                "<<\u00ed>>",
-                "<<a>>",
-                "<<d>>",
-                "<<\u00e7>>",
-                "<<l>>",
-                "<<\u00ea>>",
-                "<<j>>",
-                "<<v>>",
-                "<<\u00e0>>",
-                "<<b>>",
-                "<<h>>",
-                "<<t>>",
-                "<<g>>",
-                "<<\u00e1>>",
-                "<<q>>",
-                "<<s>>",
-                "<<\u00fa>>",
-                "<<\u00e3>>",
-                "<<\u00f5>>",
-                "<<x>>",
-                "<<p>>",
-                "<<u>>",
-                "<<m>>",
-                "<<r>>",
-                "<<\u00e9>>"
-            ],
+            "sclass_errors": [],
             "segments": {
                 "+": 114,
-                "<<->>": 1,
-                "<<a>>": 136,
-                "<<b>>": 20,
-                "<<c>>": 28,
-                "<<d>>": 47,
-                "<<e>>": 88,
-                "<<f>>": 10,
-                "<<g>>": 2,
-                "<<h>>": 18,
-                "<<i>>": 51,
-                "<<j>>": 1,
-                "<<l>>": 25,
-                "<<m>>": 52,
-                "<<n>>": 30,
-                "<<o>>": 68,
-                "<<p>>": 27,
-                "<<q>>": 1,
-                "<<r>>": 76,
-                "<<s>>": 35,
-                "<<t>>": 27,
-                "<<u>>": 14,
-                "<<v>>": 19,
-                "<<x>>": 5,
-                "<<z>>": 7,
-                "<<\u00e0>>": 1,
-                "<<\u00e1>>": 1,
-                "<<\u00e3>>": 12,
-                "<<\u00e7>>": 5,
-                "<<\u00e9>>": 8,
-                "<<\u00ea>>": 5,
-                "<<\u00ed>>": 2,
-                "<<\u00f5>>": 1,
-                "<<\u00fa>>": 2,
-                "a": 545,
-                "ai": 20,
+                "a": 586,
+                "ai": 28,
                 "au": 5,
-                "b": 184,
-                "d": 319,
-                "e": 82,
-                "eu": 3,
-                "f": 139,
-                "i": 384,
-                "j": 55,
-                "k": 349,
-                "l": 188,
-                "m": 252,
-                "n": 142,
-                "o": 64,
-                "oi": 13,
-                "p": 285,
-                "s": 309,
-                "t": 458,
-                "u": 829,
-                "ui": 8,
-                "v": 174,
-                "w": 48,
-                "z": 77,
-                "\u00f5": 61,
-                "\u0129": 44,
-                "\u0169": 23,
-                "\u0250": 834,
-                "\u0250i": 102,
-                "\u0250\u0303": 81,
-                "\u0250\u0303\u0129": 18,
-                "\u0250\u0303\u0169": 52,
-                "\u0254": 180,
+                "b": 204,
+                "d": 366,
+                "e": 91,
+                "eu": 4,
+                "f": 149,
+                "i": 415,
+                "j": 59,
+                "k": 371,
+                "l": 200,
+                "m": 287,
+                "n": 159,
+                "o": 67,
+                "oi": 14,
+                "p": 312,
+                "s": 330,
+                "t": 485,
+                "u": 871,
+                "ui": 9,
+                "v": 193,
+                "w": 51,
+                "z": 89,
+                "\u00f5": 66,
+                "\u00f5\u0129": 1,
+                "\u0129": 46,
+                "\u0169": 25,
+                "\u0250": 923,
+                "\u0250i": 108,
+                "\u0250\u0303": 85,
+                "\u0250\u0303\u0129": 26,
+                "\u0250\u0303\u0169": 60,
+                "\u0254": 197,
                 "\u0254i": 1,
-                "\u025b": 151,
+                "\u025b": 172,
                 "\u025bi": 1,
                 "\u025bu": 5,
-                "\u0261": 178,
-                "\u0268": 399,
-                "\u026b": 95,
-                "\u0272": 58,
-                "\u027e": 982,
-                "\u0281": 122,
-                "\u0283": 288,
-                "\u028e": 54,
-                "\u0292": 82,
-                "\u1ebd": 102
+                "\u0261": 180,
+                "\u0268": 444,
+                "\u026b": 101,
+                "\u0272": 65,
+                "\u027e": 1050,
+                "\u0281": 128,
+                "\u0283": 312,
+                "\u028e": 61,
+                "\u0292": 86,
+                "\u1ebd": 109
             }
         },
         "Qeqchi": {
@@ -1442,6 +1351,9 @@
                 ],
                 "o\u0303": [
                     "o\u0303"
+                ],
+                "o\u0303i\u0303": [
+                    "o\u0303i\u0303"
                 ],
                 "p": [
                     "p"
@@ -1729,38 +1641,8 @@
             }
         },
         "Spanish": {
-            "bipa_errors": [
-                "<<c>>",
-                "<<f>>",
-                "<<n>>",
-                "<<\u00e9>>",
-                "<<\u00f3>>",
-                "<<o>>",
-                "<<i>>",
-                "<<z>>",
-                "<<e>>",
-                "<<\u0272>>",
-                "<<\u00ed>>",
-                "<<a>>",
-                "<<j>>",
-                "<<d>>",
-                "<<l>>",
-                "<<v>>",
-                "<<b>>",
-                "<<h>>",
-                "<<t>>",
-                "<<g>>",
-                "<<q>>",
-                "<<s>>",
-                "<<\u00fa>>",
-                "<<p>>",
-                "<<x>>",
-                "<<u>>",
-                "<<m>>",
-                "<<r>>",
-                "<<y>>"
-            ],
-            "general_errors": 928,
+            "bipa_errors": [],
+            "general_errors": 0,
             "replacements": {
                 "+": [
                     "+"
@@ -1881,6 +1763,9 @@
                 ],
                 "o\u0303": [
                     "o\u0303"
+                ],
+                "o\u0303i\u0303": [
+                    "o\u0303i\u0303"
                 ],
                 "p": [
                     "p"
@@ -2114,99 +1999,40 @@
                     "\u207fs"
                 ]
             },
-            "sclass_errors": [
-                "<<c>>",
-                "<<f>>",
-                "<<n>>",
-                "<<\u00e9>>",
-                "<<\u00f3>>",
-                "<<o>>",
-                "<<i>>",
-                "<<z>>",
-                "<<e>>",
-                "<<\u0272>>",
-                "<<\u00ed>>",
-                "<<a>>",
-                "<<j>>",
-                "<<d>>",
-                "<<l>>",
-                "<<v>>",
-                "<<b>>",
-                "<<h>>",
-                "<<t>>",
-                "<<g>>",
-                "<<q>>",
-                "<<s>>",
-                "<<\u00fa>>",
-                "<<p>>",
-                "<<x>>",
-                "<<u>>",
-                "<<m>>",
-                "<<r>>",
-                "<<y>>"
-            ],
+            "sclass_errors": [],
             "segments": {
                 "+": 121,
-                "<<a>>": 143,
-                "<<b>>": 24,
-                "<<c>>": 37,
-                "<<d>>": 59,
-                "<<e>>": 135,
-                "<<f>>": 6,
-                "<<g>>": 4,
-                "<<h>>": 22,
-                "<<i>>": 34,
-                "<<j>>": 11,
-                "<<l>>": 51,
-                "<<m>>": 42,
-                "<<n>>": 51,
-                "<<o>>": 69,
-                "<<p>>": 29,
-                "<<q>>": 1,
-                "<<r>>": 87,
-                "<<s>>": 35,
-                "<<t>>": 25,
-                "<<u>>": 30,
-                "<<v>>": 17,
-                "<<x>>": 1,
-                "<<y>>": 2,
-                "<<z>>": 5,
-                "<<\u00e9>>": 1,
-                "<<\u00ed>>": 1,
-                "<<\u00f3>>": 1,
-                "<<\u00fa>>": 2,
-                "<<\u0272>>": 3,
-                "a": 1588,
-                "b": 166,
-                "d": 132,
-                "e": 707,
-                "f": 85,
-                "g": 49,
-                "i": 443,
-                "j": 157,
-                "k": 379,
-                "l": 374,
-                "m": 323,
-                "n": 558,
-                "o": 1025,
-                "p": 298,
-                "r": 129,
-                "s": 458,
-                "t": 504,
-                "t\u0283": 59,
-                "u": 222,
-                "w": 101,
-                "x": 105,
-                "\u00f0": 233,
-                "\u025b": 390,
+                "a": 1731,
+                "b": 178,
+                "d": 144,
+                "e": 800,
+                "f": 91,
+                "g": 50,
+                "i": 464,
+                "j": 170,
+                "k": 406,
+                "l": 409,
+                "m": 366,
+                "n": 608,
+                "o": 1095,
+                "p": 327,
+                "r": 134,
+                "s": 494,
+                "t": 529,
+                "t\u0283": 63,
+                "u": 240,
+                "w": 112,
+                "x": 116,
+                "\u00f0": 280,
+                "\u025b": 433,
                 "\u025f": 12,
-                "\u0263": 104,
-                "\u0272": 36,
-                "\u027e": 1048,
-                "\u028e": 80,
-                "\u029d": 28,
-                "\u03b2": 201,
-                "\u03b8": 225
+                "\u0263": 107,
+                "\u0272": 39,
+                "\u027e": 1129,
+                "\u028e": 88,
+                "\u029d": 31,
+                "\u03b2": 230,
+                "\u03b8": 238
             }
         },
         "Yaqui": {
@@ -2332,6 +2158,9 @@
                 ],
                 "o\u0303": [
                     "o\u0303"
+                ],
+                "o\u0303i\u0303": [
+                    "o\u0303i\u0303"
                 ],
                 "p": [
                     "p"
@@ -2721,6 +2550,9 @@
                 "o\u0303": [
                     "o\u0303"
                 ],
+                "o\u0303i\u0303": [
+                    "o\u0303i\u0303"
+                ],
                 "p": [
                     "p"
                 ],
@@ -3000,751 +2832,13 @@
         }
     },
     "stats": {
-        "bad_words": [
-            [
-                "Portuguese-AGAIN-1",
-                "Portuguese",
-                "AGAIN",
-                "outra vez",
-                "<s> <<o>> </s> <s> <<u>> </s> <s> <<t>> </s> <s> <<r>> </s> <s> <<a>> </s> + <s> <<v>> </s> <s> <<e>> </s> <s> <<z>> </s>"
-            ],
-            [
-                "Portuguese-AGAIN-2",
-                "Portuguese",
-                "AGAIN",
-                "de novo",
-                "<s> <<d>> </s> <s> <<e>> </s> + <s> <<n>> </s> <s> <<o>> </s> <s> <<v>> </s> <s> <<o>> </s>"
-            ],
-            [
-                "Portuguese-ALCOHOLFERMENTEDDRINK-1",
-                "Portuguese",
-                "ALCOHOLFERMENTEDDRINK",
-                "bebida fermentada",
-                "<s> <<b>> </s> <s> <<e>> </s> <s> <<b>> </s> <s> <<i>> </s> <s> <<d>> </s> <s> <<a>> </s> + <s> <<f>> </s> <s> <<e>> </s> <s> <<r>> </s> <s> <<m>> </s> <s> <<e>> </s> <s> <<n>> </s> <s> <<t>> </s> <s> <<a>> </s> <s> <<d>> </s> <s> <<a>> </s>"
-            ],
-            [
-                "Portuguese-ARSON-1",
-                "Portuguese",
-                "ARSON",
-                "ince\u0302ndio culposo",
-                "<s> <<i>> </s> <s> <<n>> </s> <s> <<c>> </s> <s> <<\u00ea>> </s> <s> <<n>> </s> <s> <<d>> </s> <s> <<i>> </s> <s> <<o>> </s> + <s> <<c>> </s> <s> <<u>> </s> <s> <<l>> </s> <s> <<p>> </s> <s> <<o>> </s> <s> <<s>> </s> <s> <<o>> </s>"
-            ],
-            [
-                "Portuguese-BADLUCK-2",
-                "Portuguese",
-                "BADLUCK",
-                "ma\u0301 sorte",
-                "<s> <<m>> </s> <s> <<\u00e1>> </s> + <s> <<s>> </s> <s> <<o>> </s> <s> <<r>> </s> <s> <<t>> </s> <s> <<e>> </s>"
-            ],
-            [
-                "Portuguese-BAKE-1",
-                "Portuguese",
-                "BAKE",
-                "cozer no forno",
-                "<s> <<c>> </s> <s> <<o>> </s> <s> <<z>> </s> <s> <<e>> </s> <s> <<r>> </s> + <s> <<n>> </s> <s> <<o>> </s> + <s> <<f>> </s> <s> <<o>> </s> <s> <<r>> </s> <s> <<n>> </s> <s> <<o>> </s>"
-            ],
-            [
-                "Portuguese-BATHE-1",
-                "Portuguese",
-                "BATHE",
-                "tomar banho",
-                "<s> <<t>> </s> <s> <<o>> </s> <s> <<m>> </s> <s> <<a>> </s> <s> <<r>> </s> + <s> <<b>> </s> <s> <<a>> </s> <s> <<n>> </s> <s> <<h>> </s> <s> <<o>> </s>"
-            ],
-            [
-                "Portuguese-BESIDE-1",
-                "Portuguese",
-                "BESIDE",
-                "ao lado de",
-                "<s> <<a>> </s> <s> <<o>> </s> + <s> <<l>> </s> <s> <<a>> </s> <s> <<d>> </s> <s> <<o>> </s> + <s> <<d>> </s> <s> <<e>> </s>"
-            ],
-            [
-                "Portuguese-BESILENT-1",
-                "Portuguese",
-                "BESILENT",
-                "ficar em sile\u0302ncio",
-                "<s> <<f>> </s> <s> <<i>> </s> <s> <<c>> </s> <s> <<a>> </s> <s> <<r>> </s> + <s> <<e>> </s> <s> <<m>> </s> + <s> <<s>> </s> <s> <<i>> </s> <s> <<l>> </s> <s> <<\u00ea>> </s> <s> <<n>> </s> <s> <<c>> </s> <s> <<i>> </s> <s> <<o>> </s>"
-            ],
-            [
-                "Portuguese-BORROW-1",
-                "Portuguese",
-                "BORROW",
-                "pedir emprestado",
-                "<s> <<p>> </s> <s> <<e>> </s> <s> <<d>> </s> <s> <<i>> </s> <s> <<r>> </s> + <s> <<e>> </s> <s> <<m>> </s> <s> <<p>> </s> <s> <<r>> </s> <s> <<e>> </s> <s> <<s>> </s> <s> <<t>> </s> <s> <<a>> </s> <s> <<d>> </s> <s> <<o>> </s>"
-            ],
-            [
-                "Portuguese-BREAKFAST-1",
-                "Portuguese",
-                "BREAKFAST",
-                "cafe\u0301 da manha\u0303",
-                "<s> <<c>> </s> <s> <<a>> </s> <s> <<f>> </s> <s> <<\u00e9>> </s> + <s> <<d>> </s> <s> <<a>> </s> + <s> <<m>> </s> <s> <<a>> </s> <s> <<n>> </s> <s> <<h>> </s> <s> <<\u00e3>> </s>"
-            ],
-            [
-                "Portuguese-CALFOFLEG-1",
-                "Portuguese",
-                "CALFOFLEG",
-                "barriga da perna",
-                "<s> <<b>> </s> <s> <<a>> </s> <s> <<r>> </s> <s> <<r>> </s> <s> <<i>> </s> <s> <<g>> </s> <s> <<a>> </s> + <s> <<d>> </s> <s> <<a>> </s> + <s> <<p>> </s> <s> <<e>> </s> <s> <<r>> </s> <s> <<n>> </s> <s> <<a>> </s>"
-            ],
-            [
-                "Portuguese-CARRYINHAND-1",
-                "Portuguese",
-                "CARRYINHAND",
-                "levar na ma\u0303o",
-                "<s> <<l>> </s> <s> <<e>> </s> <s> <<v>> </s> <s> <<a>> </s> <s> <<r>> </s> + <s> <<n>> </s> <s> <<a>> </s> + <s> <<m>> </s> <s> <<\u00e3>> </s> <s> <<o>> </s>"
-            ],
-            [
-                "Portuguese-CARRYONHEAD-1",
-                "Portuguese",
-                "CARRYONHEAD",
-                "levar na cabec\u0327a",
-                "<s> <<l>> </s> <s> <<e>> </s> <s> <<v>> </s> <s> <<a>> </s> <s> <<r>> </s> + <s> <<n>> </s> <s> <<a>> </s> + <s> <<c>> </s> <s> <<a>> </s> <s> <<b>> </s> <s> <<e>> </s> <s> <<\u00e7>> </s> <s> <<a>> </s>"
-            ],
-            [
-                "Portuguese-CARRYONSHOULDER-1",
-                "Portuguese",
-                "CARRYONSHOULDER",
-                "levar no ombro",
-                "<s> <<l>> </s> <s> <<e>> </s> <s> <<v>> </s> <s> <<a>> </s> <s> <<r>> </s> + <s> <<n>> </s> <s> <<o>> </s> + <s> <<o>> </s> <s> <<m>> </s> <s> <<b>> </s> <s> <<r>> </s> <s> <<o>> </s>"
-            ],
-            [
-                "Portuguese-CARRYUNDERARM-1",
-                "Portuguese",
-                "CARRYUNDERARM",
-                "levar debaixo do brac\u0327o",
-                "<s> <<l>> </s> <s> <<e>> </s> <s> <<v>> </s> <s> <<a>> </s> <s> <<r>> </s> + <s> <<d>> </s> <s> <<e>> </s> <s> <<b>> </s> <s> <<a>> </s> <s> <<i>> </s> <s> <<x>> </s> <s> <<o>> </s> + <s> <<d>> </s> <s> <<o>> </s> + <s> <<b>> </s> <s> <<r>> </s> <s> <<a>> </s> <s> <<\u00e7>> </s> <s> <<o>> </s>"
-            ],
-            [
-                "Portuguese-CITRUSFRUIT-1",
-                "Portuguese",
-                "CITRUSFRUIT",
-                "fruta ci\u0301trica",
-                "<s> <<f>> </s> <s> <<r>> </s> <s> <<u>> </s> <s> <<t>> </s> <s> <<a>> </s> + <s> <<c>> </s> <s> <<\u00ed>> </s> <s> <<t>> </s> <s> <<r>> </s> <s> <<i>> </s> <s> <<c>> </s> <s> <<a>> </s>"
-            ],
-            [
-                "Portuguese-COMMAND-2",
-                "Portuguese",
-                "COMMAND",
-                "dar ordem",
-                "<s> <<d>> </s> <s> <<a>> </s> <s> <<r>> </s> + <s> <<o>> </s> <s> <<r>> </s> <s> <<d>> </s> <s> <<e>> </s> <s> <<m>> </s>"
-            ],
-            [
-                "Portuguese-COPULATE-1",
-                "Portuguese",
-                "COPULATE",
-                "ter relac\u0327o\u0303es sexuais",
-                "<s> <<t>> </s> <s> <<e>> </s> <s> <<r>> </s> + <s> <<r>> </s> <s> <<e>> </s> <s> <<l>> </s> <s> <<a>> </s> <s> <<\u00e7>> </s> <s> <<\u00f5>> </s> <s> <<e>> </s> <s> <<s>> </s> + <s> <<s>> </s> <s> <<e>> </s> <s> <<x>> </s> <s> <<u>> </s> <s> <<a>> </s> <s> <<i>> </s> <s> <<s>> </s>"
-            ],
-            [
-                "Portuguese-DAYAFTERTOMORROW-1",
-                "Portuguese",
-                "DAYAFTERTOMORROW",
-                "depois de amanha\u0303",
-                "<s> <<d>> </s> <s> <<e>> </s> <s> <<p>> </s> <s> <<o>> </s> <s> <<i>> </s> <s> <<s>> </s> + <s> <<d>> </s> <s> <<e>> </s> + <s> <<a>> </s> <s> <<m>> </s> <s> <<a>> </s> <s> <<n>> </s> <s> <<h>> </s> <s> <<\u00e3>> </s>"
-            ],
-            [
-                "Portuguese-DOORPOST-2",
-                "Portuguese",
-                "DOORPOST",
-                "ombreira da porta",
-                "<s> <<o>> </s> <s> <<m>> </s> <s> <<b>> </s> <s> <<r>> </s> <s> <<e>> </s> <s> <<i>> </s> <s> <<r>> </s> <s> <<a>> </s> + <s> <<d>> </s> <s> <<a>> </s> + <s> <<p>> </s> <s> <<o>> </s> <s> <<r>> </s> <s> <<t>> </s> <s> <<a>> </s>"
-            ],
-            [
-                "Portuguese-DROPSOMETHING-1",
-                "Portuguese",
-                "DROPSOMETHING",
-                "deixar cair",
-                "<s> <<d>> </s> <s> <<e>> </s> <s> <<i>> </s> <s> <<x>> </s> <s> <<a>> </s> <s> <<r>> </s> + <s> <<c>> </s> <s> <<a>> </s> <s> <<i>> </s> <s> <<r>> </s>"
-            ],
-            [
-                "Portuguese-FISHINGLINE-1",
-                "Portuguese",
-                "FISHINGLINE",
-                "linha de pesca",
-                "<s> <<l>> </s> <s> <<i>> </s> <s> <<n>> </s> <s> <<h>> </s> <s> <<a>> </s> + <s> <<d>> </s> <s> <<e>> </s> + <s> <<p>> </s> <s> <<e>> </s> <s> <<s>> </s> <s> <<c>> </s> <s> <<a>> </s>"
-            ],
-            [
-                "Portuguese-FISHPOISON-1",
-                "Portuguese",
-                "FISHPOISON",
-                "rai\u0301zes venenosas",
-                "<s> <<r>> </s> <s> <<a>> </s> <s> <<\u00ed>> </s> <s> <<z>> </s> <s> <<e>> </s> <s> <<s>> </s> + <s> <<v>> </s> <s> <<e>> </s> <s> <<n>> </s> <s> <<e>> </s> <s> <<n>> </s> <s> <<o>> </s> <s> <<s>> </s> <s> <<a>> </s> <s> <<s>> </s>"
-            ],
-            [
-                "Portuguese-FISHTRAP-2",
-                "Portuguese",
-                "FISHTRAP",
-                "armadilha de peixa",
-                "<s> <<a>> </s> <s> <<r>> </s> <s> <<m>> </s> <s> <<a>> </s> <s> <<d>> </s> <s> <<i>> </s> <s> <<l>> </s> <s> <<h>> </s> <s> <<a>> </s> + <s> <<d>> </s> <s> <<e>> </s> + <s> <<p>> </s> <s> <<e>> </s> <s> <<i>> </s> <s> <<x>> </s> <s> <<a>> </s>"
-            ],
-            [
-                "Portuguese-FORALONGTIME-1",
-                "Portuguese",
-                "FORALONGTIME",
-                "por muito tempo",
-                "<s> <<p>> </s> <s> <<o>> </s> <s> <<r>> </s> + <s> <<m>> </s> <s> <<u>> </s> <s> <<i>> </s> <s> <<t>> </s> <s> <<o>> </s> + <s> <<t>> </s> <s> <<e>> </s> <s> <<m>> </s> <s> <<p>> </s> <s> <<o>> </s>"
-            ],
-            [
-                "Portuguese-FORKEDBRANCH-1",
-                "Portuguese",
-                "FORKEDBRANCH",
-                "rama bifurcada",
-                "<s> <<r>> </s> <s> <<a>> </s> <s> <<m>> </s> <s> <<a>> </s> + <s> <<b>> </s> <s> <<i>> </s> <s> <<f>> </s> <s> <<u>> </s> <s> <<r>> </s> <s> <<c>> </s> <s> <<a>> </s> <s> <<d>> </s> <s> <<a>> </s>"
-            ],
-            [
-                "Portuguese-FREEMAN-1",
-                "Portuguese",
-                "FREEMAN",
-                "homem livre",
-                "<s> <<h>> </s> <s> <<o>> </s> <s> <<m>> </s> <s> <<e>> </s> <s> <<m>> </s> + <s> <<l>> </s> <s> <<i>> </s> <s> <<v>> </s> <s> <<r>> </s> <s> <<e>> </s>"
-            ],
-            [
-                "Portuguese-GARDENHOUSE-1",
-                "Portuguese",
-                "GARDENHOUSE",
-                "casa de jardim",
-                "<s> <<c>> </s> <s> <<a>> </s> <s> <<s>> </s> <s> <<a>> </s> + <s> <<d>> </s> <s> <<e>> </s> + <s> <<j>> </s> <s> <<a>> </s> <s> <<r>> </s> <s> <<d>> </s> <s> <<i>> </s> <s> <<m>> </s>"
-            ],
-            [
-                "Portuguese-GOODLUCK-1",
-                "Portuguese",
-                "GOODLUCK",
-                "boa sorte",
-                "<s> <<b>> </s> <s> <<o>> </s> <s> <<a>> </s> + <s> <<s>> </s> <s> <<o>> </s> <s> <<r>> </s> <s> <<t>> </s> <s> <<e>> </s>"
-            ],
-            [
-                "Portuguese-GRASSSKIRT-1",
-                "Portuguese",
-                "GRASSSKIRT",
-                "saia de palha",
-                "<s> <<s>> </s> <s> <<a>> </s> <s> <<i>> </s> <s> <<a>> </s> + <s> <<d>> </s> <s> <<e>> </s> + <s> <<p>> </s> <s> <<a>> </s> <s> <<l>> </s> <s> <<h>> </s> <s> <<a>> </s>"
-            ],
-            [
-                "Portuguese-HEADBANDORHEADDRESS-1",
-                "Portuguese",
-                "HEADBANDORHEADDRESS",
-                "fita para cabec\u0327a",
-                "<s> <<f>> </s> <s> <<i>> </s> <s> <<t>> </s> <s> <<a>> </s> + <s> <<p>> </s> <s> <<a>> </s> <s> <<r>> </s> <s> <<a>> </s> + <s> <<c>> </s> <s> <<a>> </s> <s> <<b>> </s> <s> <<e>> </s> <s> <<\u00e7>> </s> <s> <<a>> </s>"
-            ],
-            [
-                "Portuguese-HIGHTIDE-1",
-                "Portuguese",
-                "HIGHTIDE",
-                "mare\u0301 alta",
-                "<s> <<m>> </s> <s> <<a>> </s> <s> <<r>> </s> <s> <<\u00e9>> </s> + <s> <<a>> </s> <s> <<l>> </s> <s> <<t>> </s> <s> <<a>> </s>"
-            ],
-            [
-                "Portuguese-HUNGER-1",
-                "Portuguese",
-                "HUNGER",
-                "estar com fome",
-                "<s> <<e>> </s> <s> <<s>> </s> <s> <<t>> </s> <s> <<a>> </s> <s> <<r>> </s> + <s> <<c>> </s> <s> <<o>> </s> <s> <<m>> </s> + <s> <<f>> </s> <s> <<o>> </s> <s> <<m>> </s> <s> <<e>> </s>"
-            ],
-            [
-                "Portuguese-IMMEDIATELY-1",
-                "Portuguese",
-                "IMMEDIATELY",
-                "de imediato",
-                "<s> <<d>> </s> <s> <<e>> </s> + <s> <<i>> </s> <s> <<m>> </s> <s> <<e>> </s> <s> <<d>> </s> <s> <<i>> </s> <s> <<a>> </s> <s> <<t>> </s> <s> <<o>> </s>"
-            ],
-            [
-                "Portuguese-KICK-1",
-                "Portuguese",
-                "KICK",
-                "dar um pontape\u0301",
-                "<s> <<d>> </s> <s> <<a>> </s> <s> <<r>> </s> + <s> <<u>> </s> <s> <<m>> </s> + <s> <<p>> </s> <s> <<o>> </s> <s> <<n>> </s> <s> <<t>> </s> <s> <<a>> </s> <s> <<p>> </s> <s> <<\u00e9>> </s>"
-            ],
-            [
-                "Portuguese-LEAVE-2",
-                "Portuguese",
-                "LEAVE",
-                "ir-se embora",
-                "<s> <<i>> </s> <s> <<r>> </s> <s> <<->> </s> <s> <<s>> </s> <s> <<e>> </s> + <s> <<e>> </s> <s> <<m>> </s> <s> <<b>> </s> <s> <<o>> </s> <s> <<r>> </s> <s> <<a>> </s>"
-            ],
-            [
-                "Portuguese-LOOK-1",
-                "Portuguese",
-                "LOOK",
-                "olhar para",
-                "<s> <<o>> </s> <s> <<l>> </s> <s> <<h>> </s> <s> <<a>> </s> <s> <<r>> </s> + <s> <<p>> </s> <s> <<a>> </s> <s> <<r>> </s> <s> <<a>> </s>"
-            ],
-            [
-                "Portuguese-LOWTIDE-1",
-                "Portuguese",
-                "LOWTIDE",
-                "mare\u0301 baixa",
-                "<s> <<m>> </s> <s> <<a>> </s> <s> <<r>> </s> <s> <<\u00e9>> </s> + <s> <<b>> </s> <s> <<a>> </s> <s> <<i>> </s> <s> <<x>> </s> <s> <<a>> </s>"
-            ],
-            [
-                "Portuguese-LOWTIDE-2",
-                "Portuguese",
-                "LOWTIDE",
-                "mare\u0301 vazia",
-                "<s> <<m>> </s> <s> <<a>> </s> <s> <<r>> </s> <s> <<\u00e9>> </s> + <s> <<v>> </s> <s> <<a>> </s> <s> <<z>> </s> <s> <<i>> </s> <s> <<a>> </s>"
-            ],
-            [
-                "Portuguese-MAINLAND-1",
-                "Portuguese",
-                "MAINLAND",
-                "terra firme",
-                "<s> <<t>> </s> <s> <<e>> </s> <s> <<r>> </s> <s> <<r>> </s> <s> <<a>> </s> + <s> <<f>> </s> <s> <<i>> </s> <s> <<r>> </s> <s> <<m>> </s> <s> <<e>> </s>"
-            ],
-            [
-                "Portuguese-MEETINGHOUSE-1",
-                "Portuguese",
-                "MEETINGHOUSE",
-                "casa de reunia\u0303o",
-                "<s> <<c>> </s> <s> <<a>> </s> <s> <<s>> </s> <s> <<a>> </s> + <s> <<d>> </s> <s> <<e>> </s> + <s> <<r>> </s> <s> <<e>> </s> <s> <<u>> </s> <s> <<n>> </s> <s> <<i>> </s> <s> <<\u00e3>> </s> <s> <<o>> </s>"
-            ],
-            [
-                "Portuguese-MENSHOUSE-1",
-                "Portuguese",
-                "MENSHOUSE",
-                "casa de homens",
-                "<s> <<c>> </s> <s> <<a>> </s> <s> <<s>> </s> <s> <<a>> </s> + <s> <<d>> </s> <s> <<e>> </s> + <s> <<h>> </s> <s> <<o>> </s> <s> <<m>> </s> <s> <<e>> </s> <s> <<n>> </s> <s> <<s>> </s>"
-            ],
-            [
-                "Portuguese-MIDDAY-1",
-                "Portuguese",
-                "MIDDAY",
-                "meio dia",
-                "<s> <<m>> </s> <s> <<e>> </s> <s> <<i>> </s> <s> <<o>> </s> + <s> <<d>> </s> <s> <<i>> </s> <s> <<a>> </s>"
-            ],
-            [
-                "Portuguese-MISSATARGET-3",
-                "Portuguese",
-                "MISSATARGET",
-                "na\u0303o acertar",
-                "<s> <<n>> </s> <s> <<\u00e3>> </s> <s> <<o>> </s> + <s> <<a>> </s> <s> <<c>> </s> <s> <<e>> </s> <s> <<r>> </s> <s> <<t>> </s> <s> <<a>> </s> <s> <<r>> </s>"
-            ],
-            [
-                "Portuguese-OLDERBROTHER-1",
-                "Portuguese",
-                "OLDERBROTHER",
-                "irma\u0303o mais velho",
-                "<s> <<i>> </s> <s> <<r>> </s> <s> <<m>> </s> <s> <<\u00e3>> </s> <s> <<o>> </s> + <s> <<m>> </s> <s> <<a>> </s> <s> <<i>> </s> <s> <<s>> </s> + <s> <<v>> </s> <s> <<e>> </s> <s> <<l>> </s> <s> <<h>> </s> <s> <<o>> </s>"
-            ],
-            [
-                "Portuguese-OLDERSISTER-1",
-                "Portuguese",
-                "OLDERSISTER",
-                "irma\u0303 mais velha",
-                "<s> <<i>> </s> <s> <<r>> </s> <s> <<m>> </s> <s> <<\u00e3>> </s> + <s> <<m>> </s> <s> <<a>> </s> <s> <<i>> </s> <s> <<s>> </s> + <s> <<v>> </s> <s> <<e>> </s> <s> <<l>> </s> <s> <<h>> </s> <s> <<a>> </s>"
-            ],
-            [
-                "Portuguese-PALMOFHAND-1",
-                "Portuguese",
-                "PALMOFHAND",
-                "palma de ma\u0303o",
-                "<s> <<p>> </s> <s> <<a>> </s> <s> <<l>> </s> <s> <<m>> </s> <s> <<a>> </s> + <s> <<d>> </s> <s> <<e>> </s> + <s> <<m>> </s> <s> <<\u00e3>> </s> <s> <<o>> </s>"
-            ],
-            [
-                "Portuguese-PERSON-2",
-                "Portuguese",
-                "PERSON",
-                "ser humano",
-                "<s> <<s>> </s> <s> <<e>> </s> <s> <<r>> </s> + <s> <<h>> </s> <s> <<u>> </s> <s> <<m>> </s> <s> <<a>> </s> <s> <<n>> </s> <s> <<o>> </s>"
-            ],
-            [
-                "Portuguese-PESTLE-1",
-                "Portuguese",
-                "PESTLE",
-                "ma\u0303o de pila\u0303o",
-                "<s> <<m>> </s> <s> <<\u00e3>> </s> <s> <<o>> </s> + <s> <<d>> </s> <s> <<e>> </s> + <s> <<p>> </s> <s> <<i>> </s> <s> <<l>> </s> <s> <<\u00e3>> </s> <s> <<o>> </s>"
-            ],
-            [
-                "Portuguese-POUND-1",
-                "Portuguese",
-                "POUND",
-                "bater com o punho",
-                "<s> <<b>> </s> <s> <<a>> </s> <s> <<t>> </s> <s> <<e>> </s> <s> <<r>> </s> + <s> <<c>> </s> <s> <<o>> </s> <s> <<m>> </s> + <s> <<o>> </s> + <s> <<p>> </s> <s> <<u>> </s> <s> <<n>> </s> <s> <<h>> </s> <s> <<o>> </s>"
-            ],
-            [
-                "Portuguese-PRESERVE-1",
-                "Portuguese",
-                "PRESERVE",
-                "cuidar de",
-                "<s> <<c>> </s> <s> <<u>> </s> <s> <<i>> </s> <s> <<d>> </s> <s> <<a>> </s> <s> <<r>> </s> + <s> <<d>> </s> <s> <<e>> </s>"
-            ],
-            [
-                "Portuguese-PUBICHAIR-1",
-                "Portuguese",
-                "PUBICHAIR",
-                "pe\u0302lo pu\u0301bico",
-                "<s> <<p>> </s> <s> <<\u00ea>> </s> <s> <<l>> </s> <s> <<o>> </s> + <s> <<p>> </s> <s> <<\u00fa>> </s> <s> <<b>> </s> <s> <<i>> </s> <s> <<c>> </s> <s> <<o>> </s>"
-            ],
-            [
-                "Portuguese-RAZOR-1",
-                "Portuguese",
-                "RAZOR",
-                "navalha de barba",
-                "<s> <<n>> </s> <s> <<a>> </s> <s> <<v>> </s> <s> <<a>> </s> <s> <<l>> </s> <s> <<h>> </s> <s> <<a>> </s> + <s> <<d>> </s> <s> <<e>> </s> + <s> <<b>> </s> <s> <<a>> </s> <s> <<r>> </s> <s> <<b>> </s> <s> <<a>> </s>"
-            ],
-            [
-                "Portuguese-REGRET-1",
-                "Portuguese",
-                "REGRET",
-                "ter pena",
-                "<s> <<t>> </s> <s> <<e>> </s> <s> <<r>> </s> + <s> <<p>> </s> <s> <<e>> </s> <s> <<n>> </s> <s> <<a>> </s>"
-            ],
-            [
-                "Portuguese-SOMETIMES-1",
-                "Portuguese",
-                "SOMETIMES",
-                "a\u0300s vezes",
-                "<s> <<\u00e0>> </s> <s> <<s>> </s> + <s> <<v>> </s> <s> <<e>> </s> <s> <<z>> </s> <s> <<e>> </s> <s> <<s>> </s>"
-            ],
-            [
-                "Portuguese-SOON-1",
-                "Portuguese",
-                "SOON",
-                "em breve",
-                "<s> <<e>> </s> <s> <<m>> </s> + <s> <<b>> </s> <s> <<r>> </s> <s> <<e>> </s> <s> <<v>> </s> <s> <<e>> </s>"
-            ],
-            [
-                "Portuguese-SPIDERWEB-1",
-                "Portuguese",
-                "SPIDERWEB",
-                "teia de aranha",
-                "<s> <<t>> </s> <s> <<e>> </s> <s> <<i>> </s> <s> <<a>> </s> + <s> <<d>> </s> <s> <<e>> </s> + <s> <<a>> </s> <s> <<r>> </s> <s> <<a>> </s> <s> <<n>> </s> <s> <<h>> </s> <s> <<a>> </s>"
-            ],
-            [
-                "Portuguese-SPINE-1",
-                "Portuguese",
-                "SPINE",
-                "espinha dorsal",
-                "<s> <<e>> </s> <s> <<s>> </s> <s> <<p>> </s> <s> <<i>> </s> <s> <<n>> </s> <s> <<h>> </s> <s> <<a>> </s> + <s> <<d>> </s> <s> <<o>> </s> <s> <<r>> </s> <s> <<s>> </s> <s> <<a>> </s> <s> <<l>> </s>"
-            ],
-            [
-                "Portuguese-STAND-1",
-                "Portuguese",
-                "STAND",
-                "estar em pe\u0301",
-                "<s> <<e>> </s> <s> <<s>> </s> <s> <<t>> </s> <s> <<a>> </s> <s> <<r>> </s> + <s> <<e>> </s> <s> <<m>> </s> + <s> <<p>> </s> <s> <<\u00e9>> </s>"
-            ],
-            [
-                "Portuguese-STAND-2",
-                "Portuguese",
-                "STAND",
-                "ficar em pe\u0301",
-                "<s> <<f>> </s> <s> <<i>> </s> <s> <<c>> </s> <s> <<a>> </s> <s> <<r>> </s> + <s> <<e>> </s> <s> <<m>> </s> + <s> <<p>> </s> <s> <<\u00e9>> </s>"
-            ],
-            [
-                "Portuguese-STINKING-2",
-                "Portuguese",
-                "STINKING",
-                "mal cheiroso",
-                "<s> <<m>> </s> <s> <<a>> </s> <s> <<l>> </s> + <s> <<c>> </s> <s> <<h>> </s> <s> <<e>> </s> <s> <<i>> </s> <s> <<r>> </s> <s> <<o>> </s> <s> <<s>> </s> <s> <<o>> </s>"
-            ],
-            [
-                "Portuguese-SUGARCANE-1",
-                "Portuguese",
-                "SUGARCANE",
-                "cana de ac\u0327u\u0301car",
-                "<s> <<c>> </s> <s> <<a>> </s> <s> <<n>> </s> <s> <<a>> </s> + <s> <<d>> </s> <s> <<e>> </s> + <s> <<a>> </s> <s> <<\u00e7>> </s> <s> <<\u00fa>> </s> <s> <<c>> </s> <s> <<a>> </s> <s> <<r>> </s>"
-            ],
-            [
-                "Portuguese-SWEETPOTATO-1",
-                "Portuguese",
-                "SWEETPOTATO",
-                "batata doce",
-                "<s> <<b>> </s> <s> <<a>> </s> <s> <<t>> </s> <s> <<a>> </s> <s> <<t>> </s> <s> <<a>> </s> + <s> <<d>> </s> <s> <<o>> </s> <s> <<c>> </s> <s> <<e>> </s>"
-            ],
-            [
-                "Portuguese-THREETIMES-1",
-                "Portuguese",
-                "THREETIMES",
-                "tre\u0302s vezes",
-                "<s> <<t>> </s> <s> <<r>> </s> <s> <<\u00ea>> </s> <s> <<s>> </s> + <s> <<v>> </s> <s> <<e>> </s> <s> <<z>> </s> <s> <<e>> </s> <s> <<s>> </s>"
-            ],
-            [
-                "Portuguese-TOE-1",
-                "Portuguese",
-                "TOE",
-                "dedo do pe\u0301",
-                "<s> <<d>> </s> <s> <<e>> </s> <s> <<d>> </s> <s> <<o>> </s> + <s> <<d>> </s> <s> <<o>> </s> + <s> <<p>> </s> <s> <<\u00e9>> </s>"
-            ],
-            [
-                "Portuguese-TRAPCATCH-1",
-                "Portuguese",
-                "TRAPCATCH",
-                "armar uma cilada",
-                "<s> <<a>> </s> <s> <<r>> </s> <s> <<m>> </s> <s> <<a>> </s> <s> <<r>> </s> + <s> <<u>> </s> <s> <<m>> </s> <s> <<a>> </s> + <s> <<c>> </s> <s> <<i>> </s> <s> <<l>> </s> <s> <<a>> </s> <s> <<d>> </s> <s> <<a>> </s>"
-            ],
-            [
-                "Portuguese-TRAPCATCH-2",
-                "Portuguese",
-                "TRAPCATCH",
-                "pegar em armadilha",
-                "<s> <<p>> </s> <s> <<e>> </s> <s> <<g>> </s> <s> <<a>> </s> <s> <<r>> </s> + <s> <<e>> </s> <s> <<m>> </s> + <s> <<a>> </s> <s> <<r>> </s> <s> <<m>> </s> <s> <<a>> </s> <s> <<d>> </s> <s> <<i>> </s> <s> <<l>> </s> <s> <<h>> </s> <s> <<a>> </s>"
-            ],
-            [
-                "Portuguese-TURNAROUND-2",
-                "Portuguese",
-                "TURNAROUND",
-                "dar a volta",
-                "<s> <<d>> </s> <s> <<a>> </s> <s> <<r>> </s> + <s> <<a>> </s> + <s> <<v>> </s> <s> <<o>> </s> <s> <<l>> </s> <s> <<t>> </s> <s> <<a>> </s>"
-            ],
-            [
-                "Portuguese-TWICE-1",
-                "Portuguese",
-                "TWICE",
-                "duas vezes",
-                "<s> <<d>> </s> <s> <<u>> </s> <s> <<a>> </s> <s> <<s>> </s> + <s> <<v>> </s> <s> <<e>> </s> <s> <<z>> </s> <s> <<e>> </s> <s> <<s>> </s>"
-            ],
-            [
-                "Portuguese-UP-1",
-                "Portuguese",
-                "UP",
-                "em cima",
-                "<s> <<e>> </s> <s> <<m>> </s> + <s> <<c>> </s> <s> <<i>> </s> <s> <<m>> </s> <s> <<a>> </s>"
-            ],
-            [
-                "Portuguese-WHY-1",
-                "Portuguese",
-                "WHY",
-                "por que\u0302",
-                "<s> <<p>> </s> <s> <<o>> </s> <s> <<r>> </s> + <s> <<q>> </s> <s> <<u>> </s> <s> <<\u00ea>> </s>"
-            ],
-            [
-                "Portuguese-YOUNGERBROTHER-1",
-                "Portuguese",
-                "YOUNGERBROTHER",
-                "irma\u0303o mais novo",
-                "<s> <<i>> </s> <s> <<r>> </s> <s> <<m>> </s> <s> <<\u00e3>> </s> <s> <<o>> </s> + <s> <<m>> </s> <s> <<a>> </s> <s> <<i>> </s> <s> <<s>> </s> + <s> <<n>> </s> <s> <<o>> </s> <s> <<v>> </s> <s> <<o>> </s>"
-            ],
-            [
-                "Portuguese-YOUNGERSISTER-1",
-                "Portuguese",
-                "YOUNGERSISTER",
-                "irma\u0303 mais nova",
-                "<s> <<i>> </s> <s> <<r>> </s> <s> <<m>> </s> <s> <<\u00e3>> </s> + <s> <<m>> </s> <s> <<a>> </s> <s> <<i>> </s> <s> <<s>> </s> + <s> <<n>> </s> <s> <<o>> </s> <s> <<v>> </s> <s> <<a>> </s>"
-            ],
-            [
-                "Spanish-BEESWAX-1",
-                "Spanish",
-                "BEESWAX",
-                "cera de abeja",
-                "<s> <<c>> </s> <s> <<e>> </s> <s> <<r>> </s> <s> <<a>> </s> + <s> <<d>> </s> <s> <<e>> </s> + <s> <<a>> </s> <s> <<b>> </s> <s> <<e>> </s> <s> <<j>> </s> <s> <<a>> </s>"
-            ],
-            [
-                "Spanish-FRESHWATEREEL-1",
-                "Spanish",
-                "FRESHWATEREEL",
-                "anguila de agua dulce",
-                "<s> <<a>> </s> <s> <<n>> </s> <s> <<g>> </s> <s> <<u>> </s> <s> <<i>> </s> <s> <<l>> </s> <s> <<a>> </s> + <s> <<d>> </s> <s> <<e>> </s> + <s> <<a>> </s> <s> <<g>> </s> <s> <<u>> </s> <s> <<a>> </s> + <s> <<d>> </s> <s> <<u>> </s> <s> <<l>> </s> <s> <<c>> </s> <s> <<e>> </s>"
-            ],
-            [
-                "Spanish-HICCOUGH-1",
-                "Spanish",
-                "HICCOUGH",
-                "tener hipo",
-                "<s> <<t>> </s> <s> <<e>> </s> <s> <<n>> </s> <s> <<e>> </s> <s> <<r>> </s> + <s> <<h>> </s> <s> <<i>> </s> <s> <<p>> </s> <s> <<o>> </s>"
-            ],
-            [
-                "Spanish-MAINLAND-2",
-                "Spanish",
-                "MAINLAND",
-                "tierra firme",
-                "<s> <<t>> </s> <s> <<i>> </s> <s> <<e>> </s> <s> <<r>> </s> <s> <<r>> </s> <s> <<a>> </s> + <s> <<f>> </s> <s> <<i>> </s> <s> <<r>> </s> <s> <<m>> </s> <s> <<e>> </s>"
-            ],
-            [
-                "Spanish-MALEGOAT-2",
-                "Spanish",
-                "MALEGOAT",
-                "macho cabri\u0301o",
-                "<s> <<m>> </s> <s> <<a>> </s> <s> <<c>> </s> <s> <<h>> </s> <s> <<o>> </s> + <s> <<c>> </s> <s> <<a>> </s> <s> <<b>> </s> <s> <<r>> </s> <s> <<\u00ed>> </s> <s> <<o>> </s>"
-            ],
-            [
-                "Spanish-MARRIEDMAN-1",
-                "Spanish",
-                "MARRIEDMAN",
-                "hombre casado",
-                "<s> <<h>> </s> <s> <<o>> </s> <s> <<m>> </s> <s> <<b>> </s> <s> <<r>> </s> <s> <<e>> </s> + <s> <<c>> </s> <s> <<a>> </s> <s> <<s>> </s> <s> <<a>> </s> <s> <<d>> </s> <s> <<o>> </s>"
-            ],
-            [
-                "Spanish-MARRIEDWOMAN-1",
-                "Spanish",
-                "MARRIEDWOMAN",
-                "mujer casada",
-                "<s> <<m>> </s> <s> <<u>> </s> <s> <<j>> </s> <s> <<e>> </s> <s> <<r>> </s> + <s> <<c>> </s> <s> <<a>> </s> <s> <<s>> </s> <s> <<a>> </s> <s> <<d>> </s> <s> <<a>> </s>"
-            ],
-            [
-                "Spanish-MATERNALAUNTMOTHERSSISTER-1",
-                "Spanish",
-                "MATERNALAUNTMOTHERSSISTER",
-                "hermana de la madre",
-                "<s> <<h>> </s> <s> <<e>> </s> <s> <<r>> </s> <s> <<m>> </s> <s> <<a>> </s> <s> <<n>> </s> <s> <<a>> </s> + <s> <<d>> </s> <s> <<e>> </s> + <s> <<l>> </s> <s> <<a>> </s> + <s> <<m>> </s> <s> <<a>> </s> <s> <<d>> </s> <s> <<r>> </s> <s> <<e>> </s>"
-            ],
-            [
-                "Spanish-MATERNALUNCLEMOTHERSBROTHER-1",
-                "Spanish",
-                "MATERNALUNCLEMOTHERSBROTHER",
-                "hermano de la madre",
-                "<s> <<h>> </s> <s> <<e>> </s> <s> <<r>> </s> <s> <<m>> </s> <s> <<a>> </s> <s> <<n>> </s> <s> <<o>> </s> + <s> <<d>> </s> <s> <<e>> </s> + <s> <<l>> </s> <s> <<a>> </s> + <s> <<m>> </s> <s> <<a>> </s> <s> <<d>> </s> <s> <<r>> </s> <s> <<e>> </s>"
-            ],
-            [
-                "Spanish-NOSTRIL-1",
-                "Spanish",
-                "NOSTRIL",
-                "ventana de la nariz",
-                "<s> <<v>> </s> <s> <<e>> </s> <s> <<n>> </s> <s> <<t>> </s> <s> <<a>> </s> <s> <<n>> </s> <s> <<a>> </s> + <s> <<d>> </s> <s> <<e>> </s> + <s> <<l>> </s> <s> <<a>> </s> + <s> <<n>> </s> <s> <<a>> </s> <s> <<r>> </s> <s> <<i>> </s> <s> <<z>> </s>"
-            ],
-            [
-                "Spanish-OLDERBROTHER-1",
-                "Spanish",
-                "OLDERBROTHER",
-                "hermano mayor",
-                "<s> <<h>> </s> <s> <<e>> </s> <s> <<r>> </s> <s> <<m>> </s> <s> <<a>> </s> <s> <<n>> </s> <s> <<o>> </s> + <s> <<m>> </s> <s> <<a>> </s> <s> <<y>> </s> <s> <<o>> </s> <s> <<r>> </s>"
-            ],
-            [
-                "Spanish-OLDERSISTER-1",
-                "Spanish",
-                "OLDERSISTER",
-                "hermana mayor",
-                "<s> <<h>> </s> <s> <<e>> </s> <s> <<r>> </s> <s> <<m>> </s> <s> <<a>> </s> <s> <<n>> </s> <s> <<a>> </s> + <s> <<m>> </s> <s> <<a>> </s> <s> <<y>> </s> <s> <<o>> </s> <s> <<r>> </s>"
-            ],
-            [
-                "Spanish-OLDMAN-2",
-                "Spanish",
-                "OLDMAN",
-                "hombre viejo",
-                "<s> <<h>> </s> <s> <<o>> </s> <s> <<m>> </s> <s> <<b>> </s> <s> <<r>> </s> <s> <<e>> </s> + <s> <<v>> </s> <s> <<i>> </s> <s> <<e>> </s> <s> <<j>> </s> <s> <<o>> </s>"
-            ],
-            [
-                "Spanish-OLDWOMAN-2",
-                "Spanish",
-                "OLDWOMAN",
-                "mujer vieja",
-                "<s> <<m>> </s> <s> <<u>> </s> <s> <<j>> </s> <s> <<e>> </s> <s> <<r>> </s> + <s> <<v>> </s> <s> <<i>> </s> <s> <<e>> </s> <s> <<j>> </s> <s> <<a>> </s>"
-            ],
-            [
-                "Spanish-PALMOFHAND-1",
-                "Spanish",
-                "PALMOFHAND",
-                "palma de la mano",
-                "<s> <<p>> </s> <s> <<a>> </s> <s> <<l>> </s> <s> <<m>> </s> <s> <<a>> </s> + <s> <<d>> </s> <s> <<e>> </s> + <s> <<l>> </s> <s> <<a>> </s> + <s> <<m>> </s> <s> <<a>> </s> <s> <<n>> </s> <s> <<o>> </s>"
-            ],
-            [
-                "Spanish-PATERNALAUNTFATHERSSISTER-1",
-                "Spanish",
-                "PATERNALAUNTFATHERSSISTER",
-                "hermana del padre",
-                "<s> <<h>> </s> <s> <<e>> </s> <s> <<r>> </s> <s> <<m>> </s> <s> <<a>> </s> <s> <<n>> </s> <s> <<a>> </s> + <s> <<d>> </s> <s> <<e>> </s> <s> <<l>> </s> + <s> <<p>> </s> <s> <<a>> </s> <s> <<d>> </s> <s> <<r>> </s> <s> <<e>> </s>"
-            ],
-            [
-                "Spanish-PATERNALUNCLEFATHERSBROTHER-1",
-                "Spanish",
-                "PATERNALUNCLEFATHERSBROTHER",
-                "hermano del padre",
-                "<s> <<h>> </s> <s> <<e>> </s> <s> <<r>> </s> <s> <<m>> </s> <s> <<a>> </s> <s> <<n>> </s> <s> <<o>> </s> + <s> <<d>> </s> <s> <<e>> </s> <s> <<l>> </s> + <s> <<p>> </s> <s> <<a>> </s> <s> <<d>> </s> <s> <<r>> </s> <s> <<e>> </s>"
-            ],
-            [
-                "Spanish-PUBICHAIR-1",
-                "Spanish",
-                "PUBICHAIR",
-                "pelo pu\u0301bico",
-                "<s> <<p>> </s> <s> <<e>> </s> <s> <<l>> </s> <s> <<o>> </s> + <s> <<p>> </s> <s> <<\u00fa>> </s> <s> <<b>> </s> <s> <<i>> </s> <s> <<c>> </s> <s> <<o>> </s>"
-            ],
-            [
-                "Spanish-RAINBOW-1",
-                "Spanish",
-                "RAINBOW",
-                "arco iris",
-                "<s> <<a>> </s> <s> <<r>> </s> <s> <<c>> </s> <s> <<o>> </s> + <s> <<i>> </s> <s> <<r>> </s> <s> <<i>> </s> <s> <<s>> </s>"
-            ],
-            [
-                "Spanish-SPINE-2",
-                "Spanish",
-                "SPINE",
-                "espina dorsal",
-                "<s> <<e>> </s> <s> <<s>> </s> <s> <<p>> </s> <s> <<i>> </s> <s> <<n>> </s> <s> <<a>> </s> + <s> <<d>> </s> <s> <<o>> </s> <s> <<r>> </s> <s> <<s>> </s> <s> <<a>> </s> <s> <<l>> </s>"
-            ],
-            [
-                "Spanish-STALLION-1",
-                "Spanish",
-                "STALLION",
-                "caballo padre",
-                "<s> <<c>> </s> <s> <<a>> </s> <s> <<b>> </s> <s> <<a>> </s> <s> <<l>> </s> <s> <<l>> </s> <s> <<o>> </s> + <s> <<p>> </s> <s> <<a>> </s> <s> <<d>> </s> <s> <<r>> </s> <s> <<e>> </s>"
-            ],
-            [
-                "Spanish-TOE-1",
-                "Spanish",
-                "TOE",
-                "dedo del pie",
-                "<s> <<d>> </s> <s> <<e>> </s> <s> <<d>> </s> <s> <<o>> </s> + <s> <<d>> </s> <s> <<e>> </s> <s> <<l>> </s> + <s> <<p>> </s> <s> <<i>> </s> <s> <<e>> </s>"
-            ],
-            [
-                "Spanish-YOUNGERBROTHER-1",
-                "Spanish",
-                "YOUNGERBROTHER",
-                "hermano menor",
-                "<s> <<h>> </s> <s> <<e>> </s> <s> <<r>> </s> <s> <<m>> </s> <s> <<a>> </s> <s> <<n>> </s> <s> <<o>> </s> + <s> <<m>> </s> <s> <<e>> </s> <s> <<n>> </s> <s> <<o>> </s> <s> <<r>> </s>"
-            ],
-            [
-                "Spanish-YOUNGERSISTER-1",
-                "Spanish",
-                "YOUNGERSISTER",
-                "hermana menor",
-                "<s> <<h>> </s> <s> <<e>> </s> <s> <<r>> </s> <s> <<m>> </s> <s> <<a>> </s> <s> <<n>> </s> <s> <<a>> </s> + <s> <<m>> </s> <s> <<e>> </s> <s> <<n>> </s> <s> <<o>> </s> <s> <<r>> </s>"
-            ],
-            [
-                "Spanish-YOUNGMAN-1",
-                "Spanish",
-                "YOUNGMAN",
-                "el joven",
-                "<s> <<e>> </s> <s> <<l>> </s> + <s> <<j>> </s> <s> <<o>> </s> <s> <<v>> </s> <s> <<e>> </s> <s> <<n>> </s>"
-            ],
-            [
-                "Spanish-YOUNGWOMAN-1",
-                "Spanish",
-                "YOUNGWOMAN",
-                "la joven",
-                "<s> <<l>> </s> <s> <<a>> </s> + <s> <<j>> </s> <s> <<o>> </s> <s> <<v>> </s> <s> <<e>> </s> <s> <<n>> </s>"
-            ]
-        ],
-        "bad_words_count": 151,
-        "bipa_errors": [
-            "<<c>>",
-            "<<->>",
-            "<<f>>",
-            "<<n>>",
-            "<<\u00f3>>",
-            "<<o>>",
-            "<<i>>",
-            "<<z>>",
-            "<<e>>",
-            "<<\u0272>>",
-            "<<\u00ed>>",
-            "<<a>>",
-            "<<d>>",
-            "<<\u00e7>>",
-            "<<l>>",
-            "<<\u00ea>>",
-            "<<j>>",
-            "<<v>>",
-            "<<\u00e0>>",
-            "<<b>>",
-            "<<y>>",
-            "<<h>>",
-            "<<t>>",
-            "<<g>>",
-            "<<\u00e1>>",
-            "<<q>>",
-            "<<s>>",
-            "<<\u00fa>>",
-            "<<\u00e3>>",
-            "<<\u00f5>>",
-            "<<x>>",
-            "<<p>>",
-            "<<u>>",
-            "<<m>>",
-            "<<r>>",
-            "<<\u00e9>>"
-        ],
-        "general_errors": 1753,
+        "bad_words": [],
+        "bad_words_count": 0,
+        "bipa_errors": [],
+        "general_errors": 0,
         "invalid_words": [],
         "invalid_words_count": 0,
-        "inventory_size": 49.99999999999999,
+        "inventory_size": 41.285714285714285,
         "replacements": {
             "+": [
                 "+"
@@ -3865,6 +2959,9 @@
             ],
             "o\u0303": [
                 "o\u0303"
+            ],
+            "o\u0303i\u0303": [
+                "o\u0303i\u0303"
             ],
             "p": [
                 "p"
@@ -4098,119 +3195,46 @@
                 "\u207fs"
             ]
         },
-        "sclass_errors": [
-            "<<c>>",
-            "<<->>",
-            "<<f>>",
-            "<<n>>",
-            "<<\u00f3>>",
-            "<<o>>",
-            "<<i>>",
-            "<<z>>",
-            "<<e>>",
-            "<<\u0272>>",
-            "<<\u00ed>>",
-            "<<a>>",
-            "<<d>>",
-            "<<\u00e7>>",
-            "<<l>>",
-            "<<\u00ea>>",
-            "<<j>>",
-            "<<v>>",
-            "<<\u00e0>>",
-            "<<b>>",
-            "<<y>>",
-            "<<h>>",
-            "<<t>>",
-            "<<g>>",
-            "<<\u00e1>>",
-            "<<q>>",
-            "<<s>>",
-            "<<\u00fa>>",
-            "<<\u00e3>>",
-            "<<\u00f5>>",
-            "<<x>>",
-            "<<p>>",
-            "<<u>>",
-            "<<m>>",
-            "<<r>>",
-            "<<\u00e9>>"
-        ],
+        "sclass_errors": [],
         "segments": {
             "+": 1569,
-            "<<->>": 1,
-            "<<a>>": 279,
-            "<<b>>": 44,
-            "<<c>>": 65,
-            "<<d>>": 106,
-            "<<e>>": 223,
-            "<<f>>": 16,
-            "<<g>>": 6,
-            "<<h>>": 40,
-            "<<i>>": 85,
-            "<<j>>": 12,
-            "<<l>>": 76,
-            "<<m>>": 94,
-            "<<n>>": 81,
-            "<<o>>": 137,
-            "<<p>>": 56,
-            "<<q>>": 2,
-            "<<r>>": 163,
-            "<<s>>": 70,
-            "<<t>>": 52,
-            "<<u>>": 44,
-            "<<v>>": 36,
-            "<<x>>": 6,
-            "<<y>>": 2,
-            "<<z>>": 12,
-            "<<\u00e0>>": 1,
-            "<<\u00e1>>": 1,
-            "<<\u00e3>>": 12,
-            "<<\u00e7>>": 5,
-            "<<\u00e9>>": 9,
-            "<<\u00ea>>": 5,
-            "<<\u00ed>>": 3,
-            "<<\u00f3>>": 1,
-            "<<\u00f5>>": 1,
-            "<<\u00fa>>": 4,
-            "<<\u0272>>": 3,
-            "a": 8081,
-            "ai": 20,
+            "a": 8265,
+            "ai": 28,
             "au": 5,
             "a\u02d0": 357,
-            "b": 991,
+            "b": 1023,
             "b\u02b7": 70,
             "c": 6,
-            "d": 914,
+            "d": 973,
             "d\u0292": 23,
-            "e": 2906,
-            "eu": 3,
+            "e": 3008,
+            "eu": 4,
             "e\u02d0": 153,
-            "f": 335,
-            "g": 411,
+            "f": 351,
+            "g": 412,
             "g\u02b0": 2,
             "g\u02b7": 3,
             "h": 792,
             "h\u02b7": 3,
-            "i": 5036,
+            "i": 5088,
             "i\u02d0": 114,
-            "j": 1229,
+            "j": 1246,
             "j\u02d0": 1,
-            "k": 2638,
+            "k": 2687,
             "k\u02b0": 490,
             "k\u02b7": 29,
             "k\u02bc": 388,
-            "l": 2195,
-            "m": 2205,
+            "l": 2242,
+            "m": 2283,
             "m\u02b0": 5,
-            "n": 3513,
+            "n": 3580,
             "n\u02b0": 4,
             "n\u02b7": 6,
             "n\u02b7\u02b0": 3,
-            "o": 3653,
-            "oi": 13,
+            "o": 3726,
+            "oi": 14,
             "o\u02d0": 122,
-            "p": 1388,
+            "p": 1444,
             "p\u02b0": 97,
             "p\u02b7": 1,
             "p\u02bc": 17,
@@ -4218,65 +3242,66 @@
             "q\u02b0": 68,
             "q\u02b7": 2,
             "q\u02bc": 149,
-            "r": 667,
-            "s": 1767,
+            "r": 672,
+            "s": 1824,
             "s\u02b0": 22,
-            "t": 2403,
+            "t": 2455,
             "ts": 175,
             "ts\u02b0": 71,
             "ts\u02bc": 356,
-            "t\u0283": 614,
+            "t\u0283": 618,
             "t\u0283\u02b0": 142,
             "t\u0283\u02bc": 214,
             "t\u02b0": 88,
             "t\u02bc": 54,
             "t\u032a": 290,
             "t\u032a\u02bc": 326,
-            "u": 3913,
-            "ui": 8,
+            "u": 3973,
+            "ui": 9,
             "u\u02d0": 104,
-            "v": 316,
-            "w": 640,
-            "x": 1097,
+            "v": 335,
+            "w": 654,
+            "x": 1108,
             "x\u02b7": 52,
-            "z": 252,
+            "z": 264,
             "\u00e6": 209,
-            "\u00f0": 233,
-            "\u00f5": 61,
+            "\u00f0": 280,
+            "\u00f5": 66,
+            "\u00f5\u0129": 1,
             "\u0127": 17,
-            "\u0129": 44,
+            "\u0129": 46,
             "\u014b": 92,
-            "\u0169": 23,
-            "\u0250": 1296,
-            "\u0250i": 102,
-            "\u0250\u0303": 81,
-            "\u0250\u0303\u0129": 18,
-            "\u0250\u0303\u0169": 52,
+            "\u0169": 25,
+            "\u0250": 1385,
+            "\u0250i": 108,
+            "\u0250\u0303": 85,
+            "\u0250\u0303\u0129": 26,
+            "\u0250\u0303\u0169": 60,
             "\u0253": 603,
             "\u0253\u02b7": 1,
-            "\u0254": 321,
+            "\u0254": 338,
             "\u0254i": 1,
             "\u0259": 164,
-            "\u025b": 541,
+            "\u025b": 605,
             "\u025bi": 1,
             "\u025bu": 5,
             "\u025f": 12,
-            "\u0261": 178,
-            "\u0263": 104,
-            "\u0268": 399,
-            "\u026b": 95,
-            "\u0272": 291,
+            "\u0261": 180,
+            "\u0263": 107,
+            "\u0268": 444,
+            "\u026b": 101,
+            "\u0272": 301,
             "\u0272\u02b0": 5,
             "\u0278": 34,
-            "\u027e": 2545,
-            "\u0281": 122,
-            "\u0283": 811,
+            "\u027e": 2694,
+            "\u0281": 128,
+            "\u0283": 835,
             "\u0283\u02d0": 1,
-            "\u028e": 134,
+            "\u028e": 149,
             "\u0290": 50,
-            "\u0292": 227,
+            "\u0292": 231,
             "\u0294": 1266,
-            "\u029d": 28,
+            "\u029d": 31,
             "\u02c0b": 102,
             "\u02c0j": 71,
             "\u02c0k\u02b7": 2,
@@ -4286,9 +3311,9 @@
             "\u02c0w": 28,
             "\u02c0x": 3,
             "\u02c0\u0272": 75,
-            "\u03b2": 203,
-            "\u03b8": 415,
-            "\u1ebd": 102,
+            "\u03b2": 232,
+            "\u03b8": 428,
+            "\u1ebd": 109,
             "\u207fs": 15
         }
     }

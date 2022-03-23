@@ -17,7 +17,7 @@ from tabulate import tabulate
 from pathlib import Path
 
 
-from pylexibank import Concept, Lexeme, progressbar
+from pylexibank import Concept, Lexeme, progressbar, FormSpec
 import attr
 from csvw.dsv import UnicodeWriter
 import json
@@ -42,6 +42,9 @@ class Dataset(BaseDataset):
     dir = pathlib.Path(__file__).parent
     id = "sabor"
     lexeme_class = CustomLexeme
+    form_spec = FormSpec(
+            replacements=[(" ", "_")], 
+            separators="~;,/", missing_data=["∅"], first_form_only=True)
 
     def cmd_download(self, args):
         
