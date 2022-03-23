@@ -11,7 +11,7 @@
         {
             "rdf:about": "https://github.com/lexibank/sabor",
             "rdf:type": "prov:Entity",
-            "dc:created": "3c3801f",
+            "dc:created": "bfd071a",
             "dc:title": "Repository"
         },
         {
@@ -139,7 +139,7 @@
                     },
                     {
                         "datatype": "string",
-                        "name": "Word_ID"
+                        "name": "Value_in_Source"
                     },
                     {
                         "datatype": "string",
@@ -156,6 +156,22 @@
                     {
                         "datatype": "string",
                         "name": "Borrowed_Base"
+                    },
+                    {
+                        "datatype": "string",
+                        "name": "Age"
+                    },
+                    {
+                        "datatype": "string",
+                        "name": "Age_Score"
+                    },
+                    {
+                        "datatype": "string",
+                        "name": "Source_Language"
+                    },
+                    {
+                        "datatype": "string",
+                        "name": "Source_Meaning"
                     }
                 ],
                 "foreignKeys": [

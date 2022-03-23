@@ -26,11 +26,16 @@ import json
 
 @attr.s
 class CustomLexeme(Lexeme):
-    Word_ID = attr.ib(default=None)
+    Value_in_Source = attr.ib(default=None)
     ConceptInSource = attr.ib(default=None)
     Borrowed = attr.ib(default=None)
     Borrowed_Score = attr.ib(default=None)
     Borrowed_Base = attr.ib(default=None)
+    Age = attr.ib(default=None)
+    Age_Score = attr.ib(default=None)
+    Source_Language = attr.ib(default=None)
+    Source_Meaning = attr.ib(default=None)
+
 
 
 class Dataset(BaseDataset):
@@ -57,6 +62,15 @@ class Dataset(BaseDataset):
 
     def cmd_makecldf(self, args):
         
+        borrowings = {
+                form.data["Target_Form_ID"]: (
+                    form.data["Source_languoid"],
+                    form.data["Source_meaning"]
+                    ) for form in pycldf.Dataset.from_metadata(
+                        self.raw_dir / "wold" / "cldf" / "cldf-metadata.json").objects(
+                            "BorrowingTable")}
+        args.log.info("loaded borrowings")
+
         languages = {}
         for language in self.languages:
             languages[language["Name"]] = language
@@ -92,11 +106,11 @@ class Dataset(BaseDataset):
                             Concepticon_Gloss=concept.concepticon_gloss
                             )
             for form in language.forms:
-                args.writer.add_form(
+                args.writer.add_forms_from_value(
                         Language_ID=name[4:],
                         Parameter_ID=slug(form.concept.id, lowercase=False),
-                        Value=form.value,
-                        Form=form.form,
+                        Value=form.form,
+                        Value_in_Source=form.value,
                         Local_ID=form.id,
                         )
         args.log.info("added spa and pt")
@@ -123,7 +137,11 @@ class Dataset(BaseDataset):
                             Borrowed_Base=form.data["borrowed_base"],
                             Value=form.value,
                             Form=form.form,
-                            Segments=form.sounds
+                            Segments=form.sounds,
+                            Age=form.data["Age"],
+                            Age_Score=form.data["Age_score"],
+                            Source_Language=borrowings.get(form.id[5:], [""])[0],
+                            Source_Meaning=borrowings.get(form.id[5:], ["", ""])[1]
                             )
 
 
