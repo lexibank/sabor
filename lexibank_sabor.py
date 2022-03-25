@@ -35,6 +35,7 @@ class CustomLexeme(Lexeme):
     Age_Score = attr.ib(default=None)
     Source_Language = attr.ib(default=None)
     Source_Meaning = attr.ib(default=None)
+    Source_Word = attr.ib(default=None)
 
 
 
@@ -68,7 +69,8 @@ class Dataset(BaseDataset):
         borrowings = {
                 form.data["Target_Form_ID"]: (
                     form.data["Source_languoid"],
-                    form.data["Source_meaning"]
+                    form.data["Source_meaning"],
+                    form.data["Source_word"]
                     ) for form in pycldf.Dataset.from_metadata(
                         self.raw_dir / "wold" / "cldf" / "cldf-metadata.json").objects(
                             "BorrowingTable")}
@@ -120,11 +122,13 @@ class Dataset(BaseDataset):
 
         wold_languages = {}
         for language in wl.languages:
-            if language.name in languages:
+            if language.name in languages and language.id.startswith('wold-'):
+            # Some languages are in WOLD both as wold receiver and ids donor languages.
                 wold_languages[language.name] = language
         for name, language in wold_languages.items():
+            print(f"Added: name {name}, language {language}")
             args.writer.add_language(
-                    ID=language.id[5:],
+                    ID=language.id[5:],  # Drop the wold- prefix.
                     Name=language.name,
                     Glottocode=language.glottocode,
                     Latitude=language.latitude,
@@ -135,21 +139,20 @@ class Dataset(BaseDataset):
                             Local_ID=form.id,
                             Language_ID=form.language.id[5:],
                             Parameter_ID=slug(form.concept.id, lowercase=False),
-                            Borrowed=form.data["Borrowed"],
-                            Borrowed_Score=form.data["Borrowed_score"],
-                            Borrowed_Base=form.data["borrowed_base"],
+                            # Borrowed=form.data["Borrowed"],
+                            # Original form had 5 point Likert type scale of borrowing likelihood.
+                            Borrowed_Score=form.data["Borrowed_score"], 
+                            # 0.0 not borrowed ~ 1.0 = borrowed
+                            Borrowed=float(form.data["Borrowed_score"]) > 0.90,
+                            Borrowed_Base=form.data["borrowed_base"],  
+                            # This sometimes includes source word.
                             Value=form.value,
                             Form=form.form,
                             Segments=form.sounds,
                             Age=form.data["Age"],
                             Age_Score=form.data["Age_score"],
                             Source_Language=borrowings.get(form.id[5:], [""])[0],
-                            Source_Meaning=borrowings.get(form.id[5:], ["", ""])[1]
+                            Source_Meaning=borrowings.get(form.id[5:], ["", ""])[1],
+                            Source_Word=borrowings.get(form.id[5:], ["","",""])[2]
                             )
-
-
-
-
-
-
 
