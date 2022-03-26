@@ -33,9 +33,9 @@ class CustomLexeme(Lexeme):
     Borrowed_Base = attr.ib(default=None)
     Age = attr.ib(default=None)
     Age_Score = attr.ib(default=None)
-    Source_Language = attr.ib(default=None)
-    Source_Meaning = attr.ib(default=None)
-    Source_Word = attr.ib(default=None)
+    Donor_Language = attr.ib(default=None)
+    Donor_Meaning = attr.ib(default=None)
+    Donor_Value = attr.ib(default=None)
 
 
 
@@ -139,7 +139,6 @@ class Dataset(BaseDataset):
                             Local_ID=form.id,
                             Language_ID=form.language.id[5:],
                             Parameter_ID=slug(form.concept.id, lowercase=False),
-                            # Borrowed=form.data["Borrowed"],
                             # Original form had 5 point Likert type scale of borrowing likelihood.
                             Borrowed_Score=form.data["Borrowed_score"], 
                             # 0.0 not borrowed ~ 1.0 = borrowed
@@ -151,8 +150,8 @@ class Dataset(BaseDataset):
                             Segments=form.sounds,
                             Age=form.data["Age"],
                             Age_Score=form.data["Age_score"],
-                            Source_Language=borrowings.get(form.id[5:], [""])[0],
-                            Source_Meaning=borrowings.get(form.id[5:], ["", ""])[1],
-                            Source_Word=borrowings.get(form.id[5:], ["","",""])[2]
+                            Donor_Language=borrowings.get(form.id[5:], [""])[0],
+                            Donor_Meaning=borrowings.get(form.id[5:], ["", ""])[1],
+                            Donor_Value=borrowings.get(form.id[5:], ["","",""])[2]
                             )
 
