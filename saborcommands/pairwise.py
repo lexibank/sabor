@@ -298,9 +298,9 @@ def detect_borrowing(wl, bb,
                         anyPred = True
 
                 # Add word to all_words for words status report.
-                # Words are target language words, not possible donor words.
-                concept_name = concept
-                if concept_name.isdigit(): concept_name = wl[idx, 'concept_name']
+                # Words are target language words, not possible donor words.            
+                concept_name = wl[idx, 'concept_name'] if 'concept_name' in wl.columns else concept
+                concept_name = concept_name.lower()
 
                 all_words.append([families[language], language,
                                   concept_name, word, anyPred, loan])
@@ -475,9 +475,9 @@ def run(args):
     wl = util.select_languages(wl, languages=args.language, donors=args.donor)
 
     # Save temp file for testing
-    if filename:  # Test - save wordlist
-        filepath = Path("store").joinpath(filename+"-TEST").as_posix()
-        wl.output('tsv', filename=filepath, ignore='all', prettify=False)
+    # if filename:  # Test - save wordlist
+    #     filepath = Path("store").joinpath(filename+"-TEST").as_posix()
+    #    wl.output('tsv', filename=filepath, ignore='all', prettify=False)
 
     bb = construct_alignments(wl,
                               model=args.model,

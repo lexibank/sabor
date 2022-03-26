@@ -281,7 +281,7 @@ def register(parser):
         "--foreign",
         type=str,
         default=None,
-        help="Filename of flat wordlist for analysis from foreign-tables directory."
+        help="Filename of flat wordlist for analysis from foreign directory."
     )
     
     # Parser arguments for reporting.

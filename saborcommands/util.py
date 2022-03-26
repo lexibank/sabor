@@ -20,6 +20,7 @@ from lexibank_sabor import Dataset as sabor
 
 
 # Positional scorers
+##
 def adjust_dist_for_length(dist, alm, max_len=0, min_len=0):
     # If local mode reduces the alignment size too much,
     # the distance measure may not be reliable.
@@ -179,7 +180,8 @@ def calculate_alm_wts(left, right, ln, wt_fn=2):
 
 
 ##################################################
-# Data modules
+# Data functions
+##
 def get_language_all(wordlist, donors=["Spanish", "Portuguese"]):
     languages = wordlist.cols
     # Don't include donor languages.
@@ -226,7 +228,8 @@ def compose_wl_from_cldf():
         columns=["language_id",
                  "language_family",
                  "concept_name",  # From concept relation, name field.
-                 "concept_concepticon_id",  # From concept relation, concepticon_id field.
+                 # "concept_concepticon_id",  # From concept relation, concepticon_id field.
+                 "concept_id",  # From concept relation, id field.
                  "value",
                  "form",
                  "segments",
@@ -283,7 +286,7 @@ def compose_wl():
 
 def get_wordlist(filename=None):
     if filename:
-        filepath = Path("foreign-tables").joinpath(filename+".tsv").as_posix()
+        filepath = Path("foreign").joinpath(filename+".tsv").as_posix()
         print(f"Foreign wordlist - file path: {filepath}", file=sys.stderr)
         wl = Wordlist(filepath)
         # print(f"Cols {wl.columns}", file=sys.stderr)
@@ -320,7 +323,7 @@ class PredStatus(Enum):
     ALL = 0
 
 
-#  Modules adapted from pybor.
+#  Functions adapted from pybor for assessment.
 def assess_pred(pred, gold, anyPred=None):
     """
     Test 0, 1 prediction versus 0, 1 truth
@@ -427,6 +430,8 @@ def report_results(results, folder, filename):
             wrt.writerow(row)
 
 
+# Functions for reporting help.
+#
 def report_metrics_table(metrics, byfam=False, threshold=None):
     print()
     print(f"Threshold: {threshold:0.3f}.")

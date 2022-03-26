@@ -1,0 +1,123 @@
+tmp file: ['ID', 'DOCULECT', 'LANGUAGE_FAMILY', 'CONCEPT', 'CONCEPT_ID', 'VALUE', 'FORM', 'TOKENS', 'BORROWED', 'BORROWED_SCORE', 'DONOR_LANGUAGE', 'DONOR_VALUE']
+13783 ['ImbaburaQuechua', 'Mapudungun', 'Otomi', 'Portuguese', 'Qeqchi', 'Spanish', 'Wichi', 'Yaqui', 'ZinacantanTzotzil'] 1308 9
+Wordlist has 9 languages, and 1308 concepts in 13783 words.
+Minimum mutual coverage is at 200 concept pairs.
+Average coverage is at 0.83
+Ave dist = 0.66
+
+Pairwise alignment with threshold 0.300.
+Family       Language             Concepts    Spanish    Portuguese    Combined    SpanishP    PortugueseP    CombinedP
+-----------  -----------------  ----------  ---------  ------------  ----------  ----------  -------------  -----------
+Araucanian   Mapudungun               1040     102.08         66.83      113.33        0.10           0.06         0.11
+Matacoan     Wichi                    1128      85.00         50.50       89.00        0.08           0.04         0.08
+Mayan        Qeqchi                   1211      89.00         59.92       95.58        0.07           0.05         0.08
+Mayan        ZinacantanTzotzil         955      87.67         62.17       94.00        0.09           0.07         0.10
+Otomanguean  Otomi                    1252      95.94         78.06      114.28        0.08           0.06         0.09
+Quechuan     ImbaburaQuechua          1155     238.00        147.00      255.00        0.21           0.13         0.22
+Uto-Aztecan  Yaqui                    1242     178.17        117.33      199.67        0.14           0.09         0.16
+Total                                 7983     875.86        581.81      960.87        0.11           0.07         0.12
+
+Threshold: 0.300.
+Language             tp    tn    fp    fn    precision    recall    F1 score    accuracy
+-----------------  ----  ----  ----  ----  -----------  --------  ----------  ----------
+ImbaburaQuechua     221   834    25    76        0.898     0.744       0.814       0.913
+Mapudungun          126  1040    13    63        0.906     0.667       0.768       0.939
+Otomi               141  2008    36    56        0.797     0.716       0.754       0.959
+Qeqchi              101  1604    10    58        0.910     0.635       0.748       0.962
+Wichi                85  1063     5    66        0.944     0.563       0.705       0.942
+Yaqui               207  1103    20   103        0.912     0.668       0.771       0.914
+ZinacantanTzotzil   103  1093     9    61        0.920     0.628       0.746       0.945
+Total               984  8745   118   483        0.893     0.671       0.766       0.942
+Total: borrowed 1467, inherited 8863, total 10330
+
+
+Threshold: 0.300.
+Language Family      tp    tn    fp    fn    precision    recall    F1 score    accuracy
+-----------------  ----  ----  ----  ----  -----------  --------  ----------  ----------
+Araucanian          126  1040    13    63        0.906     0.667       0.768       0.939
+Matacoan             85  1063     5    66        0.944     0.563       0.705       0.942
+Mayan               204  2697    19   119        0.915     0.632       0.747       0.955
+Otomanguean         141  2008    36    56        0.797     0.716       0.754       0.959
+Quechuan            221   834    25    76        0.898     0.744       0.814       0.913
+Uto-Aztecan         207  1103    20   103        0.912     0.668       0.771       0.914
+Total               984  8745   118   483        0.893     0.671       0.766       0.942
+Total: borrowed 1467, inherited 8863, total 10330
+
+
+Pairwise alignment with threshold 0.400.
+Family       Language             Concepts    Spanish    Portuguese    Combined    SpanishP    PortugueseP    CombinedP
+-----------  -----------------  ----------  ---------  ------------  ----------  ----------  -------------  -----------
+Araucanian   Mapudungun               1040     128.58        102.78      156.12        0.12           0.10         0.15
+Matacoan     Wichi                    1128     118.00         89.50      134.00        0.10           0.08         0.12
+Mayan        Qeqchi                   1211     117.45         90.73      131.48        0.10           0.07         0.11
+Mayan        ZinacantanTzotzil         955     107.00         87.33      124.25        0.11           0.09         0.13
+Otomanguean  Otomi                    1252     123.79        112.74      155.14        0.10           0.09         0.12
+Quechuan     ImbaburaQuechua          1155     282.00        216.00      320.00        0.24           0.19         0.28
+Uto-Aztecan  Yaqui                    1242     241.25        184.83      272.25        0.19           0.15         0.22
+Total                                 7983    1118.08        883.92     1293.24        0.14           0.11         0.16
+
+Threshold: 0.400.
+Language             tp    tn    fp    fn    precision    recall    F1 score    accuracy
+-----------------  ----  ----  ----  ----  -----------  --------  ----------  ----------
+ImbaburaQuechua     246   797    62    51        0.799     0.828       0.813       0.902
+Mapudungun          147  1007    46    42        0.762     0.778       0.770       0.929
+Otomi               154  1936   108    43        0.588     0.782       0.671       0.933
+Qeqchi              115  1569    45    44        0.719     0.723       0.721       0.950
+Wichi               110  1038    30    41        0.786     0.728       0.756       0.942
+Yaqui               253  1062    61    57        0.806     0.816       0.811       0.918
+ZinacantanTzotzil   121  1070    32    43        0.791     0.738       0.763       0.941
+Total              1146  8479   384   321        0.749     0.781       0.765       0.932
+Total: borrowed 1467, inherited 8863, total 10330
+
+
+Threshold: 0.400.
+Language Family      tp    tn    fp    fn    precision    recall    F1 score    accuracy
+-----------------  ----  ----  ----  ----  -----------  --------  ----------  ----------
+Araucanian          147  1007    46    42        0.762     0.778       0.770       0.929
+Matacoan            110  1038    30    41        0.786     0.728       0.756       0.942
+Mayan               236  2639    77    87        0.754     0.731       0.742       0.946
+Otomanguean         154  1936   108    43        0.588     0.782       0.671       0.933
+Quechuan            246   797    62    51        0.799     0.828       0.813       0.902
+Uto-Aztecan         253  1062    61    57        0.806     0.816       0.811       0.918
+Total              1146  8479   384   321        0.749     0.781       0.765       0.932
+Total: borrowed 1467, inherited 8863, total 10330
+
+
+Pairwise alignment with threshold 0.500.
+Family       Language             Concepts    Spanish    Portuguese    Combined    SpanishP    PortugueseP    CombinedP
+-----------  -----------------  ----------  ---------  ------------  ----------  ----------  -------------  -----------
+Araucanian   Mapudungun               1040     195.82        193.57      261.90        0.19           0.19         0.25
+Matacoan     Wichi                    1128     189.25        164.65      238.40        0.17           0.15         0.21
+Mayan        Qeqchi                   1211     162.18        142.82      201.72        0.13           0.12         0.17
+Mayan        ZinacantanTzotzil         955     154.33        146.33      197.67        0.16           0.15         0.21
+Otomanguean  Otomi                    1252     194.42        207.83      272.39        0.16           0.17         0.22
+Quechuan     ImbaburaQuechua          1155     389.00        332.00      464.00        0.34           0.29         0.40
+Uto-Aztecan  Yaqui                    1242     329.00        301.67      404.67        0.26           0.24         0.33
+Total                                 7983    1614.00       1488.87     2040.74        0.20           0.19         0.26
+
+Threshold: 0.500.
+Language             tp    tn    fp    fn    precision    recall    F1 score    accuracy
+-----------------  ----  ----  ----  ----  -----------  --------  ----------  ----------
+ImbaburaQuechua     262   696   163    35        0.616     0.882       0.726       0.829
+Mapudungun          162   917   136    27        0.544     0.857       0.665       0.869
+Otomi               159  1754   290    38        0.354     0.807       0.492       0.854
+Qeqchi              122  1482   132    37        0.480     0.767       0.591       0.905
+Wichi               122   952   116    29        0.513     0.808       0.627       0.881
+Yaqui               275   955   168    35        0.621     0.887       0.730       0.858
+ZinacantanTzotzil   130   987   115    34        0.531     0.793       0.636       0.882
+Total              1232  7743  1120   235        0.524     0.840       0.645       0.869
+Total: borrowed 1467, inherited 8863, total 10330
+
+
+Threshold: 0.500.
+Language Family      tp    tn    fp    fn    precision    recall    F1 score    accuracy
+-----------------  ----  ----  ----  ----  -----------  --------  ----------  ----------
+Araucanian          162   917   136    27        0.544     0.857       0.665       0.869
+Matacoan            122   952   116    29        0.513     0.808       0.627       0.881
+Mayan               252  2469   247    71        0.505     0.780       0.613       0.895
+Otomanguean         159  1754   290    38        0.354     0.807       0.492       0.854
+Quechuan            262   696   163    35        0.616     0.882       0.726       0.829
+Uto-Aztecan         275   955   168    35        0.621     0.887       0.730       0.858
+Total              1232  7743  1120   235        0.524     0.840       0.645       0.869
+Total: borrowed 1467, inherited 8863, total 10330
+

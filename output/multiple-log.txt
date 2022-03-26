@@ -1,0 +1,146 @@
+tmp file: ['ID', 'DOCULECT', 'LANGUAGE_FAMILY', 'CONCEPT', 'CONCEPT_ID', 'VALUE', 'FORM', 'TOKENS', 'BORROWED', 'BORROWED_SCORE', 'DONOR_LANGUAGE', 'DONOR_VALUE']
+13783 ['ImbaburaQuechua', 'Mapudungun', 'Otomi', 'Portuguese', 'Qeqchi', 'Spanish', 'Wichi', 'Yaqui', 'ZinacantanTzotzil'] 1308 9
+Wordlist has 9 languages, and 1308 concepts in 13783 words.
+Minimum mutual coverage is at 200 concept pairs.
+Average coverage is at 0.83
+Processing for threshold 0.500
+Processing for threshold 0.600
+Processing for threshold 0.700
+Analysis file details:
+# Created using the LexStat class of LingPy-2.6.8
+# Parameters: 3:2_1.00_2000_0.70_global-2-0.50:local-1-0.50_0.30__T_shuffle_False:upgma:-2_0.7_0.00_-5.00
+# Cluster: lexstat_upgma_0.50# Cluster: lexstat_upgma_0.60# Cluster: lexstat_upgma_0.70
+
+13783 words in store/cluster-analysis.tsv.
+Number of words: 13783, number of distinct local cognates: 12151
+Number of words for >1 local cognates: 3117, number of distinct >1 local cognates: 1485
+Number of words: 13783, number distinct global cognates: 11311
+Number of words for >1 family global cognates: 1476, number of distinct >1 family global cognates: 457
+
+Number of Concepts for inferred cross-family cognate ids at threshold: 0.500.
+Language Concepts      ImbaburaQuechua    Mapudungun    Otomi    Portuguese    Qeqchi    Spanish    Wichi    Yaqui    ZinacantanTzotzil
+-------------------  -----------------  ------------  -------  ------------  --------  ---------  -------  -------  -------------------
+ImbaburaQuechua                    211            36       35           112        21        206       17       53                   39
+Mapudungun                          36            94       13            43        16         90       15       34                   23
+Otomi                               35            13      103            58        14         97       12       33                   26
+Portuguese                         112            43       58           250        28        228       30      101                   52
+Qeqchi                              21            16       14            28        54         52        9       28                   16
+Spanish                            206            90       97           228        52        435       54      160                   84
+Wichi                               17            15       12            30         9         54       54       29                   17
+Yaqui                               53            34       33           101        28        160       29      164                   33
+ZinacantanTzotzil                   39            23       26            52        16         84       17       33                   86
+
+Number of Words for inferred cross-family cognate ids at threshold: 0.500.
+Language Words       ImbaburaQuechua    Mapudungun    Otomi    Portuguese    Qeqchi    Spanish    Wichi    Yaqui    ZinacantanTzotzil
+-----------------  -----------------  ------------  -------  ------------  --------  ---------  -------  -------  -------------------
+ImbaburaQuechua                  212            36       35           115        21        213       17       53                   39
+Mapudungun                        36            94       14            44        16         92       15       34                   23
+Otomi                             35            13      106            60        14         99       12       33                   26
+Portuguese                       112            43       58           257        28        237       30      101                   52
+Qeqchi                            21            16       14            29        54         55        9       28                   16
+Spanish                          207            90      100           234        52        449       54      160                   84
+Wichi                             17            15       13            31         9         57       54       29                   17
+Yaqui                             53            34       33           102        28        162       29      164                   33
+ZinacantanTzotzil                 39            23       28            52        16         86       17       33                   86
+
+Threshold: 0.500.
+Language             tp    tn    fp    fn    precision    recall    F1 score    accuracy
+-----------------  ----  ----  ----  ----  -----------  --------  ----------  ----------
+ImbaburaQuechua     195   842    17   102        0.920     0.657       0.766       0.897
+Mapudungun           91  1050     3    98        0.968     0.481       0.643       0.919
+Otomi               101  2039     5    96        0.953     0.513       0.667       0.955
+Qeqchi               54  1614     0   105        1.000     0.340       0.507       0.941
+Wichi                51  1065     3   100        0.944     0.338       0.498       0.916
+Yaqui               159  1118     5   151        0.970     0.513       0.671       0.891
+ZinacantanTzotzil    83  1099     3    81        0.965     0.506       0.664       0.934
+Total               734  8827    36   733        0.953     0.500       0.656       0.926
+Total: borrowed 1467, inherited 8863, total 10330
+
+Number of words: 13783, number of distinct local cognates: 11752
+Number of words for >1 local cognates: 3837, number of distinct >1 local cognates: 1806
+Number of words: 13783, number distinct global cognates: 10514
+Number of words for >1 family global cognates: 2058, number of distinct >1 family global cognates: 584
+
+Number of Concepts for inferred cross-family cognate ids at threshold: 0.600.
+Language Concepts      ImbaburaQuechua    Mapudungun    Otomi    Portuguese    Qeqchi    Spanish    Wichi    Yaqui    ZinacantanTzotzil
+-------------------  -----------------  ------------  -------  ------------  --------  ---------  -------  -------  -------------------
+ImbaburaQuechua                    260            58       55           170        50        253       39       82                   56
+Mapudungun                          58           129       22            77        36        124       32       57                   38
+Otomi                               55            22      142            98        41        132       27       65                   39
+Portuguese                         170            77       98           386        77        348       62      163                   77
+Qeqchi                              50            36       41            77       109        102       31       59                   37
+Spanish                            253           124      132           348       102        546       95      232                  103
+Wichi                               39            32       27            62        31         95       96       60                   35
+Yaqui                               82            57       65           163        59        232       60      242                   57
+ZinacantanTzotzil                   56            38       39            77        37        103       35       57                  105
+
+Number of Words for inferred cross-family cognate ids at threshold: 0.600.
+Language Words       ImbaburaQuechua    Mapudungun    Otomi    Portuguese    Qeqchi    Spanish    Wichi    Yaqui    ZinacantanTzotzil
+-----------------  -----------------  ------------  -------  ------------  --------  ---------  -------  -------  -------------------
+ImbaburaQuechua                  261            58       56           173        50        263       39       83                   56
+Mapudungun                        58           131       23            78        36        127       32       58                   39
+Otomi                             55            22      148           100        41        136       27       65                   40
+Portuguese                       171            78      100           398        77        362       62      164                   77
+Qeqchi                            50            36       43            80       109        109       31       60                   38
+Spanish                          254           126      138           359       102        566       95      233                  104
+Wichi                             39            32       30            63        31        100       96       60                   35
+Yaqui                             82            57       70           168        59        238       60      243                   58
+ZinacantanTzotzil                 56            38       42            78        37        106       35       57                  106
+
+Threshold: 0.600.
+Language             tp    tn    fp    fn    precision    recall    F1 score    accuracy
+-----------------  ----  ----  ----  ----  -----------  --------  ----------  ----------
+ImbaburaQuechua     231   829    30    66        0.885     0.778       0.828       0.917
+Mapudungun          122  1044     9    67        0.931     0.646       0.762       0.939
+Otomi               133  2029    15    64        0.899     0.675       0.771       0.965
+Qeqchi               97  1602    12    62        0.890     0.610       0.724       0.958
+Wichi                88  1060     8    63        0.917     0.583       0.713       0.942
+Yaqui               227  1107    16    83        0.934     0.732       0.821       0.931
+ZinacantanTzotzil   100  1096     6    64        0.943     0.610       0.741       0.945
+Total               998  8767    96   469        0.912     0.680       0.779       0.945
+Total: borrowed 1467, inherited 8863, total 10330
+
+Number of words: 13783, number of distinct local cognates: 11275
+Number of words for >1 local cognates: 4627, number of distinct >1 local cognates: 2119
+Number of words: 13783, number distinct global cognates: 9328
+Number of words for >1 family global cognates: 2833, number of distinct >1 family global cognates: 770
+
+Number of Concepts for inferred cross-family cognate ids at threshold: 0.700.
+Language Concepts      ImbaburaQuechua    Mapudungun    Otomi    Portuguese    Qeqchi    Spanish    Wichi    Yaqui    ZinacantanTzotzil
+-------------------  -----------------  ------------  -------  ------------  --------  ---------  -------  -------  -------------------
+ImbaburaQuechua                    322            74       75           241        70        306       59      106                   75
+Mapudungun                          74           169       33           124        53        161       51       74                   48
+Otomi                               75            33      194           155        51        171       39       76                   50
+Portuguese                         241           124      155           582       117        504      107      230                  118
+Qeqchi                              70            53       51           117       148        134       47       81                   56
+Spanish                            306           161      171           504       134        692      140      288                  145
+Wichi                               59            51       39           107        47        140      143       85                   51
+Yaqui                              106            74       76           230        81        288       85      302                   75
+ZinacantanTzotzil                   75            48       50           118        56        145       51       75                  155
+
+Number of Words for inferred cross-family cognate ids at threshold: 0.700.
+Language Words       ImbaburaQuechua    Mapudungun    Otomi    Portuguese    Qeqchi    Spanish    Wichi    Yaqui    ZinacantanTzotzil
+-----------------  -----------------  ------------  -------  ------------  --------  ---------  -------  -------  -------------------
+ImbaburaQuechua                  323            74       81           256        71        331       59      109                   76
+Mapudungun                        74           174       36           131        53        171       51       76                   50
+Otomi                             75            34      221           160        51        180       39       76                   52
+Portuguese                       242           127      176           615       117        545      107      238                  120
+Qeqchi                            70            54       58           123       149        148       47       83                   58
+Spanish                          307           166      188           534       135        739      140      295                  148
+Wichi                             59            52       44           113        47        150      143       87                   51
+Yaqui                            106            76       85           245        81        308       85      311                   77
+ZinacantanTzotzil                 75            50       56           121        56        153       51       75                  158
+
+Threshold: 0.700.
+Language             tp    tn    fp    fn    precision    recall    F1 score    accuracy
+-----------------  ----  ----  ----  ----  -----------  --------  ----------  ----------
+ImbaburaQuechua     251   787    72    46        0.777     0.845       0.810       0.898
+Mapudungun          144  1023    30    45        0.828     0.762       0.793       0.940
+Otomi               148  1971    73    49        0.670     0.751       0.708       0.946
+Qeqchi              111  1576    38    48        0.745     0.698       0.721       0.951
+Wichi               115  1040    28    36        0.804     0.762       0.782       0.947
+Yaqui               259  1071    52    51        0.833     0.835       0.834       0.928
+ZinacantanTzotzil   123  1067    35    41        0.778     0.750       0.764       0.940
+Total              1151  8535   328   316        0.778     0.785       0.781       0.938
+Total: borrowed 1467, inherited 8863, total 10330
+

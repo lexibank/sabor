@@ -16,6 +16,7 @@ def get_table(store='store', infile=None):
     if not infile.endswith('.tsv'):
         infile += '.tsv'
     filepath = Path(store).joinpath(infile).as_posix()
+    # Uses Pandas for simple processing step.
     table = pd.read_csv(filepath, sep='\t')
     parameters = table.iloc[-3:]['ID'].values
     # Check to see if #Created on first line and so valid parameters list.
@@ -77,7 +78,11 @@ def get_cogids_table_for(table, index=0, donors=None, any_donor_language=False):
     language_ = list(table.DOCULECT.values)
 
     concepts_ = list(table.CONCEPT.values)
-    concept_names_ = list(table.CONCEPT_NAME.values)
+    # Use concept in lower case if concept_name not defined.
+    if 'CONCEPT_NAME' in table.columns:
+        concept_names_ = [val.lower() for val in table.CONCEPT_NAME.values]
+    else:
+        concept_names_ = [val.lower() for val in table.CONCEPT.values]
 
     tokens_ = list(table.TOKENS.values)
     local_, global_, global_gt1_ = get_cogids_for(table, index)
