@@ -1,0 +1,1854 @@
+Threshold: 0.400.
+Family       Language           Concept                             Status    Tokens
+-----------  -----------------  ----------------------------------  --------  ---------------------------
+Araucanian   Mapudungun         adobe                               TP        f a z o f e
+                                after                               TP        θ e p w e
+                                axle                                FN        e j e
+                                bake                                FN        ɻ o n o t u n
+                                ball                                TP        p e l o t a
+                                basket                              TP        k a n e s t a
+                                because                             TP        p o ɻ k e
+                                bee                                 FN        k o l m e n i a
+                                below or under                      FN        a b a j o
+                                blame                               TP        k u l p a
+                                blanket                             TP        f ɻ e s a θ a
+                                boar (male pig)                     TP        f o ɻ a k u
+                                board                               TP        ʈʂ a f l a
+                                boat                                TP        f o t e
+                                book                                TP        l i f ɻ u
+                                boot                                TP        f o t a
+                                boundary                            TP        l i m i t e
+                                bowl                                TP        t a s o n
+                                brain                               FP        m ɨ ʎ o
+                                brave                               FN        w a p o
+                                bread                               TP        p a n
+                                                                    FP        p a t a y
+                                breakfast                           TP        s a y u n o
+                                breast                              FP        m o y o
+                                bull                                TP        t o ɻ o
+                                button                              TP        f o t o n
+                                candle                              TP        f e l a
+                                carpenter                           TP        k a l p i n t e ɻ u
+                                cart                                TP        k a ɻ e t a
+                                catch                               FN        p i ʎ a w
+                                chair                               TP        s i ʎ a
+                                charcoal                            TP        k a ɻ f o n
+                                cheap                               FN        p i tʃ i + f a l i n
+                                                                    TP        f a ɻ a t u
+                                cheese                              TP        k e s u
+                                chin                                FP        k e ʈʂ e
+                                clean                               FP        l i f
+                                clock                               TP        ɻ e l o
+                                cloth                               TP        p a ɲ u
+                                club                                TP        k a ɻ o t i
+                                coat                                TP        a b ɻ i ɰ o
+                                coin                                FN        p e s o
+                                collar                              TP        k w e ʎ u
+                                comb                                TP        p e i n e
+                                convict                             FN        k u l p a t u n
+                                cow                                 TP        w a k a
+                                cross                               TP        k ɨ ɻ u s
+                                cup                                 TP        t a s a
+                                                                    TP        tʃ a ɻ u
+                                curse                               TP        m a l i s i a n
+                                dare                                FN        a n i m a w ɨ n
+                                debt                                FN        z e f e
+                                deceit                              FP        ŋ ɨ n e n k a n
+                                deny                                TP        n e ɣ a n
+                                dish                                TP        f w e n t e
+                                ditch                               TP        s a n k a
+                                donkey                              TP        f u ɻ i k u
+                                door                                TP        p w e ɻ t a
+                                dough                               TP        m a s a
+                                draw milk                           FN        e n t u l i tʃ i n
+                                duck                                TP        p a t u
+                                earn                                TP        k a n a n
+                                end (of time)                       FP        a f p u n
+                                expensive                           FN        a l ɨ + f a l i n
+                                family                              TP        f a m i l i a
+                                farmer                              FN        p a i s a n o
+                                fence                               FN        k o ɻ a l
+                                field                               FP        tʃ a k ɨ ɻ a
+                                                                    TP        k a m p o
+                                fine (penalty)                      TP        m u l t a
+                                flea                                FP        p i k e
+                                flour                               FP        ɻ ɨ ŋ o
+                                flower                              TP        f ɨ l o ɻ
+                                foal                                TP        p o ʈʂ i ʎ o
+                                forgive                             TP        p e ɻ θ o n a n
+                                fork                                TP        t e n e θ o ɻ
+                                furrow                              TP        s u ɻ k o
+                                garden                              TP        w e ɻ t a
+                                girl                                FP        m a l̪ e n̪
+                                glass                               TP        v i θ ɻ i o
+                                goat                                TP        k a p ɨ ɻ a
+                                goose                               TP        k a n s u
+                                granddaughter                       FP        tʃ u tʃ u
+                                                                    FP        tʃ e tʃ e
+                                grandmother                         TP        a w e l a
+                                grandson                            FP        tʃ e tʃ e
+                                grape                               TP        o f a z
+                                guilty                              TP        k u l p a f l e
+                                hammer                              TP        m a ɻ t i ʎ u
+                                hay                                 TP        p i n u
+                                headgear                            TP        tʃ u m p i ɻ u
+                                high                                FP        a l ɨ p ɨ ɻ a
+                                hip                                 FP        ʈʂ u ʈʂ e
+                                hoe                                 TP        a s a o n
+                                horse                               TP        k a w e ʎ
+                                hot                                 FP        k o f i
+                                hour                                TP        o ɻ a
+                                judge                               TP        k u e s
+                                jump                                FP        ɻ ɨ ŋ k ɨ n
+                                key                                 TP        ʎ a f e
+                                kid                                 FN        p i tʃ i + k a p ɨ ɻ a
+                                knead                               FN        s o f a l ɨ n
+                                                                    TP        m a s a n
+                                knife                               TP        k u tʃ i ʎ u
+                                knife (for eating)                  TP        k u tʃ i ʎ u
+                                                                    FP        k a ʈʂ ɨ w e
+                                ladder                              TP        k a l e ɻ a
+                                lagoon                              TP        l a w n a
+                                lake                                FP        l̪ a f k e n̪
+                                lamb                                FN        p i tʃ i + o f i ʃ a
+                                                                    TP        k o ɻ θ e ɻ u
+                                law                                 TP        l e y
+                                lock                                TP        k a n z a w
+                                lunch                               TP        a l m u e ɻ s o
+                                lung                                FP        p o n̪ o n
+                                male goat                           FN        k a p ɨ ɻ a
+                                                                    TP        tʃ i f u
+                                mare                                FN        z o m o + k a w e ʎ u
+                                                                    TP        y e w a
+                                match                               TP        f o f o ɻ o
+                                milk                                TP        l i tʃ i
+                                mill                                TP        m o l i n u
+                                mirror                              TP        e s p e k o
+                                money                               FN        p l a t a
+                                move                                FN        m o θ a n
+                                nail (tool)                         TP        k ɨ l a f o
+                                needle (for sewing)                 TP        a k u tʃ a
+                                nest                                FP        z a ɲ e
+                                no                                  TP        n o
+                                oar                                 TP        ɻ e m o
+                                oat                                 TP        a f e n a
+                                often                               FP        m ɨ tʃ a i k e
+                                ointment                            FN        p u m a
+                                old                                 FP        f ɨ tʃ a
+                                old man                             FP        f ɨ tʃ a
+                                one                                 FP        k i ɲ e
+                                oven                                TP        ɻ o n o
+                                owe                                 FN        z e f e n
+                                ox                                  FN        m a n ʃ u n
+                                paint (pigments)                    TP        p i n t u ɻ a
+                                painting                            TP        p i n t a n
+                                pan                                 TP        k a s e ɻ o l a
+                                paper                               TP        p a p e l
+                                parrot                              FP        tʃ o ɻ o y
+                                part                                TP        p e θ a s o
+                                pasture                             TP        p o ʈʂ e ɻ u
+                                penis                               FP        p ɨ n ɨ n
+                                physician                           TP        θ o k t o ɻ
+                                pig                                 TP        s a n tʃ u
+                                pin                                 TP        a l f i l e ɻ
+                                pine                                TP        p i n u
+                                pipe                                FP        k i ʈʂ a
+                                pitchfork                           TP        w i l k i t a
+                                pocket                              FN        f o n s i k u
+                                poison                              FP        f ɨ ɲ a p u w e
+                                poor                                TP        p o f ɻ e
+                                port                                FN        f o t e t u w e
+                                post                                TP        p o s t e
+                                potato                              FP        p o ɲ ɨ
+                                pound                               FN        p u ɲ e t e
+                                prison                              TP        k a ɻ s e l
+                                prisoner                            TP        k a w t i f a ŋ e y
+                                                                    TP        p ɨ ɻ e z u
+                                pumpkin                             FP        s a p a ʎ u
+                                punishment                          TP        k a s t i k u
+                                rafter                              TP        v i ɰ a
+                                rag                                 TP        p a ɲ u e l u
+                                rake                                FN        ɻ a ʈʂ i ʎ u
+                                ram                                 TP        k a n i ɻ u
+                                rattle                              TP        k a z k a w i ʎ a
+                                raw                                 FP        k a ɻ ɨ
+                                religion                            TP        ɻ e l i j i o n
+                                remains                             TP        s o f ɻ a n
+                                rest                                FN        k a n s a t u n
+                                rib                                 FP        k a z i
+                                roast or fry                        FN        f ɨ ɻ i n
+                                room                                TP        p i e s a
+                                saucer                              TP        p ɨ l a t i ʎ u
+                                saw                                 TP        s e ɻ u tʃ u
+                                school                              TP        e s k u e l a
+                                                                    TP        k o l e k i o
+                                see                                 FP        p e n
+                                seed                                TP        s e m i ʎ a
+                                sell                                FN        f e n z e n
+                                shears                              TP        t i k e ɻ a
+                                sheep                               TP        u f i s a
+                                                                    TP        o f i ʃ a
+                                shirt                               TP        k a m i s a
+                                shoe                                TP        z a p a t u
+                                shovel                              TP        p a l a
+                                show                                FP        p e ŋ e l ɨ n
+                                shut                                TP        s e ɻ a n
+                                sickle or scythe                    TP        w a z a ɲ a
+                                                                    FP        i tʃ o n a
+                                silk                                TP        s e z a
+                                silver                              TP        p u l a t a
+                                sing                                FP        ɨ l̪ k a n t u n
+                                skirt                               FN        p o ʎ e ɻ a
+                                smooth                              FN        p a ɲ u ʃ
+                                soap                                TP        k a f o n
+                                soul                                FP        a m
+                                sound or noise                      FP        z u ŋ u n
+                                soup                                FP        k o ɻ ɨ
+                                sow (female pig)                    FN        z o m o + s a n tʃ u
+                                spoon                               TP        k u tʃ a ɻ a
+                                stable                              FN        w a l p o n
+                                stallion                            FN        p o t ɨ ɻ o
+                                stocking                            TP        m e z i a
+                                stone or rock                       FP        k u ɻ a
+                                sugar                               TP        a s u k u ɻ a
+                                surrender                           FN        e n ʈʂ e k a w ɨ n
+                                swelling                            TP        i ɲ tʃ a l e n
+                                table                               TP        m e s a
+                                tail                                FP        k ɨ l e n
+                                tent                                TP        t o l t o
+                                thatch                              FP        k ɨ n a
+                                thresh                              TP        ʈʂ i ʎ a ɻ
+                                tired                               TP        k a n s a l e n
+                                tongs                               TP        t e n a s a
+                                torch or lamp                       FP        k ɨ z e
+                                towel                               TP        t u w a ʎ a
+                                town                                FN        p w e b l o
+                                tree                                FN        m o n t e
+                                trough                              TP        f a t i a
+                                trousers                            TP        p a n t a l o n
+                                wages                               TP        s w e l θ o
+                                walk                                FN        m a ɻ tʃ a y
+                                week                                TP        s e m a n a
+                                wheel                               TP        ɻ w e θ a
+                                white                               FN        f ɨ l a ŋ
+                                                                    TP        p l a n
+                                window                              TP        f e n t a n a
+                                witness                             TP        t e s t i k u
+                                world                               FP        m a p u
+                                yoke                                TP        y u k u
+Matacoan     Wichi              adobe                               FN        a l u l i s
+                                age                                 FN        a n i o
+                                altar                               TP        a l t a l
+                                anchor                              FN        w a l k u + k a t m e k
+                                arrow                               FP        l u t e k
+                                bald                                FP        p o l e ʔ
+                                ball                                FP        p e l u t a x
+                                basket                              TP        k a n a s t u
+                                bean                                FP        p u l u t u
+                                beer                                TP        s e l w e s a
+                                bill                                FN        w u l e t u
+                                blacksmith                          TP        h e r r e r o
+                                blanket                             FN        k u lˠ ts a
+                                blue                                TP        a s u l
+                                boat                                FN        w a l k u + lˠ o s
+                                book                                TP        l i w u l u
+                                boot                                FN        w u t a s
+                                bread                               TP        p a n
+                                brick                               FN        a l u l i s
+                                bridge                              TP        pʷ e n t u
+                                broom                               TP        e s k u w a
+                                brush                               TP        s e p i j a
+                                bull                                FN        t u l u + a s n a k
+                                butter                              TP        m a n t e k a
+                                button                              FN        w u t u m
+                                calf                                TP        t e i n e l u
+                                candle                              TP        w e l a
+                                canoe                               TP        ts a l a n a
+                                carpenter                           TP        k a l p i n t e l u
+                                cart                                TP        k a l e t a x
+                                cassava                             TP        m a n j u k u
+                                chain                               TP        k a l e n i s
+                                chair                               TP        s i j a
+                                cheese                              TP        tʃ e s u
+                                coin                                TP        m u n e l u
+                                cough                               FP        t a kʰ o s i
+                                count                               TP        k u n t a
+                                country                             TP        p a i s
+                                court                               TP        t r i b u n a l e s
+                                cow                                 FN        t u l u + a ts i n̥ a
+                                cross                               TP        k l u s
+                                dance                               FN        w a j l a
+                                deep                                FP        p i t u fʷ
+                                dish                                TP        fʷ e n t i
+                                donkey                              TP        a s n u
+                                dough                               FP        k a s u
+                                dress                               TP        w e s t i l u
+                                drive                               FN        m a n i x a
+                                drum                                FP        t o p e m
+                                eight                               TP        o tʃ o
+                                eleven                              TP        o n s i
+                                evening                             FP        h u n a ts i
+                                fat (organic substance)             FN        t u l u p e ʔ
+                                fifteen                             TP        k i n s i
+                                find                                FP        n e s a
+                                five                                TP        s i n k u
+                                flour                               TP        a l i n a
+                                food                                TP        k u m i l a
+                                four                                TP        kʷ a t l u
+                                friday                              TP        w e l n i s
+                                friend                              TP        a m i g o
+                                glass                               FN        w i l i u
+                                goat                                TP        k a i l a
+                                gold                                TP        o r o
+                                grape                               TP        u w a
+                                guard                               FN        w a l i a
+                                hair (body)                         FP        t o p e s e j
+                                hammer                              TP        m a l t i j a
+                                hide (conceal)                      FP        i s k a t
+                                hoe                                 TP        a s a l a t a x
+                                hour                                TP        o r a
+                                hundred                             TP        s i e n
+                                judge                               TP        xʷ e s
+                                kettle                              FN        p a w a
+                                key                                 FN        y a w e
+                                kid                                 FN        k a i l a + lˠ o s
+                                law                                 TP        l e j
+                                leaf                                FP        l a w u l e
+                                light (color)                       FP        k a l e lˠ o x
+                                mad                                 FP        a m e kʷ e
+                                male goat                           FN        k a i l a + a s n a k
+                                market                              FN        t i e n a
+                                mast                                FN        w a n d e r a w ʔ e t
+                                match                               TP        fʷ u fʷ u l u
+                                meal                                TP        k u m i l a
+                                measure                             FN        m e l i
+                                medicine                            FP        t o k a tʃ a
+                                merchant                            FN        t i e n a w u
+                                midday                              FN        l u s i
+                                milk                                TP        l e ts i
+                                monday                              TP        l u n i s
+                                mountain or hill                    FP        t a tʃ e n a x
+                                mow                                 FP        y i s e t
+                                mule                                TP        m u l a
+                                night                               FP        h u n a ts i
+                                nine                                TP        nʷ e w e
+                                oar                                 FN        ts a l a n a tʃ a
+                                oil (organic substance)             TP        a s e i t a x
+                                olive                               TP        a c e i t u n a
+                                one                                 TP        u n u
+                                orphan                              FN        w a x ts i
+                                ox                                  FN        w e j i s
+                                paddle                              FN        ts a l a n a tʃ a
+                                paint (pigments)                    TP        p i n t u l a
+                                painting                            TP        p i n t a
+                                pair                                FN        i h i + l u s
+                                pan                                 TP        k a s l u l a
+                                paper                               TP        p a p e l
+                                path                                TP        s e n d a
+                                pepper                              FP        p o n̥ o n t a x
+                                physician                           TP        l u k t u l
+                                plate                               TP        p l a t u
+                                poncho                              TP        p u n ts u
+                                poor                                FN        pʷ i l i
+                                port                                TP        p u e r t o
+                                post                                TP        p u s t i
+                                potato                              TP        p a p a
+                                priest                              FN        p a s t u l
+                                rag                                 FP        t o fʷ i
+                                remains                             TP        s u w u l a ʔ
+                                rice                                TP        a l u s
+                                rudder                              TP        t i m o n
+                                sand                                TP        a l e n a
+                                saturday                            TP        s a w u l u
+                                saucer                              TP        p l a t u l e s
+                                school                              TP        e s kʷ e l u
+                                sell                                TP        w e n d e
+                                seven                               TP        s i e t e
+                                shake                               FP        i s i tʃ o t
+                                shears                              TP        t i s h e l i s
+                                ship                                TP        w a l k u
+                                shiver                              FP        t a tʃ e t t i lˠ i
+                                shoemaker                           TP        s a p a t u w u
+                                shovel                              TP        p a l a
+                                sickle or scythe                    FN        m a ts e t a x
+                                silk                                TP        s e d a
+                                silver                              TP        p l a t a
+                                six                                 TP        s e i s
+                                skirt                               FN        w e s t i l u
+                                sling                               FP        t o fʷ u m t i
+                                                                    FN        t o k a w u m a
+                                soap                                TP        fʷ a w u n
+                                soldier                             TP        s u lˠ t a w u
+                                soup                                FP        s a tʰ i
+                                sow (female pig)                    FN        k u ts i + a ts i n̥ a
+                                spade                               FN        a s a l a
+                                spoon                               TP        k u ts a l a
+                                stocking                            TP        m e l j u s
+                                store                               TP        t i e n a
+                                sugar                               TP        a s u kʷ i
+                                sunday                              TP        l u m i n k u
+                                sweet potato                        TP        w a t a t a
+                                table                               TP        m e s a
+                                take                                FP        t a tʃ e m a
+                                tax                                 TP        i m p u e s t o
+                                teacher                             TP        m a j i s t a l u
+                                ten                                 TP        l j e s
+                                tent                                FP        tʃ e tʃ e lˠ e p
+                                thousand                            TP        m i l
+                                thread                              TP        i l u
+                                three                               TP        t a l e s
+                                thursday                            TP        fʷ e w i s
+                                tongs                               TP        t e n a s a s
+                                tooth                               FP        t o ts u t e
+                                towel                               FN        t o w a j u
+                                town                                FN        pʷ e w u l u
+                                tuesday                             TP        m a l t i s
+                                twelve                              TP        l u s i
+                                twenty                              TP        w e n t i
+                                twins                               TP        m e j i s u
+                                two                                 TP        l u s
+                                village                             TP        pʷ e w u l u
+                                wednesday                           TP        m i e l k u l i s
+                                week                                TP        s e m a n u
+                                weigh                               TP        p e s a
+                                wheat                               FN        t i l i w a
+                                window                              TP        w e n t a n a
+                                witness                             TP        t e s t i w u
+                                wrap                                FP        y i k o fʷ e l
+                                yes                                 FP        h a
+                                yoke                                FN        w e j i s + w ʔ u h i
+Mayan        Qeqchi             abstain from food                   FN        a j uː n i n k + ɾ i ʃ
+                                altar                               TP        a ɾ t a l
+                                arch                                TP        a ɾ k o
+                                army                                FN        s o l d aː
+                                ask (request)                       FP        p a tsʼ o kʰ
+                                autumn                              TP        o t o n j o
+                                awl                                 FN        f o ɾ m o n
+                                baby                                FP        ɓ a ɓ a j
+                                ball                                FP        ɓ o l o t z
+                                barley                              TP        s e ɓ aː d
+                                basket                              FN        a l m u l
+                                battle                              FN        p l eː tʰ
+                                bear                                TP        oː s
+                                bee                                 FN        s eː r
+                                beer                                TP        s e r w eː s
+                                bill                                TP        gʷ e n t a
+                                blunt                               TP        r oː m
+                                boat                                TP        ɓ a ɾ k o
+                                book                                TP        l iː ɓ r
+                                boot                                TP        ɓ oː tʰ
+                                bracelet                            TP        p u l s eː r
+                                brass instrument (horn or trumpet)  TP        t ɾ o m p eː tʰ
+                                brush                               TP        s e p iː j
+                                butter                              TP        m a n t eː kʰ
+                                button                              TP        ɓ o t o n ʃ
+                                camel                               TP        k a m eː j
+                                candle                              FN        k a n d eː l
+                                cart                                TP        k a ɾ e t o n
+                                cattle                              FN        w a k a ʃ
+                                certain                             FP        tʃʼ o l tʃʼ o
+                                chain                               TP        k a ɾ eː n
+                                chair                               FN        s iː j
+                                cheese                              TP        k eː s
+                                chicken                             FN        k a ʃ l a n
+                                child (descendant)                  FP        kʼ a x o l
+                                chisel                              FN        f o ɾ m o n
+                                circle                              FP        s i ɾ i l
+                                citrus fruit                        FN        l a m u n ʃ
+                                clan                                TP        t ɾ iː w
+                                clock                               TP        r e l o x
+                                coat                                FN        k o t o n
+                                cockroach                           FP        p aː tʃ a tʃ
+                                coconut                             TP        k oː kʰ
+                                cow                                 TP        ɓ aː kʰ
+                                crawl or creep                      FP        k ʔ a tʃ iː kʰ
+                                cross                               TP        k ɾ u s
+                                cup                                 FP        s e kʼ
+                                                                    TP        t aː s
+                                dawn                                FN        p ɾ iː m
+                                day before yesterday                FP        o ʃ e x e r
+                                donkey                              TP        ɓ u ɾ o
+                                door                                TP        p w e ɾ t a
+                                doorpost                            FN        tʃ a m p a
+                                drum                                TP        t a m ɓ o r
+                                dry                                 FP        tʃ a q i
+                                duck                                TP        p a t u ʃ
+                                dust                                FP        p o q s
+                                elephant                            TP        e l e f aː n tʰ
+                                embers                              FP        r uː ʃ a m
+                                ewe                                 FN        k a ɾ n eː r
+                                fat (organic substance)             FN        m a n t eː kʰ
+                                fence                               FN        k o ɾ a l
+                                fig                                 TP        i g o
+                                fine (penalty)                      TP        m uː l tʰ
+                                fish trap                           FN        t ɾ aː m pʰ
+                                fishing line                        TP        k o ɾ d e l
+                                flame                               FP        r a qʼ ʃ a m
+                                flour                               TP        a ɾ iː n
+                                friday                              TP        ɓ j e r s
+                                furrow                              TP        s uː ɾ kʰ
+                                glass                               FN        m eː tʰ
+                                goose                               TP        g a n s o
+                                headgear                            FP        p u n i tʰ
+                                hoe                                 TP        a s a ɾ o n
+                                horse                               TP        k a w aː j
+                                hour                                TP        oː r
+                                if                                  TP        s i ʔ
+                                insect                              TP        i n s e k t o
+                                jug                                 TP        ʃ aː r
+                                key                                 FN        l aː w
+                                ladder                              TP        e s k a l eː r
+                                lamb                                TP        o ɓ e x a
+                                                                    TP        ɓ o ɾ e g o
+                                                                    TP        k o ɾ d e ɾ o
+                                law                                 TP        l e j
+                                line                                TP        l i n e a
+                                livestock                           FP        k e t o m x
+                                lock                                TP        k a n t aː w
+                                long                                FP        l u x u tʃ
+                                mad                                 TP        l oː kʰ
+                                mainland                            TP        k o n t i n eː n tʰ
+                                male goat                           TP        tʃ i ɓ aː tʰ
+                                manner                              FP        n a ɾ a x
+                                match                               FN        p oː s
+                                milk                                TP        l eː tʃ
+                                monday                              TP        l uː n s
+                                money                               FN        t u m i n
+                                mule                                TP        m uː l
+                                mushroom                            FP        o k o ʃ
+                                nail (tool)                         TP        k l aː w ʃ
+                                naked                               FP        tʼ u s tʼ u
+                                neck                                FP        k u ʃ
+                                needle (for sewing)                 TP        a k uː ʃ
+                                netbag                              FP        s o qʼ
+                                nettle                              FN        p a n tʃ o l a
+                                nut                                 TP        n w e s
+                                oar                                 FN        p a l e t a
+                                                                    FN        k a n a l e t a
+                                oil (organic substance)             TP        a s eː tʰ
+                                olive                               TP        a s e t u n a
+                                oven                                TP        oː ɾ n
+                                ox                                  TP        ɓ oː j ʃ
+                                paddle                              FN        p a l e t a
+                                pan                                 FN        ʃ a ɾ t i n
+                                parrot                              TP        l oː r
+                                pasture                             TP        p o t ɾ eː r
+                                physician                           TP        l o k t o r
+                                pin                                 TP        a l p i l e r
+                                pipe                                TP        k a tʃ i m pʰ
+                                pitchfork                           FN        r a s t ɾ i j o
+                                                                    TP        o ɾ k eː tʰ
+                                pocket                              FP        ɓ oː ʃ
+                                potato                              TP        p aː p s
+                                priest                              FN        p a j r
+                                prisoner                            TP        p ɾ eː ʃ
+                                pus                                 FP        p o x
+                                queen                               FP        q a n a
+                                rake                                TP        r a s t ɾ i j o
+                                ram                                 TP        k a ɾ n eː r
+                                razor                               FN        n a w aː x
+                                relatives                           FN        k o m o n
+                                rice                                TP        a ɾ o s
+                                room                                TP        gʷ aː ɾ tʰ
+                                rough                               FP        p u ɾ u ʃ
+                                round                               FP        tʼ o ɾ tʼ o
+                                rug                                 TP        a l f o m b ɾ a
+                                sailcloth                           TP        ɓ e l a
+                                saturday                            FN        s aː w
+                                saucer                              TP        p l a t iː j
+                                sausage                             TP        s a l tʃ iː tʃ
+                                saw                                 TP        ʃ eː r
+                                season                              TP        e s t a s i o n
+                                servant                             FN        m oː s
+                                sew                                 FP        k uː ʃ i n kʰ
+                                shark                               TP        t i b u ɾ o n
+                                shears                              TP        t i ʃ eː r
+                                sheep                               FN        k a ɾ n eː r
+                                ship                                TP        ɓ a ɾ k o
+                                shirt                               TP        k a m iː s
+                                shoe                                FP        ʃ aː ɓ
+                                shovel                              TP        p aː l
+                                silk                                TP        s e d a
+                                silver                              TP        p l aː tʰ
+                                slave                               FN        m oː s
+                                sling                               TP        o n tʰ
+                                                                    FP        r a n tʼ i n
+                                soap                                TP        ʃ a ɓ o n
+                                soldier                             TP        s o l d aː
+                                some                                TP        a l g o
+                                                                    FP        x u n a qʰ
+                                soup                                TP        k aː l tʰ
+                                springtime                          TP        p ɾ i m a ɓ e ɾ a
+                                stallion                            FN        k a w aː j
+                                                                    FN        ɓ u ɾ o
+                                                                    TP        g ɾ a n j o n
+                                stove                               TP        e s t uː f
+                                strike or beat                      FP        p o tsʼ o kʰ
+                                suck                                FP        tsʼ u ɓ u kʰ
+                                sugar                               TP        a s uː k r
+                                sun                                 FP        s a qʼ e
+                                sunday                              TP        d o m iː n
+                                sword                               FN        m a k aː n
+                                table                               TP        m eː ʃ
+                                tax                                 FP        t o x
+                                temple                              FN        e ɾ m iː tʰ
+                                                                    FN        k a p iː j
+                                thresh                              FP        tʃʼ e p o kʰ
+                                thursday                            FN        xʷ eː s
+                                torch or lamp                       TP        l a m p r
+                                towel                               FN        t u w aː j
+                                tower                               TP        t o ɾ e
+                                trap (pitfall)                      FP        tʃʼ i m ɓ
+                                tree stump                          FP        t oː n
+                                tree trunk                          FP        t oː n
+                                                                    FP        r o qʰ
+                                tuesday                             TP        m a ɾ ts
+                                veil                                TP        ɓ e l o
+                                walking stick                       TP        ɓ a ʃ t o n
+                                wednesday                           TP        m i e ɾ c oː l s
+                                week                                TP        ʃ a m aː n
+                                weigh                               FP        ɓ i s o kʰ
+                                whale                               TP        ɓ a j eː n
+                                what                                FP        kʼ a ʔ
+                                wheat                               TP        t ɾ iː w
+                                wheel                               TP        r u e d a
+                                window                              TP        ɓ e n t aː n
+                                wine                                TP        ɓ iː n
+                                witness                             TP        t e s t iː g
+                                wolf                                TP        l o ɓ o
+                                wool                                TP        l aː n
+                                worm                                FP        kʼ i ʃ i ʃ
+                                yesterday                           FP        e w e r
+                                yoke                                FN        j u n t a
+                                you                                 FP        l aː ʔ e ʃ
+             ZinacantanTzotzil  all                                 FP        k o t o l
+                                altar                               TP        ʔ a l t a l
+                                always                              TP        s e m p ɾ e
+                                ancestors                           FN        ʔ a n t i v o
+                                animal                              TP        ʔ a n i m a l
+                                                                    FP        tʃʰ a n u l i l
+                                arch                                FN        ʔ a l k u ʔ
+                                baby                                FP        n e n e ʔ
+                                ball                                TP        pʰ e l o t a
+                                battle                              TP        pʰ l e t u
+                                bear                                TP        ʔ o s o v
+                                because                             TP        pʰ o ɾ k e
+                                beer                                FP        s e ɾ v e s a
+                                blanket                             FN        tʃʰ a m a ɾ o i l
+                                blood                               TP        s a n k ɾ e
+                                book                                TP        l i v ɾ o
+                                boot                                TP        ɓ o t i n
+                                bowl                                FN        pʰ u l a t u
+                                boy                                 TP        m u tʃʰ a tʃʰ o
+                                brass instrument (horn or trumpet)  TP        k o ɾ n e t a
+                                bread                               TP        pʰ a n
+                                breakfast                           FN        t ɾ a s t e
+                                brick                               TP        l a g ɾ i o
+                                bull                                TP        t o ɾ o
+                                                                    FN        v a k a sʰ
+                                button                              TP        ɓ o t o n
+                                candle                              FN        k a n t e l a
+                                carpenter                           TP        k a l p i n t e ɾ o
+                                cat                                 TP        k a t u ʔ
+                                chain                               TP        k a ɾ i n a
+                                chair                               TP        ʃ i l a
+                                cheese                              TP        k e ʃ u
+                                chicken                             FN        k a ʃ l a n
+                                circle                              FN        s e n t ɾ o
+                                clock                               TP        ɾ e l o h o
+                                coconut                             TP        k o k o
+                                cookhouse                           TP        k u s i n a
+                                count                               FP        pʰ a s + kʷ e n t a
+                                court                               FN        k a v i l t o
+                                cow                                 TP        v a c a
+                                                                    FP        m e ʔ + ɓ a k a
+                                                                    TP        v a c a sʰ
+                                crocodile                           TP        l a g a ɾ t o
+                                cross                               TP        k ɾ u s
+                                cup                                 TP        t a s a
+                                                                    FP        t a s a + ɓ o tʃʰ
+                                deaf                                TP        s o ɾ t o
+                                debt                                FN        kʷ e n t a
+                                deceit                              FP        v e s kʼ u n e l
+                                donkey                              TP        ɓ u ɾ o
+                                dove                                FP        pʰ u l i v o k
+                                drum                                TP        t a m p o l
+                                duck                                FP        pʰ e tʃʼ
+                                enemy                               FN        k ɾ o n t a i l
+                                fault                               TP        pʰ a l t a
+                                field                               TP        k a m p o
+                                fig                                 FN        ʔ i kʼ u sʰ
+                                fine (penalty)                      TP        m u l t a
+                                first                               TP        pʰ ɾ i m e ɾ o
+                                flour                               TP        h a ɾ i n a
+                                fly (move through air)              FP        v i l
+                                forgive                             FP        ʔ a kʼ + p e ɾ t o n a l
+                                friday                              TP        ɓ j e ɾ n e sʰ
+                                friend                              TP        ʔ a m i k o
+                                ghost                               FN        ʔ a n i m a
+                                goat                                FN        tʃʰ i v o
+                                gold                                TP        ʔ o ɾ o
+                                good                                TP        pʰ i n o
+                                grave                               FP        tʃʼ e n a l
+                                hammer                              TP        m a ɾ t i o
+                                happy                               TP        k o n t e n t o
+                                hell                                TP        ʔ i m p j e ɾ n o
+                                heron                               TP        k a ɾ s a
+                                hoe                                 TP        ʔ a s a l u n a
+                                horse                               FN        k a ʔ
+                                hour                                TP        ʔ o ɾ a
+                                hundred                             TP        s j e n
+                                jug                                 FN        ɾ o s a
+                                key                                 TP        j a v e
+                                kidney                              TP        ɾ i n j o n
+                                king                                TP        ɾ e j
+                                knife                               TP        k u tʃʰ i l u
+                                knife (for eating)                  TP        k u tʃʰ i l u
+                                lame                                TP        k o ʃ o
+                                latch                               FN        ʔ a l t a v o
+                                lazy                                TP        pʰ l o o h o
+                                left                                TP        s u ɾ t o
+                                light (radiation)                   TP        l u s
+                                lion                                TP        l e o n
+                                low                                 FP        pʰ e kʼ e l
+                                magician                            FP        h t u tʃʼ ʔ o ɾ a
+                                mare                                FN        j e v a sʰ
+                                mason                               TP        ʔ a l v a n i l
+                                match                               TP        pʰ o s p o ɾ o
+                                                                    TP        s e ɾ i o
+                                merchant                            TP        m a ɾ tʃʰ a n t e
+                                milk                                TP        l e tʃʰ
+                                mill                                TP        m u l i n o
+                                monday                              TP        l u n e sʰ
+                                money                               FN        s e n t a v o
+                                moon                                TP        l u n a
+                                more                                TP        m a s
+                                mortar                              FN        k a m a ɾ o
+                                mule                                FN        k a ʔ
+                                nail (tool)                         TP        l a v u sʰ
+                                need (noun)                         FN        pʷ e ɾ s a
+                                needle (for sewing)                 TP        ʔ a k u ʃ a
+                                neighbour                           FP        pʰ a n a
+                                oil (organic substance)             TP        ʔ a s e t e
+                                only                                FN        pʰ u u ɾ o
+                                oven                                TP        h o ɾ n o
+                                ox                                  FN        w e j
+                                parrot                              TP        l o ɾ o
+                                                                    TP        pʰ e ɾ i k o
+                                pasture                             TP        pʰ o t ɾ e ɾ o
+                                pepper                              TP        pʰ i m e n t a
+                                person                              FN        k ɾ i ʃ tʃʰ n a n o
+                                physician                           TP        l o o k t o r
+                                pig                                 FP        tʃʰ i t o m
+                                place (position)                    TP        l u g a r
+                                plate                               TP        pʰ l a t o
+                                plough                              TP        ʔ a ɾ a ɾ o
+                                poison                              TP        ɓ e n e n o
+                                poor                                TP        pʰ o v ɾ e
+                                priest                              FN        pʰ a l e
+                                punishment                          TP        k a s t i k o
+                                quarrel                             TP        pʰ l e t u
+                                ram                                 TP        k a ɾ n e ɾ o
+                                ready                               TP        l i s t o
+                                rice                                TP        ʔ a ɾ o s
+                                rich                                TP        ɾ i k o
+                                road                                FN        k a j a
+                                rooster                             FP        k e l e m
+                                rope                                FN        l a s o
+                                saturday                            TP        s a v a ɾ o
+                                sausage                             TP        tʃʰ o ɾ i s
+                                                                    FN        l o n k a n i s j o
+                                scar                                FN        s e n j a
+                                season                              FN        ʔ o ɾ a
+                                                                    FN        t j e m p o
+                                servant                             FN        m o s o
+                                shears                              TP        t e ʃ e ɾ e sʰ
+                                shell                               TP        k o n ʃ a
+                                shoe                                TP        s a p a t o
+                                shovel                              TP        pʰ a l a
+                                sickle or scythe                    TP        h o s
+                                similar                             TP        pʰ a ɾ e h o
+                                small                               FP        ɓ i kʼ i tʰ
+                                soap                                TP        ʃ a v o n
+                                soldier                             TP        s o l t a ɾ o
+                                soul                                FN        ʔ a n i m a
+                                spear                               TP        l a n s a
+                                spoon                               TP        k u tʃʰ a ɾ a
+                                stallion                            FN        pʰ o t ɾ o
+                                store                               TP        t j e n t a
+                                stupid                              FN        ɓ u ɾ o
+                                                                    TP        tʃʰ o ɾ i s o
+                                sugar                               TP        ʔ a s u k a
+                                sunday                              TP        ɾ o m i n k o
+                                sweet                               FP        tʃʰ i ʔ
+                                swim                                FP        n u ʃ i h
+                                sword                               TP        ʔ e s p a ɾ a
+                                table                               TP        m e ʃ a
+                                take                                FP        t a m
+                                tall                                FP        n a t i l
+                                                                    FP        v a tsʼ a l
+                                taste (something)                   FN        pʰ a s + p ɾ e v a
+                                teacher                             TP        m a j ʃ t ɾ o
+                                temple                              TP        ʔ e k l i ʃ j a
+                                thatch                              FP        h o ɓ e l
+                                thou                                FP        v o ʔ o tʰ
+                                thousand                            TP        m i l
+                                thread                              FN        ʔ i l e ɾ a
+                                threshing-floor                     TP        ʔ e ɾ a
+                                thursday                            TP        hʷ e v e s
+                                time                                FN        ʔ o ɾ a
+                                                                    TP        t j e m p o
+                                torch or lamp                       TP        k a n t i l
+                                try                                 TP        pʰ a s + p ɾ e v a
+                                tuesday                             TP        m a ɾ t e sʰ
+                                turn around                         FP        ʔ a kʼ + ɓʷ e l t a
+                                two                                 FP        tʃʰ a ʔ
+                                valley                              FP        pʰ u l a v
+                                wasp                                TP        ʔ o v i ʃ p o
+                                wednesday                           TP        m e l k u l e sʰ
+                                week                                TP        ʃ e m a n a
+                                what                                FP        kʼ u
+                                wheat                               TP        t ɾ i k o
+                                wheel                               FN        k a ɾ o s
+                                whistle                             FP        ʃ u ʃ u ɓ a h
+                                window                              TP        v e n t a n a
+                                wine                                TP        ɓ i n o
+                                witness                             TP        ɾ e ʃ t i k o
+                                wound                               FN        l a s t i m a
+                                yoke                                FN        m a n k o ɾ n a l
+                                you                                 FP        v o ʔ o ʃ u k
+Otomanguean  Otomi              admit                               FN        x a p i + a r + k a s o
+                                all                                 FP        g ɔ θ o
+                                                                    TP        k a d u
+                                                                    FP        t̪ ɔ t̪ʼ i
+                                altar                               FP        ts i t̪ a
+                                                                    TP        a t̪ a
+                                always                              FP        n z ɐ m ˀb u
+                                arch                                TP        a r k o
+                                army                                TP        e x e r s i t̪ o
+                                                                    TP        t̪ r o p a
+                                                                    FN        h m u n tsʼ u s u n d a d o
+                                arrive                              FP        ts ə kʷ a
+                                arrow                               FP        m f i t̪ʼ i
+                                ask (request)                       FP        ɔ d i
+                                attack                              FP        t̪ ɔ k i
+                                axle                                TP        e h e
+                                bad luck                            FN        ts ʔ o s w e r t̪ e
+                                bait                                TP        x e b o
+                                ball                                TP        p e l o t̪ a
+                                                                    TP        p i l o t̪ a
+                                                                    FP        l o b o
+                                bamboo                              TP        b a m b u
+                                bark                                FP        ˀm ɔ tsʼ u z aː
+                                barley                              TP        s u b a d a
+                                bee                                 FN        k o l m e n ɐ
+                                beehive                             TP        k o l m e n ɐ
+                                beer                                TP        s e r b e s a
+                                beeswax                             FN        s e r a + k o l m e n ɐ
+                                before                              TP        a n t̪ e
+                                beggar                              FP        m æ t̪ i
+                                believe                             TP        k r e
+                                belt                                FP        b ɐ t̪ʼ i
+                                bill                                FP        n x u t̪ʼ i
+                                                                    TP        kʷ e n t̪ a
+                                black                               FP        p o θ e
+                                blanket                             FN        m ɐ n t̪ a
+                                boat                                TP        b a r k o
+                                boot                                TP        b o t̪ a
+                                boy                                 FP        m e ts i
+                                brass instrument (horn or trumpet)  TP        t̪ r o m p e t̪ a
+                                brick                               TP        l a d r i j o
+                                bull                                TP        d o r o
+                                bunch                               FN        u b a
+                                burn (something)                    FP        ts ɐ t̪ʼ i
+                                butter                              TP        m ɐ n t̪ e k i j a
+                                                                    TP        n d æ g a
+                                button                              TP        b o t̪ o
+                                calf                                TP        t̪ e r n e r a
+                                camel                               TP        k a m e j o
+                                cart                                TP        k a r r e t̪ a
+                                cattle                              FP        m æ t̪ i
+                                cave                                FP        n k u tsʼ i
+                                                                    TP        kʷ e b a
+                                chain                               TP        k a d e n ɐ
+                                chair                               TP        s i j a
+                                cheese                              TP        g æ x u
+                                chisel                              TP        s i n s e l
+                                cloak                               FP        m a xʷ i
+                                clock                               FN        o r a
+                                cloth                               FP        ˀb i t̪ u
+                                club                                FP        m ɐ k ɐ n ɐ
+                                coat                                FP        θ o x o
+                                coconut                             TP        k o k o
+                                color                               TP        k o l o r
+                                comb                                FP        ⁿs a n i
+                                command                             TP        m ɐ n d a
+                                condemn                             FP        ts a t̪ u ˀɲ u
+                                convict                             FP        ts a t̪ u ˀɲ u
+                                cookhouse                           FN        n θ o k u k o m i d a
+                                corner                              FP        ts ʔ ɐ t̪ʼ i
+                                corpse                              FN        a n i m ɐ
+                                court                               TP        t̪ r i b u n ɐ l
+                                cow                                 TP        b a g a
+                                crocodile                           TP        k o k o d r i l o
+                                crowd                               TP        m u n d o
+                                cup                                 TP        t̪ a s a
+                                daughter                            FP        t̪ʼ i x u
+                                dawn                                FN        ˀɲ a l b a
+                                deer                                FP        f a n θ ə
+                                defend                              TP        m f e n d e
+                                demon                               FP        d ɐ m ɐ n tsʼ o
+                                dinner (supper)                     FP        h ɲ u n i
+                                dolphin                             TP        d e l f i n
+                                donkey                              TP        b u r r u
+                                                                    FN        n d ə b r u
+                                                                    FN        ts u b r u
+                                doorpost                            FN        p o s t̪ e
+                                dough                               FN        x u n i + t̪ r i g o
+                                dove                                TP        p a l o m ɐ
+                                dribble                             FP        x u t̪ʼ i
+                                drip (emit liquid)                  FP        x u t̪ʼ i
+                                drum                                TP        t̪ a m b o
+                                duck                                TP        b a d u
+                                dye                                 FP        k ɐ t̪ʼ i
+                                early                               FP        x u d i θ o
+                                earth (soil)                        FP        h a i
+                                eight                               FP        h ɲ ɐ t̪ o
+                                elephant                            TP        e l e f a n t̪ e
+                                elf or fairy                        FN        h o g u a n x e
+                                enemy                               TP        e n e m i g o
+                                enough                              FP        n tsʼ æ d i
+                                evening                             TP        b i s p u r a
+                                feather                             FP        x i ˀn i
+                                felt                                TP        f j e l t̪ r o
+                                fig                                 TP        i g o
+                                fisherman                           TP        n g u p e s k a d o
+                                fishing line                        FN        i l o + ˀb e xʷ ɐ
+                                                                    FN        i l o + n θ u tsʼ i
+                                fishnet                             FP        t̪ʼ ɔ tsʼ i
+                                flat                                FP        n i d i
+                                floor                               FP        h a i
+                                follow                              TP        s i g e
+                                footprint                           FP        w a
+                                fox                                 TP        s o r r o
+                                                                    TP        s o r r a
+                                freeman                             FN        p a l e
+                                friend                              FP        m i x e i
+                                fruit                               TP        f r u t̪ a
+                                glass                               TP        b i d r j o
+                                glue                                FN        p e g a
+                                good luck                           FN        h o g u s w e r t̪ e
+                                goose                               TP        g a n s o
+                                grain                               FN        s i m i j a
+                                granddaughter                       FP        ˀb æ t̪ o
+                                                                    FP        ˀb æ t̪ a
+                                grandfather                         FN        p a l e
+                                grandson                            FP        ˀb æ t̪ o
+                                grape                               TP        u b a
+                                grass                               TP        p a s t̪ o
+                                grief                               TP        p e n ɐ
+                                half                                FP        m a d e
+                                hammer                              TP        m ɐ r t̪ i j o
+                                hay                                 TP        p a x a
+                                he or she or it                     FP        g e ʔ ɐ
+                                headband or headdress               TP        s i n t̪ a
+                                headgear                            FP        m f o ɲ ɐ
+                                                                    TP        g o r r o
+                                heaven                              TP        p a r a i s o
+                                helmet                              FN        k a s k o
+                                heron                               TP        g a r s a
+                                host                                FP        x e p u t̪ e
+                                                                    FP        x æ p u t̪ e
+                                hour                                TP        o r a
+                                how                                 FP        t̪ e m u
+                                if                                  FP        h a
+                                immediately                         FN        i s + a r + o r a ʔ ɐ
+                                in front of                         FP        ˀb æ t̪ʼ o
+                                jewel                               FN        o r o
+                                join                                FP        z ə t̪ e
+                                jump                                FP        s ɔ tsʼ i
+                                key                                 FP        ⁿs o g i
+                                kidney                              TP        r i ɲ u
+                                last (endure)                       TP        d u r a
+                                law                                 TP        l e j
+                                lead (chemical element)             TP        p l o m u
+                                leaf                                FP        x i
+                                light (ignite)                      FP        θ æ t̪ i
+                                                                    FP        u d i
+                                                                    FP        f æ tsʼ i
+                                line                                FN        r a j a
+                                lion                                TP        l i j o n
+                                livestock                           FP        m æ t̪ i
+                                lung                                TP        p u l m o n
+                                mad                                 FN        d o n d o
+                                manner                              FN        k o m o n g u
+                                                                    FN        k o m u
+                                market                              TP        m e r k a d o
+                                match                               TP        s i r i j o
+                                                                    TP        s e r i j o
+                                maternal uncle (mother's brother)   FN        t̪ i j o
+                                mill                                FP        x u n i
+                                mind                                FP        m f e n i
+                                misplace                            FP        ˀb æ d i
+                                moon                                FP        z ɐ n ɐ
+                                more                                TP        m ɐ s
+                                mortar                              FP        m a d a
+                                mortar binder                       FN        m e s k l a
+                                mother                              FP        m e
+                                mountain or hill                    FP        m b o tsʼ i
+                                mule                                TP        m ɐ z o
+                                                                    TP        m u l a
+                                nail (tool)                         TP        k l a b o
+                                neighbour                           TP        b i s i n u
+                                nephew                              TP        s o b r i n u
+                                never                               TP        n u n k a
+                                                                    FN        n i + ˀn a + b e s
+                                niece                               TP        s o b r i n ɐ
+                                nipple                              FP        d o ˀb a
+                                                                    TP        t̪ x i t̪ x i
+                                nit                                 FP        b ə t̪ʼ o
+                                north                               TP        n o r t̪ e
+                                nut                                 TP        nʷ e s
+                                oat                                 TP        b e n ɐ
+                                oil (organic substance)             TP        a s e t̪ e
+                                ointment                            TP        u nʷ e n t̪ o
+                                old man                             TP        p a l e
+                                omen                                FN        m p r e b e n i
+                                or                                  TP        o
+                                oven                                TP        o r n u
+                                owl                                 TP        l e t̪ x u s a
+                                ox                                  TP        b o i
+                                pair                                TP        p a r e
+                                parrot                              TP        l o r o
+                                pasture                             TP        p a s t̪ o
+                                paternal uncle (father's brother)   FN        t̪ i j o
+                                pen                                 FN        l a p i s e r o
+                                physician                           TP        d o k u t̪ o r
+                                pig                                 TP        b e r k o
+                                pile up                             FP        m u n tsʼ i
+                                                                    TP        m u n d o
+                                pin                                 FP        ˀn ə t̪ʼ e
+                                pine                                TP        p i n u
+                                place (position)                    TP        l u g a r
+                                plant (vegetation)                  TP        p l a n t̪ a
+                                poncho                              TP        m ɐ n t̪ a
+                                post                                TP        p o s t̪ e
+                                potato                              FP        ˀb ə ˀkʷ ɐ
+                                pumpkin                             FP        ˀb e z a
+                                pupil (student)                     FN        ˀj o s kʷ e l a
+                                rabbit                              FP        kʷ a
+                                rafter                              FP        ˀb u tsʼ i
+                                read                                TP        l e i
+                                rescue                              TP        x a + s a l b a
+                                rice                                TP        a r r o s
+                                road                                TP        k a r t̪ e r a
+                                roof                                FP        ˀb e t̪ʼ e
+                                rudder                              TP        t̪ i m u
+                                sacrifice                           FN        ˀm ə e + a n i m ɐ
+                                saturday                            TP        ⁿs a b d o
+                                scar                                FN        s e ɲ ɐ
+                                school                              TP        s kʷ e l a
+                                seagull                             TP        g a b j o t̪ a
+                                seed                                TP        s i m i j a
+                                seven                               FP        j o t̪ o
+                                shark                               TP        t̪ i b u r o n
+                                sharp                               FP        h j æ k u t̪ e
+                                ship                                TP        b a r k o
+                                shovel                              TP        p a l a
+                                sick                                FP        d ɔ θ i
+                                silk                                TP        s e d a
+                                sink (descend)                      FP        ɲ u n t̪ʼ i
+                                sling                               FP        n t̪ʼ æ n d o
+                                small                               FP        t̪ʼ o l o
+                                                                    FP        t̪ʼ u l o
+                                soap                                TP        x a b o
+                                soldier                             TP        s u n d a d o
+                                                                    TP        s o l d a d o
+                                soul                                FN        a n x æ
+                                sound or noise                      FP        z u n t̪ʼ i
+                                                                    FP        ˀr o n t̪ʼ i
+                                                                    FP        n z u n i
+                                soup                                TP        s o p a
+                                south                               TP        s u r
+                                spade                               TP        p a l a
+                                spear                               TP        l a n s a
+                                spring or well                      FP        p o θ e
+                                square                              TP        kʷ a d r o
+                                statue                              FP        ts i t̪ a
+                                stepdaughter                        FP        h ə t̪ʼ i x u
+                                stocking                            TP        m e d j a
+                                store                               TP        d æ n d a
+                                stove                               TP        s t̪ u f a
+                                strike or beat                      FP        f a t̪ i
+                                                                    FP        f u t̪ʼ i
+                                stupid                              TP        d o n d o
+                                sunday                              TP        n d o m i n g o
+                                swim                                FP        ˀɲ ɔ θ e
+                                table                               TP        m e x a
+                                tailor                              FP        ˀw æ d i
+                                tall                                FP        h e tsʼ i
+                                teacher                             TP        m ɐ s t̪ r o
+                                tent                                FP        d ɐ t̪ ɐ + n x o ˀm i
+                                thatch                              FP        ˀm e t̪ʼ e + p a x a
+                                thing                               TP        k o s a
+                                think (believe)                     TP        k r e
+                                thousand                            TP        m i l
+                                thread                              TP        i l o
+                                three times                         FN        h ɲ u + j a + b e s
+                                threshing-floor                     TP        e r a
+                                throw                               FP        u tsʼ i
+                                                                    FP        h ə t̪ʼ e
+                                                                    FP        n ɐ t̪ʼ i
+                                thursday                            FN        nʷʰ e b e
+                                tobacco                             TP        t̪ a b a k o
+                                tongs                               TP        p i n s a
+                                tool                                TP        e r r a m j e n t̪ a
+                                torch or lamp                       FP        n t̪ʼ u d i
+                                town                                TP        s w i d a
+                                trough                              FP        ˀb ə d e
+                                turn around                         FP        ˀb ɔ t̪ʼ i
+                                udder                               FN        t̪ x i t̪ x i
+                                uncle                               TP        t̪ i j o
+                                valley                              FP        ˀb a θ a
+                                vulture                             FP        p a d a
+                                week                                TP        s u m ɐ n ɐ
+                                weigh                               TP        p e s a
+                                whale                               TP        b a j e n ɐ
+                                wheat                               TP        t̪ r i g o
+                                wheel                               TP        r w e d a
+                                window                              TP        b e n t̪ a n ɐ
+                                wine                                TP        b i n u
+                                wolf                                TP        l o b o
+                                yes                                 FP        h ɐ
+                                yesterday                           FP        m a n d e
+                                yoke                                TP        j u g u
+Quechuan     ImbaburaQuechua    abstain from food                   FN        a j u n a n a
+                                adobe                               TP        a d u b i
+                                adze                                TP        a s w i l a
+                                afternoon                           FP        tʃ i ʃ i
+                                altar                               TP        a l t a ɾ
+                                always                              TP        s i m b ɾ i
+                                animal                              TP        a n i m a l
+                                arch                                TP        a ɾ k u
+                                armour                              TP        a ɾ m a d u ɾ a
+                                armpit                              TP        s u b a k u
+                                aunt                                TP        t i j a
+                                axe                                 TP        x a tʃ a
+                                barley                              TP        s i b a d a
+                                basket                              TP        k a n a s t u
+                                beak                                TP        p i k u
+                                beam                                TP        b i g a
+                                bean                                FP        p u ɾ u t u
+                                bear                                TP        u s u
+                                beard                               TP        b a ɾ b a s
+                                bed                                 TP        k a m a
+                                bee                                 TP        a b i x a
+                                beer                                TP        s e ɾ b i s a
+                                believe                             FN        k ɾ i j i n a
+                                bill                                TP        k w i n d a
+                                blacksmith                          FN        x i ʐ i ɾ u
+                                bless                               TP        b i n d i s i n a
+                                blue                                TP        a s u l
+                                board                               TP        t a b l a
+                                bolt (of lightning)                 FN        ʐ a j u
+                                bone                                FP        t u ʒ u
+                                boot                                TP        b u t a s
+                                boundary                            TP        l i n d e ɾ u
+                                brass instrument (horn or trumpet)  TP        t ɾ u m b i t a
+                                brick                               TP        l a d ɾ i ʒ u
+                                brush                               TP        s i p i ʒ u
+                                butterfly                           FP        p i m b i ʒ i t u
+                                button                              TP        b u t u ŋ
+                                candle                              TP        b i l a
+                                canoe                               FP        k a n u w a
+                                carpenter                           TP        k a ɾ p i n d e ɾ u
+                                cart                                FN        k a ʐ i t i ʒ a
+                                cassava                             FP        j u k a
+                                catch                               FP        x a p i n a
+                                cause                               TP        k a w z a
+                                centipede                           TP        s i n d u p i s
+                                certain                             TP        s i g u ɾ u
+                                chain                               TP        k a d e n a
+                                change                              TP        k a m b j a n a
+                                charcoal                            TP        k a ɾ b u ŋ
+                                cheap                               TP        b a ɾ a t u
+                                cheese                              TP        k i z u
+                                chest                               TP        p i tʃ u
+                                chicken                             TP        p u ʒ u
+                                chin                                FP        x a ʃ a
+                                chisel                              TP        s i n s i l
+                                choke                               FN        a w a n a
+                                clay                                FP        t u ɾ u
+                                clock                               TP        ʐ i l u x u
+                                coat                                FN        ʃ w i t e ɾ
+                                coconut                             TP        k o k u
+                                color                               TP        k u l u ɾ
+                                common cold (disease)               FN        ʐ u m a s
+                                convict                             FP        x u tʃ a tʃ i n a
+                                corner                              FP        k u tʃ u
+                                cotton                              TP        a l g u d u ŋ
+                                court                               TP        t ɾ i b u n a l
+                                cousin                              TP        p ɾ i m u
+                                cow                                 TP        b a k a
+                                crocodile                           TP        k u k u d ɾ i l u
+                                cross                               TP        k ɾ u s
+                                custom                              TP        k o ʃ t u m b ɾ i
+                                dance                               FP        t u ʃ u n a
+                                dandruff                            TP        k a s p a
+                                dare                                TP        a t ɾ i b i n a
+                                daughter                            FP        u ʃ i
+                                deaf                                TP        s u ɾ d u
+                                debt                                TP        d e b i
+                                deep                                TP        x u n d u
+                                dinner (supper)                     TP        s i n a
+                                                                    TP        s i n a
+                                dish                                TP        p l a t u
+                                ditch                               TP        s a n x a
+                                divide                              FN        p a ɾ t i n a
+                                divorce                             TP        d i b u ɾ s j u
+                                donkey                              TP        b u ʐ u
+                                dough                               TP        m a s a
+                                dove                                TP        p a l u m a
+                                drive                               FN        m a n i x a n a
+                                drum                                TP        t a m b u ɾ
+                                duck                                TP        p a t u
+                                dye                                 TP        t i ɲ i n a
+                                earn                                TP        g a n a n a
+                                earring                             FN        s a ɾ s i ʒ u
+                                easy                                FP        x a w a ʒ a
+                                elephant                            TP        e l e ɸ a n d i
+                                elf or fairy                        TP        d w i n d i
+                                evening                             FP        t u t a
+                                expensive                           TP        k a ɾ u
+                                farmer                              TP        l a b ɾ a d u ɾ
+                                father                              FN        t a j t a
+                                father-in-law (of man)              TP        s w i d ɾ u
+                                father-in-law (of woman)            TP        s w i d ɾ u
+                                fathom                              TP        b ɾ a s a
+                                fear (fright)                       FP        m a n dʒ a j
+                                feather                             FN        a l a s
+                                feel                                TP        s i n d i n a
+                                female (of person)                  FP        w a ɾ m i
+                                fever                               FN        k a l i n d u ɾ a
+                                field                               FP        tʃ a k ɾ a
+                                fig                                 TP        i g u s
+                                fine (penalty)                      TP        m u l t a
+                                finger                              TP        d i d u
+                                finish                              FP        t u k u ɾ i n a
+                                fish                                FP        p i x i
+                                flea                                FP        p i q u i
+                                flute                               TP        ɸ l a w t a
+                                fly (move through air)              TP        b u l a n a
+                                foal                                TP        p u t ɾ u
+                                fork                                TP        t e n e d u ɾ
+                                freeman                             FN        s w i l t u
+                                friday                              TP        b i ɾ n e s
+                                friend                              FP        m a ʃ i
+                                frog                                FN        s a p u
+                                ghost                               TP        ɸ a n d a s m a
+                                goiter                              FP        k u t u
+                                gold                                FP        k u ɾ i
+                                goose                               TP        g a n s u
+                                grain                               TP        g ɾ a n u
+                                granddaughter                       TP        ɲ i t a
+                                grandfather                         TP        a w i l u
+                                grandmother                         TP        a w i l a
+                                grandson                            TP        ɲ i t u
+                                grape                               TP        u b a
+                                grasshopper                         FN        d j a b l i ʒ u
+                                green                               TP        b i ɾ d i
+                                guess                               TP        a d i b i n a n a
+                                hammer                              TP        m a ɾ t i ʒ u
+                                hand                                FP        m a k i
+                                have                                FP        tʃ a ɾ i n a
+                                hawk                                FP        a ŋ g a
+                                headband or headdress               TP        s i n d a
+                                heaven                              TP        s i l u
+                                heel                                TP        t a l u ŋ
+                                hell                                TP        i n ɸ i ɾ n u
+                                heron                               TP        g a ɾ s a
+                                high                                FP        x a t u ŋ
+                                hoe                                 TP        a z a d u ŋ
+                                holy                                TP        s a n d u
+                                horse                               TP        k a b a ʒ u
+                                hour                                TP        u ɾ a s
+                                house                               FP        w a s i
+                                howl                                FN        a w ʒ a n a
+                                ice                                 FP        ʐ a s u
+                                innocent                            TP        i n u s i n d i
+                                iron                                FN        x i ʐ u
+                                judge                               TP        x w i s
+                                judgment                            TP        x w i ʒ u
+                                jug                                 FP        x u n d u
+                                key                                 TP        ʒ a b i
+                                knead                               TP        m a s a n a
+                                knife                               TP        k u tʃ i ʒ u
+                                knife (for eating)                  TP        k u tʃ i ʒ u
+                                law                                 TP        l e j
+                                leather                             FP        k a ɾ a
+                                lick                                FN        l a m b i n a
+                                light (radiation)                   FN        m i tʃ a
+                                lightning                           TP        ʐ i l a m b a g u
+                                limp                                TP        l i s j a n a
+                                lion                                TP        l i j o ŋ
+                                loom                                TP        t i l a ɾ
+                                lunch                               TP        a l m u z a
+                                magic                               TP        b ɾ u x j a n a
+                                magician                            TP        b ɾ u x u
+                                male goat                           FP        tʃ i t a
+                                mare                                FN        b i s t j a
+                                marry                               TP        k a z a ɾ a n a
+                                mason                               TP        a l b a ɲ i l
+                                master                              TP        a m u
+                                mat                                 TP        i ʃ t i ɾ a
+                                match                               TP        ɸ u s ɸ u ɾ u
+                                maternal aunt (mother's sister)     FN        t i j a
+                                maternal uncle (mother's brother)   FN        t i j u
+                                measure                             TP        m i d i n a
+                                merchant                            TP        n i g u s j a n d e
+                                milk                                TP        l i tʃ i
+                                mirror                              TP        i s p i x u
+                                mold                                FN        m a s a n a
+                                monday                              TP        l u n i s
+                                monkey                              TP        m u n u
+                                mother                              FP        m a m a
+                                mother-in-law (of man)              TP        s w i d ɾ a
+                                mother-in-law (of woman)            TP        s w i d ɾ a
+                                mow                                 TP        k u z i tʃ a n a
+                                mule                                TP        m u l a
+                                nail (tool)                         TP        k l a b u s
+                                nape (of neck)                      FN        k u ŋ g a + n u k a
+                                need (noun)                         FN        m i n i ʃ t i n a
+                                needle (for sewing)                 TP        a w u x a
+                                neighbour                           TP        b i z i n u
+                                nephew                              TP        s u b ɾ i n u
+                                netbag                              FP        ʃ i g ɾ a
+                                niece                               TP        s u b ɾ i n a
+                                night                               FP        t u t a
+                                nipple                              FP        tʃ u tʃ u + u m a
+                                nut                                 TP        n u w i s
+                                oat                                 TP        a b i n a
+                                oath                                TP        x u ɾ a m i n d u
+                                oil (organic substance)             TP        a s i j t i
+                                olive                               TP        a s i t u n a
+                                only                                FP        ʒ a
+                                opossum                             FN        ʐ a p u s a
+                                or                                  TP        o
+                                oven                                TP        x u ɾ n u
+                                owe                                 FN        d i b i n a
+                                owl                                 FP        tʃ u ʃ i x
+                                ox                                  TP        b u j i
+                                paint (pigments)                    TP        t i ɲ i
+                                painting                            FN        t i ɲ i n a
+                                paper                               TP        p a p i l
+                                parrot                              TP        l u ɾ u
+                                part                                FP        ɸ i t i
+                                pasture                             TP        p u t ɾ u
+                                paternal aunt (father's sister)     FN        t i j a
+                                paternal uncle (father's brother)   FN        t i j u
+                                pay                                 TP        p a g a n a
+                                people                              TP        x i n d i
+                                person                              FN        x i n d i
+                                pile up                             TP        m u n d u n a n a
+                                pine                                TP        p i n u
+                                pitchfork                           TP        x u ɾ k i t a
+                                place (position)                    FN        p u ʃ t u
+                                plain                               FP        p a m b a
+                                plaintiff                           TP        d i m a n d a n d i
+                                plate                               TP        p l a t u
+                                pocket                              TP        b u l s i k u
+                                pointed                             FN        ɸ i l u
+                                poison                              TP        b i n i n u
+                                poncho                              FP        ʐ w a n a
+                                potato                              FP        p a p a
+                                pray                                FN        ʐ i z a n a
+                                press                               FN        a x u s t a n a
+                                price                               TP        p ɾ i s j u
+                                prison                              TP        k a ɾ s i l
+                                promise                             FN        u ɸ ɾ i s i n a
+                                pumpkin                             FP        s a p a ʒ u
+                                punishment                          TP        k a ʃ t i g u
+                                rabbit                              TP        k u n u
+                                rafter                              TP        b i g a
+                                rag                                 TP        p a n i l u
+                                ram                                 TP        k a ɾ n e ɾ u
+                                religion                            TP        ʐ i l i x j u ŋ
+                                rib                                 TP        k u s t i ʒ a
+                                rice                                FN        a ʐ u s a
+                                ride                                FN        k a b a ʒ u n a
+                                ridgepole                           TP        k u m b ɾ i ɾ a
+                                ring                                TP        s u ɾ t i x a s
+                                rooster                             TP        g a ʒ u
+                                rye                                 TP        s i n d i n u
+                                sacrifice                           TP        u ɸ ɾ i n d a
+                                saturday                            TP        s a b a d u
+                                saucer                              TP        p l a t i ʒ u
+                                saw                                 TP        s i ʐ u tʃ u
+                                scorpion                            TP        a l a k ɾ a ŋ
+                                scrape                              FP        a s p i n a
+                                seize                               FP        x a p i n a
+                                servant                             TP        s i ɾ b j e n d i
+                                share                               TP        ʐ e p a ɾ t i n a
+                                sharp                               TP        ɸ i l u ʒ a
+                                shears                              TP        t i x i ɾ a s
+                                shirt                               TP        k a m i z a
+                                shoe                                FP        u ʃ u t a
+                                shoulder                            TP        u m b ɾ u
+                                shovel                              TP        p a l a
+                                sickle or scythe                    TP        u s i s
+                                silk                                TP        s e d a
+                                skin                                FP        k a ɾ a
+                                slow                                FP        a l i m a n d a
+                                smoke (inhale)                      FN        tʃ u p a n a
+                                snake                               TP        k u l i b ɾ a
+                                snore                               FN        ʐ u ŋ g a n a
+                                soap                                TP        x a b u ŋ
+                                son-in-law (of man)                 TP        j i ɾ n u
+                                son-in-law (of woman)               TP        j i ɾ n u
+                                soul                                TP        a l m a
+                                sound or noise                      FN        b u ʒ a
+                                sow (female pig)                    FP        k u tʃ i
+                                spade                               FN        a z a d u ŋ
+                                spider                              FN        a ɲ a ɾ a
+                                spoon                               TP        k u tʃ a ɾ a
+                                square                              TP        k w a d ɾ a d u
+                                stable                              TP        i s t a b l u
+                                stallion                            TP        k a b a ʒ u
+                                star                                FN        l u z i ɾ u
+                                stepdaughter                        TP        i n d i n a d a
+                                stepfather                          TP        p a d a s t ɾ u
+                                stepmother                          TP        m a d a s t ɾ a
+                                stepson                             TP        i n d i n a d u
+                                stocking                            FN        m i d i a s
+                                store                               TP        t j i n d a
+                                straight                            TP        d i ɾ i tʃ u
+                                suck                                TP        tʃ u p a n a
+                                sunday                              TP        d u m i ŋ g o
+                                swear                               TP        x u ɾ a n a
+                                sweat (perspire)                    TP        s u d a n a
+                                sweet potato                        FP        k a m u t i
+                                sword                               TP        i s p a d a
+                                table                               TP        m i z a
+                                tail                                FP        tʃ u p a
+                                tall                                FP        x a t u ŋ
+                                taste (something)                   TP        g u ʃ t a n a
+                                tax                                 TP        i m b w e s t o
+                                temple                              TP        i g l i z j a
+                                tent                                TP        t u l d u
+                                thin (of shape of object)           FP        ɲ a ɲ u
+                                thing                               TP        k o s a
+                                thresh                              FP        i ʃ k u n a
+                                thursday                            TP        x w i b e s
+                                time                                TP        t i m b u
+                                tobacco                             TP        t a b a k u
+                                toe                                 TP        d i d u
+                                tool                                TP        x i ʐ a m i n d a
+                                torch or lamp                       TP        l a m b a ɾ a
+                                touch                               FP        t a k a ɾ i n a
+                                towel                               TP        t w a ʒ a
+                                tower                               TP        d u ʐ i
+                                town                                FN        b i ʒ a
+                                trade or barter                     FN        k a m b j a n a
+                                trap (pitfall)                      TP        t ɾ a m b a
+                                trough                              FP        b a t i j a
+                                trousers                            TP        p a n d a l u ŋ
+                                tuesday                             TP        m a ɾ t i s
+                                turtle                              TP        t u ɾ t u g a
+                                twins                               TP        m i ʒ i s u s
+                                uncle                               TP        t i j u
+                                understand                          TP        i n d i n d i n a
+                                untie                               FN        z a ɸ a n a
+                                village                             FP        ʒ a k t a
+                                vomit                               FN        l a n z a n a
+                                waist                               TP        s i n d u ɾ a
+                                wall (of house)                     FP        p i ɾ k a
+                                water                               FP        j a k u
+                                wednesday                           TP        m i ɾ c u l e s
+                                week                                TP        s i m a n a
+                                wheat                               TP        t ɾ i g u
+                                wheel                               TP        ʐ w i d a
+                                whistle                             TP        s i l b a n a
+                                wide                                TP        a n dʒ u
+                                widow                               TP        b j u d a
+                                widower                             TP        b j u d u
+                                window                              TP        b i n d a n a
+                                wine                                TP        b i n u
+                                wing                                TP        a l a s
+                                witness                             TP        t i s t i g u
+                                womb                                TP        m a d ɾ i
+                                work (labour)                       TP        t ɾ a b a x a n a
+                                worship                             TP        k u l t u
+                                yard                                FP        k a n dʒ a
+                                yoke                                TP        j u g u
+                                young                               FP        ʒ u ʒ u
+Uto-Aztecan  Yaqui              adjudicate                          TP        j u s k a r o a
+                                admit                               TP        k o n p e s a r o a
+                                altar                               TP        a l t aː r
+                                anchor                              TP        a m k l a m
+                                animal                              TP        a n i m aː l
+                                announce                            TP        a n u n s i a r o a
+                                arch                                TP        a r k o
+                                army                                TP        t r oː p a
+                                attack                              TP        a t a k a r o a
+                                axle                                FN        eː j e
+                                bad luck                            FP        k aː + s u e r t e k
+                                bake                                TP        o r n i a r o a
+                                ball                                TP        p e l o ʔ o t a m
+                                bamboo                              FP        b a k a o
+                                barley                              TP        s e b aː r a
+                                battle                              TP        g eː r
+                                bay                                 TP        w o l p o
+                                beak                                TP        p iː k o
+                                beam                                TP        b iː k a
+                                bear                                TP        oː s o
+                                bed                                 TP        k aː m a m
+                                beehive                             TP        k o l m eː n a m
+                                beer                                TP        s e r b eː s a
+                                beggar                              FN        p oː b e
+                                betray                              TP        t r a i s i o n a r o a
+                                beverage                            FP        p o m t i
+                                bill                                TP        k u eː n t a
+                                blacksmith                          TP        e r e o
+                                blame                               TP        k u l p a
+                                blunt                               FP        r u m u i
+                                board                               TP        t a p p l a
+                                boat                                TP        b oː t e
+                                boil (of skin)                      TP        p u r u n k u l o
+                                book                                TP        l i p r o m
+                                boot                                TP        b oː t a m
+                                bracelet                            TP        p u l s eː r a
+                                bread                               TP        p aː n i m
+                                brick                               TP        l a k r i o
+                                bridge                              TP        p u e n t e s
+                                brush                               TP        s e p i o
+                                bull                                TP        t oː
+                                butter                              TP        m a n t e k i a
+                                button                              TP        b oː t o n
+                                calf                                TP        b e s e o
+                                camel                               TP        k a m e o
+                                candle                              FN        k a n t eː l a m
+                                canoe                               FP        k a n o a
+                                cape                                TP        p u n t a
+                                carpenter                           TP        k a p i n t e o
+                                cart                                TP        k a r eː t a
+                                carve                               TP        e j k u l p i a r o a
+                                cast                                TP        p u n d i a r o a
+                                cattle                              FN        w a k a s i m
+                                chain                               TP        k a r e n a m
+                                chair                               FN        b a n k o
+                                cheese                              TP        k eː s u m
+                                chimney                             TP        tʃ i m e n e a
+                                citrus fruit                        TP        s i t t r i k o
+                                clan                                TP        t r iː b u
+                                clay                                FP        b aː b u
+                                clock                               TP        r e l o k
+                                cloth                               TP        t eː l a
+                                cloud                               FP        n aː m u
+                                club                                FP        k u t a
+                                coat                                TP        s aː k o m
+                                cockroach                           TP        k u k a
+                                coconut                             TP        k oː k o
+                                collar                              FN        k u e j o
+                                condemn                             TP        k o n r e n a r o a
+                                convict                             TP        k o n r e n a r o a
+                                cook (something)                    TP        k i s a r o a
+                                cookhouse                           TP        k o s i n a
+                                corner                              TP        e j k iː n a
+                                cough                               FP        t a s e
+                                court                               TP        t r i b u n aː l
+                                cow                                 TP        w aː k a s
+                                crocodile                           FP        k a m a
+                                crooked                             FP        t o t t i a
+                                cross                               TP        k uː s
+                                cup                                 TP        t aː s a
+                                custom                              TP        k o j t u m r e m
+                                cut down                            FP        t a t a b e
+                                dandruff                            FP        k o b a + b eː a
+                                daughter                            FP        a s o a
+                                dawn                                FN        a l b a
+                                defendant                           FP        j i k u ʔ u bʷ a i
+                                deny                                TP        n e k a r o a
+                                dish                                TP        p u ʔ a t o
+                                ditch                               TP        s a n j a
+                                dolphin                             TP        r e l p i n
+                                donkey                              TP        b uː r u
+                                door                                TP        p u e t a
+                                doorpost                            FN        m a r k o
+                                doubt                               TP        d u d a r o a
+                                dry                                 FP        w a k i a
+                                duck                                TP        p aː t o
+                                east                                TP        e j t e
+                                eight                               TP        o tʃ o
+                                elephant                            TP        e l e p a n t e
+                                eleven                              TP        o n s e
+                                enemy                               TP        e n e m i k o
+                                envy                                TP        s e l aː r o a
+                                evening                             FN        b i j p aː m
+                                fan (action)                        TP        a b a n i k a r o a
+                                fan (object)                        TP        a b a n iː k o
+                                farmer                              TP        r a n tʃ e o
+                                father-in-law (of woman)            FP        a s e k a
+                                fault                               TP        k u l p a
+                                feather                             FP        b o a
+                                felt                                TP        p i l t r o
+                                fence                               FN        k o r a
+                                fifteen                             TP        k i n s e
+                                fine (penalty)                      TP        m u l t a
+                                fireplace                           FN        o r n i a m
+                                fish trap                           FN        t aː m p a
+                                fisherman                           FP        k u tʃ u r e o
+                                fishhook                            TP        a n s u eː l o m
+                                five                                TP        s i n k o
+                                flesh                               FN        w aː k a s
+                                flour                               FN        a i n a m
+                                forbid                              TP        p r o i b i a r o a
+                                forge                               FN        j oː n a
+                                fork                                TP        t e n e r o r
+                                four                                TP        k u a t r o
+                                freeman                             TP        l iː p r e
+                                friday                              TP        b i e n e s
+                                fur                                 FP        b eː a
+                                furrow                              TP        s uː k o
+                                garden-house                        FN        r aː n j a
+                                glove                               TP        w a n t e m
+                                goat                                TP        k a b aː
+                                                                    FN        tʃ i b a ʔ a t o
+                                gold                                TP        oː r o
+                                goose                               TP        k a n s o
+                                grandfather                         FP        a p a
+                                                                    FP        j a b o i
+                                grape                               TP        uː b a
+                                grass                               FP        b a s o
+                                grasshopper                         FP        w a k a w o ʔ o tʃ i
+                                guard                               TP        w aː r i a
+                                guest                               FN        b i s i t a r o a m e
+                                guilty                              FP        k u l p a k a m e
+                                hammer                              TP        m a r t i o m
+                                hay                                 FP        b a s o
+                                head                                FP        k o b a
+                                headband or headdress               TP        t o k i l a
+                                headgear                            FP        m o ʔ o b e i
+                                heavy                               FP        b e t t e
+                                hell                                TP        i n p i e r n o
+                                herdsman                            FN        k a p j e o
+                                hoe                                 TP        a s a r oː n i m
+                                honey                               FN        m i e l i m
+                                hook                                TP        k a n tʃ o
+                                horse                               TP        k a b a ʔ i
+                                hot                                 FP        t aː t a
+                                hour                                TP        oː r a
+                                house                               FP        k a r i
+                                hundred                             TP        s i e n
+                                hut                                 FN        r a m aː
+                                imitate                             FP        m a m a t o
+                                insect                              TP        i n s e k t o
+                                jewel                               FN        j oː j a m
+                                judge                               FN        j o e s
+                                judgment                            FN        j u i s i o
+                                key                                 FN        j aː b e m
+                                king                                FP        k o b a n aː o
+                                knife                               TP        k u tʃ i ʔ i m
+                                knife (for eating)                  TP        k u tʃ i ʔ i m
+                                ladder                              TP        e j k a l e a
+                                lamb                                FP        bʷ a r a
+                                lame                                FP        k o ʔ o k o e
+                                land (descend)                      TP        r e s e m b a r k a r o a
+                                law                                 TP        l e i
+                                lead (chemical element)             TP        p l oː m o
+                                livestock                           FN        w a k a s i m
+                                lock                                FN        k a n r a o m
+                                mainland                            TP        k o n t i n e n t e
+                                male goat                           FN        k a b aː
+                                mare                                FN        j eː w a
+                                market                              TP        m e r k a o
+                                mason                               TP        a l b a n j i l
+                                mast                                TP        m a j t i l
+                                master                              FP        t eː k o
+                                mat                                 FP        j i p e t a m
+                                match                               TP        s e r i o m
+                                                                    TP        p o j p o r o
+                                measure                             FP        t a m a tʃ i a
+                                                                    TP        m e r i a r o a
+                                meat                                FN        w aː k a s
+                                meeting house                       FN        a u r i t oː r i o
+                                mill                                TP        m o i n a
+                                mirror                              TP        e j p eː k o
+                                miss (a target)                     FN        p a j a r o a
+                                monday                              TP        l uː n e s
+                                month                               FP        m eː tʃ a
+                                mother                              FP        m aː l a
+                                move                                TP        m o b e i a r o a
+                                mud                                 FP        t e tʃ o a
+                                mule                                TP        m uː r a
+                                mute                                TP        m uː r o
+                                nail (tool)                         TP        l aː b o s
+                                naked                               FP        b iː tʃ i
+                                necklace                            FP        k oː k a
+                                need (noun)                         TP        n e s e s i r a
+                                netbag                              FN        m aː j a m + b oː s a
+                                nine                                TP        n u e b e
+                                north                               TP        n oː t e
+                                nut                                 TP        n u e s
+                                oar                                 TP        r eː m o m
+                                oat                                 TP        a b eː n a
+                                oath                                FN        j u r a r o a w a m e
+                                oil (organic substance)             TP        a s e i t e
+                                olive                               TP        a s e i t uː n a
+                                omen                                FP        eː r i
+                                one                                 TP        u n o
+                                or                                  TP        o
+                                ornament                            TP        a r o r n o
+                                outrigger                           TP        b a t a n k a
+                                oven                                TP        j oː n a
+                                owl                                 FP        m uː ʔ u
+                                ox                                  TP        b o e s
+                                pan                                 TP        k aː s o
+                                parrot                              FP        b a r o
+                                pasture                             TP        p o t e o
+                                peace                               TP        p aː s
+                                pen                                 TP        p l uː m a
+                                penis                               FP        b i tʃ oː
+                                people                              TP        p u e p p l o
+                                pepper                              TP        p i m i e n t a m
+                                physician                           TP        l o t o r
+                                pile up                             FP        n a u m o n t o
+                                pin                                 TP        a l p i l e r
+                                pine                                TP        p iː n o
+                                pipe                                TP        p iː p a
+                                pitchfork                           TP        o r k eː t a m
+                                                                    TP        o r k i a m
+                                pity                                FN        p o l oː b e l e
+                                plate                               TP        p u ʔ a t o
+                                pocket                              TP        b o l s i o m
+                                                                    TP        b oː s a m
+                                poncho                              FN        j o r o n w o m
+                                poor                                TP        p o l oː b e
+                                port                                TP        p u e t o
+                                post                                TP        p o j t e
+                                potato                              FP        p aː p a
+                                potter                              TP        a l p a r e o
+                                pray                                TP        r e s a r o a
+                                priest                              TP        p aː r e
+                                prison                              TP        k a s e l
+                                promise                             TP        p r o m e t i a r o a
+                                punishment                          TP        k a j t iː k o
+                                                                    TP        p eː n a
+                                rafter                              TP        b iː k a
+                                rag                                 FN        p aː j u m
+                                rainbow                             FP        k u r u e s
+                                rake                                FN        r a j t i o m
+                                rape                                TP        b i o l a s i o n
+                                razor                               FN        r a j t i o m
+                                read                                FN        l e ʔ i a r o a
+                                religion                            TP        r e l i j i o n
+                                rescue                              TP        s a l b a r o a
+                                rice                                TP        a r o s i m
+                                ring                                TP        a n iː l i o
+                                road                                TP        k a r e t eː r a
+                                roast or fry                        TP        k i s aː r o a
+                                room                                TP        k o a t o
+                                row                                 TP        r e m a r o a
+                                rudder                              TP        t iː m o n
+                                rule                                TP        k o b a n a r o a
+                                sailcloth                           TP        b eː l a m
+                                saturday                            TP        s a b a l a
+                                sausage                             TP        s a l tʃ iː tʃ a
+                                saw                                 TP        s e r uː tʃ o m
+                                school                              TP        e j k u e l a
+                                sculptor                            TP        e j k u l t oː r
+                                secret                              TP        s e k r eː t o
+                                seize                               FP        bʷ i s i
+                                seven                               TP        s i e t e
+                                shelf                               TP        r e p iː s a
+                                ship                                TP        b a r k o
+                                shoe                                TP        b oː tʃ a m
+                                shoemaker                           TP        s a p a t e o
+                                                                    TP        b o tʃ a r e o
+                                shoot                               TP        p u s i l a r o a
+                                shoulderblade                       TP        o m oː p l a t o
+                                                                    FN        p a l eː t a m
+                                shovel                              TP        p aː l a m
+                                sickle or scythe                    TP        oː s a m
+                                sieve or strain                     TP        k o l a r o a
+                                silk                                TP        s eː d a
+                                silver                              TP        l aː t a
+                                six                                 TP        s e i s
+                                skin                                FP        b eː a
+                                soap                                TP        s aː b u m
+                                soldier                             TP        s o n t a o
+                                son                                 FP        uː s i
+                                                                    TP        p a l e
+                                soup                                TP        s oː p a m
+                                south                               TP        s uː r
+                                spear                               TP        l a n s a m
+                                spleen                              TP        b aː s o
+                                spoon                               TP        k u tʃ a ʔ a r a
+                                spring or well                      FN        s e n e ʔ e k a
+                                                                    TP        p oː s o
+                                square                              FN        k o a r a o
+                                stab to death                       FN        k u tʃ i ʔ i s o a
+                                stable                              FN        r a n tʃ o
+                                statue                              TP        e j t aː t u a
+                                stingray                            TP        r aː j a
+                                stocking                            FN        m e r i a m
+                                                                    TP        k a l s e t iː n i m
+                                stomach                             FP        t o m a
+                                store                               FN        t i e n r a
+                                stove                               FN        j oː n a
+                                stranger                            FN        e j t a n j e o
+                                stretch                             FP        s u n t e
+                                                                    FP        s u n t a
+                                stupid                              TP        n eː s i o
+                                sugar                               TP        a s u k a
+                                sugar cane                          FN        a s u k a
+                                sunday                              TP        l o m i n k o
+                                swear                               TP        j u r a r o a
+                                sweet potato                        FP        k a m oː t e
+                                sword                               FN        e j p aː m
+                                table                               TP        m eː s a
+                                tax                                 TP        i m p u e j t o m
+                                teacher                             TP        m a e j t o
+                                                                    TP        p r o p e s o r
+                                temple                              FP        t e ʔ o p o
+                                ten                                 TP        d i e s
+                                testicles                           FN        r o b o n i m
+                                thatch                              TP        r a m aː
+                                thief                               TP        l a k r o m
+                                thousand                            TP        m iː l
+                                threaten                            TP        m e n a s a r o a
+                                three                               TP        t r e s
+                                thursday                            FN        j u e b e s
+                                time                                TP        t i e m p o
+                                tin or tinplate                     TP        e j t a n j o
+                                tongs                               TP        t e n a ʔ a s a m
+                                tool                                TP        e r a m i e n t a
+                                torch or lamp                       TP        l a m p aː
+                                towel                               FN        t o a j a m
+                                trap (pitfall)                      TP        t aː m p a
+                                trough                              TP        b a t e a
+                                trousers                            FN        s aː w e a m
+                                                                    TP        p a n t a r oː n i m
+                                try                                 TP        p r o b a r o a
+                                tuesday                             TP        m aː t e s
+                                twelve                              TP        d o s e
+                                twenty                              TP        b e i n t e
+                                two                                 TP        l o s
+                                uncle                               FP        t aː t a
+                                vegetables                          FN        b e j e t aː l i m
+                                veil                                TP        b eː l o m
+                                village                             TP        p u e p p l o
+                                vomit                               FP        b i s a t a
+                                walking stick                       TP        b aː r a
+                                weather                             TP        t i e m p o
+                                wednesday                           TP        m i e k o l e s
+                                week                                TP        s e m aː n a
+                                weigh                               TP        p e s a r o a
+                                west                                TP        o e j t e
+                                wheat                               TP        t iː k o m
+                                wheel                               FN        r u e r a m
+                                window                              TP        b e n t aː n a
+                                wine                                TP        b iː n o
+                                wing                                FP        m a s a m
+                                witness                             TP        t e j t iː k o
+                                wrist                               TP        m u n j eː k a
+                                yard                                TP        k a n tʃ a
