@@ -11,6 +11,7 @@ import pandas as pd
 from tabulate import tabulate
 import saborcommands.util as util
 
+
 def get_table(store='store', infile=None):
     # Read Lexstat wordlist in flat file .tsv format from specified store and infile.
     if not infile.endswith('.tsv'):
@@ -99,7 +100,8 @@ def get_cogids_table_for(table, index=0, donors=None, any_donor_language=False):
     # Focus on borrowings from donor languages only. ***
     # With analyze we took into account prediction using cogid.
     # Here we take into account whether loans are from donors in list.
-    if not any_donor_language:
+    # Assuming donors are given.
+    if not any_donor_language and donors:
         loan_ = [False if not any(donor.startswith(dl) for donor in donors) else ln
                     for dl, ln in zip(donor_language_, loan_)]
 
@@ -466,7 +468,7 @@ def get_total_run_result(store, infile, family, donors, index=0):
     # Application interface to perform run based on invocation by another application.
     # Purpose is to automate experimentation.
     table, parameters = get_table(store, infile)
-    cogids_table = get_cogids_table_for(table, index=index)
+    cogids_table = get_cogids_table_for(table, index=index, donors=donors)
     table_, lu_units, lu_idx = get_language_unit_table(
         cogids_table, family=family, byfam=False, donors=donors)
     metrics = get_metrics_by_language_unit(table_, lu_units=lu_units, lu_idx=lu_idx)
