@@ -41,25 +41,32 @@ def analyze_lingrex(dataset,
     lingrex.borrowing.internal_cognates(
         wl,
         family='language_family',
-        partial=True,
+        partial=False,
         runs=runs,
-        ref="autocogids",
+        ref="autocogid",
         method="lexstat",
         threshold=threshold,
         cluster_method=cluster_method,
         model=model)
     # Convert partial cognates into full cognates:
-    lingrex.cognates.common_morpheme_cognates(
-        wl,
-        ref="autocogid",
-        cognates="autocogids",
-        morphemes="automorphemes")
+    # Mattis: if you use "partial = False" you don't need this part
+    #lingrex.cognates.common_morpheme_cognates(
+    #    wl,
+    #    ref="autocogid",
+    #    cognates="autocogids",
+    #    morphemes="automorphemes")
     # Detect cross-family shallow cognates:
+    # there is a bug in the code (missing keyword "family") and a bug in
+    # lingrex, expecting the "family" to be "family".
+    # to avoid this, we can add one line for now, and later READ IN DATA with
+    # family as namespace!
+    wl.add_entries("family", "language_family", lambda x: x)
     lingrex.borrowing.external_cognates(
         wl,
         cognates="autocogid",
+        family="family",
         ref="autoborid",
-        threshold=0.3)
+        threshold=0.45)
 
     # Output the evaluation:
     # p1, r1, f1 = evaluate.acd.bcubes(wl, "ucogid", "autocogid", pprint=False)
@@ -70,7 +77,9 @@ def analyze_lingrex(dataset,
     #     tab.append(["automated cognate detection", p1, r1, f1])
     #     tab.append(["automated borrowing detection", p2, r2, f2])
     # print('')
-
+    
+    # Mattis: I find format strings with `f"` extremely hard to read in code,
+    # and suggest to not use them, as nice they may seem
     filename = f"{module}{'-' if series else ''}{series}{'-' if label else ''}{label}"
     file_path = Path(store).joinpath(filename).as_posix()
     wl.output('tsv', filename=file_path, ignore='all', prettify=False)
@@ -100,12 +109,12 @@ def analyze_lexstat(dataset,
     if module == 'cluster':
         wl = LexStat(dataset)
         if method == "lexstat":
-            wl.get_scorer(runs=runs, ratio=(3, 2))
+            wl.get_scorer(runs=runs)
     elif module == 'partial':
-        wl = Partial(dataset, check=True)
+        wl = Partial(dataset)
         if method == "lexstat":
             # partial scorer errors.
-            wl.get_partial_scorer(runs=runs, ratio=(3, 2))
+            wl.get_partial_scorer(runs=runs)
     else:
         raise NameError(f"{module} not a known cluster module.")
 
@@ -156,6 +165,11 @@ def analyze_lexstat(dataset,
             # John: What are the row indices?
             # John: Each cluster id is formed from words for the same concept.
             # John: So indices correspond to target words?
+            # Mattis: each row has a numeric ID in lingpy, the values are a
+            # list of n items, n being the number of languages, each item
+            # contains 0 if there is no word for the concept, or a list with
+            # the IDS that correspond to the cognate sets, allowing to have
+            # more than one item being "cognate" for the same language
             idxs = []
             for v in values:
                 if v:
@@ -183,7 +197,11 @@ def analyze_lexstat(dataset,
     filename = f"{module}{'-' if series else ''}{series}{'-' if label else ''}{label}"
     file_path = Path(store).joinpath(filename).as_posix()
     wl.output('tsv', filename=file_path, ignore='all', prettify=False)
-    wl.output('qlc', filename=file_path, ignore=['scorer'], prettify=False)
+    # Mattis: don't use QLC format, this is just TSV, it is a relic we don't need
+    # anymore
+    # Mattis 2: if you do not ignore = 'all', you can save the data with the
+    # scorer and re-use it, so you save time!
+    #wl.output('qlc', filename=file_path, ignore=['scorer'], prettify=False)
     
     return filename
 
@@ -329,6 +347,8 @@ def run(args):
         return
         
     filename = args.foreign
+    # the get_wordlist command musut be adjusted so taht "language_family" now
+    # has "family" as the column name (easy to do via namespace!)
     wl = util.get_wordlist(filename)
 
     # Sub-select languages based on languages and donors arguments.
