@@ -254,7 +254,7 @@ def detect_borrowing(wl, bb,
                      threshold,
                      donors,
                      report_limit=None,
-                     any_donor_language=False):
+                     any_loan=False):
 
     proportions = []  # Used for report of donor proportions.
     words = []  # Used for subsequent reporting of distances below threshold.
@@ -284,18 +284,18 @@ def detect_borrowing(wl, bb,
                 # Loan set True if donor language is one of candidate donors.
                 # May need to improve this.  e.g., Spanish (Mexican) does not match!
                 # Indicator to apply to only donor language as default.
-                if loan and not any_donor_language:
+                if loan and not any_loan:
                     if not any(donor.startswith(wl[idx, 'donor_language'])
                                for donor in donors): loan = False
 
-                anyPred = False  # Any distance < threshold will qualify
+                any_pred = False  # Any distance < threshold will qualify
 
                 tmp_words = []
                 for donor, dist, donor_word in hits:
                     if dist <= threshold or (report_limit and dist <= report_limit):
                         tmp_words += [[donor, dist, donor_word]]
                     if dist <= threshold:  # Only need 1 donor word < threshold.
-                        anyPred = True
+                        any_pred = True
 
                 # Add word to all_words for words status report.
                 # Words are target language words, not possible donor words.            
@@ -303,7 +303,7 @@ def detect_borrowing(wl, bb,
                 concept_name = concept_name.lower()
 
                 all_words.append([families[language], language,
-                                  concept_name, word, anyPred, loan])
+                                  concept_name, word, any_pred, loan])
                 # print(f"All words {language}, {concept_name}, {word}")
 
                 if not tmp_words: continue  # Nothing to add to distance report
@@ -316,8 +316,8 @@ def detect_borrowing(wl, bb,
                     # Report words < threshold, or words < report_limit.
                     if row[1] < threshold or (report_limit and row[1] <= report_limit):
                         pred_ = 1 if row[3] in ['*', '-'] else 0
-                        # Take into account whether some other form matches.
-                        status_ = util.assess_pred(pred_, int(loan), anyPred)
+                        # Take into account whether some other donor form matches.
+                        status_ = util.assess_pred(pred_, int(loan), any_pred)
                         distance_ = row[1]
                         donor_candidate_ = row[0]
                         candidate_tokens_ = row[2]
@@ -447,6 +447,11 @@ def register(parser):
         help='Donor language(s).',
     )
     parser.add_argument(
+        "--anyloan",
+        action="store_true",
+        help='Any loan regardless of donor.'
+    )
+    parser.add_argument(
         "--output",
         type=str,
         default="output",
@@ -479,6 +484,8 @@ def run(args):
     #     filepath = Path("store").joinpath(filename+"-TEST").as_posix()
     #    wl.output('tsv', filename=filepath, ignore='all', prettify=False)
 
+    print(f"model {args.model}, mode {args.mode}, any loan {args.anyloan}")
+
     bb = construct_alignments(wl,
                               model=args.model,
                               mode=args.mode,
@@ -498,7 +505,7 @@ def run(args):
             threshold=threshold,
             report_limit=args.limit,
             donors=args.donor,
-            any_donor_language=False)
+            any_loan=args.anyloan)
         report_borrowing(
             proportions=proportions,
             words=words,
@@ -510,7 +517,7 @@ def run(args):
             series=args.series)
 
 
-def get_total_run_result(languages, donors, config, filename=None):
+def get_total_run_result(languages, donors, any_loan, config, filename=None):
     # Application interface to perform run based on invocation by another application.
     # Purpose is to automate experimentation.
     # config includes alignment parameters: model, mode, gop, scale, factor;
@@ -544,7 +551,7 @@ def get_total_run_result(languages, donors, config, filename=None):
             families=families,
             threshold=threshold,
             donors=donors,
-            any_donor_language=True)
+            any_loan=any_loan)
 
         result = get_overall_detection(all_words)
         result = [round(num, 3) for num in result]

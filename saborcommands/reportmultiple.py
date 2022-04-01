@@ -73,7 +73,7 @@ def report_basic(table, index=0):
           f"number of distinct >1 family global cognates: {len(counts_global_cognates_gt1)}")
 
 
-def get_cogids_table_for(table, index=0, donors=None, any_donor_language=False):
+def get_cogids_table_for(table, index=0, donors=None, any_loan=False):
     # Table is from Pandas, so we use column names in the code.
     family_ = list(table.LANGUAGE_FAMILY.values)
     language_ = list(table.DOCULECT.values)
@@ -101,7 +101,7 @@ def get_cogids_table_for(table, index=0, donors=None, any_donor_language=False):
     # With analyze we took into account prediction using cogid.
     # Here we take into account whether loans are from donors in list.
     # Assuming donors are given.
-    if not any_donor_language and donors:
+    if not any_loan and donors:
         loan_ = [False if not any(donor.startswith(dl) for donor in donors) else ln
                     for dl, ln in zip(donor_language_, loan_)]
 
@@ -354,7 +354,7 @@ def build_donor_forms_dict(cogids_table, donors):
 
 def report_metrics_by_family(cogids_table,
                              family=None,
-                             byfam=False,
+                             by_fam=False,
                              donors=None,
                              require_cogid=False,
                              report_status=None,
@@ -367,9 +367,9 @@ def report_metrics_by_family(cogids_table,
         cogids_table, donors=donors)
 
     table, lu_units, lu_idx = get_language_unit_table(
-        cogids_table, family=family, byfam=byfam, donors=donors)
+        cogids_table, family=family, byfam=by_fam, donors=donors)
     metrics = get_metrics_by_language_unit(table, lu_units=lu_units, lu_idx=lu_idx)
-    util.report_metrics_table(metrics, byfam=byfam, threshold=threshold)
+    util.report_metrics_table(metrics, byfam=by_fam, threshold=threshold)
 
     words = get_words_results(table,
                               donor_forms=donor_forms,
@@ -425,7 +425,11 @@ def register(parser):
         default=["Spanish", "Portuguese"],
         help='Donor language(s).',
     )
-
+    parser.add_argument(
+        "--anyloan",
+        action="store_true",
+        help='Any loan regardless of donor.'
+    )
     parser.add_argument(
         "--output",
         type=str,
@@ -446,22 +450,22 @@ def run(args):
     for idx, threshold in enumerate(thresholds):
         report_basic(table, index=idx)
         cogids_table = get_cogids_table_for(table, index=idx, donors=args.donor, 
-                                        # Donors list used to count only wrt donors.
-                                        # any_donor_language turns off donor only metrics.
-                                        any_donor_language=False)
+                                            # Donors list used to count only wrt donors.
+                                            # any_donor_language turns off donor only metrics.
+                                            any_loan=args.anyloan)
         report_cogids_by_family(cogids_table,
-                            family=args.family,
-                            byfam=args.byfam,
-                            threshold=threshold)
+                                family=args.family,
+                                byfam=args.byfam,
+                                threshold=threshold)
         report_metrics_by_family(cogids_table,
-                             family=args.family,
-                             byfam=args.byfam,
-                             donors=args.donor,
-                             require_cogid=args.cogid,
-                             report_status=util.PredStatus[args.status.upper()],
-                             threshold=threshold,
-                             output=args.output,
-                             series=args.series)
+                                 family=args.family,
+                                 by_fam=args.byfam,
+                                 donors=args.donor,
+                                 require_cogid=args.cogid,
+                                 report_status=util.PredStatus[args.status.upper()],
+                                 threshold=threshold,
+                                 output=args.output,
+                                 series=args.series)
 
 
 def get_total_run_result(store, infile, family, donors, index=0):
