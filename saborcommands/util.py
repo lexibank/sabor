@@ -182,8 +182,7 @@ def calculate_alm_wts(left, right, ln, wt_fn=2):
 ##################################################
 # Data functions
 ##
-def get_language_all(wordlist, donors=None):
-    donors = donors if donors else ["Spanish", "Portuguese"]
+def get_language_all(wordlist, donors=["Spanish", "Portuguese"]):
     languages = wordlist.cols
     # Don't include donor languages.
     return [language for language in languages if language not in donors]
@@ -249,49 +248,8 @@ def compose_wl():
     wl = compose_wl_from_cldf()
     wl.add_entries('concept_name', 'concept_name',
                    lambda x: x.lower(), override=True)
-    print(len(wl), wl.cols, wl.height, wl.width)
+    # print(len(wl), wl.cols, wl.height, wl.width)
     return wl
-
-    # Store as temporary file to convert concepts.
-    # If not for the concept change, could be done with namespace!
-
-    # with tempfile.TemporaryDirectory() as tmp:
-    #     file_path = Path(tmp).joinpath('tempwordlist').as_posix()
-    #     wl.output('tsv', filename=file_path, ignore='all', prettify=False)
-    #
-    #     out_file_path = Path(tmp).joinpath('outwordlist.tsv').as_posix()
-    #     with open(out_file_path, 'wt') as wlfile:
-    #         wrt = csv.writer(wlfile, delimiter='\t')
-    #         # Write out header
-    #         wrt.writerow(["language", "family",
-    #                       "concept_name", "concept",
-    #                       "value", "form", "tokens",
-    #                       "borrowed", "borrowed_score",
-    #                       "donor_language", "donor_value"])
-    #
-    #         # Get temp file and write to out file (also temp)
-    #         file_path = Path(tmp).joinpath('tempwordlist.tsv').as_posix()
-    #         with open(file_path) as file:
-    #             rdr = csv.reader(file, delimiter="\t")
-    #             header = next(rdr)
-    #             print("tmp file:", header)
-    #
-    #             for row in rdr:
-    #                 # fixup possible empty concept id.
-    #                 # if not row[4]: row[4] = row[3]
-    #                 # Lowercase the concept name.
-    #                 row[3] = row[3].lower()
-    #
-    #                 # add to output file.
-    #                 new_row = row[1:]
-    #                 wrt.writerow(new_row)
-    #
-    #     wl = Wordlist(out_file_path)
-    #
-    #     # fixup concept id and name.
-    #
-    #     print(len(wl), wl.cols, wl.height, wl.width)
-    #     return wl
 
 
 def get_wordlist(filename=None):

@@ -5,11 +5,12 @@
 """
 from pathlib import Path
 import argparse
-import saborcommands.util as util
-# from lingpy import evaluate
 import lingrex
 from lingrex import borrowing
+# from lingpy import evaluate
 # from clldutils.markup import Table
+import saborcommands.util as util
+import saborcommands.reportlingrex as rept
 
 
 def analyze_lingrex(dataset,
@@ -18,14 +19,9 @@ def analyze_lingrex(dataset,
                     threshold=0.6,
                     ext_threshold=0.45,
                     runs=2000,
-                    # mode='overlap',
                     cluster_method='infomap',
-                    # idtype='loose',
                     store='store',
-                    series='lingrex',
-                    label="",
-                    # donors=None,
-                    # any_loan=False
+                    series='',
                     ):
     wl = dataset
 
@@ -42,7 +38,6 @@ def analyze_lingrex(dataset,
         cluster_method=cluster_method,
         model=model)
 
-    # wl.add_entries("family", "language_family", lambda x: x)
     lingrex.borrowing.external_cognates(
         wl,
         cognates="autocogid",
@@ -59,11 +54,12 @@ def analyze_lingrex(dataset,
     #     tab.append(["automated borrowing detection", p2, r2, f2])
     # print('')
 
-    # Mattis: I find format strings with `f"` extremely hard to read in code,
-    # and suggest to not use them.
-    filename = f"lingrex{'-' if series else ''}{series}{'-' if label else ''}{label}"
+    filename = "lingrex{d}{series}-analysis".\
+        format(d='-' if series else '', series=series)
     file_path = Path(store).joinpath(filename).as_posix()
     wl.output('tsv', filename=file_path, ignore='all', prettify=False)
+
+    return filename
 
 
 def register(parser):
@@ -132,11 +128,6 @@ def register(parser):
         type=str,
         default=""
     )
-    parser.add_argument(
-        "--label",
-        type=str,
-        default="analysis"
-    )
     # Arguments for reporting.
     parser.add_argument(
         "--output",
@@ -144,28 +135,44 @@ def register(parser):
         default="output",
         help='Directory to write output.'
     )
+    parser.add_argument(
+        "--anyloan",
+        action="store_true",
+        help='Any loan regardless of donor.'
+    )
+    parser.add_argument(
+        "--status",
+        type=str,
+        default='ntn',
+        choices=[f"{s.name.lower()}" for s in util.PredStatus],
+        # choices=["tn", "tp", "fp", "fn", "f", "t", "ntn", "all"],
+        help='Code for reporting words for status.',
+    )
 
 
 def run(args):
-
-    # the get_wordlist command must be adjusted so that "language_family" now
-    # has "family" as the column name (easy to do via namespace!)
+    # Get wordlist of entire database.  Not using foreign path option.
     wl = util.get_wordlist()
-
-    # Sub-select languages based on languages and donors arguments.
-    args.language = util.get_language_all(wl) if args.language[0] == 'all' else args.language
+    # Clear donor languages from list of language names if all specified.
+    args.language = util.get_language_all(wl, donors=args.donor) \
+        if args.language[0] == 'all' else args.language
+    # Keep all selected and donor languages.
     wl = util.select_languages(wl, languages=args.language, donors=args.donor)
 
-    analyze_lingrex(dataset=wl,
-                    runs=args.runs,
-                    model=args.model,
-                    threshold=args.threshold,
-                    ext_threshold=args.ext_threshold,
-                    method=args.method,
-                    cluster_method=args.cluster_method,
-                    store=args.store,
-                    series=args.series,
-                    label=args.label)
+    filename = analyze_lingrex(
+                            dataset=wl,
+                            runs=args.runs,
+                            model=args.model,
+                            threshold=args.threshold,
+                            ext_threshold=args.ext_threshold,
+                            method=args.method,
+                            cluster_method=args.cluster_method,
+                            store=args.store,
+                            series=args.series)
+
+    # Report out the results.
+    args.infile = filename
+    rept.run(args)
 
 
 if __name__ == "__main__":

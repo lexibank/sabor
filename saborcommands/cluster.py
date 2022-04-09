@@ -10,7 +10,7 @@ import argparse
 from lingpy import *
 from lingpy.compare.partial import Partial
 import saborcommands.util as util
-import saborcommands.reportmultiple as rept
+import saborcommands.reportcluster as rept
 
 
 def analyze_lexstat(dataset,

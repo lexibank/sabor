@@ -19,8 +19,6 @@ import saborcommands.util as util
 def add_donor_entries(store, infile, donors):
     filepath = Path(store).joinpath(infile).as_posix()
     wl = Wordlist(filepath)
-    # Follow pattern of cluster analysis (using multple).
-    # Only one threshold used so no need to iterate over multiple ids.
 
     etd = wl.get_etymdict(ref='autoborid')
     # external cognates doesn't seem to cross concepts so assume one concept.
@@ -28,12 +26,6 @@ def add_donor_entries(store, infile, donors):
         idxs = []
         for v in values:
             if v: idxs += v
-        # Code to set single language family borids to zero.
-        # Redundant since already assured by borrowing external.
-        # families = [wl[idx, 'family'] for idx in idxs]
-        # if len(set(families)) == 1:
-        #     for idx in idxs: wl[idx, 'autoborid'] = 0
-        #     print(f"Set autoborid {cogid} to 0.")
         # Code to set borids to zero if not including a donor language.
         languages = [wl[idx, 'doculect'] for idx in idxs]
         has_donor = any(donor.startswith(language)
@@ -50,13 +42,13 @@ def get_table(store='store', infile=None, donors=None, any_loan=False):
     if donors and not any_loan:
         # Get file as wordlist and modify entries for AutoBorId
         wl = add_donor_entries(store, infile, donors=donors)
-        # Store and open as flat file.
+        # Store in updated file path.
         _, filepath = tempfile.mkstemp(suffix=infile, prefix=None,
                                        dir=store, text=True)
         wl.output('tsv', filename=filepath.removesuffix('.tsv'),
                   ignore='all', prettify=False)
 
-    else:  # No donors, so use file directly.
+    else:  # No donors or not any_loan, so use file directly.
         filepath = Path(store).joinpath(infile).as_posix()
 
     # Read wordlist in flat file .tsv format from specified store and infile.
@@ -100,10 +92,6 @@ def get_ids_table_for(table, donors=None, any_loan=False):
     else:
         language_ = [d['DOCULECT'] for d in table]
     concept_ = [d['CONCEPT'] for d in table]
-    # if 'CONCEPT_NAME' in table[0]:
-    #     concept_name_ = [d['CONCEPT_NAME'].lower() for d in table]
-    # else:
-    #     concept_name_ = [c.lower() for c in concept_]
     concept_name_ = [d['CONCEPT_NAME'] for d in table]
     tokens_ = [d['TOKENS'] for d in table]
     autoborid_ = [d['AUTOBORID'] for d in table]
