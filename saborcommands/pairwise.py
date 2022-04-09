@@ -216,12 +216,12 @@ def report_pairwise_detection(all_words, threshold):
     languages = sorted(set(row[1] for row in all_words))
     metrics = calculate_metrics_table(all_words, lu_units=languages, lu_idx=1)
     metrics.append(['Total'] + q)
-    util.report_metrics_table(metrics, byfam=False, threshold=threshold)
+    util.report_metrics_table(metrics, by_fam=False, threshold=threshold)
 
     families = sorted(set(row[0] for row in all_words))
     metrics = calculate_metrics_table(all_words, lu_units=families, lu_idx=0)
     metrics.append(['Total'] + q)
-    util.report_metrics_table(metrics, byfam=True, threshold=threshold)
+    util.report_metrics_table(metrics, by_fam=True, threshold=threshold)
 
 
 def get_words_results(table, status=util.PredStatus.F):

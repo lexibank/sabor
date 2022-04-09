@@ -10,12 +10,16 @@ Writes multiple words distance and words status (largely redundant with distance
 $ cldfbench sabor.multiple --threshold .5 .6 .7 > output/multiple-log.txt
 ```
 
-writes multiple words status reports to output and saves analysis file in store.
+Writes multiple words status reports to output and saves analysis file in store.
 
 ```
-$ python saborcommands/multiple.py --module lingrex
+$ cldfbench sabor.analyzelingrex > output/lingrex-log.txt
 ```
-saves lingrex analysis file in store.
+Writes lingrex analysis file in store.  
+Arguments for internal and external thresholds.
 
 
-
+```
+$ cldfbench sabor.reportlingrex > output/lingrex-report-log.txt
+```
+Writes lingrex words status report file and log to output.

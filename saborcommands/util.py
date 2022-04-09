@@ -182,7 +182,8 @@ def calculate_alm_wts(left, right, ln, wt_fn=2):
 ##################################################
 # Data functions
 ##
-def get_language_all(wordlist, donors=["Spanish", "Portuguese"]):
+def get_language_all(wordlist, donors=None):
+    donors = donors if donors else ["Spanish", "Portuguese"]
     languages = wordlist.cols
     # Don't include donor languages.
     return [language for language in languages if language not in donors]
@@ -228,7 +229,6 @@ def compose_wl_from_cldf():
         columns=["language_id",
                  "language_family",
                  "concept_name",  # From concept relation, name field.
-                 # "concept_concepticon_id",  # From concept relation, concepticon_id field.
                  "concept_id",  # From concept relation, id field.
                  "value",
                  "form",
@@ -236,52 +236,62 @@ def compose_wl_from_cldf():
                  "borrowed",
                  "borrowed_score",
                  "donor_language",
-                 "donor_value"])
+                 "donor_value"],
+        namespace=(('language_id', 'language'),
+                   ('language_family', 'family'),
+                   ("concept_id", "concept"),
+                   ('segments', 'tokens'))
+    )
     return wl
 
 
 def compose_wl():
     wl = compose_wl_from_cldf()
+    wl.add_entries('concept_name', 'concept_name',
+                   lambda x: x.lower(), override=True)
+    print(len(wl), wl.cols, wl.height, wl.width)
+    return wl
+
     # Store as temporary file to convert concepts.
-    with tempfile.TemporaryDirectory() as tmp:
-        file_path = Path(tmp).joinpath('tempwordlist').as_posix()
-        wl.output('tsv', filename=file_path, ignore='all', prettify=False)
+    # If not for the concept change, could be done with namespace!
 
-        out_file_path = Path(tmp).joinpath('outwordlist.tsv').as_posix()
-        with open(out_file_path, 'wt') as wlfile:
-            wrt = csv.writer(wlfile, delimiter='\t')
-            # Write out header
-            wrt.writerow(["language", "language_family",
-                          "concept_name", "concept",
-                          "value", "form", "tokens",
-                          "borrowed", "borrowed_score",
-                          "donor_language", "donor_value"])
-
-            # Get temp file and write to out file (also temp)
-            file_path = Path(tmp).joinpath('tempwordlist.tsv').as_posix()
-            with open(file_path) as file:
-                rdr = csv.reader(file, delimiter="\t")
-                header = next(rdr)
-                print("tmp file:", header)
-
-                # cnt = 0
-                for row in rdr:
-                    # fixup possible empty concept id.
-                    if not row[4]: row[4] = row[3]
-                    # Lowercase the concept name.
-                    row[3] = row[3].lower()
-                    
-                    # add to output file.
-                    new_row = row[1:]
-                    wrt.writerow(new_row)
-
-                    # print(tokens)
-                    # cnt += 1
-                    # if cnt > 300: break
-
-        wl = Wordlist(out_file_path)
-        print(len(wl), wl.cols, wl.height, wl.width)
-        return wl
+    # with tempfile.TemporaryDirectory() as tmp:
+    #     file_path = Path(tmp).joinpath('tempwordlist').as_posix()
+    #     wl.output('tsv', filename=file_path, ignore='all', prettify=False)
+    #
+    #     out_file_path = Path(tmp).joinpath('outwordlist.tsv').as_posix()
+    #     with open(out_file_path, 'wt') as wlfile:
+    #         wrt = csv.writer(wlfile, delimiter='\t')
+    #         # Write out header
+    #         wrt.writerow(["language", "family",
+    #                       "concept_name", "concept",
+    #                       "value", "form", "tokens",
+    #                       "borrowed", "borrowed_score",
+    #                       "donor_language", "donor_value"])
+    #
+    #         # Get temp file and write to out file (also temp)
+    #         file_path = Path(tmp).joinpath('tempwordlist.tsv').as_posix()
+    #         with open(file_path) as file:
+    #             rdr = csv.reader(file, delimiter="\t")
+    #             header = next(rdr)
+    #             print("tmp file:", header)
+    #
+    #             for row in rdr:
+    #                 # fixup possible empty concept id.
+    #                 # if not row[4]: row[4] = row[3]
+    #                 # Lowercase the concept name.
+    #                 row[3] = row[3].lower()
+    #
+    #                 # add to output file.
+    #                 new_row = row[1:]
+    #                 wrt.writerow(new_row)
+    #
+    #     wl = Wordlist(out_file_path)
+    #
+    #     # fixup concept id and name.
+    #
+    #     print(len(wl), wl.cols, wl.height, wl.width)
+    #     return wl
 
 
 def get_wordlist(filename=None):
@@ -298,7 +308,7 @@ def get_wordlist(filename=None):
 # Get dictionary of family:language from wordlist.
 def get_language_family(wl):
     families = {}
-    for (ID, language, family) in wl.iter_rows('doculect', 'language_family'):
+    for (ID, language, family) in wl.iter_rows('doculect', 'family'):
         families[language] = family
 
     return families
@@ -432,10 +442,10 @@ def report_results(results, folder, filename):
 
 # Functions for reporting help.
 #
-def report_metrics_table(metrics, byfam=False, threshold=None):
+def report_metrics_table(metrics, by_fam=False, threshold=float('NaN')):
     print()
     print(f"Threshold: {threshold:0.3f}.")
-    header0 = 'Language ' + ('Family' if byfam else '')
+    header0 = 'Language ' + ('Family' if by_fam else '')
     print(tabulate(metrics,
           headers=[header0, 'tp', 'tn', 'fp', 'fn',
                    'precision', 'recall', 'F1 score', 'accuracy'],
@@ -445,6 +455,7 @@ def report_metrics_table(metrics, byfam=False, threshold=None):
           f"inherited {total[2]+total[3]}, "
           f"total {total[1] + total[2] + total[3] + total[4]}")
     print()
+
 
 def run(args):
     ...

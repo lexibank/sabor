@@ -75,7 +75,7 @@ def report_basic(table, index=0):
 
 def get_cogids_table_for(table, index=0, donors=None, any_loan=False):
     # Table is from Pandas, so we use column names in the code.
-    family_ = list(table.LANGUAGE_FAMILY.values)
+    family_ = list(table.FAMILY.values)
     language_ = list(table.DOCULECT.values)
 
     concepts_ = list(table.CONCEPT.values)
@@ -258,15 +258,22 @@ def get_words_results(table, donor_forms, unmarked_donor_forms,
             marked = ' '
 
         if len(donors.items()) == 0:
-            words.append([family_, language_, concept_name_, tokens_,
-                          donor_language, donor_value,
+            words.append([family_, language_,
+                          f'{concept_name_:.20}',
+                          f'{tokens_:.40}',
+                          donor_language,
+                          f'{donor_value:20}',
                           cogid_, borrowed_, status_name])
         else:
             for candidate, candidate_tokens in donors.items():
-                words.append([family_, language_, concept_name_, tokens_,
-                              donor_language, donor_value,
+                words.append([family_, language_,
+                              f'{concept_name_:.20}',
+                              f'{tokens_:.40}',
+                              donor_language,
+                              f'{donor_value:.20}',
                               cogid_, borrowed_,  status_name,
-                              candidate, marked, candidate_tokens])
+                              candidate, marked,
+                              '{:.50}'.format(f'{candidate_tokens}')])
                 family_ = ''
                 language_ = ''
                 concept_name_ = ''
@@ -369,7 +376,7 @@ def report_metrics_by_family(cogids_table,
     table, lu_units, lu_idx = get_language_unit_table(
         cogids_table, family=family, byfam=by_fam, donors=donors)
     metrics = get_metrics_by_language_unit(table, lu_units=lu_units, lu_idx=lu_idx)
-    util.report_metrics_table(metrics, byfam=by_fam, threshold=threshold)
+    util.report_metrics_table(metrics, by_fam=by_fam, threshold=threshold)
 
     words = get_words_results(table,
                               donor_forms=donor_forms,

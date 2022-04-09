@@ -5,7 +5,6 @@ sca_{i} - cognate id and language family for cognates whether or not they cross 
 sca_{i}ID - cognate id and family combination renumbered as integer.
 
 """
-import sys
 from pathlib import Path
 import argparse
 from lingpy import *
@@ -13,71 +12,7 @@ from lingpy.compare.partial import Partial
 import saborcommands.util as util
 import saborcommands.reportmultiple as rept
 
-import lingrex
-from lingrex import borrowing, cognates
-from lingpy import evaluate
-from clldutils.markup import Table
 
-
-def analyze_lingrex(dataset,
-                    module=None,
-                    method='lexstat',
-                    model='sca',
-                    threshold=0.50,
-                    runs=2000,  # during development.
-                    mode='overlap',
-                    cluster_method='infomap',
-                    idtype='loose',
-                    store='store',
-                    series='common-morpheme',
-                    label="",
-                    donors=None,
-                    any_loan=False
-                    ):
-    # ignore arguments since prototyping lingrex.
-    wl = dataset
-
-    # See paper, section "4 Results" and section "3.2 Methods".
-    # Detect partial cognates:
-    lingrex.borrowing.internal_cognates(
-        wl,
-        family='language_family',
-        partial=True,
-        runs=runs,
-        ref="autocogids",
-        method="lexstat",
-        threshold=threshold,
-        cluster_method=cluster_method,
-        model=model)
-    # Convert partial cognates into full cognates:
-    lingrex.cognates.common_morpheme_cognates(
-        wl,
-        ref="autocogid",
-        cognates="autocogids",
-        morphemes="automorphemes")
-    # Detect cross-family shallow cognates:
-    lingrex.borrowing.external_cognates(
-        wl,
-        cognates="autocogid",
-        ref="autoborid",
-        threshold=0.3)
-
-    # Output the evaluation:
-    # p1, r1, f1 = evaluate.acd.bcubes(wl, "ucogid", "autocogid", pprint=False)
-    # p2, r2, f2 = evaluate.acd.bcubes(wl, "uborid", "autoborid", pprint=False)
-    # print('')
-    # with Table("method", "precision", "recall", "f-score",
-    #            tablefmt="simple", floatfmt=".4f") as tab:
-    #     tab.append(["automated cognate detection", p1, r1, f1])
-    #     tab.append(["automated borrowing detection", p2, r2, f2])
-    # print('')
-
-    filename = f"{module}{'-' if series else ''}{series}{'-' if label else ''}{label}"
-    file_path = Path(store).joinpath(filename).as_posix()
-    wl.output('tsv', filename=file_path, ignore='all', prettify=False)
-
-
-# See lingrex/borrowing for use of different modules.
 def analyze_lexstat(dataset,
                     module=None,
                     method='lexstat',
@@ -105,12 +40,12 @@ def analyze_lexstat(dataset,
     if module == 'cluster':
         wl = LexStat(dataset)
         if method == "lexstat":
-            wl.get_scorer(runs=runs, ratio=(3, 2))
+            wl.get_scorer(runs=runs)
     elif module == 'partial':
-        wl = Partial(dataset, check=True)
+        wl = Partial(dataset)
         if method == "lexstat":
             # partial scorer errors.
-            wl.get_partial_scorer(runs=runs, ratio=(3, 2))
+            wl.get_partial_scorer(runs=runs)
     else:
         raise NameError(f"{module} not a known cluster module.")
 
@@ -142,10 +77,10 @@ def analyze_lexstat(dataset,
 
         # Add entries for cluster id combined with language family.
         # John: Formatting provided by lambda expression. Not obvious!
-        # John: Create variable "sca_{i}", using variables "{sca_id}, language_family".
+        # John: Create variable "sca_{i}", using variables "{sca_id},family".
         # John: Format the new variable with 1st part from sca_id and
-        # John: second part from language_family.
-        wl.add_entries("sca_{0}".format(i), sca_id+",language_family",
+        # John: second part from family.
+        wl.add_entries("sca_{0}".format(i), sca_id+",family",
                        lambda x, y: str(x[y[0]]) + "-" + x[y[1]])
         # Renumber combination of cluster_id, family as integer.
         # Store in sca_{0}ID by default.
@@ -155,12 +90,21 @@ def analyze_lexstat(dataset,
         etd = wl.get_etymdict(ref=sca_id)
 
         # John: Process dictionary of cluster ids.
-        # Zero out cluster ids (cognate ids) that do not cross families.
+        # Zero out cluster ids (cognate set ids) that do not cross families.
         for cogid, values in etd.items():
-            # John: Construct list of row indices for this cognate id.
+            # John: Construct list of row indices for this cognate set id.
             # John: What are the row indices?
             # John: Each cluster id is formed from words for the same concept.
-            # John: So indices correspond to target words?
+            # John: Since clustering over words by concept.
+            # John: So values is a list of indices that corresponds to target words? NO.
+            # Mattis: Each row (entry) has a numeric ID in LingPy.
+            # Values are a list of n items, n being the number of languages.
+            # Each item contains 0 if there is no word for the concept,
+            # or a list with the IDS that correspond to the cognate sets.
+            # This allows having more than one item being "cognate" for the same language.
+
+            # John: Form list of entry ids for this cluster id.
+            # John: Successively extend the list by adding non-zero entry ids.
             idxs = []
             for v in values:
                 if v:
@@ -168,15 +112,17 @@ def analyze_lexstat(dataset,
             # John: Form list of language families for this cluster id.
             # John: Index must be over entries (words) for this cluster.
             # John: So we obtain corresponding language family for each word.
-            families = [wl[idx, 'language_family'] for idx in idxs]
+            families = [wl[idx, 'family'] for idx in idxs]
             # If set of just 1 family then local cognate.
             if len(set(families)) == 1:
                 for idx in idxs:
                     # Set cognate id to 0 since just 1 family.
                     wl[idx, sca_id] = 0
 
-            # If only checking for listed donor languages
-            # then test for cognate-id>0 for donor language.
+            # John: If only checking for listed donor languages,
+            # John: then test for cognate-id>0 for donor language.
+            # John: This eliminates the fortuitous cross-family sca_id
+            # John: when donor not included.  Could do on report side?
             if not any_loan:
                 languages = [wl[idx, 'doculect'] for idx in idxs]
                 has_donor = any(donor.startswith(lang)
@@ -188,7 +134,8 @@ def analyze_lexstat(dataset,
     filename = f"{module}{'-' if series else ''}{series}{'-' if label else ''}{label}"
     file_path = Path(store).joinpath(filename).as_posix()
     wl.output('tsv', filename=file_path, ignore='all', prettify=False)
-    wl.output('qlc', filename=file_path, ignore=['scorer'], prettify=False)
+    # Mattis: if you do not ignore = 'all', you can save the data with the
+    # scorer and re-use it, so you save time!  # ignore=['scorer'] instead of ignore='all'.
     
     return filename
 
@@ -197,10 +144,8 @@ def register(parser):
     parser.add_argument(
         "--module",
         type=str,
-        choices=["cluster", "partial", "lingrex"],
+        choices=["cluster", "partial"],
         default="cluster",
-        # 'lingrex' added to experiment with lingrex module.
-        # clustering module predetermined if lingrex.
         help='Which clustering module to use.',
     )
     parser.add_argument(
@@ -333,7 +278,7 @@ def register(parser):
 
 
 def run(args):
-    # Could use just to run multiplereport.
+    # Can run multiplereport with infile.
     if args.infile:
         rept.run(args)
         return
@@ -345,37 +290,25 @@ def run(args):
     args.language = util.get_language_all(wl) if args.language[0] == 'all' else args.language
     wl = util.select_languages(wl, languages=args.language, donors=args.donor)
     
-    if args.module == 'lingrex':
-        analyze_lingrex(dataset=wl,
-                        module=args.module,
-                        runs=args.runs,
-                        model=args.model,
-                        threshold=args.threshold[0],
-                        method=args.method,
-                        cluster_method=args.cluster_method,
-                        store=args.store,
-                        series=args.series,
-                        label=args.label)
-    else:
-        filename = analyze_lexstat(
-            dataset=wl,
-            module=args.module,
-            method=args.method,
-            model=args.model,
-            thresholds=args.threshold,
-            mode=args.mode,
-            cluster_method=args.cluster_method,
-            idtype=args.idtype,
-            runs=args.runs,
-            store=args.store,
-            series=args.series,
-            label=args.label,
-            donors=args.donor,
-            any_loan=args.anyloan)
+    filename = analyze_lexstat(
+        dataset=wl,
+        module=args.module,
+        method=args.method,
+        model=args.model,
+        thresholds=args.threshold,
+        mode=args.mode,
+        cluster_method=args.cluster_method,
+        idtype=args.idtype,
+        runs=args.runs,
+        store=args.store,
+        series=args.series,
+        label=args.label,
+        donors=args.donor,
+        any_loan=args.anyloan)
 
-        # Report out the results.
-        args.infile = filename
-        rept.run(args)
+    # Report out the results.
+    args.infile = filename
+    rept.run(args)
 
 
 if __name__ == "__main__":
