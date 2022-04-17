@@ -13,7 +13,9 @@ setup(
     license='MIT',
     url='https://github.com/clics/sabor',
     py_modules=['lexibank_sabor'],
-    packages=find_packages(where='.'),
+    # packages=find_packages(where='.'),
+    packages=find_packages(where='sabor'),
+    package_dir={'': 'sabor'},
     include_package_data=True,
     zip_safe=False,
     entry_points={
@@ -41,11 +43,12 @@ setup(
         'uritemplate',
         'lingpy>=2.6.8',
         'pyclts>=3.1',
-        #'cartopy',
-        #'pillow',
-        #'matplotlib',
-        #'scipy',
-        #"lingrex"
+        'tabulate>=0.8.9',
+        # 'cartopy',
+        # 'pillow',
+        # 'matplotlib',
+        # 'scipy',
+        'lingrex'
     ],
     extras_require={
         'dev': ['flake8', 'wheel', 'twine'],

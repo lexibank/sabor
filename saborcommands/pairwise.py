@@ -4,7 +4,7 @@
     Johann-Mattis List, Aug 22, 2021
     John Edward Miller, Oct 6, 2021
 """
-import sys
+
 from pathlib import Path
 import argparse
 
@@ -12,11 +12,14 @@ from distutils.util import strtobool
 from lingpy import *
 # from lingpy.sequence.sound_classes import token2class
 
-from lexibank_sabor import Dataset as sabor
 from itertools import product
 from tabulate import tabulate
 from pylexibank import progressbar
-import saborcommands.util as util
+
+import sabor.positionbasedscorer as pbscore
+import sabor.diagnostics as diag
+import sabor.evaluate as evaluate
+import sabor.accessdb as adb
 
 
 def construct_alignments(wl, model, mode, gop, donors, pbs=False, min_len=1, config=None):
@@ -31,7 +34,8 @@ def construct_alignments(wl, model, mode, gop, donors, pbs=False, min_len=1, con
         # idxs are all entries for given concept.
         # Entries correspond to doculect form and related data.
         idxs = wl.get_dict(row=concept)
-        # Populate donors indices for concept.  This collects the entries for this donor and concept.
+        # Populate donors indices for concept.
+        # This collects the entries for this donor and concept.
         donors_concepts = {donor: idxs.get(donor, []) for donor in donors}
         for doculect in idxs:
             # Skip the doculect if a donor langauge.
@@ -57,7 +61,7 @@ def construct_alignments(wl, model, mode, gop, donors, pbs=False, min_len=1, con
 
                     pbs_dist = 1.0
                     if pbs:
-                        pbs_dist = util.relative_position_based_scoring(
+                        pbs_dist = pbscore.relative_position_based_scoring(
                             almA, almB, gop=gop, model=model,
                             weights=config["weights"] if config and config.get("weights") else None,
                             min_len=config["min_len"] if config and config.get("min_len") else min_len,
@@ -98,7 +102,7 @@ def screen_word_hits(tmp_words, threshold):
     return tmp_words_
 
 
-def order_words_table(table, status=util.PredStatus.NTN):
+def order_words_table(table, status=diag.PredStatus.NTN):
     # Remove redundant use of family, language, concept, and word.
     # Sort table by family.  Stable sort so rest of order should be OK.
     # Change unchanged fields to blank after sort for better presentation.
@@ -110,7 +114,7 @@ def order_words_table(table, status=util.PredStatus.NTN):
     word = ''
     for row in table:
         status_ = row[9]
-        if not util.report_assessment(status, status_): continue
+        if not diag.report_assessment(status, status_): continue
 
         family_ = row[0] if family != row[0] else ''
         family = row[0]
@@ -194,7 +198,7 @@ def report_donor_proportions(proportions, threshold, donors):
 def get_overall_detection(all_words):
     pred = [1 if row[4] else 0 for row in all_words]
     loan = [1 if row[5] else 0 for row in all_words]
-    return util.prf(pred, loan)
+    return evaluate.prf(pred, loan)
 
 
 def report_pairwise_detection(all_words, threshold):
@@ -210,21 +214,21 @@ def report_pairwise_detection(all_words, threshold):
         for lu in lu_units:
             pred_ = [1 if row[4] else 0 for row in table if row[lu_idx] == lu]
             loan_ = [1 if row[5] else 0 for row in table if row[lu_idx] == lu]
-            metrics_.append([lu] + util.prf(pred_, loan_))
+            metrics_.append([lu] + evaluate.prf(pred_, loan_))
         return metrics_
 
     languages = sorted(set(row[1] for row in all_words))
     metrics = calculate_metrics_table(all_words, lu_units=languages, lu_idx=1)
     metrics.append(['Total'] + q)
-    util.report_metrics_table(metrics, by_fam=False, threshold=threshold)
+    evaluate.report_metrics_table(metrics, by_fam=False, threshold=threshold)
 
     families = sorted(set(row[0] for row in all_words))
     metrics = calculate_metrics_table(all_words, lu_units=families, lu_idx=0)
     metrics.append(['Total'] + q)
-    util.report_metrics_table(metrics, by_fam=True, threshold=threshold)
+    evaluate.report_metrics_table(metrics, by_fam=True, threshold=threshold)
 
 
-def get_words_results(table, status=util.PredStatus.F):
+def get_words_results(table, status=diag.PredStatus.F):
     words = []
     family = ''
     language = ''
@@ -236,8 +240,8 @@ def get_words_results(table, status=util.PredStatus.F):
         # pred == True if global_gt1
         pred = int(row[4])
         loan = int(row[5])
-        status_ = util.assess_pred(pred, loan)
-        if util.report_assessment(status, status_):
+        status_ = diag.assess_pred(pred, loan)
+        if diag.report_assessment(status, status_):
             family_ = row[0] if family != row[0] else ''
             family = row[0]
             language_ = row[1] if language != row[1] else ''
@@ -266,7 +270,7 @@ def detect_borrowing(wl, bb,
         # include combined donors category.
         prop['Combined'] = []
         concept_count = 0
-        no_concept_id_count = 0
+
         # idx is index of word in target language
         for concept, idxs in concepts.items():
 
@@ -317,7 +321,7 @@ def detect_borrowing(wl, bb,
                     if row[1] < threshold or (report_limit and row[1] <= report_limit):
                         pred_ = 1 if row[3] in ['*', '-'] else 0
                         # Take into account whether some other donor form matches.
-                        status_ = util.assess_pred(pred_, int(loan), any_pred)
+                        status_ = diag.assess_pred(pred_, int(loan), any_pred)
                         distance_ = row[1]
                         donor_candidate_ = row[0]
                         candidate_tokens_ = row[2]
@@ -411,7 +415,7 @@ def register(parser):
         "--status",
         type=str,
         default='ntn',
-        choices=[e.name.lower() for e in util.PredStatus],
+        choices=[e.name.lower() for e in diag.PredStatus],
         help="Status mask to use for reporting borrowed word detection status."
     )
     parser.add_argument(
@@ -473,11 +477,11 @@ def register(parser):
 
 def run(args):
     filename = args.foreign
-    wl = util.get_wordlist(filename)
+    wl = adb.get_wordlist(filename)
     
     # Sub-select languages based on languages and donors arguments.
-    args.language = util.get_language_all(wl) if args.language[0] == 'all' else args.language
-    wl = util.select_languages(wl, languages=args.language, donors=args.donor)
+    args.language = adb.get_language_all(wl) if args.language[0] == 'all' else args.language
+    wl = adb.select_languages(wl, languages=args.language, donors=args.donor)
 
     # Save temp file for testing
     # if filename:  # Test - save wordlist
@@ -494,9 +498,7 @@ def run(args):
                               pbs=args.pbs,
                               min_len=args.min_len)
 
-    # rdr = sabor().cldf_reader()
-    # families = {language["ID"]: language["Family"] for language in rdr['LanguageTable']}
-    families = util.get_language_family(wl)
+    families = adb.get_language_family(wl)
 
     for threshold in args.threshold:
         proportions, words, all_words = detect_borrowing(
@@ -506,12 +508,13 @@ def run(args):
             report_limit=args.limit,
             donors=args.donor,
             any_loan=args.anyloan)
+        
         report_borrowing(
             proportions=proportions,
             words=words,
             all_words=all_words,
             threshold=threshold,
-            report_status=util.PredStatus[args.status.upper()],
+            report_status=diag.PredStatus[args.status.upper()],
             donors=args.donor,
             output=args.output,
             series=args.series)
@@ -524,11 +527,11 @@ def get_total_run_result(languages, donors, any_loan, config, filename=None):
     # positional based scoring parameters: pbs, slp_factor, slp_model, C, c, V, v, _; and
     # thresholds (list).
 
-    wl = util.get_wordlist(filename)
+    wl = adb.get_wordlist(filename)
 
     # Sub-select languages based on languages and donors arguments.
-    languages = util.get_language_all(wl) if languages[0] == 'all' else languages
-    wl = util.select_languages(wl, languages=languages, donors=donors)
+    languages = adb.get_language_all(wl) if languages[0] == 'all' else languages
+    wl = adb.select_languages(wl, languages=languages, donors=donors)
     # Use config to construct argument invocations to high level functions.
     bb = construct_alignments(
         wl,
@@ -542,7 +545,7 @@ def get_total_run_result(languages, donors, any_loan, config, filename=None):
 
     # rdr = keypano().cldf_reader()
     # families = {language["ID"]: language["Family"] for language in rdr['LanguageTable']}
-    families = util.get_language_family(wl)
+    families = adb.get_language_family(wl)
     # Can have multiple thresholds in single invocation.
     results = []
     for threshold in config["threshold"]:
