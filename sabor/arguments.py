@@ -4,7 +4,7 @@
     John E. Miller, Apr 15, 2022
 """
 
-from sabor import diagnostics
+from sabor import report
 
 
 def register_common(parser):
@@ -31,8 +31,8 @@ def register_common(parser):
     parser.add_argument(
         "--series",
         type=str,
-        default='report',
-        help='Filename prefix for detail diagnostics report.'
+        default='',
+        help='Filename affix for analysis, evaluation, report files.'
     )
     parser.add_argument(
         "--any",
@@ -96,7 +96,7 @@ def register_diagnostic(parser):
         "--status",
         type=str,
         default='ntn',
-        choices=[f"{s.name.lower()}" for s in diagnostics.PredStatus],
+        choices=[f"{s.name.lower()}" for s in report.PredStatus],
         # choices=["tn", "tp", "fp", "fn", "f", "t", "ntn", "all"],
         help='Code for reporting words for status.',
     )

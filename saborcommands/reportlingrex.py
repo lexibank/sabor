@@ -18,7 +18,7 @@ import argparse
 import sabor.arguments as argfns
 import sabor.retrieve as retr
 import sabor.evaluate as evaluate
-import sabor.diagnostics as diag
+import sabor.report as diag
 
 
 def run(args):

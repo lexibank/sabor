@@ -1,18 +1,15 @@
 """
     Report on borrowed words detected by method of cognate intruders
-    using LingPy's cluster methods to identify similarities across languages.
+    using LingPy's pairwise method to identify similarities across languages.
     Compare detected and known borrowed word results both overall and
     focusing specifically on donor languages as intruders.
     Report cross language concept and words, overall and donor focused
     detection performance, and give detail diagnostic report of borrowed
     word detection.
 
-    Improvements:
-    - Donor focus only required in reporting functions, not in analysis.
-    - Dropped use of Pandas.
-    - More robust use of named variables, not vector indices.
+    Adapted from report cluster.
 
-    John E. Miller, Apr 13, 2022
+    John E. Miller, Apr 19, 2022
 """
 
 import argparse
@@ -32,7 +29,7 @@ def run(args):
         store=args.store,
         infile=args.infile,
         donors=args.donor,
-        ref_template="SCALLID_{}",
+        ref_template="CROSS_ID_{}",
         ref_cnt=len(thresholds),
         any_loan=args.any)
 
@@ -40,9 +37,7 @@ def run(args):
 
         ids_table = retr.get_ids_table_for(
             table=table,
-            ref_id="SCALLID_{}".format(idx),
-            loc_id="SCA_{}ID".format(idx),
-            fam_id="SCA_{}".format(idx),
+            ref_id="CROSS_ID_{}".format(idx),
             donors=args.donor,
             any_loan=args.any)
 
@@ -50,7 +45,8 @@ def run(args):
             diag.build_donor_forms_dict(ids_table, args.donor)
 
         if args.family:  # Filter on family.
-            ids_table = [row for row in ids_table if row["FAMILY"] == args.family]
+            ids_table = [row for row in ids_table
+                         if row["FAMILY"] == args.family]
 
         retr.report_overall_ids(ids_table, threshold)
 
@@ -73,7 +69,7 @@ def run(args):
             threshold=threshold,
             output=args.output,
             series=args.series,
-            module='cluster')
+            module='pairwise')
 
 
 def register(parser):

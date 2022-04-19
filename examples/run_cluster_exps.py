@@ -1,5 +1,6 @@
 """
-    Run series of experiments using lexstat method.
+    Run series of cluster or partial experiments using lexstat method.
+
 """
 
 import argparse
@@ -7,6 +8,7 @@ from csvw.dsv import UnicodeDictReader
 from saborcommands import analyzecluster, evaluatecluster
 from sabor import experiment
 import sabor.accessdb as adb
+
 
 def get_wordlist(filename, donors):
     wl = adb.get_wordlist(filename)

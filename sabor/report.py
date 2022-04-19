@@ -55,7 +55,7 @@ def report_assessment(status, result):
 # ==========================================================
 # Report detail diagnostics selected from individual entries
 # ==========================================================
-def build_donor_forms_dict(sca_ids_table, donors):
+def build_donor_forms_dict(ids_table, donors):
     # Construct candidate donor forms for marked candidate donor
     # for donor family and language indexed by cross_fam_id.
     # Only map for the same cognate table.
@@ -65,7 +65,7 @@ def build_donor_forms_dict(sca_ids_table, donors):
     donor_stuff = defaultdict(lambda: defaultdict(list))
     unmarked_donor_stuff = defaultdict(lambda: defaultdict(list))
 
-    for row in sca_ids_table:
+    for row in ids_table:
         if row["DOCULECT"] in donors:
             if row["CROSS_FAMILY_ID"] > 0:
                 donor_stuff[row["CROSS_FAMILY_ID"]][row["DOCULECT"]].\

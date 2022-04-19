@@ -17,7 +17,7 @@ from tabulate import tabulate
 from pylexibank import progressbar
 
 import sabor.positionbasedscorer as pbscore
-import sabor.diagnostics as diag
+import sabor.report as diag
 import sabor.evaluate as evaluate
 import sabor.accessdb as adb
 
@@ -88,7 +88,7 @@ def screen_word_hits(tmp_words, threshold):
     # Get index of min distance word.
     min_idx = min(enumerate(tmp_words), key=lambda x: x[1][1])[0]
     min_dist = tmp_words[min_idx][1]
-    min_idx = min_idx if min_dist < threshold else None
+    min_idx = min_idx if min_dist <= threshold else None
     tmp_words_ = []
     for idx, row in enumerate(tmp_words):
         if min_idx is None:
@@ -288,6 +288,8 @@ def detect_borrowing(wl, bb,
                 # Loan set True if donor language is one of candidate donors.
                 # May need to improve this.  e.g., Spanish (Mexican) does not match!
                 # Indicator to apply to only donor language as default.
+
+                # Maybe put in reverse...  donor_language.startswith(donor)?
                 if loan and not any_loan:
                     if not any(donor.startswith(wl[idx, 'donor_language'])
                                for donor in donors): loan = False
@@ -315,10 +317,10 @@ def detect_borrowing(wl, bb,
                 tmp_words = screen_word_hits(tmp_words, threshold)
                 for row in tmp_words:
                     # Count hits for distance < threshold.
-                    if row[1] < threshold:
+                    if row[1] <= threshold:
                         tmp_prop[row[0]] += 1
                     # Report words < threshold, or words < report_limit.
-                    if row[1] < threshold or (report_limit and row[1] <= report_limit):
+                    if row[1] <= threshold or (report_limit and row[1] <= report_limit):
                         pred_ = 1 if row[3] in ['*', '-'] else 0
                         # Take into account whether some other donor form matches.
                         status_ = diag.assess_pred(pred_, int(loan), any_pred)
@@ -379,6 +381,11 @@ def report_borrowing(proportions,
                            output=output, series=series)
 
     report_donor_proportions(proportions, threshold, donors)
+
+    # Test print module.  OK.
+    # import sabor.pairwise as sapair
+    # sapair.print_donor_proportions(proportions, threshold, donors)
+
     report_pairwise_detection(all_words, threshold)
 
 
@@ -498,6 +505,10 @@ def run(args):
                               pbs=args.pbs,
                               min_len=args.min_len)
 
+    # Test new proportions reporting. NO. Discrepancy in counting.
+    # import saborcommands.analyzepairwise as anapair
+    # anapair.report_cognate_counts(wl, bb, args.threshold, args.donor)
+
     families = adb.get_language_family(wl)
 
     for threshold in args.threshold:
@@ -508,7 +519,7 @@ def run(args):
             report_limit=args.limit,
             donors=args.donor,
             any_loan=args.anyloan)
-        
+
         report_borrowing(
             proportions=proportions,
             words=words,
