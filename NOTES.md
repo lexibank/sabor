@@ -1,55 +1,64 @@
 # Command examples
 
+# Command examples
+
+### Cluster module
 ```commandline
-$ cldfbench sabor.pairwise --threshold .3 .4 .5 > output/pairwise-log.txt
+% cldfbench sabor.analyzecluster --threshold .5 .6 .7 > output/cluster-log.txt
 ```
 
-Writes multiple words distance and words status (largely redundant with distance) reports to output.
+Writes log file and saves analysis file in store.  
+By default, borrowing detection is evaluated and results written to log output.
 
 ```commandline
-$ cldfbench sabor.cluster --threshold .5 .6 .7 > output/cluster-log.txt
+ % cldfbench sabor.evaluatecluster --infile cluster > output/cluster-evaluation-log.txt
 ```
-
-Writes multiple words status reports to output and saves analysis file in store.
+Writes evaluation to log file output.
 
 ```commandline
-$ cldfbench sabor.analyzelingrex > output/lingrex-log.txt
+% cldfbench sabor.reportcluster --infile cluster > output/cluster-report-log.txt
 ```
-Writes lingrex analysis file in store.  
-Arguments for internal and external thresholds.
+Writes log file and detail diagnostic reports to output.
 
+### LingRex module
+```commandline
+% cldfbench sabor.analyzelingrex --threshold 0.7 --ext_threshold 0.35 > output/lingrex-log.txt
+```
+Performs analysis, saves lingrex analysis in store, writes log to output.
+By default, borrowing detection is evaluated and results written to log output.
 
 ```commandline
-$ cldfbench sabor.reportlingrex > output/lingrex-report-log.txt
+% cldfbench sabor.evaluatelingrex --infile lingrex-analysis > output/lingrex-evaluation-log.txt
 ```
-Writes lingrex words status report file and log to output.
-
+Writes evaluation to log file output.
 
 ```commandline
-% cldfbench sabor.lingrexfscore 
+% cldfbench sabor.reportlingrex --infile lingrex-analysis > output/lingrex-report-log.txt
 ```
+Writes log file and detail diagnostic report to output.
 
-Calculates and reports F1 score for all languages with focus on Spanish and Portuguese donors 
-using the existing lingrex-analysis.tsv data file.
+### Pairwise module
+```commandline
+% cldfbench sabor.analyzepairwise > output/pairwise-log.txt 
+```
+Performs analysis, saves pairwise analysis to store, writes log to output.
+By default, borrowing detection is evaluated and results written to log output.
 
 ```commandline
-% cldfbench sabor.lingrexfscore --infile ''
+% cldfbench sabor.evaluatepairwise --infile pairwise.tsv > output/pairwise-evaluation-log.txt
 ```
-Calculates and reports F1 score for all languages with focus on Spanish and Portuguese donors 
-based on a new analysis of all languages using default LingRex analysis configuration
-and using the default lingrex-analysis.tsv data file store for the analysis.
+Writes evaluatation to log file output.
 
 ```commandline
-% cldfbench sabor.lingrexfscore --anyloan
+% cldfbench sabor.reportpairwise --infile pairwise.tsv > output/pairwise-report-log.txt
 ```
-Calculates and reports F1 score for all languages without consideration for donor 
-using the existing lingrex-analysis.tsv data file.
+Writes log file and detail diagnostic report to output.
+
+## Run Experiments
 
 ```commandline
-% cldfbench sabor.lingrexfscore --infile '' --threshold 0.7 --ext_threshold 0.35
+ % python examples/run_cluster_exps.py --series scr-exp-1 > exp-results/cluster-scr-exp-1.log.txt
 ```
-Calculates and reports F1 score for all languages with focus on Spanish and Portuguese donors 
-based on a new analysis of all languages using designated internal and external thresholds,
-and using the default lingrex-analysis.tsv data file store for the analysis.
-Note: This analysis gives F1 Score of 0.787 - comparable to other results.
+Run experimental design for cluster module with file  exp-scripts/cluster-scr-exp-1.tsv and
+write results to exp-results/cluster-scr-exp-1-results.tsv
 
