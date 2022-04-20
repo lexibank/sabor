@@ -10,6 +10,32 @@ this dataset using the DOI of the [particular released version](../../releases/)
 
 This dataset is licensed under a CC-BY-4.0 license
 
+## Notes
+
+# Command examples
+
+```
+$ cldfbench sabor.pairwise --threshold .3 .4 .5 > output/pairwise-log.txt
+```
+
+Writes multiple words distance and words status (largely redundant with distance) reports to output.
+
+```
+$ cldfbench sabor.multiple --threshold .5 .6 .7 > output/multiple-log.txt
+```
+
+writes multiple words status reports to output and saves analysis file in store.
+
+```
+$ python saborcommands/multiple.py --module lingrex
+```
+saves lingrex analysis file in store.
+
+
+
+
+
+
 ## Statistics
 
 
@@ -40,28 +66,3 @@ This dataset is licensed under a CC-BY-4.0 license
 The following CLDF datasets are available in [cldf](cldf):
 
 - CLDF [Wordlist](https://github.com/cldf/cldf/tree/master/modules/Wordlist) at [cldf/cldf-metadata.json](cldf/cldf-metadata.json)
-
-
-## Example Commands
-
-
-Modules include multiple, pairwise, multiple with lingrex, and reportmultiple.
-
-Each module provides help as shown here.
-
-<code>% cldfbench sabor.pairwise --help</code>
-
-
-Pairwise tests pairwise relationships between language forms and writes multiple words distance and words status reports to output as well as summary perfomance to stdout.
-
-<code>% cldfbench sabor.pairwise --threshold .3 .4 .5 > output/pairwise-log.txt</code>
-
-Multiple test multiple relationships between language forms at the same time and writes multiple words status reports to output, saves analysis file in store, as well writes summary performance to stdout.
-
-<code>% cldfbench sabor.multiple --threshold .5 .6 .7 > output/multiple-log.txt</code>
-
-Lingrex performs a draft common morpheme analysis and saves the lingrex analysis file in store.
-
-<code>% python saborcommands/multiple.py --module lingrex</code>
-
-Report multiple is available as a follow-on reporting to multiple in the event the user wants to change reporting options without having to run the initial analysis over again.

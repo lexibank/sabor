@@ -1,0 +1,56 @@
+Word count: 13,783, distinct cognates: 11,944.
+Borid count: 3,553, distinct borids: 911.
+['ImbaburaQuechua', 'Mapudungun', 'Otomi', 'Portuguese', 'Qeqchi', 'Spanish', 'Wichi', 'Yaqui', 'ZinacantanTzotzil']
+
+Number of words for inferred cross-family borrowing ids.
+Language             ImbaburaQuechua    Mapudungun    Otomi    Portuguese    Qeqchi    Spanish    Wichi    Yaqui    ZinacantanTzotzil
+-----------------  -----------------  ------------  -------  ------------  --------  ---------  -------  -------  -------------------
+ImbaburaQuechua                  378           128      125           292       102        329       93      156                  101
+Mapudungun                       128           248       85           197        82        205       74      114                   66
+Otomi                            125            85      313           246        99        257       82      141                   84
+Portuguese                       292           197      246           690       164        493      151      307                  166
+Qeqchi                           102            82       99           164       215        180       70      117                   71
+Spanish                          329           205      257           493       180        714      171      338                  165
+Wichi                             93            74       82           151        70        171      195      117                   71
+Yaqui                            156           114      141           307       117        338      117      389                  104
+ZinacantanTzotzil                101            66       84           166        71        165       71      104                  201
+
+Number of concepts for inferred cross-family borrowing ids.
+Language             ImbaburaQuechua    Mapudungun    Otomi    Portuguese    Qeqchi    Spanish    Wichi    Yaqui    ZinacantanTzotzil
+-----------------  -----------------  ------------  -------  ------------  --------  ---------  -------  -------  -------------------
+ImbaburaQuechua                  379           135      144           315       110        363       93      162                  108
+Mapudungun                       128           262      108           217        92        229       74      120                   71
+Otomi                            126            93      368           262       110        278       82      146                   91
+Portuguese                       293           206      293           732       178        538      152      318                  174
+Qeqchi                           102            85      122           177       234        198       70      120                   76
+Spanish                          330           218      294           526       198        771      171      349                  173
+Wichi                             93            83      102           164        77        188      196      122                   76
+Yaqui                            156           121      163           326       127        366      117      401                  110
+ZinacantanTzotzil                101            73      101           174        77        183       71      105                  210
+
+Threshold: nan.
+Language             tp    tn    fp    fn    precision    recall    F1 score    accuracy
+-----------------  ----  ----  ----  ----  -----------  --------  ----------  ----------
+ImbaburaQuechua     255   735   124    42        0.673     0.859       0.754       0.856
+Mapudungun          154   945   108    35        0.588     0.815       0.683       0.885
+Otomi               157  1833   211    40        0.427     0.797       0.556       0.888
+Qeqchi              123  1503   111    36        0.526     0.774       0.626       0.917
+Wichi               122   994    74    29        0.622     0.808       0.703       0.916
+Yaqui               270   992   131    40        0.673     0.871       0.759       0.881
+ZinacantanTzotzil   131  1023    79    33        0.624     0.799       0.701       0.912
+Overall            1212  8025   838   255        0.591     0.826       0.689       0.894
+Total: borrowed 1467, inherited 8863, total 10330
+
+
+Threshold: nan.
+Language Family      tp    tn    fp    fn    precision    recall    F1 score    accuracy
+-----------------  ----  ----  ----  ----  -----------  --------  ----------  ----------
+Araucanian          154   945   108    35        0.588     0.815       0.683       0.885
+Matacoan            122   994    74    29        0.622     0.808       0.703       0.916
+Mayan               254  2526   190    69        0.572     0.786       0.662       0.915
+Otomanguean         157  1833   211    40        0.427     0.797       0.556       0.888
+Quechuan            255   735   124    42        0.673     0.859       0.754       0.856
+Uto-Aztecan         270   992   131    40        0.673     0.871       0.759       0.881
+Overall            1212  8025   838   255        0.591     0.826       0.689       0.894
+Total: borrowed 1467, inherited 8863, total 10330
+
