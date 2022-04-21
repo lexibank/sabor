@@ -126,7 +126,8 @@ class Dataset(BaseDataset):
             # Some languages are in WOLD both as wold receiver and ids donor languages.
                 wold_languages[language.name] = language
         for name, language in wold_languages.items():
-            print(f"Added: name {name}, language {language}")
+            print("Added: name {name}, language {language}".format(
+                name=name, language=language.id))
             args.writer.add_language(
                     ID=language.id[5:],  # Drop the wold- prefix.
                     Name=language.name,
