@@ -11,10 +11,8 @@ setup(
     long_description_content_type='text/markdown',
     keywords='',
     license='MIT',
-    url='https://github.com/clics/sabor',
+    url='https://github.com/lexibank/sabor',
     py_modules=['lexibank_sabor'],
-    packages=find_packages(where='.'),
-    package_dir={'': 'sabor'},
     include_package_data=True,
     zip_safe=False,
     entry_points={
