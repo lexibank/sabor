@@ -7,6 +7,32 @@ import os
 from collections import Counter
 from lingpy import *
 from tabulate import tabulate
+from lexibank_sabor import Dataset as SABOR
+
+
+def add_detection_status(wordlist, languages, donors,
+                         gold_donor_lang="donor_language",
+                         pred_donor_lang="source_language",
+                         detection_status="det_status"):
+    # Add detection status for each entry.
+    # gold_ is donor language from verified source.
+    def calc_detection_status(gold_, pred_):
+        if pred_ == gold_:
+            if gold_: status = 'tp'
+            else: status = 'tn'
+        else:
+            if gold_:
+                # Detect borrowing from donors.
+                if gold_ in donors: status = 'fn'
+                else: status = 'tn'
+            else: status = 'fp'
+        return status
+
+    wordlist.add_entries(detection_status, gold_donor_lang, lambda x: None)
+    for idx in wordlist:
+        if wordlist[idx, "doculect"] in languages:
+            wordlist[idx, detection_status] = calc_detection_status(
+                wordlist[idx, gold_donor_lang], wordlist[idx, pred_donor_lang])
 
 
 def prf_(tp, tn, fp, fn, return_nan=False):
@@ -56,30 +82,49 @@ def report_detail_evaluation(status_counts, file_name):
     report_metrics_table(metrics, file_name)
 
 
-def evaluate_file(args):
-    excludes = {'Spanish', 'Portuguese'}
+def get_recipient_languages(wl, donors, family):
+    # Need to get list of languages in wl that are not
+    # from donor language families.
+    # These are recipient languages for borrowings from donors.
 
-    wl = Wordlist(args.file)
-    languages = sorted(set(wl.cols) - excludes)
+    # Much more concise and efficient would be from
+    # the language relation, but limited to wordlist.
+    donor_families = {fam for (ID, lang, fam)
+                      in wl.iter_rows('doculect', family)
+                      if lang in donors}
+    return sorted({lang for (ID, lang, fam)
+                   in wl.iter_rows('doculect', family)
+                   if fam not in donor_families})
 
-    status_counts = {language: Counter() for language in languages}
+
+def evaluate_detection(wl,
+                       donors,
+                       family="language_family",
+                       detection_status="det_status",
+                       filename=''):
+
+    languages = get_recipient_languages(wl, donors, family)
+
+    add_detection_status(wl, languages=languages, donors=donors)
+
+    status_counts = {lang: Counter() for lang in languages}
     overall_counts = Counter()
 
     for idx in wl:
         if wl[idx, 'doculect'] not in languages: continue
-        status_counts[wl[idx, 'doculect']][wl[idx, 'detect_status']] += 1
+        status_counts[wl[idx, 'doculect']][wl[idx, detection_status]] += 1
 
     for language, counts in status_counts.items():
         overall_counts.update(counts)
     status_counts['Overall'] = overall_counts
 
-    report_detail_evaluation(status_counts, args.file)
+    report_detail_evaluation(status_counts, filename)
 
     # Print evaluation summary
     tp, fp = overall_counts['tp'], overall_counts['fp']
     tn, fn = overall_counts['tn'], overall_counts['fn']
 
-    print("Overall detection results for: {}".format(args.file))
+    print("Overall detection results for: {}".format(filename))
     table = [
             ["identified", tp, fp, tp+fp],
             ["not identified", fn, tn, tn+fn],
@@ -93,13 +138,19 @@ def register(parser):
                         default="store/pw-spa-NED-0.10.tsv")
     parser.add_argument("--prefix", action="store",
                         help="Evaluate all files in store with given prefix")
+    parser.add_argument("--donor", nargs="*", type=str,
+                        default=["Spanish", "Portuguese"],
+                        help='Donor language(s).')
 
 
 def run(args):
-    if args.prefix:
-        for file in os.listdir("store"):
+    SAB = SABOR()
+
+    if args.prefix:  # Prefix for set of files in store.
+        for file in os.listdir(str(SAB.dir / "store")):
             if file.startswith(args.prefix):
-                args.file = "store/" + file
-                evaluate_file(args)
-    else:
-        evaluate_file(args)
+                wl = Wordlist(str(SAB.dir / "store" / file))
+                evaluate_detection(wl, donors=args.donor, filename=file)
+    else:  # Single file.
+        wl = Wordlist(str(SAB.dir / args.file))
+        evaluate_detection(wl, donors=args.donor, filename=args.file)
