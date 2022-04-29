@@ -30,41 +30,47 @@ def edit_distance(seqA, seqB):
 def pairwise_comparison(
         wordlist,
         donors,
+        family="language_family",
         concept="concept",
-        pred_lng="source_language",
-        pred_val="source_value",
-        pred_id="source_id",
+        segments="tokens",
+        donor_lng="source_language",
+        donor_segments="source_value",
+        donor_id="source_id",
         func=None,
         threshold=0.45,
         ):
     """
     Find borrowings by carrying out a pairwise comparison of donor and target words.
 
-    :param wordlist: The LingPy wordlist.
-    :param donors: The donor languages, passed as a list.
-    :param concept: The column in which concept information is given in the
-      wordlist.
-    :param pred_lng: The column to which information on predicted donor languages will
+    :param wordlist: LingPy wordlist.
+    :param donors: Donor languages, passed as a list.
+    :param family: Column in which language family information is given in the wordlist.
+    :param concept: Column in which concept information is given in the wordlist.
+    :param segments: Column in which segmented IPA tokens are given in the wordlist.
+    :param donor_lng: Column to which information on predicted donor languages will
       be written (defaults to "source_language").
-    :param pred_val: Column to which info on value of predicted donor will be written.
-    :param pred_id: Column to which we write information on the ID of the
-      predicted donor.
-    :param func: A function comparing two sequences and returning a distance
+    :param donor_segments: Column to which info on value of predicted donor will be written.
+    :param donor_id: Column to which we write information on the ID of the predicted donor.
+    :param func: Function comparing two sequences and returning a distance
       score (defaults to sca_distance).
-    :param threshold: The threshold, at which we recognize a word as being
-      borrowed.
+    :param threshold: Threshold, at which we recognize a word as being borrowed.
     """
     func = func or sca_distance
 
     # get concept slots from the data (in case we use broader concepts by clics
     # communities), we essentially already split data in donor indices and
-    # target indices by putting them in a list
+    # target indices by putting them in a list.
+    donor_families = {fam for (ID, lang, fam)
+                      in wordlist.iter_rows('doculect', family)
+                      if lang in donors}
+
     concepts = {concept: [[], []] for concept in set(
         [wordlist[idx, concept] for idx in wordlist])}
     for idx in wordlist:
         if wordlist[idx, "doculect"] in donors:
             concepts[wordlist[idx, concept]][0] += [idx]
-        else:
+        # languages from donor families are not target languages.
+        elif wordlist[idx, family] not in donor_families:
             concepts[wordlist[idx, concept]][1] += [idx]
 
     # iterate over concepts and identify potential borrowings
@@ -75,7 +81,7 @@ def pairwise_comparison(
         hits = collections.defaultdict(list)
         for idxA in donor_indices:
             for idxB in target_indices:
-                score = func(wordlist[idxA, "tokens"], wordlist[idxB, "tokens"])
+                score = func(wordlist[idxA, segments], wordlist[idxB, segments])
                 if score < threshold:
                     hits[idxB] += [(idxA, score)]
         # we sort the hits, as we can have only one donor
@@ -83,42 +89,11 @@ def pairwise_comparison(
             B[hit] = sorted(pairs, key=lambda x: x[1])[0][0]
 
     wordlist.add_entries(
-            pred_lng, B, lambda x: wordlist[x, "doculect"] if x != 0 else "")
+            donor_lng, B, lambda x: wordlist[x, "doculect"] if x != 0 else "")
     wordlist.add_entries(
-            pred_val, B, lambda x: wordlist[x, "tokens"] if x != 0 else "")
+            donor_segments, B, lambda x: wordlist[x, segments] if x != 0 else "")
     wordlist.add_entries(
-            pred_id, B, lambda x: x if x != 0 else "")
-
-    # Non-recipient languages, whether in donors or not are excluded.
-    # Easier to fix-up here than enter into logic of hits within concepts.
-    excludes = {'Spanish', 'Portuguese'}
-
-    for idx in wordlist:
-        if wordlist[idx, 'doculect'] in excludes:
-            wordlist[idx, pred_lng] = None
-            wordlist[idx, pred_val] = None
-            wordlist[idx, pred_id] = None
-
-    # Add detection status for each entry.
-    # gold_ is donor language from verified source.
-    def calc_detection_status(gold_, pred_):
-        if pred_ == gold_:
-            if gold_: status = 'tp'
-            else: status = 'tn'
-        else:
-            if gold_:
-                # Detect borrowing from donors.
-                if gold_ in donors: status = 'fn'
-                else: status = 'tn'
-            else: status = 'fp'
-        return status
-
-    wordlist.add_entries("detect_status", "donor_language", lambda x: "")
-    for idx in wordlist:
-        wordlist[idx, "detect_status"] = calc_detection_status(
-            wordlist[idx, "donor_language"], wordlist[idx, pred_lng])
-        if wordlist[idx, 'doculect'] in excludes:
-            wordlist[idx, "detect_status"] = None
+            donor_id, B, lambda x: x if x != 0 else "")
 
 
 def print_borrowings(wordlist):
@@ -128,7 +103,7 @@ def print_borrowings(wordlist):
     """
     borrowings = 0
     with Table("ID", "Language", "Concept", "Value", "Donor", "Donor_Concept",
-               "Donor_Value", "WOLD_Source", "Detect_Status") as table:
+               "Donor_Value", "WOLD_Source") as table:
         for idx in wordlist:
             if wordlist[idx, "doculect"] not in ["Spanish"]:
                 if wordlist[idx, "source_language"]:
@@ -142,8 +117,7 @@ def print_borrowings(wordlist):
                         wordlist[idxB, "language"],
                         wordlist[idxB, "concept"],
                         wordlist[idxB, "tokens"],
-                        wordlist[idx, "donor_language"],
-                        wordlist[idx, "detect_status"]
+                        wordlist[idx, "donor_language"]
                     ])
             if borrowings >= 20:
                 break
@@ -167,8 +141,9 @@ def run(args):
         wl = Wordlist.from_cldf(
             str(SAB.cldf_dir / "cldf-metadata.json"),
             columns=[
-                "language_id", "concept_name", "value", "form", "segments",
-                "donor_language", "donor_value"]
+                "language_id", "language_family",
+                "concept_name", "value", "form", "segments",
+                "donor_language", "donor_value"],
         )
         # donor_language and donor_value fields read as None when empty.
         for idx in wl:
