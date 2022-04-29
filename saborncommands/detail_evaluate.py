@@ -21,9 +21,17 @@ def add_detection_status(wordlist, languages, donors,
             if gold_: status = 'tp'
             else: status = 'tn'
         else:
+            # Policy for donor focused detection status.
+            #
             if gold_:
-                # Detect borrowing from donors.
-                if gold_ in donors: status = 'fn'
+                # Classified as fp because borrowing
+                # did not match gold donor.
+                if pred_ in donors: status = 'fp'
+                # Classified as fn because borrowing not
+                # detected but gold donor in donor list.
+                elif gold_ in donors: status = 'fn'
+                # Classified as tn because borrowing not
+                # detected for gold donor not in donor list.
                 else: status = 'tn'
             else: status = 'fp'
         return status
@@ -108,12 +116,11 @@ def evaluate_detection(wl,
     add_detection_status(wl, languages=languages, donors=donors)
 
     status_counts = {lang: Counter() for lang in languages}
-    overall_counts = Counter()
-
     for idx in wl:
         if wl[idx, 'doculect'] not in languages: continue
         status_counts[wl[idx, 'doculect']][wl[idx, detection_status]] += 1
 
+    overall_counts = Counter()
     for language, counts in status_counts.items():
         overall_counts.update(counts)
     status_counts['Overall'] = overall_counts

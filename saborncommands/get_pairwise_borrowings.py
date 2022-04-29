@@ -32,9 +32,10 @@ def pairwise_comparison(
         donors,
         family="language_family",
         concept="concept",
-        pred_donor_lang="source_language",
-        pred_donor_value="source_value",
-        pred_donor_id="source_id",
+        segments="tokens",
+        donor_lng="source_language",
+        donor_segments="source_value",
+        donor_id="source_id",
         func=None,
         threshold=0.45,
         ):
@@ -45,10 +46,11 @@ def pairwise_comparison(
     :param donors: Donor languages, passed as a list.
     :param family: Column in which language family information is given in the wordlist.
     :param concept: Column in which concept information is given in the wordlist.
-    :param pred_donor_lang: Column to which information on predicted donor languages will
+    :param segments: Column in which segmented IPA tokens are given in the wordlist.
+    :param donor_lng: Column to which information on predicted donor languages will
       be written (defaults to "source_language").
-    :param pred_donor_value: Column to which info on value of predicted donor will be written.
-    :param pred_donor_id: Column to which we write information on the ID of the predicted donor.
+    :param donor_segments: Column to which info on value of predicted donor will be written.
+    :param donor_id: Column to which we write information on the ID of the predicted donor.
     :param func: Function comparing two sequences and returning a distance
       score (defaults to sca_distance).
     :param threshold: Threshold, at which we recognize a word as being borrowed.
@@ -57,13 +59,18 @@ def pairwise_comparison(
 
     # get concept slots from the data (in case we use broader concepts by clics
     # communities), we essentially already split data in donor indices and
-    # target indices by putting them in a list
+    # target indices by putting them in a list.
+    donor_families = {fam for (ID, lang, fam)
+                      in wordlist.iter_rows('doculect', family)
+                      if lang in donors}
+
     concepts = {concept: [[], []] for concept in set(
         [wordlist[idx, concept] for idx in wordlist])}
     for idx in wordlist:
         if wordlist[idx, "doculect"] in donors:
             concepts[wordlist[idx, concept]][0] += [idx]
-        else:
+        # languages from donor families are not target languages.
+        elif wordlist[idx, family] not in donor_families:
             concepts[wordlist[idx, concept]][1] += [idx]
 
     # iterate over concepts and identify potential borrowings
@@ -74,7 +81,7 @@ def pairwise_comparison(
         hits = collections.defaultdict(list)
         for idxA in donor_indices:
             for idxB in target_indices:
-                score = func(wordlist[idxA, "tokens"], wordlist[idxB, "tokens"])
+                score = func(wordlist[idxA, segments], wordlist[idxB, segments])
                 if score < threshold:
                     hits[idxB] += [(idxA, score)]
         # we sort the hits, as we can have only one donor
@@ -82,25 +89,11 @@ def pairwise_comparison(
             B[hit] = sorted(pairs, key=lambda x: x[1])[0][0]
 
     wordlist.add_entries(
-            pred_donor_lang, B, lambda x: wordlist[x, "doculect"] if x != 0 else "")
+            donor_lng, B, lambda x: wordlist[x, "doculect"] if x != 0 else "")
     wordlist.add_entries(
-            pred_donor_value, B, lambda x: wordlist[x, "tokens"] if x != 0 else "")
+            donor_segments, B, lambda x: wordlist[x, segments] if x != 0 else "")
     wordlist.add_entries(
-            pred_donor_id, B, lambda x: x if x != 0 else "")
-
-    # Non-recipient languages, whether in donors or not are excluded.
-    # Use donor families to exclude non-recipient languages,
-    # as focus is on borrowings from donors to other language families.
-    donor_families = {fam for (ID, lang, fam)
-                      in wordlist.iter_rows('doculect', family)
-                      if lang in donors}
-
-    # Easier to set None here than enter into logic of hits within concepts.
-    for idx in wordlist:
-        if wordlist[idx, family] in donor_families:
-            wordlist[idx, pred_donor_lang] = None
-            wordlist[idx, pred_donor_value] = None
-            wordlist[idx, pred_donor_id] = None
+            donor_id, B, lambda x: x if x != 0 else "")
 
 
 def print_borrowings(wordlist):
