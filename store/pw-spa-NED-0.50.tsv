@@ -7,7 +7,7 @@ ID	DOCULECT	LANGUAGE_FAMILY	CONCEPT	VALUE	FORM	TOKENS	DONOR_LANGUAGE	DONOR_VALUE
 6227	Qeqchi	Mayan	ABSTAIN FROM FOOD	ayuunink rix	ayuunink_rix	a j uː n i n k + ɾ i ʃ	Spanish	ayunar			
 8463	Otomi	Otomanguean	ABSTAIN FROM FOOD	behe	behe	b e h e					
 8464	Otomi	Otomanguean	ABSTAIN FROM FOOD	o̲t'e ya behe	o̲t'e_ya_behe	ə t̪ʼ e + j a + b e h e					
-9630	ImbaburaQuechua	Quechuan	ABSTAIN FROM FOOD	ayunana	ayunana	a j u n a n a	Spanish	ayunar			
+9630	ImbaburaQuechua	Quechuan	ABSTAIN FROM FOOD	ayunana	ayunana	a j u n a n a	Spanish	ayunar	Spanish	a ʝ u n a ɾ	1755
 10853	Wichi	Matacoan	ABSTAIN FROM FOOD	lhicheyhat	lhicheyhat	lˠ i tʃ e j h a t					
 1716	Spanish	Indo-European	ACCUSE	acusar	acusar	a k u s a ɾ					
 1717	Spanish	Indo-European	ACCUSE	denunciar	denunciar	d e n u n s j a ɾ					
@@ -129,9 +129,9 @@ ID	DOCULECT	LANGUAGE_FAMILY	CONCEPT	VALUE	FORM	TOKENS	DONOR_LANGUAGE	DONOR_VALUE
 1629	Spanish	Indo-European	ALLOW OR PERMIT	permitir	permitir	p ɛ ɾ m i t i ɾ					
 1630	Spanish	Indo-European	ALLOW OR PERMIT	dejar	dejar	d e x a ɾ					
 1740	Spanish	Indo-European	ALTAR	altar	altar	a l t a ɾ					
-3182	Yaqui	Uto-Aztecan	ALTAR	altaar	altaar	a l t aː r	Spanish	altar			
+3182	Yaqui	Uto-Aztecan	ALTAR	altaar	altaar	a l t aː r	Spanish	altar	Spanish	a l t a ɾ	1740
 4445	ZinacantanTzotzil	Mayan	ALTAR	7altal	7altal	ʔ a l t a l	Spanish	altar	Spanish	a l t a ɾ	1740
-6215	Qeqchi	Mayan	ALTAR	artal	artal	a ɾ t a l	Spanish	altar			
+6215	Qeqchi	Mayan	ALTAR	artal	artal	a ɾ t a l	Spanish	altar	Spanish	a l t a ɾ	1740
 8442	Otomi	Otomanguean	ALTAR	ntsaya jwä	ntsaya_jwä	n ts a j a + xʷ ɐ					
 8443	Otomi	Otomanguean	ALTAR	tsita	tsita	ts i t̪ a					
 8444	Otomi	Otomanguean	ALTAR	ata	ata	a t̪ a	Spanish	altar			
@@ -204,7 +204,7 @@ ID	DOCULECT	LANGUAGE_FAMILY	CONCEPT	VALUE	FORM	TOKENS	DONOR_LANGUAGE	DONOR_VALUE
 11211	Mapudungun	Araucanian	ANKLE	pallipalli	pallipalli	p a ʎ i p a ʎ i					
 1580	Spanish	Indo-European	ANNOUNCE	anunciar	anunciar	a n u n s j a ɾ					
 1581	Spanish	Indo-European	ANNOUNCE	avisar	avisar	a β i s a ɾ					
-3066	Yaqui	Uto-Aztecan	ANNOUNCE	anunsiaroa	anunsiaroa	a n u n s i a r o a	Spanish	anunciar			
+3066	Yaqui	Uto-Aztecan	ANNOUNCE	anunsiaroa	anunsiaroa	a n u n s i a r o a	Spanish	anunciar	Spanish	a n u n s j a ɾ	1580
 3067	Yaqui	Uto-Aztecan	ANNOUNCE	tejwa	tejwa	t e j w a					
 4373	ZinacantanTzotzil	Mayan	ANNOUNCE	7al	7al	ʔ a l					
 6074	Qeqchi	Mayan	ANNOUNCE	esilank	esilank	e s i l a n kʰ					
@@ -479,7 +479,7 @@ ID	DOCULECT	LANGUAGE_FAMILY	CONCEPT	VALUE	FORM	TOKENS	DONOR_LANGUAGE	DONOR_VALUE
 7709	Otomi	Otomanguean	BALL	pelota	pelota	p e l o t̪ a	Spanish	pelota	Spanish	p e l o t a	1207
 7710	Otomi	Otomanguean	BALL	pilota	pilota	p i l o t̪ a	Spanish	pelota	Spanish	p e l o t a	1207
 7711	Otomi	Otomanguean	BALL	nuhni	nuhni	n u h n i					
-7712	Otomi	Otomanguean	BALL	lobo (2)	lobo	l o b o	Spanish	globo			
+7712	Otomi	Otomanguean	BALL	lobo (2)	lobo	l o b o	Spanish	globo	Spanish	g l o β o	1209
 7713	Otomi	Otomanguean	BALL	tsant’i (3)	tsant’i	ts a n t̪ʼ i					
 9274	ImbaburaQuechua	Quechuan	BALL	muyundin	muyundin	m u j u n d i ŋ					
 10491	Wichi	Matacoan	BALL	lhip’unlhi	lhip’unlhi	lˠ i p ʔ u n lˠ i					
@@ -567,7 +567,7 @@ ID	DOCULECT	LANGUAGE_FAMILY	CONCEPT	VALUE	FORM	TOKENS	DONOR_LANGUAGE	DONOR_VALUE
 12059	Mapudungun	Araucanian	BATTLE-AXE	toki	toki	t o k i					
 32	Spanish	Indo-European	BAY	golfo	golfo	g o l f o					
 33	Spanish	Indo-European	BAY	bahía	bahía	b a i a					
-1791	Yaqui	Uto-Aztecan	BAY	wolpo	wolpo	w o l p o	Spanish	golfo			
+1791	Yaqui	Uto-Aztecan	BAY	wolpo	wolpo	w o l p o	Spanish	golfo	Spanish	g o l f o	32
 6271	Otomi	Otomanguean	BAY	zabi	zabi	z a b i					
 459	Spanish	Indo-European	BE ALIVE OR LIFE	vivir	vivir	b i β i ɾ					
 460	Spanish	Indo-European	BE ALIVE OR LIFE	vivo	vivo	b i β o					
@@ -639,7 +639,7 @@ ID	DOCULECT	LANGUAGE_FAMILY	CONCEPT	VALUE	FORM	TOKENS	DONOR_LANGUAGE	DONOR_VALUE
 11352	Mapudungun	Araucanian	BEAN	zengüll	zengüll	z e ŋ ɨ ʎ					
 281	Spanish	Indo-European	BEAR	oso	oso	o s o					
 2000	Yaqui	Uto-Aztecan	BEAR	ooso	ooso	oː s o	Spanish	oso	Spanish	o s o	281
-3412	ZinacantanTzotzil	Mayan	BEAR	7osov	7osov	ʔ o s o v	Spanish	oso			
+3412	ZinacantanTzotzil	Mayan	BEAR	7osov	7osov	ʔ o s o v	Spanish	oso	Spanish	o s o	281
 4719	Qeqchi	Mayan	BEAR	oos	oos	oː s	Spanish	oso			
 6578	Otomi	Otomanguean	BEAR	'muhu	'muhu	ˀm u h u					
 8667	ImbaburaQuechua	Quechuan	BEAR	usu	usu	u s u	Spanish	oso			
@@ -675,7 +675,7 @@ ID	DOCULECT	LANGUAGE_FAMILY	CONCEPT	VALUE	FORM	TOKENS	DONOR_LANGUAGE	DONOR_VALUE
 10711	Wichi	Matacoan	BECAUSE	latesej	latesej	l a t e s e x					
 11980	Mapudungun	Araucanian	BECAUSE	porke	porke	p o ɻ k e	Spanish	porque	Spanish	p o ɾ k e	1528
 718	Spanish	Indo-European	BED	cama	cama	k a m a					
-2386	Yaqui	Uto-Aztecan	BED	kaamam	kaamam	k aː m a m	Spanish	cama			
+2386	Yaqui	Uto-Aztecan	BED	kaamam	kaamam	k aː m a m	Spanish	cama	Spanish	k a m a	718
 3773	ZinacantanTzotzil	Mayan	BED	tem	tem	t e m					
 3774	ZinacantanTzotzil	Mayan	BED	vayebal	vayebal	v a j e ɓ a l					
 5171	Qeqchi	Mayan	BED	ch’aat	ch’aat	tʃʼ aː tʰ					
@@ -695,7 +695,7 @@ ID	DOCULECT	LANGUAGE_FAMILY	CONCEPT	VALUE	FORM	TOKENS	DONOR_LANGUAGE	DONOR_VALUE
 4734	Qeqchi	Mayan	BEE	seer	seer	s eː r	Spanish	cera			
 6597	Otomi	Otomanguean	BEE	kolmenä	kolmenä	k o l m e n ɐ	Spanish	colmena			
 6598	Otomi	Otomanguean	BEE	gäne	gäne	g ɐ n e					
-8679	ImbaburaQuechua	Quechuan	BEE	abija	abija	a b i x a	Spanish	abeja			
+8679	ImbaburaQuechua	Quechuan	BEE	abija	abija	a b i x a	Spanish	abeja	Spanish	a β e x a	300
 9844	Wichi	Matacoan	BEE	nakwutaj	nakwutaj	n a kʷ u t a x					
 9845	Wichi	Matacoan	BEE	pini	pini	p i n i					
 9846	Wichi	Matacoan	BEE	kolonp’un	kolonp’un	k o l o n p ʔ u n					
@@ -728,9 +728,9 @@ ID	DOCULECT	LANGUAGE_FAMILY	CONCEPT	VALUE	FORM	TOKENS	DONOR_LANGUAGE	DONOR_VALUE
 2290	Yaqui	Uto-Aztecan	BEER	serbeesa	serbeesa	s e r b eː s a	Spanish	cerveza			
 3708	ZinacantanTzotzil	Mayan	BEER	servesa	servesa	s e ɾ v e s a	Spanish (Mexican)	cerveza	Spanish	s ɛ ɾ β e s a	609
 5073	Qeqchi	Mayan	BEER	serwees	serwees	s e r w eː s	Spanish	cerveza			
-6938	Otomi	Otomanguean	BEER	serbesa	serbesa	s e r b e s a	Spanish	cerveza			
-8906	ImbaburaQuechua	Quechuan	BEER	serbisa	serbisa	s e ɾ b i s a	Spanish	cerveza			
-10090	Wichi	Matacoan	BEER	selwesa	selwesa	s e l w e s a	Spanish	cerveza			
+6938	Otomi	Otomanguean	BEER	serbesa	serbesa	s e r b e s a	Spanish	cerveza	Spanish	s ɛ ɾ β e s a	609
+8906	ImbaburaQuechua	Quechuan	BEER	serbisa	serbisa	s e ɾ b i s a	Spanish	cerveza	Spanish	s ɛ ɾ β e s a	609
+10090	Wichi	Matacoan	BEER	selwesa	selwesa	s e l w e s a	Spanish	cerveza	Spanish	s ɛ ɾ β e s a	609
 301	Spanish	Indo-European	BEESWAX	cera de abeja	cera_de_abeja	s ɛ ɾ a + ð e + a β e x a					
 2017	Yaqui	Uto-Aztecan	BEESWAX	sito’ori	sito’ori	s i t o ʔ o r i					
 2018	Yaqui	Uto-Aztecan	BEESWAX	mumu jo’ara	mumu_jo’ara	m u m u + j o ʔ a r a					
@@ -838,7 +838,7 @@ ID	DOCULECT	LANGUAGE_FAMILY	CONCEPT	VALUE	FORM	TOKENS	DONOR_LANGUAGE	DONOR_VALUE
 10419	Wichi	Matacoan	BESIDE	iwhoye	iwhoye	i w̥ o j e					
 11691	Mapudungun	Araucanian	BESIDE	ina	ina	i n a					
 1519	Spanish	Indo-European	BETRAY	traicionar	traicionar	t ɾ a i s j o n a ɾ					
-3013	Yaqui	Uto-Aztecan	BETRAY	traisionaroa	traisionaroa	t r a i s i o n a r o a	Spanish	traicionar			
+3013	Yaqui	Uto-Aztecan	BETRAY	traisionaroa	traisionaroa	t r a i s i o n a r o a	Spanish	traicionar	Spanish	t ɾ a i s j o n a ɾ	1519
 6018	Qeqchi	Mayan	BETRAY	b’alaq’ink	b’alaq’ink	ɓ a l a qʼ i n kʰ					
 8116	Otomi	Otomanguean	BETRAY	kadi	kadi	k a d i					
 9486	ImbaburaQuechua	Quechuan	BETRAY	llullana (2)	llullana	ʒ u ʒ a n a					
@@ -948,13 +948,13 @@ ID	DOCULECT	LANGUAGE_FAMILY	CONCEPT	VALUE	FORM	TOKENS	DONOR_LANGUAGE	DONOR_VALUE
 8972	ImbaburaQuechua	Quechuan	BLANKET	jatana	jatana	x a t a n a					
 10167	Wichi	Matacoan	BLANKET	kulhtsa	kulhtsa	k u lˠ ts a	Spanish	colcha			
 11436	Mapudungun	Araucanian	BLANKET	üḻtu	üḻtu	ɨ l̪ t u					
-11437	Mapudungun	Araucanian	BLANKET	fresada	fresada	f ɻ e s a θ a	Spanish	frazada			
+11437	Mapudungun	Araucanian	BLANKET	fresada	fresada	f ɻ e s a θ a	Spanish	frazada	Spanish	f ɾ a s a ð a	720
 1753	Spanish	Indo-European	BLESS	bendecir	bendecir	b e n d e s i ɾ					
 3190	Yaqui	Uto-Aztecan	BLESS	tu’isiawa	tu’isiawa	t u ʔ i s i a w a					
 4455	ZinacantanTzotzil	Mayan	BLESS	7ak’ bentisyon	7ak’_bentisyon	ʔ a kʼ + ɓ e n t i s j o n	Spanish	bendicio*n			
 6224	Qeqchi	Mayan	BLESS	osob'tesink	osob'tesink	o s o ɓ t e s i n kʰ					
 8461	Otomi	Otomanguean	BLESS	jäpi	jäpi	x ɐ p i					
-9629	ImbaburaQuechua	Quechuan	BLESS	bindisina	bindisina	b i n d i s i n a	Spanish	bendecir			
+9629	ImbaburaQuechua	Quechuan	BLESS	bindisina	bindisina	b i n d i s i n a	Spanish	bendecir	Spanish	b e n d e s i ɾ	1753
 10851	Wichi	Matacoan	BLESS	takopfwaya	takopfwaya	t a k o p fʷ a j a					
 511	Spanish	Indo-European	BLIND	ciego	ciego	s j e ɣ o					
 2200	Yaqui	Uto-Aztecan	BLIND	lipti ~ ripti	lipti	l i p t i					
@@ -1050,7 +1050,7 @@ ID	DOCULECT	LANGUAGE_FAMILY	CONCEPT	VALUE	FORM	TOKENS	DONOR_LANGUAGE	DONOR_VALUE
 7089	Otomi	Otomanguean	BOARD	xithe̲	xithe̲	x i θ æ					
 8984	ImbaburaQuechua	Quechuan	BOARD	tabla	tabla	t a b l a	Spanish	tabla	Spanish	t a β l a	736
 10180	Wichi	Matacoan	BOARD	hal’o lhip	hal’o_lhip	h a l ʔ o + lˠ i p					
-11452	Mapudungun	Araucanian	BOARD	trafla	trafla	ʈʂ a f l a	Spanish	tabla			
+11452	Mapudungun	Araucanian	BOARD	trafla	trafla	ʈʂ a f l a	Spanish	tabla	Spanish	t a β l a	736
 1583	Spanish	Indo-European	BOAST	jactarse	jactarse	x a k t a ɾ s e					
 3069	Yaqui	Uto-Aztecan	BOAST	emo eiya	emo_eiya	e m o + e i j a					
 6076	Qeqchi	Mayan	BOAST	nimob’eresink ib’	nimob’eresink_ib’	n i m o ɓ e ɾ e s i n k + i ɓ					
@@ -1132,12 +1132,12 @@ ID	DOCULECT	LANGUAGE_FAMILY	CONCEPT	VALUE	FORM	TOKENS	DONOR_LANGUAGE	DONOR_VALUE
 10761	Wichi	Matacoan	BOOK	liwulu	liwulu	l i w u l u	Spanish	libro			
 12028	Mapudungun	Araucanian	BOOK	lifru	lifru	l i f ɻ u	Spanish	libro			
 650	Spanish	Indo-European	BOOT	bota	bota	b o t a					
-2333	Yaqui	Uto-Aztecan	BOOT	bootam	bootam	b oː t a m	Spanish	bota			
+2333	Yaqui	Uto-Aztecan	BOOT	bootam	bootam	b oː t a m	Spanish	bota	Spanish	b o t a	650
 3741	ZinacantanTzotzil	Mayan	BOOT	botin	botin	ɓ o t i n	Spanish	boti*n			
 5113	Qeqchi	Mayan	BOOT	b’oot	b’oot	ɓ oː tʰ	Spanish	bote			
 6989	Otomi	Otomanguean	BOOT	hets'u̲ze̲xthi	hets'u̲ze̲xthi	h e tsʼ u z æ x θ i					
 6990	Otomi	Otomanguean	BOOT	bota	bota	b o t̪ a	Spanish	bota	Spanish	b o t a	650
-8937	ImbaburaQuechua	Quechuan	BOOT	butas	butas	b u t a s	Spanish	botas			
+8937	ImbaburaQuechua	Quechuan	BOOT	butas	butas	b u t a s	Spanish	botas	Spanish	b o t a	650
 10122	Wichi	Matacoan	BOOT	wutas	wutas	w u t a s	Spanish	botas			
 11398	Mapudungun	Araucanian	BOOT	fota	fota	f o t a	Spanish	bota	Spanish	b o t a	650
 1688	Spanish	Indo-European	BOOTY	botín	botín	b o t i n					
@@ -1213,7 +1213,7 @@ ID	DOCULECT	LANGUAGE_FAMILY	CONCEPT	VALUE	FORM	TOKENS	DONOR_LANGUAGE	DONOR_VALUE
 666	Spanish	Indo-European	BRACELET	brazalete	brazalete	b ɾ a s a l ɛ t e					
 667	Spanish	Indo-European	BRACELET	pulsera	pulsera	p u l s ɛ ɾ a					
 2349	Yaqui	Uto-Aztecan	BRACELET	pulseera	pulseera	p u l s eː r a	Spanish	pulsera	Spanish	p u l s ɛ ɾ a	667
-5126	Qeqchi	Mayan	BRACELET	pulseer	pulseer	p u l s eː r	Spanish	pulsera			
+5126	Qeqchi	Mayan	BRACELET	pulseer	pulseer	p u l s eː r	Spanish	pulsera	Spanish	p u l s ɛ ɾ a	667
 7008	Otomi	Otomanguean	BRACELET	nkät'u'ye	nkät'u'ye	n k ɐ t̪ʼ u ˀj e					
 10133	Wichi	Matacoan	BRACELET	totkwet’ak	totkwet’ak	t o t kʷ e t ʔ a k					
 1349	Spanish	Indo-European	BRACKISH	salobre	salobre	s a l o β ɾ e					
@@ -1325,11 +1325,11 @@ ID	DOCULECT	LANGUAGE_FAMILY	CONCEPT	VALUE	FORM	TOKENS	DONOR_LANGUAGE	DONOR_VALUE
 426	Spanish	Indo-European	BREATH OR BREATHE	respirar	respirar	r ɛ s p i ɾ a ɾ					
 427	Spanish	Indo-European	BREATH OR BREATHE	aliento	aliento	a l j e n t o					
 740	Spanish	Indo-European	BRICK	ladrillo	ladrillo	l a ð ɾ i ʝ o					
-2403	Yaqui	Uto-Aztecan	BRICK	lakrio	lakrio	l a k r i o	Spanish	ladrillo			
+2403	Yaqui	Uto-Aztecan	BRICK	lakrio	lakrio	l a k r i o	Spanish	ladrillo	Spanish	l a ð ɾ i ʝ o	740
 3796	ZinacantanTzotzil	Mayan	BRICK	lagrio	lagrio	l a g ɾ i o	Spanish	ladrillo	Spanish	l a ð ɾ i ʝ o	740
 5194	Qeqchi	Mayan	BRICK	xan	xan	ʃ a n					
-7095	Otomi	Otomanguean	BRICK	ladriyo	ladriyo	l a d r i j o	Spanish	ladrillo			
-8987	ImbaburaQuechua	Quechuan	BRICK	ladrillu	ladrillu	l a d ɾ i ʒ u	Spanish	ladrillo			
+7095	Otomi	Otomanguean	BRICK	ladriyo	ladriyo	l a d r i j o	Spanish	ladrillo	Spanish	l a ð ɾ i ʝ o	740
+8987	ImbaburaQuechua	Quechuan	BRICK	ladrillu	ladrillu	l a d ɾ i ʒ u	Spanish	ladrillo	Spanish	l a ð ɾ i ʝ o	740
 10181	Wichi	Matacoan	BRICK	alulis	alulis	a l u l i s	Spanish	adobe			
 1022	Spanish	Indo-European	BRIDGE	puente	puente	p w e n t e					
 2613	Yaqui	Uto-Aztecan	BRIDGE	puentes	puentes	p u e n t e s	Spanish	puente	Spanish	p w e n t e	1022
@@ -1463,7 +1463,7 @@ ID	DOCULECT	LANGUAGE_FAMILY	CONCEPT	VALUE	FORM	TOKENS	DONOR_LANGUAGE	DONOR_VALUE
 604	Spanish	Indo-European	BUTTER	mantequilla	mantequilla	m a n t e k i ʝ a					
 605	Spanish	Indo-European	BUTTER	manteca	manteca	m a n t e k a					
 2285	Yaqui	Uto-Aztecan	BUTTER	mantekia	mantekia	m a n t e k i a	Spanish	mantequilla	Spanish	m a n t e k i ʝ a	604
-5070	Qeqchi	Mayan	BUTTER	manteek	manteek	m a n t eː kʰ	Spanish	manteca			
+5070	Qeqchi	Mayan	BUTTER	manteek	manteek	m a n t eː kʰ	Spanish	manteca	Spanish	m a n t e k a	605
 6932	Otomi	Otomanguean	BUTTER	mäntekiya	mäntekiya	m ɐ n t̪ e k i j a	Spanish	mantequilla	Spanish	m a n t e k i ʝ a	604
 6933	Otomi	Otomanguean	BUTTER	nde̲ga	nde̲ga	n d æ g a	Spanish	mantega			
 8902	ImbaburaQuechua	Quechuan	BUTTER	vira	vira	β i ɾ a					
@@ -1495,7 +1495,7 @@ ID	DOCULECT	LANGUAGE_FAMILY	CONCEPT	VALUE	FORM	TOKENS	DONOR_LANGUAGE	DONOR_VALUE
 2344	Yaqui	Uto-Aztecan	BUTTON	booton	booton	b oː t o n	Spanish	botón	Spanish	b o t o n	659
 3745	ZinacantanTzotzil	Mayan	BUTTON	boton	boton	ɓ o t o n	Spanish	boto*n	Spanish	b o t o n	659
 5121	Qeqchi	Mayan	BUTTON	b'otonx	b'otonx	ɓ o t o n ʃ	Spanish	botones	Spanish	b o t o n	659
-7002	Otomi	Otomanguean	BUTTON	boto	boto	b o t̪ o	Spanish	botón			
+7002	Otomi	Otomanguean	BUTTON	boto	boto	b o t̪ o	Spanish	botón	Spanish	b o t o n	659
 8941	ImbaburaQuechua	Quechuan	BUTTON	butun	butun	b u t u ŋ	Spanish	botón			
 10129	Wichi	Matacoan	BUTTON	wutum	wutum	w u t u m	Spanish	botón			
 11402	Mapudungun	Araucanian	BUTTON	foton	foton	f o t o n	Spanish	botón	Spanish	b o t o n	659
@@ -1591,8 +1591,8 @@ ID	DOCULECT	LANGUAGE_FAMILY	CONCEPT	VALUE	FORM	TOKENS	DONOR_LANGUAGE	DONOR_VALUE
 5343	Qeqchi	Mayan	CARPENTER	pech'ol che'	pech'ol_che'	p e tʃʼ o l + tʃ e ʔ					
 7302	Otomi	Otomanguean	CARPENTER	yaxi	yaxi	j a x i					
 9076	ImbaburaQuechua	Quechuan	CARPENTER	karpinteru	karpinteru	k a ɾ p i n d e ɾ u	Spanish	carpintero	Spanish	k a ɾ p i n t ɛ ɾ o	890
-10269	Wichi	Matacoan	CARPENTER	kalpintelu	kalpintelu	k a l p i n t e l u	Spanish	carpintero			
-11549	Mapudungun	Araucanian	CARPENTER	kalpinteru	kalpinteru	k a l p i n t e ɻ u	Spanish	carpintero			
+10269	Wichi	Matacoan	CARPENTER	kalpintelu	kalpintelu	k a l p i n t e l u	Spanish	carpintero	Spanish	k a ɾ p i n t ɛ ɾ o	890
+11549	Mapudungun	Araucanian	CARPENTER	kalpinteru	kalpinteru	k a l p i n t e ɻ u	Spanish	carpintero	Spanish	k a ɾ p i n t ɛ ɾ o	890
 11550	Mapudungun	Araucanian	CARPENTER	rukafe	rukafe	ɻ u k a f e					
 1004	Spanish	Indo-European	CARRY	llevar	llevar	ɟ ʝ e β a ɾ					
 1005	Spanish	Indo-European	CARRY	cargar	cargar	k a ɾ ɣ a ɾ					
@@ -1651,7 +1651,7 @@ ID	DOCULECT	LANGUAGE_FAMILY	CONCEPT	VALUE	FORM	TOKENS	DONOR_LANGUAGE	DONOR_VALUE
 10348	Wichi	Matacoan	CARRY UNDER ARM	ichoj itikfwi lawilisch’u	ichoj_itikfwi_lawilisch’u	i tʃ o x + i t i k fʷ i + l a w i l i s tʃ ʔ u					
 1023	Spanish	Indo-European	CART	carro	carro	k a r o					
 1024	Spanish	Indo-European	CART	carretón	carretón	k a r ɛ t o n					
-2614	Yaqui	Uto-Aztecan	CART	kareeta	kareeta	k a r eː t a	Spanish	carreta			
+2614	Yaqui	Uto-Aztecan	CART	kareeta	kareeta	k a r eː t a	Spanish	carreta	Spanish	k a r ɛ t o n	1024
 5491	Qeqchi	Mayan	CART	kareton	kareton	k a ɾ e t o n	Spanish	carretón	Spanish	k a r ɛ t o n	1024
 7492	Otomi	Otomanguean	CART	bo̲jä	bo̲jä	b ə x ɐ					
 7493	Otomi	Otomanguean	CART	karreta	karreta	k a r r e t̪ a	Spanish	carreta			
@@ -1670,7 +1670,7 @@ ID	DOCULECT	LANGUAGE_FAMILY	CONCEPT	VALUE	FORM	TOKENS	DONOR_LANGUAGE	DONOR_VALUE
 827	Spanish	Indo-European	CASSAVA	yuca	yuca	ɟ ʝ u k a					
 3840	ZinacantanTzotzil	Mayan	CASSAVA	tz'in-te7	tz'in-te7	tsʰ ʔ i n + t e ʔ					
 5265	Qeqchi	Mayan	CASSAVA	tz’in	tz’in	tsʼ i n					
-9035	ImbaburaQuechua	Quechuan	CASSAVA	yuka	yuka	j u k a					
+9035	ImbaburaQuechua	Quechuan	CASSAVA	yuka	yuka	j u k a			Spanish	ɟ ʝ u k a	827
 10227	Wichi	Matacoan	CASSAVA	manyuku	manyuku	m a n j u k u	Spanish	mandioca	Spanish	m a n d j o k a	826
 904	Spanish	Indo-European	CAST	fundir	fundir	f u n d i ɾ					
 2518	Yaqui	Uto-Aztecan	CAST	pundiaroa	pundiaroa	p u n d i a r o a	Spanish	fundir			
@@ -1775,7 +1775,7 @@ ID	DOCULECT	LANGUAGE_FAMILY	CONCEPT	VALUE	FORM	TOKENS	DONOR_LANGUAGE	DONOR_VALUE
 7208	Otomi	Otomanguean	CHAIN	njunu̲bo̲jä	njunu̲bo̲jä	n x u n u b ə x ɐ					
 7209	Otomi	Otomanguean	CHAIN	kadenä	kadenä	k a d e n ɐ	Spanish	cadena	Spanish	k a ð e n a	846
 9047	ImbaburaQuechua	Quechuan	CHAIN	kadena	kadena	k a d e n a	Spanish	cadena	Spanish	k a ð e n a	846
-10239	Wichi	Matacoan	CHAIN	kalenis	kalenis	k a l e n i s	Spanish	cadenas			
+10239	Wichi	Matacoan	CHAIN	kalenis	kalenis	k a l e n i s	Spanish	cadenas	Spanish	k a ð e n a	846
 722	Spanish	Indo-European	CHAIR	silla	silla	s i ʝ a					
 2389	Yaqui	Uto-Aztecan	CHAIR	banko (1)	banko	b a n k o	Spanish	banco			
 3778	ZinacantanTzotzil	Mayan	CHAIR	shila	shila	ʃ i l a	Spanish	silla			
@@ -1968,7 +1968,7 @@ ID	DOCULECT	LANGUAGE_FAMILY	CONCEPT	VALUE	FORM	TOKENS	DONOR_LANGUAGE	DONOR_VALUE
 1206	Spanish	Indo-European	CIRCLE	círculo	círculo	s i ɾ k u l o					
 2756	Yaqui	Uto-Aztecan	CIRCLE	ko’elai	ko’elai	k o ʔ e l a i					
 4104	ZinacantanTzotzil	Mayan	CIRCLE	sentro	sentro	s e n t ɾ o	Spanish	centro			
-5690	Qeqchi	Mayan	CIRCLE	siril	siril	s i ɾ i l					
+5690	Qeqchi	Mayan	CIRCLE	siril	siril	s i ɾ i l			Spanish	s i ɾ k u l o	1206
 7708	Otomi	Otomanguean	CIRCLE	maxo̲ts'e	maxo̲ts'e	m a x ə tsʼ e					
 9273	ImbaburaQuechua	Quechuan	CIRCLE	muyushka	muyushka	m u j u ʃ k a					
 10490	Wichi	Matacoan	CIRCLE	lhip’unlhi	lhip’unlhi	lˠ i p ʔ u n lˠ i					
@@ -2067,7 +2067,7 @@ ID	DOCULECT	LANGUAGE_FAMILY	CONCEPT	VALUE	FORM	TOKENS	DONOR_LANGUAGE	DONOR_VALUE
 9349	ImbaburaQuechua	Quechuan	CLOCK	riluju	riluju	ʐ i l u x u	Spanish	reloj			
 10562	Wichi	Matacoan	CLOCK	tokafwala	tokafwala	t o k a fʷ a l a					
 10563	Wichi	Matacoan	CLOCK	tokwe’fwat	tokwe’fwat	t o kʷ e ʔ fʷ a t					
-11841	Mapudungun	Araucanian	CLOCK	relo	relo	ɻ e l o	Spanish	reloj			
+11841	Mapudungun	Araucanian	CLOCK	relo	relo	ɻ e l o	Spanish	reloj	Spanish	r e l o x	1318
 616	Spanish	Indo-European	CLOTH	tela	tela	t e l a					
 2298	Yaqui	Uto-Aztecan	CLOTH	teela	teela	t eː l a	Spanish	tela	Spanish	t e l a	616
 5081	Qeqchi	Mayan	CLOTH	t’ikr	t’ikr	tʼ i k r					
@@ -2105,7 +2105,7 @@ ID	DOCULECT	LANGUAGE_FAMILY	CONCEPT	VALUE	FORM	TOKENS	DONOR_LANGUAGE	DONOR_VALUE
 639	Spanish	Indo-European	COAT	abrigo	abrigo	a β ɾ i ɣ o					
 640	Spanish	Indo-European	COAT	saco	saco	s a k o					
 2321	Yaqui	Uto-Aztecan	COAT	suka supem	suka_supem	s u k a + s u p e m					
-2322	Yaqui	Uto-Aztecan	COAT	saakom	saakom	s aː k o m	Spanish	saco			
+2322	Yaqui	Uto-Aztecan	COAT	saakom	saakom	s aː k o m	Spanish	saco	Spanish	s a k o	640
 5103	Qeqchi	Mayan	COAT	koton	koton	k o t o n	Spanish	cotón			
 6978	Otomi	Otomanguean	COAT	däx’yo	däx’yo	d ɐ x ʔ j o					
 6979	Otomi	Otomanguean	COAT	thoxo	thoxo	θ o x o					
@@ -2147,14 +2147,14 @@ ID	DOCULECT	LANGUAGE_FAMILY	CONCEPT	VALUE	FORM	TOKENS	DONOR_LANGUAGE	DONOR_VALUE
 11893	Mapudungun	Araucanian	COLD	fürkü	fürkü	f ɨ ɻ k ɨ					
 642	Spanish	Indo-European	COLLAR	cuello	cuello	k w e ʝ o					
 2324	Yaqui	Uto-Aztecan	COLLAR	kutana	kutana	k u t a n a					
-2325	Yaqui	Uto-Aztecan	COLLAR	kueyo	kueyo	k u e j o	Spanish	cuello			
+2325	Yaqui	Uto-Aztecan	COLLAR	kueyo	kueyo	k u e j o	Spanish	cuello	Spanish	k w e ʝ o	642
 3737	ZinacantanTzotzil	Mayan	COLLAR	nuk’il	nuk’il	n u kʼ i l					
 5105	Qeqchi	Mayan	COLLAR	kux aaq’	kux_aaq’	k u ʃ + aː qʼ					
 5106	Qeqchi	Mayan	COLLAR	q’ol	q’ol	q ʔ o l					
 6982	Otomi	Otomanguean	COLLAR	'yu̲ga̲	'yu̲ga̲	ˀj u g ɔ					
 8932	ImbaburaQuechua	Quechuan	COLLAR	walka	walka	w a l k a					
 10116	Wichi	Matacoan	COLLAR	tolhamis	tolhamis	t o lˠ a m i s					
-11392	Mapudungun	Araucanian	COLLAR	kwellu	kwellu	k w e ʎ u	Spanish	cuello			
+11392	Mapudungun	Araucanian	COLLAR	kwellu	kwellu	k w e ʎ u	Spanish	cuello	Spanish	k w e ʝ o	642
 379	Spanish	Indo-European	COLLARBONE	clavícula	clavícula	k l a β i k u l a					
 2090	Yaqui	Uto-Aztecan	COLLARBONE	tau ota	tau_ota	t a u + o t a					
 3504	ZinacantanTzotzil	Mayan	COLLARBONE	7ual bakel	7ual_bakel	ʔ u a l + ɓ a k e l					
@@ -2167,7 +2167,7 @@ ID	DOCULECT	LANGUAGE_FAMILY	CONCEPT	VALUE	FORM	TOKENS	DONOR_LANGUAGE	DONOR_VALUE
 4219	ZinacantanTzotzil	Mayan	COLOR	bon	bon	ɓ o n					
 7918	Otomi	Otomanguean	COLOR	kolor	kolor	k o l o r	Spanish	color	Spanish	k o l o ɾ	1366
 7919	Otomi	Otomanguean	COLOR	njät'i	njät'i	n x ɐ t̪ʼ i					
-9385	ImbaburaQuechua	Quechuan	COLOR	kulur	kulur	k u l u ɾ	Spanish	color			
+9385	ImbaburaQuechua	Quechuan	COLOR	kulur	kulur	k u l u ɾ	Spanish	color	Spanish	k o l o ɾ	1366
 680	Spanish	Indo-European	COMB	peine	peine	p e i n e					
 2357	Yaqui	Uto-Aztecan	COMB	chichikia	chichikia	tʃ i tʃ i k i a					
 3751	ZinacantanTzotzil	Mayan	COMB	hach’ubil	hach’ubil	h a tʃʼ u ɓ i l					
@@ -2230,13 +2230,13 @@ ID	DOCULECT	LANGUAGE_FAMILY	CONCEPT	VALUE	FORM	TOKENS	DONOR_LANGUAGE	DONOR_VALUE
 9987	Wichi	Matacoan	CONCEIVE	iwulhosa	iwulhosa	i w u lˠ o s a					
 11259	Mapudungun	Araucanian	CONCEIVE	nien	nien	n i e n					
 1718	Spanish	Indo-European	CONDEMN	condenar	condenar	k o n d e n a ɾ					
-3163	Yaqui	Uto-Aztecan	CONDEMN	konrenaroa	konrenaroa	k o n r e n a r o a	Spanish	condenar			
+3163	Yaqui	Uto-Aztecan	CONDEMN	konrenaroa	konrenaroa	k o n r e n a r o a	Spanish	condenar	Spanish	k o n d e n a ɾ	1718
 6192	Qeqchi	Mayan	CONDEMN	tz’aqtaanank	tz’aqtaanank	tsʼ a q t aː n a n kʰ					
 6193	Qeqchi	Mayan	CONDEMN	raqok aatin	raqok_aatin	r a q o k + aː t i n					
 8416	Otomi	Otomanguean	CONDEMN	tsatu'ñu	tsatu'ñu	ts a t̪ u ˀɲ u					
 1719	Spanish	Indo-European	CONVICT	inculpar	inculpar	i n k u l p a ɾ					
 1720	Spanish	Indo-European	CONVICT	condenar	condenar	k o n d e n a ɾ					
-3164	Yaqui	Uto-Aztecan	CONVICT	konrenaroa	konrenaroa	k o n r e n a r o a	Spanish	condenar			
+3164	Yaqui	Uto-Aztecan	CONVICT	konrenaroa	konrenaroa	k o n r e n a r o a	Spanish	condenar	Spanish	k o n d e n a ɾ	1720
 6194	Qeqchi	Mayan	CONVICT	teneb’ankil sa’ xb’een	teneb’ankil_sa’_xb’een	t e n e ɓ a n k i l + s a ʔ + ʃ ɓ eː n					
 6195	Qeqchi	Mayan	CONVICT	raqok aatin chi rix	raqok_aatin_chi_rix	r a q o k + aː t i n + tʃ i + ɾ i ʃ					
 8417	Otomi	Otomanguean	CONVICT	tsatu'ñu	tsatu'ñu	ts a t̪ u ˀɲ u					
@@ -2350,7 +2350,7 @@ ID	DOCULECT	LANGUAGE_FAMILY	CONCEPT	VALUE	FORM	TOKENS	DONOR_LANGUAGE	DONOR_VALUE
 8400	Otomi	Otomanguean	COURT	ndä ts'ut'ubi	ndä_ts'ut'ubi	n d ɐ + tsʼ u t̪ʼ u b i					
 8401	Otomi	Otomanguean	COURT	tribunäl	tribunäl	t̪ r i b u n ɐ l	Spanish	tribunal			
 9598	ImbaburaQuechua	Quechuan	COURT	tribunal	tribunal	t ɾ i b u n a l	Spanish	tribunal	Spanish	t ɾ i β u n a l	1707
-10830	Wichi	Matacoan	COURT	tribunales	tribunales	t r i b u n a l e s	Spanish	tribunales			
+10830	Wichi	Matacoan	COURT	tribunales	tribunales	t r i b u n a l e s	Spanish	tribunales	Spanish	t ɾ i β u n a l	1707
 154	Spanish	Indo-European	COUSIN	primo	primo	p ɾ i m o					
 155	Spanish	Indo-European	COUSIN	prima	prima	p ɾ i m a					
 1910	Yaqui	Uto-Aztecan	COUSIN	ako	ako	a k o					
@@ -2401,7 +2401,7 @@ ID	DOCULECT	LANGUAGE_FAMILY	CONCEPT	VALUE	FORM	TOKENS	DONOR_LANGUAGE	DONOR_VALUE
 3447	ZinacantanTzotzil	Mayan	CROCODILE	lagarto	lagarto	l a g a ɾ t o	Spanish	lagarto			
 4768	Qeqchi	Mayan	CROCODILE	ayin	ayin	a j i n					
 6621	Otomi	Otomanguean	CROCODILE	kokodrilo	kokodrilo	k o k o d r i l o	Spanish	cocodrilo	Spanish	k o k o ð ɾ i l o	317
-8694	ImbaburaQuechua	Quechuan	CROCODILE	kukudrilu	kukudrilu	k u k u d ɾ i l u	Spanish	cocodrilo			
+8694	ImbaburaQuechua	Quechuan	CROCODILE	kukudrilu	kukudrilu	k u k u d ɾ i l u	Spanish	cocodrilo	Spanish	k o k o ð ɾ i l o	317
 9873	Wichi	Matacoan	CROCODILE	alhetaj (1)	alhetaj	a lˠ e t a x					
 1199	Spanish	Indo-European	CROOKED	torcido	torcido	t o ɾ s i ð o					
 2749	Yaqui	Uto-Aztecan	CROOKED	tottia	tottia	t o t t i a					
@@ -2429,7 +2429,7 @@ ID	DOCULECT	LANGUAGE_FAMILY	CONCEPT	VALUE	FORM	TOKENS	DONOR_LANGUAGE	DONOR_VALUE
 7705	Otomi	Otomanguean	CROSS	pont'u̲zaa	pont'u̲zaa	p o n t̪ʼ u z aː					
 9270	ImbaburaQuechua	Quechuan	CROSS	krus	krus	k ɾ u s	Spanish	cruz	Spanish	k ɾ u s	1203
 10488	Wichi	Matacoan	CROSS	klus	klus	k l u s	Spanish	cruz	Spanish	k ɾ u s	1203
-11756	Mapudungun	Araucanian	CROSS	kürus	kürus	k ɨ ɻ u s	Spanish	cruz			
+11756	Mapudungun	Araucanian	CROSS	kürus	kürus	k ɨ ɻ u s	Spanish	cruz	Spanish	k ɾ u s	1203
 972	Spanish	Indo-European	CROUCH	agacharse	agacharse	a ɣ a tʃ a ɾ s e					
 973	Spanish	Indo-European	CROUCH	ponerse en cuclillas	ponerse_en_cuclillas	p o n ɛ ɾ s ɛ + e n + k u k l i ʝ a s					
 2570	Yaqui	Uto-Aztecan	CROUCH	po’okte	po’okte	p o ʔ o k t e					
@@ -2508,7 +2508,7 @@ ID	DOCULECT	LANGUAGE_FAMILY	CONCEPT	VALUE	FORM	TOKENS	DONOR_LANGUAGE	DONOR_VALUE
 12095	Mapudungun	Araucanian	CURSE	malisian	malisian	m a l i s i a n	Spanish	maldecir			
 1644	Spanish	Indo-European	CUSTOM	costumbre	costumbre	k o s t u m b ɾ e					
 1645	Spanish	Indo-European	CUSTOM	hábito	hábito	a β i t o					
-3108	Yaqui	Uto-Aztecan	CUSTOM	kojtumrem ~ kojtumbrem	kojtumrem	k o j t u m r e m	Spanish	costumbre			
+3108	Yaqui	Uto-Aztecan	CUSTOM	kojtumrem ~ kojtumbrem	kojtumrem	k o j t u m r e m	Spanish	costumbre	Spanish	k o s t u m b ɾ e	1644
 4399	ZinacantanTzotzil	Mayan	CUSTOM	tz’unbal	tz’unbal	tsʼ u n ɓ a l					
 4400	ZinacantanTzotzil	Mayan	CUSTOM	tasalul	tasalul	t a s a l u l					
 6119	Qeqchi	Mayan	CUSTOM	b'aanuheem	b'aanuheem	ɓ aː n u h eː m					
@@ -2743,7 +2743,7 @@ ID	DOCULECT	LANGUAGE_FAMILY	CONCEPT	VALUE	FORM	TOKENS	DONOR_LANGUAGE	DONOR_VALUE
 6231	Qeqchi	Mayan	DEMON	anum	anum	a n u m					
 6232	Qeqchi	Mayan	DEMON	tza	tza	t z a					
 8469	Otomi	Otomanguean	DEMON	zunthu	zunthu	z u n θ u					
-8470	Otomi	Otomanguean	DEMON	dämänts'o	dämänts'o	d ɐ m ɐ n tsʼ o					
+8470	Otomi	Otomanguean	DEMON	dämänts'o	dämänts'o	d ɐ m ɐ n tsʼ o			Spanish	d e m o n j o	1759
 8471	Otomi	Otomanguean	DEMON	nts'o	nts'o	n tsʼ o					
 9633	ImbaburaQuechua	Quechuan	DEMON	aya	aya	a j a					
 1572	Spanish	Indo-European	DENY	negar	negar	n e ɣ a ɾ					
@@ -2904,7 +2904,7 @@ ID	DOCULECT	LANGUAGE_FAMILY	CONCEPT	VALUE	FORM	TOKENS	DONOR_LANGUAGE	DONOR_VALUE
 1966	Yaqui	Uto-Aztecan	DONKEY	buuru	buuru	b uː r u	Spanish	burro			
 3375	ZinacantanTzotzil	Mayan	DONKEY	buro	buro	ɓ u ɾ o	Spanish	burro			
 4677	Qeqchi	Mayan	DONKEY	b’uro, b’uur	b’uro	ɓ u ɾ o	Spanish	burro			
-6522	Otomi	Otomanguean	DONKEY	burru	burru	b u r r u	Spanish	burro			
+6522	Otomi	Otomanguean	DONKEY	burru	burru	b u r r u	Spanish	burro	Spanish	b u r o	235
 6523	Otomi	Otomanguean	DONKEY	ndo̲bru	ndo̲bru	n d ə b r u	Spanish	burro			
 6524	Otomi	Otomanguean	DONKEY	tsubru	tsubru	ts u b r u	Spanish	burru			
 8641	ImbaburaQuechua	Quechuan	DONKEY	burru	burru	b u ʐ u	Spanish	burro			
@@ -3074,7 +3074,7 @@ ID	DOCULECT	LANGUAGE_FAMILY	CONCEPT	VALUE	FORM	TOKENS	DONOR_LANGUAGE	DONOR_VALUE
 1972	Yaqui	Uto-Aztecan	DUCK	ba’a mojakte’ela	ba’a_mojakte’ela	b a ʔ a + m o j a k t e ʔ e l a					
 1973	Yaqui	Uto-Aztecan	DUCK	paato	paato	p aː t o	Spanish	pato	Spanish	p a t o	243
 3382	ZinacantanTzotzil	Mayan	DUCK	pech’	pech’	pʰ e tʃʼ					
-4685	Qeqchi	Mayan	DUCK	patux	patux	p a t u ʃ	Spanish	patos			
+4685	Qeqchi	Mayan	DUCK	patux	patux	p a t u ʃ	Spanish	patos	Spanish	p a t o	243
 6534	Otomi	Otomanguean	DUCK	badu	badu	b a d u	Spanish	pato			
 8648	ImbaburaQuechua	Quechuan	DUCK	patu	patu	p a t u	Spanish	pato	Spanish	p a t o	243
 9800	Wichi	Matacoan	DUCK	fwu’yaj	fwu’yaj	fʷ u ʔ j a x					
@@ -3153,7 +3153,7 @@ ID	DOCULECT	LANGUAGE_FAMILY	CONCEPT	VALUE	FORM	TOKENS	DONOR_LANGUAGE	DONOR_VALUE
 9197	ImbaburaQuechua	Quechuan	EARN	ganana	ganana	g a n a n a	Spanish	ganar	Spanish	g a n a ɾ	1095
 10405	Wichi	Matacoan	EARN	yikalhi lakow’oj	yikalhi_lakow’oj	y i k a lˠ i + l a k o w ʔ o x					
 11676	Mapudungun	Araucanian	EARN	entun	entun	e n t u n					
-11677	Mapudungun	Araucanian	EARN	kanan	kanan	k a n a n	Spanish	ganar			
+11677	Mapudungun	Araucanian	EARN	kanan	kanan	k a n a n	Spanish	ganar	Spanish	g a n a ɾ	1095
 671	Spanish	Indo-European	EARRING	arete	arete	a ɾ ɛ t e					
 672	Spanish	Indo-European	EARRING	aro	aro	a ɾ o					
 673	Spanish	Indo-European	EARRING	pendiente	pendiente	p e n d j e n t e					
@@ -3368,7 +3368,7 @@ ID	DOCULECT	LANGUAGE_FAMILY	CONCEPT	VALUE	FORM	TOKENS	DONOR_LANGUAGE	DONOR_VALUE
 11624	Mapudungun	Araucanian	ENTER	konün	konün	k o n ɨ n					
 1434	Spanish	Indo-European	ENVY	envidia	envidia	e m b i ð j a					
 1435	Spanish	Indo-European	ENVY	celos	celos	s e l o s					
-2953	Yaqui	Uto-Aztecan	ENVY	selaaroa	selaaroa	s e l aː r o a	Spanish	celar			
+2953	Yaqui	Uto-Aztecan	ENVY	selaaroa	selaaroa	s e l aː r o a	Spanish	celar	Spanish	s e l o s	1435
 4266	ZinacantanTzotzil	Mayan	ENVY	k’ak’al 7o7onil	k’ak’al_7o7onil	kʼ a kʼ a l + ʔ o ʔ o n i l					
 5941	Qeqchi	Mayan	ENVY	kaqal	kaqal	k a q a l					
 7999	Otomi	Otomanguean	ENVY	zu̲da̲	zu̲da̲	z u d ɔ					
@@ -3500,7 +3500,7 @@ ID	DOCULECT	LANGUAGE_FAMILY	CONCEPT	VALUE	FORM	TOKENS	DONOR_LANGUAGE	DONOR_VALUE
 928	Spanish	Indo-European	FAN (ACTION)	abanicar	abanicar	a β a n i k a ɾ					
 929	Spanish	Indo-European	FAN (ACTION)	aventar	aventar	a β e n t a ɾ					
 930	Spanish	Indo-European	FAN (ACTION)	ventilar	ventilar	b e n t i l a ɾ					
-2534	Yaqui	Uto-Aztecan	FAN (ACTION)	abanikaroa	abanikaroa	a b a n i k a r o a	Spanish	abanicar			
+2534	Yaqui	Uto-Aztecan	FAN (ACTION)	abanikaroa	abanikaroa	a b a n i k a r o a	Spanish	abanicar	Spanish	a β a n i k a ɾ	928
 2535	Yaqui	Uto-Aztecan	FAN (ACTION)	baijekta	baijekta	b a i j e k t a					
 3908	ZinacantanTzotzil	Mayan	FAN (ACTION)	hik’a	hik’a	h i kʼ a					
 3909	ZinacantanTzotzil	Mayan	FAN (ACTION)	vel	vel	v e l					
@@ -3639,7 +3639,7 @@ ID	DOCULECT	LANGUAGE_FAMILY	CONCEPT	VALUE	FORM	TOKENS	DONOR_LANGUAGE	DONOR_VALUE
 11880	Mapudungun	Araucanian	FEEL	malün	malün	m a l ɨ n					
 621	Spanish	Indo-European	FELT	fieltro	fieltro	f j ɛ l t ɾ o					
 2302	Yaqui	Uto-Aztecan	FELT	piltro	piltro	p i l t r o	Spanish	fieltro			
-6954	Otomi	Otomanguean	FELT	fyeltro	fyeltro	f j e l t̪ r o	Spanish	fieltro			
+6954	Otomi	Otomanguean	FELT	fyeltro	fyeltro	f j e l t̪ r o	Spanish	fieltro	Spanish	f j ɛ l t ɾ o	621
 197	Spanish	Indo-European	FEMALE (OF ANIMAL)	femenino	femenino	f e m e n i n o					
 198	Spanish	Indo-European	FEMALE (OF ANIMAL)	hembra	hembra	e m b ɾ a					
 1940	Yaqui	Uto-Aztecan	FEMALE (OF ANIMAL)	jamut	jamut	j a m u t					
@@ -3959,10 +3959,10 @@ ID	DOCULECT	LANGUAGE_FAMILY	CONCEPT	VALUE	FORM	TOKENS	DONOR_LANGUAGE	DONOR_VALUE
 10162	Wichi	Matacoan	FLOOR	hunhat	hunhat	h u n̥ a t					
 11432	Mapudungun	Araucanian	FLOOR	püllü	püllü	p ɨ ʎ ɨ					
 574	Spanish	Indo-European	FLOUR	harina	harina	a ɾ i n a					
-2254	Yaqui	Uto-Aztecan	FLOUR	ainam	ainam	a i n a m	Spanish	harina			
+2254	Yaqui	Uto-Aztecan	FLOUR	ainam	ainam	a i n a m	Spanish	harina	Spanish	a ɾ i n a	574
 3674	ZinacantanTzotzil	Mayan	FLOUR	harina	harina	h a ɾ i n a	Spanish	harina	Spanish	a ɾ i n a	574
 5037	Qeqchi	Mayan	FLOUR	xk’aj ariin	xk’aj_ariin	ʃ kʼ a x + a ɾ iː n					
-5038	Qeqchi	Mayan	FLOUR	ariin	ariin	a ɾ iː n	Spanish	harina			
+5038	Qeqchi	Mayan	FLOUR	ariin	ariin	a ɾ iː n	Spanish	harina	Spanish	a ɾ i n a	574
 5039	Qeqchi	Mayan	FLOUR	k’aj	k’aj	kʼ a x					
 6900	Otomi	Otomanguean	FLOUR	ju̲ni (2)	ju̲ni	x u n i					
 8877	ImbaburaQuechua	Quechuan	FLOUR	jaku	jaku	x a k u					
@@ -3988,7 +3988,7 @@ ID	DOCULECT	LANGUAGE_FAMILY	CONCEPT	VALUE	FORM	TOKENS	DONOR_LANGUAGE	DONOR_VALUE
 9022	ImbaburaQuechua	Quechuan	FLOWER	sisa	sisa	s i s a					
 10210	Wichi	Matacoan	FLOWER	lhawu	lhawu	lˠ a w u	Pilagá	law’o			
 11494	Mapudungun	Araucanian	FLOWER	rayen	rayen	ɻ a y e n					
-11495	Mapudungun	Araucanian	FLOWER	fülor	fülor	f ɨ l o ɻ	Spanish	flor			
+11495	Mapudungun	Araucanian	FLOWER	fülor	fülor	f ɨ l o ɻ	Spanish	flor	Spanish	f l o ɾ	797
 42	Spanish	Indo-European	FLOWING BODY OF WATER	río	río	r i o					
 43	Spanish	Indo-European	FLOWING BODY OF WATER	corriente	corriente	k o r j e n t e					
 44	Spanish	Indo-European	FLOWING BODY OF WATER	arroyo	arroyo	a r o ʝ o					
@@ -4034,9 +4034,9 @@ ID	DOCULECT	LANGUAGE_FAMILY	CONCEPT	VALUE	FORM	TOKENS	DONOR_LANGUAGE	DONOR_VALUE
 4676	Qeqchi	Mayan	FOAL	ral kawaay	ral_kawaay	r a l + k a w aː j					
 6520	Otomi	Otomanguean	FOAL	t'olo fani	t'olo_fani	t̪ʼ o l o + f a n i					
 6521	Otomi	Otomanguean	FOAL	t'u fani	t'u_fani	t̪ʼ u + f a n i					
-8640	ImbaburaQuechua	Quechuan	FOAL	putru (2)	putru	p u t ɾ u	Spanish	potro			
+8640	ImbaburaQuechua	Quechuan	FOAL	putru (2)	putru	p u t ɾ u	Spanish	potro	Spanish	p o t ɾ o	232
 9793	Wichi	Matacoan	FOAL	yel’ataj lhos	yel’ataj_lhos	y e l ʔ a t a x + lˠ o s					
-11087	Mapudungun	Araucanian	FOAL	potrillo	potrillo	p o ʈʂ i ʎ o	Spanish	potrillo			
+11087	Mapudungun	Araucanian	FOAL	potrillo	potrillo	p o ʈʂ i ʎ o	Spanish	potrillo	Spanish	p o t ɾ i ʝ o	233
 29	Spanish	Indo-European	FOAM	espuma	espuma	ɛ s p u m a					
 1788	Yaqui	Uto-Aztecan	FOAM	somo’ichia	somo’ichia	s o m o ʔ i tʃ i a					
 3227	ZinacantanTzotzil	Mayan	FOAM	vok	vok	v o k	Mocho	woq(o)ch			
@@ -4200,7 +4200,7 @@ ID	DOCULECT	LANGUAGE_FAMILY	CONCEPT	VALUE	FORM	TOKENS	DONOR_LANGUAGE	DONOR_VALUE
 3413	ZinacantanTzotzil	Mayan	FOX	vet	vet	v e tʰ	Tojolabal	wet			
 4720	Qeqchi	Mayan	FOX	yak	yak	j a kʰ					
 6579	Otomi	Otomanguean	FOX	sorro	sorro	s o r r o	Spanish	zorro	Spanish	s o r o	282
-6580	Otomi	Otomanguean	FOX	sorra	sorra	s o r r a	Spanish	zorro			
+6580	Otomi	Otomanguean	FOX	sorra	sorra	s o r r a	Spanish	zorro	Spanish	s o r o	282
 8668	ImbaburaQuechua	Quechuan	FOX	añas	añas	a ɲ a s					
 9831	Wichi	Matacoan	FOX	mawu	mawu	m a w u					
 11118	Mapudungun	Araucanian	FOX	ngürü	ngürü	ŋ ɨ ɻ ɨ					
@@ -4231,8 +4231,8 @@ ID	DOCULECT	LANGUAGE_FAMILY	CONCEPT	VALUE	FORM	TOKENS	DONOR_LANGUAGE	DONOR_VALUE
 4715	Qeqchi	Mayan	FRESHWATER EEL	k’anti’ kar	k’anti’_kar	kʼ a n t i ʔ + k a r					
 9827	Wichi	Matacoan	FRESHWATER EEL	iyha	iyha	i j h a					
 1325	Spanish	Indo-European	FRIDAY	viernes	viernes	b j ɛ ɾ n e s					
-2872	Yaqui	Uto-Aztecan	FRIDAY	bienes	bienes	b i e n e s	Spanish	viernes			
-4192	ZinacantanTzotzil	Mayan	FRIDAY	byernesh	byernesh	ɓ j e ɾ n e sʰ	Spanish	viernes			
+2872	Yaqui	Uto-Aztecan	FRIDAY	bienes	bienes	b i e n e s	Spanish	viernes	Spanish	b j ɛ ɾ n e s	1325
+4192	ZinacantanTzotzil	Mayan	FRIDAY	byernesh	byernesh	ɓ j e ɾ n e sʰ	Spanish	viernes	Spanish	b j ɛ ɾ n e s	1325
 5824	Qeqchi	Mayan	FRIDAY	b’yers, b’iernes	b’yers	ɓ j e r s	Spanish	viernes			
 7858	Otomi	Otomanguean	FRIDAY	mbehe	mbehe	m b e h e					
 9356	ImbaburaQuechua	Quechuan	FRIDAY	birnes	birnes	b i ɾ n e s	Spanish	viernes	Spanish	b j ɛ ɾ n e s	1325
@@ -4265,7 +4265,7 @@ ID	DOCULECT	LANGUAGE_FAMILY	CONCEPT	VALUE	FORM	TOKENS	DONOR_LANGUAGE	DONOR_VALUE
 2265	Yaqui	Uto-Aztecan	FRUIT	taakam	taakam	t aː k a m					
 3689	ZinacantanTzotzil	Mayan	FRUIT	satil	satil	s a t i l	Tojolabal	sat			
 5053	Qeqchi	Mayan	FRUIT	u	u	u					
-6913	Otomi	Otomanguean	FRUIT	fruta	fruta	f r u t̪ a	Spanish	fruta			
+6913	Otomi	Otomanguean	FRUIT	fruta	fruta	f r u t̪ a	Spanish	fruta	Spanish	f ɾ u t a	587
 6914	Otomi	Otomanguean	FRUIT	ixi	ixi	i x i					
 8887	ImbaburaQuechua	Quechuan	FRUIT	muru	muru	m u ɾ u					
 10073	Wichi	Matacoan	FRUIT	lha	lha	lˠ a					
@@ -4291,7 +4291,7 @@ ID	DOCULECT	LANGUAGE_FAMILY	CONCEPT	VALUE	FORM	TOKENS	DONOR_LANGUAGE	DONOR_VALUE
 10101	Wichi	Matacoan	FUR	t’oj	t’oj	t ʔ o x					
 11375	Mapudungun	Araucanian	FUR	trülke	trülke	ʈʂ ɨ l k e					
 757	Spanish	Indo-European	FURROW	surco	surco	s u ɾ k o					
-2413	Yaqui	Uto-Aztecan	FURROW	suuko	suuko	s uː k o	Spanish	surco			
+2413	Yaqui	Uto-Aztecan	FURROW	suuko	suuko	s uː k o	Spanish	surco	Spanish	s u ɾ k o	757
 5205	Qeqchi	Mayan	FURROW	qeer	qeer	q eː r					
 5206	Qeqchi	Mayan	FURROW	ch’ol	ch’ol	tʃʼ o l					
 5207	Qeqchi	Mayan	FURROW	tzol	tzol	t z o l	Ch’olan	*tzohl			
@@ -4450,7 +4450,7 @@ ID	DOCULECT	LANGUAGE_FAMILY	CONCEPT	VALUE	FORM	TOKENS	DONOR_LANGUAGE	DONOR_VALUE
 4668	Qeqchi	Mayan	GOAT	yuk	yuk	j u kʰ	Yucatecan	*yuuk			
 6510	Otomi	Otomanguean	GOAT	t'äxi	t'äxi	t̪ʼ ɐ x i					
 8634	ImbaburaQuechua	Quechuan	GOAT	chita	chita	tʃ i t a	Unidentified				
-9787	Wichi	Matacoan	GOAT	kaila	kaila	k a i l a	Spanish	cabra			
+9787	Wichi	Matacoan	GOAT	kaila	kaila	k a i l a	Spanish	cabra	Spanish	k a β ɾ a	224
 11079	Mapudungun	Araucanian	GOAT	kapüra	kapüra	k a p ɨ ɻ a	Spanish	cabra			
 1737	Spanish	Indo-European	GOD	Dios	Dios	d j o s					
 479	Spanish	Indo-European	GOITER	bocio	bocio	b o s j o					
@@ -4495,7 +4495,7 @@ ID	DOCULECT	LANGUAGE_FAMILY	CONCEPT	VALUE	FORM	TOKENS	DONOR_LANGUAGE	DONOR_VALUE
 6533	Otomi	Otomanguean	GOOSE	ganso	ganso	g a n s o	Spanish	ganso	Spanish	g a n s o	242
 8647	ImbaburaQuechua	Quechuan	GOOSE	gansu	gansu	g a n s u	Spanish	ganso	Spanish	g a n s o	242
 9799	Wichi	Matacoan	GOOSE	tsehistaj	tsehistaj	ts e h i s t a x					
-11093	Mapudungun	Araucanian	GOOSE	kansu	kansu	k a n s u	Spanish	ganso			
+11093	Mapudungun	Araucanian	GOOSE	kansu	kansu	k a n s u	Spanish	ganso	Spanish	g a n s o	242
 828	Spanish	Indo-European	GOURD	calabaza	calabaza	k a l a β a s a					
 2459	Yaqui	Uto-Aztecan	GOURD	aokos	aokos	a o k o s					
 2460	Yaqui	Uto-Aztecan	GOURD	arokosi	arokosi	a r o k o s i					
@@ -4577,7 +4577,7 @@ ID	DOCULECT	LANGUAGE_FAMILY	CONCEPT	VALUE	FORM	TOKENS	DONOR_LANGUAGE	DONOR_VALUE
 807	Spanish	Indo-European	GRAPEVINE	liana	liana	l j a n a					
 787	Spanish	Indo-European	GRASS	hierba	hierba	ɟ ʝ ɛ ɾ β a					
 788	Spanish	Indo-European	GRASS	pasto	pasto	p a s t o					
-2433	Yaqui	Uto-Aztecan	GRASS	baso	baso	b a s o					
+2433	Yaqui	Uto-Aztecan	GRASS	baso	baso	b a s o			Spanish	p a s t o	788
 3816	ZinacantanTzotzil	Mayan	GRASS	hobel	hobel	h o ɓ e l					
 5230	Qeqchi	Mayan	GRASS	pach'aya'	pach'aya'	p a tʃʼ a j a ʔ					
 5231	Qeqchi	Mayan	GRASS	ichaj	ichaj	i tʃ a x					
@@ -4684,7 +4684,7 @@ ID	DOCULECT	LANGUAGE_FAMILY	CONCEPT	VALUE	FORM	TOKENS	DONOR_LANGUAGE	DONOR_VALUE
 8061	Otomi	Otomanguean	GUESS	tini	tini	t̪ i n i					
 8062	Otomi	Otomanguean	GUESS	ät’i	ät’i	ɐ t̪ʼ i					
 8063	Otomi	Otomanguean	GUESS	k'ahni	k'ahni	k ʔ a h n i					
-9463	ImbaburaQuechua	Quechuan	GUESS	adibinana	adibinana	a d i b i n a n a	Spanish	adivinar			
+9463	ImbaburaQuechua	Quechuan	GUESS	adibinana	adibinana	a d i b i n a n a	Spanish	adivinar	Spanish	a ð i β i n a ɾ	1484
 10680	Wichi	Matacoan	GUESS	pajche yihanch’uya	pajche_yihanch’uya	p a x tʃ e + j i h a n tʃ ʔ u j a					
 11947	Mapudungun	Araucanian	GUESS	mupin	mupin	m u p i n					
 11948	Mapudungun	Araucanian	GUESS	lleqnien	lleqnien	ʎ e ɣ n i e n					
@@ -4740,7 +4740,7 @@ ID	DOCULECT	LANGUAGE_FAMILY	CONCEPT	VALUE	FORM	TOKENS	DONOR_LANGUAGE	DONOR_VALUE
 10524	Wichi	Matacoan	HALF	lhip	lhip	lˠ i p					
 11794	Mapudungun	Araucanian	HALF	rangiñ	rangiñ	ɻ a ŋ i ɲ					
 897	Spanish	Indo-European	HAMMER	martillo	martillo	m a ɾ t i ʝ o					
-2513	Yaqui	Uto-Aztecan	HAMMER	martiom	martiom	m a r t i o m	Spanish	martillo			
+2513	Yaqui	Uto-Aztecan	HAMMER	martiom	martiom	m a r t i o m	Spanish	martillo	Spanish	m a ɾ t i ʝ o	897
 3896	ZinacantanTzotzil	Mayan	HAMMER	martio	martio	m a ɾ t i o	Spanish	martillo	Spanish	m a ɾ t i ʝ o	897
 5350	Qeqchi	Mayan	HAMMER	tenleb’	tenleb’	t e n l e ɓ					
 5351	Qeqchi	Mayan	HAMMER	t'ojleb'	t'ojleb'	tʼ o x l e ɓ					
@@ -4748,8 +4748,8 @@ ID	DOCULECT	LANGUAGE_FAMILY	CONCEPT	VALUE	FORM	TOKENS	DONOR_LANGUAGE	DONOR_VALUE
 7312	Otomi	Otomanguean	HAMMER	'mu̲'mi	'mu̲'mi	ˀm u ˀm i					
 7313	Otomi	Otomanguean	HAMMER	märtiyo	märtiyo	m ɐ r t̪ i j o	Spanish	martillo			
 9081	ImbaburaQuechua	Quechuan	HAMMER	martillu	martillu	m a ɾ t i ʒ u	Spanish	martillo	Spanish	m a ɾ t i ʝ o	897
-10274	Wichi	Matacoan	HAMMER	maltiya	maltiya	m a l t i j a	Spanish	martillo			
-11555	Mapudungun	Araucanian	HAMMER	martillu	martillu	m a ɻ t i ʎ u	Spanish	martillo			
+10274	Wichi	Matacoan	HAMMER	maltiya	maltiya	m a l t i j a	Spanish	martillo	Spanish	m a ɾ t i ʝ o	897
+11555	Mapudungun	Araucanian	HAMMER	martillu	martillu	m a ɻ t i ʎ u	Spanish	martillo	Spanish	m a ɾ t i ʝ o	897
 385	Spanish	Indo-European	HAND	mano	mano	m a n o					
 2096	Yaqui	Uto-Aztecan	HAND	mamam	mamam	m a m a m					
 3509	ZinacantanTzotzil	Mayan	HAND	k’abal	k’abal	kʼ a ɓ a l					
@@ -4925,7 +4925,7 @@ ID	DOCULECT	LANGUAGE_FAMILY	CONCEPT	VALUE	FORM	TOKENS	DONOR_LANGUAGE	DONOR_VALUE
 3527	ZinacantanTzotzil	Mayan	HEEL	chakil	chakil	tʃʰ a k i l					
 4845	Qeqchi	Mayan	HEEL	rit oq	rit_oq	r i t + o qʰ					
 6699	Otomi	Otomanguean	HEEL	du̲nwa	du̲nwa	d u nʷ a					
-8759	ImbaburaQuechua	Quechuan	HEEL	talun	talun	t a l u ŋ	Spanish	talon			
+8759	ImbaburaQuechua	Quechuan	HEEL	talun	talun	t a l u ŋ	Spanish	talon	Spanish	t a l o n	398
 9940	Wichi	Matacoan	HEEL	topokhe	topokhe	t o p o kʰ e					
 11212	Mapudungun	Araucanian	HEEL	rüngkoy ṉamuṉ	rüngkoy_ṉamuṉ	ɻ ɨ ŋ k o y + n̪ a m u n̪					
 1758	Spanish	Indo-European	HELL	infierno	infierno	i m f j ɛ ɾ n o					
@@ -5083,7 +5083,7 @@ ID	DOCULECT	LANGUAGE_FAMILY	CONCEPT	VALUE	FORM	TOKENS	DONOR_LANGUAGE	DONOR_VALUE
 6222	Qeqchi	Mayan	HOLY	osob'tesinb'il	osob'tesinb'il	o s o ɓ t e s i n ɓ i l					
 8457	Otomi	Otomanguean	HOLY	xi nsu	xi_nsu	x i + n s u					
 8458	Otomi	Otomanguean	HOLY	xi njäpi	xi_njäpi	x i + n x ɐ p i					
-9627	ImbaburaQuechua	Quechuan	HOLY	santu	santu	s a n d u	Spanish	santo			
+9627	ImbaburaQuechua	Quechuan	HOLY	santu	santu	s a n d u	Spanish	santo	Spanish	s a n t o	1751
 10849	Wichi	Matacoan	HOLY	t’amajchet	t’amajchet	t ʔ a m a x tʃ e t					
 599	Spanish	Indo-European	HONEY	miel	miel	m j ɛ l					
 2277	Yaqui	Uto-Aztecan	HONEY	mielim	mielim	m i e l i m	Spanish	miel			
@@ -5519,7 +5519,7 @@ ID	DOCULECT	LANGUAGE_FAMILY	CONCEPT	VALUE	FORM	TOKENS	DONOR_LANGUAGE	DONOR_VALUE
 2122	Yaqui	Uto-Aztecan	KIDNEY	sikupuriam	sikupuriam	s i k u p u r i a m					
 3540	ZinacantanTzotzil	Mayan	KIDNEY	rinyon	rinyon	ɾ i n j o n	Spanish	riNo*n			
 4860	Qeqchi	Mayan	KIDNEY	kenq'	kenq'	k e n qʼ					
-6716	Otomi	Otomanguean	KIDNEY	riñu	riñu	r i ɲ u	Spanish	riñon			
+6716	Otomi	Otomanguean	KIDNEY	riñu	riñu	r i ɲ u	Spanish	riñon	Spanish	r i ɲ o n	412
 8772	ImbaburaQuechua	Quechuan	KIDNEY	yana shungu (2)	yana_shungu	j a n a + ʃ u ŋ g u					
 9953	Wichi	Matacoan	KIDNEY	tokatente	tokatente	t o k a t e n t e					
 11225	Mapudungun	Araucanian	KIDNEY	kuzakuza	kuzakuza	k u z a k u z a					
@@ -5583,7 +5583,7 @@ ID	DOCULECT	LANGUAGE_FAMILY	CONCEPT	VALUE	FORM	TOKENS	DONOR_LANGUAGE	DONOR_VALUE
 10316	Wichi	Matacoan	KNEEL	itsinen lap’ulhkas	itsinen_lap’ulhkas	i ts i n e n + l a p ʔ u lˠ k a s					
 11599	Mapudungun	Araucanian	KNEEL	lukutun	lukutun	l u k u t u n					
 858	Spanish	Indo-European	KNIFE	cuchillo	cuchillo	k u tʃ i ʝ o					
-2485	Yaqui	Uto-Aztecan	KNIFE	kuchi’im	kuchi’im	k u tʃ i ʔ i m	Spanish	cuchillo			
+2485	Yaqui	Uto-Aztecan	KNIFE	kuchi’im	kuchi’im	k u tʃ i ʔ i m	Spanish	cuchillo	Spanish	k u tʃ i ʝ o	858
 3866	ZinacantanTzotzil	Mayan	KNIFE	kuchilu	kuchilu	k u tʃʰ i l u	Spanish	cuchillo			
 5307	Qeqchi	Mayan	KNIFE	ch'ina ch'iich'	ch'ina_ch'iich'	tʃʼ i n a + tʃʼ iː tʃʼ					
 7253	Otomi	Otomanguean	KNIFE	jwai	jwai	xʷ a i					
@@ -5591,7 +5591,7 @@ ID	DOCULECT	LANGUAGE_FAMILY	CONCEPT	VALUE	FORM	TOKENS	DONOR_LANGUAGE	DONOR_VALUE
 10248	Wichi	Matacoan	KNIFE	lachinaj	lachinaj	l a tʃ i n a x					
 11525	Mapudungun	Araucanian	KNIFE	kuchillu	kuchillu	k u tʃ i ʎ u	Spanish	cuchillo	Spanish	k u tʃ i ʝ o	858
 555	Spanish	Indo-European	KNIFE (FOR EATING)	cuchillo	cuchillo	k u tʃ i ʝ o					
-2238	Yaqui	Uto-Aztecan	KNIFE (FOR EATING)	kuchi’im	kuchi’im	k u tʃ i ʔ i m	Spanish	cuchillo			
+2238	Yaqui	Uto-Aztecan	KNIFE (FOR EATING)	kuchi’im	kuchi’im	k u tʃ i ʔ i m	Spanish	cuchillo	Spanish	k u tʃ i ʝ o	555
 3657	ZinacantanTzotzil	Mayan	KNIFE (FOR EATING)	kuchilu	kuchilu	k u tʃʰ i l u	Spanish	cuchillo			
 5011	Qeqchi	Mayan	KNIFE (FOR EATING)	ch'ina ch'iich'	ch'ina_ch'iich'	tʃʼ i n a + tʃʼ iː tʃʼ					
 6876	Otomi	Otomanguean	KNIFE (FOR EATING)	jwai	jwai	xʷ a i					
@@ -5700,7 +5700,7 @@ ID	DOCULECT	LANGUAGE_FAMILY	CONCEPT	VALUE	FORM	TOKENS	DONOR_LANGUAGE	DONOR_VALUE
 4159	ZinacantanTzotzil	Mayan	LAST (ENDURE)	bat	bat	ɓ a tʰ					
 5784	Qeqchi	Mayan	LAST (ENDURE)	b’ayk	b’ayk	ɓ a j kʰ					
 7812	Otomi	Otomanguean	LAST (ENDURE)	tse̲ti	tse̲ti	ts æ t̪ i					
-7813	Otomi	Otomanguean	LAST (ENDURE)	dura	dura	d u r a	Spanish	durar			
+7813	Otomi	Otomanguean	LAST (ENDURE)	dura	dura	d u r a	Spanish	durar	Spanish	d u ɾ a ɾ	1283
 11816	Mapudungun	Araucanian	LAST (ENDURE)	alüñman	alüñman	a l ɨ ɲ m a n					
 1255	Spanish	Indo-European	LAST (FINAL)	último	último	u l t i m o					
 2808	Yaqui	Uto-Aztecan	LAST (FINAL)	amau weyeme	amau_weyeme	a m a u + w e j e m e					
@@ -5980,7 +5980,7 @@ ID	DOCULECT	LANGUAGE_FAMILY	CONCEPT	VALUE	FORM	TOKENS	DONOR_LANGUAGE	DONOR_VALUE
 1999	Yaqui	Uto-Aztecan	LION	ousei	ousei	o u s e i					
 3411	ZinacantanTzotzil	Mayan	LION	leon	leon	l e o n	Spanish	leo*n	Spanish	l e o n	280
 4718	Qeqchi	Mayan	LION	kaq koj	kaq_koj	k a q + k o x					
-6577	Otomi	Otomanguean	LION	liyon	liyon	l i j o n	Spanish	león			
+6577	Otomi	Otomanguean	LION	liyon	liyon	l i j o n	Spanish	león	Spanish	l e o n	280
 8666	ImbaburaQuechua	Quechuan	LION	liyón	liyón	l i j o ŋ	Spanish	león			
 9829	Wichi	Matacoan	LION	p’uwalhaj	p’uwalhaj	p ʔ u w a lˠ a x					
 11115	Mapudungun	Araucanian	LION	pangi	pangi	p a ŋ i					
@@ -6034,13 +6034,13 @@ ID	DOCULECT	LANGUAGE_FAMILY	CONCEPT	VALUE	FORM	TOKENS	DONOR_LANGUAGE	DONOR_VALUE
 11144	Mapudungun	Araucanian	LIZARD	charaypuka	charaypuka	tʃ a ɻ a y p u k a	Quechua	qaraypuka			
 706	Spanish	Indo-European	LOCK	cerradura	cerradura	s ɛ r a ð u ɾ a					
 707	Spanish	Indo-European	LOCK	candado	candado	k a n d a ð o					
-2377	Yaqui	Uto-Aztecan	LOCK	kanraom	kanraom	k a n r a o m	Spanish	candado			
+2377	Yaqui	Uto-Aztecan	LOCK	kanraom	kanraom	k a n r a o m	Spanish	candado	Spanish	k a n d a ð o	707
 3766	ZinacantanTzotzil	Mayan	LOCK	k’oh te7	k’oh_te7	kʼ o h + t e ʔ					
 5156	Qeqchi	Mayan	LOCK	tz’apleb’	tz’apleb’	tsʼ a p l e ɓ					
 5157	Qeqchi	Mayan	LOCK	kantaaw	kantaaw	k a n t aː w	Spanish	candado			
 7053	Otomi	Otomanguean	LOCK	njot'i	njot'i	n x o t̪ʼ i					
 10158	Wichi	Matacoan	LOCK	lape lhele	lape_lhele	l a p e + lˠ e l e					
-11429	Mapudungun	Araucanian	LOCK	kanzaw	kanzaw	k a n z a w	Spanish	candado			
+11429	Mapudungun	Araucanian	LOCK	kanzaw	kanzaw	k a n z a w	Spanish	candado	Spanish	k a n d a ð o	707
 1183	Spanish	Indo-European	LONG	largo	largo	l a ɾ ɣ o					
 2738	Yaqui	Uto-Aztecan	LONG	teebe	teebe	t eː b e					
 4081	ZinacantanTzotzil	Mayan	LONG	bitzbitz	bitzbitz	ɓ i tsʰ ɓ i tsʰ					
@@ -6256,11 +6256,11 @@ ID	DOCULECT	LANGUAGE_FAMILY	CONCEPT	VALUE	FORM	TOKENS	DONOR_LANGUAGE	DONOR_VALUE
 11086	Mapudungun	Araucanian	MARE	yewa	yewa	y e w a	Spanish	yegua			
 1100	Spanish	Indo-European	MARKET	mercado	mercado	m ɛ ɾ k a ð o					
 2673	Yaqui	Uto-Aztecan	MARKET	jita nenenkiwa’apo	jita_nenenkiwa’apo	j i t a + n e n e n k i w a ʔ a p o					
-2674	Yaqui	Uto-Aztecan	MARKET	merkao	merkao	m e r k a o	Spanish	mercado			
+2674	Yaqui	Uto-Aztecan	MARKET	merkao	merkao	m e r k a o	Spanish	mercado	Spanish	m ɛ ɾ k a ð o	1100
 4028	ZinacantanTzotzil	Mayan	MARKET	ch’ivit	ch’ivit	tʃʼ i v i tʰ					
 5561	Qeqchi	Mayan	MARKET	k'ayiil	k'ayiil	k ʔ a j iː l					
 7576	Otomi	Otomanguean	MARKET	ta̲i (2)	ta̲i	t̪ ɔ i					
-7577	Otomi	Otomanguean	MARKET	merkado	merkado	m e r k a d o	Spanish	mercado			
+7577	Otomi	Otomanguean	MARKET	merkado	merkado	m e r k a d o	Spanish	mercado	Spanish	m ɛ ɾ k a ð o	1100
 9202	ImbaburaQuechua	Quechuan	MARKET	jatuna pamba	jatuna_pamba	x a t u n a + p a m b a					
 10410	Wichi	Matacoan	MARKET	tiena	tiena	t i e n a	Spanish	tienda			
 116	Spanish	Indo-European	MARRIAGE OR WEDDING	casamiento	casamiento	k a s a m j e n t o					
@@ -6380,7 +6380,7 @@ ID	DOCULECT	LANGUAGE_FAMILY	CONCEPT	VALUE	FORM	TOKENS	DONOR_LANGUAGE	DONOR_VALUE
 5632	Qeqchi	Mayan	MEASURE	b’isok	b’isok	ɓ i s o kʰ					
 7665	Otomi	Otomanguean	MEASURE	e̲ni	e̲ni	æ n i					
 9252	ImbaburaQuechua	Quechuan	MEASURE	midina	midina	m i d i n a	Spanish	medir			
-10467	Wichi	Matacoan	MEASURE	meli	meli	m e l i	Spanish	medí			
+10467	Wichi	Matacoan	MEASURE	meli	meli	m e l i	Spanish	medí	Spanish	m e ð i ɾ	1178
 11736	Mapudungun	Araucanian	MEASURE	nufkütun	nufkütun	n u f k ɨ t u n					
 580	Spanish	Indo-European	MEAT	carne	carne	k a ɾ n e					
 2259	Yaqui	Uto-Aztecan	MEAT	waakas	waakas	w aː k a s	Spanish	vacas			
@@ -6425,7 +6425,7 @@ ID	DOCULECT	LANGUAGE_FAMILY	CONCEPT	VALUE	FORM	TOKENS	DONOR_LANGUAGE	DONOR_VALUE
 2672	Yaqui	Uto-Aztecan	MERCHANT	jita nenenkame	jita_nenenkame	j i t a + n e n e n k a m e					
 4025	ZinacantanTzotzil	Mayan	MERCHANT	hchonolahel	hchonolahel	h tʃʰ o n o l a h e l					
 4026	ZinacantanTzotzil	Mayan	MERCHANT	hp’olmahel	hp’olmahel	h pʼ o l m a h e l					
-4027	ZinacantanTzotzil	Mayan	MERCHANT	marchante	marchante	m a ɾ tʃʰ a n t e	Spanish	marchante			
+4027	ZinacantanTzotzil	Mayan	MERCHANT	marchante	marchante	m a ɾ tʃʰ a n t e	Spanish	marchante	Spanish	k o m ɛ ɾ s j a n t e	1099
 5560	Qeqchi	Mayan	MERCHANT	k'ayinel	k'ayinel	k ʔ a j i n e l					
 7575	Otomi	Otomanguean	MERCHANT	da̲i	da̲i	d ɔ i					
 9201	ImbaburaQuechua	Quechuan	MERCHANT	nigusyante	nigusyante	n i g u s j a n d e	Spanish	negociante			
@@ -6542,7 +6542,7 @@ ID	DOCULECT	LANGUAGE_FAMILY	CONCEPT	VALUE	FORM	TOKENS	DONOR_LANGUAGE	DONOR_VALUE
 1321	Spanish	Indo-European	MONDAY	lunes	lunes	l u n e s					
 2868	Yaqui	Uto-Aztecan	MONDAY	luunes	luunes	l uː n e s	Spanish	lunes	Spanish	l u n e s	1321
 4188	ZinacantanTzotzil	Mayan	MONDAY	lunesh	lunesh	l u n e sʰ	Spanish	lunes	Spanish	l u n e s	1321
-5820	Qeqchi	Mayan	MONDAY	luuns	luuns	l uː n s	Spanish	lunes			
+5820	Qeqchi	Mayan	MONDAY	luuns	luuns	l uː n s	Spanish	lunes	Spanish	l u n e s	1321
 7854	Otomi	Otomanguean	MONDAY	nonxi	nonxi	n o n x i					
 9352	ImbaburaQuechua	Quechuan	MONDAY	lunis	lunis	l u n i s	Spanish	lunes	Spanish	l u n e s	1321
 10566	Wichi	Matacoan	MONDAY	lunis	lunis	l u n i s	Spanish	lunes	Spanish	l u n e s	1321
@@ -6877,7 +6877,7 @@ ID	DOCULECT	LANGUAGE_FAMILY	CONCEPT	VALUE	FORM	TOKENS	DONOR_LANGUAGE	DONOR_VALUE
 6964	Otomi	Otomanguean	NEEDLE (FOR SEWING)	'yofni	'yofni	ˀj o f n i					
 8923	ImbaburaQuechua	Quechuan	NEEDLE (FOR SEWING)	awuja	awuja	a w u x a	Spanish	aguja	Spanish	a ɣ u x a	630
 10107	Wichi	Matacoan	NEEDLE (FOR SEWING)	kanu	kanu	k a n u					
-11382	Mapudungun	Araucanian	NEEDLE (FOR SEWING)	akucha	akucha	a k u tʃ a	Spanish	aguja			
+11382	Mapudungun	Araucanian	NEEDLE (FOR SEWING)	akucha	akucha	a k u tʃ a	Spanish	aguja	Spanish	a ɣ u x a	630
 1634	Spanish	Indo-European	NEIGHBOUR	vecino	vecino	b e s i n o					
 3102	Yaqui	Uto-Aztecan	NEIGHBOUR	konila jo’akame	konila_jo’akame	k o n i l a + j o ʔ a k a m e					
 4395	ZinacantanTzotzil	Mayan	NEIGHBOUR	pana	pana	pʰ a n a					
@@ -6892,8 +6892,8 @@ ID	DOCULECT	LANGUAGE_FAMILY	CONCEPT	VALUE	FORM	TOKENS	DONOR_LANGUAGE	DONOR_VALUE
 1905	Yaqui	Uto-Aztecan	NEPHEW	samali	samali	s a m a l i					
 1906	Yaqui	Uto-Aztecan	NEPHEW	jabire	jabire	j a b i r e					
 4606	Qeqchi	Mayan	NEPHEW	ral chaq’na’	ral_chaq’na’	r a l + tʃ a qʼ n a ʔ					
-6401	Otomi	Otomanguean	NEPHEW	sobrinu	sobrinu	s o b r i n u	Spanish	sobrino			
-8587	ImbaburaQuechua	Quechuan	NEPHEW	subrinu	subrinu	s u b ɾ i n u	Spanish	sobrino			
+6401	Otomi	Otomanguean	NEPHEW	sobrinu	sobrinu	s o b r i n u	Spanish	sobrino	Spanish	s o β ɾ i n o	152
+8587	ImbaburaQuechua	Quechuan	NEPHEW	subrinu	subrinu	s u b ɾ i n u	Spanish	sobrino	Spanish	s o β ɾ i n o	152
 9741	Wichi	Matacoan	NEPHEW	towal’a	towal’a	t o w a l ʔ a					
 11015	Mapudungun	Araucanian	NEPHEW	malle fotüm	malle_fotüm	m a ʎ e + f o t ɨ m					
 11016	Mapudungun	Araucanian	NEPHEW	choküm	choküm	tʃ o k ɨ m					
@@ -6951,7 +6951,7 @@ ID	DOCULECT	LANGUAGE_FAMILY	CONCEPT	VALUE	FORM	TOKENS	DONOR_LANGUAGE	DONOR_VALUE
 4608	Qeqchi	Mayan	NIECE	xrabin iitz’in	xrabin_iitz’in	ʃ ɾ a b i n + iː tsʼ i n					
 4609	Qeqchi	Mayan	NIECE	xrab’in as	xrab’in_as	ʃ ɾ a ɓ i n + a s					
 4610	Qeqchi	Mayan	NIECE	ralal ikan	ralal_ikan	r a l a l + i k a n					
-6402	Otomi	Otomanguean	NIECE	sobrinä	sobrinä	s o b r i n ɐ	Spanish	sobrina			
+6402	Otomi	Otomanguean	NIECE	sobrinä	sobrinä	s o b r i n ɐ	Spanish	sobrina	Spanish	s o β ɾ i n a	153
 8588	ImbaburaQuechua	Quechuan	NIECE	subrina	subrina	s u b ɾ i n a	Spanish	sobrina	Spanish	s o β ɾ i n a	153
 9742	Wichi	Matacoan	NIECE	towal’ani	towal’ani	t o w a l ʔ a n i					
 11019	Mapudungun	Araucanian	NIECE	malle ñawe	malle_ñawe	m a ʎ e + ɲ a w e					
@@ -6970,7 +6970,7 @@ ID	DOCULECT	LANGUAGE_FAMILY	CONCEPT	VALUE	FORM	TOKENS	DONOR_LANGUAGE	DONOR_VALUE
 11829	Mapudungun	Araucanian	NIGHT	puṉ	puṉ	p u n̪					
 1226	Spanish	Indo-European	NINE	nueve	nueve	n w e β e					
 2778	Yaqui	Uto-Aztecan	NINE	batani	batani	b a t a n i					
-2779	Yaqui	Uto-Aztecan	NINE	nuebe	nuebe	n u e b e	Spanish	nueve			
+2779	Yaqui	Uto-Aztecan	NINE	nuebe	nuebe	n u e b e	Spanish	nueve	Spanish	n w e β e	1226
 4120	ZinacantanTzotzil	Mayan	NINE	balun	balun	ɓ a l u n					
 5708	Qeqchi	Mayan	NINE	b'eleeb'	b'eleeb'	ɓ e l eː ɓ					
 7733	Otomi	Otomanguean	NINE	gu̲to	gu̲to	g u t̪ o					
@@ -7014,10 +7014,10 @@ ID	DOCULECT	LANGUAGE_FAMILY	CONCEPT	VALUE	FORM	TOKENS	DONOR_LANGUAGE	DONOR_VALUE
 8267	Otomi	Otomanguean	NOBLE	hogumui	hogumui	h o g u m u i					
 1175	Spanish	Indo-European	NORTH	norte	norte	n o ɾ t e					
 2728	Yaqui	Uto-Aztecan	NORTH	ta’ata aman komwechebetana	ta’ata_aman_komwechebetana	t a ʔ a t a + a m a n + k o m w e tʃ e b e t a n a					
-2729	Yaqui	Uto-Aztecan	NORTH	noote	noote	n oː t e	Spanish	norte			
+2729	Yaqui	Uto-Aztecan	NORTH	noote	noote	n oː t e	Spanish	norte	Spanish	n o ɾ t e	1175
 4075	ZinacantanTzotzil	Mayan	NORTH	shokon vinahel	shokon_vinahel	ʃ o k o n + v i n a h e l					
 5628	Qeqchi	Mayan	NORTH	releb' iq'	releb'_iq'	r e l e ɓ + i qʼ					
-7662	Otomi	Otomanguean	NORTH	norte	norte	n o r t̪ e	Spanish	norte			
+7662	Otomi	Otomanguean	NORTH	norte	norte	n o r t̪ e	Spanish	norte	Spanish	n o ɾ t e	1175
 9249	ImbaburaQuechua	Quechuan	NORTH	urai	urai	u ɾ a i					
 10464	Wichi	Matacoan	NORTH	tolhu tayhi	tolhu_tayhi	t o lˠ u + t a j h i					
 11733	Mapudungun	Araucanian	NORTH	pikun	pikun	p i k u n					
@@ -7054,7 +7054,7 @@ ID	DOCULECT	LANGUAGE_FAMILY	CONCEPT	VALUE	FORM	TOKENS	DONOR_LANGUAGE	DONOR_VALUE
 5057	Qeqchi	Mayan	NUT	nwes	nwes	n w e s	Spanish	nuez	Spanish	n w e s	591
 6918	Otomi	Otomanguean	NUT	de̲mu̲za	de̲mu̲za	d æ m u z a					
 6919	Otomi	Otomanguean	NUT	nwes	nwes	nʷ e s	Spanish	nuez			
-8891	ImbaburaQuechua	Quechuan	NUT	nuwis	nuwis	n u w i s	Spanish	nuez			
+8891	ImbaburaQuechua	Quechuan	NUT	nuwis	nuwis	n u w i s	Spanish	nuez	Spanish	n w e s	591
 799	Spanish	Indo-European	OAK	roble	roble	r o β l e					
 3825	ZinacantanTzotzil	Mayan	OAK	tulan	tulan	t u l a n					
 5244	Qeqchi	Mayan	OAK	ji	ji	x i					
@@ -7063,7 +7063,7 @@ ID	DOCULECT	LANGUAGE_FAMILY	CONCEPT	VALUE	FORM	TOKENS	DONOR_LANGUAGE	DONOR_VALUE
 10212	Wichi	Matacoan	OAK	hal’o	hal’o	h a l ʔ o					
 11499	Mapudungun	Araucanian	OAK	koyam	koyam	k o y a m					
 1034	Spanish	Indo-European	OAR	remo	remo	r e m o					
-2626	Yaqui	Uto-Aztecan	OAR	reemom	reemom	r eː m o m	Spanish	remo			
+2626	Yaqui	Uto-Aztecan	OAR	reemom	reemom	r eː m o m	Spanish	remo	Spanish	r e m o	1034
 3988	ZinacantanTzotzil	Mayan	OAR	pala te7	pala_te7	pʰ a l a + t e ʔ	Spanish	pala			
 5502	Qeqchi	Mayan	OAR	paleta	paleta	p a l e t a	Spanish	paleta			
 5503	Qeqchi	Mayan	OAR	kanaleta	kanaleta	k a n a l e t a	Spanish	canaleta			
@@ -7073,9 +7073,9 @@ ID	DOCULECT	LANGUAGE_FAMILY	CONCEPT	VALUE	FORM	TOKENS	DONOR_LANGUAGE	DONOR_VALUE
 11642	Mapudungun	Araucanian	OAR	remo	remo	ɻ e m o	Spanish	remo	Spanish	r e m o	1034
 11643	Mapudungun	Araucanian	OAR	kawewe	kawewe	k a w e w e	Quechua	qawiy			
 784	Spanish	Indo-European	OAT	avena	avena	a β e n a					
-2430	Yaqui	Uto-Aztecan	OAT	abeena	abeena	a b eː n a	Spanish	avena			
+2430	Yaqui	Uto-Aztecan	OAT	abeena	abeena	a b eː n a	Spanish	avena	Spanish	a β e n a	784
 7142	Otomi	Otomanguean	OAT	benä	benä	b e n ɐ	Spanish	avena			
-9012	ImbaburaQuechua	Quechuan	OAT	abina	abina	a b i n a	Spanish	avena			
+9012	ImbaburaQuechua	Quechuan	OAT	abina	abina	a b i n a	Spanish	avena	Spanish	a β e n a	784
 11485	Mapudungun	Araucanian	OAT	afena	afena	a f e n a	Spanish	avena	Spanish	a β e n a	784
 1715	Spanish	Indo-European	OATH	juramento	juramento	x u ɾ a m e n t o					
 3160	Yaqui	Uto-Aztecan	OATH	juraroawame	juraroawame	j u r a r o a w a m e	Spanish	juramento			
@@ -7453,10 +7453,10 @@ ID	DOCULECT	LANGUAGE_FAMILY	CONCEPT	VALUE	FORM	TOKENS	DONOR_LANGUAGE	DONOR_VALUE
 11793	Mapudungun	Araucanian	PART	pedaso	pedaso	p e θ a s o	Spanish	pedazo	Spanish	p e ð a s o	1249
 200	Spanish	Indo-European	PASTURE	pradera	pradera	p ɾ a ð ɛ ɾ a					
 201	Spanish	Indo-European	PASTURE	potrero	potrero	p o t ɾ ɛ ɾ o					
-1942	Yaqui	Uto-Aztecan	PASTURE	poteo	poteo	p o t e o	Spanish	potrero			
+1942	Yaqui	Uto-Aztecan	PASTURE	poteo	poteo	p o t e o	Spanish	potrero	Spanish	p o t ɾ ɛ ɾ o	201
 3355	ZinacantanTzotzil	Mayan	PASTURE	koleb	koleb	k o l e b					
 3356	ZinacantanTzotzil	Mayan	PASTURE	potrero	potrero	pʰ o t ɾ e ɾ o	Spanish	potrero	Spanish	p o t ɾ ɛ ɾ o	201
-4648	Qeqchi	Mayan	PASTURE	potreer, potrero	potreer	p o t ɾ eː r	Spanish	potrero			
+4648	Qeqchi	Mayan	PASTURE	potreer, potrero	potreer	p o t ɾ eː r	Spanish	potrero	Spanish	p o t ɾ ɛ ɾ o	201
 4649	Qeqchi	Mayan	PASTURE	koral wakax	koral_wakax	k o ɾ a l + w a k a ʃ					
 4650	Qeqchi	Mayan	PASTURE	rax ch’och’	rax_ch’och’	r a ʃ + tʃʼ o tʃʼ					
 6482	Otomi	Otomanguean	PASTURE	pasto	pasto	p a s t̪ o	Spanish	pasto			
@@ -7535,7 +7535,7 @@ ID	DOCULECT	LANGUAGE_FAMILY	CONCEPT	VALUE	FORM	TOKENS	DONOR_LANGUAGE	DONOR_VALUE
 11234	Mapudungun	Araucanian	PENIS	pünün	pünün	p ɨ n ɨ n					
 1604	Spanish	Indo-European	PEOPLE	pueblo	pueblo	p w e β l o					
 1605	Spanish	Indo-European	PEOPLE	gente	gente	x e n t e					
-3086	Yaqui	Uto-Aztecan	PEOPLE	puepplo	puepplo	p u e p p l o	Spanish	pueblo			
+3086	Yaqui	Uto-Aztecan	PEOPLE	puepplo	puepplo	p u e p p l o	Spanish	pueblo	Spanish	p w e β l o	1604
 6094	Qeqchi	Mayan	PEOPLE	tenamitil	tenamitil	t e n a m i t i l					
 8255	Otomi	Otomanguean	PEOPLE	ya jä’i	ya_jä’i	j a + x ɐ ʔ i					
 8256	Otomi	Otomanguean	PEOPLE	hnini	hnini	h n i n i					
@@ -7574,11 +7574,11 @@ ID	DOCULECT	LANGUAGE_FAMILY	CONCEPT	VALUE	FORM	TOKENS	DONOR_LANGUAGE	DONOR_VALUE
 2187	Yaqui	Uto-Aztecan	PHYSICIAN	lotor ~ lotoor	lotor	l o t o r	Spanish	doctor			
 2188	Yaqui	Uto-Aztecan	PHYSICIAN	yoi jitebi	yoi_jitebi	j o i + j i t e b i					
 3608	ZinacantanTzotzil	Mayan	PHYSICIAN	hposhtavaneh	hposhtavaneh	h p o ʃ t a v a n e h					
-3609	ZinacantanTzotzil	Mayan	PHYSICIAN	lo*ktor	lo*ktor	l o o k t o r	Spanish	doctor			
+3609	ZinacantanTzotzil	Mayan	PHYSICIAN	lo*ktor	lo*ktor	l o o k t o r	Spanish	doctor	Spanish	d o k t o ɾ	497
 4946	Qeqchi	Mayan	PHYSICIAN	loktor	loktor	l o k t o r	Spanish	doctor	Spanish	d o k t o ɾ	497
 4947	Qeqchi	Mayan	PHYSICIAN	b'anonel	b'anonel	ɓ a n o n e l					
 6797	Otomi	Otomanguean	PHYSICIAN	'yo̲the	'yo̲the	ˀj ə θ e					
-6798	Otomi	Otomanguean	PHYSICIAN	doku̲tor	doku̲tor	d o k u t̪ o r	Spanish	doctor			
+6798	Otomi	Otomanguean	PHYSICIAN	doku̲tor	doku̲tor	d o k u t̪ o r	Spanish	doctor	Spanish	d o k t o ɾ	497
 8823	ImbaburaQuechua	Quechuan	PHYSICIAN	jambik (1)	jambik	x a m b i k					
 10007	Wichi	Matacoan	PHYSICIAN	luktul	luktul	l u k t u l	Spanish	doctor			
 10008	Wichi	Matacoan	PHYSICIAN	kachawu	kachawu	k a tʃ a w u					
@@ -7608,7 +7608,7 @@ ID	DOCULECT	LANGUAGE_FAMILY	CONCEPT	VALUE	FORM	TOKENS	DONOR_LANGUAGE	DONOR_VALUE
 8633	ImbaburaQuechua	Quechuan	PIG	kuchi	kuchi	k u tʃ i					
 9785	Wichi	Matacoan	PIG	kutsi	kutsi	k u ts i	Quechua	khuchi			
 9786	Wichi	Matacoan	PIG	nitsetaj asnak	nitsetaj_asnak	n i ts e t a x + a s n a k					
-11077	Mapudungun	Araucanian	PIG	sanchu	sanchu	s a n tʃ u	Spanish	chancho			
+11077	Mapudungun	Araucanian	PIG	sanchu	sanchu	s a n tʃ u	Spanish	chancho	Spanish	tʃ a n tʃ o	223
 11078	Mapudungun	Araucanian	PIG	sañwe	sañwe	s a ɲ w e	Spanish	chancho			
 1141	Spanish	Indo-European	PILE UP	amontonar	amontonar	a m o n t o n a ɾ					
 2703	Yaqui	Uto-Aztecan	PILE UP	naumonto	naumonto	n a u m o n t o	Spanish	amontonar			
@@ -7629,8 +7629,8 @@ ID	DOCULECT	LANGUAGE_FAMILY	CONCEPT	VALUE	FORM	TOKENS	DONOR_LANGUAGE	DONOR_VALUE
 10166	Wichi	Matacoan	PILLOW	tot’alaj	tot’alaj	t o t ʔ a l a x					
 11435	Mapudungun	Araucanian	PILLOW	metrül	metrül	m e ʈʂ ɨ l					
 660	Spanish	Indo-European	PIN	alfiler	alfiler	a l f i l ɛ ɾ					
-2345	Yaqui	Uto-Aztecan	PIN	alpiler	alpiler	a l p i l e r	Spanish	alfiler			
-5122	Qeqchi	Mayan	PIN	alpiler	alpiler	a l p i l e r	Spanish	alfiler			
+2345	Yaqui	Uto-Aztecan	PIN	alpiler	alpiler	a l p i l e r	Spanish	alfiler	Spanish	a l f i l ɛ ɾ	660
+5122	Qeqchi	Mayan	PIN	alpiler	alpiler	a l p i l e r	Spanish	alfiler	Spanish	a l f i l ɛ ɾ	660
 7003	Otomi	Otomanguean	PIN	'no̲t'e	'no̲t'e	ˀn ə t̪ʼ e					
 7004	Otomi	Otomanguean	PIN	'no̲'mi	'no̲'mi	ˀn ə ˀm i					
 11403	Mapudungun	Araucanian	PIN	alfiler	alfiler	a l f i l e ɻ	Spanish	alfiler	Spanish	a l f i l ɛ ɾ	660
@@ -7674,11 +7674,11 @@ ID	DOCULECT	LANGUAGE_FAMILY	CONCEPT	VALUE	FORM	TOKENS	DONOR_LANGUAGE	DONOR_VALUE
 9977	Wichi	Matacoan	PISS	t’elh	t’elh	t ʔ e l̥					
 11250	Mapudungun	Araucanian	PISS	willin	willin	w i ʎ i n					
 764	Spanish	Indo-European	PITCHFORK	horqueta	horqueta	o ɾ k ɛ t a					
-2418	Yaqui	Uto-Aztecan	PITCHFORK	orkeetam	orkeetam	o r k eː t a m	Spanish	horqueta			
+2418	Yaqui	Uto-Aztecan	PITCHFORK	orkeetam	orkeetam	o r k eː t a m	Spanish	horqueta	Spanish	o ɾ k ɛ t a	764
 2419	Yaqui	Uto-Aztecan	PITCHFORK	orkiam	orkiam	o r k i a m	Spanish	horquilla			
 5214	Qeqchi	Mayan	PITCHFORK	rastriyo	rastriyo	r a s t ɾ i j o	Spanish	rastrillo			
 5215	Qeqchi	Mayan	PITCHFORK	orkeet	orkeet	o ɾ k eː tʰ	Spanish	horqueta			
-9001	ImbaburaQuechua	Quechuan	PITCHFORK	jurkita	jurkita	x u ɾ k i t a	Spanish	horqueta			
+9001	ImbaburaQuechua	Quechuan	PITCHFORK	jurkita	jurkita	x u ɾ k i t a	Spanish	horqueta	Spanish	o ɾ k ɛ t a	764
 10192	Wichi	Matacoan	PITCHFORK	afwtsinaj	afwtsinaj	a fʷ ts i n a x					
 11470	Mapudungun	Araucanian	PITCHFORK	wilkita	wilkita	w i l k i t a	Spanish	horqueta			
 1425	Spanish	Indo-European	PITY	compasión	compasión	k o m p a s j o n					
@@ -7696,9 +7696,9 @@ ID	DOCULECT	LANGUAGE_FAMILY	CONCEPT	VALUE	FORM	TOKENS	DONOR_LANGUAGE	DONOR_VALUE
 2690	Yaqui	Uto-Aztecan	PLACE (POSITION)	jakria	jakria	j a k r i a					
 4040	ZinacantanTzotzil	Mayan	PLACE (POSITION)	7avil	7avil	ʔ a v i l					
 4041	ZinacantanTzotzil	Mayan	PLACE (POSITION)	balamil	balamil	ɓ a l a m i l					
-4042	ZinacantanTzotzil	Mayan	PLACE (POSITION)	lugar	lugar	l u g a r	Spanish	lugar			
+4042	ZinacantanTzotzil	Mayan	PLACE (POSITION)	lugar	lugar	l u g a r	Spanish	lugar	Spanish	l u ɣ a ɾ	1128
 5580	Qeqchi	Mayan	PLACE (POSITION)	na'ajej	na'ajej	n a ʔ a x e x					
-7604	Otomi	Otomanguean	PLACE (POSITION)	lugar	lugar	l u g a r	Spanish	lugar			
+7604	Otomi	Otomanguean	PLACE (POSITION)	lugar	lugar	l u g a r	Spanish	lugar	Spanish	l u ɣ a ɾ	1128
 7605	Otomi	Otomanguean	PLACE (POSITION)	xe̲ni	xe̲ni	x æ n i					
 9218	ImbaburaQuechua	Quechuan	PLACE (POSITION)	pushtu	pushtu	p u ʃ t u	Spanish	puesto			
 10424	Wichi	Matacoan	PLACE (POSITION)	law’et	law’et	l a w ʔ e t					
@@ -7775,7 +7775,7 @@ ID	DOCULECT	LANGUAGE_FAMILY	CONCEPT	VALUE	FORM	TOKENS	DONOR_LANGUAGE	DONOR_VALUE
 2343	Yaqui	Uto-Aztecan	POCKET	boosam	boosam	b oː s a m	Spanish	bolsa			
 5120	Qeqchi	Mayan	POCKET	b'oox	b'oox	ɓ oː ʃ	Ch’olan	*box			
 7001	Otomi	Otomanguean	POCKET	'ñägi	'ñägi	ˀɲ ɐ g i					
-8940	ImbaburaQuechua	Quechuan	POCKET	bulsiku	bulsiku	b u l s i k u	Spanish	bolsico			
+8940	ImbaburaQuechua	Quechuan	POCKET	bulsiku	bulsiku	b u l s i k u	Spanish	bolsico	Spanish	b o l s i ʝ o	658
 10128	Wichi	Matacoan	POCKET	tokhoyhi	tokhoyhi	t o kʰ o j h i					
 11401	Mapudungun	Araucanian	POCKET	fonsiku	fonsiku	f o n s i k u	Spanish	bolsillo			
 1589	Spanish	Indo-European	POET	poeta	poeta	p o ɛ t a					
@@ -7814,7 +7814,7 @@ ID	DOCULECT	LANGUAGE_FAMILY	CONCEPT	VALUE	FORM	TOKENS	DONOR_LANGUAGE	DONOR_VALUE
 11387	Mapudungun	Araucanian	PONCHO	makuñ	makuñ	m a k u ɲ					
 1078	Spanish	Indo-European	POOR	pobre	pobre	p o β ɾ e					
 2657	Yaqui	Uto-Aztecan	POOR	poloobe	poloobe	p o l oː b e	Spanish	pobre			
-4010	ZinacantanTzotzil	Mayan	POOR	povre	povre	pʰ o v ɾ e	Spanish	pobre			
+4010	ZinacantanTzotzil	Mayan	POOR	povre	povre	pʰ o v ɾ e	Spanish	pobre	Spanish	p o β ɾ e	1078
 5534	Qeqchi	Mayan	POOR	kaqcha	kaqcha	k a q tʃ a					
 5535	Qeqchi	Mayan	POOR	toq'ob' ru	toq'ob'_ru	t o qʼ o ɓ + ɾ u					
 5536	Qeqchi	Mayan	POOR	neb’a’	neb’a’	n e ɓ a ʔ					
@@ -7823,7 +7823,7 @@ ID	DOCULECT	LANGUAGE_FAMILY	CONCEPT	VALUE	FORM	TOKENS	DONOR_LANGUAGE	DONOR_VALUE
 10393	Wichi	Matacoan	POOR	p’alitsaj	p’alitsaj	p ʔ a l i ts a x					
 10394	Wichi	Matacoan	POOR	pwili	pwili	pʷ i l i	Spanish	pobre			
 11667	Mapudungun	Araucanian	POOR	kuñifall	kuñifall	k u ɲ i f a ʎ					
-11668	Mapudungun	Araucanian	POOR	pofre	pofre	p o f ɻ e	Spanish	pobre			
+11668	Mapudungun	Araucanian	POOR	pofre	pofre	p o f ɻ e	Spanish	pobre	Spanish	p o β ɾ e	1078
 1041	Spanish	Indo-European	PORT	puerto	puerto	p w ɛ ɾ t o					
 2633	Yaqui	Uto-Aztecan	PORT	pueto	pueto	p u e t o	Spanish	puerto			
 7513	Otomi	Otomanguean	PORT	goxthi dehe	goxthi_dehe	g o x θ i + d e h e					
@@ -7837,7 +7837,7 @@ ID	DOCULECT	LANGUAGE_FAMILY	CONCEPT	VALUE	FORM	TOKENS	DONOR_LANGUAGE	DONOR_VALUE
 7087	Otomi	Otomanguean	POST	'ma̲i	'ma̲i	ˀm ɔ i					
 7088	Otomi	Otomanguean	POST	poste	poste	p o s t̪ e	Spanish	poste	Spanish	p o s t e	735
 8983	ImbaburaQuechua	Quechuan	POST	kaspi	kaspi	k a s p i					
-10179	Wichi	Matacoan	POST	pusti	pusti	p u s t i	Spanish	poste			
+10179	Wichi	Matacoan	POST	pusti	pusti	p u s t i	Spanish	poste	Spanish	p o s t e	735
 11451	Mapudungun	Araucanian	POST	poste	poste	p o s t e	Spanish	poste	Spanish	p o s t e	735
 586	Spanish	Indo-European	POTATO	papa	papa	p a p a					
 2264	Yaqui	Uto-Aztecan	POTATO	paapa	paapa	p aː p a	Quechua	papa	Spanish	p a p a	586
@@ -7903,7 +7903,7 @@ ID	DOCULECT	LANGUAGE_FAMILY	CONCEPT	VALUE	FORM	TOKENS	DONOR_LANGUAGE	DONOR_VALUE
 1745	Spanish	Indo-European	PRAY	orar	orar	o ɾ a ɾ					
 1746	Spanish	Indo-European	PRAY	rezar	rezar	r e s a ɾ					
 3185	Yaqui	Uto-Aztecan	PRAY	lionoka	lionoka	l i o n o k a	Spanish	dios			
-3186	Yaqui	Uto-Aztecan	PRAY	resaroa	resaroa	r e s a r o a	Spanish	resar			
+3186	Yaqui	Uto-Aztecan	PRAY	resaroa	resaroa	r e s a r o a	Spanish	resar	Spanish	r e s a ɾ	1746
 4451	ZinacantanTzotzil	Mayan	PRAY	k’opoh	k’opoh	kʼ o p o h					
 6218	Qeqchi	Mayan	PRAY	tijok	tijok	t i x o kʰ					
 8455	Otomi	Otomanguean	PRAY	xa̲di (3)	xa̲di	x ɔ d i					
@@ -8065,14 +8065,14 @@ ID	DOCULECT	LANGUAGE_FAMILY	CONCEPT	VALUE	FORM	TOKENS	DONOR_LANGUAGE	DONOR_VALUE
 11507	Mapudungun	Araucanian	PUMPKIN	pengka	pengka	p e ŋ k a					
 11508	Mapudungun	Araucanian	PUMPKIN	sapallu	sapallu	s a p a ʎ u	Quechua	sapullu	Spanish	s a p a ʝ o	829
 1725	Spanish	Indo-European	PUNISHMENT	castigo	castigo	k a s t i ɣ o					
-3168	Yaqui	Uto-Aztecan	PUNISHMENT	kajtiiko	kajtiiko	k a j t iː k o	Spanish	castigo			
+3168	Yaqui	Uto-Aztecan	PUNISHMENT	kajtiiko	kajtiiko	k a j t iː k o	Spanish	castigo	Spanish	k a s t i ɣ o	1725
 3169	Yaqui	Uto-Aztecan	PUNISHMENT	peena	peena	p eː n a	Spanish	pena			
 4435	ZinacantanTzotzil	Mayan	PUNISHMENT	kastiko	kastiko	k a s t i k o	Spanish	castigo	Spanish	k a s t i ɣ o	1725
 4436	ZinacantanTzotzil	Mayan	PUNISHMENT	lok’esob manya	lok’esob_manya	l o kʼ e s o ɓ + m a n j a	Spanish	maña			
 6199	Qeqchi	Mayan	PUNISHMENT	tojleb'aal maak	tojleb'aal_maak	t o x l e ɓ aː l + m aː kʰ					
 6200	Qeqchi	Mayan	PUNISHMENT	k'ajik u	k'ajik_u	k ʔ a x i k + u					
 8423	Otomi	Otomanguean	PUNISHMENT	ntsatu'ñu	ntsatu'ñu	n ts a t̪ u ˀɲ u					
-9611	ImbaburaQuechua	Quechuan	PUNISHMENT	kashtigu	kashtigu	k a ʃ t i g u	Spanish	castigo			
+9611	ImbaburaQuechua	Quechuan	PUNISHMENT	kashtigu	kashtigu	k a ʃ t i g u	Spanish	castigo	Spanish	k a s t i ɣ o	1725
 12086	Mapudungun	Araucanian	PUNISHMENT	kastiku	kastiku	k a s t i k u	Spanish	castigo	Spanish	k a s t i ɣ o	1725
 1499	Spanish	Indo-European	PUPIL (STUDENT)	alumno	alumno	a l u m n o					
 2997	Yaqui	Uto-Aztecan	PUPIL (STUDENT)	majtawame	majtawame	m a j t a w a m e					
@@ -8214,7 +8214,7 @@ ID	DOCULECT	LANGUAGE_FAMILY	CONCEPT	VALUE	FORM	TOKENS	DONOR_LANGUAGE	DONOR_VALUE
 10915	Mapudungun	Araucanian	RAINBOW	relmu	relmu	ɻ e l m u					
 765	Spanish	Indo-European	RAKE	rastro	rastro	r a s t ɾ o					
 766	Spanish	Indo-European	RAKE	rastrillo	rastrillo	r a s t ɾ i ʝ o					
-2420	Yaqui	Uto-Aztecan	RAKE	rajtiom	rajtiom	r a j t i o m	Spanish	rastrillo			
+2420	Yaqui	Uto-Aztecan	RAKE	rajtiom	rajtiom	r a j t i o m	Spanish	rastrillo	Spanish	r a s t ɾ o	765
 3808	ZinacantanTzotzil	Mayan	RAKE	jotzobil	jotzobil	ħ o tsʰ o ɓ i l					
 5216	Qeqchi	Mayan	RAKE	rastriyo	rastriyo	r a s t ɾ i j o	Spanish	rastrillo	Spanish	r a s t ɾ i ʝ o	766
 7124	Otomi	Otomanguean	RAKE	hmunts'upasto	hmunts'upasto	h m u n tsʼ u p a s t̪ o					
@@ -8224,7 +8224,7 @@ ID	DOCULECT	LANGUAGE_FAMILY	CONCEPT	VALUE	FORM	TOKENS	DONOR_LANGUAGE	DONOR_VALUE
 213	Spanish	Indo-European	RAM	morueco	morueco	m o ɾ w e k o					
 1951	Yaqui	Uto-Aztecan	RAM	obeso	obeso	o b e s o					
 3367	ZinacantanTzotzil	Mayan	RAM	karnero	karnero	k a ɾ n e ɾ o	Spanish	carnero	Spanish	k a ɾ n ɛ ɾ o	212
-4659	Qeqchi	Mayan	RAM	karneer	karneer	k a ɾ n eː r	Spanish	carnero			
+4659	Qeqchi	Mayan	RAM	karneer	karneer	k a ɾ n eː r	Spanish	carnero	Spanish	k a ɾ n ɛ ɾ o	212
 6496	Otomi	Otomanguean	RAM	ndäni	ndäni	n d ɐ n i					
 8628	ImbaburaQuechua	Quechuan	RAM	karneru	karneru	k a ɾ n e ɾ u	Spanish	carnero	Spanish	k a ɾ n ɛ ɾ o	212
 9779	Wichi	Matacoan	RAM	ch’inak	ch’inak	tʃ ʔ i n a k					
@@ -8415,7 +8415,7 @@ ID	DOCULECT	LANGUAGE_FAMILY	CONCEPT	VALUE	FORM	TOKENS	DONOR_LANGUAGE	DONOR_VALUE
 11158	Mapudungun	Araucanian	RIB	kazi	kazi	k a z i					
 786	Spanish	Indo-European	RICE	arroz	arroz	a r o s					
 2432	Yaqui	Uto-Aztecan	RICE	arosim	arosim	a r o s i m	Spanish	arroz	Spanish	a r o s	786
-3815	ZinacantanTzotzil	Mayan	RICE	7aros	7aros	ʔ a ɾ o s	Spanish	arroz			
+3815	ZinacantanTzotzil	Mayan	RICE	7aros	7aros	ʔ a ɾ o s	Spanish	arroz	Spanish	a r o s	786
 5229	Qeqchi	Mayan	RICE	aros	aros	a ɾ o s	Spanish	arroz	Spanish	a r o s	786
 7145	Otomi	Otomanguean	RICE	arros	arros	a r r o s	Spanish	arroz	Spanish	a r o s	786
 9014	ImbaburaQuechua	Quechuan	RICE	arrusa	arrusa	a ʐ u s a	Spanish	arroz			
@@ -8604,7 +8604,7 @@ ID	DOCULECT	LANGUAGE_FAMILY	CONCEPT	VALUE	FORM	TOKENS	DONOR_LANGUAGE	DONOR_VALUE
 10489	Wichi	Matacoan	ROUND	lhip’unlhi	lhip’unlhi	lˠ i p ʔ u n lˠ i					
 11757	Mapudungun	Araucanian	ROUND	chüngküz	chüngküz	tʃ ɨ ŋ k ɨ z					
 1036	Spanish	Indo-European	ROW	remar	remar	r e m a ɾ					
-2628	Yaqui	Uto-Aztecan	ROW	remaroa	remaroa	r e m a r o a	Spanish	remar			
+2628	Yaqui	Uto-Aztecan	ROW	remaroa	remaroa	r e m a r o a	Spanish	remar	Spanish	r e m a ɾ	1036
 3989	ZinacantanTzotzil	Mayan	ROW	hub	hub	h u b					
 5505	Qeqchi	Mayan	ROW	juyuk	juyuk	x u j u kʰ	Ch’olan	*juy			
 5506	Qeqchi	Mayan	ROW	kojlenk	kojlenk	k o x l e n kʰ					
@@ -8661,7 +8661,7 @@ ID	DOCULECT	LANGUAGE_FAMILY	CONCEPT	VALUE	FORM	TOKENS	DONOR_LANGUAGE	DONOR_VALUE
 8447	Otomi	Otomanguean	SACRIFICE	'mo̲e animä	'mo̲e_animä	ˀm ə e + a n i m ɐ	Spanish	anima			
 8448	Otomi	Otomanguean	SACRIFICE	nt'undo̲ni	nt'undo̲ni	n t̪ʼ u n d ə n i					
 8449	Otomi	Otomanguean	SACRIFICE	nt'ungu̲do̲ni	nt'ungu̲do̲ni	n t̪ʼ u n g u d ə n i					
-9623	ImbaburaQuechua	Quechuan	SACRIFICE	ufrinda	ufrinda	u ɸ ɾ i n d a	Spanish	ofrenda			
+9623	ImbaburaQuechua	Quechuan	SACRIFICE	ufrinda	ufrinda	u ɸ ɾ i n d a	Spanish	ofrenda	Spanish	o f ɾ e n d a	1741
 10844	Wichi	Matacoan	SACRIFICE	totw’ayhat	totw’ayhat	t o t wˀ a j h a t					
 967	Spanish	Indo-European	SAIL	navegar	navegar	n a β e ɣ a ɾ					
 2563	Yaqui	Uto-Aztecan	SAIL	ba’ajoa	ba’ajoa	b a ʔ a j o a					
@@ -8669,7 +8669,7 @@ ID	DOCULECT	LANGUAGE_FAMILY	CONCEPT	VALUE	FORM	TOKENS	DONOR_LANGUAGE	DONOR_VALUE
 7410	Otomi	Otomanguean	SAIL	'yodehe	'yodehe	ˀj o d e h e					
 10312	Wichi	Matacoan	SAIL	tiyojche inot	tiyojche_inot	t i j o x tʃ e + i n o t					
 1039	Spanish	Indo-European	SAILCLOTH	vela	vela	b e l a					
-2631	Yaqui	Uto-Aztecan	SAILCLOTH	beelam	beelam	b eː l a m	Spanish	vela			
+2631	Yaqui	Uto-Aztecan	SAILCLOTH	beelam	beelam	b eː l a m	Spanish	vela	Spanish	b e l a	1039
 5507	Qeqchi	Mayan	SAILCLOTH	b’ela	b’ela	ɓ e l a	Spanish	vela	Spanish	b e l a	1039
 596	Spanish	Indo-European	SALT	sal	sal	s a l					
 2274	Yaqui	Uto-Aztecan	SALT	oona	oona	oː n a					
@@ -8723,7 +8723,7 @@ ID	DOCULECT	LANGUAGE_FAMILY	CONCEPT	VALUE	FORM	TOKENS	DONOR_LANGUAGE	DONOR_VALUE
 10571	Wichi	Matacoan	SATURDAY	sawulu	sawulu	s a w u l u	Spanish	sábado			
 553	Spanish	Indo-European	SAUCER	platillo	platillo	p l a t i ʝ o					
 2236	Yaqui	Uto-Aztecan	SAUCER	ili pu’ato	ili_pu’ato	i l i + p u ʔ a t o	Spanish	plato			
-5009	Qeqchi	Mayan	SAUCER	platiiy	platiiy	p l a t iː j	Spanish	platillo			
+5009	Qeqchi	Mayan	SAUCER	platiiy	platiiy	p l a t iː j	Spanish	platillo	Spanish	p l a t i ʝ o	553
 6874	Otomi	Otomanguean	SAUCER	t'olo mohi	t'olo_mohi	t̪ʼ o l o + m o h i					
 8861	ImbaburaQuechua	Quechuan	SAUCER	platillu	platillu	p l a t i ʒ u	Spanish	platillo	Spanish	p l a t i ʝ o	553
 10048	Wichi	Matacoan	SAUCER	platules	platules	p l a t u l e s	Spanish	plato			
@@ -8737,7 +8737,7 @@ ID	DOCULECT	LANGUAGE_FAMILY	CONCEPT	VALUE	FORM	TOKENS	DONOR_LANGUAGE	DONOR_VALUE
 6907	Otomi	Otomanguean	SAUSAGE	xikungo	xikungo	x i k u n g o					
 895	Spanish	Indo-European	SAW	serrucho	serrucho	s ɛ r u tʃ o					
 896	Spanish	Indo-European	SAW	sierra	sierra	s j ɛ r a					
-2512	Yaqui	Uto-Aztecan	SAW	seruuchom	seruuchom	s e r uː tʃ o m	Spanish	serrucho			
+2512	Yaqui	Uto-Aztecan	SAW	seruuchom	seruuchom	s e r uː tʃ o m	Spanish	serrucho	Spanish	s ɛ r u tʃ o	895
 3895	ZinacantanTzotzil	Mayan	SAW	kupob	kupob	k u p o b					
 5348	Qeqchi	Mayan	SAW	jachleb’	jachleb’	x a tʃ l e ɓ					
 5349	Qeqchi	Mayan	SAW	xeer	xeer	ʃ eː r	Spanish	sierra			
@@ -8775,10 +8775,10 @@ ID	DOCULECT	LANGUAGE_FAMILY	CONCEPT	VALUE	FORM	TOKENS	DONOR_LANGUAGE	DONOR_VALUE
 10005	Wichi	Matacoan	SCAR	amuyik	amuyik	a m u j i k					
 1502	Spanish	Indo-European	SCHOOL	escuela	escuela	ɛ s k w e l a					
 1503	Spanish	Indo-European	SCHOOL	colegio	colegio	k o l e x j o					
-3000	Yaqui	Uto-Aztecan	SCHOOL	ejkuela	ejkuela	e j k u e l a	Spanish	escuela			
+3000	Yaqui	Uto-Aztecan	SCHOOL	ejkuela	ejkuela	e j k u e l a	Spanish	escuela	Spanish	ɛ s k w e l a	1502
 4313	ZinacantanTzotzil	Mayan	SCHOOL	chanob vun	chanob_vun	tʃʰ a n o ɓ + v u n					
 6005	Qeqchi	Mayan	SCHOOL	tzolleb'aal	tzolleb'aal	t z o l + l e ɓ aː l					
-8091	Otomi	Otomanguean	SCHOOL	skwela	skwela	s kʷ e l a	Spanish	escuela			
+8091	Otomi	Otomanguean	SCHOOL	skwela	skwela	s kʷ e l a	Spanish	escuela	Spanish	ɛ s k w e l a	1502
 8092	Otomi	Otomanguean	SCHOOL	nguu xa̲di	nguu_xa̲di	n g uː + x ɔ d i					
 9475	ImbaburaQuechua	Quechuan	SCHOOL	yachana wasi	yachana_wasi	j a tʃ a n a + w a s i					
 10692	Wichi	Matacoan	SCHOOL	tochefwenyajw’et	tochefwenyajw’et	t o tʃ e fʷ e n j a xʷ ʔ e t					
@@ -8955,12 +8955,12 @@ ID	DOCULECT	LANGUAGE_FAMILY	CONCEPT	VALUE	FORM	TOKENS	DONOR_LANGUAGE	DONOR_VALUE
 10782	Wichi	Matacoan	SERVANT	tokawu	tokawu	t o k a w u					
 1224	Spanish	Indo-European	SEVEN	siete	siete	s j ɛ t e					
 2774	Yaqui	Uto-Aztecan	SEVEN	wobusani	wobusani	w o b u s a n i					
-2775	Yaqui	Uto-Aztecan	SEVEN	siete	siete	s i e t e	Spanish	siete			
+2775	Yaqui	Uto-Aztecan	SEVEN	siete	siete	s i e t e	Spanish	siete	Spanish	s j ɛ t e	1224
 4118	ZinacantanTzotzil	Mayan	SEVEN	vuk	vuk	v u k					
 5706	Qeqchi	Mayan	SEVEN	wuqub'	wuqub'	w u q u ɓ					
 7731	Otomi	Otomanguean	SEVEN	yoto	yoto	j o t̪ o					
 9285	ImbaburaQuechua	Quechuan	SEVEN	kanchis	kanchis	k a n dʒ i s					
-10502	Wichi	Matacoan	SEVEN	siete	siete	s i e t e	Spanish	siete			
+10502	Wichi	Matacoan	SEVEN	siete	siete	s i e t e	Spanish	siete	Spanish	s j ɛ t e	1224
 11770	Mapudungun	Araucanian	SEVEN	reqle	reqle	ɻ e ɣ l e					
 629	Spanish	Indo-European	SEW	coser	coser	k o s ɛ ɾ					
 2311	Yaqui	Uto-Aztecan	SEW	ji’ika	ji’ika	j i ʔ i k a					
@@ -9024,7 +9024,7 @@ ID	DOCULECT	LANGUAGE_FAMILY	CONCEPT	VALUE	FORM	TOKENS	DONOR_LANGUAGE	DONOR_VALUE
 273	Spanish	Indo-European	SHARK	tiburón	tiburón	t i β u ɾ o n					
 1994	Yaqui	Uto-Aztecan	SHARK	tamekame	tamekame	t a m e k a m e					
 4713	Qeqchi	Mayan	SHARK	tiburon	tiburon	t i b u ɾ o n	Spanish	tiburón	Spanish	t i β u ɾ o n	273
-6572	Otomi	Otomanguean	SHARK	tiburon	tiburon	t̪ i b u r o n	Spanish	tiburón			
+6572	Otomi	Otomanguean	SHARK	tiburon	tiburon	t̪ i b u r o n	Spanish	tiburón	Spanish	t i β u ɾ o n	273
 1383	Spanish	Indo-European	SHARP	afilado	afilado	a f i l a ð o					
 1384	Spanish	Indo-European	SHARP	aguzado	aguzado	a ɣ u s a ð o					
 1385	Spanish	Indo-European	SHARP	filoso	filoso	f i l o s o					
@@ -9191,7 +9191,7 @@ ID	DOCULECT	LANGUAGE_FAMILY	CONCEPT	VALUE	FORM	TOKENS	DONOR_LANGUAGE	DONOR_VALUE
 3503	ZinacantanTzotzil	Mayan	SHOULDER	nekebal	nekebal	n e k e ɓ a l					
 4825	Qeqchi	Mayan	SHOULDER	xb’een tel	xb’een_tel	ʃ ɓ eː n + t e l					
 6678	Otomi	Otomanguean	SHOULDER	xi'xi	xi'xi	x i ˀx i					
-8741	ImbaburaQuechua	Quechuan	SHOULDER	umbru	umbru	u m b ɾ u	Spanish	hombro			
+8741	ImbaburaQuechua	Quechuan	SHOULDER	umbru	umbru	u m b ɾ u	Spanish	hombro	Spanish	o m b ɾ o	376
 9921	Wichi	Matacoan	SHOULDER	tofwapu	tofwapu	t o fʷ a p u					
 11194	Mapudungun	Araucanian	SHOULDER	llangka foro	llangka_foro	ʎ a ŋ k a + f o ɻ o					
 11195	Mapudungun	Araucanian	SHOULDER	falke	falke	f a l k e					
@@ -9216,7 +9216,7 @@ ID	DOCULECT	LANGUAGE_FAMILY	CONCEPT	VALUE	FORM	TOKENS	DONOR_LANGUAGE	DONOR_VALUE
 10728	Wichi	Matacoan	SHOUT	t’on	t’on	t ʔ o n					
 11998	Mapudungun	Araucanian	SHOUT	wirarün	wirarün	w i ɻ a ɻ ɨ n					
 761	Spanish	Indo-European	SHOVEL	pala	pala	p a l a					
-2416	Yaqui	Uto-Aztecan	SHOVEL	paalam	paalam	p aː l a m	Spanish	pala			
+2416	Yaqui	Uto-Aztecan	SHOVEL	paalam	paalam	p aː l a m	Spanish	pala	Spanish	p a l a	761
 3806	ZinacantanTzotzil	Mayan	SHOVEL	pala	pala	pʰ a l a	Spanish	pala	Spanish	p a l a	761
 5212	Qeqchi	Mayan	SHOVEL	paal	paal	p aː l	Spanish	pala			
 7121	Otomi	Otomanguean	SHOVEL	pala	pala	p a l a	Spanish	pala	Spanish	p a l a	761
@@ -9288,7 +9288,7 @@ ID	DOCULECT	LANGUAGE_FAMILY	CONCEPT	VALUE	FORM	TOKENS	DONOR_LANGUAGE	DONOR_VALUE
 564	Spanish	Indo-European	SIEVE OR STRAIN	cribar	cribar	k ɾ i β a ɾ					
 565	Spanish	Indo-European	SIEVE OR STRAIN	colar	colar	k o l a ɾ					
 566	Spanish	Indo-European	SIEVE OR STRAIN	cerner	cerner	s ɛ ɾ n ɛ ɾ					
-2248	Yaqui	Uto-Aztecan	SIEVE OR STRAIN	kolaroa	kolaroa	k o l a r o a	Spanish	colar			
+2248	Yaqui	Uto-Aztecan	SIEVE OR STRAIN	kolaroa	kolaroa	k o l a r o a	Spanish	colar	Spanish	k o l a ɾ	565
 3663	ZinacantanTzotzil	Mayan	SIEVE OR STRAIN	chih	chih	tʃʰ i h					
 3664	ZinacantanTzotzil	Mayan	SIEVE OR STRAIN	chichin	chichin	tʃʰ i tʃʰ i n					
 5026	Qeqchi	Mayan	SIEVE OR STRAIN	tz'ilok	tz'ilok	tsʼ i l o kʰ	Mopan	tz’iil			
@@ -9308,7 +9308,7 @@ ID	DOCULECT	LANGUAGE_FAMILY	CONCEPT	VALUE	FORM	TOKENS	DONOR_LANGUAGE	DONOR_VALUE
 10100	Wichi	Matacoan	SILK	seda	seda	s e d a	Spanish	seda	Spanish	s e ð a	620
 11374	Mapudungun	Araucanian	SILK	seza	seza	s e z a	Spanish	seda	Spanish	s e ð a	620
 906	Spanish	Indo-European	SILVER	plata	plata	p l a t a					
-2520	Yaqui	Uto-Aztecan	SILVER	laata ~ plaata	laata	l aː t a	Spanish	plata			
+2520	Yaqui	Uto-Aztecan	SILVER	laata ~ plaata	laata	l aː t a	Spanish	plata	Spanish	p l a t a	906
 5357	Qeqchi	Mayan	SILVER	plaat	plaat	p l aː tʰ	Spanish	plata			
 5358	Qeqchi	Mayan	SILVER	saqi ch’iich’	saqi_ch’iich’	s a q i + tʃʼ iː tʃʼ					
 7329	Otomi	Otomanguean	SILVER	t'axi (2)	t'axi	t̪ʼ a x i					
@@ -9601,12 +9601,12 @@ ID	DOCULECT	LANGUAGE_FAMILY	CONCEPT	VALUE	FORM	TOKENS	DONOR_LANGUAGE	DONOR_VALUE
 10928	Mapudungun	Araucanian	SNOW	pire	pire	p i ɻ e					
 685	Spanish	Indo-European	SOAP	jabón	jabón	x a β o n					
 2362	Yaqui	Uto-Aztecan	SOAP	saabum	saabum	s aː b u m	Spanish	jabón			
-3754	ZinacantanTzotzil	Mayan	SOAP	shavon	shavon	ʃ a v o n	Spanish	jabón			
-5138	Qeqchi	Mayan	SOAP	xab'on	xab'on	ʃ a ɓ o n	Spanish	jabón			
-7036	Otomi	Otomanguean	SOAP	xabo	xabo	x a b o	Spanish	jabón			
+3754	ZinacantanTzotzil	Mayan	SOAP	shavon	shavon	ʃ a v o n	Spanish	jabón	Spanish	x a β o n	685
+5138	Qeqchi	Mayan	SOAP	xab'on	xab'on	ʃ a ɓ o n	Spanish	jabón	Spanish	x a β o n	685
+7036	Otomi	Otomanguean	SOAP	xabo	xabo	x a b o	Spanish	jabón	Spanish	x a β o n	685
 8953	ImbaburaQuechua	Quechuan	SOAP	jabun	jabun	x a b u ŋ	Spanish	jabón			
 10146	Wichi	Matacoan	SOAP	fwawun	fwawun	fʷ a w u n	Spanish	jabón			
-11418	Mapudungun	Araucanian	SOAP	kafon	kafon	k a f o n	Spanish	jabón			
+11418	Mapudungun	Araucanian	SOAP	kafon	kafon	k a f o n	Spanish	jabón	Spanish	x a β o n	685
 11419	Mapudungun	Araucanian	SOAP	küllay	küllay	k ɨ ʎ a y					
 1379	Spanish	Indo-European	SOFT	suave	suave	s w a β e					
 2917	Yaqui	Uto-Aztecan	SOFT	bwalko	bwalko	bʷ a l k o					
@@ -9621,12 +9621,12 @@ ID	DOCULECT	LANGUAGE_FAMILY	CONCEPT	VALUE	FORM	TOKENS	DONOR_LANGUAGE	DONOR_VALUE
 10612	Wichi	Matacoan	SOFT	tak’efwi	tak’efwi	t a k ʔ e fʷ i					
 11882	Mapudungun	Araucanian	SOFT	ngüfash	ngüfash	ŋ ɨ f a ʃ					
 1658	Spanish	Indo-European	SOLDIER	soldado	soldado	s o l d a ð o					
-3119	Yaqui	Uto-Aztecan	SOLDIER	sontao	sontao	s o n t a o	Spanish	soldado			
+3119	Yaqui	Uto-Aztecan	SOLDIER	sontao	sontao	s o n t a o	Spanish	soldado	Spanish	s o l d a ð o	1658
 4409	ZinacantanTzotzil	Mayan	SOLDIER	soltaro	soltaro	s o l t a ɾ o	Spanish	soldado	Spanish	s o l d a ð o	1658
 4410	ZinacantanTzotzil	Mayan	SOLDIER	h7ak’ k’ok’	h7ak’_k’ok’	h ʔ a kʼ + kʼ o kʼ					
-6133	Qeqchi	Mayan	SOLDIER	soldaa, sola	soldaa	s o l d aː	Spanish	soldado			
+6133	Qeqchi	Mayan	SOLDIER	soldaa, sola	soldaa	s o l d aː	Spanish	soldado	Spanish	s o l d a ð o	1658
 6134	Qeqchi	Mayan	SOLDIER	aj kookox	aj_kookox	a x + k oː k o ʃ					
-8323	Otomi	Otomanguean	SOLDIER	su̲ndado	su̲ndado	s u n d a d o	Spanish	soldado			
+8323	Otomi	Otomanguean	SOLDIER	su̲ndado	su̲ndado	s u n d a d o	Spanish	soldado	Spanish	s o l d a ð o	1658
 8324	Otomi	Otomanguean	SOLDIER	soldado	soldado	s o l d a d o	Spanish	soldado	Spanish	s o l d a ð o	1658
 9577	ImbaburaQuechua	Quechuan	SOLDIER	auka	auka	a u k a					
 10800	Wichi	Matacoan	SOLDIER	sip’o	sip’o	s i p ʔ o					
@@ -9719,7 +9719,7 @@ ID	DOCULECT	LANGUAGE_FAMILY	CONCEPT	VALUE	FORM	TOKENS	DONOR_LANGUAGE	DONOR_VALUE
 10592	Wichi	Matacoan	SOUND OR NOISE	lapak	lapak	l a p a k					
 11864	Mapudungun	Araucanian	SOUND OR NOISE	zungun	zungun	z u ŋ u n					
 582	Spanish	Indo-European	SOUP	sopa	sopa	s o p a					
-2261	Yaqui	Uto-Aztecan	SOUP	soopam	soopam	s oː p a m	Spanish	sopa			
+2261	Yaqui	Uto-Aztecan	SOUP	soopam	soopam	s oː p a m	Spanish	sopa	Spanish	s o p a	582
 5048	Qeqchi	Mayan	SOUP	kaalt	kaalt	k aː l tʰ	Spanish	caldo			
 5049	Qeqchi	Mayan	SOUP	ya’al	ya’al	j a ʔ a l					
 6908	Otomi	Otomanguean	SOUP	sopa	sopa	s o p a	Spanish	sopa	Spanish	s o p a	582
@@ -9815,7 +9815,7 @@ ID	DOCULECT	LANGUAGE_FAMILY	CONCEPT	VALUE	FORM	TOKENS	DONOR_LANGUAGE	DONOR_VALUE
 3423	ZinacantanTzotzil	Mayan	SPIDER	7om	7om	ʔ o m					
 4732	Qeqchi	Mayan	SPIDER	aj am ~ x’am	aj_am	a x + a m					
 6595	Otomi	Otomanguean	SPIDER	mexe	mexe	m e x e					
-8677	ImbaburaQuechua	Quechuan	SPIDER	añara	añara	a ɲ a ɾ a	Spanish	araña			
+8677	ImbaburaQuechua	Quechuan	SPIDER	añara	añara	a ɲ a ɾ a	Spanish	araña	Spanish	a ɾ a ɲ a	298
 9842	Wichi	Matacoan	SPIDER	chuhut	chuhut	tʃ u h u t					
 11125	Mapudungun	Araucanian	SPIDER	lalüng	lalüng	l a l ɨ ŋ					
 299	Spanish	Indo-European	SPIDER WEB	telaraɲa	telaraɲa	t e l a ɾ a ɲ a					
@@ -9982,7 +9982,7 @@ ID	DOCULECT	LANGUAGE_FAMILY	CONCEPT	VALUE	FORM	TOKENS	DONOR_LANGUAGE	DONOR_VALUE
 4653	Qeqchi	Mayan	STABLE	xna’aj wakax	xna’aj_wakax	ʃ n a ʔ a x + w a k a ʃ					
 6485	Otomi	Otomanguean	STABLE	nguume̲ti	nguume̲ti	n g uː m æ t̪ i					
 6486	Otomi	Otomanguean	STABLE	nguu'ño	nguu'ño	n g uː ˀɲ o					
-8621	ImbaburaQuechua	Quechuan	STABLE	istablu	istablu	i s t a b l u	Spanish	establo			
+8621	ImbaburaQuechua	Quechuan	STABLE	istablu	istablu	i s t a b l u	Spanish	establo	Spanish	ɛ s t a β l o	204
 9772	Wichi	Matacoan	STABLE	tshotoyw’et	tshotoyw’et	tsʰ o t o j w ʔ e t					
 11064	Mapudungun	Araucanian	STABLE	walpon	walpon	w a l p o n	Spanish	galpon			
 229	Spanish	Indo-European	STALLION	caballo padre	caballo_padre	k a β a ʝ o + p a ð ɾ e					
@@ -10092,7 +10092,7 @@ ID	DOCULECT	LANGUAGE_FAMILY	CONCEPT	VALUE	FORM	TOKENS	DONOR_LANGUAGE	DONOR_VALUE
 648	Spanish	Indo-European	STOCKING	calcetín	calcetín	k a l s ɛ t i n					
 2329	Yaqui	Uto-Aztecan	STOCKING	wokboosam	wokboosam	w o k b oː s a m	Spanish	bolsa			
 2330	Yaqui	Uto-Aztecan	STOCKING	meriam	meriam	m e r i a m	Spanish	medias			
-2331	Yaqui	Uto-Aztecan	STOCKING	kalsetiinim	kalsetiinim	k a l s e t iː n i m	Spanish	calcetín			
+2331	Yaqui	Uto-Aztecan	STOCKING	kalsetiinim	kalsetiinim	k a l s e t iː n i m	Spanish	calcetín	Spanish	k a l s ɛ t i n	648
 3739	ZinacantanTzotzil	Mayan	STOCKING	na 7okol	na_7okol	n a + ʔ o k o l					
 5109	Qeqchi	Mayan	STOCKING	b'atb'al oq	b'atb'al_oq	ɓ a t ɓ a l + o qʰ					
 5110	Qeqchi	Mayan	STOCKING	xta oq	xta_oq	ʃ t a + o qʰ					
@@ -10101,7 +10101,7 @@ ID	DOCULECT	LANGUAGE_FAMILY	CONCEPT	VALUE	FORM	TOKENS	DONOR_LANGUAGE	DONOR_VALUE
 6987	Otomi	Otomanguean	STOCKING	medya	medya	m e d j a	Spanish	media	Spanish	m e ð j a	647
 8935	ImbaburaQuechua	Quechuan	STOCKING	midias	midias	m i d i a s	Spanish	medias			
 10120	Wichi	Matacoan	STOCKING	melyus	melyus	m e l j u s	Spanish	medias			
-11395	Mapudungun	Araucanian	STOCKING	mezia	mezia	m e z i a	Spanish	media			
+11395	Mapudungun	Araucanian	STOCKING	mezia	mezia	m e z i a	Spanish	media	Spanish	m e ð j a	647
 414	Spanish	Indo-European	STOMACH	estómago	estómago	ɛ s t o m a ɣ o					
 415	Spanish	Indo-European	STOMACH	barriga	barriga	b a r i ɣ a					
 2125	Yaqui	Uto-Aztecan	STOMACH	toma	toma	t o m a					
@@ -10211,15 +10211,15 @@ ID	DOCULECT	LANGUAGE_FAMILY	CONCEPT	VALUE	FORM	TOKENS	DONOR_LANGUAGE	DONOR_VALUE
 1491	Spanish	Indo-European	STUPID	necio	necio	n e s j o					
 1492	Spanish	Indo-European	STUPID	estúpido	estúpido	ɛ s t u p i ð o					
 1493	Spanish	Indo-European	STUPID	tonto	tonto	t o n t o					
-2992	Yaqui	Uto-Aztecan	STUPID	neesio	neesio	n eː s i o	Spanish	necio			
+2992	Yaqui	Uto-Aztecan	STUPID	neesio	neesio	n eː s i o	Spanish	necio	Spanish	n e s j o	1491
 4302	ZinacantanTzotzil	Mayan	STUPID	bol	bol	ɓ o l					
 4303	ZinacantanTzotzil	Mayan	STUPID	buro	buro	ɓ u ɾ o	Spanish	burro			
 4304	ZinacantanTzotzil	Mayan	STUPID	choriso	choriso	tʃʰ o ɾ i s o	Spanish	chorizo			
 4305	ZinacantanTzotzil	Mayan	STUPID	chuman te7 hol	chuman_te7_hol	tʃʰ u m a n + t e ʔ + h o l					
 5993	Qeqchi	Mayan	STUPID	jip	jip	x i pʰ					
 5994	Qeqchi	Mayan	STUPID	jok	jok	x o kʰ					
-8073	Otomi	Otomanguean	STUPID	dondo	dondo	d o n d o	Spanish	tonto			
-8074	Otomi	Otomanguean	STUPID	xongo	xongo	x o n g o					
+8073	Otomi	Otomanguean	STUPID	dondo	dondo	d o n d o	Spanish	tonto	Spanish	t o n t o	1493
+8074	Otomi	Otomanguean	STUPID	xongo	xongo	x o n g o			Spanish	t o n t o	1493
 8075	Otomi	Otomanguean	STUPID	'be̲mfeni	'be̲mfeni	ˀb æ m f e n i					
 9468	ImbaburaQuechua	Quechuan	STUPID	muspa	muspa	m u s p a					
 10685	Wichi	Matacoan	STUPID	upa’	upa’	u p a ʔ	Quechua	upa			
@@ -10251,7 +10251,7 @@ ID	DOCULECT	LANGUAGE_FAMILY	CONCEPT	VALUE	FORM	TOKENS	DONOR_LANGUAGE	DONOR_VALUE
 6928	Otomi	Otomanguean	SUGAR	t'axu̲t'afi	t'axu̲t'afi	t̪ʼ a x u t̪ʼ a f i					
 8898	ImbaburaQuechua	Quechuan	SUGAR	mishki (2)	mishki	m i ʃ k i					
 10083	Wichi	Matacoan	SUGAR	asukwi	asukwi	a s u kʷ i	Spanish	azúcar			
-11361	Mapudungun	Araucanian	SUGAR	asukura	asukura	a s u k u ɻ a	Spanish	azúcar			
+11361	Mapudungun	Araucanian	SUGAR	asukura	asukura	a s u k u ɻ a	Spanish	azúcar	Spanish	a s u k a ɾ	600
 833	Spanish	Indo-European	SUGAR CANE	caɲa de azúcar	caɲa_de_azúcar	k a ɲ a + ð e + a s u k a ɾ					
 2463	Yaqui	Uto-Aztecan	SUGAR CANE	asuka	asuka	a s u k a	Spanish	azúcar			
 2464	Yaqui	Uto-Aztecan	SUGAR CANE	yoisana	yoisana	j o i s a n a					
@@ -10279,7 +10279,7 @@ ID	DOCULECT	LANGUAGE_FAMILY	CONCEPT	VALUE	FORM	TOKENS	DONOR_LANGUAGE	DONOR_VALUE
 1320	Spanish	Indo-European	SUNDAY	domingo	domingo	d o m i n g o					
 2867	Yaqui	Uto-Aztecan	SUNDAY	lominko	lominko	l o m i n k o	Spanish	domingo	Spanish	d o m i n g o	1320
 4187	ZinacantanTzotzil	Mayan	SUNDAY	rominko	rominko	ɾ o m i n k o	Spanish	domingo	Spanish	d o m i n g o	1320
-5819	Qeqchi	Mayan	SUNDAY	domiin, tumink, romink	domiin	d o m iː n	Spanish	domingo			
+5819	Qeqchi	Mayan	SUNDAY	domiin, tumink, romink	domiin	d o m iː n	Spanish	domingo	Spanish	d o m i n g o	1320
 7853	Otomi	Otomanguean	SUNDAY	ndomingo	ndomingo	n d o m i n g o	Spanish	domingo	Spanish	d o m i n g o	1320
 9351	ImbaburaQuechua	Quechuan	SUNDAY	dumingo	dumingo	d u m i ŋ g o	Spanish	domingo	Spanish	d o m i n g o	1320
 10565	Wichi	Matacoan	SUNDAY	luminku	luminku	l u m i n k u	Spanish	domingo			
@@ -10370,7 +10370,7 @@ ID	DOCULECT	LANGUAGE_FAMILY	CONCEPT	VALUE	FORM	TOKENS	DONOR_LANGUAGE	DONOR_VALUE
 6784	Otomi	Otomanguean	SWELLING	hneni	hneni	h n e n i					
 8817	ImbaburaQuechua	Quechuan	SWELLING	pungi	pungi	p u ŋ g i					
 10000	Wichi	Matacoan	SWELLING	t’ikwa	t’ikwa	t ʔ i kʷ a					
-11273	Mapudungun	Araucanian	SWELLING	iñchalen	iñchalen	i ɲ tʃ a l e n	Spanish	hinchazón			
+11273	Mapudungun	Araucanian	SWELLING	iñchalen	iñchalen	i ɲ tʃ a l e n	Spanish	hinchazón	Spanish	i n tʃ a s o n	488
 11274	Mapudungun	Araucanian	SWELLING	ponkwin	ponkwin	p o n k w i n	Quechua	punquiy			
 964	Spanish	Indo-European	SWIM	nadar	nadar	n a ð a ɾ					
 2559	Yaqui	Uto-Aztecan	SWIM	bajume	bajume	b a j u m e					
@@ -10383,7 +10383,7 @@ ID	DOCULECT	LANGUAGE_FAMILY	CONCEPT	VALUE	FORM	TOKENS	DONOR_LANGUAGE	DONOR_VALUE
 11593	Mapudungun	Araucanian	SWIM	weyelün	weyelün	w e y e l ɨ n					
 1667	Spanish	Indo-European	SWORD	espada	espada	ɛ s p a ð a					
 3127	Yaqui	Uto-Aztecan	SWORD	ejpaam	ejpaam	e j p aː m	Spanish	espada			
-4416	ZinacantanTzotzil	Mayan	SWORD	7espara	7espara	ʔ e s p a ɾ a	Spanish	espada			
+4416	ZinacantanTzotzil	Mayan	SWORD	7espara	7espara	ʔ e s p a ɾ a	Spanish	espada	Spanish	ɛ s p a ð a	1667
 6145	Qeqchi	Mayan	SWORD	makaan	makaan	m a k aː n	Spanish	macana			
 8336	Otomi	Otomanguean	SWORD	ma nts'äjwai	ma_nts'äjwai	m a + n tsʼ ɐ xʷ a i					
 9581	ImbaburaQuechua	Quechuan	SWORD	ispada	ispada	i s p a d a	Spanish	espada	Spanish	ɛ s p a ð a	1667
@@ -10447,7 +10447,7 @@ ID	DOCULECT	LANGUAGE_FAMILY	CONCEPT	VALUE	FORM	TOKENS	DONOR_LANGUAGE	DONOR_VALUE
 5841	Qeqchi	Mayan	TASTE (SOMETHING)	hulak chi uhej	hulak_chi_uhej	h u l a k + tʃ i + u h e x					
 5842	Qeqchi	Mayan	TASTE (SOMETHING)	xyalb’al xsahil	xyalb’al_xsahil	ʃ j a l ɓ a l + ʃ s a h i l					
 7884	Otomi	Otomanguean	TASTE (SOMETHING)	xi nkuhi	xi_nkuhi	x i + n k u h i					
-9370	ImbaburaQuechua	Quechuan	TASTE (SOMETHING)	gushtana	gushtana	g u ʃ t a n a	Spanish	gustar			
+9370	ImbaburaQuechua	Quechuan	TASTE (SOMETHING)	gushtana	gushtana	g u ʃ t a n a	Spanish	gustar	Spanish	g u s t a ɾ	1342
 10584	Wichi	Matacoan	TASTE (SOMETHING)	yelhthu	yelhthu	y e lˠ tʰ u					
 11856	Mapudungun	Araucanian	TASTE (SOMETHING)	kümentun	kümentun	k ɨ m e n t u n					
 676	Spanish	Indo-European	TATTOO	tatuaje	tatuaje	t a t w a x e					
@@ -10456,7 +10456,7 @@ ID	DOCULECT	LANGUAGE_FAMILY	CONCEPT	VALUE	FORM	TOKENS	DONOR_LANGUAGE	DONOR_VALUE
 10138	Wichi	Matacoan	TATTOO	tolet	tolet	t o l e t					
 1089	Spanish	Indo-European	TAX	impuesto	impuesto	i m p w ɛ s t o					
 1090	Spanish	Indo-European	TAX	tributo	tributo	t ɾ i β u t o					
-2666	Yaqui	Uto-Aztecan	TAX	impuejtom	impuejtom	i m p u e j t o m	Spanish	impuesto			
+2666	Yaqui	Uto-Aztecan	TAX	impuejtom	impuejtom	i m p u e j t o m	Spanish	impuesto	Spanish	i m p w ɛ s t o	1089
 4018	ZinacantanTzotzil	Mayan	TAX	tojel `ak'el	tojel_`ak'el	t o ħ e l + ʔ a k ʔ e l					
 5549	Qeqchi	Mayan	TAX	toj (1)	toj	t o x					
 7566	Otomi	Otomanguean	TAX	njut'i	njut'i	n x u t̪ʼ i					
@@ -10477,7 +10477,7 @@ ID	DOCULECT	LANGUAGE_FAMILY	CONCEPT	VALUE	FORM	TOKENS	DONOR_LANGUAGE	DONOR_VALUE
 11959	Mapudungun	Araucanian	TEACH	kimelün	kimelün	k i m e l ɨ n					
 1500	Spanish	Indo-European	TEACHER	profesor	profesor	p ɾ o f e s o ɾ					
 1501	Spanish	Indo-European	TEACHER	maestro	maestro	m a ɛ s t ɾ o					
-2998	Yaqui	Uto-Aztecan	TEACHER	maejto	maejto	m a e j t o	Spanish	maestro			
+2998	Yaqui	Uto-Aztecan	TEACHER	maejto	maejto	m a e j t o	Spanish	maestro	Spanish	m a ɛ s t ɾ o	1501
 2999	Yaqui	Uto-Aztecan	TEACHER	propesor	propesor	p r o p e s o r	Spanish	profesor	Spanish	p ɾ o f e s o ɾ	1500
 4311	ZinacantanTzotzil	Mayan	TEACHER	hchanubtavaneh	hchanubtavaneh	h tʃʰ a n u ɓ t a v a n e h					
 4312	ZinacantanTzotzil	Mayan	TEACHER	mayshtro	mayshtro	m a j ʃ t ɾ o	Spanish	maestro	Spanish	m a ɛ s t ɾ o	1501
@@ -10529,7 +10529,7 @@ ID	DOCULECT	LANGUAGE_FAMILY	CONCEPT	VALUE	FORM	TOKENS	DONOR_LANGUAGE	DONOR_VALUE
 6213	Qeqchi	Mayan	TEMPLE	ermiit	ermiit	e ɾ m iː tʰ	Spanish	ermita			
 6214	Qeqchi	Mayan	TEMPLE	kapiiy	kapiiy	k a p iː j	Spanish	capilla			
 8441	Otomi	Otomanguean	TEMPLE	nijä	nijä	n i x ɐ					
-9621	ImbaburaQuechua	Quechuan	TEMPLE	iglizya	iglizya	i g l i z j a	Spanish	iglesia			
+9621	ImbaburaQuechua	Quechuan	TEMPLE	iglizya	iglizya	i g l i z j a	Spanish	iglesia	Spanish	i ɣ l e s j a	1739
 10842	Wichi	Matacoan	TEMPLE	tohesew’et	tohesew’et	t o h e s e w ʔ e t					
 342	Spanish	Indo-European	TEMPLES	sien	sien	s j e n					
 2056	Yaqui	Uto-Aztecan	TEMPLES	kobananaa	kobananaa	k o b a n a n aː					
@@ -10548,7 +10548,7 @@ ID	DOCULECT	LANGUAGE_FAMILY	CONCEPT	VALUE	FORM	TOKENS	DONOR_LANGUAGE	DONOR_VALUE
 695	Spanish	Indo-European	TENT	toldo	toldo	t o l d o					
 2368	Yaqui	Uto-Aztecan	TENT	bepa’aria	bepa’aria	b e p a ʔ a r i a					
 7041	Otomi	Otomanguean	TENT	dätä njo'mi	dätä_njo'mi	d ɐ t̪ ɐ + n x o ˀm i					
-8959	ImbaburaQuechua	Quechuan	TENT	tuldu	tuldu	t u l d u	Spanish	toldo			
+8959	ImbaburaQuechua	Quechuan	TENT	tuldu	tuldu	t u l d u	Spanish	toldo	Spanish	t o l d o	695
 10152	Wichi	Matacoan	TENT	chechelhep	chechelhep	tʃ e tʃ e lˠ e p					
 11426	Mapudungun	Araucanian	TENT	tolto	tolto	t o l t o	Spanish	toldo	Spanish	t o l d o	695
 424	Spanish	Indo-European	TESTICLES	testículo	testículo	t ɛ s t i k u l o					
@@ -10694,7 +10694,7 @@ ID	DOCULECT	LANGUAGE_FAMILY	CONCEPT	VALUE	FORM	TOKENS	DONOR_LANGUAGE	DONOR_VALUE
 10108	Wichi	Matacoan	THREAD	ilu	ilu	i l u	Spanish	hilo	Spanish	i l o	632
 11384	Mapudungun	Araucanian	THREAD	füw	füw	f ɨ w					
 1582	Spanish	Indo-European	THREATEN	amenazar	amenazar	a m e n a s a ɾ					
-3068	Yaqui	Uto-Aztecan	THREATEN	menasaroa	menasaroa	m e n a s a r o a	Spanish	amenazar			
+3068	Yaqui	Uto-Aztecan	THREATEN	menasaroa	menasaroa	m e n a s a r o a	Spanish	amenazar	Spanish	a m e n a s a ɾ	1582
 4374	ZinacantanTzotzil	Mayan	THREATEN	sibtas	sibtas	s i ɓ t a s					
 6075	Qeqchi	Mayan	THREATEN	k'ehok eetal	k'ehok_eetal	k ʔ e h o k + eː t a l					
 8225	Otomi	Otomanguean	THREATEN	pidi	pidi	p i d i					
@@ -10708,7 +10708,7 @@ ID	DOCULECT	LANGUAGE_FAMILY	CONCEPT	VALUE	FORM	TOKENS	DONOR_LANGUAGE	DONOR_VALUE
 5702	Qeqchi	Mayan	THREE	oxib'	oxib'	o ʃ i ɓ					
 7727	Otomi	Otomanguean	THREE	hñu	hñu	h ɲ u					
 9281	ImbaburaQuechua	Quechuan	THREE	kimsa	kimsa	k i m s a					
-10498	Wichi	Matacoan	THREE	tales	tales	t a l e s	Spanish	tres			
+10498	Wichi	Matacoan	THREE	tales	tales	t a l e s	Spanish	tres	Spanish	t ɾ e s	1220
 11766	Mapudungun	Araucanian	THREE	küla	küla	k ɨ l a					
 1260	Spanish	Indo-European	THREE TIMES	tres veces	tres_veces	t ɾ e s + β e s e s					
 2813	Yaqui	Uto-Aztecan	THREE TIMES	bajisia	bajisia	b a j i s i a					
@@ -10923,10 +10923,10 @@ ID	DOCULECT	LANGUAGE_FAMILY	CONCEPT	VALUE	FORM	TOKENS	DONOR_LANGUAGE	DONOR_VALUE
 11721	Mapudungun	Araucanian	TOP	wechuñ	wechuñ	w e tʃ u ɲ					
 724	Spanish	Indo-European	TORCH OR LAMP	lámpara	lámpara	l a m p a ɾ a					
 725	Spanish	Indo-European	TORCH OR LAMP	antorcha	antorcha	a n t o ɾ tʃ a					
-2391	Yaqui	Uto-Aztecan	TORCH OR LAMP	lampaa	lampaa	l a m p aː	Spanish	lámpara			
+2391	Yaqui	Uto-Aztecan	TORCH OR LAMP	lampaa	lampaa	l a m p aː	Spanish	lámpara	Spanish	l a m p a ɾ a	724
 3780	ZinacantanTzotzil	Mayan	TORCH OR LAMP	7av kas	7av_kas	ʔ a v + k a s	Spanish	kas			
 3781	ZinacantanTzotzil	Mayan	TORCH OR LAMP	kantil	kantil	k a n t i l	Spanish	candil			
-5178	Qeqchi	Mayan	TORCH OR LAMP	lampr	lampr	l a m p r	Spanish	lámpara			
+5178	Qeqchi	Mayan	TORCH OR LAMP	lampr	lampr	l a m p r	Spanish	lámpara	Spanish	l a m p a ɾ a	724
 5179	Qeqchi	Mayan	TORCH OR LAMP	xam	xam	ʃ a m					
 7073	Otomi	Otomanguean	TORCH OR LAMP	ñot'i	ñot'i	ɲ o t̪ʼ i					
 7074	Otomi	Otomanguean	TORCH OR LAMP	ñot’i	ñot’i	ɲ o t̪ʼ i					
@@ -10947,7 +10947,7 @@ ID	DOCULECT	LANGUAGE_FAMILY	CONCEPT	VALUE	FORM	TOKENS	DONOR_LANGUAGE	DONOR_VALUE
 2356	Yaqui	Uto-Aztecan	TOWEL	toayam	toayam	t o a j a m	Spanish	toalla	Spanish	t o a ʝ a	679
 5131	Qeqchi	Mayan	TOWEL	tuwaay	tuwaay	t u w aː j	Spanish	toalla			
 7019	Otomi	Otomanguean	TOWEL	nthuku̲dehe	nthuku̲dehe	n θ u k u d e h e					
-8948	ImbaburaQuechua	Quechuan	TOWEL	twalla	twalla	t w a ʒ a	Spanish	toalla			
+8948	ImbaburaQuechua	Quechuan	TOWEL	twalla	twalla	t w a ʒ a	Spanish	toalla	Spanish	t o a ʝ a	679
 10140	Wichi	Matacoan	TOWEL	towayu	towayu	t o w a j u	Spanish	toalla			
 11412	Mapudungun	Araucanian	TOWEL	tuwalla	tuwalla	t u w a ʎ a	Spanish	toalla			
 1675	Spanish	Indo-European	TOWER	torre	torre	t o r e					
@@ -11037,11 +11037,11 @@ ID	DOCULECT	LANGUAGE_FAMILY	CONCEPT	VALUE	FORM	TOKENS	DONOR_LANGUAGE	DONOR_VALUE
 7079	Otomi	Otomanguean	TROUGH	motsa	motsa	m o ts a					
 7080	Otomi	Otomanguean	TROUGH	'bo̲de	'bo̲de	ˀb ə d e					
 8977	ImbaburaQuechua	Quechuan	TROUGH	batiya	batiya	b a t i j a	Taino		Spanish	b a t e a	728
-11446	Mapudungun	Araucanian	TROUGH	fatia	fatia	f a t i a	Spanish	batea			
+11446	Mapudungun	Araucanian	TROUGH	fatia	fatia	f a t i a	Spanish	batea	Spanish	b a t e a	728
 645	Spanish	Indo-European	TROUSERS	pantalones	pantalones	p a n t a l o n e s					
 646	Spanish	Indo-European	TROUSERS	calzones	calzones	k a l s o n e s					
 2327	Yaqui	Uto-Aztecan	TROUSERS	saaweam	saaweam	s aː w e a m	Spanish	zaragüeyes			
-2328	Yaqui	Uto-Aztecan	TROUSERS	pantaroonim	pantaroonim	p a n t a r oː n i m	Spanish	pantalón			
+2328	Yaqui	Uto-Aztecan	TROUSERS	pantaroonim	pantaroonim	p a n t a r oː n i m	Spanish	pantalón	Spanish	p a n t a l o n e s	645
 5108	Qeqchi	Mayan	TROUSERS	wex	wex	w e ʃ					
 6984	Otomi	Otomanguean	TROUSERS	ze̲xjo	ze̲xjo	z æ x x o					
 6985	Otomi	Otomanguean	TROUSERS	t'olo ze̲xjo	t'olo_ze̲xjo	t̪ʼ o l o + z æ x x o					
@@ -11254,7 +11254,7 @@ ID	DOCULECT	LANGUAGE_FAMILY	CONCEPT	VALUE	FORM	TOKENS	DONOR_LANGUAGE	DONOR_VALUE
 8884	ImbaburaQuechua	Quechuan	VEGETABLES	yuyu	yuyu	j u j u					
 11351	Mapudungun	Araucanian	VEGETABLES	ketran	ketran	k e ʈʂ a n					
 657	Spanish	Indo-European	VEIL	velo	velo	b e l o					
-2341	Yaqui	Uto-Aztecan	VEIL	beelom	beelom	b eː l o m	Spanish	velo			
+2341	Yaqui	Uto-Aztecan	VEIL	beelom	beelom	b eː l o m	Spanish	velo	Spanish	b e l o	657
 5119	Qeqchi	Mayan	VEIL	b’elo, b’eel	b’elo	ɓ e l o	Spanish	velo	Spanish	b e l o	657
 7000	Otomi	Otomanguean	VEIL	njo’mi	njo’mi	n x o ʔ m i					
 10127	Wichi	Matacoan	VEIL	tottep’ut	tottep’ut	t o t t e p ʔ u t					
@@ -11267,7 +11267,7 @@ ID	DOCULECT	LANGUAGE_FAMILY	CONCEPT	VALUE	FORM	TOKENS	DONOR_LANGUAGE	DONOR_VALUE
 10813	Wichi	Matacoan	VICTORY	yikalhi	yikalhi	y i k a lˠ i					
 12063	Mapudungun	Araucanian	VICTORY	wewün	wewün	w e w ɨ n					
 1601	Spanish	Indo-European	VILLAGE	pueblo	pueblo	p w e β l o					
-3084	Yaqui	Uto-Aztecan	VILLAGE	puepplo	puepplo	p u e p p l o	Spanish	pueblo			
+3084	Yaqui	Uto-Aztecan	VILLAGE	puepplo	puepplo	p u e p p l o	Spanish	pueblo	Spanish	p w e β l o	1601
 6092	Qeqchi	Mayan	VILLAGE	tenamit	tenamit	t e n a m i tʰ	Nahuatl	tena:mitl			
 8251	Otomi	Otomanguean	VILLAGE	ya jä’i	ya_jä’i	j a + x ɐ ʔ i					
 9549	ImbaburaQuechua	Quechuan	VILLAGE	llakta	llakta	ʒ a k t a					
@@ -11513,7 +11513,7 @@ ID	DOCULECT	LANGUAGE_FAMILY	CONCEPT	VALUE	FORM	TOKENS	DONOR_LANGUAGE	DONOR_VALUE
 4190	ZinacantanTzotzil	Mayan	WEDNESDAY	melkulesh	melkulesh	m e l k u l e sʰ	Spanish	miércoles			
 5822	Qeqchi	Mayan	WEDNESDAY	miercools, myers	miercools	m i e ɾ c oː l s	Spanish	miércoles			
 7856	Otomi	Otomanguean	WEDNESDAY	hñupa	hñupa	h ɲ u p a					
-9354	ImbaburaQuechua	Quechuan	WEDNESDAY	mircules	mircules	m i ɾ c u l e s	Spanish	miécoles			
+9354	ImbaburaQuechua	Quechuan	WEDNESDAY	mircules	mircules	m i ɾ c u l e s	Spanish	miécoles	Spanish	m j ɛ ɾ k o l e s	1323
 10568	Wichi	Matacoan	WEDNESDAY	mielkulis	mielkulis	m i e l k u l i s	Spanish	miércoles			
 1319	Spanish	Indo-European	WEEK	semana	semana	s e m a n a					
 2866	Yaqui	Uto-Aztecan	WEEK	semaana	semaana	s e m aː n a	Spanish	semana	Spanish	s e m a n a	1319
@@ -11524,7 +11524,7 @@ ID	DOCULECT	LANGUAGE_FAMILY	CONCEPT	VALUE	FORM	TOKENS	DONOR_LANGUAGE	DONOR_VALUE
 10564	Wichi	Matacoan	WEEK	semanu	semanu	s e m a n u	Spanish	semana	Spanish	s e m a n a	1319
 11842	Mapudungun	Araucanian	WEEK	semana	semana	s e m a n a	Spanish	semana	Spanish	s e m a n a	1319
 1108	Spanish	Indo-European	WEIGH	pesar	pesar	p e s a ɾ					
-2680	Yaqui	Uto-Aztecan	WEIGH	pesaroa	pesaroa	p e s a r o a	Spanish	pesar			
+2680	Yaqui	Uto-Aztecan	WEIGH	pesaroa	pesaroa	p e s a r o a	Spanish	pesar	Spanish	p e s a ɾ	1108
 5568	Qeqchi	Mayan	WEIGH	b’isok	b’isok	ɓ i s o kʰ					
 7583	Otomi	Otomanguean	WEIGH	pesa	pesa	p e s a	Spanish	pesar	Spanish	p e s a ɾ	1108
 9208	ImbaburaQuechua	Quechuan	WEIGH	llashana	llashana	ʒ a ʃ a n a					
@@ -11533,7 +11533,7 @@ ID	DOCULECT	LANGUAGE_FAMILY	CONCEPT	VALUE	FORM	TOKENS	DONOR_LANGUAGE	DONOR_VALUE
 1173	Spanish	Indo-European	WEST	oeste	oeste	o ɛ s t e					
 1174	Spanish	Indo-European	WEST	poniente	poniente	p o n j e n t e					
 2726	Yaqui	Uto-Aztecan	WEST	bawebetana	bawebetana	b a w e b e t a n a					
-2727	Yaqui	Uto-Aztecan	WEST	oejte	oejte	o e j t e	Spanish	oeste			
+2727	Yaqui	Uto-Aztecan	WEST	oejte	oejte	o e j t e	Spanish	oeste	Spanish	o ɛ s t e	1173
 4073	ZinacantanTzotzil	Mayan	WEST	7olon	7olon	ʔ o l o n					
 4074	ZinacantanTzotzil	Mayan	WEST	maleb k’ak’al	maleb_k’ak’al	m a l e ɓ + kʼ a kʼ a l					
 5627	Qeqchi	Mayan	WEST	rokeb' saq'e	rokeb'_saq'e	r o k e ɓ + s a qʼ e					
@@ -11577,20 +11577,20 @@ ID	DOCULECT	LANGUAGE_FAMILY	CONCEPT	VALUE	FORM	TOKENS	DONOR_LANGUAGE	DONOR_VALUE
 5226	Qeqchi	Mayan	WHEAT	triiw (1)	triiw	t ɾ iː w	Spanish	trigo			
 7137	Otomi	Otomanguean	WHEAT	hogu̲t'e̲i	hogu̲t'e̲i	h o g u t̪ʼ æ i					
 7138	Otomi	Otomanguean	WHEAT	trigo	trigo	t̪ r i g o	Spanish	trigo			
-9009	ImbaburaQuechua	Quechuan	WHEAT	trigu	trigu	t ɾ i g u	Spanish	trigo			
+9009	ImbaburaQuechua	Quechuan	WHEAT	trigu	trigu	t ɾ i g u	Spanish	trigo	Spanish	t ɾ i ɣ o	781
 10199	Wichi	Matacoan	WHEAT	tiliwa	tiliwa	t i l i w a	Spanish	trigo			
 11483	Mapudungun	Araucanian	WHEAT	kachilla	kachilla	k a tʃ i ʎ a	Unidentified	Febrés: “cachilla, el trigo, por decir de Castilla, de donde les vino			
 1025	Spanish	Indo-European	WHEEL	rueda	rueda	r w e ð a					
 2615	Yaqui	Uto-Aztecan	WHEEL	rueram	rueram	r u e r a m	Spanish	rueda			
 3984	ZinacantanTzotzil	Mayan	WHEEL	karos	karos	k a ɾ o s	Spanish	carroza			
-5492	Qeqchi	Mayan	WHEEL	rueda	rueda	r u e d a	Spanish	rueda			
+5492	Qeqchi	Mayan	WHEEL	rueda	rueda	r u e d a	Spanish	rueda	Spanish	r w e ð a	1025
 5493	Qeqchi	Mayan	WHEEL	sursu	sursu	s u r s u					
 7495	Otomi	Otomanguean	WHEEL	tsant'i (1)	tsant'i	ts a n t̪ʼ i					
 7496	Otomi	Otomanguean	WHEEL	rweda	rweda	r w e d a	Spanish	rueda	Spanish	r w e ð a	1025
 9162	ImbaburaQuechua	Quechuan	WHEEL	rwida	rwida	ʐ w i d a	Spanish	rueda			
 10359	Wichi	Matacoan	WHEEL	mak kolo	mak_kolo	m a k + k o l o					
 11636	Mapudungun	Araucanian	WHEEL	chüngküll	chüngküll	tʃ ɨ ŋ k ɨ ʎ					
-11637	Mapudungun	Araucanian	WHEEL	rweda	rweda	ɻ w e θ a	Spanish	rueda			
+11637	Mapudungun	Araucanian	WHEEL	rweda	rweda	ɻ w e θ a	Spanish	rueda	Spanish	r w e ð a	1025
 1539	Spanish	Indo-European	WHEN	cuándo	cuándo	k w a n d o					
 3032	Yaqui	Uto-Aztecan	WHEN	jakko	jakko	j a k k o					
 4338	ZinacantanTzotzil	Mayan	WHEN	k’u 7ora	k’u_7ora	kʼ u + ʔ o ɾ a	Spanish	hora			
@@ -11647,7 +11647,7 @@ ID	DOCULECT	LANGUAGE_FAMILY	CONCEPT	VALUE	FORM	TOKENS	DONOR_LANGUAGE	DONOR_VALUE
 8171	Otomi	Otomanguean	WHISTLE	hu̲xi	hu̲xi	h u x i					
 8172	Otomi	Otomanguean	WHISTLE	hu̲xt'i	hu̲xt'i	h u x t̪ʼ i					
 8173	Otomi	Otomanguean	WHISTLE	hu̲xu̲nsa'ñe̲	hu̲xu̲nsa'ñe̲	h u x u n s a ˀɲ æ					
-9512	ImbaburaQuechua	Quechuan	WHISTLE	silbana	silbana	s i l b a n a	Spanish	silbar			
+9512	ImbaburaQuechua	Quechuan	WHISTLE	silbana	silbana	s i l b a n a	Spanish	silbar	Spanish	s i l β a ɾ	1550
 10731	Wichi	Matacoan	WHISTLE	iwuposeta	iwuposeta	i w u p o s e t a					
 12001	Mapudungun	Araucanian	WHISTLE	wikeñün	wikeñün	w i k e ɲ ɨ n					
 1369	Spanish	Indo-European	WHITE	blanco	blanco	b l a n k o					
@@ -11707,7 +11707,7 @@ ID	DOCULECT	LANGUAGE_FAMILY	CONCEPT	VALUE	FORM	TOKENS	DONOR_LANGUAGE	DONOR_VALUE
 3343	ZinacantanTzotzil	Mayan	WIDOWER	me7anal vinik	me7anal_vinik	m e ʔ a n a l + v i n i k	Tzeltal	me’ba winik			
 4629	Qeqchi	Mayan	WIDOWER	te’elch’ol	te’elch’ol	t e ʔ e l tʃʼ o l					
 6424	Otomi	Otomanguean	WIDOWER	‘rame	‘rame	ˀr a m e					
-8606	ImbaburaQuechua	Quechuan	WIDOWER	byudu	byudu	b j u d u	Spanish	viudo			
+8606	ImbaburaQuechua	Quechuan	WIDOWER	byudu	byudu	b j u d u	Spanish	viudo	Spanish	b j u ð o	175
 9756	Wichi	Matacoan	WIDOWER	tesa	tesa	t e s a					
 11044	Mapudungun	Araucanian	WIDOWER	ḻantu wentru	ḻantu_wentru	l̪ a n t u + w e n ʈʂ u					
 114	Spanish	Indo-European	WIFE	esposa	esposa	ɛ s p o s a					
@@ -11731,7 +11731,7 @@ ID	DOCULECT	LANGUAGE_FAMILY	CONCEPT	VALUE	FORM	TOKENS	DONOR_LANGUAGE	DONOR_VALUE
 710	Spanish	Indo-European	WINDOW	ventana	ventana	b e n t a n a					
 2379	Yaqui	Uto-Aztecan	WINDOW	bentaana	bentaana	b e n t aː n a	Spanish	ventana	Spanish	b e n t a n a	710
 3769	ZinacantanTzotzil	Mayan	WINDOW	ventana	ventana	v e n t a n a	Spanish	ventana	Spanish	b e n t a n a	710
-5161	Qeqchi	Mayan	WINDOW	b’entaan	b’entaan	ɓ e n t aː n	Spanish	ventana			
+5161	Qeqchi	Mayan	WINDOW	b’entaan	b’entaan	ɓ e n t aː n	Spanish	ventana	Spanish	b e n t a n a	710
 5162	Qeqchi	Mayan	WINDOW	rokeb’ iq’	rokeb’_iq’	r o k e ɓ + i qʼ					
 7056	Otomi	Otomanguean	WINDOW	hats’i	hats’i	h a tsʼ i					
 7057	Otomi	Otomanguean	WINDOW	bentanä	bentanä	b e n t̪ a n ɐ	Spanish	ventana	Spanish	b e n t a n a	710
@@ -11777,9 +11777,9 @@ ID	DOCULECT	LANGUAGE_FAMILY	CONCEPT	VALUE	FORM	TOKENS	DONOR_LANGUAGE	DONOR_VALUE
 4433	ZinacantanTzotzil	Mayan	WITNESS	reshtiko	reshtiko	ɾ e ʃ t i k o	Spanish	testigo			
 6188	Qeqchi	Mayan	WITNESS	testiig	testiig	t e s t iː g	Spanish	testigo			
 8411	Otomi	Otomanguean	WITNESS	ungu̲makwäni	ungu̲makwäni	u n g u m a kʷ ɐ n i					
-9603	ImbaburaQuechua	Quechuan	WITNESS	tistigu	tistigu	t i s t i g u	Spanish	testigo			
-10832	Wichi	Matacoan	WITNESS	testiwu	testiwu	t e s t i w u	Spanish	testigo			
-12082	Mapudungun	Araucanian	WITNESS	testiku	testiku	t e s t i k u	Spanish	testigo			
+9603	ImbaburaQuechua	Quechuan	WITNESS	tistigu	tistigu	t i s t i g u	Spanish	testigo	Spanish	t ɛ s t i ɣ o	1713
+10832	Wichi	Matacoan	WITNESS	testiwu	testiwu	t e s t i w u	Spanish	testigo	Spanish	t ɛ s t i ɣ o	1713
+12082	Mapudungun	Araucanian	WITNESS	testiku	testiku	t e s t i k u	Spanish	testigo	Spanish	t ɛ s t i ɣ o	1713
 279	Spanish	Indo-European	WOLF	lobo	lobo	l o β o					
 1998	Yaqui	Uto-Aztecan	WOLF	juya chu’u	juya_chu’u	j u j a + tʃ u ʔ u					
 4716	Qeqchi	Mayan	WOLF	lob’o	lob’o	l o ɓ o	Spanish	lobo	Spanish	l o β o	279
@@ -11929,7 +11929,7 @@ ID	DOCULECT	LANGUAGE_FAMILY	CONCEPT	VALUE	FORM	TOKENS	DONOR_LANGUAGE	DONOR_VALUE
 11851	Mapudungun	Araucanian	WRINKLED	müchamkalen	müchamkalen	m ɨ tʃ a m k a l e n					
 384	Spanish	Indo-European	WRIST	muɲeca	muɲeca	m u ɲ e k a					
 2094	Yaqui	Uto-Aztecan	WRIST	koomim	koomim	k oː m i m					
-2095	Yaqui	Uto-Aztecan	WRIST	munyeeka	munyeeka	m u n j eː k a	Spanish	muñeca			
+2095	Yaqui	Uto-Aztecan	WRIST	munyeeka	munyeeka	m u n j eː k a	Spanish	muñeca	Spanish	m u ɲ e k a	384
 3508	ZinacantanTzotzil	Mayan	WRIST	nuk’ k’obol	nuk’_k’obol	n u kʼ + kʼ o ɓ o l					
 4830	Qeqchi	Mayan	WRIST	kux uq'm	kux_uq'm	k u ʃ + u qʼ m					
 6684	Otomi	Otomanguean	WRIST	bots'u̲ndo'yo 'ye̲	bots'u̲ndo'yo_'ye̲	b o tsʼ u n d o ˀj o + ˀj æ					

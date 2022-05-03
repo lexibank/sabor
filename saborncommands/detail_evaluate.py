@@ -81,13 +81,14 @@ def report_metrics_table(metrics, file_name):
     print()
 
 
-def report_detail_evaluation(status_counts, file_name):
+def construct_detail_evaluation(status_counts):
     metrics = []
     for language, counts in status_counts.items():
         p, r, f, a = prf_(counts['tp'], counts['tn'], counts['fp'], counts['fn'])
         row = [language, counts['tp'], counts['tn'], counts['fp'], counts['fn'], p, r, f, a]
         metrics.append(row)
-    report_metrics_table(metrics, file_name)
+
+    return metrics
 
 
 def get_recipient_languages(wl, donors, family):
@@ -109,7 +110,8 @@ def evaluate_detection(wl,
                        donors,
                        family="language_family",
                        detection_status="det_status",
-                       filename=''):
+                       filename='',
+                       report=True):
 
     languages = get_recipient_languages(wl, donors, family)
 
@@ -125,39 +127,40 @@ def evaluate_detection(wl,
         overall_counts.update(counts)
     status_counts['Overall'] = overall_counts
 
-    report_detail_evaluation(status_counts, filename)
+    metrics = construct_detail_evaluation(status_counts)
+    summary = [round(val, 3) for val in metrics[-1][1:]]
 
-    # Print evaluation summary
-    tp, fp = overall_counts['tp'], overall_counts['fp']
-    tn, fn = overall_counts['tn'], overall_counts['fn']
+    if report:
+        report_metrics_table(metrics, filename)
+        # Print evaluation summary
+        tp, fp = overall_counts['tp'], overall_counts['fp']
+        tn, fn = overall_counts['tn'], overall_counts['fn']
+        print("Overall detection results for: {}".format(filename))
+        table = [
+                ["identified", tp, fp, tp+fp],
+                ["not identified", fn, tn, tn+fn],
+                ["total", tp+fn, fp+tn, tp+fp+tn+fn]
+                ]
+        print(tabulate(table, headers=["", "borrowed", "not borrowed", "total"]))
 
-    print("Overall detection results for: {}".format(filename))
-    table = [
-            ["identified", tp, fp, tp+fp],
-            ["not identified", fn, tn, tn+fn],
-            ["total", tp+fn, fp+tn, tp+fp+tn+fn]
-            ]
-    print(tabulate(table, headers=["", "borrowed", "not borrowed", "total"]))
+    return summary  # Return summary for use in other app.
 
 
 def register(parser):
     parser.add_argument("--file", action="store",
-                        default="store/pw-spa-NED-0.10.tsv")
+                        default="store/pw-spa-SCA-0.30.tsv")
     parser.add_argument("--prefix", action="store",
                         help="Evaluate all files in store with given prefix")
-    parser.add_argument("--donor", nargs="*", type=str,
-                        default=["Spanish", "Portuguese"],
-                        help='Donor language(s).')
 
 
 def run(args):
     SAB = SABOR()
 
     if args.prefix:  # Prefix for set of files in store.
-        for file in os.listdir(str(SAB.dir / "store")):
+        for file in sorted(os.listdir(str(SAB.dir / "store"))):
             if file.startswith(args.prefix):
                 wl = Wordlist(str(SAB.dir / "store" / file))
-                evaluate_detection(wl, donors=args.donor, filename=file)
+                evaluate_detection(wl, donors=["Spanish"], filename=file)
     else:  # Single file.
         wl = Wordlist(str(SAB.dir / args.file))
-        evaluate_detection(wl, donors=args.donor, filename=args.file)
+        evaluate_detection(wl, donors=["Spanish"], filename=args.file)

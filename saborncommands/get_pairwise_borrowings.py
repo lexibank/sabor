@@ -20,7 +20,7 @@ def sca_distance(seqA, seqB, **kw):
     return pair.alignments[0][-1]
 
 
-def edit_distance(seqA, seqB):
+def edit_distance(seqA, seqB, **kw):
     """
     Shortcut normalized edit distance.
     """
@@ -38,6 +38,7 @@ def pairwise_comparison(
         donor_id="source_id",
         func=None,
         threshold=0.45,
+        **kw
         ):
     """
     Find borrowings by carrying out a pairwise comparison of donor and target words.
@@ -81,7 +82,9 @@ def pairwise_comparison(
         hits = collections.defaultdict(list)
         for idxA in donor_indices:
             for idxB in target_indices:
-                score = func(wordlist[idxA, segments], wordlist[idxB, segments])
+
+                score = func(wordlist[idxA, segments],
+                             wordlist[idxB, segments], **kw)
                 if score < threshold:
                     hits[idxB] += [(idxA, score)]
         # we sort the hits, as we can have only one donor
@@ -124,74 +127,108 @@ def print_borrowings(wordlist):
     return borrowings
 
 
+def get_sabor_wordlist():
+    wl = Wordlist.from_cldf(
+        str(SABOR().cldf_dir / "cldf-metadata.json"),
+        columns=[
+            "language_id", "language_family",
+            "concept_name", "value", "form", "segments",
+            "donor_language", "donor_value"],
+    )
+    # donor_language and donor_value fields read as None when empty.
+    for idx in wl:
+        if wl[idx, "donor_language"] is None: wl[idx, "donor_language"] = ""
+        if wl[idx, "donor_value"] is None: wl[idx, "donor_value"] = ""
+    return wl
+
+
+def run_analysis(wl, name, donors, threshold, fname,
+                 log, report=True, **kw):
+    """
+    Shortcut for configuring and running the analysis.
+    **kw allows for experimentation with function arguments.
+    """
+
+    full_name = name + "-" + fname + "-{0:.2f}".format(threshold)
+    if report:
+        log.info("# ANALYSIS: T={0:.2f}, D={1}, F={2}".format(
+            threshold,
+            fname,
+            full_name))
+        log.info("## running experiment {0}".format(full_name))
+
+    function = {"NED": edit_distance,
+                "SCA": sca_distance}[fname]
+
+    pairwise_comparison(
+            wl, donors, func=function, threshold=threshold, **kw)
+
+    if report:
+        file_path = str(SABOR().dir / "store" / full_name)
+        wl.output("tsv", filename=file_path, prettify=False, ignore="all")
+        log.info("## wrote results to file")
+        log.info("## found {0} borrowings".format(
+            len([x for x in wl if wl[x, "source_id"]])))
+        log.info("---")
+
+
 def register(parser):
     add_format(parser, default="simple")
     parser.add_argument(
-            "--full",
-            action="store_true",
-            help="run the full analysis across various params"
-            )
+        "--full",
+        action="store_true",
+        help="run the full analysis across various params"
+        )
+    parser.add_argument(
+        "--demo",
+        action="store_true",
+        help="demonstrate donor prediction and WOLD source"
+        )
+    parser.add_argument(
+        "--function",
+        default="SCA",
+        choices=["SCA", "NED"],
+        help="select Needleman edit distance, or sound correspondence alignment"
+        )
+    parser.add_argument(
+        "--threshold",
+        default=0.3,
+        type=float,
+        help="enter <= threshold distance to determine whether likely borrowing"
+    )
 
 
 def run(args):
 
-    SAB = SABOR()
-
-    def get_sabor_wordlist():
-        wl = Wordlist.from_cldf(
-            str(SAB.cldf_dir / "cldf-metadata.json"),
-            columns=[
-                "language_id", "language_family",
-                "concept_name", "value", "form", "segments",
-                "donor_language", "donor_value"],
-        )
-        # donor_language and donor_value fields read as None when empty.
-        for idx in wl:
-            if wl[idx, "donor_language"] is None: wl[idx, "donor_language"] = ""
-            if wl[idx, "donor_value"] is None: wl[idx, "donor_value"] = ""
-        return wl
-
-    def run_analysis(name, donors, threshold, function, arg):
-        """
-        Shortcut for running the analysis.
-        """
-        wl = get_sabor_wordlist()
-        arg.log.info("## running experiment {0}".format(name))
-        pairwise_comparison(
-                wl, donors, func=function, threshold=threshold)
-        wl.output("tsv", filename=str(SAB.dir / "store" / name),
-                  prettify=False, ignore="all")
-        arg.log.info("## wrote results to file")
-        arg.log.info("## found {0} borrowings".format(
-            len([x for x in wl if wl[x, "source_id"]])))
-        arg.log.info("---")
-
     if args.full:
         for name, donors in [
-                ("pw-spa-por", ["Spanish", "Portuguese"]),
-                ("pw-spa", ["Spanish"]), ("pw-por", ["Portuguese"])]:
-            for threshold in [0.1, 0.2, 0.3, 0.4]:
-                for fname, func in [
-                        ("NED", edit_distance), 
-                        ("SCA", sca_distance)]:
-                    this_name = name + "-" + fname + "-{0:.2f}".format(threshold)
-                    args.log.info("# ANALYSIS: T={0:.2f}, D={1}, F={2}".format(
-                        threshold,
-                        fname,
-                        name))
+                ("pw-spa", ["Spanish"])]:  # Just Spanish donor language.
+            for threshold in [0.1, 0.2, 0.3, 0.4, 0.5, 0.6, 0.7, 0.8]:
+                for fname in ['NED', 'SCA']:
+                    wl = get_sabor_wordlist()
                     run_analysis(
-                            this_name,
-                            donors,
-                            threshold,
-                            func,
-                            args)
+                        wl,
+                        name=name,
+                        donors=donors,
+                        threshold=threshold,
+                        fname=fname,
+                        log=args.log)
     
-    else:
+    elif args.demo:
         wl = get_sabor_wordlist()
-
         args.log.info("loaded wordlist with {0} concepts and {1} languages".format(
             wl.height, wl.width))
         pairwise_comparison(wl, ["Spanish"])
-
         borrowings_cnt = print_borrowings(wl)
         args.log.info("Found {0} borrowings".format(borrowings_cnt))
+
+    else:
+        wl = get_sabor_wordlist()
+        run_analysis(
+            wl,
+            name="pw-spa",
+            donors=["Spanish"],
+            threshold=args.threshold,
+            fname=args.function,
+            log=args.log
+        )

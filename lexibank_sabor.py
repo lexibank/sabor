@@ -1,27 +1,26 @@
 import pathlib
-import zipfile
-import itertools
-import collections
+# import zipfile
+# import itertools
+# import collections
 
 import pycldf
-from cldfbench import CLDFSpec
+# from cldfbench import CLDFSpec
 from pylexibank import Dataset as BaseDataset
 from cltoolkit import Wordlist as CLWordlist
-from cldfzenodo import oai_lexibank
-from pyclts import CLTS
+# from cldfzenodo import oai_lexibank
+# from pyclts import CLTS
 from git import Repo, GitCommandError
-from csvw.dsv import reader
-import lingpy
+# from csvw.dsv import reader
+# import lingpy
 from clldutils.misc import slug
-from tabulate import tabulate
-from pathlib import Path
+# from tabulate import tabulate
+# from pathlib import Path
 
 
 from pylexibank import Concept, Lexeme, progressbar, FormSpec
 import attr
-from csvw.dsv import UnicodeWriter
-import json
-
+# from csvw.dsv import UnicodeWriter
+# import json
 
 
 @attr.s
@@ -36,7 +35,6 @@ class CustomLexeme(Lexeme):
     Donor_Language = attr.ib(default=None)
     Donor_Meaning = attr.ib(default=None)
     Donor_Value = attr.ib(default=None)
-
 
 
 class Dataset(BaseDataset):
@@ -87,10 +85,8 @@ class Dataset(BaseDataset):
                     ], 
                 ts=args.clts.api.bipa)
 
-        concepts = {}
-
         ids_languages = {
-                "ids-Portuguese": wl.languages["ids-178"], 
+                # "ids-Portuguese": wl.languages["ids-178"],
                 "ids-Spanish": wl.languages["ids-176"]
                 }
         concepts = {}
@@ -118,12 +114,12 @@ class Dataset(BaseDataset):
                         Value_in_Source=form.value,
                         Local_ID=form.id,
                         )
-        args.log.info("added spa and pt")
+        args.log.info("added {}".format(list(ids_languages.keys())))
 
         wold_languages = {}
         for language in wl.languages:
             if language.name in languages and language.id.startswith('wold-'):
-            # Some languages are in WOLD both as wold receiver and ids donor languages.
+                # Some languages are in WOLD both as wold receiver and ids donor languages.
                 wold_languages[language.name] = language
         for name, language in wold_languages.items():
             print("Added: name {name}, language {language}".format(
@@ -153,6 +149,5 @@ class Dataset(BaseDataset):
                             Age_Score=form.data["Age_score"],
                             Donor_Language=borrowings.get(form.id[5:], [""])[0],
                             Donor_Meaning=borrowings.get(form.id[5:], ["", ""])[1],
-                            Donor_Value=borrowings.get(form.id[5:], ["","",""])[2]
+                            Donor_Value=borrowings.get(form.id[5:], ["", "", ""])[2]
                             )
-
