@@ -21,6 +21,21 @@ from lingpy import Wordlist
 from lexibank_sabor import Dataset as SABOR
 
 
+def get_train_test_data(k_fold, folder):
+    # Yield train and test datasets from folder based on k_fold naming.
+    it = 0
+    while it < k_fold:
+        full_name = "CV{k:d}-fold-{it:02d}-train.tsv".format(k=k_fold, it=it)
+        file_path = str(SABOR().dir / folder / full_name)
+        train_wl = Wordlist(file_path)
+        full_name = "CV{k:d}-fold-{it:02d}-test.tsv".format(k=k_fold, it=it)
+        file_path = str(SABOR().dir / folder / full_name)
+        test_wl = Wordlist(file_path)
+
+        yield it, train_wl, test_wl
+        it += 1
+
+
 def get_sabor_wordlist():
     # From get_pairwise_borrowings.
     # How better to share function between commands?
@@ -135,12 +150,28 @@ def register(parser):
         default="splits",
         help="Folder to store train-test splits for k-fold cross-validations."
     )
+    parser.add_argument(
+        "--test",
+        action="store_true",
+        help="Demonstrate loading of train-test datasets in sequence."
+        )
 
 
 def run(args):
     wl = get_sabor_wordlist()
-    partitions = split_wordlist(wl, args.k, args.folder)
-    print("* Summary of k-fold train - test splits *")
-    print(tabulate(partitions, headers=["k-fold", "partition",
-                                        "# test concepts", "# test entries",
-                                        "# train concepts", "# train entries"]))
+    if args.test:
+        print("* Reporting {k} train-test splits *".format(k=args.k))
+        summary = []
+        for it, train_wl, test_wl in get_train_test_data(args.k, args.folder):
+            summary.append([it, test_wl.height, len(test_wl),
+                            train_wl.height, len(train_wl)])
+        print(tabulate(summary, headers=[
+            "partition", "test concepts", "test entries",
+            "train concepts", "train entries"]))
+
+    else:
+        partitions = split_wordlist(wl, args.k, args.folder)
+        print("* Constructed {k} train-test splits *".format(k=args.k))
+        print(tabulate(partitions, headers=[
+            "k-fold", "partition", "# test concepts",
+            "# test entries", "# train concepts", "# train entries"]))
