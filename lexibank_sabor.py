@@ -11,7 +11,7 @@ from cltoolkit import Wordlist as CLWordlist
 # from pyclts import CLTS
 from git import Repo, GitCommandError
 # from csvw.dsv import reader
-# import lingpy
+import lingpy
 from clldutils.misc import slug
 # from tabulate import tabulate
 # from pathlib import Path
@@ -151,3 +151,19 @@ class Dataset(BaseDataset):
                             Donor_Meaning=borrowings.get(form.id[5:], ["", ""])[1],
                             Donor_Value=borrowings.get(form.id[5:], ["", "", ""])[2]
                             )
+
+
+def get_our_wordlist():
+    wl = lingpy.Wordlist.from_cldf(
+        str(Dataset().cldf_dir / "cldf-metadata.json"),
+        columns=[
+            "language_id", "language_family",
+            "concept_name", "value", "form", "segments",
+            "donor_language", "donor_value"],
+    )
+    # donor_language and donor_value fields read as None when empty.
+    for idx in wl:
+        if wl[idx, "donor_language"] is None: wl[idx, "donor_language"] = ""
+        if wl[idx, "donor_value"] is None: wl[idx, "donor_value"] = ""
+    return wl
+
