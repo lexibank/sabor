@@ -1,26 +1,17 @@
 import pathlib
-# import zipfile
-# import itertools
-# import collections
 
 import pycldf
-# from cldfbench import CLDFSpec
 from pylexibank import Dataset as BaseDataset
 from cltoolkit import Wordlist as CLWordlist
-# from cldfzenodo import oai_lexibank
-# from pyclts import CLTS
 from git import Repo, GitCommandError
-# from csvw.dsv import reader
 import lingpy
 from clldutils.misc import slug
-# from tabulate import tabulate
-# from pathlib import Path
 
 
 from pylexibank import Concept, Lexeme, progressbar, FormSpec
 import attr
-# from csvw.dsv import UnicodeWriter
-# import json
+
+import collections
 
 
 @attr.s
@@ -166,4 +157,131 @@ def get_our_wordlist():
         if wl[idx, "donor_language"] is None: wl[idx, "donor_language"] = ""
         if wl[idx, "donor_value"] is None: wl[idx, "donor_value"] = ""
     return wl
+
+
+def sds_by_concept(donors, targets, func, threshold):
+    """
+    Function applies the pairwise comparison and returns a dictionary with \
+            the results per item."""
+
+    # hits is a dictionary with target ID as key and list of possible donor
+    # candidate ids as value 
+    hits = collections.defaultdict(list)
+    for idxA, tksA in donors.items():
+        for idxB, tksB in targets.items():
+            score = func(tksA, tksB)
+            if score < threshold:
+                hits[idxB] += [(idxA, score)]
+    # we sort the hits, as we can have only one donor
+    out = {}
+    for hit, pairs in hits.items():
+        out[hit] = sorted(pairs, key=lambda x: x[1])[0][0]
+    return out
+
+
+def simple_donor_search(
+        wordlist,
+        donors,
+        family="language_family",
+        concept="concept",
+        segments="tokens",
+        donor_lng="source_language",
+        donor_id="source_id",
+        func=None,
+        threshold=0.45,
+        **kw
+        ):
+    """
+    Find borrowings by carrying out a pairwise comparison of donor and target words.
+
+    :param wordlist: LingPy wordlist.
+    :param donors: Donor languages, passed as a list.
+    :param family: Column in which language family information is given in the wordlist.
+    :param concept: Column in which concept information is given in the wordlist.
+    :param segments: Column in which segmented IPA tokens are given in the wordlist.
+    :param donor_lng: Column to which information on predicted donor languages will
+      be written (defaults to "source_language").
+    :param donor_id: Column to which we write information on the ID of the predicted donor.
+    :param func: Function comparing two sequences and returning a distance
+      score (defaults to sca_distance).
+    :param threshold: Threshold, at which we recognize a word as being borrowed.
+    """
+    func = func or sca_distance
+
+    # get concept slots from the data (in case we use broader concepts by clics
+    # communities), we essentially already split data in donor indices and
+    # target indices by putting them in a list.
+    donor_families = {fam for (ID, lang, fam)
+                      in wordlist.iter_rows('doculect', family)
+                      if lang in donors}
+
+    concepts = {concept: [[], []] for concept in set(
+        [wordlist[idx, concept] for idx in wordlist])}
+    for idx in wordlist:
+        if wordlist[idx, "doculect"] in donors:
+            concepts[wordlist[idx, concept]][0] += [idx]
+        # languages from donor families are not target languages.
+        elif wordlist[idx, family] not in donor_families:
+            concepts[wordlist[idx, concept]][1] += [idx]
+
+    # iterate over concepts and identify potential borrowings
+    B = {idx: 0 for idx in wordlist}
+    for concept, (donor_indices, target_indices) in progressbar(concepts.items(), 
+            desc="searching for borrowings"):
+        # hits is a dictionary with target ID as key and list of possible donor
+        # candidate ids as value 
+        hits = sds_by_concept(
+                {idx: wordlist[idx, segments] for idx in donor_indices},
+                {idx: wordlist[idx, segments] for idx in target_indices},
+                func,
+                threshold
+                )
+        # we sort the hits, as we can have only one donor
+        for hit, prediction in hits.items():
+            B[hit] = prediction
+
+    wordlist.add_entries(
+            donor_lng, B, lambda x: wordlist[x, "doculect"] if x != 0 else "")
+    wordlist.add_entries(
+            donor_id, B, lambda x: x if x != 0 else "")
+
+
+def sca_distance(seqA, seqB, **kw):
+    """
+    Shortcut for computing SCA distances from two strings.
+    """
+
+    pair = lingpy.Pairwise(seqA, seqB)
+    pair.align(distance=True, **kw)
+
+    return pair.alignments[0][-1]
+
+
+def edit_distance(seqA, seqB, **kw):
+    """
+    Shortcut normalized edit distance.
+    """
+    return lingpy.edit_dist(seqA, seqB, normalized=True)
+
+
+def evaluate_borrowings_fs(wordlist, pred, gold, donors, donor_families, family="family"):
+    """
+    Return F-Scores for the donor detection.
+    """
+    # Defensive programming:
+    # Check for None and be sure of pred versus gold.
+    # Return F1 score overall.
+    # Evaluation wordlist is from parent.
+    fn = fp = tn = tp = 0
+    for idx, pred_lng, gold_lng in wordlist.iter_rows(pred, gold):
+        if wordlist[idx, family] not in donor_families:
+            if not pred_lng:
+                if not gold_lng: tn += 1
+                elif gold_lng in donors: fn += 1
+                else: tn += 1
+            elif pred_lng:
+                if not gold_lng: fp += 1
+                elif gold_lng in donors: tp += 1
+                else: fp += 1
+    return tp/(tp + (fp + fn)/2)
 

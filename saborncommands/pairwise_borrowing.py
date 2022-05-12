@@ -13,189 +13,124 @@ import copy
 import csv
 
 from lexibank_sabor import Dataset as SABOR
-from lexibank_sabor import get_our_wordlist
+from lexibank_sabor import (
+        get_our_wordlist, sca_distance, edit_distance,
+        simple_donor_search,
+        evaluate_borrowings_fs, 
+        sds_by_concept)
 
 import collections
 from lingpy import *
 from pylexibank import progressbar as pb
 
 
-# static helper for is float convertible
-def is_float(num):
-    try:
-        float(num)
-        return True
-    except ValueError:
-        return False
 
-# ============================================
-# Definition of command and related functions.
-# ============================================
-def sca_distance(seqA, seqB, **kw):
-    """
-    Shortcut for computing SCA distances from two strings.
-    """
-
-    pair = Pairwise(seqA, seqB)
-    pair.align(distance=True, **kw)
-
-    return pair.alignments[0][-1]
-
-
-def edit_distance(seqA, seqB, **kw):
-    """
-    Shortcut normalized edit distance.
-    """
-    return edit_dist(seqA, seqB, normalized=True)
-
-
-def pairwise_comparison(
-        wordlist,
-        donors,
-        family="language_family",
-        concept="concept",
-        segments="tokens",
-        donor_lng="source_language",
-        donor_id="source_id",
-        func=None,
-        threshold=0.45,
-        **kw
-        ):
-    """
-    Find borrowings by carrying out a pairwise comparison of donor and target words.
-
-    :param wordlist: LingPy wordlist.
-    :param donors: Donor languages, passed as a list.
-    :param family: Column in which language family information is given in the wordlist.
-    :param concept: Column in which concept information is given in the wordlist.
-    :param segments: Column in which segmented IPA tokens are given in the wordlist.
-    :param donor_lng: Column to which information on predicted donor languages will
-      be written (defaults to "source_language").
-    :param donor_id: Column to which we write information on the ID of the predicted donor.
-    :param func: Function comparing two sequences and returning a distance
-      score (defaults to sca_distance).
-    :param threshold: Threshold, at which we recognize a word as being borrowed.
-    """
-    func = func or sca_distance
-
-    # get concept slots from the data (in case we use broader concepts by clics
-    # communities), we essentially already split data in donor indices and
-    # target indices by putting them in a list.
-    donor_families = {fam for (ID, lang, fam)
-                      in wordlist.iter_rows('doculect', family)
-                      if lang in donors}
-
-    concepts = {concept: [[], []] for concept in set(
-        [wordlist[idx, concept] for idx in wordlist])}
-    for idx in wordlist:
-        if wordlist[idx, "doculect"] in donors:
-            concepts[wordlist[idx, concept]][0] += [idx]
-        # languages from donor families are not target languages.
-        elif wordlist[idx, family] not in donor_families:
-            concepts[wordlist[idx, concept]][1] += [idx]
-
-    # iterate over concepts and identify potential borrowings
-    B = {idx: 0 for idx in wordlist}
-    for concept, (donor_indices, target_indices) in pb(concepts.items(), 
-            desc="searching for borrowings"):
-        # hits is a dictionary with target ID as key and list of possible donor
-        # candidate ids as value 
-        hits = collections.defaultdict(list)
-        for idxA in donor_indices:
-            for idxB in target_indices:
-
-                score = func(wordlist[idxA, segments],
-                             wordlist[idxB, segments], **kw)
-                if score < threshold:
-                    hits[idxB] += [(idxA, score)]
-        # we sort the hits, as we can have only one donor
-        for hit, pairs in hits.items():
-            B[hit] = sorted(pairs, key=lambda x: x[1])[0][0]
-
-    wordlist.add_entries(
-            donor_lng, B, lambda x: wordlist[x, "doculect"] if x != 0 else "")
-    wordlist.add_entries(
-            donor_id, B, lambda x: x if x != 0 else "")
-
-
-
-class PairwiseBorrowing(Wordlist):
+class SimpleDonorSearch(Wordlist):
     def __init__(
             self, 
             infile,
-            donor,
+            donors,
             func=None,
             family="family",
             segments="tokens",
             known_donor="donor_language",
             **kw
             ):
+        """
+        Function allows to test thresholds to identify borrowings with the \
+                simple_donor_search function.
+        """
         Wordlist.__init__(self, infile, **kw)
         if not func:
             self.func = lambda x, y: sca_distance(x, y)
         else:
             self.func = func
-            
-        self.donor = donor
+        self.donors = [donors] if isinstance(donors, str) else donors
 
         # Define wordlist field names.
         self.family = family
         self.segments = segments
         self.known_donor = known_donor
-        self.donor_family = [fam for (ID, lang, fam)
+        self.donor_families = {fam for (ID, lang, fam)
                         in self.iter_rows('doculect', self.family)
-                        if lang == self.donor][0]
+                        if lang in self.donors}
     
-    def train(self, thresholds=None):
+
+    def train(self, thresholds=None, verbose=False):
         """
         Train the threshold on the current data.
         """
         thresholds = thresholds or [i*0.1 for i in range(1, 10)]
+        
+        # calculate distances between all pairs, only once, afterwards make a
+        # function out of it, so we can pass this to the simple_donor_search
+        # function
+        D = {}
+        for concept in self.concepts:
+            idxs = self.get_list(row=concept, flat=True)
+            donors = [idx for idx in idxs if self[idx, self.family] in \
+                    self.donor_families]
+            recips = [idx for idx in idxs if idx not in donors]
+            for idxA in donors:
+                for idxB in recips:
+                    tksA, tksB = self[idxA, self.segments], self[
+                            idxB, self.segments]
+                    D[str(tksA), str(tksB)] = self.func(tksA, tksB)
+        new_func = lambda x, y: D[str(x), str(y)]
+        if verbose: print("computed distances")
+
         best_t, best_e = 0, 0
         for i, threshold in enumerate(thresholds):
-            print("analyzing {0:.2f}".format(threshold))
+            if verbose: print("analyzing {0:.2f}".format(threshold))
             tidx = "t_"+str(i+1)
-            pairwise_comparison(
+            simple_donor_search(
                     self,
-                    [self.donor],
+                    self.donors,
                     family=self.family,
-                    #concept=self.columns[self._rowidx],
+                    concept=self._row_name,
                     segments="tokens",
                     donor_lng=tidx+"_lng",
                     donor_id=tidx+"_id",
-                    func=self.func,
+                    func=new_func,
                     threshold=threshold
                     )
-            fs = self.evaluate_borrowings(tidx+"_lng", self.known_donor)
+            fs = evaluate_borrowings_fs(
+                    self, 
+                    tidx+"_lng", 
+                    self.known_donor,
+                    self.donors,
+                    self.donor_families,
+                    family=self.family
+                    )
             if fs > best_e:
                 best_t = threshold
                 best_e = fs
-            print("... {0:.2f}".format(fs))
+            if verbose: print("... {0:.2f}".format(fs))
         self.best_t = best_t
 
-    def evaluate_borrowings(self, pred, gold):
+    def predict(self, donors, targets):
         """
-        Return F-Scores for the donor detection.
+        Predict borrowings for one concept.
         """
-        # Defensive programming:
-        # Check for None and be sure of pred versus gold.
-        # Return F1 score overall.
-        # Evaluation wordlist is from parent.
-        fn = fp = tn = tp = 0
-        for idx, pred_lng, gold_lng in self.iter_rows(pred, gold):
-            if self[idx, self.family] != self.donor_family:
-                if not pred_lng:
-                    if not gold_lng: tn += 1
-                    elif gold_lng == self.donor: fn += 1
-                    else: tn += 1
-                elif pred_lng:
-                    if not gold_lng: fp += 1
-                    elif gold_lng == self.donor: tp += 1
-                    else: fp += 1
+        return sds_by_concept(donors, targets, self.func, self.best_t)
 
-        return tp/(tp + (fp + fn)/2)
-
-
+    def predict_on_wordlist(
+            self, wordlist, donor_lng="source_language", 
+            donor_id="source_id"):
+        """
+        Predict for an entire wordlist.
+        """
+        simple_donor_search(
+                wordlist,
+                self.donors,
+                family=self.family,
+                concept=self._row_name,
+                segments=self.segments,
+                donor_lng=donor_lng,
+                donor_id=donor_id,
+                func=self.func,
+                threshold=self.best_t)
+        
 
 def run_analysis(pairwise, name, threshold, log, report=True):
     """
@@ -267,10 +202,19 @@ def register(parser):
 def run(args):
     wl = get_our_wordlist()
     args.log.info("loaded wordlist")
-    bor = PairwiseBorrowing(
-            wl, donor="Spanish", func=sca_distance, family="language_family")
-    bor.train()
+    bor = SimpleDonorSearch(
+            wl, donors="Spanish", func=sca_distance, family="language_family")
+    bor.train(verbose=True, thresholds=[i*0.05 for i in range(1,20)])
     print("best threshold is {0:.2f}".format(bor.best_t))
+    hits = bor.predict(
+            {"Spanish": ["m", "a", "n", "o"]}, 
+            {
+                "FakeX": ["m", "a", "n", "u", "ʃ", "k", "a"],
+                "FakeY": ["p", "e", "p", "e", "l"]
+                }
+            )
+    for idx, donor in hits.items():
+        print(idx, donor)
     #function = {"NED": edit_distance,
     #            "SCA": sca_distance}[args.function]
     #donor = "Spanish"
