@@ -285,3 +285,7 @@ def evaluate_borrowings_fs(wordlist, pred, gold, donors, donor_families, family=
                 else: fp += 1
     return tp/(tp + (fp + fn)/2)
 
+
+def our_path(*comps):
+    ds = Dataset()
+    return Dataset().dir.joinpath(*comps).as_posix()
