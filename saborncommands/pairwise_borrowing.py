@@ -1,17 +1,6 @@
 """
-Pairwise alignment method approach to borrowing detection between
-donor (intruder) language and multiple receiver (target) languages.
-
-Using LingPy wordlists.
-
-May 6, 2022
+Simple Donor Search based on pairwise sequence comparison.
 """
-
-import tempfile
-from pathlib import Path
-import copy
-import csv
-
 from lexibank_sabor import Dataset as SABOR
 from lexibank_sabor import (
         get_our_wordlist, sca_distance, edit_distance,
@@ -19,10 +8,7 @@ from lexibank_sabor import (
         evaluate_borrowings_fs, 
         sds_by_concept)
 
-import collections
 from lingpy import *
-from pylexibank import progressbar as pb
-
 
 
 class SimpleDonorSearch(Wordlist):
@@ -42,7 +28,7 @@ class SimpleDonorSearch(Wordlist):
         """
         Wordlist.__init__(self, infile, **kw)
         if not func:
-            self.func = lambda x, y: sca_distance(x, y)
+            self.func = sca_distance
         else:
             self.func = func
         self.donors = [donors] if isinstance(donors, str) else donors
