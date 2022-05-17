@@ -15,6 +15,34 @@ import lingrex
 from lingrex import borrowing
 
 
+def form_lexstat(donors, targets, families):
+    """
+    Function applies cognate-based or multi-threshold cognate-based
+    borrowing detection and returns a dictionary with per item results.
+    :param donors:
+    :type donors:
+    :param families:
+    :param targets:
+    :type targets:
+    :return: simple wordlist.
+    """
+
+    # Construct wordlist: dictionary with consecutive integers as keys
+    # and lists as values with the key 0 specifying the header.
+    wl = {0: ['ID', 'DOCULECT', 'LANGUAGE_FAMILY', 'CONCEPT', 'TOKENS']}
+    id_ = 1
+    for doculect, segments in donors.items():
+        fam = families[doculect] if doculect in families else doculect + "_fam"
+        wl[id_] = [id_, doculect, fam, 'undefined', segments]
+        id_ += 1
+    for doculect, segments in targets.items():
+        fam = families[doculect] if doculect in families else doculect + "_fam"
+        wl[id_] = [id_, doculect, fam, 'undefined', segments]
+        id_ += 1
+
+    return LexStat(wl)
+
+
 def multi_threshold_based_donor_search(
         wl,
         donors=None,
@@ -311,10 +339,32 @@ class CognateBasedBorrowingDetection(LexStat):
         self.best_threshold = best_t
         self.best_f1score = best_fs
 
-    def predict(self, donors, targets, wordlist, verbose=False):
-        ...
+    def predict(self, donors, targets, families, verbose=False):
+        """
+        Predict borrowings for one concept for
+        given function and trained threshold setting.
+        :param donors:
+        :param targets:
+        :param verbose:
+        :param families:
+        :return:
+        """
+        wl = form_lexstat(donors, targets, families)
+        self.predict_on_wordlist(wl, verbose=True)
+
+        for id_, target, segments, donor, donor_id in wl.iter_rows(
+                'doculect', self.segments, self.donor_lng, self.donor_id):
+            if donor:
+                print("{t}: {d}, {s}: {ds}".format(
+                    t=target, d=donor, s=segments,
+                    ds=wl[donor_id, self.segments]))
 
     def predict_on_wordlist(self, wordlist, verbose=False):
+        """
+        Predict for an entire wordlist using trained threshold setting.
+        :param wordlist:
+        :param verbose:
+        """
         cognate_based_donor_search(
             wl=wordlist,
             donors=self.donors,
@@ -327,7 +377,7 @@ class CognateBasedBorrowingDetection(LexStat):
 
 
 def run(args):
-    # wl = get_our_wordlist()
+    wl = get_our_wordlist()
     # print(wl.height, wl.width, len(wl), wl.columns)
     # bor = CognateBasedBorrowingDetection(
     #     wl, donors="Spanish", family="language_family")
@@ -405,11 +455,27 @@ def run(args):
     #     prettify=False, ignore="all")
 
     # Multi-threshold based borrowing detection.
-    wl = LexStat(our_path("splits", "CV10-fold-00-train.tsv"))
+    # wl = LexStat(our_path("splits", "CV10-fold-00-train.tsv"))
+    # bor = CognateBasedBorrowingDetection(
+    #     wl, func=mtbds_sca, donors="Spanish", family="language_family")
+    # bor.train(verbose=True)
+    # bor.output(
+    #     'tsv',
+    #     filename=our_path("store", "CL-partial-sca-mtbds-CV10-fold-00-train"),
+    #     prettify=False, ignore="all")
+
+    # Test predict borrowing for concept.
+    wl = LexStat(wl)
     bor = CognateBasedBorrowingDetection(
         wl, func=mtbds_sca, donors="Spanish", family="language_family")
-    bor.train(verbose=True)
-    bor.output(
-        'tsv',
-        filename=our_path("store", "CL-partial-sca-mtbds-CV10-fold-00-train"),
-        prettify=False, ignore="all")
+    bor.train(thresholds=[0.4], verbose=True)
+    bor.predict(
+        donors={"Spanish": ["m", "a", "n", "o"]},
+        targets={"FakeX": ["m", "a", "n", "u", "ʃ", "k", "a"],
+                 "FakeY": ["p", "e", "p", "e", "l"],
+                 "FakeZ": ["a", "b", "m", "a", "n", "u"],
+                 "RealY":  ["p", "a", "p", "e", "r"]},
+        families={"Spanish": "IndoEuropean",
+                  "FakeX": "FamA", "FakeY": F"FamB",
+                  "FakeZ": "FamA", "RealY": "FamB"})
+
