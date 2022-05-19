@@ -53,6 +53,7 @@ class ClassifierBasedBorrowingDetection(LexStat):
         LexStat.__init__(self, infile, ipa=ipa, segments=segments, **kw)
         self.clf = clf or SVC(kernel="linear")
         self.funcs = funcs or [clf_sca, clf_ned]
+        print("self.funcs", self.funcs)
         self.props = props or [
                 lambda x, y: y.cols.index(y[x, "doculect"]),
                 lambda x, y: len(y[x, "tokens"])
@@ -120,7 +121,7 @@ class ClassifierBasedBorrowingDetection(LexStat):
             out[hit] = (out[hit][0], out[hit][1][0])
         return out
 
-    def predict_wordlist(self, wordlist):
+    def predict_on_wordlist(self, wordlist):
         B = {idx: "" for idx in wordlist}
         for concept in wordlist.rows:
             idxs = wordlist.get_list(row=concept, flat=True)
@@ -145,11 +146,11 @@ def run(args):
 
     args.log.info("loaded wordlist")
     bor = ClassifierBasedBorrowingDetection(
-            wl, donors="Spanish", func=sca_distance, family="language_family",
+            wl, donors="Spanish", funcs=[clf_sca], family="language_family",
             clf=SVC(kernel="linear")
             )
     bor.fit(verbose=True)
-    bor.predict_wordlist(wl2)
+    bor.predict_on_wordlist(wl2)
     print(evaluate_borrowings_fs(
         wl2,
         "source_language",

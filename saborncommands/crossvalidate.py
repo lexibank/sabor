@@ -12,13 +12,18 @@ John E. Miller, May 18, 2022
 from functools import partial
 import statistics
 from tabulate import tabulate
-from lingpy import Wordlist
+from lingpy import Wordlist, LexStat
 from lexibank_sabor import our_path
 from lexibank_sabor import (sca_distance, edit_distance)
-from saborncommands import pairwise_borrowing
+from saborncommands import (closest, cognate)
 
 
-# Constructor for closest match method for use in cross-validation.
+# Constructors for use in cross-validation.
+#
+# To do: See if there is a way to just pass class and dictionary
+#        instead of this redundancy for each method.
+#
+# Constructor for closest match method.
 def closest_match_constructor(infile,
                               donors,
                               func,
@@ -26,13 +31,35 @@ def closest_match_constructor(infile,
                               segments="tokens",
                               known_donor="donor_language",
                               **kw):
-    return pairwise_borrowing.SimpleDonorSearch(
+    return closest.SimpleDonorSearch(
+        infile,
+        donors=donors,
+        func=func,
+        family=family,
+        segments=segments,
+        known_donor=known_donor,
+        **kw
+    )
+
+
+# Constructor for cognate based method.
+def cognate_based_constructor(infile,
+                              donors,
+                              func,
+                              family="language_family",
+                              segments="tokens",
+                              # ipa="form",
+                              # donor_lng="source_language",
+                              # donor_id="source_id",
+                              known_donor="donor_language",
+                              **kw):
+    return cognate.CognateBasedBorrowingDetection(
         infile,
         donors,
-        func,
-        family,
-        segments,
-        known_donor,
+        func=func,
+        family=family,
+        segments=segments,
+        known_donor=known_donor,
         **kw
     )
 
@@ -88,10 +115,10 @@ def evaluate_fold(constructor, dir, k, fold):
 
     detector = constructor(file_path)
     detector.train(verbose=False)
-    wl = Wordlist(file_path)
-    detector.predict_on_wordlist(wl)
+    # wl = Wordlist(file_path)
+    detector.predict_on_wordlist(detector)
     results_train = evaluate_borrowings(
-        wl,
+        detector,
         pred="source_language",
         gold=detector.known_donor,
         donors=detector.donors,
@@ -99,11 +126,15 @@ def evaluate_fold(constructor, dir, k, fold):
         family=detector.family)
     results_train["threshold"] = detector.best_t
     results_train["fold"] = fold
+    # print(results_train)
 
     test_name = "CV{k:d}-fold-{it:02d}-test.tsv".format(k=k, it=fold)
     file_path = our_path(dir, test_name)
 
-    wl = Wordlist(file_path)
+    wl = LexStat(file_path) if isinstance(detector, LexStat) \
+        else Wordlist(file_path)
+
+    # wl = Wordlist(file_path)
     detector.predict_on_wordlist(wl)
     results_test = evaluate_borrowings(
         wl,
@@ -130,13 +161,15 @@ def evaluate_k_fold(constructor, dir, k):
     """
 
     cross_val = []
+    print("folds: ")
     for fold in range(k):
         results = evaluate_fold(
             constructor, dir=dir, k=k, fold=fold)
-        print(fold, results)
+        # print(fold, results)
+        print(fold, ' ')
         results["fold"] = fold
         cross_val.append(results)
-
+    print()
     means = dict()
     stdevs = dict()
     for key in cross_val[0].keys():
@@ -176,32 +209,59 @@ def register(parser):
         type=str,
         nargs="*",
         default="Spanish",
-        help="donor languages for focused analysis."
+        help="Donor languages for focused analysis."
+    )
+    parser.add_argument(
+        "--method",
+        type=str,
+        default="cmsca",
+        choices=['cmsca', 'cmned', 'cbcbsca', 'cbmtlex'],
+        help="Code for borrowing detection method."
     )
 
 
 def run(args):
-    cmc_sca = partial(closest_match_constructor,
-                      func=sca_distance,
-                      donors=args.donors)
+    cmsca = partial(closest_match_constructor,
+                    func=sca_distance,
+                    donors=args.donors)
 
-    cmc_ned = partial(closest_match_constructor,
-                      func=edit_distance,
+    cmned = partial(closest_match_constructor,
+                    func=edit_distance,
+                    donors=args.donors)
+
+    cbcbsca = partial(cognate_based_constructor,
+                      func=cognate.cbds_sca,
                       donors=args.donors)
-    constructor = cmc_sca
+    cbcbsca.keywords['func'].__name__ = 'cognate_based_cognate_sca'
+
+    cbmtlex = partial(cognate_based_constructor,
+                      func=cognate.mtbds_lex,
+                      donors=args.donors)
+    cbmtlex.keywords['func'].__name__ = 'cognate_based_multi_threshold_lexstat'
+
+    methods = {'cmsca': cmsca, 'cmned': cmned,
+               'cbcbsca': cbcbsca, 'cbmtlex': cbmtlex}
+
+    constructor = methods[args.method]
+    func_name = constructor.keywords['func'].__name__
 
     if args.fold is not None:
-        args.log.info("One-shot cross-validation on fold {f} "
-                      "of {k}-folds on {d} directory".
-                      format(f=args.fold, k=args.k, d=args.dir))
+        description = "Cross-validation fold {f} of {k}-folds " \
+                      "on {d} directory using {fn}".\
+            format(f=args.fold, k=args.k, d=args.dir, fn=func_name)
+        args.log.info(description)
         results = evaluate_fold(constructor, dir=args.dir,
                                 k=args.k, fold=args.fold)
+        print(description)
         print(results)
     else:
-        args.log.info("{k}-fold cross-validation on {d} directory.".
-                      format(k=args.k, d=args.dir))
+        description = "{k}-fold cross-validation " \
+                      "on {d} directory using {fn}.".\
+            format(k=args.k, d=args.dir, fn=func_name)
+        args.log.info(description)
         results = evaluate_k_fold(constructor, dir=args.dir, k=args.k)
 
+        print(description)
         print(tabulate(results, headers='keys',
                        floatfmt=('.1f', '.1f', '.1f', '.1f',
                                  '.3f', '.3f', '.3f', '.3f', '.3f', '.2f')))

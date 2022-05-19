@@ -190,7 +190,7 @@ def run(args):
     args.log.info("loaded wordlist")
     bor = SimpleDonorSearch(
             wl, donors="Spanish", func=sca_distance, family="language_family")
-    bor.train(verbose=True, thresholds=[i*0.05 for i in range(1,20)])
+    bor.train(verbose=True, thresholds=[i*0.05 for i in range(1, 20)])
     print("best threshold is {0:.2f}".format(bor.best_t))
     hits = bor.predict(
             {"Spanish": ["m", "a", "n", "o"]}, 
@@ -237,3 +237,21 @@ def run(args):
     #    wl.output("tsv", filename=file_path, prettify=False, ignore="all",
     #              subset=True, cols=cols)
 
+    # bor.predict_on_wordlist(wl)
+    # file_path = 'store/test-new-predict'
+    # wl.output('tsv', filename=file_path, prettify=False, ignore="all")
+    #
+    # bor = SimpleDonorSearch(
+    #     'splits/CV10-fold-00-train.tsv', donors="Spanish",
+    #     func=sca_distance, family="language_family")
+    # bor.train(verbose=True, thresholds=[i*0.02 for i in range(1, 50)])
+    # print("best threshold is {0:.2f}".format(bor.best_t))
+    # bor.predict_on_wordlist(bor)
+    # file_path = 'store/test-new-predict-CV10-fold-00-train'
+    # bor.output('tsv', filename=file_path, prettify=False, ignore="all")
+    #
+    # # Need to create wordlist because predict does not convert infile to wordlist.
+    # wl = Wordlist('splits/CV10-fold-00-test.tsv')
+    # bor.predict_on_wordlist(wl)
+    # file_path = 'store/test-new-predict-CV10-fold-00-test'
+    # wl.output('tsv', filename=file_path, prettify=False, ignore="all")
