@@ -12,10 +12,11 @@ John E. Miller, May 18, 2022
 from functools import partial
 import statistics
 from tabulate import tabulate
+from sklearn.svm import SVC
 from lingpy import Wordlist, LexStat
-from lexibank_sabor import our_path
+from lexibank_sabor import (our_path, evaluate_borrowings)
 from lexibank_sabor import (sca_distance, edit_distance)
-from saborncommands import (closest, cognate)
+from saborncommands import (closest, cognate, classifier)
 
 
 # Constructors for use in cross-validation.
@@ -48,9 +49,6 @@ def cognate_based_constructor(infile,
                               func,
                               family="language_family",
                               segments="tokens",
-                              # ipa="form",
-                              # donor_lng="source_language",
-                              # donor_id="source_id",
                               known_donor="donor_language",
                               **kw):
     return cognate.CognateBasedBorrowingDetection(
@@ -64,40 +62,27 @@ def cognate_based_constructor(infile,
     )
 
 
-def evaluate_borrowings(wordlist, pred, gold, donors,
-                        donor_families, family="family",
-                        beta=1.0):
-    """
-    Return F and related scores for the donor detection.
-    """
-    # Check for None and be sure of pred versus gold.
-    # Return tp, tn, fp, fn, precision, recall, f1score, accuracy.
-    # Evaluation wordlist is from predict function of analysis method.
-    fn = fp = tn = tp = 0
-
-    for idx, pred_lng, gold_lng in wordlist.iter_rows(pred, gold):
-        if wordlist[idx, family] not in donor_families:
-            if not pred_lng:
-                if not gold_lng: tn += 1
-                elif gold_lng in donors: fn += 1
-                else: tn += 1
-            elif pred_lng:
-                if not gold_lng: fp += 1
-                elif gold_lng in donors: tp += 1
-                else: fp += 1
-    precision = tp/(tp + fp)
-    recall = tp/(tp + fn)
-    f1 = tp/(tp + (fp + fn)/2)
-    fb = (1.0 + beta**2.0) * (precision * recall) / \
-        (beta**2.0 * precision + recall)
-    accuracy = (tp + tn)/(tp + tn + fp + fn)
-
-    return {'fn': fn, 'fp': fp, 'tn': tn, 'tp': tp,
-            'precision': round(precision, 3),
-            'recall': round(recall, 3),
-            'f1': round(f1, 3),
-            'fb': round(fb, 3),
-            'accuracy': round(accuracy, 3)}
+# Constructor for classifier based method.
+def classifier_based_constructor(infile,
+                                 donors,
+                                 clf,
+                                 funcs,
+                                 props,
+                                 family="language_family",
+                                 segments="tokens",
+                                 known_donor="donor_language",
+                                 **kw):
+    return classifier.ClassifierBasedBorrowingDetection(
+        infile,
+        donors,
+        clf=clf,
+        funcs=funcs,
+        props=props,
+        family=family,
+        segments=segments,
+        known_donor=known_donor,
+        **kw
+    )
 
 
 def evaluate_fold(constructor, dir, k, fold):
@@ -115,18 +100,25 @@ def evaluate_fold(constructor, dir, k, fold):
 
     detector = constructor(file_path)
     detector.train(verbose=False)
-    # wl = Wordlist(file_path)
-    detector.predict_on_wordlist(detector)
-    results_train = evaluate_borrowings(
-        detector,
-        pred="source_language",
-        gold=detector.known_donor,
-        donors=detector.donors,
-        donor_families=detector.donor_families,
-        family=detector.family)
-    results_train["threshold"] = detector.best_t
-    results_train["fold"] = fold
-    # print(results_train)
+
+    def get_results_for_wl(wl_):
+        detector.predict_on_wordlist(wl_)
+        results = evaluate_borrowings(
+            wl_,
+            pred="source_language",
+            gold=detector.known_donor,
+            donors=detector.donors,
+            donor_families=detector.donor_families,
+            family=detector.family)
+
+        if hasattr(detector, "best_key"):
+            results[detector.best_key] = detector.best_value
+        results["fold"] = fold
+
+        return results
+
+    # results = get_results_for_wl(detector)
+    # print(results)
 
     test_name = "CV{k:d}-fold-{it:02d}-test.tsv".format(k=k, it=fold)
     file_path = our_path(dir, test_name)
@@ -134,18 +126,7 @@ def evaluate_fold(constructor, dir, k, fold):
     wl = LexStat(file_path) if isinstance(detector, LexStat) \
         else Wordlist(file_path)
 
-    # wl = Wordlist(file_path)
-    detector.predict_on_wordlist(wl)
-    results_test = evaluate_borrowings(
-        wl,
-        pred="source_language",
-        gold=detector.known_donor,
-        donors=detector.donors,
-        donor_families=detector.donor_families,
-        family=detector.family)
-
-    results_test["threshold"] = detector.best_t
-    results_train["fold"] = fold
+    results_test = get_results_for_wl(wl)
 
     return results_test
 
@@ -215,7 +196,7 @@ def register(parser):
         "--method",
         type=str,
         default="cmsca",
-        choices=['cmsca', 'cmned', 'cbcbsca', 'cbmtlex'],
+        choices=['cmsca', 'cmned', 'cbcbsca', 'cbmtlex', 'clsvcsca'],
         help="Code for borrowing detection method."
     )
 
@@ -239,8 +220,17 @@ def run(args):
                       donors=args.donors)
     cbmtlex.keywords['func'].__name__ = 'cognate_based_multi_threshold_lexstat'
 
+    clsvcsca = partial(classifier_based_constructor,
+                       clf=SVC(kernel="linear"),
+                       func=lambda x: x,  # Artificial argument for name.
+                       funcs=[classifier.clf_sca],
+                       props=None,
+                       donors=args.donors)
+    clsvcsca.keywords['func'].__name__ = 'classifier_based_SVM_linear_sca'
+
     methods = {'cmsca': cmsca, 'cmned': cmned,
-               'cbcbsca': cbcbsca, 'cbmtlex': cbmtlex}
+               'cbcbsca': cbcbsca, 'cbmtlex': cbmtlex,
+               'clsvcsca': clsvcsca}
 
     constructor = methods[args.method]
     func_name = constructor.keywords['func'].__name__
