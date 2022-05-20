@@ -53,7 +53,6 @@ def multi_threshold_based_donor_search(
         model='sca',
         threshold=None,
         int_threshold=None,
-        runs=5000,  # Only with lexstat
         mode="overlap",
         cluster_method="upgma",
         ):
@@ -81,9 +80,8 @@ def multi_threshold_based_donor_search(
             wl,
             family=family,
             partial=False,
-            runs=runs,
             ref=cog_id,
-            method=method,
+            method="lexstat",
             threshold=int_threshold,
             cluster_method=cluster_method,
             model=model)
@@ -115,7 +113,6 @@ def cognate_based_donor_search(
         method='sca',
         model='sca',
         threshold=None,
-        runs=5000,  # Only with lexstat
         mode="overlap",
         cluster_method="upgma",
         ):
@@ -134,9 +131,6 @@ def cognate_based_donor_search(
     :param mode:
     :param cluster_method:
     """
-
-    if method == "lexstat":
-        wl.get_scorer(runs=runs)
 
     bor_id = "bor_id"
     wl.cluster(method=method,
@@ -199,29 +193,15 @@ cbds_sca = partial(cognate_based_donor_search,
 
 # Could increase runs and change cluster_method if useful.
 cbds_lex = partial(cognate_based_donor_search,
-                   method='lexstat', model='sca',
-                   runs=2000, mode='overlap',
+                   method='lexstat',
+                   mode='overlap',
                    cluster_method='infomap')
-
-mtbds_sca = partial(multi_threshold_based_donor_search,
-                    method='sca', model='sca',
-                    runs=None, mode="global",
-                    cluster_method="upgma",
-                    int_threshold=0.30)
-
-# Could increase runs, change cluster_method, and int_threshold if useful.
-mtbds_lex = partial(multi_threshold_based_donor_search,
-                    method='lexstat', model='sca',
-                    runs=2000, mode="overlap",
-                    cluster_method="upgma",
-                    int_threshold=0.50)
 
 
 # Early version of init just for cognate based.
 # Subsequent could include the cognate based function as argument.
 # e.g., cgf=None  # cognate based detection function.
 class CognateBasedBorrowingDetection(LexStat):
-
     def __init__(
             self,
             infile,
@@ -230,6 +210,8 @@ class CognateBasedBorrowingDetection(LexStat):
             family="language_family",
             segments="tokens",
             ipa="form",
+            runs=10000,
+            lexstat=False,
             donor_lng="source_language",
             donor_id="source_id",
             known_donor="donor_language",
@@ -247,7 +229,10 @@ class CognateBasedBorrowingDetection(LexStat):
         :return:
         """
         LexStat.__init__(self, infile, ipa=ipa, segments=segments, **kw)
+        if lexstat:
+            self.get_scorer(runs=runs)
 
+        self.runs = runs
         self.func = func or cbds_sca
         self.donors = [donors] if isinstance(donors, str) else donors
         # Define wordlist field names.
@@ -262,18 +247,18 @@ class CognateBasedBorrowingDetection(LexStat):
         self.best_t = 0.0
         self.best_fs = 0.0
 
-    def trial_threshold(self, threshold):
+    def trial_threshold(self, threshold=0.3, donor_lng=None, donor_idx=None):
         self.func(
             self,
             donors=self.donors,
             family=self.family,
-            donor_lng=self.donor_lng,
-            donor_id=self.donor_id,
+            donor_lng=donor_lng,
+            donor_id=donor_idx,
             threshold=threshold
         )
         fs = evaluate_borrowings_fs(
             self,
-            pred=self.donor_lng,
+            pred=donor_lng,
             gold=self.known_donor,
             donors=self.donors,
             donor_families=self.donor_families,
@@ -317,8 +302,11 @@ class CognateBasedBorrowingDetection(LexStat):
         results = []
         for i, threshold in enumerate(thresholds):
             if verbose: print("cognate threshold {0:.2f}".format(threshold))
+            donor_lng = "trial_{0}".format(i)
+            donor_idx = "idx_{0}".format(i)
 
-            fs = self.trial_threshold(threshold=threshold)
+            fs = self.trial_threshold(threshold=threshold, donor_lng=donor_lng,
+                    donor_idx=donor_idx)
             results += [[i, threshold, fs]]
 
             if verbose: print("threshold {:.2f}, f1 score {:.3f}".
@@ -365,6 +353,9 @@ class CognateBasedBorrowingDetection(LexStat):
         :param wordlist:
         :param verbose:
         """
+        if not hasattr(self, "bscorer"):
+            wordlist.get_scorer(runs=self.runs)
+
         cognate_based_donor_search(
             wl=wordlist,
             donors=self.donors,
@@ -376,27 +367,29 @@ class CognateBasedBorrowingDetection(LexStat):
         if verbose: print("evaluation at threshold", self.best_t)
 
 
+class MultiThreshold(CognateBasedBorrowingDetection):
+
+    def train(thresholds=None):
+        thresholds = [(i*0.1, j*0.1) for i in range(1, 10) for j in range(1, 10)]
+        best_idx, best_t, best_fs = 0, 0.0, 0.0
+        # WE NEED TO EXTEND THIS LATER AND BREAK OUT STUFF FROM LINGREX TO WORK
+        # WELL HERE
+ 
+
+
 def run(args):
     wl = get_our_wordlist()
-    # print(wl.height, wl.width, len(wl), wl.columns)
-    # bor = CognateBasedBorrowingDetection(
-    #     wl, donors="Spanish", family="language_family")
-    # args.log.info("loaded wordlist.")
-    # print(bor.height, bor.width, len(bor), bor.columns)
+<<<<<<< HEAD:saborncommands/cognate_borrowing.py
 
-    # wl = Wordlist(our_path("splits", "CV10-fold-00-train.tsv"))
-    # bor = CognateBasedBorrowingDetection(
-    #     wl, donors="Spanish", family="language_family")
-    # args.log.info("loaded wordlist.")
-    # print(bor.height, bor.width, len(bor), bor.columns)
+    # Test predict borrowing for concept.
+    wl = LexStat(wl)
+    bor = CognateBasedBorrowingDetection(
+        wl, func=cbds_lex, runs=1000, lexstat=True, donors="Spanish", family="language_family")
+    bor.train(thresholds=None, verbose=True)
+    wl2 = LexStat(wl)
+    bor.predict_on_wordlist(wl2)
 
-    # Test cluster function with wl.
-    # wl = LexStat(wl)
-    # cognate_based_donor_search(wl, donors="Spanish",
-    #                            t_idx=1, threshold=0.3,
-    #                            family="language_family")
-    # wl.output('tsv', filename=our_path("store", "test-cognate-fn"),
-    #           prettify=False, ignore="all")
+
 
     # Test train and predict_on_wordlist
     wl = LexStat(our_path("splits", "CV10-fold-00-train.tsv"))
@@ -414,68 +407,5 @@ def run(args):
         'tsv',
         filename=our_path("store", "CL-predict-CV10-fold-00-train"),
         prettify=False, ignore="all")
-    #
-    # wl = LexStat('splits/CV10-fold-00-test.tsv')
-    # bor.predict_on_wordlist(wl)
-    # wl.output(
-    #     'tsv',
-    #     filename=our_path("store", "CL-predict-CV10-fold-00-test"),
-    #     prettify=False, ignore="all")
-    #
-    # print("* Training Results *")
-    # results += [[bor.best_idx, bor.best_threshold, bor.best_f1score]]
-    # print(tabulate(results, headers=["iter", "threshold", "F1 score"]))
 
-    # Test Partial
-    # wl = LexStat(our_path("splits", "CV10-fold-00-train.tsv"))
-    # bor = CognateBasedBorrowingDetection(
-    #     wl, func=cbds_sca, donors="Spanish", family="language_family")
-    # bor.train(thresholds=[0.4], verbose=True)
-    # bor.output(
-    #     'tsv',
-    #     filename=our_path("store", "CL-partial-CV10-fold-00-train"),
-    #     prettify=False, ignore="all")
-
-    # wl = LexStat(our_path("splits", "CV10-fold-00-train.tsv"))
-    # bor = CognateBasedBorrowingDetection(
-    #     wl, func=cbds_sca, donors="Spanish", family="language_family")
-    # bor.train(thresholds=[0.4, 0.5], verbose=True)
-    # bor.output(
-    #     'tsv',
-    #     filename=our_path("store", "CL-partial-4-5-CV10-fold-00-train"),
-    #     prettify=False, ignore="all")
-
-    # wl = LexStat(our_path("splits", "CV10-fold-00-train.tsv"))
-    # bor = CognateBasedBorrowingDetection(
-    #     wl, func=cbds_sca, donors="Spanish", family="language_family")
-    # bor.train(verbose=False)
-    # bor.output(
-    #     'tsv',
-    #     filename=our_path("store", "CL-partial-sca-all-CV10-fold-00-train"),
-    #     prettify=False, ignore="all")
-
-    # Multi-threshold based borrowing detection.
-    # wl = LexStat(our_path("splits", "CV10-fold-00-train.tsv"))
-    # bor = CognateBasedBorrowingDetection(
-    #     wl, func=mtbds_sca, donors="Spanish", family="language_family")
-    # bor.train(verbose=True)
-    # bor.output(
-    #     'tsv',
-    #     filename=our_path("store", "CL-partial-sca-mtbds-CV10-fold-00-train"),
-    #     prettify=False, ignore="all")
-
-    # Test predict borrowing for concept.
-    # wl = LexStat(wl)
-    # bor = CognateBasedBorrowingDetection(
-    #     wl, func=mtbds_sca, donors="Spanish", family="language_family")
-    # bor.train(thresholds=[0.4], verbose=True)
-    # bor.predict(
-    #     donors={"Spanish": ["m", "a", "n", "o"]},
-    #     targets={"FakeX": ["m", "a", "n", "u", "ʃ", "k", "a"],
-    #              "FakeY": ["p", "e", "p", "e", "l"],
-    #              "FakeZ": ["a", "b", "m", "a", "n", "u"],
-    #              "RealY":  ["p", "a", "p", "e", "r"]},
-    #     families={"Spanish": "IndoEuropean",
-    #               "FakeX": "FamA", "FakeY": F"FamB",
-    #               "FakeZ": "FamA", "RealY": "FamB"})
 
