@@ -27,10 +27,7 @@ class SimpleDonorSearch(Wordlist):
                 simple_donor_search function.
         """
         Wordlist.__init__(self, infile, **kw)
-        if not func:
-            self.func = sca_distance
-        else:
-            self.func = func
+        self.func = func or sca_distance
         self.donors = [donors] if isinstance(donors, str) else donors
 
         # Define wordlist field names.
@@ -38,9 +35,10 @@ class SimpleDonorSearch(Wordlist):
         self.segments = segments
         self.known_donor = known_donor
         self.donor_families = {fam for (ID, lang, fam)
-                        in self.iter_rows('doculect', self.family)
-                        if lang in self.donors}
-    
+                               in self.iter_rows('doculect', self.family)
+                               if lang in self.donors}
+        self.best_value = 0
+        self.best_key = 'threshold'
 
     def train(self, thresholds=None, verbose=False):
         """
@@ -92,13 +90,13 @@ class SimpleDonorSearch(Wordlist):
                 best_t = threshold
                 best_e = fs
             if verbose: print("... {0:.2f}".format(fs))
-        self.best_t = best_t
+        self.best_value = best_t
 
     def predict(self, donors, targets):
         """
         Predict borrowings for one concept.
         """
-        return sds_by_concept(donors, targets, self.func, self.best_t)
+        return sds_by_concept(donors, targets, self.func, self.best_value)
 
     def predict_on_wordlist(
             self, wordlist, donor_lng="source_language", 
@@ -115,7 +113,7 @@ class SimpleDonorSearch(Wordlist):
                 donor_lng=donor_lng,
                 donor_id=donor_id,
                 func=self.func,
-                threshold=self.best_t)
+                threshold=self.best_value)
         
 
 def run_analysis(pairwise, name, threshold, log, report=True):
@@ -190,8 +188,8 @@ def run(args):
     args.log.info("loaded wordlist")
     bor = SimpleDonorSearch(
             wl, donors="Spanish", func=sca_distance, family="language_family")
-    bor.train(verbose=True, thresholds=[i*0.05 for i in range(1,20)])
-    print("best threshold is {0:.2f}".format(bor.best_t))
+    bor.train(verbose=True, thresholds=[i*0.05 for i in range(1, 20)])
+    print("best threshold is {0:.2f}".format(bor.best_value))
     hits = bor.predict(
             {"Spanish": ["m", "a", "n", "o"]}, 
             {
@@ -237,3 +235,21 @@ def run(args):
     #    wl.output("tsv", filename=file_path, prettify=False, ignore="all",
     #              subset=True, cols=cols)
 
+    # bor.predict_on_wordlist(wl)
+    # file_path = 'store/test-new-predict'
+    # wl.output('tsv', filename=file_path, prettify=False, ignore="all")
+    #
+    # bor = SimpleDonorSearch(
+    #     'splits/CV10-fold-00-train.tsv', donors="Spanish",
+    #     func=sca_distance, family="language_family")
+    # bor.train(verbose=True, thresholds=[i*0.02 for i in range(1, 50)])
+    # print("best threshold is {0:.2f}".format(bor.best_t))
+    # bor.predict_on_wordlist(bor)
+    # file_path = 'store/test-new-predict-CV10-fold-00-train'
+    # bor.output('tsv', filename=file_path, prettify=False, ignore="all")
+    #
+    # # Need to create wordlist because predict does not convert infile to wordlist.
+    # wl = Wordlist('splits/CV10-fold-00-test.tsv')
+    # bor.predict_on_wordlist(wl)
+    # file_path = 'store/test-new-predict-CV10-fold-00-test'
+    # wl.output('tsv', filename=file_path, prettify=False, ignore="all")
