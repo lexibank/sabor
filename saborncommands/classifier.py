@@ -16,12 +16,12 @@ import collections
 from tabulate import tabulate
 
 
-
 def distance_by_idx(idxA, idxB, wordlist, distance=None, **kw):
     return distance(
-            wordlist[idxA, wordlist.segments], 
-            wordlist[idxB, wordlist.segments],
+            wordlist[idxA, "tokens"],  # wordlist.segments],
+            wordlist[idxB, "tokens"],  # wordlist.segments],
             **kw)
+
 
 clf_sca = partial(
         distance_by_idx,
@@ -30,7 +30,6 @@ clf_ned = partial(
         distance_by_idx,
         distance=edit_distance)
         
-
 
 class ClassifierBasedBorrowingDetection(LexStat):
 
@@ -53,6 +52,7 @@ class ClassifierBasedBorrowingDetection(LexStat):
         LexStat.__init__(self, infile, ipa=ipa, segments=segments, **kw)
         self.clf = clf or SVC(kernel="linear")
         self.funcs = funcs or [clf_sca, clf_ned]
+
         self.props = props or [
                 lambda x, y: y.cols.index(y[x, "doculect"]),
                 lambda x, y: len(y[x, "tokens"])
@@ -63,10 +63,10 @@ class ClassifierBasedBorrowingDetection(LexStat):
         self.segments = segments
         self.known_donor = known_donor
         self.donor_families = {fam for (ID, lang, fam)
-                        in self.iter_rows('doculect', self.family)
-                        if lang in self.donors}
+                               in self.iter_rows('doculect', self.family)
+                               if lang in self.donors}
 
-    def fit(self, verbose=False):
+    def train(self, verbose=False):
         """
         Train the classifier.
         """
@@ -120,7 +120,7 @@ class ClassifierBasedBorrowingDetection(LexStat):
             out[hit] = (out[hit][0], out[hit][1][0])
         return out
 
-    def predict_wordlist(self, wordlist):
+    def predict_on_wordlist(self, wordlist):
         B = {idx: "" for idx in wordlist}
         for concept in wordlist.rows:
             idxs = wordlist.get_list(row=concept, flat=True)
@@ -145,11 +145,11 @@ def run(args):
 
     args.log.info("loaded wordlist")
     bor = ClassifierBasedBorrowingDetection(
-            wl, donors="Spanish", func=sca_distance, family="language_family",
+            wl, donors="Spanish", funcs=[clf_sca], family="language_family",
             clf=SVC(kernel="linear")
             )
-    bor.fit(verbose=True)
-    bor.predict_wordlist(wl2)
+    bor.train(verbose=True)
+    bor.predict_on_wordlist(wl2)
     print(evaluate_borrowings_fs(
         wl2,
         "source_language",

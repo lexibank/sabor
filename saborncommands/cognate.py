@@ -244,8 +244,8 @@ class CognateBasedBorrowingDetection(LexStat):
         self.donor_families = {fam for (ID, lang, fam)
                                in self.iter_rows('doculect', self.family)
                                if lang in self.donors}
-        self.best_threshold = 0.0
-        self.best_f1score = 0.0
+        self.best_t = 0.0
+        self.best_fs = 0.0
 
     def trial_threshold(self, threshold=0.3, donor_lng=None, donor_idx=None):
         self.func(
@@ -324,8 +324,8 @@ class CognateBasedBorrowingDetection(LexStat):
         if verbose: print("Best threshold {:.3f}, f1 score {:.3f}".
                           format(best_t, best_fs))
 
-        self.best_threshold = best_t
-        self.best_f1score = best_fs
+        self.best_t = best_t
+        self.best_fs = best_fs
 
     def predict(self, donors, targets, families, verbose=False):
         """
@@ -362,9 +362,9 @@ class CognateBasedBorrowingDetection(LexStat):
             family=self.family,
             donor_lng=self.donor_lng,
             donor_id=self.donor_id,
-            threshold=self.best_threshold
+            threshold=self.best_t
         )
-        if verbose: print("evaluation at threshold", self.best_threshold)
+        if verbose: print("evaluation at threshold", self.best_t)
 
 
 class MultiThreshold(CognateBasedBorrowingDetection):
@@ -379,6 +379,7 @@ class MultiThreshold(CognateBasedBorrowingDetection):
 
 def run(args):
     wl = get_our_wordlist()
+<<<<<<< HEAD:saborncommands/cognate_borrowing.py
 
     # Test predict borrowing for concept.
     wl = LexStat(wl)
@@ -387,13 +388,24 @@ def run(args):
     bor.train(thresholds=None, verbose=True)
     wl2 = LexStat(wl)
     bor.predict_on_wordlist(wl2)
-    #bor.predict(
-    #    donors={"Spanish": ["m", "a", "n", "o"]},
-    #    targets={"FakeX": ["m", "a", "n", "u", "ʃ", "k", "a"],
-    #             "FakeY": ["p", "e", "p", "e", "l"],
-    #             "FakeZ": ["a", "b", "m", "a", "n", "u"],
-    #             "RealY":  ["p", "a", "p", "e", "r"]},
-    #    families={"Spanish": "IndoEuropean",
-    #              "FakeX": "FamA", "FakeY": F"FamB",
-    #              "FakeZ": "FamA", "RealY": "FamB"})
+
+
+
+    # Test train and predict_on_wordlist
+    wl = LexStat(our_path("splits", "CV10-fold-00-train.tsv"))
+    bor = CognateBasedBorrowingDetection(
+        wl, donors="Spanish", func=cbds_lex, family="language_family")
+    bor.train(thresholds=[0.5, 0.6, 0.7, 0.8], verbose=True)
+    bor.output(
+        'tsv',
+        filename=our_path("store", "CL-train-CV10-fold-00-train"),
+        prettify=False, ignore="all")
+
+    wl = LexStat('splits/CV10-fold-00-train.tsv')
+    bor.predict_on_wordlist(wl, verbose=True)
+    wl.output(
+        'tsv',
+        filename=our_path("store", "CL-predict-CV10-fold-00-train"),
+        prettify=False, ignore="all")
+
 
