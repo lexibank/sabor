@@ -112,13 +112,10 @@ def evaluate_fold(constructor, dir, k, fold):
             family=detector.family)
 
         if hasattr(detector, "best_key"):
-            results[detector.best_key] = detector.best_value
+            results[detector.best_key] = round(detector.best_value, 3)
         results["fold"] = fold
 
         return results
-
-    # results = get_results_for_wl(detector)
-    # print(results)
 
     test_name = "CV{k:d}-fold-{it:02d}-test.tsv".format(k=k, it=fold)
     file_path = our_path(dir, test_name)
@@ -146,7 +143,6 @@ def evaluate_k_fold(constructor, dir, k):
     for fold in range(k):
         results = evaluate_fold(
             constructor, dir=dir, k=k, fold=fold)
-        # print(fold, results)
         print(fold, ' ')
         results["fold"] = fold
         cross_val.append(results)
@@ -196,7 +192,7 @@ def register(parser):
         "--method",
         type=str,
         default="cmsca",
-        choices=['cmsca', 'cmned', 'cbcbsca', 'cbmtlex', 'clsvcsca'],
+        choices=['cmsca', 'cmned', 'cbsca', 'cblex', 'clsvcsca'],
         help="Code for borrowing detection method."
     )
 
@@ -210,15 +206,18 @@ def run(args):
                     func=edit_distance,
                     donors=args.donors)
 
-    cbcbsca = partial(cognate_based_constructor,
-                      func=cognate.cbds_sca,
-                      donors=args.donors)
-    cbcbsca.keywords['func'].__name__ = 'cognate_based_cognate_sca'
+    cbsca = partial(cognate_based_constructor,
+                    func=cognate.cbds_sca,
+                    donors=args.donors,
+                    runs=None)
+    cbsca.keywords['func'].__name__ = 'cognate_based_cognate_sca'
 
-    cbmtlex = partial(cognate_based_constructor,
-                      func=cognate.mtbds_lex,
-                      donors=args.donors)
-    cbmtlex.keywords['func'].__name__ = 'cognate_based_multi_threshold_lexstat'
+    cblex = partial(cognate_based_constructor,
+                    func=cognate.cbds_lex,
+                    donors=args.donors,
+                    runs=1000,
+                    lexstat=True)
+    cblex.keywords['func'].__name__ = 'cognate_based_cognate_lexstat'
 
     clsvcsca = partial(classifier_based_constructor,
                        clf=SVC(kernel="linear"),
@@ -229,7 +228,7 @@ def run(args):
     clsvcsca.keywords['func'].__name__ = 'classifier_based_SVM_linear_sca'
 
     methods = {'cmsca': cmsca, 'cmned': cmned,
-               'cbcbsca': cbcbsca, 'cbmtlex': cbmtlex,
+               'cbsca': cbsca, 'cblex': cblex,
                'clsvcsca': clsvcsca}
 
     constructor = methods[args.method]

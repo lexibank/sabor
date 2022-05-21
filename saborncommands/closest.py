@@ -38,6 +38,7 @@ class SimpleDonorSearch(Wordlist):
                                in self.iter_rows('doculect', self.family)
                                if lang in self.donors}
         self.best_value = 0
+        self.best_score = 0
         self.best_key = 'threshold'
 
     def train(self, thresholds=None, verbose=False):
@@ -91,6 +92,7 @@ class SimpleDonorSearch(Wordlist):
                 best_e = fs
             if verbose: print("... {0:.2f}".format(fs))
         self.best_value = best_t
+        self.best_score = best_e
 
     def predict(self, donors, targets):
         """
