@@ -1,1396 +1,1261 @@
 ID	DOCULECT	LANGUAGE_FAMILY	CONCEPT	VALUE	FORM	TOKENS	DONOR_LANGUAGE	DONOR_VALUE
-1488	Portuguese	Indo-European	ANSWER	responder	responder	ʁ e ʃ p õ d e ʁ		
-3250	Spanish	Indo-European	ANSWER	contestar	contestar	k o n t ɛ s t a ɾ		
-3251	Spanish	Indo-European	ANSWER	responder	responder	r ɛ s p o n d ɛ ɾ		
-4738	Yaqui	Uto-Aztecan	ANSWER	yoopna	yoopna	j oː p n a		
-6043	ZinacantanTzotzil	Mayan	ANSWER	tak’	tak’	t a kʼ		
-7747	Qeqchi	Mayan	ANSWER	chaq'b'enk	chaq'b'enk	tʃ a qʼ ɓ e n kʰ		
-7748	Qeqchi	Mayan	ANSWER	sumenk	sumenk	s u m e n kʰ		
-9884	Otomi	Otomanguean	ANSWER	thädi	thädi	θ ɐ d i		
-9885	Otomi	Otomanguean	ANSWER	thäti	thäti	θ ɐ t̪ i		
-9886	Otomi	Otomanguean	ANSWER	kots'i	kots'i	k o tsʼ i		
-11208	ImbaburaQuechua	Quechuan	ANSWER	kutichina	kutichina	k u t i tʃ i n a		
-12426	Wichi	Matacoan	ANSWER	nichelhu	nichelhu	n i tʃ e lˠ u		
-13697	Mapudungun	Araucanian	ANSWER	wiñolzungun	wiñolzungun	w i ɲ o l z u ŋ u n		
-876	Portuguese	Indo-European	ANVIL	bigorna	bigorna	b i ɡ ɔ ʁ n ɐ		
-2586	Spanish	Indo-European	ANVIL	yunque	yunque	ɟ ʝ u n k e		
-9009	Otomi	Otomanguean	ANVIL	nt'u̲xu̲bo̲jä	nt'u̲xu̲bo̲jä	n t̪ʼ u x u b ə x ɐ		
-367	Portuguese	Indo-European	ARM	braço	braço	b ɾ a s u		
-2063	Spanish	Indo-European	ARM	brazo	brazo	b ɾ a s o		
-3774	Yaqui	Uto-Aztecan	ARM	mamam	mamam	m a m a m		
-5188	ZinacantanTzotzil	Mayan	ARM	k’obol	k’obol	kʼ o ɓ o l		
-6510	Qeqchi	Mayan	ARM	tel	tel	t e l		
-8364	Otomi	Otomanguean	ARM	'ye̲	'ye̲	ˀj æ		
-10427	ImbaburaQuechua	Quechuan	ARM	rigra	rigra	ʐ i g ɾ a		
-11607	Wichi	Matacoan	ARM	totkwey	totkwey	t o t kʷ e j		
-12879	Mapudungun	Araucanian	ARM	lipang	lipang	l i p a ŋ		
-1587	Portuguese	Indo-European	ARMOUR	armadura	armadura	a ʁ m a d u ɾ ɐ		
-3353	Spanish	Indo-European	ARMOUR	armadura	armadura	a ɾ m a ð u ɾ a		
-7829	Qeqchi	Mayan	ARMOUR	ch’iich’	ch’iich’	tʃʼ iː tʃʼ		
-10020	Otomi	Otomanguean	ARMOUR	nt'u̲t'i	nt'u̲t'i	n t̪ʼ u t̪ʼ i		
-10021	Otomi	Otomanguean	ARMOUR	nthoki	nthoki	n θ o k i		
-10022	Otomi	Otomanguean	ARMOUR	nxo̲ge	nxo̲ge	n x ə g e		
-11265	ImbaburaQuechua	Quechuan	ARMOUR	armadura	armadura	a ɾ m a d u ɾ a	Spanish	armadura
-12494	Wichi	Matacoan	ARMOUR	lakatshayajput	lakatshayajput	l a k a tsʰ a j a x p u t		
-368	Portuguese	Indo-European	ARMPIT	axila	axila	a k s i l ɐ		
-369	Portuguese	Indo-European	ARMPIT	sovaco	sovaco	s o v a k u		
-2064	Spanish	Indo-European	ARMPIT	sobaco	sobaco	s o β a k o		
-2065	Spanish	Indo-European	ARMPIT	axila	axila	a k s i l a		
-3775	Yaqui	Uto-Aztecan	ARMPIT	seekam	seekam	s eː k a m		
-5189	ZinacantanTzotzil	Mayan	ARMPIT	lotz’opil	lotz’opil	l o tsʼ o p i l		
-6511	Qeqchi	Mayan	ARMPIT	sa’ tel	sa’_tel	s a ʔ + t e l		
-8365	Otomi	Otomanguean	ARMPIT	kaxjo	kaxjo	k a x x o		
-10428	ImbaburaQuechua	Quechuan	ARMPIT	subaku	subaku	s u b a k u	Spanish	sobaco
-11608	Wichi	Matacoan	ARMPIT	towilisch’u	towilisch’u	t o w i l i s tʃ ʔ u		
-12880	Mapudungun	Araucanian	ARMPIT	puñpuya	puñpuya	p u ɲ p u y a		
-1394	Portuguese	Indo-European	BAD	mau	mau	m au		
-3138	Spanish	Indo-European	BAD	malo	malo	m a l o		
-4651	Yaqui	Uto-Aztecan	BAD	kaa tu’i	kaa_tu’i	k aː + t u ʔ i		
-5966	ZinacantanTzotzil	Mayan	BAD	chopol	chopol	tʃʰ o p o l		
-7648	Qeqchi	Mayan	BAD	lab'	lab'	l a ɓ		
-9707	Otomi	Otomanguean	BAD	hingi za̲	hingi_za̲	h i n g i + z ɔ		
-9708	Otomi	Otomanguean	BAD	hingar za̲	hingar_za̲	h i n g a r + z ɔ		
-9709	Otomi	Otomanguean	BAD	hingi ho	hingi_ho	h i n g i + h o		
-9710	Otomi	Otomanguean	BAD	xi nts'o	xi_nts'o	x i + n tsʼ o		
-11130	ImbaburaQuechua	Quechuan	BAD	millay	millay	m i ʒ a j		
-12346	Wichi	Matacoan	BAD	fwitsaj	fwitsaj	fʷ i ts a x		
-13616	Mapudungun	Araucanian	BAD	weza	weza	w e z a		
-798	Portuguese	Indo-European	BARK	casca	casca	k a ʃ k ɐ		
-2498	Spanish	Indo-European	BARK	corteza	corteza	k o ɾ t e s a		
-4136	Yaqui	Uto-Aztecan	BARK	beea	beea	b eː a		
-5517	ZinacantanTzotzil	Mayan	BARK	patil	patil	pʰ a t i l		
-6939	Qeqchi	Mayan	BARK	rix che	rix_che	r i ʃ + tʃ e		
-8855	Otomi	Otomanguean	BARK	'ma̲ts'i	'ma̲ts'i	ˀm ɔ tsʼ i		
-8856	Otomi	Otomanguean	BARK	'ma̲xu̲zaa	'ma̲xu̲zaa	ˀm ɔ x u z aː		
-8857	Otomi	Otomanguean	BARK	'ma̲ts'u̲zaa	'ma̲ts'u̲zaa	ˀm ɔ tsʼ u z aː		
-10713	ImbaburaQuechua	Quechuan	BARK	kiru kara	kiru_kara	k i ɾ u + k a ɾ a		
-11906	Wichi	Matacoan	BARK	tolhistek	tolhistek	t o lˠ i s t e k		
-13188	Mapudungun	Araucanian	BARK	trolüf	trolüf	ʈʂ o l ɨ f		
-449	Portuguese	Indo-European	BE DEAD OR DIE	morrer	morrer	m o ʁ e ʁ		
-450	Portuguese	Indo-European	BE DEAD OR DIE	morto	morto	m ɔ ʁ t u		
-2145	Spanish	Indo-European	BE DEAD OR DIE	morir	morir	m o ɾ i ɾ		
-2146	Spanish	Indo-European	BE DEAD OR DIE	muerto	muerto	m w ɛ ɾ t o		
-289	Portuguese	Indo-European	BEESWAX	cera	cera	s ɛ ɾ ɐ		
-1984	Spanish	Indo-European	BEESWAX	cera de abeja	cera_de_abeja	s ɛ ɾ a + ð e + a β e x a		
-3700	Yaqui	Uto-Aztecan	BEESWAX	sito’ori	sito’ori	s i t o ʔ o r i		
-3701	Yaqui	Uto-Aztecan	BEESWAX	mumu jo’ara	mumu_jo’ara	m u m u + j o ʔ a r a		
-5112	ZinacantanTzotzil	Mayan	BEESWAX	sera 7ahapom	sera_7ahapom	s e ɾ a + ʔ a h a p o m	Spanish	cera
-6418	Qeqchi	Mayan	BEESWAX	tz’aak	tz’aak	tsʼ aː kʰ		
-8282	Otomi	Otomanguean	BEESWAX	sera kolmenä	sera_kolmenä	s e r a + k o l m e n ɐ	Spanish	cera de abeja
-10363	ImbaburaQuechua	Quechuan	BEESWAX	mishki wira	mishki_wira	m i ʃ k i + w i ɾ a		
-11540	Wichi	Matacoan	BEESWAX	akoyek lhes	akoyek_lhes	a k o j e k + lˠ e s		
-12812	Mapudungun	Araucanian	BEESWAX	müski	müski	m ɨ s k i	Quechua	mishki
-1444	Portuguese	Indo-European	BETRAY	trair	trair	t ɾ a i ʁ		
-3202	Spanish	Indo-European	BETRAY	traicionar	traicionar	t ɾ a i s j o n a ɾ		
-4696	Yaqui	Uto-Aztecan	BETRAY	traisionaroa	traisionaroa	t r a i s i o n a r o a	Spanish	traicionar
-7701	Qeqchi	Mayan	BETRAY	b’alaq’ink	b’alaq’ink	ɓ a l a qʼ i n kʰ		
-9799	Otomi	Otomanguean	BETRAY	kadi	kadi	k a d i		
-11169	ImbaburaQuechua	Quechuan	BETRAY	llullana (2)	llullana	ʒ u ʒ a n a		
-12388	Wichi	Matacoan	BETRAY	yachaj (2)	yachaj	y a tʃ a x		
-13656	Mapudungun	Araucanian	BETRAY	ngüneñman	ngüneñman	ŋ ɨ n e ɲ m a n		
-1131	Portuguese	Indo-European	BIG	grande	grande	ɡ ɾ ɐ̃ dʒ i		
-2863	Spanish	Indo-European	BIG	grande	grande	g ɾ a n d e		
-4419	Yaqui	Uto-Aztecan	BIG	bwe’u	bwe’u	bʷ e ʔ u		
-5762	ZinacantanTzotzil	Mayan	BIG	muk’	muk’	m u kʼ		
-7318	Qeqchi	Mayan	BIG	nim	nim	n i m		
-9350	Otomi	Otomanguean	BIG	dätä	dätä	d ɐ t̪ ɐ		
-10937	ImbaburaQuechua	Quechuan	BIG	jatun	jatun	x a t u ŋ		
-12151	Wichi	Matacoan	BIG	wefw	wefw	w e fʷ		
-13421	Mapudungun	Araucanian	BIG	fütra	fütra	f ɨ ʈʂ a		
-708	Portuguese	Indo-European	BLANKET	cobertor	cobertor	k o b e ʁ t o ʁ		
-2403	Spanish	Indo-European	BLANKET	frazada	frazada	f ɾ a s a ð a		
-2404	Spanish	Indo-European	BLANKET	cobija	cobija	k o β i x a		
-4071	Yaqui	Uto-Aztecan	BLANKET	piisam	piisam	p iː s a m		
-5459	ZinacantanTzotzil	Mayan	BLANKET	chamaroil	chamaroil	tʃʰ a m a ɾ o i l	Spanish	chamarra
-5460	ZinacantanTzotzil	Mayan	BLANKET	chih	chih	tʃʰ i h		
-6857	Qeqchi	Mayan	BLANKET	isb’	isb’	i s ɓ		
-8749	Otomi	Otomanguean	BLANKET	däx'yo	däx'yo	d ɐ x ˀj o		
-8750	Otomi	Otomanguean	BLANKET	mänta	mänta	m ɐ n t̪ a	Spanish	manta
-10655	ImbaburaQuechua	Quechuan	BLANKET	jatana	jatana	x a t a n a		
-11850	Wichi	Matacoan	BLANKET	kulhtsa	kulhtsa	k u lˠ ts a	Spanish	colcha
-13119	Mapudungun	Araucanian	BLANKET	üḻtu	üḻtu	ɨ l̪ t u		
-13120	Mapudungun	Araucanian	BLANKET	fresada	fresada	f ɻ e s a θ a	Spanish	frazada
-496	Portuguese	Indo-European	BLIND	cego	cego	s ɛ ɡ u		
-2194	Spanish	Indo-European	BLIND	ciego	ciego	s j e ɣ o		
-3883	Yaqui	Uto-Aztecan	BLIND	lipti ~ ripti	lipti	l i p t i		
-5304	ZinacantanTzotzil	Mayan	BLIND	kuk	kuk	k u k		
-6644	Qeqchi	Mayan	BLIND	mutz'	mutz'	m u tsʼ		
-8497	Otomi	Otomanguean	BLIND	goda̲	goda̲	g o d ɔ		
-8498	Otomi	Otomanguean	BLIND	xa̲da̲	xa̲da̲	x ɔ d ɔ		
-8499	Otomi	Otomanguean	BLIND	k'eda̲	k'eda̲	k ʔ e d ɔ		
-10516	ImbaburaQuechua	Quechuan	BLIND	ñausa	ñausa	ɲ a u s a		
-11702	Wichi	Matacoan	BLIND	asnam	asnam	a s n a m		
-12977	Mapudungun	Araucanian	BLIND	trawma	trawma	ʈʂ a w m a		
-346	Portuguese	Indo-European	BLINK	pestanejar	pestanejar	p e ʃ t ɐ n e ʒ a ʁ		
-2040	Spanish	Indo-European	BLINK	parpadear	parpadear	p a ɾ p a ð e a ɾ		
-2041	Spanish	Indo-European	BLINK	pestaɲear	pestaɲear	p ɛ s t a ɲ e a ɾ		
-3751	Yaqui	Uto-Aztecan	BLINK	kupikte	kupikte	k u p i k t e		
-5168	ZinacantanTzotzil	Mayan	BLINK	mutz’ilan	mutz’ilan	m u tsʼ i l a n		
-6486	Qeqchi	Mayan	BLINK	eek'asink rix u	eek'asink_rix_u	eː kʼ a s i n k + ɾ i ʃ + u		
-6487	Qeqchi	Mayan	BLINK	yuqyuqink	yuqyuqink	j u q j u q i n kʰ		
-6488	Qeqchi	Mayan	BLINK	rik'ok	rik'ok	r i kʼ o kʰ		
-6489	Qeqchi	Mayan	BLINK	mutz'mutz'ink	mutz'mutz'ink	m u tsʼ m u tsʼ i n kʰ		
-8341	Otomi	Otomanguean	BLINK	k'wi'mu̲da̲	k'wi'mu̲da̲	k ˀw i ˀm u d ɔ		
-10407	ImbaburaQuechua	Quechuan	BLINK	kapitsina	kapitsina	k a p i ts i n a		
-11587	Wichi	Matacoan	BLINK	tatets’im	tatets’im	t a t e ts ʔ i m		
-12859	Mapudungun	Araucanian	BLINK	ṉümiṉümitun	ṉümiṉümitun	n̪ ɨ m i n̪ ɨ m i t u n		
-880	Portuguese	Indo-European	BRONZE OR COPPER	cobre	cobre	k ɔ b ɾ i		
-881	Portuguese	Indo-European	BRONZE OR COPPER	bronze	bronze	b ɾ õ z i		
-2590	Spanish	Indo-European	BRONZE OR COPPER	cobre	cobre	k o β ɾ e		
-2591	Spanish	Indo-European	BRONZE OR COPPER	bronce	bronce	b ɾ o n s e		
-204	Portuguese	Indo-European	BULL	touro	touro	t o ɾ u		
-1889	Spanish	Indo-European	BULL	toro	toro	t o ɾ o		
-3629	Yaqui	Uto-Aztecan	BULL	too ~ tooro	too	t oː	Spanish	toro
-5042	ZinacantanTzotzil	Mayan	BULL	toro	toro	t o ɾ o	Spanish	toro
-5043	ZinacantanTzotzil	Mayan	BULL	vakash	vakash	v a k a sʰ	Spanish	vaca
-8171	Otomi	Otomanguean	BULL	doro	doro	d o r o	Spanish	toro
-10306	ImbaburaQuechua	Quechuan	BULL	wagra	wagra	w a g ɾ a		
-11456	Wichi	Matacoan	BULL	tulu asnak	tulu_asnak	t u l u + a s n a k	Spanish	toro
-12748	Mapudungun	Araucanian	BULL	toro	toro	t o ɻ o	Spanish	toro
-409	Portuguese	Indo-European	BUTTOCKS	nádegas	nádegas	n a d e ɡ a ʃ		
-2103	Spanish	Indo-European	BUTTOCKS	nalgas	nalgas	n a l ɣ a s		
-2104	Spanish	Indo-European	BUTTOCKS	trasero	trasero	t ɾ a s ɛ ɾ o		
-3812	Yaqui	Uto-Aztecan	BUTTOCKS	chobe	chobe	tʃ o b e		
-5231	ZinacantanTzotzil	Mayan	BUTTOCKS	chakil	chakil	tʃʰ a k i l		
-5232	ZinacantanTzotzil	Mayan	BUTTOCKS	likav chakil	likav_chakil	l i k a v + tʃʰ a k i l		
-5233	ZinacantanTzotzil	Mayan	BUTTOCKS	pech chakil	pech_chakil	pʰ e tʃʰ + tʃʰ a k i l		
-6551	Qeqchi	Mayan	BUTTOCKS	ko it	ko_it	k o + i tʰ		
-8406	Otomi	Otomanguean	BUTTOCKS	nthudi	nthudi	n θ u d i		
-8407	Otomi	Otomanguean	BUTTOCKS	xiji	xiji	x i x i		
-8408	Otomi	Otomanguean	BUTTOCKS	hñamfo	hñamfo	h ɲ a m f o		
-10460	ImbaburaQuechua	Quechuan	BUTTOCKS	siki	siki	s i k i		
-11642	Wichi	Matacoan	BUTTOCKS	towejch’alus	towejch’alus	t o w e x tʃ ʔ a l u s		
-12914	Mapudungun	Araucanian	BUTTOCKS	anüwe	anüwe	a n ɨ w e		
-1441	Portuguese	Indo-European	CAUSE	causa	causa	k au z ɐ		
-3199	Spanish	Indo-European	CAUSE	causar	causar	k a u s a ɾ		
-4693	Yaqui	Uto-Aztecan	CAUSE	inie betchi’ibo	inie_betchi’ibo	i n i e + b e t tʃ i ʔ i b o		
-7698	Qeqchi	Mayan	CAUSE	b'aan	b'aan	ɓ aː n		
-9790	Otomi	Otomanguean	CAUSE	ndui	ndui	n d u i		
-9791	Otomi	Otomanguean	CAUSE	ndu’mi	ndu’mi	n d u ʔ m i		
-9792	Otomi	Otomanguean	CAUSE	mfuti	mfuti	m f u t̪ i		
-9793	Otomi	Otomanguean	CAUSE	'yu	'yu	ˀj u		
-9794	Otomi	Otomanguean	CAUSE	ir nge	ir_nge	i r + n g e		
-11167	ImbaburaQuechua	Quechuan	CAUSE	kawza	kawza	k a w z a	Spanish	causa
-12385	Wichi	Matacoan	CAUSE	mak toj tamenej	mak_toj_tamenej	m a k + t o x + t a m e n e x		
-833	Portuguese	Indo-European	CHOP	abater	abater	a b a t e ʁ		
-834	Portuguese	Indo-European	CHOP	cortar	cortar	k o ʁ t a ʁ		
-2538	Spanish	Indo-European	CHOP	tajar	tajar	t a x a ɾ		
-2539	Spanish	Indo-European	CHOP	picar	picar	p i k a ɾ		
-4165	Yaqui	Uto-Aztecan	CHOP	chukta	chukta	tʃ u k t a		
-5547	ZinacantanTzotzil	Mayan	CHOP	boh	boh	ɓ o h		
-6985	Qeqchi	Mayan	CHOP	yok'ok	yok'ok	j o kʼ o kʰ		
-6986	Qeqchi	Mayan	CHOP	jesok	jesok	x e s o kʰ		
-6987	Qeqchi	Mayan	CHOP	raqink	raqink	r a q i n kʰ		
-6988	Qeqchi	Mayan	CHOP	qapok	qapok	q a p o kʰ		
-8921	Otomi	Otomanguean	CHOP	he̲ki	he̲ki	h æ k i		
-8922	Otomi	Otomanguean	CHOP	he̲ts'i	he̲ts'i	h æ tsʼ i		
-8923	Otomi	Otomanguean	CHOP	he̲ni	he̲ni	h æ n i		
-8924	Otomi	Otomanguean	CHOP	su̲t'i	su̲t'i	s u t̪ʼ i		
-8925	Otomi	Otomanguean	CHOP	ts'ant'i	ts'ant'i	ts ʔ a n t̪ʼ i		
-10737	ImbaburaQuechua	Quechuan	CHOP	kuchuna	kuchuna	k u tʃ u n a		
-11929	Wichi	Matacoan	CHOP	yenlhipeya	yenlhipeya	y e n lˠ i p e j a		
-13206	Mapudungun	Araucanian	CHOP	katrükan	katrükan	k a ʈʂ ɨ k a n		
-1099	Portuguese	Indo-European	COVER	cobrir	cobrir	k o b ɾ i ʁ		
-2832	Spanish	Indo-European	COVER	cubrir	cubrir	k u β ɾ i ɾ		
-4392	Yaqui	Uto-Aztecan	COVER	patta	patta	p a t t a		
-4393	Yaqui	Uto-Aztecan	COVER	jinte	jinte	j i n t e		
-5738	ZinacantanTzotzil	Mayan	COVER	mak	mak	m a k		
-7287	Qeqchi	Mayan	COVER	lepok	lepok	l e p o kʰ		
-9322	Otomi	Otomanguean	COVER	ko'mi	ko'mi	k o ˀm i		
-10916	ImbaburaQuechua	Quechuan	COVER	killpana	killpana	k i ʒ p a n a		
-12131	Wichi	Matacoan	COVER	hipupe’	hipupe’	h i p u p e ʔ		
-13400	Mapudungun	Araucanian	COVER	takun	takun	t a k u n		
-1369	Portuguese	Indo-European	CRY	chorar	chorar	ʃ o ɾ a ʁ		
-3110	Spanish	Indo-European	CRY	llorar	llorar	ɟ ʝ o ɾ a ɾ		
-4631	Yaqui	Uto-Aztecan	CRY	bwaana	bwaana	bʷ aː n a		
-5945	ZinacantanTzotzil	Mayan	CRY	7ok’ (2)	7ok’	ʔ o kʼ		
-7617	Qeqchi	Mayan	CRY	yaab'ak	yaab'ak	j aː ɓ a kʰ		
-9677	Otomi	Otomanguean	CRY	zoni	zoni	z o n i		
-11111	ImbaburaQuechua	Quechuan	CRY	wakana	wakana	w a k a n a		
-12326	Wichi	Matacoan	CRY	tafwlhi	tafwlhi	t a fʷ lˠ i		
-13595	Mapudungun	Araucanian	CRY	ngüman	ngüman	ŋ ɨ m a n		
-13596	Mapudungun	Araucanian	CRY	waylü-	waylü-	w a y l ɨ	Gününa Yajüch	-wjalï
-740	Portuguese	Indo-European	CULTIVATE	cultivar	cultivar	k uu tʃ i v a ʁ		
-2433	Spanish	Indo-European	CULTIVATE	cultivar	cultivar	k u l t i β a ɾ		
-2434	Spanish	Indo-European	CULTIVATE	labrar	labrar	l a β ɾ a ɾ		
-4092	Yaqui	Uto-Aztecan	CULTIVATE	eecha	eecha	eː tʃ a		
-6884	Qeqchi	Mayan	CULTIVATE	xk’anjelankil	xk’anjelankil	ʃ kʼ a n x e l a n k i l		
-8789	Otomi	Otomanguean	CULTIVATE	fuxuhai	fuxuhai	f u x u h a i		
-8790	Otomi	Otomanguean	CULTIVATE	fu̲ts'i	fu̲ts'i	f u tsʼ i		
-8791	Otomi	Otomanguean	CULTIVATE	fo̲'mi	fo̲'mi	f ə ˀm i		
-10675	ImbaburaQuechua	Quechuan	CULTIVATE	chakrana	chakrana	tʃ a k ɾ a n a		
-13142	Mapudungun	Araucanian	CULTIVATE	ngaṉün	ngaṉün	ŋ a n̪ ɨ n		
-536	Portuguese	Indo-European	CUP	xícara	xícara	ʃ i k a ɾ ɐ		
-537	Portuguese	Indo-European	CUP	chávena	chávena	ʃ a v e n ɐ		
-538	Portuguese	Indo-European	CUP	copo	copo	k ɔ p u		
-2234	Spanish	Indo-European	CUP	taza	taza	t a s a		
-2235	Spanish	Indo-European	CUP	copa	copa	k o p a		
-3918	Yaqui	Uto-Aztecan	CUP	taasa	taasa	t aː s a	Spanish	taza
-5337	ZinacantanTzotzil	Mayan	CUP	tasa	tasa	t a s a	Spanish	tasa
-5338	ZinacantanTzotzil	Mayan	CUP	tasa boch	tasa_boch	t a s a + ɓ o tʃʰ	Spanish	taza
-6689	Qeqchi	Mayan	CUP	sek'	sek'	s e kʼ	Western Mayan	sek’ (approximate form)
-6690	Qeqchi	Mayan	CUP	wa'leb' sek'	wa'leb'_sek'	w a ʔ l e ɓ + s e kʼ		
-6691	Qeqchi	Mayan	CUP	taas	taas	t aː s	Spanish	taza
-8556	Otomi	Otomanguean	CUP	tasa	tasa	t̪ a s a	Spanish	taza
-10543	ImbaburaQuechua	Quechuan	CUP	pilchi	pilchi	p i l tʃ i		
-11730	Wichi	Matacoan	CUP	tolhothi	tolhothi	t o lˠ o tʰ i		
-13004	Mapudungun	Araucanian	CUP	tasa	tasa	t a s a	Spanish	taza
-13005	Mapudungun	Araucanian	CUP	charu	charu	tʃ a ɻ u	Spanish	jarro
-1669	Portuguese	Indo-European	CURSE	amaldiçoar	amaldiçoar	ɐ m au dʒ i s o a ʁ		
-3437	Spanish	Indo-European	CURSE	maldecir	maldecir	m a l d e s i ɾ		
-4874	Yaqui	Uto-Aztecan	CURSE	jaaniawa	jaaniawa	j aː n i a w a		
-6139	ZinacantanTzotzil	Mayan	CURSE	7ak ta maltisyon	7ak_ta_maltisyon	ʔ a k + t a + m a l t i s j o n	Spanish	maldicio*n
-7908	Qeqchi	Mayan	CURSE	hob'ok	hob'ok	h o ɓ o kʰ	Ch’olan	*hob’
-10145	Otomi	Otomanguean	CURSE	tsani	tsani	ts a n i		
-12535	Wichi	Matacoan	CURSE	ithate lhomet toj ni’isa	ithate_lhomet_toj_ni’isa	i tʰ a t e + lˠ o m e t + t o x + n i ʔ i s a		
-13778	Mapudungun	Araucanian	CURSE	malisian	malisian	m a l i s i a n	Spanish	maldecir
-946	Portuguese	Indo-European	DANCE	dançar	dançar	d ɐ̃ s a ʁ		
-2661	Spanish	Indo-European	DANCE	bailar	bailar	b a i l a ɾ		
-4258	Yaqui	Uto-Aztecan	DANCE	ye’e	ye’e	j e ʔ e		
-5633	ZinacantanTzotzil	Mayan	DANCE	7ak’otah	7ak’otah	ʔ a kʼ o t a h		
-7122	Qeqchi	Mayan	DANCE	xajok	xajok	ʃ a x o kʰ		
-9108	Otomi	Otomanguean	DANCE	nei	nei	n e i		
-10811	ImbaburaQuechua	Quechuan	DANCE	tushuna	tushuna	t u ʃ u n a		
-12006	Wichi	Matacoan	DANCE	wayla	wayla	w a j l a	Spanish	bailá
-12007	Wichi	Matacoan	DANCE	takatin	takatin	t a k a t i n		
-13287	Mapudungun	Araucanian	DANCE	purun	purun	p u ɻ u n		
-131	Portuguese	Indo-European	DAUGHTER	filha	filha	f i ʎ ɐ		
-1808	Spanish	Indo-European	DAUGHTER	hija	hija	i x a		
-3552	Yaqui	Uto-Aztecan	DAUGHTER	asoa	asoa	a s o a		
-4986	ZinacantanTzotzil	Mayan	DAUGHTER	tzebil	tzebil	tsʰ e ɓ i l		
-4987	ZinacantanTzotzil	Mayan	DAUGHTER	tzeb	tzeb	tsʰ e b		
-6264	Qeqchi	Mayan	DAUGHTER	ko’	ko’	k o ʔ	Ch’olan	ko’
-6265	Qeqchi	Mayan	DAUGHTER	rab’in	rab’in	r a ɓ i n		
-8049	Otomi	Otomanguean	DAUGHTER	t'ixu	t'ixu	t̪ʼ i x u		
-10249	ImbaburaQuechua	Quechuan	DAUGHTER	ushi	ushi	u ʃ i		
-11405	Wichi	Matacoan	DAUGHTER	tolhose	tolhose	t o lˠ o s e		
-12657	Mapudungun	Araucanian	DAUGHTER	ñawe	ñawe	ɲ a w e		
-12658	Mapudungun	Araucanian	DAUGHTER	zomo püñeñ	zomo_püñeñ	z o m o + p ɨ ɲ e ɲ		
-169	Portuguese	Indo-European	DAUGHTER-IN-LAW (OF WOMAN)	nora	nora	n ɔ ɾ ɐ		
-1848	Spanish	Indo-European	DAUGHTER-IN-LAW (OF WOMAN)	nuera	nuera	n w ɛ ɾ a		
-3602	Yaqui	Uto-Aztecan	DAUGHTER-IN-LAW (OF WOMAN)	jaborai	jaborai	j a b o r a i		
-5021	ZinacantanTzotzil	Mayan	DAUGHTER-IN-LAW (OF WOMAN)	7alibal	7alibal	ʔ a l i ɓ a l		
-6304	Qeqchi	Mayan	DAUGHTER-IN-LAW (OF WOMAN)	alib’	alib’	a l i ɓ		
-8099	Otomi	Otomanguean	DAUGHTER-IN-LAW (OF WOMAN)	ts'ijwe̲	ts'ijwe̲	ts ʔ i xʷ æ		
-10282	ImbaburaQuechua	Quechuan	DAUGHTER-IN-LAW (OF WOMAN)	jachun (2)	jachun	x a tʃ u ŋ		
-11435	Wichi	Matacoan	DAUGHTER-IN-LAW (OF WOMAN)	totiche	totiche	t o t i tʃ e		
-12719	Mapudungun	Araucanian	DAUGHTER-IN-LAW (OF WOMAN)	ṉaṉüng	ṉaṉüng	n̪ a n̪ ɨ ŋ		
-1141	Portuguese	Indo-European	DEEP	fundo	fundo	f ũ d u		
-2875	Spanish	Indo-European	DEEP	profundo	profundo	p ɾ o f u n d o		
-2876	Spanish	Indo-European	DEEP	hondo	hondo	o n d o		
-4428	Yaqui	Uto-Aztecan	DEEP	mekka ko’omi	mekka_ko’omi	m e k k a + k o ʔ o m i		
-5776	ZinacantanTzotzil	Mayan	DEEP	natil	natil	n a t i l		
-5777	ZinacantanTzotzil	Mayan	DEEP	toyol	toyol	t o j o l		
-7352	Qeqchi	Mayan	DEEP	cham	cham	tʃ a m		
-9378	Otomi	Otomanguean	DEEP	xi hñei	xi_hñei	x i + h ɲ e i		
-10946	ImbaburaQuechua	Quechuan	DEEP	jundu (2)	jundu	x u n d u	Spanish	hondo
-12163	Wichi	Matacoan	DEEP	pitufw	pitufw	p i t u fʷ		
-13430	Mapudungun	Araucanian	DEEP	alükon	alükon	a l ɨ k o n		
-932	Portuguese	Indo-European	DIVE	mergulhar	mergulhar	m e ʁ ɡ u ʎ a ʁ		
-2648	Spanish	Indo-European	DIVE	zambullirse	zambullirse	s a m b u ʝ i ɾ s e		
-4243	Yaqui	Uto-Aztecan	DIVE	ropte	ropte	r o p t e		
-7102	Qeqchi	Mayan	DIVE	muqa’alik	muqa’alik	m u q a ʔ a l i kʰ		
-9089	Otomi	Otomanguean	DIVE	ku̲i	ku̲i	k u i		
-9090	Otomi	Otomanguean	DIVE	nku̲'mi jar dehe	nku̲'mi_jar_dehe	n k u ˀm i + x a r + d e h e		
-9091	Otomi	Otomanguean	DIVE	nku̲'mu̲dehe	nku̲'mu̲dehe	n k u ˀm u d e h e		
-11994	Wichi	Matacoan	DIVE	yeycho’	yeycho’	y e j tʃ o ʔ		
-816	Portuguese	Indo-European	DO OR MAKE	fazer	fazer	f a z e ʁ		
-2521	Spanish	Indo-European	DO OR MAKE	hacer	hacer	a s ɛ ɾ		
-914	Portuguese	Indo-European	DROP (SOMETHING)	deixar cair	deixar_cair	d ei ʃ a ʁ + k a i ʁ		
-2631	Spanish	Indo-European	DROP (SOMETHING)	dejar caer	dejar_caer	d e x a ɾ + k a ɛ ɾ		
-4229	Yaqui	Uto-Aztecan	DROP (SOMETHING)	kom tatabe	kom_tatabe	k o m + t a t a b e		
-5602	ZinacantanTzotzil	Mayan	DROP (SOMETHING)	p’ahes	p’ahes	pʼ a h e s		
-7074	Qeqchi	Mayan	DROP (SOMETHING)	xkoq’b’al	xkoq’b’al	ʃ k o qʼ ɓ a l		
-7075	Qeqchi	Mayan	DROP (SOMETHING)	b’alq’unsink	b’alq’unsink	ɓ a l qʼ u n s i n kʰ		
-9055	Otomi	Otomanguean	DROP (SOMETHING)	hegi	hegi	h e g i		
-9056	Otomi	Otomanguean	DROP (SOMETHING)	hegi tsots'i	hegi_tsots'i	h e g i + ts o tsʼ i		
-10789	ImbaburaQuechua	Quechuan	DROP (SOMETHING)	kacharina (2)	kacharina	k a tʃ a ɾ i n a		
-11981	Wichi	Matacoan	DROP (SOMETHING)	ileyej	ileyej	i l e j e x		
-13262	Mapudungun	Araucanian	DROP (SOMETHING)	müñalün	müñalün	m ɨ ɲ a l ɨ n		
-1112	Portuguese	Indo-European	EDGE	beira	beira	b ei ɾ ɐ		
-1113	Portuguese	Indo-European	EDGE	borda	borda	b ɔ ʁ d ɐ		
-2842	Spanish	Indo-European	EDGE	borde	borde	b o ɾ ð e		
-2843	Spanish	Indo-European	EDGE	orilla	orilla	o ɾ i ʝ a		
-2844	Spanish	Indo-European	EDGE	margen	margen	m a ɾ x e n		
-4401	Yaqui	Uto-Aztecan	EDGE	mayoa	mayoa	m a j o a		
-5746	ZinacantanTzotzil	Mayan	EDGE	ti7il	ti7il	t i ʔ i l		
-7298	Qeqchi	Mayan	EDGE	xmar	xmar	ʃ m a r		
-7299	Qeqchi	Mayan	EDGE	tzelam	tzelam	t z e l a m		
-7300	Qeqchi	Mayan	EDGE	e	e	e		
-9336	Otomi	Otomanguean	EDGE	ñäni (2)	ñäni	ɲ ɐ n i		
-9337	Otomi	Otomanguean	EDGE	ne (4)	ne	n e		
-10924	ImbaburaQuechua	Quechuan	EDGE	manya	manya	m a n j a		
-12139	Wichi	Matacoan	EDGE	lhipey	lhipey	lˠ i p e j		
-13408	Mapudungun	Araucanian	EDGE	üpül	üpül	ɨ p ɨ l		
-1178	Portuguese	Indo-European	ELEVEN	onze	onze	õ z i		
-2911	Spanish	Indo-European	ELEVEN	once	once	o n s e		
-4465	Yaqui	Uto-Aztecan	ELEVEN	wojmamni ama wepulai	wojmamni_ama_wepulai	w o j m a m n i + a m a + w e p u l a i		
-4466	Yaqui	Uto-Aztecan	ELEVEN	onse	onse	o n s e	Spanish	once
-5805	ZinacantanTzotzil	Mayan	ELEVEN	buluch	buluch	ɓ u l u tʃʰ		
-7393	Qeqchi	Mayan	ELEVEN	junlaju	junlaju	x u n l a x u		
-9418	Otomi	Otomanguean	ELEVEN	‘re̲t’a ma n'aha	‘re̲t’a_ma_n'aha	ˀr æ t̪ʼ a + m a + n ʔ a h a		
-10972	ImbaburaQuechua	Quechuan	ELEVEN	chunga shuk	chunga_shuk	tʃ u ŋ g a + ʃ u k		
-12189	Wichi	Matacoan	ELEVEN	onsi	onsi	o n s i	Spanish	once
-13457	Mapudungun	Araucanian	ELEVEN	mari kiñe	mari_kiñe	m a ɻ i + k i ɲ e		
-1388	Portuguese	Indo-European	FAITHFUL	leal	leal	l i au		
-3132	Spanish	Indo-European	FAITHFUL	fiel	fiel	f j ɛ l		
-4645	Yaqui	Uto-Aztecan	FAITHFUL	kaa anoki’ichi	kaa_anoki’ichi	k aː + a n o k i ʔ i tʃ i		
-7637	Qeqchi	Mayan	FAITHFUL	tiik xch'ool	tiik_xch'ool	t iː k + ʃ tʃʼ oː l		
-9696	Otomi	Otomanguean	FAITHFUL	makwäni	makwäni	m a kʷ ɐ n i		
-9697	Otomi	Otomanguean	FAITHFUL	hogumui	hogumui	h o g u m u i		
-11124	ImbaburaQuechua	Quechuan	FAITHFUL	ali shungu	ali_shungu	a l i + ʃ u ŋ g u		
-12341	Wichi	Matacoan	FAITHFUL	omyekalelhoj	omyekalelhoj	o m j e k a l e lˠ o x		
-388	Portuguese	Indo-European	FEATHER	pena	pena	p ɛ n ɐ		
-2085	Spanish	Indo-European	FEATHER	pluma	pluma	p l u m a		
-3795	Yaqui	Uto-Aztecan	FEATHER	boa	boa	b o a		
-5215	ZinacantanTzotzil	Mayan	FEATHER	k’uk’umal	k’uk’umal	kʼ u kʼ u m a l		
-6532	Qeqchi	Mayan	FEATHER	rismal xul	rismal_xul	r i s m a l + ʃ u l		
-6533	Qeqchi	Mayan	FEATHER	xik’	xik’	ʃ i kʼ		
-8387	Otomi	Otomanguean	FEATHER	xi'ni	xi'ni	x i ˀn i		
-10446	ImbaburaQuechua	Quechuan	FEATHER	alas	alas	a l a s	Spanish	alas
-11627	Wichi	Matacoan	FEATHER	afwenche w’ule	afwenche_w’ule	a fʷ e n tʃ e + w ʔ u l e		
-12899	Mapudungun	Araucanian	FEATHER	pichuñ	pichuñ	p i tʃ u ɲ		
-613	Portuguese	Indo-European	FELT	feltro	feltro	f ɛu t ɾ u		
-2304	Spanish	Indo-European	FELT	fieltro	fieltro	f j ɛ l t ɾ o		
-3985	Yaqui	Uto-Aztecan	FELT	piltro	piltro	p i l t r o	Spanish	fieltro
-8637	Otomi	Otomanguean	FELT	fyeltro	fyeltro	f j e l t̪ r o	Spanish	fieltro
-1032	Portuguese	Indo-European	FIND	achar	achar	a ʃ a ʁ		
-1033	Portuguese	Indo-European	FIND	encontrar	encontrar	ẽ k õ t ɾ a ʁ		
-2753	Spanish	Indo-European	FIND	encontrar	encontrar	e n k o n t ɾ a ɾ		
-2754	Spanish	Indo-European	FIND	hallar	hallar	a ʝ a ɾ		
-4334	Yaqui	Uto-Aztecan	FIND	tea	tea	t e a		
-5687	ZinacantanTzotzil	Mayan	FIND	ta (2)	ta	t a		
-7209	Qeqchi	Mayan	FIND	tawok	tawok	t a w o kʰ		
-9228	Otomi	Otomanguean	FIND	tini	tini	t̪ i n i		
-9229	Otomi	Otomanguean	FIND	tsu̲di (2)	tsu̲di	ts u d i		
-10864	ImbaburaQuechua	Quechuan	FIND	tarina (2)	tarina	t a ɾ i n a		
-12068	Wichi	Matacoan	FIND	nesa	nesa	n e s a		
-13343	Mapudungun	Araucanian	FIND	pezan	pezan	p e z a n		
-98	Portuguese	Indo-European	FIREWOOD	lenha	lenha	l e ɲ ɐ		
-1779	Spanish	Indo-European	FIREWOOD	leɲa	leɲa	l e ɲ a		
-3526	Yaqui	Uto-Aztecan	FIREWOOD	kutam	kutam	k u t a m		
-4961	ZinacantanTzotzil	Mayan	FIREWOOD	si7	si7	s i ʔ		
-6231	Qeqchi	Mayan	FIREWOOD	si’	si’	s i ʔ		
-8019	Otomi	Otomanguean	FIREWOOD	zaa	zaa	z aː		
-10226	ImbaburaQuechua	Quechuan	FIREWOOD	yanta	yanta	j a n d a		
-11384	Wichi	Matacoan	FIREWOOD	tolhetes	tolhetes	t o lˠ e t e s		
-12627	Mapudungun	Araucanian	FIREWOOD	mamüll	mamüll	m a m ɨ ʎ		
-813	Portuguese	Indo-European	FISH POISON	raízes venenosas	raízes_venenosas	ʁ a i z e ʃ + v e n e n ɔ z a ʃ		
-2517	Spanish	Indo-European	FISH POISON	barbasco	barbasco	b a ɾ β a s k o		
-4148	Yaqui	Uto-Aztecan	FISH POISON	joyo	joyo	j o j o		
-4149	Yaqui	Uto-Aztecan	FISH POISON	pajti	pajti	p a j t i		
-6955	Qeqchi	Mayan	FISH POISON	ch’alam	ch’alam	tʃʼ a l a m		
-1606	Portuguese	Indo-European	FISHERMAN	pescador	pescador	p e ʃ k a d o ʁ		
-3374	Spanish	Indo-European	FISHERMAN	pescador	pescador	p ɛ s k a ð o ɾ		
-4821	Yaqui	Uto-Aztecan	FISHERMAN	kuchureo	kuchureo	k u tʃ u r e o		
-7845	Qeqchi	Mayan	FISHERMAN	aj kar	aj_kar	a x + k a r		
-10054	Otomi	Otomanguean	FISHERMAN	mejwä	mejwä	m e xʷ ɐ		
-10055	Otomi	Otomanguean	FISHERMAN	hyuts’i	hyuts’i	h j u tsʼ i		
-10056	Otomi	Otomanguean	FISHERMAN	ngu̲jwä	ngu̲jwä	n g u xʷ ɐ		
-10057	Otomi	Otomanguean	FISHERMAN	ngu̲peskado	ngu̲peskado	n g u p e s k a d o	Spanish	pescado
-11273	ImbaburaQuechua	Quechuan	FISHERMAN	piji japik	piji_japik	p i x i + x a p i k	Spanish	pez
-12502	Wichi	Matacoan	FISHERMAN	w’ahatkut	w’ahatkut	w ʔ a h a t k u t		
-13755	Mapudungun	Araucanian	FISHERMAN	challwafe	challwafe	tʃ a ʎ w a f e	Quechua	challwa
-963	Portuguese	Indo-European	FLEE	escapar	escapar	i ʃ k a p a ʁ		
-964	Portuguese	Indo-European	FLEE	fugir	fugir	f u ʒ i ʁ		
-2679	Spanish	Indo-European	FLEE	huir	huir	w i ɾ		
-4275	Yaqui	Uto-Aztecan	FLEE	bwite	bwite	bʷ i t e		
-5647	ZinacantanTzotzil	Mayan	FLEE	hatav	hatav	h a t a v		
-7137	Qeqchi	Mayan	FLEE	eelelik	eelelik	eː l e l i kʰ		
-9130	Otomi	Otomanguean	FLEE	‘wege	‘wege	ˀw e g e		
-9131	Otomi	Otomanguean	FLEE	'ragi	'ragi	ˀr a g i		
-10824	ImbaburaQuechua	Quechuan	FLEE	pakajuna	pakajuna	p a k a x u n a		
-12021	Wichi	Matacoan	FLEE	yihonlhi	yihonlhi	y i h o n lˠ i		
-13301	Mapudungun	Araucanian	FLEE	lefmawün	lefmawün	l e f m a w ɨ n		
-783	Portuguese	Indo-European	FLOWER	flor	flor	f l ɔ ʁ		
-2480	Spanish	Indo-European	FLOWER	flor	flor	f l o ɾ		
-4123	Yaqui	Uto-Aztecan	FLOWER	seewa	seewa	s eː w a		
-5506	ZinacantanTzotzil	Mayan	FLOWER	nich	nich	n i tʃʰ		
-6924	Qeqchi	Mayan	FLOWER	atz'um	atz'um	a tsʼ u m		
-6925	Qeqchi	Mayan	FLOWER	uutz'u'uj	uutz'u'uj	uː tsʼ u ʔ u x		
-8839	Otomi	Otomanguean	FLOWER	do̲ni	do̲ni	d ə n i		
-10705	ImbaburaQuechua	Quechuan	FLOWER	sisa	sisa	s i s a		
-11893	Wichi	Matacoan	FLOWER	lhawu	lhawu	lˠ a w u	Pilagá	law’o
-13177	Mapudungun	Araucanian	FLOWER	rayen	rayen	ɻ a y e n		
-13178	Mapudungun	Araucanian	FLOWER	fülor	fülor	f ɨ l o ɻ	Spanish	flor
-1510	Portuguese	Indo-European	FLUTE	flauta	flauta	f l au t ɐ		
-3273	Spanish	Indo-European	FLUTE	flauta	flauta	f l a u t a		
-4759	Yaqui	Uto-Aztecan	FLUTE	kusia	kusia	k u s i a		
-6063	ZinacantanTzotzil	Mayan	FLUTE	7ama	7ama	ʔ a m a		
-7767	Qeqchi	Mayan	FLUTE	xolb'	xolb'	ʃ o l ɓ	Ch’olan	xool
-9921	Otomi	Otomanguean	FLUTE	thu̲xi	thu̲xi	θ u x i		
-11226	ImbaburaQuechua	Quechuan	FLUTE	flawta	flawta	ɸ l a w t a	Spanish	flauta
-12445	Wichi	Matacoan	FLUTE	tofwulh	tofwulh	t o fʷ u l̥		
-935	Portuguese	Indo-European	FLY (MOVE THROUGH AIR)	voar	voar	v o a ʁ		
-2651	Spanish	Indo-European	FLY (MOVE THROUGH AIR)	volar	volar	b o l a ɾ		
-4247	Yaqui	Uto-Aztecan	FLY (MOVE THROUGH AIR)	ne’e	ne’e	n e ʔ e		
-5624	ZinacantanTzotzil	Mayan	FLY (MOVE THROUGH AIR)	vil	vil	v i l		
-7107	Qeqchi	Mayan	FLY (MOVE THROUGH AIR)	rupik	rupik	r u p i kʰ		
-7108	Qeqchi	Mayan	FLY (MOVE THROUGH AIR)	purik	purik	p u ɾ i kʰ		
-9094	Otomi	Otomanguean	FLY (MOVE THROUGH AIR)	nsa̲ni	nsa̲ni	ⁿs ɔ n i		
-10803	ImbaburaQuechua	Quechuan	FLY (MOVE THROUGH AIR)	bulana	bulana	b u l a n a	Spanish	volar
-11996	Wichi	Matacoan	FLY (MOVE THROUGH AIR)	wiy’o	wiy’o	w i j ʔ o		
-13279	Mapudungun	Araucanian	FLY (MOVE THROUGH AIR)	müpün	müpün	m ɨ p ɨ n		
-303	Portuguese	Indo-European	FROG	rã	rã	ʁ ɐ̃		
-1998	Spanish	Indo-European	FROG	rana	rana	r a n a		
-3717	Yaqui	Uto-Aztecan	FROG	batat	batat	b a t a t		
-5127	ZinacantanTzotzil	Mayan	FROG	shpokok	shpokok	ʃ p o k o k		
-6448	Qeqchi	Mayan	FROG	pelpel	pelpel	p e l p e l		
-6449	Qeqchi	Mayan	FROG	amoch	amoch	a m o tʃ	Ch’olan	*amuch
-8300	Otomi	Otomanguean	FROG	'we̲	'we̲	ˀw æ		
-10375	ImbaburaQuechua	Quechuan	FROG	sapu	sapu	s a p u	Spanish	sapo
-11554	Wichi	Matacoan	FROG	poy’i	poy’i	p o j ʔ i		
-12823	Mapudungun	Araucanian	FROG	llüngki	llüngki	ʎ ɨ ŋ k i		
-738	Portuguese	Indo-European	GARDEN	jardim	jardim	ʒ a ʁ dʒ ĩ		
-739	Portuguese	Indo-European	GARDEN	horta	horta	ɔ ʁ t ɐ		
-2431	Spanish	Indo-European	GARDEN	jardín	jardín	x a ɾ ð i n		
-2432	Spanish	Indo-European	GARDEN	huerto	huerto	w ɛ ɾ t o		
-4091	Yaqui	Uto-Aztecan	GARDEN	echimu	echimu	e tʃ i m u		
-8786	Otomi	Otomanguean	GARDEN	mbodu̲ni	mbodu̲ni	m b o d u n i		
-8787	Otomi	Otomanguean	GARDEN	mbo'xi	mbo'xi	m b o ˀx i		
-8788	Otomi	Otomanguean	GARDEN	mbozaa	mbozaa	m b o z aː		
-10674	ImbaburaQuechua	Quechuan	GARDEN	sisa pampa	sisa_pampa	s i s a + p a m b a		
-13141	Mapudungun	Araucanian	GARDEN	werta	werta	w e ɻ t a	Spanish	huerta
-110	Portuguese	Indo-European	GIRL	menina	menina	m e n i n ɐ		
-111	Portuguese	Indo-European	GIRL	garota	garota	ɡ a ɾ ɔ t ɐ		
-1789	Spanish	Indo-European	GIRL	muchacha	muchacha	m u tʃ a tʃ a		
-3535	Yaqui	Uto-Aztecan	GIRL	ili jamut	ili_jamut	i l i + j a m u t		
-4968	ZinacantanTzotzil	Mayan	GIRL	tzeb	tzeb	tsʰ e b		
-6244	Qeqchi	Mayan	GIRL	saaj ixqa’al	saaj_ixqa’al	s aː x + i ʃ q a ʔ a l		
-6245	Qeqchi	Mayan	GIRL	ch’ina ixqa’al	ch’ina_ixqa’al	tʃʼ i n a + i ʃ q a ʔ a l		
-8030	Otomi	Otomanguean	GIRL	nxutsi	nxutsi	n x u ts i		
-10235	ImbaburaQuechua	Quechuan	GIRL	kuytsa	kuytsa	k u j ts a	Unidentified	kuytsa
-11392	Wichi	Matacoan	GIRL	lhetsha	lhetsha	lˠ e tsʰ a		
-12637	Mapudungun	Araucanian	GIRL	maḻeṉ	maḻeṉ	m a l̪ e n̪		
-1021	Portuguese	Indo-European	GIVE BACK	restituir	restituir	ʁ e ʃ tʃ i t ui ʁ		
-1022	Portuguese	Indo-European	GIVE BACK	devolver	devolver	d e v ɔu v e ʁ		
-2744	Spanish	Indo-European	GIVE BACK	devolver	devolver	d e β o l β ɛ ɾ		
-4328	Yaqui	Uto-Aztecan	GIVE BACK	notta	notta	n o t t a		
-5684	ZinacantanTzotzil	Mayan	GIVE BACK	sutes tal	sutes_tal	s u t e s + t a l		
-7202	Qeqchi	Mayan	GIVE BACK	q'ajsink	q'ajsink	qʼ a x s i n kʰ		
-9218	Otomi	Otomanguean	GIVE BACK	kots’i	kots’i	k o tsʼ i		
-9219	Otomi	Otomanguean	GIVE BACK	(n)kots'i	(n)kots'i	n k o tsʼ i		
-10859	ImbaburaQuechua	Quechuan	GIVE BACK	tigrachina (2)	tigrachina	t i g ɾ a tʃ i n a		
-12063	Wichi	Matacoan	GIVE BACK	yachaj (1)	yachaj	y a tʃ a x		
-13339	Mapudungun	Araucanian	GIVE BACK	wiñoltun	wiñoltun	w i ɲ o l t u n		
-890	Portuguese	Indo-European	GLASS	vidro	vidro	v i d ɾ u		
-2600	Spanish	Indo-European	GLASS	vidrio	vidrio	b i ð ɾ j o		
-4210	Yaqui	Uto-Aztecan	GLASS	limeete	limeete	l i m eː t e	Arabic (Hispanic)	limeta
-7048	Qeqchi	Mayan	GLASS	lem	lem	l e m		
-7049	Qeqchi	Mayan	GLASS	meet	meet	m eː tʰ	Spanish	limeta
-9023	Otomi	Otomanguean	GLASS	nhñe	nhñe	nʰ ɲ e		
-9024	Otomi	Otomanguean	GLASS	xito	xito	x i t̪ o		
-9025	Otomi	Otomanguean	GLASS	bidryo	bidryo	b i d r j o	Spanish	vidrio
-11967	Wichi	Matacoan	GLASS	wiliu	wiliu	w i l i u	Spanish	vidrio
-13248	Mapudungun	Araucanian	GLASS	vidrio	vidrio	v i θ ɻ i o	Spanish	vidrio
-873	Portuguese	Indo-European	GLUE	cola	cola	k ɔ l ɐ		
-2582	Spanish	Indo-European	GLUE	cola	cola	k o l a		
-2583	Spanish	Indo-European	GLUE	adhesivo	adhesivo	a ð e s i β o		
-4198	Yaqui	Uto-Aztecan	GLUE	chu’aktiria	chu’aktiria	tʃ u ʔ a k t i r i a		
-5581	ZinacantanTzotzil	Mayan	GLUE	nap'ob	nap'ob	n a p ʔ o b		
-7036	Qeqchi	Mayan	GLUE	latzleb’	latzleb’	l a t z l e ɓ		
-8999	Otomi	Otomanguean	GLUE	njoxumpe	njoxumpe	n x o x u m p e		
-9000	Otomi	Otomanguean	GLUE	pega	pega	p e g a	Spanish	pega
-9001	Otomi	Otomanguean	GLUE	'rät'i	'rät'i	ˀr ɐ t̪ʼ i		
-9002	Otomi	Otomanguean	GLUE	koxumpe	koxumpe	k o x u m p e		
-9003	Otomi	Otomanguean	GLUE	pet'i	pet'i	p e t̪ʼ i		
-10766	ImbaburaQuechua	Quechuan	GLUE	llutana	llutana	ʒ u t a n a		
-951	Portuguese	Indo-European	GO	ir	ir	i ʁ		
-2666	Spanish	Indo-European	GO	ir	ir	i ɾ		
-4264	Yaqui	Uto-Aztecan	GO	siika	siika	s iː k a		
-5639	ZinacantanTzotzil	Mayan	GO	bat	bat	ɓ a tʰ		
-7125	Qeqchi	Mayan	GO	xik (2)	xik	ʃ i kʰ		
-9116	Otomi	Otomanguean	GO	ma	ma	m a		
-9117	Otomi	Otomanguean	GO	pa	pa	p a		
-10815	ImbaburaQuechua	Quechuan	GO	rina (1)	rina	ʐ i n a		
-12011	Wichi	Matacoan	GO	yik (2)	yik	y i k		
-13292	Mapudungun	Araucanian	GO	amun	amun	a m u n		
-231	Portuguese	Indo-European	GOOSE	ganso	ganso	ɡ ɐ̃ s u		
-1925	Spanish	Indo-European	GOOSE	ganso	ganso	g a n s o		
-3654	Yaqui	Uto-Aztecan	GOOSE	kanso	kanso	k a n s o	Spanish	ganso
-6367	Qeqchi	Mayan	GOOSE	ganso	ganso	g a n s o	Spanish	ganso
-8216	Otomi	Otomanguean	GOOSE	ganso	ganso	g a n s o	Spanish	ganso
-10330	ImbaburaQuechua	Quechuan	GOOSE	gansu	gansu	g a n s u	Spanish	ganso
-11482	Wichi	Matacoan	GOOSE	tsehistaj	tsehistaj	ts e h i s t a x		
-12776	Mapudungun	Araucanian	GOOSE	kansu	kansu	k a n s u	Spanish	ganso
-562	Portuguese	Indo-European	GRIND	esmagar	esmagar	i ʒ m a ɡ a ʁ		
-563	Portuguese	Indo-European	GRIND	moer	moer	m o e ʁ		
-2258	Spanish	Indo-European	GRIND	aplastar	aplastar	a p l a s t a ɾ		
-2259	Spanish	Indo-European	GRIND	moler	moler	m o l ɛ ɾ		
-3938	Yaqui	Uto-Aztecan	GRIND	tuuse	tuuse	t uː s e		
-5358	ZinacantanTzotzil	Mayan	GRIND	huch’un	huch’un	h u tʃʼ u n		
-5359	ZinacantanTzotzil	Mayan	GRIND	net’	net’	n e tʼ		
-5360	ZinacantanTzotzil	Mayan	GRIND	petz’k’un	petz’k’un	pʰ e tsʼ kʼ u n		
-6723	Qeqchi	Mayan	GRIND	tenok	tenok	t e n o kʰ	Ch’olan	*ten
-6724	Qeqchi	Mayan	GRIND	yab'ok	yab'ok	j a ɓ o kʰ		
-6725	Qeqchi	Mayan	GRIND	sob'ok	sob'ok	s o ɓ o kʰ		
-8584	Otomi	Otomanguean	GRIND	ku̲ni	ku̲ni	k u n i		
-10561	ImbaburaQuechua	Quechuan	GRIND	kutana (1)	kutana	k u t a n a		
-11746	Wichi	Matacoan	GRIND	ichufwaj	ichufwaj	i tʃ u fʷ a x		
-13028	Mapudungun	Araucanian	GRIND	rüngümün	rüngümün	ɻ ɨ ŋ ɨ m ɨ n		
-1416	Portuguese	Indo-European	GUESS	adivinhar	adivinhar	a dʒ i v i ɲ a ʁ		
-1417	Portuguese	Indo-European	GUESS	conjeturar	conjeturar	k õ ʒ e t u ɾ a ʁ		
-3167	Spanish	Indo-European	GUESS	adivinar	adivinar	a ð i β i n a ɾ		
-3168	Spanish	Indo-European	GUESS	acertar	acertar	a s ɛ ɾ t a ɾ		
-4670	Yaqui	Uto-Aztecan	GUESS	ju’une’ea	ju’une’ea	j u ʔ u n e ʔ e a		
-5982	ZinacantanTzotzil	Mayan	GUESS	yules ta hol	yules_ta_hol	j u l e s + t a + h o l		
-7670	Qeqchi	Mayan	GUESS	q'ehink	q'ehink	qʼ e h i n kʰ		
-7671	Qeqchi	Mayan	GUESS	eek'ank	eek'ank	eː kʼ a n kʰ		
-9744	Otomi	Otomanguean	GUESS	tini	tini	t̪ i n i		
-9745	Otomi	Otomanguean	GUESS	ät’i	ät’i	ɐ t̪ʼ i		
-9746	Otomi	Otomanguean	GUESS	k'ahni	k'ahni	k ʔ a h n i		
-11146	ImbaburaQuechua	Quechuan	GUESS	adibinana	adibinana	a d i b i n a n a	Spanish	adivinar
-12363	Wichi	Matacoan	GUESS	pajche yihanch’uya	pajche_yihanch’uya	p a x tʃ e + j i h a n tʃ ʔ u j a		
-13630	Mapudungun	Araucanian	GUESS	mupin	mupin	m u p i n		
-13631	Mapudungun	Araucanian	GUESS	lleqnien	lleqnien	ʎ e ɣ n i e n		
-1294	Portuguese	Indo-European	HEAR	ouvir	ouvir	o v i ʁ		
-3033	Spanish	Indo-European	HEAR	oír	oír	o i ɾ		
-4577	Yaqui	Uto-Aztecan	HEAR	jikkaja	jikkaja	j i k k a j a		
-5891	ZinacantanTzotzil	Mayan	HEAR	7a7i	7a7i	ʔ a ʔ i		
-7533	Qeqchi	Mayan	HEAR	ab'ink	ab'ink	a ɓ i n kʰ		
-9576	Otomi	Otomanguean	HEAR	o̲de	o̲de	ə d e		
-11059	ImbaburaQuechua	Quechuan	HEAR	uyana (1)	uyana	u j a n a		
-12272	Wichi	Matacoan	HEAR	ilota	ilota	i l o t a		
-12273	Wichi	Matacoan	HEAR	ilotey	ilotey	i l o t e j		
-13545	Mapudungun	Araucanian	HEAR	allkün	allkün	a ʎ k ɨ n		
-1150	Portuguese	Indo-European	HOOK	gancho	gancho	ɡ ɐ̃ ʃ u		
-2883	Spanish	Indo-European	HOOK	gancho	gancho	g a n tʃ o		
-4433	Yaqui	Uto-Aztecan	HOOK	kancho	kancho	k a n tʃ o	Spanish	gancho
-5782	ZinacantanTzotzil	Mayan	HOOK	hiplebal	hiplebal	h i p l e ɓ a l		
-5783	ZinacantanTzotzil	Mayan	HOOK	hok’leb	hok’leb	h o kʼ l e b		
-7365	Qeqchi	Mayan	HOOK	lokoch	lokoch	l o k o tʃ		
-9385	Otomi	Otomanguean	HOOK	nthu̲t'i	nthu̲t'i	n θ u t̪ʼ i		
-10951	ImbaburaQuechua	Quechuan	HOOK	charina (3)	charina	tʃ a ɾ i n a		
-12169	Wichi	Matacoan	HOOK	tokek	tokek	t o k e k		
-13437	Mapudungun	Araucanian	HOOK	chang	chang	tʃ a ŋ		
-1476	Portuguese	Indo-European	HOWL	uivar	uivar	ui v a ʁ		
-3236	Spanish	Indo-European	HOWL	aullar	aullar	a u ʝ a ɾ		
-4727	Yaqui	Uto-Aztecan	HOWL	bwaana	bwaana	bʷ aː n a		
-6034	ZinacantanTzotzil	Mayan	HOWL	7avan	7avan	ʔ a v a n		
-7734	Qeqchi	Mayan	HOWL	oq'lok	oq'lok	o qʼ l o kʰ		
-9859	Otomi	Otomanguean	HOWL	mafi	mafi	m a f i		
-11197	ImbaburaQuechua	Quechuan	HOWL	awllana	awllana	a w ʒ a n a	Spanish	aullar
-12415	Wichi	Matacoan	HOWL	t’onlhi	t’onlhi	t ʔ o n lˠ i		
-13685	Mapudungun	Araucanian	HOWL	wawlun	wawlun	w a w l u n		
-118	Portuguese	Indo-European	HUSBAND	marido	marido	m a ɾ i d u		
-1795	Spanish	Indo-European	HUSBAND	marido	marido	m a ɾ i ð o		
-1796	Spanish	Indo-European	HUSBAND	esposo	esposo	ɛ s p o s o		
-3539	Yaqui	Uto-Aztecan	HUSBAND	kuuna	kuuna	k uː n a		
-4973	ZinacantanTzotzil	Mayan	HUSBAND	malalil	malalil	m a l a l i l		
-4974	ZinacantanTzotzil	Mayan	HUSBAND	mol	mol	m o l		
-6251	Qeqchi	Mayan	HUSBAND	b’eelom	b’eelom	ɓ eː l o m		
-8034	Otomi	Otomanguean	HUSBAND	ndo̲	ndo̲	n d ə		
-10239	ImbaburaQuechua	Quechuan	HUSBAND	kusa	kusa	k u s a		
-11396	Wichi	Matacoan	HUSBAND	toch’efwa hin’u	toch’efwa_hin’u	t o tʃ ʔ e fʷ a + h i n ʔ u		
-12645	Mapudungun	Araucanian	HUSBAND	füta	füta	f ɨ t a		
-678	Portuguese	Indo-European	HUT	cabana	cabana	k a b ɐ n ɐ		
-2374	Spanish	Indo-European	HUT	cabaɲa	cabaɲa	k a β a ɲ a		
-2375	Spanish	Indo-European	HUT	choza	choza	tʃ o s a		
-4049	Yaqui	Uto-Aztecan	HUT	ramaa	ramaa	r a m aː	Spanish	enramada
-5442	ZinacantanTzotzil	Mayan	HUT	lechepat	lechepat	l e tʃʰ e p a tʰ		
-6826	Qeqchi	Mayan	HUT	po’lem	po’lem	p o ʔ l e m	Ch’olti’	*po’lem
-6827	Qeqchi	Mayan	HUT	paapa'x	paapa'x	p aː p a ʔ ʃ		
-8723	Otomi	Otomanguean	HUT	nguu	nguu	n g uː		
-10640	ImbaburaQuechua	Quechuan	HUT	ujsha wasi	ujsha_wasi	u x ʃ a + w a s i		
-11833	Wichi	Matacoan	HUT	hep	hep	h e p		
-11834	Wichi	Matacoan	HUT	chechelhep	chechelhep	tʃ e tʃ e lˠ e p		
-13108	Mapudungun	Araucanian	HUT	ruka	ruka	ɻ u k a		
-704	Portuguese	Indo-European	LADDER	escada	escada	i ʃ k a d ɐ		
-2400	Spanish	Indo-European	LADDER	escalera	escalera	ɛ s k a l ɛ ɾ a		
-4002	Yaqui	Uto-Aztecan	LADDER	ejkalea	ejkalea	e j k a l e a	Spanish	escalera
-5416	ZinacantanTzotzil	Mayan	LADDER	moch te7	moch_te7	m o tʃʰ + t e ʔ		
-5417	ZinacantanTzotzil	Mayan	LADDER	muyebal	muyebal	m u j e ɓ a l		
-5418	ZinacantanTzotzil	Mayan	LADDER	tek’obal	tek’obal	t e kʼ o ɓ a l		
-6781	Qeqchi	Mayan	LADDER	taqleb’aal	taqleb’aal	t a q l e ɓ aː l		
-6782	Qeqchi	Mayan	LADDER	eeb’	eeb’	eː ɓ	Ch’olan	*e’ehb’
-6783	Qeqchi	Mayan	LADDER	eskaleer	eskaleer	e s k a l eː r	Spanish	escalera
-8658	Otomi	Otomanguean	LADDER	'rede	'rede	ˀr e d e		
-10611	ImbaburaQuechua	Quechuan	LADDER	chakana	chakana	tʃ a k a n a		
-11795	Wichi	Matacoan	LADDER	tosaites	tosaites	t o s a i t e s		
-13071	Mapudungun	Araucanian	LADDER	pürapürawe	pürapürawe	p ɨ ɻ a p ɨ ɻ a w e		
-13072	Mapudungun	Araucanian	LADDER	kalera	kalera	k a l e ɻ a	Spanish	escalera
-31	Portuguese	Indo-European	LAKE	lago	lago	l a ɡ u		
-1714	Spanish	Indo-European	LAKE	lago	lago	l a ɣ o		
-3473	Yaqui	Uto-Aztecan	LAKE	bauba’a	bauba’a	b a u b a ʔ a		
-4912	ZinacantanTzotzil	Mayan	LAKE	nab	nab	n a b		
-6173	Qeqchi	Mayan	LAKE	palaw	palaw	p a l a w	Ch’olti’	palaw
-6174	Qeqchi	Mayan	LAKE	pumpuukil ha’	pumpuukil_ha’	p u m p uː k i l + h a ʔ		
-7953	Otomi	Otomanguean	LAKE	zabi	zabi	z a b i		
-10183	ImbaburaQuechua	Quechuan	LAKE	kucha	kucha	k u tʃ a		
-11342	Wichi	Matacoan	LAKE	lawumek	lawumek	l a w u m e k		
-11343	Wichi	Matacoan	LAKE	lhemchitaj	lhemchitaj	lˠ e m tʃ i t a x		
-12568	Mapudungun	Araucanian	LAKE	ḻafkeṉ	ḻafkeṉ	l̪ a f k e n̪		
-782	Portuguese	Indo-European	LEAF	folha	folha	f ɔ ʎ ɐ		
-2479	Spanish	Indo-European	LEAF	hoja	hoja	o x a		
-4122	Yaqui	Uto-Aztecan	LEAF	saawa	saawa	s aː w a		
-5505	ZinacantanTzotzil	Mayan	LEAF	7anal	7anal	ʔ a n a l		
-6922	Qeqchi	Mayan	LEAF	xaq	xaq	ʃ a qʰ		
-6923	Qeqchi	Mayan	LEAF	q’een	q’een	q ʔ eː n		
-8837	Otomi	Otomanguean	LEAF	xi (1)	xi	x i		
-8838	Otomi	Otomanguean	LEAF	thot'i (1)	thot'i	θ o t̪ʼ i		
-10704	ImbaburaQuechua	Quechuan	LEAF	fanga	fanga	ɸ a ŋ g a		
-11892	Wichi	Matacoan	LEAF	lawule	lawule	l a w u l e		
-13176	Mapudungun	Araucanian	LEAF	tapül	tapül	t a p ɨ l		
-398	Portuguese	Indo-European	LIVER	fígado	fígado	f i ɡ a d u		
-2094	Spanish	Indo-European	LIVER	hígado	hígado	i ɣ a ð o		
-3804	Yaqui	Uto-Aztecan	LIVER	jeemam	jeemam	j eː m a m		
-5222	ZinacantanTzotzil	Mayan	LIVER	sekub	sekub	s e k u b		
-6542	Qeqchi	Mayan	LIVER	ch'och'	ch'och'	tʃʼ o tʃʼ		
-8398	Otomi	Otomanguean	LIVER	ya	ya	j a		
-10454	ImbaburaQuechua	Quechuan	LIVER	yana shungu (1)	yana_shungu	j a n a + ʃ u ŋ g u		
-11635	Wichi	Matacoan	LIVER	totonek	totonek	t o t o n e k		
-12907	Mapudungun	Araucanian	LIVER	ke	ke	k e		
-397	Portuguese	Indo-European	LUNG	pulmão	pulmão	p uu m ɐ̃ũ		
-2093	Spanish	Indo-European	LUNG	pulmón	pulmón	p u l m o n		
-3803	Yaqui	Uto-Aztecan	LUNG	sare’echia	sare’echia	s a r e ʔ e tʃ i a		
-6541	Qeqchi	Mayan	LUNG	pospo'oy	pospo'oy	p o s p o ʔ o j		
-8397	Otomi	Otomanguean	LUNG	pulmon	pulmon	p u l m o n	Spanish	pulmon
-10453	ImbaburaQuechua	Quechuan	LUNG	yurak shungu	yurak_shungu	j u ɾ a k + ʃ u ŋ g u		
-11634	Wichi	Matacoan	LUNG	toyalhhis	toyalhhis	t o j a l̥ h i s		
-12906	Mapudungun	Araucanian	LUNG	poṉon	poṉon	p o n̪ o n		
-1188	Portuguese	Indo-European	MANY	muito	muito	m ũ j t u		
-1189	Portuguese	Indo-European	MANY	muitos	muitos	m ũ j t u ʃ		
-2921	Spanish	Indo-European	MANY	mucho	mucho	m u tʃ o		
-4478	Yaqui	Uto-Aztecan	MANY	ousi	ousi	o u s i		
-5815	ZinacantanTzotzil	Mayan	MANY	7ep	7ep	ʔ e p		
-7403	Qeqchi	Mayan	MANY	k’i	k’i	kʼ i		
-7404	Qeqchi	Mayan	MANY	k’ihal	k’ihal	kʼ i h a l		
-7405	Qeqchi	Mayan	MANY	mayalok	mayalok	m a j a l o kʰ		
-9429	Otomi	Otomanguean	MANY	xingu	xingu	x i n g u		
-9430	Otomi	Otomanguean	MANY	xi (2)	xi	x i		
-9431	Otomi	Otomanguean	MANY	ndunthe	ndunthe	n d u n θ e		
-9432	Otomi	Otomanguean	MANY	nts'e̲di	nts'e̲di	n tsʼ æ d i		
-10980	ImbaburaQuechua	Quechuan	MANY	achka (1)	achka	a tʃ k a		
-12197	Wichi	Matacoan	MANY	nitokw	nitokw	n i t o kʷ		
-13465	Mapudungun	Araucanian	MANY	fentren	fentren	f e n ʈʂ e n		
-221	Portuguese	Indo-European	MARE	égua	égua	ɛ ɡ w ɐ		
-1914	Spanish	Indo-European	MARE	yegua	yegua	ɟ ʝ e ɣ w a		
-3646	Yaqui	Uto-Aztecan	MARE	yeewa	yeewa	j eː w a	Spanish	yegua
-3647	Yaqui	Uto-Aztecan	MARE	kaba’i jamut	kaba’i_jamut	k a b a ʔ i + j a m u t	Spanish	caballo
-5057	ZinacantanTzotzil	Mayan	MARE	yevash	yevash	j e v a sʰ	Spanish	yegua
-6358	Qeqchi	Mayan	MARE	xna’ kawaay	xna’_kawaay	ʃ n a ʔ + k a w aː j		
-8202	Otomi	Otomanguean	MARE	tsufni	tsufni	ts u f n i		
-10322	ImbaburaQuechua	Quechuan	MARE	bistya	bistya	b i s t j a	Spanish	bestia
-11475	Wichi	Matacoan	MARE	yel’ataj atsinha	yel’ataj_atsinha	y e l ʔ a t a x + a ts i n̥ a		
-12768	Mapudungun	Araucanian	MARE	zomo kawellu	zomo_kawellu	z o m o + k a w e ʎ u	Spanish	caballo
-12769	Mapudungun	Araucanian	MARE	yewa	yewa	y e w a	Spanish	yegua
-129	Portuguese	Indo-European	MARRIED WOMAN	casada	casada	k a z a d ɐ		
-1806	Spanish	Indo-European	MARRIED WOMAN	mujer casada	mujer_casada	m u x ɛ ɾ + k a s a ð a		
-3549	Yaqui	Uto-Aztecan	MARRIED WOMAN	kunala	kunala	k u n a l a		
-6261	Qeqchi	Mayan	MARRIED WOMAN	sumsuukil	sumsuukil	s u m s uː k i l		
-8045	Otomi	Otomanguean	MARRIED WOMAN	‘be̲hñä	‘be̲hñä	ˀb æ h ɲ ɐ		
-10247	ImbaburaQuechua	Quechuan	MARRIED WOMAN	kazarashka warmi	kazarashka_warmi	k a z a ɾ a ʃ k a + w a ɾ m i		
-11403	Wichi	Matacoan	MARRIED WOMAN	atsinha lach’efwa ihi	atsinha_lach’efwa_ihi	a ts i n̥ a + l a tʃ ʔ e fʷ a + i h i		
-12654	Mapudungun	Araucanian	MARRIED WOMAN	fütangen zomo	fütangen_zomo	f ɨ t a ŋ e n + z o m o		
-684	Portuguese	Indo-European	MEN'S HOUSE	casa de homens	casa_de_homens	k a z ɐ + dʒ i + ɔ m ẽ ʃ		
-2381	Spanish	Indo-European	MEN'S HOUSE	casa de hombres	casa_de_hombres	k a s a + ð e + o m b ɾ e s		
-8726	Otomi	Otomanguean	MEN'S HOUSE	nguu ya ‘ñoho	nguu_ya_‘ñoho	n g uː + j a + ˀɲ o h o		
-1057	Portuguese	Indo-European	MERCHANT	negociante	negociante	n e ɡ o s i ɐ̃ tʃ i		
-2782	Spanish	Indo-European	MERCHANT	comerciante	comerciante	k o m ɛ ɾ s j a n t e		
-4355	Yaqui	Uto-Aztecan	MERCHANT	jita nenenkame	jita_nenenkame	j i t a + n e n e n k a m e		
-5708	ZinacantanTzotzil	Mayan	MERCHANT	hchonolahel	hchonolahel	h tʃʰ o n o l a h e l		
-5709	ZinacantanTzotzil	Mayan	MERCHANT	hp’olmahel	hp’olmahel	h pʼ o l m a h e l		
-5710	ZinacantanTzotzil	Mayan	MERCHANT	marchante	marchante	m a ɾ tʃʰ a n t e	Spanish	marchante
-7243	Qeqchi	Mayan	MERCHANT	k'ayinel	k'ayinel	k ʔ a j i n e l		
-9258	Otomi	Otomanguean	MERCHANT	da̲i	da̲i	d ɔ i		
-10884	ImbaburaQuechua	Quechuan	MERCHANT	nigusyante	nigusyante	n i g u s j a n d e	Spanish	negociante
-12092	Wichi	Matacoan	MERCHANT	tienawu	tienawu	t i e n a w u	Spanish	tienda
-13365	Mapudungun	Araucanian	MERCHANT	ngillakafe	ngillakafe	ŋ i ʎ a k a f e		
-1409	Portuguese	Indo-European	MIND	mente	mente	m ẽ tʃ i		
-3157	Spanish	Indo-European	MIND	mente	mente	m e n t e		
-3158	Spanish	Indo-European	MIND	pensamiento	pensamiento	p e n s a m j e n t o		
-4664	Yaqui	Uto-Aztecan	MIND	kobanamyai	kobanamyai	k o b a n a m j a i		
-7664	Qeqchi	Mayan	MIND	k'a'ux	k'a'ux	k ʔ a ʔ u ʃ		
-9734	Otomi	Otomanguean	MIND	mfeni	mfeni	m f e n i		
-11140	ImbaburaQuechua	Quechuan	MIND	yuyay (2)	yuyay	j u j a j		
-12357	Wichi	Matacoan	MIND	totichunhayaj	totichunhayaj	t o t i tʃ u n̥ a j a x		
-13624	Mapudungun	Araucanian	MIND	rakizuam	rakizuam	ɻ a k i z u a m		
-674	Portuguese	Indo-European	MIRROR	espelho	espelho	i ʃ p e ʎ u		
-2369	Spanish	Indo-European	MIRROR	espejo	espejo	ɛ s p e x o		
-4046	Yaqui	Uto-Aztecan	MIRROR	ejpeeko	ejpeeko	e j p eː k o	Spanish	espejo
-5438	ZinacantanTzotzil	Mayan	MIRROR	nen	nen	n e n		
-5439	ZinacantanTzotzil	Mayan	MIRROR	k’elobbail	k’elobbail	kʼ e l o ɓ + ɓ a i l		
-6822	Qeqchi	Mayan	MIRROR	lem	lem	l e m		
-8720	Otomi	Otomanguean	MIRROR	hñe (1)	hñe	h ɲ e		
-10637	ImbaburaQuechua	Quechuan	MIRROR	ispiju	ispiju	i s p i x u	Spanish	espejo
-11830	Wichi	Matacoan	MIRROR	topeyakhi	topeyakhi	t o p e j a kʰ i		
-13103	Mapudungun	Araucanian	MIRROR	komütuwe	komütuwe	k o m ɨ t u w e		
-13104	Mapudungun	Araucanian	MIRROR	espeko	espeko	e s p e k o	Spanish	espejo
-13105	Mapudungun	Araucanian	MIRROR	lilpu	lilpu	l i l p u	Quechua	rirpu
-275	Portuguese	Indo-European	MONKEY	macaco	macaco	m a k a k u		
-1969	Spanish	Indo-European	MONKEY	mono	mono	m o n o		
-3686	Yaqui	Uto-Aztecan	MONKEY	cholua	cholua	tʃ o l u a		
-5098	ZinacantanTzotzil	Mayan	MONKEY	mash	mash	m a sʰ		
-6405	Qeqchi	Mayan	MONKEY	b’atz’	b’atz’	ɓ a tsʼ		
-8266	Otomi	Otomanguean	MONKEY	nzu̲pa	nzu̲pa	n z u p a		
-10353	ImbaburaQuechua	Quechuan	MONKEY	munu	munu	m u n u	Spanish	mono
-11516	Wichi	Matacoan	MONKEY	hoton’i	hoton’i	h o t o n ʔ i		
-225	Portuguese	Indo-European	MULE	mulo	mulo	m u l u		
-226	Portuguese	Indo-European	MULE	mula	mula	m u l ɐ		
-1919	Spanish	Indo-European	MULE	mulo	mulo	m u l o		
-1920	Spanish	Indo-European	MULE	mula	mula	m u l a		
-3650	Yaqui	Uto-Aztecan	MULE	muura	muura	m uː r a	Spanish	mula
-5059	ZinacantanTzotzil	Mayan	MULE	ka7	ka7	k a ʔ	Spanish	caballo
-6361	Qeqchi	Mayan	MULE	muul	muul	m uː l	Spanish	mula
-8208	Otomi	Otomanguean	MULE	mäzo	mäzo	m ɐ z o	Spanish	macho
-8209	Otomi	Otomanguean	MULE	tsumu̲zo	tsumu̲zo	ts u m u z o		
-8210	Otomi	Otomanguean	MULE	mula	mula	m u l a	Spanish	mula
-10325	ImbaburaQuechua	Quechuan	MULE	mula	mula	m u l a	Spanish	mula
-11478	Wichi	Matacoan	MULE	mula	mula	m u l a	Spanish	mula
-254	Portuguese	Indo-European	MUROID (MOUSE OR RAT)	rato	rato	ʁ a t u		
-255	Portuguese	Indo-European	MUROID (MOUSE OR RAT)	camundongo	camundongo	k ɐ m ũ d õ ɡ u		
-256	Portuguese	Indo-European	MUROID (MOUSE OR RAT)	ratinho	ratinho	ʁ a tʃ i ɲ u		
-1948	Spanish	Indo-European	MUROID (MOUSE OR RAT)	ratón	ratón	r a t o n		
-1949	Spanish	Indo-European	MUROID (MOUSE OR RAT)	rata	rata	r a t a		
-3673	Yaqui	Uto-Aztecan	MUROID (MOUSE OR RAT)	tori	tori	t o r i		
-5089	ZinacantanTzotzil	Mayan	MUROID (MOUSE OR RAT)	ch’o	ch’o	tʃʼ o		
-6389	Qeqchi	Mayan	MUROID (MOUSE OR RAT)	ch’o	ch’o	tʃʼ o		
-6390	Qeqchi	Mayan	MUROID (MOUSE OR RAT)	uch ch’o	uch_ch’o	u tʃ + tʃʼ o		
-8246	Otomi	Otomanguean	MUROID (MOUSE OR RAT)	ngu	ngu	n g u		
-8247	Otomi	Otomanguean	MUROID (MOUSE OR RAT)	dätä ngu	dätä_ngu	d ɐ t̪ ɐ + n g u		
-8248	Otomi	Otomanguean	MUROID (MOUSE OR RAT)	ndongu	ndongu	n d o n g u		
-8249	Otomi	Otomanguean	MUROID (MOUSE OR RAT)	tsungu	tsungu	ts u n g u		
-8250	Otomi	Otomanguean	MUROID (MOUSE OR RAT)	t'ungu	t'ungu	t̪ʼ u n g u		
-10346	ImbaburaQuechua	Quechuan	MUROID (MOUSE OR RAT)	ukucha	ukucha	u k u tʃ a		
-11502	Wichi	Matacoan	MUROID (MOUSE OR RAT)	tsojtsoj	tsojtsoj	ts o x ts o x		
-11503	Wichi	Matacoan	MUROID (MOUSE OR RAT)	ama	ama	a m a		
-12794	Mapudungun	Araucanian	MUROID (MOUSE OR RAT)	zewü	zewü	z e w ɨ		
-361	Portuguese	Indo-European	NECK	pescoço	pescoço	p e ʃ k ɔ s u		
-2056	Spanish	Indo-European	NECK	cuello	cuello	k w e ʝ o		
-3766	Yaqui	Uto-Aztecan	NECK	kutanaa	kutanaa	k u t a n aː		
-5183	ZinacantanTzotzil	Mayan	NECK	nuk’il	nuk’il	n u kʼ i l		
-6503	Qeqchi	Mayan	NECK	kux	kux	k u ʃ		
-6504	Qeqchi	Mayan	NECK	ja’aj	ja’aj	x a ʔ a x		
-8357	Otomi	Otomanguean	NECK	'yu̲ga̲	'yu̲ga̲	ˀj u g ɔ		
-10421	ImbaburaQuechua	Quechuan	NECK	kunga	kunga	k u ŋ g a		
-11601	Wichi	Matacoan	NECK	tow’u	tow’u	t o w ʔ u		
-12873	Mapudungun	Araucanian	NECK	peḻ	peḻ	p e l̪		
-12874	Mapudungun	Araucanian	NECK	topeḻ	topeḻ	t o p e l̪		
-1550	Portuguese	Indo-European	NEIGHBOUR	vizinho	vizinho	v i z i ɲ u		
-3317	Spanish	Indo-European	NEIGHBOUR	vecino	vecino	b e s i n o		
-4785	Yaqui	Uto-Aztecan	NEIGHBOUR	konila jo’akame	konila_jo’akame	k o n i l a + j o ʔ a k a m e		
-6078	ZinacantanTzotzil	Mayan	NEIGHBOUR	pana	pana	pʰ a n a		
-6079	ZinacantanTzotzil	Mayan	NEIGHBOUR	shokan na	shokan_na	ʃ o k a n + n a		
-7795	Qeqchi	Mayan	NEIGHBOUR	echkab'al	echkab'al	e tʃ k a ɓ a l		
-9979	Otomi	Otomanguean	NEIGHBOUR	bisinu	bisinu	b i s i n u	Spanish	vecino
-11248	ImbaburaQuechua	Quechuan	NEIGHBOUR	bizinu	bizinu	b i z i n u	Spanish	vecino
-13727	Mapudungun	Araucanian	NEIGHBOUR	karukatu	karukatu	k a ɻ u k a t u		
-584	Portuguese	Indo-European	OIL (ORGANIC SUBSTANCE)	azeite	azeite	a z ei tʃ i		
-585	Portuguese	Indo-European	OIL (ORGANIC SUBSTANCE)	óleo	óleo	ɔ l i u		
-2277	Spanish	Indo-European	OIL (ORGANIC SUBSTANCE)	aceite	aceite	a s e i t e		
-3955	Yaqui	Uto-Aztecan	OIL (ORGANIC SUBSTANCE)	aseite	aseite	a s e i t e	Spanish	aceite
-5377	ZinacantanTzotzil	Mayan	OIL (ORGANIC SUBSTANCE)	7asete	7asete	ʔ a s e t e	Spanish	aceite
-6742	Qeqchi	Mayan	OIL (ORGANIC SUBSTANCE)	aseet	aseet	a s eː tʰ	Spanish	aceite
-8603	Otomi	Otomanguean	OIL (ORGANIC SUBSTANCE)	nziki	nziki	n z i k i		
-8604	Otomi	Otomanguean	OIL (ORGANIC SUBSTANCE)	asete	asete	a s e t̪ e	Spanish	aceite
-10576	ImbaburaQuechua	Quechuan	OIL (ORGANIC SUBSTANCE)	asiyti	asiyti	a s i j t i	Spanish	aceite
-11760	Wichi	Matacoan	OIL (ORGANIC SUBSTANCE)	aseitaj	aseitaj	a s e i t a x	Spanish	aceite
-1096	Portuguese	Indo-European	OPEN	abrir	abrir	a b ɾ i ʁ		
-1097	Portuguese	Indo-European	OPEN	aberto	aberto	a b ɛ ʁ t u		
-2830	Spanish	Indo-European	OPEN	abrir	abrir	a β ɾ i ɾ		
-4390	Yaqui	Uto-Aztecan	OPEN	etapo	etapo	e t a p o		
-5736	ZinacantanTzotzil	Mayan	OPEN	ham	ham	h a m		
-7284	Qeqchi	Mayan	OPEN	jaqok	jaqok	x a q o kʰ		
-7285	Qeqchi	Mayan	OPEN	tehok	tehok	t e h o kʰ		
-9318	Otomi	Otomanguean	OPEN	xoki	xoki	x o k i		
-9319	Otomi	Otomanguean	OPEN	yaki	yaki	j a k i		
-9320	Otomi	Otomanguean	OPEN	zo̲t'e	zo̲t'e	z ə t̪ʼ e		
-10914	ImbaburaQuechua	Quechuan	OPEN	pascana	pascana	p a s c a n a		
-12129	Wichi	Matacoan	OPEN	iwum	iwum	i w u m		
-13397	Mapudungun	Araucanian	OPEN	nülan	nülan	n ɨ l a n		
-527	Portuguese	Indo-European	OVEN	forno	forno	f ɔ ʁ n u		
-2223	Spanish	Indo-European	OVEN	horno	horno	o ɾ n o		
-3909	Yaqui	Uto-Aztecan	OVEN	joona	joona	j oː n a	Spanish	horno
-5331	ZinacantanTzotzil	Mayan	OVEN	horno	horno	h o ɾ n o	Spanish	horno
-6680	Qeqchi	Mayan	OVEN	oorn	oorn	oː ɾ n	Spanish	horno
-8545	Otomi	Otomanguean	OVEN	nthu	nthu	n θ u		
-8546	Otomi	Otomanguean	OVEN	nt’ut’i	nt’ut’i	n t̪ʼ u t̪ʼ i		
-8547	Otomi	Otomanguean	OVEN	ornu	ornu	o r n u	Spanish	horno
-10536	ImbaburaQuechua	Quechuan	OVEN	jurnu	jurnu	x u ɾ n u	Spanish	horno
-11723	Wichi	Matacoan	OVEN	wuy’uhi	wuy’uhi	w u j ʔ u h i		
-12998	Mapudungun	Araucanian	OVEN	rono	rono	ɻ o n o	Spanish	horno
-484	Portuguese	Indo-European	PHYSICIAN	médico	médico	m ɛ dʒ i k u		
-2180	Spanish	Indo-European	PHYSICIAN	doctor	doctor	d o k t o ɾ		
-2181	Spanish	Indo-European	PHYSICIAN	médico	médico	m e ð i k o		
-3869	Yaqui	Uto-Aztecan	PHYSICIAN	jitebii	jitebii	j i t e b iː		
-3870	Yaqui	Uto-Aztecan	PHYSICIAN	lotor ~ lotoor	lotor	l o t o r	Spanish	doctor
-3871	Yaqui	Uto-Aztecan	PHYSICIAN	yoi jitebi	yoi_jitebi	j o i + j i t e b i		
-5291	ZinacantanTzotzil	Mayan	PHYSICIAN	hposhtavaneh	hposhtavaneh	h p o ʃ t a v a n e h		
-5292	ZinacantanTzotzil	Mayan	PHYSICIAN	lo*ktor	lo*ktor	l o o k t o r	Spanish	doctor
-6629	Qeqchi	Mayan	PHYSICIAN	loktor	loktor	l o k t o r	Spanish	doctor
-6630	Qeqchi	Mayan	PHYSICIAN	b'anonel	b'anonel	ɓ a n o n e l		
-8480	Otomi	Otomanguean	PHYSICIAN	'yo̲the	'yo̲the	ˀj ə θ e		
-8481	Otomi	Otomanguean	PHYSICIAN	doku̲tor	doku̲tor	d o k u t̪ o r	Spanish	doctor
-10506	ImbaburaQuechua	Quechuan	PHYSICIAN	jambik (1)	jambik	x a m b i k		
-11690	Wichi	Matacoan	PHYSICIAN	luktul	luktul	l u k t u l	Spanish	doctor
-11691	Wichi	Matacoan	PHYSICIAN	kachawu	kachawu	k a tʃ a w u		
-12963	Mapudungun	Araucanian	PHYSICIAN	ḻaweṉtuchefe	ḻaweṉtuchefe	l̪ a w e n̪ t u tʃ e f e		
-12964	Mapudungun	Araucanian	PHYSICIAN	doktor	doktor	θ o k t o ɻ	Spanish	doctor
-788	Portuguese	Indo-European	PINE	pinheiro	pinheiro	p i ɲ ei ɾ u		
-2485	Spanish	Indo-European	PINE	pino	pino	p i n o		
-4126	Yaqui	Uto-Aztecan	PINE	oko	oko	o k o		
-4127	Yaqui	Uto-Aztecan	PINE	piino	piino	p iː n o	Spanish	pino
-5509	ZinacantanTzotzil	Mayan	PINE	toh	toh	t o h		
-6928	Qeqchi	Mayan	PINE	chaj	chaj	tʃ a x		
-8846	Otomi	Otomanguean	PINE	tu̲di	tu̲di	t̪ u d i		
-8847	Otomi	Otomanguean	PINE	pinu	pinu	p i n u	Spanish	pino
-10707	ImbaburaQuechua	Quechuan	PINE	pinu	pinu	p i n u	Spanish	pino
-11898	Wichi	Matacoan	PINE	hal’o	hal’o	h a l ʔ o		
-13183	Mapudungun	Araucanian	PINE	pinu	pinu	p i n u	Spanish	pino
-650	Portuguese	Indo-European	POCKET	bolso	bolso	b ɔu s u		
-2341	Spanish	Indo-European	POCKET	bolsillo	bolsillo	b o l s i ʝ o		
-4025	Yaqui	Uto-Aztecan	POCKET	bolsiom	bolsiom	b o l s i o m	Spanish	bolsillo
-4026	Yaqui	Uto-Aztecan	POCKET	boosam	boosam	b oː s a m	Spanish	bolsa
-6803	Qeqchi	Mayan	POCKET	b'oox	b'oox	ɓ oː ʃ	Ch’olan	*box
-8684	Otomi	Otomanguean	POCKET	'ñägi	'ñägi	ˀɲ ɐ g i		
-10623	ImbaburaQuechua	Quechuan	POCKET	bulsiku	bulsiku	b u l s i k u	Spanish	bolsico
-11811	Wichi	Matacoan	POCKET	tokhoyhi	tokhoyhi	t o kʰ o j h i		
-13084	Mapudungun	Araucanian	POCKET	fonsiku	fonsiku	f o n s i k u	Spanish	bolsillo
-576	Portuguese	Indo-European	POTATO	batata	batata	b a t a t ɐ		
-2269	Spanish	Indo-European	POTATO	papa	papa	p a p a		
-3947	Yaqui	Uto-Aztecan	POTATO	paapa	paapa	p aː p a	Quechua	papa
-5369	ZinacantanTzotzil	Mayan	POTATO	7isak’	7isak’	ʔ i s a kʼ		
-5370	ZinacantanTzotzil	Mayan	POTATO	batz’i 7isak’	batz’i_7isak’	ɓ a tsʼ i + ʔ i s a kʼ		
-5371	ZinacantanTzotzil	Mayan	POTATO	sakil tranhero 7isak’	sakil_tranhero_7isak’	s a k i l + t ɾ a n h e ɾ o + ʔ i s a kʼ	Spanish	extranjero
-6734	Qeqchi	Mayan	POTATO	kaxlan is	kaxlan_is	k a ʃ l a n + i s		
-6735	Qeqchi	Mayan	POTATO	paaps	paaps	p aː p s	Spanish	papas
-8594	Otomi	Otomanguean	POTATO	‘rok'a	‘rok'a	ˀr o kʼ a		
-8595	Otomi	Otomanguean	POTATO	'bo̲'kwä	'bo̲'kwä	ˀb ə ˀkʷ ɐ		
-10569	ImbaburaQuechua	Quechuan	POTATO	papa	papa	p a p a		
-11755	Wichi	Matacoan	POTATO	papa	papa	p a p a	Spanish	papa
-13036	Mapudungun	Araucanian	POTATO	poñü	poñü	p o ɲ ɨ		
-13037	Mapudungun	Araucanian	POTATO	trawala	trawala	ʈʂ a w a l a	Gününa Yajüch	dawala
-1401	Portuguese	Indo-European	PRAISE	elogiar	elogiar	i l o ʒ i a ʁ		
-3147	Spanish	Indo-European	PRAISE	exaltar	exaltar	ɛ k s a l t a ɾ		
-3148	Spanish	Indo-European	PRAISE	alabar	alabar	a l a β a ɾ		
-4658	Yaqui	Uto-Aztecan	PRAISE	jikat jippue	jikat_jippue	j i k a t + j i p p u e		
-7655	Qeqchi	Mayan	PRAISE	nimank u	nimank_u	n i m a n k + u		
-7656	Qeqchi	Mayan	PRAISE	terq'usink k'ab'a'	terq'usink_k'ab'a'	t e ɾ qʼ u s i n k + kʼ a ɓ a ʔ		
-9721	Otomi	Otomanguean	PRAISE	nsadi	nsadi	ⁿs a d i		
-9722	Otomi	Otomanguean	PRAISE	jähñä	jähñä	x ɐ h ɲ ɐ		
-9723	Otomi	Otomanguean	PRAISE	'ñets'uwi	'ñets'uwi	ˀɲ e tsʼ u w i		
-9724	Otomi	Otomanguean	PRAISE	mä xi hño	mä_xi_hño	m ɐ + x i + h ɲ o		
-9725	Otomi	Otomanguean	PRAISE	mämuhño	mämuhño	m ɐ m u h ɲ o		
-9726	Otomi	Otomanguean	PRAISE	xadi	xadi	x a d i		
-11136	ImbaburaQuechua	Quechuan	PRAISE	juyayay	juyayay	x u j a j a j		
-12353	Wichi	Matacoan	PRAISE	inokwiyej	inokwiyej	i n o kʷ i j e x		
-442	Portuguese	Indo-European	PREGNANT	grávida	grávida	ɡ ɾ a v i d ɐ		
-443	Portuguese	Indo-European	PREGNANT	prenhe	prenhe	p ɾ e ɲ i		
-2139	Spanish	Indo-European	PREGNANT	embarazada	embarazada	e m b a ɾ a s a ð a		
-2140	Spanish	Indo-European	PREGNANT	preɲada	preɲada	p ɾ e ɲ a ð a		
-3846	Yaqui	Uto-Aztecan	PREGNANT	bwe’u	bwe’u	bʷ e ʔ u		
-6599	Qeqchi	Mayan	PREGNANT	yaj aj ixq	yaj_aj_ixq	j a x + a x + i ʃ qʰ		
-6600	Qeqchi	Mayan	PREGNANT	sa' yu'am	sa'_yu'am	s a ʔ + j u ʔ a m		
-8447	Otomi	Otomanguean	PREGNANT	xi 'ñu̲	xi_'ñu̲	x i + ˀɲ u		
-8448	Otomi	Otomanguean	PREGNANT	ndu bätsi	ndu_bätsi	n d u + b ɐ ts i		
-8449	Otomi	Otomanguean	PREGNANT	'ñu̲	'ñu̲	ˀɲ u		
-10486	ImbaburaQuechua	Quechuan	PREGNANT	bijsayuk	bijsayuk	b i x s a j u k		
-11668	Wichi	Matacoan	PREGNANT	hich’utshan	hich’utshan	h i tʃ ʔ u tsʰ a n		
-11669	Wichi	Matacoan	PREGNANT	waple	waple	w a p l e		
-12941	Mapudungun	Araucanian	PREGNANT	niekoñiley	niekoñiley	n i e k o ɲ i l e y		
-1642	Portuguese	Indo-European	PUNISHMENT	punição	punição	p u n i s ɐ̃ũ		
-1643	Portuguese	Indo-European	PUNISHMENT	castigo	castigo	k a ʃ tʃ i ɡ u		
-3408	Spanish	Indo-European	PUNISHMENT	castigo	castigo	k a s t i ɣ o		
-4851	Yaqui	Uto-Aztecan	PUNISHMENT	kajtiiko	kajtiiko	k a j t iː k o	Spanish	castigo
-4852	Yaqui	Uto-Aztecan	PUNISHMENT	peena	peena	p eː n a	Spanish	pena
-6118	ZinacantanTzotzil	Mayan	PUNISHMENT	kastiko	kastiko	k a s t i k o	Spanish	castigo
-6119	ZinacantanTzotzil	Mayan	PUNISHMENT	lok’esob manya	lok’esob_manya	l o kʼ e s o ɓ + m a n j a	Spanish	maña
-7882	Qeqchi	Mayan	PUNISHMENT	tojleb'aal maak	tojleb'aal_maak	t o x l e ɓ aː l + m aː kʰ		
-7883	Qeqchi	Mayan	PUNISHMENT	k'ajik u	k'ajik_u	k ʔ a x i k + u		
-10106	Otomi	Otomanguean	PUNISHMENT	ntsatu'ñu	ntsatu'ñu	n ts a t̪ u ˀɲ u		
-11294	ImbaburaQuechua	Quechuan	PUNISHMENT	kashtigu	kashtigu	k a ʃ t i g u	Spanish	castigo
-13769	Mapudungun	Araucanian	PUNISHMENT	kastiku	kastiku	k a s t i k u	Spanish	castigo
-480	Portuguese	Indo-European	PUS	pus	pus	p u ʃ		
-2176	Spanish	Indo-European	PUS	pus	pus	p u s		
-3865	Yaqui	Uto-Aztecan	PUS	bikaa	bikaa	b i k aː		
-5286	ZinacantanTzotzil	Mayan	PUS	pohov	pohov	pʰ o h o v		
-5287	ZinacantanTzotzil	Mayan	PUS	vahobal	vahobal	v a h o ɓ a l		
-6623	Qeqchi	Mayan	PUS	poj	poj	p o x		
-8475	Otomi	Otomanguean	PUS	mo	mo	m o		
-8476	Otomi	Otomanguean	PUS	'ya	'ya	ˀj a		
-10504	ImbaburaQuechua	Quechuan	PUS	kiya	kiya	k i j a		
-11687	Wichi	Matacoan	PUS	amut’i	amut’i	a m u t ʔ i		
-12961	Mapudungun	Araucanian	PUS	trar	trar	ʈʂ a ɻ		
-1025	Portuguese	Indo-European	RESCUE	salvar	salvar	s au v a ʁ		
-2747	Spanish	Indo-European	RESCUE	salvar	salvar	s a l β a ɾ		
-2748	Spanish	Indo-European	RESCUE	rescatar	rescatar	r ɛ s k a t a ɾ		
-4330	Yaqui	Uto-Aztecan	RESCUE	ania (2)	ania	a n i a		
-4331	Yaqui	Uto-Aztecan	RESCUE	salbaroa	salbaroa	s a l b a r o a	Spanish	salvar
-5685	ZinacantanTzotzil	Mayan	RESCUE	poh 7u7un	poh_7u7un	pʰ o h + ʔ u ʔ u n		
-7204	Qeqchi	Mayan	RESCUE	kolok	kolok	k o l o kʰ		
-9221	Otomi	Otomanguean	RESCUE	pote	pote	p o t̪ e		
-9222	Otomi	Otomanguean	RESCUE	poho (2)	poho	p o h o		
-9223	Otomi	Otomanguean	RESCUE	ja salba	ja_salba	x a + s a l b a	Spanish	salvar
-10861	ImbaburaQuechua	Quechuan	RESCUE	kishpichina (1)	kishpichina	k i ʃ p i tʃ i n a		
-12065	Wichi	Matacoan	RESCUE	ifwayhat	ifwayhat	i fʷ a j h a t		
-13341	Mapudungun	Araucanian	RESCUE	montulün	montulün	m o n t u l ɨ n		
-656	Portuguese	Indo-European	RING	anel	anel	ɐ n ɛu		
-2347	Spanish	Indo-European	RING	anillo	anillo	a n i ʝ o		
-2348	Spanish	Indo-European	RING	sortija	sortija	s o ɾ t i x a		
-4031	Yaqui	Uto-Aztecan	RING	aniilio	aniilio	a n iː l i o	Spanish	anillo
-6807	Qeqchi	Mayan	RING	matq'ab'	matq'ab'	m a t qʼ a ɓ	Ch’olan	matk’ab’
-6808	Qeqchi	Mayan	RING	b’ot	b’ot	ɓ o tʰ		
-8690	Otomi	Otomanguean	RING	mfo'ye̲	mfo'ye̲	m f o ˀj æ		
-10625	ImbaburaQuechua	Quechuan	RING	surtijas	surtijas	s u ɾ t i x a s	Spanish	sortija
-11815	Wichi	Matacoan	RING	tofwefwhi	tofwefwhi	t o fʷ e fʷ h i		
-13090	Mapudungun	Araucanian	RING	iwüḻ kuwü	iwüḻ_kuwü	i w ɨ l̪ + k u w ɨ		
-913	Portuguese	Indo-European	ROLL	rolar	rolar	ʁ o l a ʁ		
-2628	Spanish	Indo-European	ROLL	rodar	rodar	r o ð a ɾ		
-2629	Spanish	Indo-European	ROLL	arrollar	arrollar	a r o ʝ a ɾ		
-2630	Spanish	Indo-European	ROLL	enrollar	enrollar	e n r o ʝ a ɾ		
-4228	Yaqui	Uto-Aztecan	ROLL	biakta	biakta	b i a k t a		
-5601	ZinacantanTzotzil	Mayan	ROLL	tishk’uh	tishk’uh	t i ʃ kʼ u h		
-7073	Qeqchi	Mayan	ROLL	b'arb'arink	b'arb'arink	ɓ a ɾ ɓ a ɾ i n kʰ		
-9053	Otomi	Otomanguean	ROLL	maxo̲ts'e	maxo̲ts'e	m a x ə tsʼ e		
-9054	Otomi	Otomanguean	ROLL	täni	täni	t̪ ɐ n i		
-10788	ImbaburaQuechua	Quechuan	ROLL	pilluna	pilluna	p i ʒ u n a		
-11980	Wichi	Matacoan	ROLL	yikofwelhche	yikofwelhche	y i k o fʷ e lˠ tʃ e		
-13261	Mapudungun	Araucanian	ROLL	chümpon	chümpon	tʃ ɨ m p o n		
-716	Portuguese	Indo-European	ROOF	telhado	telhado	t e ʎ a d u		
-717	Portuguese	Indo-European	ROOF	teto	teto	t ɛ t u		
-2413	Spanish	Indo-European	ROOF	techo	techo	t e tʃ o		
-4078	Yaqui	Uto-Aztecan	ROOF	bepa’aria	bepa’aria	b e p a ʔ a r i a		
-5468	ZinacantanTzotzil	Mayan	ROOF	holol	holol	h o l o l		
-6867	Qeqchi	Mayan	ROOF	xb'een kab'l	xb'een_kab'l	ʃ ɓ eː n + k a ɓ l		
-8764	Otomi	Otomanguean	ROOF	njo'mi	njo'mi	n x o ˀm i		
-8765	Otomi	Otomanguean	ROOF	'bet'e	'bet'e	ˀb e t̪ʼ e		
-10661	ImbaburaQuechua	Quechuan	ROOF	wasikata	wasikata	w a s i k a t a		
-11857	Wichi	Matacoan	ROOF	hep lhetekch’u	hep_lhetekch’u	h e p + lˠ e t e k tʃ ʔ u		
-13130	Mapudungun	Araucanian	ROOF	wente ruka	wente_ruka	w e n t e + ɻ u k a		
-1155	Portuguese	Indo-European	ROUND	redondo	redondo	ʁ e d õ d u		
-2888	Spanish	Indo-European	ROUND	redondo	redondo	r e ð o n d o		
-4438	Yaqui	Uto-Aztecan	ROUND	lobolai	lobolai	l o b o l a i	Spanish	bola
-5786	ZinacantanTzotzil	Mayan	ROUND	setset	setset	s e t + s e tʰ		
-7370	Qeqchi	Mayan	ROUND	kotko	kotko	k o t k o		
-7371	Qeqchi	Mayan	ROUND	t'ort'o	t'ort'o	tʼ o ɾ tʼ o		
-7372	Qeqchi	Mayan	ROUND	sursu	sursu	s u r s u		
-9390	Otomi	Otomanguean	ROUND	tsant’i (2)	tsant’i	ts a n t̪ʼ i		
-10955	ImbaburaQuechua	Quechuan	ROUND	muyundi	muyundi	m u j u n d i		
-12172	Wichi	Matacoan	ROUND	lhip’unlhi	lhip’unlhi	lˠ i p ʔ u n lˠ i		
-13440	Mapudungun	Araucanian	ROUND	chüngküz	chüngküz	tʃ ɨ ŋ k ɨ z		
-1003	Portuguese	Indo-European	RUDDER	leme	leme	l ɛ m i		
-2720	Spanish	Indo-European	RUDDER	timón	timón	t i m o n		
-4312	Yaqui	Uto-Aztecan	RUDDER	tiimon	tiimon	t iː m o n	Spanish	timón
-9194	Otomi	Otomanguean	RUDDER	timu	timu	t̪ i m u	Spanish	timón
-12051	Wichi	Matacoan	RUDDER	timon	timon	t i m o n	Spanish	timón
-934	Portuguese	Indo-European	SAIL	navegar	navegar	n a v e ɡ a ʁ		
-2650	Spanish	Indo-European	SAIL	navegar	navegar	n a β e ɣ a ɾ		
-4246	Yaqui	Uto-Aztecan	SAIL	ba’ajoa	ba’ajoa	b a ʔ a j o a		
-7106	Qeqchi	Mayan	SAIL	b’eek chi ru ha’	b’eek_chi_ru_ha’	ɓ eː k + tʃ i + ɾ u + h a ʔ		
-9093	Otomi	Otomanguean	SAIL	'yodehe	'yodehe	ˀj o d e h e		
-11995	Wichi	Matacoan	SAIL	tiyojche inot	tiyojche_inot	t i j o x tʃ e + i n o t		
-1005	Portuguese	Indo-European	SAILCLOTH	vela	vela	v ɛ l ɐ		
-2722	Spanish	Indo-European	SAILCLOTH	vela	vela	b e l a		
-4314	Yaqui	Uto-Aztecan	SAILCLOTH	beelam	beelam	b eː l a m	Spanish	vela
-7190	Qeqchi	Mayan	SAILCLOTH	b’ela	b’ela	ɓ e l a	Spanish	vela
-8	Portuguese	Indo-European	SAND	areia	areia	a ɾ ei ɐ		
-1689	Spanish	Indo-European	SAND	arena	arena	a ɾ e n a		
-3459	Yaqui	Uto-Aztecan	SAND	see’e	see’e	s eː ʔ e		
-4896	ZinacantanTzotzil	Mayan	SAND	yi'	yi'	j i ʔ		
-6158	Qeqchi	Mayan	SAND	samahi’	samahi’	s a m a h i ʔ		
-7931	Otomi	Otomanguean	SAND	'bomu	'bomu	ˀb o m u		
-10172	ImbaburaQuechua	Quechuan	SAND	tiyu	tiyu	t i j u		
-11329	Wichi	Matacoan	SAND	alena	alena	a l e n a	Spanish	arena
-12549	Mapudungun	Araucanian	SAND	kuyüm	kuyüm	k u y ɨ m		
-12550	Mapudungun	Araucanian	SAND	achef kuyüm	achef_kuyüm	a tʃ e f + k u y ɨ m		
-1277	Portuguese	Indo-European	SEASON	estação	estação	i ʃ t a s ɐ̃ũ		
-3016	Spanish	Indo-European	SEASON	estación	estación	ɛ s t a s j o n		
-4563	Yaqui	Uto-Aztecan	SEASON	metkuaktia	metkuaktia	m e t k u a k t i a		
-5879	ZinacantanTzotzil	Mayan	SEASON	7ora	7ora	ʔ o ɾ a	Spanish	hora
-5880	ZinacantanTzotzil	Mayan	SEASON	tyempo	tyempo	t j e m p o	Spanish	tiempo
-7514	Qeqchi	Mayan	SEASON	estasion	estasion	e s t a s i o n	Spanish	estación
-7515	Qeqchi	Mayan	SEASON	xq’ehil	xq’ehil	ʃ qʼ e h i l		
-9551	Otomi	Otomanguean	SEASON	mpadi	mpadi	m p a d i		
-9552	Otomi	Otomanguean	SEASON	bongu	bongu	b o n g u		
-9553	Otomi	Otomanguean	SEASON	hyethe	hyethe	h j e θ e		
-9554	Otomi	Otomanguean	SEASON	mpat'i	mpat'i	m p a t̪ʼ i		
-9555	Otomi	Otomanguean	SEASON	nda'ye	nda'ye	n d a ˀj e		
-9556	Otomi	Otomanguean	SEASON	ntsenthi	ntsenthi	n ts e n θ i		
-9557	Otomi	Otomanguean	SEASON	tset'i	tset'i	ts e t̪ʼ i		
-11046	ImbaburaQuechua	Quechuan	SEASON	killa (4)	killa	k i ʒ a		
-12261	Wichi	Matacoan	SEASON	lawhoyis	lawhoyis	l a w̥ o j i s		
-1436	Portuguese	Indo-European	SECRET	segredo	segredo	s e ɡ ɾ ɛ d u		
-3193	Spanish	Indo-European	SECRET	secreto	secreto	s e k ɾ ɛ t o		
-4689	Yaqui	Uto-Aztecan	SECRET	sekreeto	sekreeto	s e k r eː t o	Spanish	secreto
-6001	ZinacantanTzotzil	Mayan	SECRET	mukul	mukul	m u k u l		
-7694	Qeqchi	Mayan	SECRET	hasb'	hasb'	h a s ɓ		
-9784	Otomi	Otomanguean	SECRET	nt'ägi	nt'ägi	n t̪ʼ ɐ g i		
-9785	Otomi	Otomanguean	SECRET	njot'i	njot'i	n x o t̪ʼ i		
-11163	ImbaburaQuechua	Quechuan	SECRET	pakalla	pakalla	p a k a ʒ a		
-12382	Wichi	Matacoan	SECRET	katofwenyaja	katofwenyaja	k a t o fʷ e n j a x a		
-13652	Mapudungun	Araucanian	SECRET	ellka zungu	ellka_zungu	e ʎ k a + z u ŋ u		
-1094	Portuguese	Indo-European	SEPARATE	separar	separar	s e p a ɾ a ʁ		
-2827	Spanish	Indo-European	SEPARATE	separar	separar	s e p a ɾ a ɾ		
-2828	Spanish	Indo-European	SEPARATE	apartar	apartar	a p a ɾ t a ɾ		
-4388	Yaqui	Uto-Aztecan	SEPARATE	na’ikimte	na’ikimte	n a ʔ i k i m t e		
-5734	ZinacantanTzotzil	Mayan	SEPARATE	ch’ak	ch’ak	tʃʼ a k		
-7280	Qeqchi	Mayan	SEPARATE	jachok	jachok	x a tʃ o kʰ		
-7281	Qeqchi	Mayan	SEPARATE	jilosink	jilosink	x i l o s i n kʰ		
-7282	Qeqchi	Mayan	SEPARATE	raqaxink	raqaxink	r a q a ʃ i n kʰ		
-9315	Otomi	Otomanguean	SEPARATE	he̲ki	he̲ki	h æ k i		
-9316	Otomi	Otomanguean	SEPARATE	'weke	'weke	ˀw e k e		
-10912	ImbaburaQuechua	Quechuan	SEPARATE	shicanyachina	shicanyachina	ʃ i c a n j a tʃ i n a		
-12126	Wichi	Matacoan	SEPARATE	w’enhat	w’enhat	w ʔ e n̥ a t		
-12127	Wichi	Matacoan	SEPARATE	tiyejkanhi	tiyejkanhi	t i j e x k a n̥ i		
-13395	Mapudungun	Araucanian	SEPARATE	wüzalün	wüzalün	w ɨ z a l ɨ n		
-620	Portuguese	Indo-European	SEW	costurar	costurar	k o ʃ t u ɾ a ʁ		
-2312	Spanish	Indo-European	SEW	coser	coser	k o s ɛ ɾ		
-3994	Yaqui	Uto-Aztecan	SEW	ji’ika	ji’ika	j i ʔ i k a		
-5409	ZinacantanTzotzil	Mayan	SEW	tz’is	tz’is	tsʼ i s		
-6774	Qeqchi	Mayan	SEW	b'ojok	b'ojok	ɓ o x o kʰ		
-6775	Qeqchi	Mayan	SEW	kuuxink	kuuxink	k uː ʃ i n kʰ		
-8646	Otomi	Otomanguean	SEW	'we̲ti	'we̲ti	ˀw æ t̪ i		
-10605	ImbaburaQuechua	Quechuan	SEW	sirana	sirana	s i ɾ a n a		
-11789	Wichi	Matacoan	SEW	itsek	itsek	i ts e k		
-13064	Mapudungun	Araucanian	SEW	ñüzüfün	ñüzüfün	ɲ ɨ z ɨ f ɨ n		
-1327	Portuguese	Indo-European	SHARP	agudo	agudo	a ɡ u d u		
-1328	Portuguese	Indo-European	SHARP	afiado	afiado	a f i a d u		
-3066	Spanish	Indo-European	SHARP	afilado	afilado	a f i l a ð o		
-3067	Spanish	Indo-European	SHARP	aguzado	aguzado	a ɣ u s a ð o		
-3068	Spanish	Indo-European	SHARP	filoso	filoso	f i l o s o		
-4603	Yaqui	Uto-Aztecan	SHARP	bwaawi	bwaawi	bʷ aː w i		
-7575	Qeqchi	Mayan	SHARP	q'es	q'es	qʼ e s		
-9630	Otomi	Otomanguean	SHARP	hye̲nte	hye̲nte	h j æ n t̪ e		
-9631	Otomi	Otomanguean	SHARP	hye̲ku̲te	hye̲ku̲te	h j æ k u t̪ e		
-9632	Otomi	Otomanguean	SHARP	xi hño	xi_hño	x i + h ɲ o		
-9633	Otomi	Otomanguean	SHARP	xi nts'ät'i	xi_nts'ät'i	x i + n tsʼ ɐ t̪ʼ i		
-11084	ImbaburaQuechua	Quechuan	SHARP	filulla	filulla	ɸ i l u ʒ a	Spanish	filo
-12298	Wichi	Matacoan	SHARP	y’ey	y’ey	y ʔ e j		
-13568	Mapudungun	Araucanian	SHARP	yungelen	yungelen	y u ŋ e l e n		
-19	Portuguese	Indo-European	SHORE	margem	margem	m a ʁ ʒ ẽĩ		
-20	Portuguese	Indo-European	SHORE	costa	costa	k ɔ ʃ t ɐ		
-21	Portuguese	Indo-European	SHORE	praia	praia	p ɾ ai ɐ		
-1702	Spanish	Indo-European	SHORE	ribera	ribera	r i β ɛ ɾ a		
-1703	Spanish	Indo-European	SHORE	playa	playa	p l a ʝ a		
-1704	Spanish	Indo-European	SHORE	costa	costa	k o s t a		
-3466	Yaqui	Uto-Aztecan	SHORE	bawe mayoa	bawe_mayoa	b a w e + m a j o a		
-4903	ZinacantanTzotzil	Mayan	SHORE	ti' _________	ti'__________	t i		
-6166	Qeqchi	Mayan	SHORE	chi re ha’	chi_re_ha’	tʃ i + ɾ e + h a ʔ		
-7942	Otomi	Otomanguean	SHORE	ñänthe	ñänthe	ɲ ɐ n θ e		
-7943	Otomi	Otomanguean	SHORE	nenthe	nenthe	n e n θ e		
-7944	Otomi	Otomanguean	SHORE	ñäni (2)	ñäni	ɲ ɐ n i		
-7945	Otomi	Otomanguean	SHORE	nengi	nengi	n e n g i		
-10177	ImbaburaQuechua	Quechuan	SHORE	manya (2)	manya	m a n j a		
-11335	Wichi	Matacoan	SHORE	tewuk lhip	tewuk_lhip	t e w u k + lˠ i p		
-12560	Mapudungun	Araucanian	SHORE	inaltu	inaltu	i n a l t u		
-879	Portuguese	Indo-European	SILVER	prata	prata	p ɾ a t ɐ		
-2589	Spanish	Indo-European	SILVER	plata	plata	p l a t a		
-4203	Yaqui	Uto-Aztecan	SILVER	laata ~ plaata	laata	l aː t a	Spanish	plata
-7040	Qeqchi	Mayan	SILVER	plaat	plaat	p l aː tʰ	Spanish	plata
-7041	Qeqchi	Mayan	SILVER	saqi ch’iich’	saqi_ch’iich’	s a q i + tʃʼ iː tʃʼ		
-9012	Otomi	Otomanguean	SILVER	t'axi (2)	t'axi	t̪ʼ a x i		
-10769	ImbaburaQuechua	Quechuan	SILVER	kulqui	kulqui	k u l q u i		
-11961	Wichi	Matacoan	SILVER	plata	plata	p l a t a	Spanish	plata
-13242	Mapudungun	Araucanian	SILVER	liqen	liqen	l i ɣ e n		
-13243	Mapudungun	Araucanian	SILVER	pulata	pulata	p u l a t a	Spanish	plata
-929	Portuguese	Indo-European	SINK (DESCEND)	afundar	afundar	a f ũ d a ʁ		
-2645	Spanish	Indo-European	SINK (DESCEND)	hundir	hundir	u n d i ɾ		
-4239	Yaqui	Uto-Aztecan	SINK (DESCEND)	ba’apo kom siime	ba’apo_kom_siime	b a ʔ a p o + k o m + s iː m e		
-4240	Yaqui	Uto-Aztecan	SINK (DESCEND)	ba’a kom simtua	ba’a_kom_simtua	b a ʔ a + k o m + s i m t u a		
-5620	ZinacantanTzotzil	Mayan	SINK (DESCEND)	muk	muk	m u k		
-7096	Qeqchi	Mayan	SINK (DESCEND)	muqunk	muqunk	m u q u n kʰ		
-7097	Qeqchi	Mayan	SINK (DESCEND)	nuq'unk	nuq'unk	n u qʼ u n kʰ		
-7098	Qeqchi	Mayan	SINK (DESCEND)	sob'e'k	sob'e'k	s o ɓ e ʔ kʰ		
-7099	Qeqchi	Mayan	SINK (DESCEND)	sub'e'k	sub'e'k	s u ɓ e ʔ kʰ	Ch’olan	*suhp’
-9084	Otomi	Otomanguean	SINK (DESCEND)	ku̲i	ku̲i	k u i		
-9085	Otomi	Otomanguean	SINK (DESCEND)	ñunt'i	ñunt'i	ɲ u n t̪ʼ i		
-10799	ImbaburaQuechua	Quechuan	SINK (DESCEND)	washajuna	washajuna	w a ʃ a x u n a		
-11991	Wichi	Matacoan	SINK (DESCEND)	yeycho’	yeycho’	y e j tʃ o ʔ		
-13274	Mapudungun	Araucanian	SINK (DESCEND)	ñamkonün	ñamkonün	ɲ a m k o n ɨ n		
-941	Portuguese	Indo-European	SLIP	escorregar	escorregar	i ʃ k o ʁ e ɡ a ʁ		
-942	Portuguese	Indo-European	SLIP	resvalar	resvalar	ʁ e ʒ v a l a ʁ		
-2657	Spanish	Indo-European	SLIP	resbalar	resbalar	r ɛ s β a l a ɾ		
-4254	Yaqui	Uto-Aztecan	SLIP	suulu	suulu	s uː l u		
-5627	ZinacantanTzotzil	Mayan	SLIP	tzul	tzul	tsʰ u l		
-5628	ZinacantanTzotzil	Mayan	SLIP	hashk’un	hashk’un	h a ʃ kʼ u n		
-5629	ZinacantanTzotzil	Mayan	SLIP	bilk’uh	bilk’uh	ɓ i l kʼ u h		
-7113	Qeqchi	Mayan	SLIP	jole’k	jole’k	x o l e ʔ kʰ		
-7114	Qeqchi	Mayan	SLIP	yole'k	yole'k	j o l e ʔ kʰ		
-7115	Qeqchi	Mayan	SLIP	b’alok	b’alok	ɓ a l o kʰ		
-9102	Otomi	Otomanguean	SLIP	ya̲xt'i	ya̲xt'i	j ɔ x t̪ʼ i		
-10808	ImbaburaQuechua	Quechuan	SLIP	lluchijana	lluchijana	ʒ u tʃ i x a n a		
-12001	Wichi	Matacoan	SLIP	hip’etaj	hip’etaj	h i p ʔ e t a x		
-13284	Mapudungun	Araucanian	SLIP	meyuzün	meyuzün	m e y u z ɨ n		
-1482	Portuguese	Indo-European	SPEECH	discursar	discursar	dʒ i ʃ k u ʁ s a ʁ		
-3243	Spanish	Indo-European	SPEECH	pronunciar un discurso	pronunciar_un_discurso	p ɾ o n u n s j a ɾ + u n + d i s k u ɾ s o		
-4732	Yaqui	Uto-Aztecan	SPEECH	nokta teuwa	nokta_teuwa	n o k t a + t e u w a		
-7741	Qeqchi	Mayan	SPEECH	aatin	aatin	aː t i n		
-9876	Otomi	Otomanguean	SPEECH	hmämu̲nhño	hmämu̲nhño	h m ɐ m u nʰ ɲ o		
-9877	Otomi	Otomanguean	SPEECH	hmä	hmä	h m ɐ		
-11202	ImbaburaQuechua	Quechuan	SPEECH	rimana (2)	rimana	ʐ i m a n a		
-13691	Mapudungun	Araucanian	SPEECH	koyaqtun	koyaqtun	k o y a ɣ t u n		
-852	Portuguese	Indo-European	SPREAD OUT	estender	estender	i ʃ t ẽ d e ʁ		
-853	Portuguese	Indo-European	SPREAD OUT	espalhar	espalhar	i ʃ p a ʎ a ʁ		
-2559	Spanish	Indo-European	SPREAD OUT	extender	extender	ɛ k s t e n d ɛ ɾ		
-2560	Spanish	Indo-European	SPREAD OUT	esparcir	esparcir	ɛ s p a ɾ s i ɾ		
-4181	Yaqui	Uto-Aztecan	SPREAD OUT	na’ikimte	na’ikimte	n a ʔ i k i m t e		
-5561	ZinacantanTzotzil	Mayan	SPREAD OUT	yi`lej	yi`lej	j i ʔ l e ħ		
-7014	Qeqchi	Mayan	SPREAD OUT	chirok	chirok	tʃ i ɾ o kʰ		
-7015	Qeqchi	Mayan	SPREAD OUT	helok	helok	h e l o kʰ		
-8957	Otomi	Otomanguean	SPREAD OUT	tu̲ngi	tu̲ngi	t̪ u n g i		
-8958	Otomi	Otomanguean	SPREAD OUT	ini	ini	i n i		
-8959	Otomi	Otomanguean	SPREAD OUT	xits'i	xits'i	x i tsʼ i		
-8960	Otomi	Otomanguean	SPREAD OUT	xani	xani	x a n i		
-10750	ImbaburaQuechua	Quechuan	SPREAD OUT	shitana (1)	shitana	ʃ i t a n a		
-11942	Wichi	Matacoan	SPREAD OUT	itsoy	itsoy	i ts o j		
-11943	Wichi	Matacoan	SPREAD OUT	iti’pe’	iti’pe’	i t i ʔ p e ʔ		
-13219	Mapudungun	Araucanian	SPREAD OUT	ünifün	ünifün	ɨ n i f ɨ n		
-13220	Mapudungun	Araucanian	SPREAD OUT	pachüqün	pachüqün	p a tʃ ɨ ɣ ɨ n		
-66	Portuguese	Indo-European	STAR	estrela	estrela	i ʃ t ɾ ɛ l ɐ		
-1745	Spanish	Indo-European	STAR	estrella	estrella	ɛ s t ɾ e ʝ a		
-3497	Yaqui	Uto-Aztecan	STAR	choki	choki	tʃ o k i		
-4928	ZinacantanTzotzil	Mayan	STAR	k’anal	k’anal	kʼ a n a l	Tojolabal	k’anal
-6195	Qeqchi	Mayan	STAR	chahim	chahim	tʃ a h i m		
-7980	Otomi	Otomanguean	STAR	tso̲ho̲ (1)	tso̲ho̲	ts ə h ə		
-10199	ImbaburaQuechua	Quechuan	STAR	luziru	luziru	l u z i ɾ u	Spanish	lucero
-11357	Wichi	Matacoan	STAR	kates	kates	k a t e s		
-12592	Mapudungun	Araucanian	STAR	wangüḻen	wangüḻen	w a ŋ ɨ l̪ e n		
-1146	Portuguese	Indo-European	STRAIGHT	direito	direito	dʒ i ɾ ei t u		
-1147	Portuguese	Indo-European	STRAIGHT	reto	reto	ʁ ɛ t u		
-2880	Spanish	Indo-European	STRAIGHT	derecho	derecho	d ɛ ɾ e tʃ o		
-2881	Spanish	Indo-European	STRAIGHT	recto	recto	r e k t o		
-4431	Yaqui	Uto-Aztecan	STRAIGHT	lutulai	lutulai	l u t u l a i		
-5780	ZinacantanTzotzil	Mayan	STRAIGHT	tuk’	tuk’	t u kʼ		
-7356	Qeqchi	Mayan	STRAIGHT	tiik	tiik	t iː kʰ		
-9381	Otomi	Otomanguean	STRAIGHT	njwäntho	njwäntho	n xʷ ɐ n θ o		
-10949	ImbaburaQuechua	Quechuan	STRAIGHT	dirichu	dirichu	d i ɾ i tʃ u	Spanish	derecho
-12167	Wichi	Matacoan	STRAIGHT	tatshepiche	tatshepiche	t a tsʰ e p i tʃ e		
-13433	Mapudungun	Araucanian	STRAIGHT	üngkü	üngkü	ɨ ŋ k ɨ		
-13434	Mapudungun	Araucanian	STRAIGHT	nor	nor	n o ɻ		
-51	Portuguese	Indo-European	SWAMP	pântano	pântano	p ɐ̃ t ɐ n u		
-52	Portuguese	Indo-European	SWAMP	pantanal	pantanal	p ɐ̃ t ɐ n au		
-1731	Spanish	Indo-European	SWAMP	pantano	pantano	p a n t a n o		
-3488	Yaqui	Uto-Aztecan	SWAMP	ba’ajeelo	ba’ajeelo	b a ʔ a j eː l o		
-4916	ZinacantanTzotzil	Mayan	SWAMP	7ach'eltik	7ach'eltik	ʔ a tʃʰ ʔ e l t i k		
-4917	ZinacantanTzotzil	Mayan	SWAMP	sha7ab	sha7ab	ʃ a ʔ a b		
-6184	Qeqchi	Mayan	SWAMP	saab’	saab’	s aː ɓ		
-6185	Qeqchi	Mayan	SWAMP	k’anha’	k’anha’	kʼ a n + h a ʔ		
-10190	ImbaburaQuechua	Quechuan	SWAMP	turu allpa	turu_allpa	t u ɾ u + a ʒ p a		
-11348	Wichi	Matacoan	SWAMP	inotw’et	inotw’et	i n o t wˀ e t		
-12579	Mapudungun	Araucanian	SWAMP	llozko	llozko	ʎ o z k o		
-12580	Mapudungun	Araucanian	SWAMP	menoko	menoko	m e n o k o		
-1049	Portuguese	Indo-European	TAX	imposto	imposto	ĩ p o ʃ t u		
-1050	Portuguese	Indo-European	TAX	taxa	taxa	t a ʃ ɐ		
-2772	Spanish	Indo-European	TAX	impuesto	impuesto	i m p w ɛ s t o		
-2773	Spanish	Indo-European	TAX	tributo	tributo	t ɾ i β u t o		
-4349	Yaqui	Uto-Aztecan	TAX	impuejtom	impuejtom	i m p u e j t o m	Spanish	impuesto
-5701	ZinacantanTzotzil	Mayan	TAX	tojel `ak'el	tojel_`ak'el	t o ħ e l + ʔ a k ʔ e l		
-7232	Qeqchi	Mayan	TAX	toj (1)	toj	t o x		
-9249	Otomi	Otomanguean	TAX	njut'i	njut'i	n x u t̪ʼ i		
-10879	ImbaburaQuechua	Quechuan	TAX	impwesto	impwesto	i m b w e s t o	Spanish	impuesto
-12086	Wichi	Matacoan	TAX	impuesto	impuesto	i m p u e s t o	Spanish	impuesto
-1480	Portuguese	Indo-European	TELL	contar	contar	k õ t a ʁ		
-1481	Portuguese	Indo-European	TELL	relatar	relatar	ʁ e l a t a ʁ		
-3241	Spanish	Indo-European	TELL	narrar	narrar	n a r a ɾ		
-3242	Spanish	Indo-European	TELL	contar	contar	k o n t a ɾ		
-4731	Yaqui	Uto-Aztecan	TELL	teuwa	teuwa	t e u w a		
-6037	ZinacantanTzotzil	Mayan	TELL	7al	7al	ʔ a l		
-6038	ZinacantanTzotzil	Mayan	TELL	7ut	7ut	ʔ u tʰ		
-7740	Qeqchi	Mayan	TELL	saaraq'ik	saaraq'ik	s aː ɾ a qʼ i kʰ		
-9874	Otomi	Otomanguean	TELL	pede nthogi	pede_nthogi	p e d e + n θ o g i		
-9875	Otomi	Otomanguean	TELL	mä nthogi	mä_nthogi	m ɐ + n θ o g i		
-11201	ImbaburaQuechua	Quechuan	TELL	yupana (2)	yupana	j u p a n a		
-12420	Wichi	Matacoan	TELL	yomey (2)	yomey	y o m e j		
-13689	Mapudungun	Araucanian	TELL	epewtun	epewtun	e p e w t u n		
-13690	Mapudungun	Araucanian	TELL	nütramtun	nütramtun	n ɨ ʈʂ a m t u n		
-761	Portuguese	Indo-European	THRESH	debulhar	debulhar	d e b u ʎ a ʁ		
-2457	Spanish	Indo-European	THRESH	trillar	trillar	t ɾ i ʝ a ɾ		
-2458	Spanish	Indo-European	THRESH	desgranar	desgranar	d ɛ s ɣ ɾ a n a ɾ		
-4108	Yaqui	Uto-Aztecan	THRESH	jichiwe	jichiwe	j i tʃ i w e		
-6905	Qeqchi	Mayan	THRESH	pech'ok	pech'ok	p e tʃʼ o kʰ	Ch’olan	pech’
-6906	Qeqchi	Mayan	THRESH	ch'epok	ch'epok	tʃʼ e p o kʰ		
-6907	Qeqchi	Mayan	THRESH	iximak	iximak	i ʃ i m a kʰ		
-8814	Otomi	Otomanguean	THRESH	fe̲i	fe̲i	f æ i		
-8815	Otomi	Otomanguean	THRESH	täki	täki	t̪ ɐ k i		
-10689	ImbaburaQuechua	Quechuan	THRESH	ishkuna	ishkuna	i ʃ k u n a		
-11881	Wichi	Matacoan	THRESH	ilanche lhuy	ilanche_lhuy	i l a n tʃ e + lˠ u j		
-13163	Mapudungun	Araucanian	THRESH	trillar	trillar	ʈʂ i ʎ a ɻ	Spanish	trillar
-1268	Portuguese	Indo-European	THURSDAY	quinta-feira	quinta-feira	k ĩ t a f ei ɾ ɐ		
-3007	Spanish	Indo-European	THURSDAY	jueves	jueves	x w e β e s		
-4554	Yaqui	Uto-Aztecan	THURSDAY	juebes	juebes	j u e b e s	Spanish	jueves
-5874	ZinacantanTzotzil	Mayan	THURSDAY	hweves	hweves	hʷ e v e s	Spanish	jueves
-7506	Qeqchi	Mayan	THURSDAY	jwees, jweb’es	jwees	xʷ eː s	Spanish	jueves
-9540	Otomi	Otomanguean	THURSDAY	nhwebe	nhwebe	nʷʰ e b e	Spanish	jueves
-11038	ImbaburaQuechua	Quechuan	THURSDAY	jwibes	jwibes	x w i b e s	Spanish	jueves
-12252	Wichi	Matacoan	THURSDAY	fwewis	fwewis	fʷ e w i s	Spanish	jueves
-1318	Portuguese	Indo-European	TOUCH	tocar	tocar	t o k a ʁ		
-3058	Spanish	Indo-European	TOUCH	tocar	tocar	t o k a ɾ		
-4596	Yaqui	Uto-Aztecan	TOUCH	bwise	bwise	bʷ i s e		
-5912	ZinacantanTzotzil	Mayan	TOUCH	pik	pik	pʰ i k		
-7554	Qeqchi	Mayan	TOUCH	ch'e'ok	ch'e'ok	tʃʼ e ʔ o kʰ		
-9622	Otomi	Otomanguean	TOUCH	tha̲ni	tha̲ni	θ ɔ n i		
-9623	Otomi	Otomanguean	TOUCH	konts'i	konts'i	k o n tsʼ i		
-11077	ImbaburaQuechua	Quechuan	TOUCH	takarina	takarina	t a k a ɾ i n a		
-12291	Wichi	Matacoan	TOUCH	tachasa	tachasa	t a tʃ a s a		
-915	Portuguese	Indo-European	TWIST (AROUND)	torcer	torcer	t o ʁ s e ʁ		
-2632	Spanish	Indo-European	TWIST (AROUND)	torcer	torcer	t o ɾ s ɛ ɾ		
-4230	Yaqui	Uto-Aztecan	TWIST (AROUND)	totta	totta	t o t t a		
-5603	ZinacantanTzotzil	Mayan	TWIST (AROUND)	tz’ot	tz’ot	tsʼ o tʰ		
-7076	Qeqchi	Mayan	TWIST (AROUND)	k'onok	k'onok	k ʔ o n o kʰ	Ch’olan	*k’ong
-7077	Qeqchi	Mayan	TWIST (AROUND)	yokosink	yokosink	j o k o s i n kʰ		
-7078	Qeqchi	Mayan	TWIST (AROUND)	siq'ok	siq'ok	s i qʼ o kʰ		
-9057	Otomi	Otomanguean	TWIST (AROUND)	‘bat'i	‘bat'i	ˀb a t̪ʼ i		
-9058	Otomi	Otomanguean	TWIST (AROUND)	käxi	käxi	k ɐ x i		
-10790	ImbaburaQuechua	Quechuan	TWIST (AROUND)	kibina	kibina	k i b i n a		
-11982	Wichi	Matacoan	TWIST (AROUND)	hits’elhkatche	hits’elhkatche	h i ts ʔ e lˠ k a t tʃ e		
-13263	Mapudungun	Araucanian	TWIST (AROUND)	piwünün	piwünün	p i w ɨ n ɨ n		
-394	Portuguese	Indo-European	UDDER	úbere	úbere	u b e ɾ i		
-2090	Spanish	Indo-European	UDDER	ubre	ubre	u β ɾ e		
-3799	Yaqui	Uto-Aztecan	UDDER	pipim	pipim	p i p i m		
-5219	ZinacantanTzotzil	Mayan	UDDER	chu7il	chu7il	tʃʰ u ʔ i l		
-6538	Qeqchi	Mayan	UDDER	xtu’ wakax	xtu’_wakax	ʃ t u ʔ + w a k a ʃ		
-8393	Otomi	Otomanguean	UDDER	mo'ba	mo'ba	m o ˀb a		
-8394	Otomi	Otomanguean	UDDER	txitxi	txitxi	t̪ x i t̪ x i	Spanish	teta
-10450	ImbaburaQuechua	Quechuan	UDDER	chuchu (2)	chuchu	tʃ u tʃ u		
-11631	Wichi	Matacoan	UDDER	tshowet t’atey	tshowet_t’atey	tsʰ o w e t + t ʔ a t e j		
-12903	Mapudungun	Araucanian	UDDER	ngülla	ngülla	ŋ ɨ ʎ a		
-1404	Portuguese	Indo-European	UGLY	feio	feio	f ei u		
-3152	Spanish	Indo-European	UGLY	feo	feo	f e o		
-4661	Yaqui	Uto-Aztecan	UGLY	junera	junera	j u n e r a		
-5970	ZinacantanTzotzil	Mayan	UGLY	chopol	chopol	tʃʰ o p o l		
-7659	Qeqchi	Mayan	UGLY	jo'maajo'	jo'maajo'	x o ʔ m aː x o ʔ		
-7660	Qeqchi	Mayan	UGLY	yib' ru	yib'_ru	j i ɓ + ɾ u		
-9728	Otomi	Otomanguean	UGLY	hingi za̲tho	hingi_za̲tho	h i n g i + z ɔ θ o		
-9729	Otomi	Otomanguean	UGLY	xi nts'o	xi_nts'o	x i + n tsʼ o		
-11138	ImbaburaQuechua	Quechuan	UGLY	manchanayay	manchanayay	m a n dʒ a n a j a j		
-12355	Wichi	Matacoan	UGLY	kats’iya	kats’iya	k a ts ʔ i j a		
-13622	Mapudungun	Araucanian	UGLY	wesha azngen	wesha_azngen	w e ʃ a + a z ŋ e n		
-240	Portuguese	Indo-European	VULTURE	urubu	urubu	u ɾ u b u		
-241	Portuguese	Indo-European	VULTURE	abutre	abutre	a b u t ɾ i		
-1936	Spanish	Indo-European	VULTURE	buitre	buitre	b w i t ɾ e		
-3663	Yaqui	Uto-Aztecan	VULTURE	tekoe	tekoe	t e k o e		
-5071	ZinacantanTzotzil	Mayan	VULTURE	shulem	shulem	ʃ u l e m		
-6376	Qeqchi	Mayan	VULTURE	so’sol	so’sol	s o ʔ s o l	Ch’olan	sosool
-8225	Otomi	Otomanguean	VULTURE	padá	padá	p a d a		
-10337	ImbaburaQuechua	Quechuan	VULTURE	kuriquinga	kuriquinga	k u ɾ i q u i ŋ g a		
-12787	Mapudungun	Araucanian	VULTURE	kanin	kanin	k a n i n		
-53	Portuguese	Indo-European	WATERFALL	cachoeira	cachoeira	k a ʃ o ei ɾ ɐ		
-54	Portuguese	Indo-European	WATERFALL	cascata	cascata	k a ʃ k a t ɐ		
-1732	Spanish	Indo-European	WATERFALL	cascada	cascada	k a s k a ð a		
-1733	Spanish	Indo-European	WATERFALL	salto	salto	s a l t o		
-3489	Yaqui	Uto-Aztecan	WATERFALL	ba’akomwechia	ba’akomwechia	b a ʔ a k o m w e tʃ i a		
-4918	ZinacantanTzotzil	Mayan	WATERFALL	yaleb vo'	yaleb_vo'	j a l e ɓ + v o ʔ		
-6186	Qeqchi	Mayan	WATERFALL	pach’il ha’	pach’il_ha’	p a tʃʼ i l + h a ʔ		
-6187	Qeqchi	Mayan	WATERFALL	xpisk’ ha’	xpisk’_ha’	ʃ p i s kʼ + h a ʔ		
-7969	Otomi	Otomanguean	WATERFALL	nzothe	nzothe	n z o θ e		
-10191	ImbaburaQuechua	Quechuan	WATERFALL	fajcha	fajcha	ɸ a x tʃ a		
-11349	Wichi	Matacoan	WATERFALL	inot n’oyij	inot_n’oyij	i n o t + n ʔ o j i x		
-12581	Mapudungun	Araucanian	WATERFALL	traytray ko	traytray_ko	ʈʂ a y ʈʂ a y + k o		
-12582	Mapudungun	Araucanian	WATERFALL	witrun ko	witrun_ko	w i ʈʂ u n + k o		
-1573	Portuguese	Indo-European	WEAPONS	armas	armas	a ʁ m a ʃ		
-3342	Spanish	Indo-European	WEAPONS	armas	armas	a ɾ m a s		
-4803	Yaqui	Uto-Aztecan	WEAPONS	wiko’i	wiko’i	w i k o ʔ i		
-6094	ZinacantanTzotzil	Mayan	WEAPONS	pojob bail	pojob_bail	pʰ o ħ o ɓ + ɓ a i l		
-7818	Qeqchi	Mayan	WEAPONS	kamsiil	kamsiil	k a m s iː l		
-10008	Otomi	Otomanguean	WEAPONS	bojä (2)	bojä	b o x ɐ		
-11261	ImbaburaQuechua	Quechuan	WEAPONS	makana	makana	m a k a n a		
-12485	Wichi	Matacoan	WEAPONS	letses	letses	l e ts e s		
-1267	Portuguese	Indo-European	WEDNESDAY	quarta-feira	quarta-feira	k w a ʁ t a f ei ɾ ɐ		
-3006	Spanish	Indo-European	WEDNESDAY	miércoles	miércoles	m j ɛ ɾ k o l e s		
-4553	Yaqui	Uto-Aztecan	WEDNESDAY	miekoles	miekoles	m i e k o l e s	Spanish	miércoles
-5873	ZinacantanTzotzil	Mayan	WEDNESDAY	melkulesh	melkulesh	m e l k u l e sʰ	Spanish	miércoles
-7505	Qeqchi	Mayan	WEDNESDAY	miercools, myers	miercools	m i e ɾ c oː l s	Spanish	miércoles
-9539	Otomi	Otomanguean	WEDNESDAY	hñupa	hñupa	h ɲ u p a		
-11037	ImbaburaQuechua	Quechuan	WEDNESDAY	mircules	mircules	m i ɾ c u l e s	Spanish	miécoles
-12251	Wichi	Matacoan	WEDNESDAY	mielkulis	mielkulis	m i e l k u l i s	Spanish	miércoles
-1463	Portuguese	Indo-European	WHAT	que	que	k i		
-3221	Spanish	Indo-European	WHAT	qué	qué	k e		
-4714	Yaqui	Uto-Aztecan	WHAT	jita	jita	j i t a		
-6020	ZinacantanTzotzil	Mayan	WHAT	k’u	k’u	kʼ u		
-7718	Qeqchi	Mayan	WHAT	k’a’, k’aru	k’a’	kʼ a ʔ		
-9833	Otomi	Otomanguean	WHAT	te?	te?	t̪ e		
-9834	Otomi	Otomanguean	WHAT	tem?	tem?	t̪ e m		
-9835	Otomi	Otomanguean	WHAT	temu?	temu?	t̪ e m u		
-11184	ImbaburaQuechua	Quechuan	WHAT	ima	ima	i m a		
-12402	Wichi	Matacoan	WHAT	at’ep	at’ep	a t ʔ e p		
-13672	Mapudungun	Araucanian	WHAT	¿chem?	¿chem?	tʃ e m		
-1474	Portuguese	Indo-European	WHISTLE	assobiar	assobiar	a s o b i a ʁ		
-3233	Spanish	Indo-European	WHISTLE	silbar	silbar	s i l β a ɾ		
-3234	Spanish	Indo-European	WHISTLE	chiflar	chiflar	tʃ i f l a ɾ		
-4725	Yaqui	Uto-Aztecan	WHISTLE	bikue	bikue	b i k u e		
-6032	ZinacantanTzotzil	Mayan	WHISTLE	pietah	pietah	pʰ i e t a h		
-6033	ZinacantanTzotzil	Mayan	WHISTLE	shushubah	shushubah	ʃ u ʃ u ɓ a h		
-7732	Qeqchi	Mayan	WHISTLE	xuxb'ak	xuxb'ak	ʃ u ʃ ɓ a kʰ	Ch’olan	xuxub’
-9854	Otomi	Otomanguean	WHISTLE	hu̲xi	hu̲xi	h u x i		
-9855	Otomi	Otomanguean	WHISTLE	hu̲xt'i	hu̲xt'i	h u x t̪ʼ i		
-9856	Otomi	Otomanguean	WHISTLE	hu̲xu̲nsa'ñe̲	hu̲xu̲nsa'ñe̲	h u x u n s a ˀɲ æ		
-11195	ImbaburaQuechua	Quechuan	WHISTLE	silbana	silbana	s i l b a n a	Spanish	silbar
-12414	Wichi	Matacoan	WHISTLE	iwuposeta	iwuposeta	i w u p o s e t a		
-13684	Mapudungun	Araucanian	WHISTLE	wikeñün	wikeñün	w i k e ɲ ɨ n		
-1311	Portuguese	Indo-European	WHITE	branco	branco	b ɾ ɐ̃ k u		
-3052	Spanish	Indo-European	WHITE	blanco	blanco	b l a n k o		
-4590	Yaqui	Uto-Aztecan	WHITE	tosali	tosali	t o s a l i		
-5904	ZinacantanTzotzil	Mayan	WHITE	sak	sak	s a k		
-5905	ZinacantanTzotzil	Mayan	WHITE	meko	meko	m e k o	Spanish (Mexican)	meco
-7548	Qeqchi	Mayan	WHITE	saq	saq	s a qʰ		
-9605	Otomi	Otomanguean	WHITE	t'axi	t'axi	t̪ʼ a x i		
-9606	Otomi	Otomanguean	WHITE	xi nt'axki	xi_nt'axki	x i + n t̪ʼ a x k i		
-11071	ImbaburaQuechua	Quechuan	WHITE	yuraj	yuraj	j u ɾ a x		
-12284	Wichi	Matacoan	WHITE	ipelaj	ipelaj	i p e l a x		
-13554	Mapudungun	Araucanian	WHITE	liq	liq	l i ɣ		
-13555	Mapudungun	Araucanian	WHITE	fülang	fülang	f ɨ l a ŋ	Spanish	blanco
-13556	Mapudungun	Araucanian	WHITE	plan	plan	p l a n	Spanish	blanco
-119	Portuguese	Indo-European	WIFE	esposa	esposa	i ʃ p ɔ z ɐ		
-120	Portuguese	Indo-European	WIFE	mulher	mulher	m u ʎ e ʁ		
-1797	Spanish	Indo-European	WIFE	esposa	esposa	ɛ s p o s a		
-3540	Yaqui	Uto-Aztecan	WIFE	jubi	jubi	j u b i		
-4975	ZinacantanTzotzil	Mayan	WIFE	7ahnilal	7ahnilal	ʔ a h n i l a l		
-4976	ZinacantanTzotzil	Mayan	WIFE	7ahval na	7ahval_na	ʔ a h v a l + n a		
-4977	ZinacantanTzotzil	Mayan	WIFE	7antzilal	7antzilal	ʔ a n tsʰ i l a l		
-6252	Qeqchi	Mayan	WIFE	ixaqil	ixaqil	i ʃ a q i l		
-8035	Otomi	Otomanguean	WIFE	'be̲hñä	'be̲hñä	ˀb æ h ɲ ɐ		
-10240	ImbaburaQuechua	Quechuan	WIFE	warmi (4)	warmi	w a ɾ m i		
-11397	Wichi	Matacoan	WIFE	toch’efwa atsinha	toch’efwa_atsinha	t o tʃ ʔ e fʷ a + a ts i n̥ a		
-12646	Mapudungun	Araucanian	WIFE	kure	kure	k u ɻ e		
-609	Portuguese	Indo-European	WOOL	lã	lã	l ɐ̃		
-2300	Spanish	Indo-European	WOOL	lana	lana	l a n a		
-3982	Yaqui	Uto-Aztecan	WOOL	bwara boa	bwara_boa	bʷ a r a + b o a		
-5399	ZinacantanTzotzil	Mayan	WOOL	tzotz	tzotz	tsʰ o tsʰ	Proto-Yucatecan	*tzo7otz
-6765	Qeqchi	Mayan	WOOL	laan	laan	l aː n	Spanish	lana
-8634	Otomi	Otomanguean	WOOL	xi'yo	xi'yo	x i ˀj o		
-10596	ImbaburaQuechua	Quechuan	WOOL	milma	milma	m i l m a		
-11781	Wichi	Matacoan	WOOL	tsun’ataj wule	tsun’ataj_wule	ts u n ʔ a t a x + w u l e		
-13056	Mapudungun	Araucanian	WOOL	kaḻ	kaḻ	k a l̪		
-817	Portuguese	Indo-European	WORK (LABOUR)	trabalhar	trabalhar	t ɾ a b a ʎ a ʁ		
-2522	Spanish	Indo-European	WORK (LABOUR)	trabajar	trabajar	t ɾ a β a x a ɾ		
-4152	Yaqui	Uto-Aztecan	WORK (LABOUR)	tekipanoa	tekipanoa	t e k i p a n o a	Nahuatl	tekil
-5533	ZinacantanTzotzil	Mayan	WORK (LABOUR)	`abtelil	`abtelil	ʔ a ɓ t e l i l		
-6959	Qeqchi	Mayan	WORK (LABOUR)	k'anjel	k'anjel	k ʔ a n x e l		
-8876	Otomi	Otomanguean	WORK (LABOUR)	mpe̲fi	mpe̲fi	m p æ f i		
-10725	ImbaburaQuechua	Quechuan	WORK (LABOUR)	trabajana	trabajana	t ɾ a b a x a n a	Spanish	trabajar
-11917	Wichi	Matacoan	WORK (LABOUR)	tochemet	tochemet	t o tʃ e m e t		
-13193	Mapudungun	Araucanian	WORK (LABOUR)	küzaw	küzaw	k ɨ z a w		
-603	Portuguese	Indo-European	YOLK	gema	gema	ʒ ɛ m ɐ		
-2295	Spanish	Indo-European	YOLK	yema	yema	ɟ ʝ e m a		
-3976	Yaqui	Uto-Aztecan	YOLK	kaba jiapsi	kaba_jiapsi	k a b a + j i a p s i		
-5394	ZinacantanTzotzil	Mayan	YOLK	k’anal (2)	k’anal	kʼ a n a l		
-5395	ZinacantanTzotzil	Mayan	YOLK	k'anal	k'anal	k ʔ a n a l		
-6760	Qeqchi	Mayan	YOLK	xq'anal mol	xq'anal_mol	ʃ qʼ a n a l + m o l		
-8625	Otomi	Otomanguean	YOLK	k'axt'i	k'axt'i	k ʔ a x t̪ʼ i		
-10592	ImbaburaQuechua	Quechuan	YOLK	lulun killu	lulun_killu	l u l u n + k i ʒ u		
-11776	Wichi	Matacoan	YOLK	laka’tekw	laka’tekw	l a k a ʔ t e kʷ		
-13052	Mapudungun	Araucanian	YOLK	choz kuram	choz_kuram	tʃ o z + k u ɻ a m		
-112	Portuguese	Indo-European	YOUNG WOMAN	jovem	jovem	ʒ ɔ v ẽĩ		
-113	Portuguese	Indo-European	YOUNG WOMAN	moça	moça	m ɔ s ɐ		
-1790	Spanish	Indo-European	YOUNG WOMAN	la joven	la_joven	l a + x o β e n		
-3536	Yaqui	Uto-Aztecan	YOUNG WOMAN	uusi beeme	uusi_beeme	uː s i + b eː m e		
-4969	ZinacantanTzotzil	Mayan	YOUNG WOMAN	bik’tal 7antz	bik’tal_7antz	ɓ i kʼ t a l + ʔ a n tsʰ		
-6246	Qeqchi	Mayan	YOUNG WOMAN	ixqa’al ~ xqa’al ~ qa’al	ixqa’al	i ʃ q a ʔ a l		
-6247	Qeqchi	Mayan	YOUNG WOMAN	tu’q’ixq	tu’q’ixq	t u ʔ qʼ i ʃ qʰ		
-8031	Otomi	Otomanguean	YOUNG WOMAN	nxutsi	nxutsi	n x u ts i		
-10236	ImbaburaQuechua	Quechuan	YOUNG WOMAN	warmi (3)	warmi	w a ɾ m i		
-11393	Wichi	Matacoan	YOUNG WOMAN	lhetsha	lhetsha	lˠ e tsʰ a		
-12638	Mapudungun	Araucanian	YOUNG WOMAN	üllcha	üllcha	ɨ ʎ tʃ a		
-12639	Mapudungun	Araucanian	YOUNG WOMAN	maḻeṉ	maḻeṉ	m a l̪ e n̪		
-136	Portuguese	Indo-European	YOUNGER BROTHER	irmão mais novo	irmão_mais_novo	i ʁ m ɐ̃ũ + m ai ʒ + n ɔ v u		
-1813	Spanish	Indo-European	YOUNGER BROTHER	hermano menor	hermano_menor	ɛ ɾ m a n o + m e n o ɾ		
-3558	Yaqui	Uto-Aztecan	YOUNGER BROTHER	saila	saila	s a i l a		
-4993	ZinacantanTzotzil	Mayan	YOUNGER BROTHER	mukil	mukil	m u k i l		
-4994	ZinacantanTzotzil	Mayan	YOUNGER BROTHER	7itz’inal	7itz’inal	ʔ i tsʼ i n a l		
-6269	Qeqchi	Mayan	YOUNGER BROTHER	iitz’in	iitz’in	iː tsʼ i n		
-8056	Otomi	Otomanguean	YOUNGER BROTHER	jwädä bätsitho	jwädä_bätsitho	xʷ ɐ d ɐ + b ɐ ts i θ o		
-8057	Otomi	Otomanguean	YOUNGER BROTHER	ida bätsitho	ida_bätsitho	i d a + b ɐ ts i θ o		
-10253	ImbaburaQuechua	Quechuan	YOUNGER BROTHER	jipa wawki	jipa_wawki	x i p a + w a w k i		
-11407	Wichi	Matacoan	YOUNGER BROTHER	toch’inij	toch’inij	t o tʃ ʔ i n i x		
-12665	Mapudungun	Araucanian	YOUNGER BROTHER	inan peñi	inan_peñi	i n a n + p e ɲ i		
-12666	Mapudungun	Araucanian	YOUNGER BROTHER	inan wentru lamngen	inan_wentru_lamngen	i n a n + w e n ʈʂ u + l a m ŋ e n		
+1721	Spanish	Indo-European	ACQUIT	absolver	absolver	a β s o l β ɛ ɾ		
+1722	Spanish	Indo-European	ACQUIT	exculpar	exculpar	ɛ k s k u l p a ɾ		
+3165	Yaqui	Uto-Aztecan	ACQUIT	kulpata a u’ura	kulpata_a_u’ura	k u l p a t a + a + u ʔ u r a	Spanish	culpar
+6196	Qeqchi	Mayan	ACQUIT	kuyuk maak	kuyuk_maak	k u j u k + m aː kʰ		
+8419	Otomi	Otomanguean	ACQUIT	puni	puni	p u n i		
+9608	ImbaburaQuechua	Quechuan	ACQUIT	kishpichina	kishpichina	k i ʃ p i tʃ i n a		
+10834	Wichi	Matacoan	ACQUIT	tip’alhtsen	tip’alhtsen	t i p ʔ a lˠ ts e n		
+1236	Spanish	Indo-European	ALL	cada	cada	k a ð a		
+1237	Spanish	Indo-European	ALL	todo	todo	t o ð o		
+2794	Yaqui	Uto-Aztecan	ALL	si’ime (2)	si’ime	s i ʔ i m e		
+4130	ZinacantanTzotzil	Mayan	ALL	kotol	kotol	k o t o l		
+4131	ZinacantanTzotzil	Mayan	ALL	labal	labal	l a ɓ a l		
+5717	Qeqchi	Mayan	ALL	chi junil	chi_junil	tʃ i + x u n i l		
+5718	Qeqchi	Mayan	ALL	anchal	anchal	a n tʃ a l		
+5719	Qeqchi	Mayan	ALL	rek’	rek’	r e kʼ		
+7743	Otomi	Otomanguean	ALL	ga̲tho	ga̲tho	g ɔ θ o		
+7744	Otomi	Otomanguean	ALL	kadu̲	kadu̲	k a d u	Spanish	cada
+7745	Otomi	Otomanguean	ALL	ta̲t’i	ta̲t’i	t̪ ɔ t̪ʼ i		
+9296	ImbaburaQuechua	Quechuan	ALL	tukuy	tukuy	t u k u j		
+10513	Wichi	Matacoan	ALL	nufwu	nufwu	n u fʷ u		
+11781	Mapudungun	Araucanian	ALL	kom	kom	k o m		
+1293	Spanish	Indo-European	ALWAYS	siempre	siempre	s j e m p ɾ e		
+2839	Yaqui	Uto-Aztecan	ALWAYS	jiba	jiba	j i b a		
+2840	Yaqui	Uto-Aztecan	ALWAYS	chikti	chikti	tʃ i k t i		
+4165	ZinacantanTzotzil	Mayan	ALWAYS	sempre	sempre	s e m p ɾ e	Spanish	siempre
+5796	Qeqchi	Mayan	ALWAYS	junelik	junelik	x u n e l i kʰ		
+7823	Otomi	Otomanguean	ALWAYS	zäntho	zäntho	z ɐ n θ o		
+7824	Otomi	Otomanguean	ALWAYS	(n)zäm'bu̲	(n)zäm'bu̲	n z ɐ m ˀb u		
+9331	ImbaburaQuechua	Quechuan	ALWAYS	simpri	simpri	s i m b ɾ i	Spanish	siempre
+11821	Mapudungun	Araucanian	ALWAYS	rumel	rumel	ɻ u m e l		
+397	Spanish	Indo-European	ANKLE	tobillo	tobillo	t o β i ʝ o		
+2107	Yaqui	Uto-Aztecan	ANKLE	tero’okim	tero’okim	t e r o ʔ o k i m		
+3525	ZinacantanTzotzil	Mayan	ANKLE	nuk’ 7okol	nuk’_7okol	n u kʼ + ʔ o k o l		
+4843	Qeqchi	Mayan	ANKLE	kux oq	kux_oq	k u ʃ + o qʰ		
+4844	Qeqchi	Mayan	ANKLE	xmap oq	xmap_oq	ʃ m a p + o qʰ		
+6698	Otomi	Otomanguean	ANKLE	bots'undo'yo wa	bots'undo'yo_wa	b o tsʼ u n d o ˀj o + w a		
+8758	ImbaburaQuechua	Quechuan	ANKLE	chaki muku	chaki_muku	tʃ a k i + m u k u		
+9939	Wichi	Matacoan	ANKLE	tokasup’a	tokasup’a	t o k a s u p ʔ a		
+11211	Mapudungun	Araucanian	ANKLE	pallipalli	pallipalli	p a ʎ i p a ʎ i		
+297	Spanish	Indo-European	ANT	hormiga	hormiga	o ɾ m i ɣ a		
+2013	Yaqui	Uto-Aztecan	ANT	eeye	eeye	eː j e		
+3422	ZinacantanTzotzil	Mayan	ANT	shinich	shinich	ʃ i n i tʃʰ		
+4731	Qeqchi	Mayan	ANT	sank	sank	s a n kʰ		
+6594	Otomi	Otomanguean	ANT	xäju̲	xäju̲	x ɐ x u		
+8676	ImbaburaQuechua	Quechuan	ANT	añanku	añanku	a ɲ a ŋ g u		
+9841	Wichi	Matacoan	ANT	siwanhas	siwanhas	s i w a n̥ a s		
+11124	Mapudungun	Araucanian	ANT	kollella	kollella	k o ʎ e ʎ a		
+903	Spanish	Indo-European	ANVIL	yunque	yunque	ɟ ʝ u n k e		
+7326	Otomi	Otomanguean	ANVIL	nt'u̲xu̲bo̲jä	nt'u̲xu̲bo̲jä	n t̪ʼ u x u b ə x ɐ		
+734	Spanish	Indo-European	BEAM	viga	viga	b i ɣ a		
+2398	Yaqui	Uto-Aztecan	BEAM	biika	biika	b iː k a	Spanish	viga
+3791	ZinacantanTzotzil	Mayan	BEAM	chantzelav te7	chantzelav_te7	tʃʰ a n tsʰ e l a v + t e ʔ		
+5189	Qeqchi	Mayan	BEAM	tz'amb'a	tz'amb'a	tsʼ a m ɓ a	Western Mayan	tz’am...
+7086	Otomi	Otomanguean	BEAM	däzaa	däzaa	d ɐ z aː		
+8982	ImbaburaQuechua	Quechuan	BEAM	biga	biga	b i g a	Spanish	viga
+10178	Wichi	Matacoan	BEAM	heplhip lheley	heplhip_lheley	h e p lˠ i p + lˠ e l e j		
+11450	Mapudungun	Araucanian	BEAM	alof	alof	a l o f		
+300	Spanish	Indo-European	BEE	abeja	abeja	a β e x a		
+2016	Yaqui	Uto-Aztecan	BEE	muumu	muumu	m uː m u		
+3424	ZinacantanTzotzil	Mayan	BEE	chanul pom	chanul_pom	tʃʰ a n u l + p o m		
+3425	ZinacantanTzotzil	Mayan	BEE	kachimpa pom	kachimpa_pom	k a tʃʰ i m p a + p o m	Spanish	cachimbo
+3426	ZinacantanTzotzil	Mayan	BEE	mermeho	mermeho	m e ɾ m e h o	Spanish	bermejo
+3427	ZinacantanTzotzil	Mayan	BEE	mishik’ pom	mishik’_pom	m i ʃ i kʼ + p o m		
+3428	ZinacantanTzotzil	Mayan	BEE	ton pom	ton_pom	t o n + p o m		
+4734	Qeqchi	Mayan	BEE	seer	seer	s eː r	Spanish	cera
+6597	Otomi	Otomanguean	BEE	kolmenä	kolmenä	k o l m e n ɐ	Spanish	colmena
+6598	Otomi	Otomanguean	BEE	gäne	gäne	g ɐ n e		
+8679	ImbaburaQuechua	Quechuan	BEE	abija	abija	a b i x a	Spanish	abeja
+9844	Wichi	Matacoan	BEE	nakwutaj	nakwutaj	n a kʷ u t a x		
+9845	Wichi	Matacoan	BEE	pini	pini	p i n i		
+9846	Wichi	Matacoan	BEE	kolonp’un	kolonp’un	k o l o n p ʔ u n		
+9847	Wichi	Matacoan	BEE	nakwu	nakwu	n a kʷ u		
+9848	Wichi	Matacoan	BEE	simhat	simhat	s i m̥ a t		
+9849	Wichi	Matacoan	BEE	supfwetaj	supfwetaj	s u p fʷ e t a x		
+9850	Wichi	Matacoan	BEE	akoyek	akoyek	a k o j e k		
+9851	Wichi	Matacoan	BEE	pemtsaj	pemtsaj	p e m ts a x		
+9852	Wichi	Matacoan	BEE	neslo	neslo	n e s l o		
+9853	Wichi	Matacoan	BEE	wun’a (2)	wun’a	w u n ʔ a		
+9854	Wichi	Matacoan	BEE	nuwalhek	nuwalhek	n u w a lˠ e k		
+9855	Wichi	Matacoan	BEE	tiklha	tiklha	t i k lˠ a		
+9856	Wichi	Matacoan	BEE	matsitaj	matsitaj	m a ts i t a x		
+11127	Mapudungun	Araucanian	BEE	ziwlliñ	ziwlliñ	z i w ʎ i ɲ		
+11128	Mapudungun	Araucanian	BEE	kolmenia	kolmenia	k o l m e n i a	Spanish	colmena
+901	Spanish	Indo-European	BLACKSMITH	herrero	herrero	ɛ r ɛ ɾ o		
+2516	Yaqui	Uto-Aztecan	BLACKSMITH	ereo	ereo	e r e o	Spanish	herrero
+3899	ZinacantanTzotzil	Mayan	BLACKSMITH	htentak’in	htentak’in	h t e n t a kʼ i n	Tzeltal	jten-taqiuin
+5354	Qeqchi	Mayan	BLACKSMITH	ajtenolch’ich’	ajtenolch’ich’	a x t e n o l tʃʼ i tʃʼ		
+7321	Otomi	Otomanguean	BLACKSMITH	jwit'i	jwit'i	xʷ i t̪ʼ i		
+7322	Otomi	Otomanguean	BLACKSMITH	hyoku̲bo̲jä	hyoku̲bo̲jä	h j o k u b ə x ɐ		
+7323	Otomi	Otomanguean	BLACKSMITH	'yo̲t'u̲bo̲jä	'yo̲t'u̲bo̲jä	ˀj ə t̪ʼ u b ə x ɐ		
+9084	ImbaburaQuechua	Quechuan	BLACKSMITH	jirriru	jirriru	x i ʐ i ɾ u	Spanish	herrero
+10276	Wichi	Matacoan	BLACKSMITH	herrero	herrero	h e r r e r o	Spanish	herrero
+720	Spanish	Indo-European	BLANKET	frazada	frazada	f ɾ a s a ð a		
+721	Spanish	Indo-European	BLANKET	cobija	cobija	k o β i x a		
+2388	Yaqui	Uto-Aztecan	BLANKET	piisam	piisam	p iː s a m		
+3776	ZinacantanTzotzil	Mayan	BLANKET	chamaroil	chamaroil	tʃʰ a m a ɾ o i l	Spanish	chamarra
+3777	ZinacantanTzotzil	Mayan	BLANKET	chih	chih	tʃʰ i h		
+5174	Qeqchi	Mayan	BLANKET	isb’	isb’	i s ɓ		
+7066	Otomi	Otomanguean	BLANKET	däx'yo	däx'yo	d ɐ x ˀj o		
+7067	Otomi	Otomanguean	BLANKET	mänta	mänta	m ɐ n t̪ a	Spanish	manta
+8972	ImbaburaQuechua	Quechuan	BLANKET	jatana	jatana	x a t a n a		
+10167	Wichi	Matacoan	BLANKET	kulhtsa	kulhtsa	k u lˠ ts a	Spanish	colcha
+11436	Mapudungun	Araucanian	BLANKET	üḻtu	üḻtu	ɨ l̪ t u		
+11437	Mapudungun	Araucanian	BLANKET	fresada	fresada	f ɻ e s a θ a	Spanish	frazada
+404	Spanish	Indo-European	BREAST	seno	seno	s e n o		
+2114	Yaqui	Uto-Aztecan	BREAST	pipim	pipim	p i p i m		
+3534	ZinacantanTzotzil	Mayan	BREAST	chu7il	chu7il	tʃʰ u ʔ i l		
+4853	Qeqchi	Mayan	BREAST	tu’	tu’	t u ʔ		
+6706	Otomi	Otomanguean	BREAST	'ba	'ba	ˀb a		
+8765	ImbaburaQuechua	Quechuan	BREAST	chuchu (1)	chuchu	tʃ u tʃ u		
+9946	Wichi	Matacoan	BREAST	tot’ate	tot’ate	t o t ʔ a t e		
+11218	Mapudungun	Araucanian	BREAST	moyo	moyo	m o y o		
+485	Spanish	Indo-European	BRUISE	cardenal	cardenal	k a ɾ ð e n a l		
+486	Spanish	Indo-European	BRUISE	magulladura	magulladura	m a ɣ u ʝ a ð u ɾ a		
+487	Spanish	Indo-European	BRUISE	contusión	contusión	k o n t u s j o n		
+2177	Yaqui	Uto-Aztecan	BRUISE	taako’ei	taako’ei	t aː k o ʔ e i		
+3598	ZinacantanTzotzil	Mayan	BRUISE	lep'	lep'	l e p ʔ		
+4933	Qeqchi	Mayan	BRUISE	raxtint	raxtint	r a ʃ t i n tʰ		
+6782	Otomi	Otomanguean	BRUISE	xut'i	xut'i	x u t̪ʼ i		
+6783	Otomi	Otomanguean	BRUISE	k'e̲t'i	k'e̲t'i	k ʔ æ t̪ʼ i		
+8816	ImbaburaQuechua	Quechuan	BRUISE	raumarishka	raumarishka	ʐ a u m a ɾ i ʃ k a		
+9999	Wichi	Matacoan	BRUISE	hits’etajhi	hits’etajhi	h i ts ʔ e t a xʰ i		
+11272	Mapudungun	Araucanian	BRUISE	allfeñ	allfeñ	a ʎ f e ɲ		
+420	Spanish	Indo-European	BUTTOCKS	nalgas	nalgas	n a l ɣ a s		
+421	Spanish	Indo-European	BUTTOCKS	trasero	trasero	t ɾ a s ɛ ɾ o		
+2129	Yaqui	Uto-Aztecan	BUTTOCKS	chobe	chobe	tʃ o b e		
+3548	ZinacantanTzotzil	Mayan	BUTTOCKS	chakil	chakil	tʃʰ a k i l		
+3549	ZinacantanTzotzil	Mayan	BUTTOCKS	likav chakil	likav_chakil	l i k a v + tʃʰ a k i l		
+3550	ZinacantanTzotzil	Mayan	BUTTOCKS	pech chakil	pech_chakil	pʰ e tʃʰ + tʃʰ a k i l		
+4868	Qeqchi	Mayan	BUTTOCKS	ko it	ko_it	k o + i tʰ		
+6723	Otomi	Otomanguean	BUTTOCKS	nthudi	nthudi	n θ u d i		
+6724	Otomi	Otomanguean	BUTTOCKS	xiji	xiji	x i x i		
+6725	Otomi	Otomanguean	BUTTOCKS	hñamfo	hñamfo	h ɲ a m f o		
+8777	ImbaburaQuechua	Quechuan	BUTTOCKS	siki	siki	s i k i		
+9959	Wichi	Matacoan	BUTTOCKS	towejch’alus	towejch’alus	t o w e x tʃ ʔ a l u s		
+11231	Mapudungun	Araucanian	BUTTOCKS	anüwe	anüwe	a n ɨ w e		
+288	Spanish	Indo-European	CAMEL	camello	camello	k a m e ʝ o		
+2005	Yaqui	Uto-Aztecan	CAMEL	kameo	kameo	k a m e o	Spanish	camello
+4724	Qeqchi	Mayan	CAMEL	kameey	kameey	k a m eː j	Spanish	camello
+6585	Otomi	Otomanguean	CAMEL	kameyo	kameyo	k a m e j o	Spanish	camello
+726	Spanish	Indo-European	CANDLE	vela	vela	b e l a		
+2392	Yaqui	Uto-Aztecan	CANDLE	kanteelam	kanteelam	k a n t eː l a m	Spanish	candela
+3782	ZinacantanTzotzil	Mayan	CANDLE	kantela	kantela	k a n t e l a	Spanish	candela
+5180	Qeqchi	Mayan	CANDLE	kandeel, kanteel	kandeel	k a n d eː l	Spanish	candela
+5181	Qeqchi	Mayan	CANDLE	uutz’u’uj	uutz’u’uj	uː tsʼ u ʔ u x		
+7076	Otomi	Otomanguean	CANDLE	hyats’i	hyats’i	h j a tsʼ i		
+8976	ImbaburaQuechua	Quechuan	CANDLE	bila	bila	b i l a	Spanish	vela
+10172	Wichi	Matacoan	CANDLE	wela	wela	w e l a	Spanish	vela
+11444	Mapudungun	Araucanian	CANDLE	fela	fela	f e l a	Spanish	vela
+1010	Spanish	Indo-European	CARRY UNDER ARM	llevar bajo el brazo	llevar_bajo_el_brazo	ɟ ʝ e β a ɾ + β a x o + ɛ l + β ɾ a s o		
+2603	Yaqui	Uto-Aztecan	CARRY UNDER ARM	sekawaasime	sekawaasime	s e k a w aː s i m e		
+5476	Qeqchi	Mayan	CARRY UNDER ARM	q'alnak	q'alnak	qʼ a l n a kʰ		
+7475	Otomi	Otomanguean	CARRY UNDER ARM	tsatu̲kaxjo	tsatu̲kaxjo	ts a t̪ u k a x x o		
+7476	Otomi	Otomanguean	CARRY UNDER ARM	the̲ts'i	the̲ts'i	θ æ tsʼ i		
+9151	ImbaburaQuechua	Quechuan	CARRY UNDER ARM	subakupi apana	subakupi_apana	s u b a k u p i + a p a n a	Spanish	sobaco
+10348	Wichi	Matacoan	CARRY UNDER ARM	ichoj itikfwi lawilisch’u	ichoj_itikfwi_lawilisch’u	i tʃ o x + i t i k fʷ i + l a w i l i s tʃ ʔ u		
+205	Spanish	Indo-European	CATTLE	ganado	ganado	g a n a ð o		
+1945	Yaqui	Uto-Aztecan	CATTLE	wakasim	wakasim	w a k a s i m	Spanish	vaca-s
+4654	Qeqchi	Mayan	CATTLE	wakax	wakax	w a k a ʃ	Spanish	vacas
+6487	Otomi	Otomanguean	CATTLE	me̲ti (1)	me̲ti	m æ t̪ i		
+8622	ImbaburaQuechua	Quechuan	CATTLE	wagra	wagra	w a g ɾ a		
+351	Spanish	Indo-European	CHIN	mentón	mentón	m e n t o n		
+352	Spanish	Indo-European	CHIN	barbilla	barbilla	b a ɾ β i ʝ a		
+2063	Yaqui	Uto-Aztecan	CHIN	chao	chao	tʃ a o		
+3479	ZinacantanTzotzil	Mayan	CHIN	kolomil	kolomil	k o l o m i l		
+3480	ZinacantanTzotzil	Mayan	CHIN	kovovil	kovovil	k o v o v i l		
+4797	Qeqchi	Mayan	CHIN	rub’el e, rub’el eh	rub’el_e	r u ɓ e l + e		
+6652	Otomi	Otomanguean	CHIN	juni	juni	x u n i		
+8719	ImbaburaQuechua	Quechuan	CHIN	jasha	jasha	x a ʃ a		
+9899	Wichi	Matacoan	CHIN	tokulun	tokulun	t o k u l u n		
+11170	Mapudungun	Araucanian	CHIN	ketre	ketre	k e ʈʂ e		
+534	Spanish	Indo-European	CHOKE	sofocar	sofocar	s o f o k a ɾ		
+2218	Yaqui	Uto-Aztecan	CHOKE	u’ukte	u’ukte	u ʔ u k t e		
+3640	ZinacantanTzotzil	Mayan	CHOKE	hik’av	hik’av	h i kʼ a v		
+4991	Qeqchi	Mayan	CHOKE	b’iq’e’k	b’iq’e’k	ɓ i qʼ e ʔ kʰ		
+4992	Qeqchi	Mayan	CHOKE	jiq’e’k	jiq’e’k	x i qʼ e ʔ kʰ		
+6848	Otomi	Otomanguean	CHOKE	het'e	het'e	h e t̪ʼ e		
+6849	Otomi	Otomanguean	CHOKE	hñet'e	hñet'e	h ɲ e t̪ʼ e		
+8848	ImbaburaQuechua	Quechuan	CHOKE	awana (1)	awana	a w a n a	Spanish	ahogar
+10035	Wichi	Matacoan	CHOKE	layalh ilon	layalh_ilon	l a j a lˠ + i l o n		
+1446	Spanish	Indo-European	CHOOSE	escoger	escoger	ɛ s k o x ɛ ɾ		
+1447	Spanish	Indo-European	CHOOSE	elegir	elegir	e l e x i ɾ		
+2961	Yaqui	Uto-Aztecan	CHOOSE	yeu pua	yeu_pua	j e u + p u a		
+4272	ZinacantanTzotzil	Mayan	CHOOSE	t’uh	t’uh	tʼ u h		
+5951	Qeqchi	Mayan	CHOOSE	sik'ok u	sik'ok_u	s i kʼ o k + u		
+5952	Qeqchi	Mayan	CHOOSE	molok	molok	m o l o kʰ		
+5953	Qeqchi	Mayan	CHOOSE	tihok u	tihok_u	t i h o k + u		
+8012	Otomi	Otomanguean	CHOOSE	jwahni	jwahni	xʷ a h n i		
+9440	ImbaburaQuechua	Quechuan	CHOOSE	akllana (1)	akllana	a k ʒ a n a		
+10657	Wichi	Matacoan	CHOOSE	iyaynhen	iyaynhen	i j a j n̥ e n		
+11927	Mapudungun	Araucanian	CHOOSE	zullin	zullin	z u ʎ i n		
+855	Spanish	Indo-European	CHOP	tajar	tajar	t a x a ɾ		
+856	Spanish	Indo-European	CHOP	picar	picar	p i k a ɾ		
+2482	Yaqui	Uto-Aztecan	CHOP	chukta	chukta	tʃ u k t a		
+3864	ZinacantanTzotzil	Mayan	CHOP	boh	boh	ɓ o h		
+5302	Qeqchi	Mayan	CHOP	yok'ok	yok'ok	j o kʼ o kʰ		
+5303	Qeqchi	Mayan	CHOP	jesok	jesok	x e s o kʰ		
+5304	Qeqchi	Mayan	CHOP	raqink	raqink	r a q i n kʰ		
+5305	Qeqchi	Mayan	CHOP	qapok	qapok	q a p o kʰ		
+7238	Otomi	Otomanguean	CHOP	he̲ki	he̲ki	h æ k i		
+7239	Otomi	Otomanguean	CHOP	he̲ts'i	he̲ts'i	h æ tsʼ i		
+7240	Otomi	Otomanguean	CHOP	he̲ni	he̲ni	h æ n i		
+7241	Otomi	Otomanguean	CHOP	su̲t'i	su̲t'i	s u t̪ʼ i		
+7242	Otomi	Otomanguean	CHOP	ts'ant'i	ts'ant'i	ts ʔ a n t̪ʼ i		
+9054	ImbaburaQuechua	Quechuan	CHOP	kuchuna	kuchuna	k u tʃ u n a		
+10246	Wichi	Matacoan	CHOP	yenlhipeya	yenlhipeya	y e n lˠ i p e j a		
+11523	Mapudungun	Araucanian	CHOP	katrükan	katrükan	k a ʈʂ ɨ k a n		
+985	Spanish	Indo-European	CLIMB	trepar	trepar	t ɾ e p a ɾ		
+2583	Yaqui	Uto-Aztecan	CLIMB	ja’amu	ja’amu	j a ʔ a m u		
+3957	ZinacantanTzotzil	Mayan	CLIMB	muy	muy	m u j		
+5444	Qeqchi	Mayan	CLIMB	lochte’ek	lochte’ek	l o tʃ t e ʔ e kʰ		
+5445	Qeqchi	Mayan	CLIMB	taqe’k	taqe’k	t a q e ʔ kʰ		
+7437	Otomi	Otomanguean	CLIMB	po̲ts'e	po̲ts'e	p ə tsʼ e		
+7438	Otomi	Otomanguean	CLIMB	tets'e	tets'e	t̪ e tsʼ e		
+9134	ImbaburaQuechua	Quechuan	CLIMB	bitsijana	bitsijana	b i ts i x a n a		
+10330	Wichi	Matacoan	CLIMB	taw’elhu	taw’elhu	t a w ʔ e lˠ u		
+11611	Mapudungun	Araucanian	CLIMB	püran	püran	p ɨ ɻ a n		
+458	Spanish	Indo-European	CONCEIVE	concebir	concebir	k o n s e β i ɾ		
+2164	Yaqui	Uto-Aztecan	CONCEIVE	yeu nu’upa	yeu_nu’upa	j e u + n u ʔ u p a		
+3582	ZinacantanTzotzil	Mayan	CONCEIVE	tz’anesbe	tz’anesbe	tsʼ a n e s ɓ e		
+4918	Qeqchi	Mayan	CONCEIVE	kanaak sa’ yu’am	kanaak_sa’_yu’am	k a n aː k + s a ʔ + j u ʔ a m		
+8804	ImbaburaQuechua	Quechuan	CONCEIVE	wawachina	wawachina	w a w a tʃ i n a		
+9987	Wichi	Matacoan	CONCEIVE	iwulhosa	iwulhosa	i w u lˠ o s a		
+11259	Mapudungun	Araucanian	CONCEIVE	nien	nien	n i e n		
+1719	Spanish	Indo-European	CONVICT	inculpar	inculpar	i n k u l p a ɾ		
+1720	Spanish	Indo-European	CONVICT	condenar	condenar	k o n d e n a ɾ		
+3164	Yaqui	Uto-Aztecan	CONVICT	konrenaroa	konrenaroa	k o n r e n a r o a	Spanish	condenar
+6194	Qeqchi	Mayan	CONVICT	teneb’ankil sa’ xb’een	teneb’ankil_sa’_xb’een	t e n e ɓ a n k i l + s a ʔ + ʃ ɓ eː n		
+6195	Qeqchi	Mayan	CONVICT	raqok aatin chi rix	raqok_aatin_chi_rix	r a q o k + aː t i n + tʃ i + ɾ i ʃ		
+8417	Otomi	Otomanguean	CONVICT	tsatu'ñu	tsatu'ñu	ts a t̪ u ˀɲ u		
+8418	Otomi	Otomanguean	CONVICT	hoxuthai	hoxuthai	h o x u θ a i		
+9607	ImbaburaQuechua	Quechuan	CONVICT	juchachina (2)	juchachina	x u tʃ a tʃ i n a		
+12084	Mapudungun	Araucanian	CONVICT	kulpatun	kulpatun	k u l p a t u n	Spanish	culpar
+1456	Spanish	Indo-European	CORRECT (RIGHT)	correcto	correcto	k o r e k t o		
+2969	Yaqui	Uto-Aztecan	CORRECT (RIGHT)	tu’i	tu’i	t u ʔ i		
+5966	Qeqchi	Mayan	CORRECT (RIGHT)	q'axal chaab'il	q'axal_chaab'il	qʼ a ʃ a l + tʃ aː ɓ i l		
+8028	Otomi	Otomanguean	CORRECT (RIGHT)	hogi	hogi	h o g i		
+8029	Otomi	Otomanguean	CORRECT (RIGHT)	xi hño	xi_hño	x i + h ɲ o		
+8030	Otomi	Otomanguean	CORRECT (RIGHT)	makwäni	makwäni	m a kʷ ɐ n i		
+9448	ImbaburaQuechua	Quechuan	CORRECT (RIGHT)	ali	ali	a l i		
+10664	Wichi	Matacoan	CORRECT (RIGHT)	is’alhuhu	is’alhuhu	i s ʔ a lˠ u h u		
+11934	Mapudungun	Araucanian	CORRECT (RIGHT)	nor che	nor_che	n o ɻ + tʃ e		
+70	Spanish	Indo-European	DARKNESS	oscuridad	oscuridad	o s k u ɾ i ð a ð		
+71	Spanish	Indo-European	DARKNESS	tinieblas	tinieblas	t i n j e β l a s		
+1821	Yaqui	Uto-Aztecan	DARKNESS	kutwaate	kutwaate	k u t w aː t e		
+3257	ZinacantanTzotzil	Mayan	DARKNESS	7ik’7osil	7ik’7osil	ʔ i kʼ ʔ o s i l		
+4523	Qeqchi	Mayan	DARKNESS	aak’ab’	aak’ab’	aː kʼ a ɓ	Ch’olan	*ahk’ab’
+6306	Otomi	Otomanguean	DARKNESS	'be̲xui	'be̲xui	ˀb æ x u i		
+6307	Otomi	Otomanguean	DARKNESS	mpumha̲i	mpumha̲i	m p u mʰ ɔ i		
+8523	ImbaburaQuechua	Quechuan	DARKNESS	amsa (2)	amsa	a m s a		
+9681	Wichi	Matacoan	DARKNESS	hunataj	hunataj	h u n a t a x		
+10917	Mapudungun	Araucanian	DARKNESS	zumiñ	zumiñ	z u m i ɲ		
+1303	Spanish	Indo-European	DAY (NOT NIGHT)	día	día	d i a		
+4469	ZinacantanTzotzil	Mayan	DAY (NOT NIGHT)	malel	malel	m a l e l		
+6242	Qeqchi	Mayan	DAY (NOT NIGHT)	kutan	kutan	k u t a n		
+8482	Otomi	Otomanguean	DAY (NOT NIGHT)	pa (1)	pa	p a		
+8483	Otomi	Otomanguean	DAY (NOT NIGHT)	mpa	mpa	m p a		
+9639	ImbaburaQuechua	Quechuan	DAY (NOT NIGHT)	puncha	puncha	p u n dʒ a		
+10858	Wichi	Matacoan	DAY (NOT NIGHT)	fwala	fwala	fʷ a l a		
+12100	Mapudungun	Araucanian	DAY (NOT NIGHT)	antü	antü	a n t ɨ	Aymara	inti
+283	Spanish	Indo-European	DEER	venado	venado	b e n a ð o		
+284	Spanish	Indo-European	DEER	ciervo	ciervo	s j ɛ ɾ β o		
+285	Spanish	Indo-European	DEER	a	a	a		
+2002	Yaqui	Uto-Aztecan	DEER	maaso	maaso	m aː s o		
+3414	ZinacantanTzotzil	Mayan	DEER	chih	chih	tʃʰ i h		
+4721	Qeqchi	Mayan	DEER	kej	kej	k e x		
+6581	Otomi	Otomanguean	DEER	hogu̲fani	hogu̲fani	h o g u f a n i		
+6582	Otomi	Otomanguean	DEER	fantho̲	fantho̲	f a n θ ə		
+8669	ImbaburaQuechua	Quechuan	DEER	taruga	taruga	t a ɾ u g a		
+9832	Wichi	Matacoan	DEER	ch’iwase	ch’iwase	tʃ ʔ i w a s e		
+11119	Mapudungun	Araucanian	DEER	puzu	puzu	p u z u		
+1572	Spanish	Indo-European	DENY	negar	negar	n e ɣ a ɾ		
+3057	Yaqui	Uto-Aztecan	DENY	nekaroa	nekaroa	n e k a r o a	Spanish	negar
+3058	Yaqui	Uto-Aztecan	DENY	kaa a mabeta	kaa_a_mabeta	k aː + a + m a b e t a		
+4362	ZinacantanTzotzil	Mayan	DENY	halan	halan	h a l a n		
+6067	Qeqchi	Mayan	DENY	jalmuqank, jalmuqink	jalmuqank	x a l m u q a n kʰ		
+8207	Otomi	Otomanguean	DENY	ko̲ni	ko̲ni	k ə n i		
+9527	ImbaburaQuechua	Quechuan	DENY	mana nina	mana_nina	m a n a + n i n a		
+10745	Wichi	Matacoan	DENY	lhifwunlo’	lhifwunlo’	lˠ i fʷ u n l o ʔ		
+12015	Mapudungun	Araucanian	DENY	neqan	neqan	n e ɣ a n	Spanish	negar
+512	Spanish	Indo-European	DRUNK	ebrio	ebrio	e β ɾ j o		
+513	Spanish	Indo-European	DRUNK	embriagado	embriagado	e m b ɾ j a ɣ a ð o		
+2201	Yaqui	Uto-Aztecan	DRUNK	naamukia	naamukia	n aː m u k i a		
+3622	ZinacantanTzotzil	Mayan	DRUNK	tzinil	tzinil	tsʰ i n i l		
+4962	Qeqchi	Mayan	DRUNK	kalajenaq	kalajenaq	k a l a x e n a qʰ	Ch’olan	*kal
+6817	Otomi	Otomanguean	DRUNK	tixfani	tixfani	t̪ i x f a n i		
+6818	Otomi	Otomanguean	DRUNK	zisei	zisei	z i s e i		
+6819	Otomi	Otomanguean	DRUNK	mihni	mihni	m i h n i		
+6820	Otomi	Otomanguean	DRUNK	nti	nti	n t̪ i		
+8834	ImbaburaQuechua	Quechuan	DRUNK	machashka	machashka	m a tʃ a ʃ k a		
+10020	Wichi	Matacoan	DRUNK	w’uknaj	w’uknaj	w ʔ u k n a x		
+11295	Mapudungun	Araucanian	DRUNK	ngollin	ngollin	ŋ o ʎ i n		
+359	Spanish	Indo-European	EAR	oreja	oreja	o ɾ e x a		
+2069	Yaqui	Uto-Aztecan	EAR	nakam	nakam	n a k a m		
+3486	ZinacantanTzotzil	Mayan	EAR	chikinil	chikinil	tʃʰ i k i n i l		
+4807	Qeqchi	Mayan	EAR	xik (1)	xik	ʃ i kʰ		
+6659	Otomi	Otomanguean	EAR	zagu	zagu	z a g u		
+6660	Otomi	Otomanguean	EAR	gu	gu	g u		
+8725	ImbaburaQuechua	Quechuan	EAR	rinri	rinri	ʐ i ŋ ɾ i		
+9905	Wichi	Matacoan	EAR	toch’ute’	toch’ute’	t o tʃ ʔ u t e ʔ		
+11177	Mapudungun	Araucanian	EAR	piluṉ	piluṉ	p i l u n̪		
+1248	Spanish	Indo-European	EMPTY	vacío	vacío	b a s i o		
+2803	Yaqui	Uto-Aztecan	EMPTY	june’ela	june’ela	j u n e ʔ e l a		
+4137	ZinacantanTzotzil	Mayan	EMPTY	shokol	shokol	ʃ o k o l		
+5740	Qeqchi	Mayan	EMPTY	job’	job’	x o ɓ		
+5741	Qeqchi	Mayan	EMPTY	maak'a' xsa'	maak'a'_xsa'	m aː kʼ a ʔ + ʃ s a ʔ		
+7764	Otomi	Otomanguean	EMPTY	hinti o	hinti_o	h i n t̪ i + o		
+7765	Otomi	Otomanguean	EMPTY	hinti po	hinti_po	h i n t̪ i + p o		
+7766	Otomi	Otomanguean	EMPTY	hinti ku̲	hinti_ku̲	h i n t̪ i + k u		
+9304	ImbaburaQuechua	Quechuan	EMPTY	chushaj	chushaj	tʃ u ʃ a x		
+10521	Wichi	Matacoan	EMPTY	lhajlheleya	lhajlheleya	lˠ a x lˠ e l e j a		
+11789	Mapudungun	Araucanian	EMPTY	wellin	wellin	w e ʎ i n		
+214	Spanish	Indo-European	EWE	oveja	oveja	o β e x a		
+1952	Yaqui	Uto-Aztecan	EWE	bwara	bwara	bʷ a r a		
+4660	Qeqchi	Mayan	EWE	karneer	karneer	k a ɾ n eː r	Spanish	carnero
+6497	Otomi	Otomanguean	EWE	tsu'yo (1)	tsu'yo	ts u ˀj o		
+8629	ImbaburaQuechua	Quechuan	EWE	llama	llama	ʒ a m a		
+9780	Wichi	Matacoan	EWE	tsun’ataj atsinha	tsun’ataj_atsinha	ts u n ʔ a t a x + a ts i n̥ a		
+1513	Spanish	Indo-European	EXPLAIN	explicar	explicar	ɛ k s p l i k a ɾ		
+3008	Yaqui	Uto-Aztecan	EXPLAIN	tetejwa	tetejwa	t e t e j w a		
+4320	ZinacantanTzotzil	Mayan	EXPLAIN	chap	chap	tʃʰ a p		
+6013	Qeqchi	Mayan	EXPLAIN	ch'olok	ch'olok	tʃʼ o l o kʰ		
+8104	Otomi	Otomanguean	EXPLAIN	xifi (1)	xifi	x i f i		
+9482	ImbaburaQuechua	Quechuan	EXPLAIN	willana	willana	w i ʒ a n a		
+10701	Wichi	Matacoan	EXPLAIN	yithathu	yithathu	y i tʰ a tʰ u		
+11971	Mapudungun	Araucanian	EXPLAIN	nütramzungun	nütramzungun	n ɨ ʈʂ a m z u ŋ u n		
+927	Spanish	Indo-European	FAN (OBJECT)	abanico	abanico	a β a n i k o		
+2533	Yaqui	Uto-Aztecan	FAN (OBJECT)	abaniiko	abaniiko	a b a n iː k o	Spanish	abanico
+3907	ZinacantanTzotzil	Mayan	FAN (OBJECT)	velob	velob	v e l o b		
+5374	Qeqchi	Mayan	FAN (OBJECT)	waal	waal	w aː l	Ch’olan	*wahl
+5375	Qeqchi	Mayan	FAN (OBJECT)	apusinel na’ajej	apusinel_na’ajej	a p u s i n e l + n a ʔ a x e x		
+7348	Otomi	Otomanguean	FAN (OBJECT)	nthitu̲ndähi	nthitu̲ndähi	n θ i t̪ u n d ɐ h i		
+9095	ImbaburaQuechua	Quechuan	FAN (OBJECT)	wayrachina (2)	wayrachina	w a j ɾ a tʃ i n a		
+10289	Wichi	Matacoan	FAN (OBJECT)	tohechefw	tohechefw	t o h e tʃ e fʷ		
+11570	Mapudungun	Araucanian	FAN (OBJECT)	mefürwe	mefürwe	m e f ɨ ɻ w e		
+444	Spanish	Indo-European	FART	ventosear	ventosear	b e n t o s e a ɾ		
+445	Spanish	Indo-European	FART	flato	flato	f l a t o		
+2152	Yaqui	Uto-Aztecan	FART	juujam	juujam	j uː j a m		
+3573	ZinacantanTzotzil	Mayan	FART	tzisin	tzisin	tsʰ i s i n		
+4905	Qeqchi	Mayan	FART	kisik	kisik	k i s i kʰ		
+6750	Otomi	Otomanguean	FART	e̲i ya fixi	e̲i_ya_fixi	æ i + j a + f i x i		
+6751	Otomi	Otomanguean	FART	he̲gi ya fixi	he̲gi_ya_fixi	h æ g i + j a + f i x i		
+8795	ImbaburaQuechua	Quechuan	FART	supi	supi	s u p i		
+9976	Wichi	Matacoan	FART	tefwtey	tefwtey	t e fʷ t e j		
+11249	Mapudungun	Araucanian	FART	perkün	perkün	p e ɻ k ɨ n		
+1070	Spanish	Indo-European	FIND	encontrar	encontrar	e n k o n t ɾ a ɾ		
+1071	Spanish	Indo-European	FIND	hallar	hallar	a ʝ a ɾ		
+2651	Yaqui	Uto-Aztecan	FIND	tea	tea	t e a		
+4004	ZinacantanTzotzil	Mayan	FIND	ta (2)	ta	t a		
+5526	Qeqchi	Mayan	FIND	tawok	tawok	t a w o kʰ		
+7545	Otomi	Otomanguean	FIND	tini	tini	t̪ i n i		
+7546	Otomi	Otomanguean	FIND	tsu̲di (2)	tsu̲di	ts u d i		
+9181	ImbaburaQuechua	Quechuan	FIND	tarina (2)	tarina	t a ɾ i n a		
+10385	Wichi	Matacoan	FIND	nesa	nesa	n e s a		
+11660	Mapudungun	Araucanian	FIND	pezan	pezan	p e z a n		
+1696	Spanish	Indo-European	FISH TRAP	nasa	nasa	n a s a		
+3142	Yaqui	Uto-Aztecan	FISH TRAP	taampa	taampa	t aː m p a	Spanish	trampa
+6170	Qeqchi	Mayan	FISH TRAP	traamp	traamp	t ɾ aː m pʰ	Spanish	trampa
+6171	Qeqchi	Mayan	FISH TRAP	ra’l kar	ra’l_kar	r a ʔ l + k a r		
+8382	Otomi	Otomanguean	FISH TRAP	t'a̲ts'i	t'a̲ts'i	t̪ʼ ɔ tsʼ i		
+8383	Otomi	Otomanguean	FISH TRAP	da̲xi jwä	da̲xi_jwä	d ɔ x i + xʷ ɐ		
+8384	Otomi	Otomanguean	FISH TRAP	däxi nthu̲ts'i	däxi_nthu̲ts'i	d ɐ x i + n θ u tsʼ i		
+963	Spanish	Indo-European	FLOAT	flotar	flotar	f l o t a ɾ		
+2558	Yaqui	Uto-Aztecan	FLOAT	ba’apo cha’asisime	ba’apo_cha’asisime	b a ʔ a p o + tʃ a ʔ a s i s i m e		
+3938	ZinacantanTzotzil	Mayan	FLOAT	kahi	kahi	k a h i		
+5417	Qeqchi	Mayan	FLOAT	pamamnak	pamamnak	p a m a m n a kʰ		
+7403	Otomi	Otomanguean	FLOAT	hñe̲nts'i	hñe̲nts'i	h ɲ æ n tsʼ i		
+9117	ImbaburaQuechua	Quechuan	FLOAT	wambuna	wambuna	w a m b u n a		
+10309	Wichi	Matacoan	FLOAT	ipe’not	ipe’not	i p e ʔ n o t		
+11592	Mapudungun	Araucanian	FLOAT	zeñoyün	zeñoyün	z e ɲ o y ɨ n		
+711	Spanish	Indo-European	FLOOR	suelo	suelo	s w e l o		
+2380	Yaqui	Uto-Aztecan	FLOOR	bwia	bwia	bʷ i a		
+3770	ZinacantanTzotzil	Mayan	FLOOR	lumtik	lumtik	l u m t i k		
+5163	Qeqchi	Mayan	FLOOR	ch’och’	ch’och’	tʃʼ o tʃʼ	Q’anjob’alan	ch’och’
+7058	Otomi	Otomanguean	FLOOR	hai	hai	h a i		
+8967	ImbaburaQuechua	Quechuan	FLOOR	allpa	allpa	a ʒ p a		
+10162	Wichi	Matacoan	FLOOR	hunhat	hunhat	h u n̥ a t		
+11432	Mapudungun	Araucanian	FLOOR	püllü	püllü	p ɨ ʎ ɨ		
+968	Spanish	Indo-European	FLY (MOVE THROUGH AIR)	volar	volar	b o l a ɾ		
+2564	Yaqui	Uto-Aztecan	FLY (MOVE THROUGH AIR)	ne’e	ne’e	n e ʔ e		
+3941	ZinacantanTzotzil	Mayan	FLY (MOVE THROUGH AIR)	vil	vil	v i l		
+5424	Qeqchi	Mayan	FLY (MOVE THROUGH AIR)	rupik	rupik	r u p i kʰ		
+5425	Qeqchi	Mayan	FLY (MOVE THROUGH AIR)	purik	purik	p u ɾ i kʰ		
+7411	Otomi	Otomanguean	FLY (MOVE THROUGH AIR)	nsa̲ni	nsa̲ni	ⁿs ɔ n i		
+9120	ImbaburaQuechua	Quechuan	FLY (MOVE THROUGH AIR)	bulana	bulana	b u l a n a	Spanish	volar
+10313	Wichi	Matacoan	FLY (MOVE THROUGH AIR)	wiy’o	wiy’o	w i j ʔ o		
+11596	Mapudungun	Araucanian	FLY (MOVE THROUGH AIR)	müpün	müpün	m ɨ p ɨ n		
+1247	Spanish	Indo-European	FULL	lleno	lleno	ɟ ʝ e n o		
+2802	Yaqui	Uto-Aztecan	FULL	tapunia	tapunia	t a p u n i a		
+4136	ZinacantanTzotzil	Mayan	FULL	noh	noh	n o h		
+5736	Qeqchi	Mayan	FULL	b'ut'	b'ut'	ɓ u tʼ	Ch’olan	b’ut’
+5737	Qeqchi	Mayan	FULL	b'uuy	b'uuy	ɓ uː j		
+5738	Qeqchi	Mayan	FULL	nujenaq	nujenaq	n u x e n a qʰ		
+5739	Qeqchi	Mayan	FULL	tz'ajtz'otk	tz'ajtz'otk	tsʼ a x tsʼ o t kʰ		
+7763	Otomi	Otomanguean	FULL	xi ñuts'i	xi_ñuts'i	x i + ɲ u tsʼ i		
+9303	ImbaburaQuechua	Quechuan	FULL	junda	junda	x u n d a		
+10520	Wichi	Matacoan	FULL	tapuyej	tapuyej	t a p u j e x		
+11788	Mapudungun	Araucanian	FULL	apon	apon	a p o n		
+1768	Spanish	Indo-European	GHOST	fantasma	fantasma	f a n t a s m a		
+3200	Yaqui	Uto-Aztecan	GHOST	mukia	mukia	m u k i a		
+3201	Yaqui	Uto-Aztecan	GHOST	jiapsi	jiapsi	j i a p s i		
+3202	Yaqui	Uto-Aztecan	GHOST	chichijal	chichijal	tʃ i tʃ i j a l		
+4467	ZinacantanTzotzil	Mayan	GHOST	7anima	7anima	ʔ a n i m a	Spanish	a*nima
+4468	ZinacantanTzotzil	Mayan	GHOST	lahebal	lahebal	l a h e ɓ a l		
+6240	Qeqchi	Mayan	GHOST	anumal	anumal	a n u m a l		
+8480	Otomi	Otomanguean	GHOST	pite	pite	p i t̪ e		
+9637	ImbaburaQuechua	Quechuan	GHOST	fantasma	fantasma	ɸ a n d a s m a	Spanish	fantasma
+12098	Mapudungun	Araucanian	GHOST	witranalwe	witranalwe	w i ʈʂ a n a l w e		
+106	Spanish	Indo-European	GIRL	muchacha	muchacha	m u tʃ a tʃ a		
+1852	Yaqui	Uto-Aztecan	GIRL	ili jamut	ili_jamut	i l i + j a m u t		
+3285	ZinacantanTzotzil	Mayan	GIRL	tzeb	tzeb	tsʰ e b		
+4561	Qeqchi	Mayan	GIRL	saaj ixqa’al	saaj_ixqa’al	s aː x + i ʃ q a ʔ a l		
+4562	Qeqchi	Mayan	GIRL	ch’ina ixqa’al	ch’ina_ixqa’al	tʃʼ i n a + i ʃ q a ʔ a l		
+6347	Otomi	Otomanguean	GIRL	nxutsi	nxutsi	n x u ts i		
+8552	ImbaburaQuechua	Quechuan	GIRL	kuytsa	kuytsa	k u j ts a	Unidentified	kuytsa
+9709	Wichi	Matacoan	GIRL	lhetsha	lhetsha	lˠ e tsʰ a		
+10954	Mapudungun	Araucanian	GIRL	maḻeṉ	maḻeṉ	m a l̪ e n̪		
+787	Spanish	Indo-European	GRASS	hierba	hierba	ɟ ʝ ɛ ɾ β a		
+788	Spanish	Indo-European	GRASS	pasto	pasto	p a s t o		
+2433	Yaqui	Uto-Aztecan	GRASS	baso	baso	b a s o		
+3816	ZinacantanTzotzil	Mayan	GRASS	hobel	hobel	h o ɓ e l		
+5230	Qeqchi	Mayan	GRASS	pach'aya'	pach'aya'	p a tʃʼ a j a ʔ		
+5231	Qeqchi	Mayan	GRASS	ichaj	ichaj	i tʃ a x		
+7146	Otomi	Otomanguean	GRASS	pasto	pasto	p a s t̪ o	Spanish	pasto
+9015	ImbaburaQuechua	Quechuan	GRASS	jiwa	jiwa	x i w a		
+10202	Wichi	Matacoan	GRASS	hep	hep	h e p		
+11487	Mapudungun	Araucanian	GRASS	kachu	kachu	k a tʃ u	Quechua	q’achu-q’achu
+313	Spanish	Indo-European	GRASSHOPPER	saltamontes	saltamontes	s a l t a m o n t e s		
+2032	Yaqui	Uto-Aztecan	GRASSHOPPER	wakawo’ochi	wakawo’ochi	w a k a w o ʔ o tʃ i	Spanish	vacas
+3440	ZinacantanTzotzil	Mayan	GRASSHOPPER	p’ilish	p’ilish	pʼ i l i sʰ		
+4761	Qeqchi	Mayan	GRASSHOPPER	saak’	saak’	s aː kʼ		
+6615	Otomi	Otomanguean	GRASSHOPPER	k'oto	k'oto	k ʔ o t̪ o		
+8690	ImbaburaQuechua	Quechuan	GRASSHOPPER	dyablillu	dyablillu	d j a b l i ʒ u	Spanish	diablillo
+9868	Wichi	Matacoan	GRASSHOPPER	chulh	chulh	tʃ u l̥		
+11138	Mapudungun	Araucanian	GRASSHOPPER	chori	chori	tʃ o ɻ i		
+469	Spanish	Indo-European	GRAVE	sepulcro	sepulcro	s e p u l k ɾ o		
+470	Spanish	Indo-European	GRAVE	tumba	tumba	t u m b a		
+2169	Yaqui	Uto-Aztecan	GRAVE	jimai	jimai	j i m a i		
+3589	ZinacantanTzotzil	Mayan	GRAVE	ch’enal	ch’enal	tʃʼ e n a l		
+4922	Qeqchi	Mayan	GRAVE	julel kamenaq	julel_kamenaq	x u l e l + k a m e n a qʰ		
+6770	Otomi	Otomanguean	GRAVE	nt'a̲gi	nt'a̲gi	n t̪ʼ ɔ g i		
+8808	ImbaburaQuechua	Quechuan	GRAVE	pambana uku	pambana_uku	p a m b a n a + u k u		
+9991	Wichi	Matacoan	GRAVE	tot’u	tot’u	t o t ʔ u		
+11263	Mapudungun	Araucanian	GRAVE	eltun	eltun	e l t u n		
+897	Spanish	Indo-European	HAMMER	martillo	martillo	m a ɾ t i ʝ o		
+2513	Yaqui	Uto-Aztecan	HAMMER	martiom	martiom	m a r t i o m	Spanish	martillo
+3896	ZinacantanTzotzil	Mayan	HAMMER	martio	martio	m a ɾ t i o	Spanish	martillo
+5350	Qeqchi	Mayan	HAMMER	tenleb’	tenleb’	t e n l e ɓ		
+5351	Qeqchi	Mayan	HAMMER	t'ojleb'	t'ojleb'	tʼ o x l e ɓ		
+7311	Otomi	Otomanguean	HAMMER	‘mu̲ni	‘mu̲ni	ˀm u n i		
+7312	Otomi	Otomanguean	HAMMER	'mu̲'mi	'mu̲'mi	ˀm u ˀm i		
+7313	Otomi	Otomanguean	HAMMER	märtiyo	märtiyo	m ɐ r t̪ i j o	Spanish	martillo
+9081	ImbaburaQuechua	Quechuan	HAMMER	martillu	martillu	m a ɾ t i ʒ u	Spanish	martillo
+10274	Wichi	Matacoan	HAMMER	maltiya	maltiya	m a l t i j a	Spanish	martillo
+11555	Mapudungun	Araucanian	HAMMER	martillu	martillu	m a ɻ t i ʎ u	Spanish	martillo
+251	Spanish	Indo-European	HAWK	gavilán	gavilán	g a β i l a n		
+252	Spanish	Indo-European	HAWK	halcón	halcón	a l k o n		
+1979	Yaqui	Uto-Aztecan	HAWK	taawe	taawe	t aː w e		
+3387	ZinacantanTzotzil	Mayan	HAWK	shik	shik	ʃ i k		
+4692	Qeqchi	Mayan	HAWK	k’uch	k’uch	kʼ u tʃ		
+6540	Otomi	Otomanguean	HAWK	nt’it’uxa	nt’it’uxa	n t̪ʼ i t̪ʼ u x a		
+6541	Otomi	Otomanguean	HAWK	nxuni	nxuni	n x u n i		
+8653	ImbaburaQuechua	Quechuan	HAWK	anga (2)	anga	a ŋ g a		
+9806	Wichi	Matacoan	HAWK	alhech’alu	alhech’alu	a lˠ e tʃ ʔ a l u		
+11103	Mapudungun	Araucanian	HAWK	llegllegkan	llegllegkan	ʎ e ɰ ʎ e ɰ k a n		
+674	Spanish	Indo-European	HEADBAND OR HEADDRESS	cinta	cinta	s i n t a		
+675	Spanish	Indo-European	HEADBAND OR HEADDRESS	tocado	tocado	t o k a ð o		
+2353	Yaqui	Uto-Aztecan	HEADBAND OR HEADDRESS	tokila	tokila	t o k i l a	Spanish	toquilla
+3749	ZinacantanTzotzil	Mayan	HEADBAND OR HEADDRESS	chuk halal	chuk_halal	tʃʰ u k + h a l a l		
+5128	Qeqchi	Mayan	HEADBAND OR HEADDRESS	t'upuy	t'upuy	tʼ u p u j	Ch’olti’	t’upuy
+7013	Otomi	Otomanguean	HEADBAND OR HEADDRESS	ts'u̲t'u̲'me	ts'u̲t'u̲'me	ts ʔ u t̪ʼ u ˀm e		
+7014	Otomi	Otomanguean	HEADBAND OR HEADDRESS	nts'u̲t'i	nts'u̲t'i	n tsʼ u t̪ʼ i		
+7015	Otomi	Otomanguean	HEADBAND OR HEADDRESS	sinta	sinta	s i n t̪ a	Spanish	cinta
+8946	ImbaburaQuechua	Quechuan	HEADBAND OR HEADDRESS	sinta	sinta	s i n d a	Spanish	cinta
+10137	Wichi	Matacoan	HEADBAND OR HEADDRESS	tolhetekt’ak	tolhetekt’ak	t o lˠ e t e k t ʔ a k		
+11410	Mapudungun	Araucanian	HEADBAND OR HEADDRESS	trarilongko	trarilongko	ʈʂ a ɻ i l o ŋ k o		
+1091	Spanish	Indo-European	HIRE OR RENT	alquilar	alquilar	a l k i l a ɾ		
+1092	Spanish	Indo-European	HIRE OR RENT	emplear	emplear	e m p l e a ɾ		
+1052	Spanish	Indo-European	HOLD	tener	tener	t e n ɛ ɾ		
+1053	Spanish	Indo-European	HOLD	apoyar	apoyar	a p o ʝ a ɾ		
+2639	Yaqui	Uto-Aztecan	HOLD	jippue	jippue	j i p p u e		
+2640	Yaqui	Uto-Aztecan	HOLD	machu’ute	machu’ute	m a tʃ u ʔ u t e		
+3994	ZinacantanTzotzil	Mayan	HOLD	tom	tom	t o m		
+5512	Qeqchi	Mayan	HOLD	q’unuk	q’unuk	q ʔ u n u kʰ		
+7525	Otomi	Otomanguean	HOLD	hä (1)	hä	h ɐ		
+7526	Otomi	Otomanguean	HOLD	mihi	mihi	m i h i		
+9171	ImbaburaQuechua	Quechuan	HOLD	japina (1)	japina	x a p i n a		
+10376	Wichi	Matacoan	HOLD	ichojlhi	ichojlhi	i tʃ o x lˠ i		
+11650	Mapudungun	Araucanian	HOLD	nünien	nünien	n ɨ n i e n		
+1394	Spanish	Indo-European	HOT	caliente	caliente	k a l j e n t e		
+2926	Yaqui	Uto-Aztecan	HOT	taata (2)	taata	t aː t a		
+4242	ZinacantanTzotzil	Mayan	HOT	k’ok’	k’ok’	kʼ o kʼ		
+5905	Qeqchi	Mayan	HOT	tiq	tiq	t i qʰ		
+7959	Otomi	Otomanguean	HOT	xi mpa	xi_mpa	x i + m p a		
+9407	ImbaburaQuechua	Quechuan	HOT	kunuk	kunuk	k u n u k		
+10620	Wichi	Matacoan	HOT	nichay’u	nichay’u	n i tʃ a j ʔ u		
+11890	Mapudungun	Araucanian	HOT	kofi	kofi	k o f i		
+1536	Spanish	Indo-European	HOW MANY PIECES	cuántos	cuántos	k w a n t o s		
+3029	Yaqui	Uto-Aztecan	HOW MANY PIECES	jaikim	jaikim	j a i k i m		
+4334	ZinacantanTzotzil	Mayan	HOW MANY PIECES	hay ______________	hay_______________	h a j		
+4335	ZinacantanTzotzil	Mayan	HOW MANY PIECES	k’u 7epal	k’u_7epal	kʼ u + ʔ e p a l		
+6032	Qeqchi	Mayan	HOW MANY PIECES	jarub'	jarub'	x a ɾ u ɓ		
+8146	Otomi	Otomanguean	HOW MANY PIECES	tengu?	tengu?	t̪ e n g u		
+8147	Otomi	Otomanguean	HOW MANY PIECES	hangu?	hangu?	h a n g u		
+9499	ImbaburaQuechua	Quechuan	HOW MANY PIECES	mashna (1)	mashna	m a ʃ n a		
+10717	Wichi	Matacoan	HOW MANY PIECES	ehote	ehote	e h o t e		
+11985	Mapudungun	Araucanian	HOW MANY PIECES	¿tunten?	¿tunten?	t u n t e n		
+11986	Mapudungun	Araucanian	HOW MANY PIECES	¿mufü?	¿mufü?	m u f ɨ		
+81	Spanish	Indo-European	ICE	hielo	hielo	ɟ ʝ e l o		
+1830	Yaqui	Uto-Aztecan	ICE	sapam	sapam	s a p a m		
+3266	ZinacantanTzotzil	Mayan	ICE	bot	bot	ɓ o tʰ		
+3267	ZinacantanTzotzil	Mayan	ICE	taiv	taiv	t a i v		
+4534	Qeqchi	Mayan	ICE	ke	ke	k e		
+6317	Otomi	Otomanguean	ICE	tse̲	tse̲	ts æ		
+8532	ImbaburaQuechua	Quechuan	ICE	rasu	rasu	ʐ a s u		
+9689	Wichi	Matacoan	ICE	fwiy’et	fwiy’et	fʷ i j ʔ e t		
+10929	Mapudungun	Araucanian	ICE	trangliñ	trangliñ	ʈʂ a ŋ l i ɲ		
+489	Spanish	Indo-European	ITCH	comezón	comezón	k o m e s o n		
+2179	Yaqui	Uto-Aztecan	ITCH	elesikia	elesikia	e l e s i k i a		
+3600	ZinacantanTzotzil	Mayan	ITCH	ch’ininul	ch’ininul	tʃʼ i n i n u l		
+4936	Qeqchi	Mayan	ITCH	katzkatz	katzkatz	k a t z k a t z		
+4937	Qeqchi	Mayan	ITCH	wotz'okil	wotz'okil	w o tsʼ o k i l		
+6785	Otomi	Otomanguean	ITCH	nxähi	nxähi	n x ɐ h i		
+6786	Otomi	Otomanguean	ITCH	nxäki	nxäki	n x ɐ k i		
+6787	Otomi	Otomanguean	ITCH	nxä’i	nxä’i	n x ɐ ʔ i		
+8818	ImbaburaQuechua	Quechuan	ITCH	shijshi	shijshi	ʃ i x ʃ i		
+10001	Wichi	Matacoan	ITCH	afwtsaj	afwtsaj	a fʷ ts a x		
+11275	Mapudungun	Araucanian	ITCH	üna	üna	ɨ n a		
+549	Spanish	Indo-European	JUG	cántaro	cántaro	k a n t a ɾ o		
+550	Spanish	Indo-European	JUG	jarro	jarro	x a r o		
+2233	Yaqui	Uto-Aztecan	JUG	picheel	picheel	p i tʃ eː l	English	pitcher
+2234	Yaqui	Uto-Aztecan	JUG	soto’i	soto’i	s o t o ʔ i		
+3652	ZinacantanTzotzil	Mayan	JUG	rosa	rosa	ɾ o s a	Spanish	loza
+3653	ZinacantanTzotzil	Mayan	JUG	rosa p’in	rosa_p’in	ɾ o s a + pʼ i n	Spanish	loza
+5004	Qeqchi	Mayan	JUG	puk'xaar	puk'xaar	p u kʼ ʃ aː r		
+5005	Qeqchi	Mayan	JUG	xaar	xaar	ʃ aː r	Spanish	jarro
+6871	Otomi	Otomanguean	JUG	xo̲ni (1)	xo̲ni	x ə n i		
+6872	Otomi	Otomanguean	JUG	'bada	'bada	ˀb a d a		
+8859	ImbaburaQuechua	Quechuan	JUG	jundu (1)	jundu	x u n d u		
+10046	Wichi	Matacoan	JUG	tuwej	tuwej	t u w e x		
+11320	Mapudungun	Araucanian	JUG	metawe	metawe	m e t a w e		
+977	Spanish	Indo-European	KICK	patear	patear	p a t e a ɾ		
+2574	Yaqui	Uto-Aztecan	KICK	tetemu	tetemu	t e t e m u		
+3948	ZinacantanTzotzil	Mayan	KICK	lik ta tek’el	lik_ta_tek’el	l i k + t a + t e kʼ e l		
+3949	ZinacantanTzotzil	Mayan	KICK	puh ta tek’el	puh_ta_tek’el	pʰ u h + t a + t e kʼ e l		
+5435	Qeqchi	Mayan	KICK	yeq'ok	yeq'ok	j e qʼ o kʰ		
+5436	Qeqchi	Mayan	KICK	lapok chi oq	lapok_chi_oq	l a p o k + tʃ i + o qʰ		
+5437	Qeqchi	Mayan	KICK	t'i'ok	t'i'ok	tʼ i ʔ o kʰ		
+5438	Qeqchi	Mayan	KICK	xaab'ank	xaab'ank	ʃ aː ɓ a n kʰ		
+7424	Otomi	Otomanguean	KICK	tit'i	tit'i	t̪ i t̪ʼ i		
+9127	ImbaburaQuechua	Quechuan	KICK	jaitana	jaitana	x a i t a n a		
+10322	Wichi	Matacoan	KICK	y’aj	y’aj	y ʔ a x		
+11603	Mapudungun	Araucanian	KICK	mangkün	mangkün	m a ŋ k ɨ n		
+1414	Spanish	Indo-European	KISS	besar	besar	b e s a ɾ		
+2940	Yaqui	Uto-Aztecan	KISS	liuta	liuta	l i u t a		
+4254	ZinacantanTzotzil	Mayan	KISS	butz’	butz’	ɓ u tsʼ		
+5924	Qeqchi	Mayan	KISS	tz'ub'uk	tz'ub'uk	tsʼ u ɓ u kʰ		
+7977	Otomi	Otomanguean	KISS	tsu̲ts'i	tsu̲ts'i	ts u tsʼ i		
+9421	ImbaburaQuechua	Quechuan	KISS	muchana	muchana	m u tʃ a n a		
+10635	Wichi	Matacoan	KISS	hits’e lach’alu	hits’e_lach’alu	h i ts ʔ e + l a tʃ ʔ a l u		
+10636	Wichi	Matacoan	KISS	hits’elhi elh	hits’elhi_elh	h i ts ʔ e lˠ i + e l̥		
+11905	Mapudungun	Araucanian	KISS	truyun	truyun	ʈʂ u y u n		
+11906	Mapudungun	Araucanian	KISS	muchan	muchan	m u tʃ a n	Quechua	muchay
+849	Spanish	Indo-European	KNOT	nudo	nudo	n u ð o		
+2477	Yaqui	Uto-Aztecan	KNOT	tenko’i	tenko’i	t e n k o ʔ i		
+3857	ZinacantanTzotzil	Mayan	KNOT	p’ok	p’ok	pʼ o k	Chontal	u p'ok
+5292	Qeqchi	Mayan	KNOT	t'ok’	t'ok’	tʼ o kʼ		
+5293	Qeqchi	Mayan	KNOT	t'ok'	t'ok'	tʼ o kʼ		
+7211	Otomi	Otomanguean	KNOT	‘ruts'i	‘ruts'i	ˀr u tsʼ i		
+9049	ImbaburaQuechua	Quechuan	KNOT	muku	muku	m u k u		
+10241	Wichi	Matacoan	KNOT	lakutsu	lakutsu	l a k u ts u		
+11516	Mapudungun	Araucanian	KNOT	püro	püro	p ɨ ɻ o		
+1042	Spanish	Indo-European	LAND (DESCEND)	desembarcar	desembarcar	d e s e m b a ɾ k a ɾ		
+2634	Yaqui	Uto-Aztecan	LAND (DESCEND)	resembarkaroa	resembarkaroa	r e s e m b a r k a r o a	Spanish	desembarcar
+7515	Otomi	Otomanguean	LAND (DESCEND)	tsoho jar hai	tsoho_jar_hai	ts o h o + x a r + h a i		
+411	Spanish	Indo-European	LIVER	hígado	hígado	i ɣ a ð o		
+2121	Yaqui	Uto-Aztecan	LIVER	jeemam	jeemam	j eː m a m		
+3539	ZinacantanTzotzil	Mayan	LIVER	sekub	sekub	s e k u b		
+4859	Qeqchi	Mayan	LIVER	ch'och'	ch'och'	tʃʼ o tʃʼ		
+6715	Otomi	Otomanguean	LIVER	ya	ya	j a		
+8771	ImbaburaQuechua	Quechuan	LIVER	yana shungu (1)	yana_shungu	j a n a + ʃ u ŋ g u		
+9952	Wichi	Matacoan	LIVER	totonek	totonek	t o t o n e k		
+11224	Mapudungun	Araucanian	LIVER	ke	ke	k e		
+1525	Spanish	Indo-European	MANNER	modo	modo	m o ð o		
+1526	Spanish	Indo-European	MANNER	manera	manera	m a n ɛ ɾ a		
+6023	Qeqchi	Mayan	MANNER	naraj	naraj	n a ɾ a x		
+8125	Otomi	Otomanguean	MANNER	komongu	komongu	k o m o n g u	Spanish	como
+8126	Otomi	Otomanguean	MANNER	komu̲	komu̲	k o m u	Spanish	como
+8127	Otomi	Otomanguean	MANNER	njangu	njangu	n x a n g u		
+8128	Otomi	Otomanguean	MANNER	jangu	jangu	x a n g u		
+9491	ImbaburaQuechua	Quechuan	MANNER	shina	shina	ʃ i n a		
+11978	Mapudungun	Araucanian	MANNER	femngechi	femngechi	f e m ŋ e tʃ i		
+123	Spanish	Indo-European	MARRIED WOMAN	mujer casada	mujer_casada	m u x ɛ ɾ + k a s a ð a		
+1866	Yaqui	Uto-Aztecan	MARRIED WOMAN	kunala	kunala	k u n a l a		
+4578	Qeqchi	Mayan	MARRIED WOMAN	sumsuukil	sumsuukil	s u m s uː k i l		
+6362	Otomi	Otomanguean	MARRIED WOMAN	‘be̲hñä	‘be̲hñä	ˀb æ h ɲ ɐ		
+8564	ImbaburaQuechua	Quechuan	MARRIED WOMAN	kazarashka warmi	kazarashka_warmi	k a z a ɾ a ʃ k a + w a ɾ m i		
+9720	Wichi	Matacoan	MARRIED WOMAN	atsinha lach’efwa ihi	atsinha_lach’efwa_ihi	a ts i n̥ a + l a tʃ ʔ e fʷ a + i h i		
+10971	Mapudungun	Araucanian	MARRIED WOMAN	fütangen zomo	fütangen_zomo	f ɨ t a ŋ e n + z o m o		
+558	Spanish	Indo-European	MEAL	comida	comida	k o m i ð a		
+2241	Yaqui	Uto-Aztecan	MEAL	bwa’ame	bwa’ame	bʷ a ʔ a m e		
+3659	ZinacantanTzotzil	Mayan	MEAL	ve7el	ve7el	v e ʔ e l		
+3660	ZinacantanTzotzil	Mayan	MEAL	ve7lil	ve7lil	v e ʔ l i l		
+5014	Qeqchi	Mayan	MEAL	tzakahem	tzakahem	t z a k a h e m		
+5015	Qeqchi	Mayan	MEAL	tzekeem	tzekeem	t z e k eː m		
+5016	Qeqchi	Mayan	MEAL	tib'el wa	tib'el_wa	t i ɓ e l + w a		
+5017	Qeqchi	Mayan	MEAL	wa	wa	w a		
+6880	Otomi	Otomanguean	MEAL	nts’i	nts’i	n tsʼ i		
+6881	Otomi	Otomanguean	MEAL	hñuni	hñuni	h ɲ u n i		
+8865	ImbaburaQuechua	Quechuan	MEAL	mikuna	mikuna	m i k u n a		
+10054	Wichi	Matacoan	MEAL	kumila	kumila	k u m i l a	Spanish	comida
+11331	Mapudungun	Araucanian	MEAL	iyael	iyael	i y a e l		
+1075	Spanish	Indo-European	MONEY	dinero	dinero	d i n ɛ ɾ o		
+2654	Yaqui	Uto-Aztecan	MONEY	tomi	tomi	t o m i	Arabic (Hispanic)	túmn
+4006	ZinacantanTzotzil	Mayan	MONEY	sentavo	sentavo	s e n t a v o	Spanish	centavo
+4007	ZinacantanTzotzil	Mayan	MONEY	tak’in	tak’in	t a kʼ i n		
+5531	Qeqchi	Mayan	MONEY	tumin	tumin	t u m i n	Spanish	tomin
+7549	Otomi	Otomanguean	MONEY	bojä (1)	bojä	b o x ɐ		
+9184	ImbaburaQuechua	Quechuan	MONEY	kulki	kulki	k u l k i		
+10390	Wichi	Matacoan	MONEY	tokow’oj	tokow’oj	t o k o w ʔ o x		
+11663	Mapudungun	Araucanian	MONEY	plata	plata	p l a t a	Spanish	plata
+286	Spanish	Indo-European	MONKEY	mono	mono	m o n o		
+2003	Yaqui	Uto-Aztecan	MONKEY	cholua	cholua	tʃ o l u a		
+3415	ZinacantanTzotzil	Mayan	MONKEY	mash	mash	m a sʰ		
+4722	Qeqchi	Mayan	MONKEY	b’atz’	b’atz’	ɓ a tsʼ		
+6583	Otomi	Otomanguean	MONKEY	nzu̲pa	nzu̲pa	n z u p a		
+8670	ImbaburaQuechua	Quechuan	MONKEY	munu	munu	m u n u	Spanish	mono
+9833	Wichi	Matacoan	MONKEY	hoton’i	hoton’i	h o t o n ʔ i		
+1239	Spanish	Indo-European	MORE	más	más	m a s		
+2796	Yaqui	Uto-Aztecan	MORE	bu’u	bu’u	b u ʔ u		
+2797	Yaqui	Uto-Aztecan	MORE	ousi	ousi	o u s i		
+4133	ZinacantanTzotzil	Mayan	MORE	mas	mas	m a s	Spanish	ma*s
+4134	ZinacantanTzotzil	Mayan	MORE	yan	yan	j a n	Huastec	yaan
+5723	Qeqchi	Mayan	MORE	toj (2)	toj	t o x		
+7750	Otomi	Otomanguean	MORE	mäs	mäs	m ɐ s	Spanish	mas
+7751	Otomi	Otomanguean	MORE	ma n’a	ma_n’a	m a + n ʔ a		
+7752	Otomi	Otomanguean	MORE	ma 'ra	ma_'ra	m a + ˀr a		
+9298	ImbaburaQuechua	Quechuan	MORE	ashtawan	ashtawan	a ʃ t a w a ŋ		
+11783	Mapudungun	Araucanian	MORE	zoy	zoy	z o y		
+306	Spanish	Indo-European	MOSQUITO	mosquito	mosquito	m o s k i t o		
+2025	Yaqui	Uto-Aztecan	MOSQUITO	woo’o	woo’o	w oː ʔ o		
+3435	ZinacantanTzotzil	Mayan	MOSQUITO	shenen	shenen	ʃ e n e n		
+4743	Qeqchi	Mayan	MOSQUITO	suq	suq	s u qʰ		
+4744	Qeqchi	Mayan	MOSQUITO	kok’ utz’	kok’_utz’	k o kʼ + u tsʼ		
+4745	Qeqchi	Mayan	MOSQUITO	ch’een	ch’een	tʃʼ eː n		
+6603	Otomi	Otomanguean	MOSQUITO	t'olo gin'we̲	t'olo_gin'we̲	t̪ʼ o l o + g i n ˀw æ		
+8685	ImbaburaQuechua	Quechuan	MOSQUITO	chuspigu	chuspigu	tʃ u s p i g u		
+9862	Wichi	Matacoan	MOSQUITO	yaphin’a	yaphin’a	y a pʰ i n ʔ a		
+11132	Mapudungun	Araucanian	MOSQUITO	pichike püḻü	pichike_püḻü	p i tʃ i k e + p ɨ l̪ ɨ		
+770	Spanish	Indo-European	MOW	segar	segar	s e ɣ a ɾ		
+771	Spanish	Indo-European	MOW	cosechar	cosechar	k o s e tʃ a ɾ		
+2423	Yaqui	Uto-Aztecan	MOW	jipesuma	jipesuma	j i p e s u m a		
+5220	Qeqchi	Mayan	MOW	setok	setok	s e t o kʰ		
+7129	Otomi	Otomanguean	MOW	xa (2)	xa	x a		
+9004	ImbaburaQuechua	Quechuan	MOW	kuzichana	kuzichana	k u z i tʃ a n a	Spanish	cosechar
+10196	Wichi	Matacoan	MOW	yiset	yiset	y i s e t		
+11477	Mapudungun	Araucanian	MOW	katrüketranün	katrüketranün	k a ʈʂ ɨ k e ʈʂ a n ɨ n		
+236	Spanish	Indo-European	MULE	mulo	mulo	m u l o		
+237	Spanish	Indo-European	MULE	mula	mula	m u l a		
+1967	Yaqui	Uto-Aztecan	MULE	muura	muura	m uː r a	Spanish	mula
+3376	ZinacantanTzotzil	Mayan	MULE	ka7	ka7	k a ʔ	Spanish	caballo
+4678	Qeqchi	Mayan	MULE	muul	muul	m uː l	Spanish	mula
+6525	Otomi	Otomanguean	MULE	mäzo	mäzo	m ɐ z o	Spanish	macho
+6526	Otomi	Otomanguean	MULE	tsumu̲zo	tsumu̲zo	ts u m u z o		
+6527	Otomi	Otomanguean	MULE	mula	mula	m u l a	Spanish	mula
+8642	ImbaburaQuechua	Quechuan	MULE	mula	mula	m u l a	Spanish	mula
+9795	Wichi	Matacoan	MULE	mula	mula	m u l a	Spanish	mula
+1509	Spanish	Indo-European	OBSCURE	obscuro	obscuro	o β s k u ɾ o		
+3005	Yaqui	Uto-Aztecan	OBSCURE	kaa maachi	kaa_maachi	k aː + m aː tʃ i		
+6010	Qeqchi	Mayan	OBSCURE	ink’a’ ch’olch’o	ink’a’_ch’olch’o	i n kʼ a ʔ + tʃʼ o l tʃʼ o		
+8099	Otomi	Otomanguean	OBSCURE	mbots'i (1)	mbots'i	m b o tsʼ i		
+8100	Otomi	Otomanguean	OBSCURE	'bexui	'bexui	ˀb e x u i		
+9479	ImbaburaQuechua	Quechuan	OBSCURE	amsa (1)	amsa	a m s a		
+10698	Wichi	Matacoan	OBSCURE	naknelhoja	naknelhoja	n a k n e lˠ o x a		
+11968	Mapudungun	Araucanian	OBSCURE	zumiñ	zumiñ	z u m i ɲ		
+592	Spanish	Indo-European	OLIVE	aceituna	aceituna	a s e i t u n a		
+593	Spanish	Indo-European	OLIVE	oliva	oliva	o l i β a		
+2271	Yaqui	Uto-Aztecan	OLIVE	aseituuna	aseituuna	a s e i t uː n a	Spanish	aceituna
+5058	Qeqchi	Mayan	OLIVE	asetuna	asetuna	a s e t u n a	Spanish	aceituna
+8892	ImbaburaQuechua	Quechuan	OLIVE	asituna	asituna	a s i t u n a	Spanish	aceituna
+10076	Wichi	Matacoan	OLIVE	aceituna	aceituna	a c e i t u n a	Spanish	aceituna
+207	Spanish	Indo-European	OX	buey	buey	b w e i		
+1947	Yaqui	Uto-Aztecan	OX	boes	boes	b o e s	Spanish	buey
+3361	ZinacantanTzotzil	Mayan	OX	wey	wey	w e j	Spanish	buey
+4655	Qeqchi	Mayan	OX	b’ooyx	b’ooyx	ɓ oː j ʃ	Spanish	buey
+6489	Otomi	Otomanguean	OX	boi	boi	b o i	Spanish	buey
+8624	ImbaburaQuechua	Quechuan	OX	buyi	buyi	b u j i	Spanish	buey
+9774	Wichi	Matacoan	OX	weyis	weyis	w e j i s	Spanish	bueyes
+11066	Mapudungun	Araucanian	OX	manshun	manshun	m a n ʃ u n	Spanish	manso
+936	Spanish	Indo-European	PAINT (PIGMENTS)	pintura	pintura	p i n t u ɾ a		
+2539	Yaqui	Uto-Aztecan	PAINT (PIGMENTS)	yokia	yokia	j o k i a		
+3912	ZinacantanTzotzil	Mayan	PAINT (PIGMENTS)	bon	bon	ɓ o n		
+5380	Qeqchi	Mayan	PAINT (PIGMENTS)	b’on	b’on	ɓ o n		
+7354	Otomi	Otomanguean	PAINT (PIGMENTS)	njät’i (2)	njät’i	n x ɐ t̪ʼ i		
+7355	Otomi	Otomanguean	PAINT (PIGMENTS)	njät’i (1)	njät’i	n x ɐ t̪ʼ i		
+9100	ImbaburaQuechua	Quechuan	PAINT (PIGMENTS)	tiñi	tiñi	t i ɲ i	Spanish	teñir
+10292	Wichi	Matacoan	PAINT (PIGMENTS)	pintula	pintula	p i n t u l a	Spanish	pintura
+11572	Mapudungun	Araucanian	PAINT (PIGMENTS)	pintura	pintura	p i n t u ɻ a	Spanish	pintura
+255	Spanish	Indo-European	PARROT	loro	loro	l o ɾ o		
+256	Spanish	Indo-European	PARROT	papagayo	papagayo	p a p a ɣ a ʝ o		
+1982	Yaqui	Uto-Aztecan	PARROT	baro	baro	b a r o		
+3390	ZinacantanTzotzil	Mayan	PARROT	loro	loro	l o ɾ o	Spanish	loro
+3391	ZinacantanTzotzil	Mayan	PARROT	periko	periko	pʰ e ɾ i k o	Spanish	perico
+4695	Qeqchi	Mayan	PARROT	loor	loor	l oː r	Spanish	loro
+4696	Qeqchi	Mayan	PARROT	chocho’	chocho’	tʃ o tʃ o ʔ		
+6544	Otomi	Otomanguean	PARROT	loro	loro	l o r o	Spanish	loro
+8656	ImbaburaQuechua	Quechuan	PARROT	luru	luru	l u ɾ u	Spanish	loro
+9808	Wichi	Matacoan	PARROT	ele	ele	e l e	Pilagá	ele’
+11105	Mapudungun	Araucanian	PARROT	choroy	choroy	tʃ o ɻ o y		
+11106	Mapudungun	Araucanian	PARROT	rawillma	rawillma	ɻ a w i ʎ m a		
+658	Spanish	Indo-European	POCKET	bolsillo	bolsillo	b o l s i ʝ o		
+2342	Yaqui	Uto-Aztecan	POCKET	bolsiom	bolsiom	b o l s i o m	Spanish	bolsillo
+2343	Yaqui	Uto-Aztecan	POCKET	boosam	boosam	b oː s a m	Spanish	bolsa
+5120	Qeqchi	Mayan	POCKET	b'oox	b'oox	ɓ oː ʃ	Ch’olan	*box
+7001	Otomi	Otomanguean	POCKET	'ñägi	'ñägi	ˀɲ ɐ g i		
+8940	ImbaburaQuechua	Quechuan	POCKET	bulsiku	bulsiku	b u l s i k u	Spanish	bolsico
+10128	Wichi	Matacoan	POCKET	tokhoyhi	tokhoyhi	t o kʰ o j h i		
+11401	Mapudungun	Araucanian	POCKET	fonsiku	fonsiku	f o n s i k u	Spanish	bolsillo
+586	Spanish	Indo-European	POTATO	papa	papa	p a p a		
+2264	Yaqui	Uto-Aztecan	POTATO	paapa	paapa	p aː p a	Quechua	papa
+3686	ZinacantanTzotzil	Mayan	POTATO	7isak’	7isak’	ʔ i s a kʼ		
+3687	ZinacantanTzotzil	Mayan	POTATO	batz’i 7isak’	batz’i_7isak’	ɓ a tsʼ i + ʔ i s a kʼ		
+3688	ZinacantanTzotzil	Mayan	POTATO	sakil tranhero 7isak’	sakil_tranhero_7isak’	s a k i l + t ɾ a n h e ɾ o + ʔ i s a kʼ	Spanish	extranjero
+5051	Qeqchi	Mayan	POTATO	kaxlan is	kaxlan_is	k a ʃ l a n + i s		
+5052	Qeqchi	Mayan	POTATO	paaps	paaps	p aː p s	Spanish	papas
+6911	Otomi	Otomanguean	POTATO	‘rok'a	‘rok'a	ˀr o kʼ a		
+6912	Otomi	Otomanguean	POTATO	'bo̲'kwä	'bo̲'kwä	ˀb ə ˀkʷ ɐ		
+8886	ImbaburaQuechua	Quechuan	POTATO	papa	papa	p a p a		
+10072	Wichi	Matacoan	POTATO	papa	papa	p a p a	Spanish	papa
+11353	Mapudungun	Araucanian	POTATO	poñü	poñü	p o ɲ ɨ		
+11354	Mapudungun	Araucanian	POTATO	trawala	trawala	ʈʂ a w a l a	Gününa Yajüch	dawala
+868	Spanish	Indo-European	PULL OFF (SKIN)	desollar	desollar	d e s o ʝ a ɾ		
+2493	Yaqui	Uto-Aztecan	PULL OFF (SKIN)	beayecha	beayecha	b e a j e tʃ a		
+3874	ZinacantanTzotzil	Mayan	PULL OFF (SKIN)	cho7	cho7	tʃʰ o ʔ		
+5323	Qeqchi	Mayan	PULL OFF (SKIN)	b’ich’ok	b’ich’ok	ɓ i tʃʼ o kʰ		
+5324	Qeqchi	Mayan	PULL OFF (SKIN)	mich’ok	mich’ok	m i tʃʼ o kʰ		
+7265	Otomi	Otomanguean	PULL OFF (SKIN)	xänts'i	xänts'i	x ɐ n tsʼ i		
+7266	Otomi	Otomanguean	PULL OFF (SKIN)	pu̲t'i	pu̲t'i	p u t̪ʼ i		
+9063	ImbaburaQuechua	Quechuan	PULL OFF (SKIN)	llushtina	llushtina	ʒ u ʃ t i n a		
+10255	Wichi	Matacoan	PULL OFF (SKIN)	ilanhit’oj	ilanhit’oj	i l a n̥ i t ʔ o x		
+11532	Mapudungun	Araucanian	PULL OFF (SKIN)	lawümün	lawümün	l a w ɨ m ɨ n		
+1499	Spanish	Indo-European	PUPIL (STUDENT)	alumno	alumno	a l u m n o		
+2997	Yaqui	Uto-Aztecan	PUPIL (STUDENT)	majtawame	majtawame	m a j t a w a m e		
+4310	ZinacantanTzotzil	Mayan	PUPIL (STUDENT)	hchanvun	hchanvun	h tʃʰ a n v u n		
+6001	Qeqchi	Mayan	PUPIL (STUDENT)	tzolom	tzolom	t z o l o m		
+6002	Qeqchi	Mayan	PUPIL (STUDENT)	tijom	tijom	t i x o m		
+8085	Otomi	Otomanguean	PUPIL (STUDENT)	xa̲di (1)	xa̲di	x ɔ d i		
+8086	Otomi	Otomanguean	PUPIL (STUDENT)	'yoskwela	'yoskwela	ˀj o s kʷ e l a	Spanish	escuela
+9473	ImbaburaQuechua	Quechuan	PUPIL (STUDENT)	yachajuk	yachajuk	j a tʃ a x u k		
+10690	Wichi	Matacoan	PUPIL (STUDENT)	lachefwenek	lachefwenek	l a tʃ e fʷ e n e k		
+11960	Mapudungun	Araucanian	PUPIL (STUDENT)	kimpelu	kimpelu	k i m p e l u		
+11961	Mapudungun	Araucanian	PUPIL (STUDENT)	azümpelu	azümpelu	a z ɨ m p e l u		
+1018	Spanish	Indo-European	PUSH	empujar	empujar	e m p u x a ɾ		
+2610	Yaqui	Uto-Aztecan	PUSH	yu’a	yu’a	j u ʔ a		
+3976	ZinacantanTzotzil	Mayan	PUSH	shuh	shuh	ʃ u h		
+3977	ZinacantanTzotzil	Mayan	PUSH	net’	net’	n e tʼ		
+5484	Qeqchi	Mayan	PUSH	minok	minok	m i n o kʰ		
+5485	Qeqchi	Mayan	PUSH	tiikink	tiikink	t iː k i n kʰ		
+5486	Qeqchi	Mayan	PUSH	miikisink	miikisink	m iː k i s i n kʰ		
+7486	Otomi	Otomanguean	PUSH	tuki (1)	tuki	t̪ u k i		
+9157	ImbaburaQuechua	Quechuan	PUSH	tangana	tangana	t a ŋ g a n a		
+10354	Wichi	Matacoan	PUSH	yihetche	yihetche	y i h e t tʃ e		
+11632	Mapudungun	Araucanian	PUSH	rültren	rültren	ɻ ɨ l ʈʂ e n		
+1033	Spanish	Indo-European	RAFT	balsa	balsa	b a l s a		
+2625	Yaqui	Uto-Aztecan	RAFT	bajut	bajut	b a j u t		
+5501	Qeqchi	Mayan	RAFT	poyte'	poyte'	p o j t e ʔ	Ch’olan	pooyte’
+733	Spanish	Indo-European	RAFTER	viga	viga	b i ɣ a		
+2397	Yaqui	Uto-Aztecan	RAFTER	biika	biika	b iː k a	Spanish	viga
+3789	ZinacantanTzotzil	Mayan	RAFTER	te7el na	te7el_na	t e ʔ e l + n a		
+3790	ZinacantanTzotzil	Mayan	RAFTER	natikil te7	natikil_te7	n a t i k i l + t e ʔ		
+5187	Qeqchi	Mayan	RAFTER	b'aqsotz'	b'aqsotz'	ɓ a q s o tsʼ		
+5188	Qeqchi	Mayan	RAFTER	xb'e ch'o	xb'e_ch'o	ʃ ɓ e + tʃʼ o		
+7085	Otomi	Otomanguean	RAFTER	‘bu̲ts'i	‘bu̲ts'i	ˀb u tsʼ i		
+8981	ImbaburaQuechua	Quechuan	RAFTER	biga	biga	b i g a	Spanish	viga
+10177	Wichi	Matacoan	RAFTER	hep sijlhiley	hep_sijlhiley	h e p + s i x lˠ i l e j		
+11449	Mapudungun	Araucanian	RAFTER	viga	viga	v i ɰ a	Spanish	viga
+79	Spanish	Indo-European	RAIN (PRECIPITATION)	lluvia	lluvia	ɟ ʝ u β j a		
+1828	Yaqui	Uto-Aztecan	RAIN (PRECIPITATION)	yuku	yuku	j u k u		
+3265	ZinacantanTzotzil	Mayan	RAIN (PRECIPITATION)	vo7	vo7	v o ʔ		
+4532	Qeqchi	Mayan	RAIN (PRECIPITATION)	hab’	hab’	h a ɓ		
+6315	Otomi	Otomanguean	RAIN (PRECIPITATION)	'ye	'ye	ˀj e		
+8530	ImbaburaQuechua	Quechuan	RAIN (PRECIPITATION)	tamya	tamya	t a m j a		
+9688	Wichi	Matacoan	RAIN (PRECIPITATION)	iwumcho’	iwumcho’	i w u m tʃ o ʔ		
+10927	Mapudungun	Araucanian	RAIN (PRECIPITATION)	mawüṉ	mawüṉ	m a w ɨ n̪		
+1596	Spanish	Indo-European	RATTLE	matraca	matraca	m a t ɾ a k a		
+1597	Spanish	Indo-European	RATTLE	cascabel	cascabel	k a s k a β ɛ l		
+3079	Yaqui	Uto-Aztecan	RATTLE	teneboim	teneboim	t e n e b o i m		
+3080	Yaqui	Uto-Aztecan	RATTLE	ayam	ayam	a j a m		
+4384	ZinacantanTzotzil	Mayan	RATTLE	sot	sot	s o tʰ		
+6088	Qeqchi	Mayan	RATTLE	luk'luk' che'	luk'luk'_che'	l u kʼ l u kʼ + tʃ e ʔ		
+8244	Otomi	Otomanguean	RATTLE	nxint'i	nxint'i	n x i n t̪ʼ i		
+10765	Wichi	Matacoan	RATTLE	ch’’ilijtaj	ch’’ilijtaj	tʃ ʔ i l i x t a x		
+10766	Wichi	Matacoan	RATTLE	tokato	tokato	t o k a t o		
+12030	Mapudungun	Araucanian	RATTLE	kazkawilla	kazkawilla	k a z k a w i ʎ a	Spanish	cascabel
+520	Spanish	Indo-European	RAW	crudo	crudo	k ɾ u ð o		
+2208	Yaqui	Uto-Aztecan	RAW	kaa bwasi	kaa_bwasi	k aː + bʷ a s i		
+4977	Qeqchi	Mayan	RAW	rax	rax	r a ʃ		
+6829	Otomi	Otomanguean	RAW	'ñä	'ñä	ˀɲ ɐ		
+8839	ImbaburaQuechua	Quechuan	RAW	chawa	chawa	tʃ a w a		
+10026	Wichi	Matacoan	RAW	n’uya	n’uya	n ʔ u j a		
+11300	Mapudungun	Araucanian	RAW	karü	karü	k a ɻ ɨ		
+176	Spanish	Indo-European	RELATIVES	parientes	parientes	p a ɾ j e n t e s		
+177	Spanish	Indo-European	RELATIVES	parentela	parentela	p a ɾ e n t e l a		
+1928	Yaqui	Uto-Aztecan	RELATIVES	wawaira	wawaira	w a w a i r a		
+3344	ZinacantanTzotzil	Mayan	RELATIVES	chi7ilil	chi7ilil	tʃʰ i ʔ i l i l	Quiche	ERG-achi7il
+4630	Qeqchi	Mayan	RELATIVES	amaq’il tenamit	amaq’il_tenamit	a m a qʼ i l + t e n a m i tʰ		
+4631	Qeqchi	Mayan	RELATIVES	ruk’	ruk’	r u kʼ		
+4632	Qeqchi	Mayan	RELATIVES	cha’al	cha’al	tʃ a ʔ a l		
+4633	Qeqchi	Mayan	RELATIVES	komon	komon	k o m o n	Spanish	común
+6425	Otomi	Otomanguean	RELATIVES	meni	meni	m e n i		
+8607	ImbaburaQuechua	Quechuan	RELATIVES	ayllu (2)	ayllu	a j ʒ u		
+9757	Wichi	Matacoan	RELATIVES	n’w’et lhele	n’w’et_lhele	n ˀw ʔ e t + lˠ e l e		
+11045	Mapudungun	Araucanian	RELATIVES	reñma	reñma	ɻ e ɲ m a		
+1380	Spanish	Indo-European	ROUGH	áspero	áspero	a s p ɛ ɾ o		
+2918	Yaqui	Uto-Aztecan	ROUGH	sosoko	sosoko	s o s o k o		
+4235	ZinacantanTzotzil	Mayan	ROUGH	ch'ixaltik	ch'ixaltik	tʃʰ ʔ i ʃ a l t i k		
+5883	Qeqchi	Mayan	ROUGH	b'iqb'iq	b'iqb'iq	ɓ i q ɓ i qʰ		
+5884	Qeqchi	Mayan	ROUGH	purux	purux	p u ɾ u ʃ		
+5885	Qeqchi	Mayan	ROUGH	b'urux b'urux	b'urux_b'urux	ɓ u ɾ u ʃ + ɓ u ɾ u ʃ		
+5886	Qeqchi	Mayan	ROUGH	k'urux	k'urux	k ʔ u ɾ u ʃ	Ch’olan	*k’urux
+5887	Qeqchi	Mayan	ROUGH	turux	turux	t u ɾ u ʃ		
+7945	Otomi	Otomanguean	ROUGH	xi nzadi	xi_nzadi	x i + n z a d i		
+9399	ImbaburaQuechua	Quechuan	ROUGH	shagra	shagra	ʃ a g ɾ a		
+10613	Wichi	Matacoan	ROUGH	yelaj	yelaj	y e l a x		
+11883	Mapudungun	Araucanian	ROUGH	ningül	ningül	n i ŋ ɨ l		
+1036	Spanish	Indo-European	ROW	remar	remar	r e m a ɾ		
+2628	Yaqui	Uto-Aztecan	ROW	remaroa	remaroa	r e m a r o a	Spanish	remar
+3989	ZinacantanTzotzil	Mayan	ROW	hub	hub	h u b		
+5505	Qeqchi	Mayan	ROW	juyuk	juyuk	x u j u kʰ	Ch’olan	*juy
+5506	Qeqchi	Mayan	ROW	kojlenk	kojlenk	k o x l e n kʰ		
+7510	Otomi	Otomanguean	ROW	‘yoni	‘yoni	ˀj o n i		
+10367	Wichi	Matacoan	ROW	iseklo’ inot	iseklo’_inot	i s e k l o ʔ + i n o t		
+11644	Mapudungun	Araucanian	ROW	kawen	kawen	k a w e n	Quechua	qawiy
+1345	Spanish	Indo-European	SALTY	salado	salado	s a l a ð o		
+2890	Yaqui	Uto-Aztecan	SALTY	cho’oko	cho’oko	tʃ o ʔ o k o		
+4205	ZinacantanTzotzil	Mayan	SALTY	chi7	chi7	tʃʰ i ʔ		
+5844	Qeqchi	Mayan	SALTY	atz’am	atz’am	a tsʼ a m		
+7886	Otomi	Otomanguean	SALTY	xi 'ñuxi	xi_'ñuxi	x i + ˀɲ u x i		
+9372	ImbaburaQuechua	Quechuan	SALTY	kachiyashka	kachiyashka	k a tʃ i j a ʃ k a		
+10586	Wichi	Matacoan	SALTY	nusuy	nusuy	n u s u j		
+11858	Mapudungun	Araucanian	SALTY	kotrü	kotrü	k o ʈʂ ɨ	Gününa Yajüch	xïtran
+1487	Spanish	Indo-European	SEEM	parecer	parecer	p a ɾ e s ɛ ɾ		
+2989	Yaqui	Uto-Aztecan	SEEM	machia	machia	m a tʃ i a		
+5990	Qeqchi	Mayan	SEEM	chanchan aj wi’ a’an	chanchan_aj_wi’_a’an	tʃ a n tʃ a n + a x + w i ʔ + a ʔ a n		
+8065	Otomi	Otomanguean	SEEM	neki	neki	n e k i		
+8066	Otomi	Otomanguean	SEEM	'ñenä	'ñenä	ˀɲ e n ɐ		
+8067	Otomi	Otomanguean	SEEM	want'ä	want'ä	w a n t̪ʼ ɐ		
+9465	ImbaburaQuechua	Quechuan	SEEM	rikchana	rikchana	ʐ i k tʃ a n a		
+10682	Wichi	Matacoan	SEEM	nichotche	nichotche	n i tʃ o t tʃ e		
+11950	Mapudungun	Araucanian	SEEM	trokin	trokin	ʈʂ o k i n		
+72	Spanish	Indo-European	SHADE	sombra	sombra	s o m b ɾ a		
+1822	Yaqui	Uto-Aztecan	SHADE	jekka	jekka	j e k k a		
+3258	ZinacantanTzotzil	Mayan	SHADE	kevu	kevu	k e v u		
+3259	ZinacantanTzotzil	Mayan	SHADE	nak’obal	nak’obal	n a kʼ o ɓ a l		
+4524	Qeqchi	Mayan	SHADE	mu	mu	m u		
+6308	Otomi	Otomanguean	SHADE	xudi	xudi	x u d i		
+8524	ImbaburaQuechua	Quechuan	SHADE	llantu	llantu	ʒ a n d u		
+9682	Wichi	Matacoan	SHADE	hipelh	hipelh	h i p e l̥		
+10918	Mapudungun	Araucanian	SHADE	llawfeñ	llawfeñ	ʎ a w f e ɲ		
+10919	Mapudungun	Araucanian	SHADE	aywiñ	aywiñ	a y w i ɲ		
+959	Spanish	Indo-European	SHAKE	sacudir	sacudir	s a k u ð i ɾ		
+2554	Yaqui	Uto-Aztecan	SHAKE	tatake	tatake	t a t a k e		
+3933	ZinacantanTzotzil	Mayan	SHAKE	7okilan	7okilan	ʔ o k i l a n		
+3934	ZinacantanTzotzil	Mayan	SHAKE	lilin	lilin	l i l i n		
+3935	ZinacantanTzotzil	Mayan	SHAKE	vuyilan	vuyilan	v u j i l a n		
+3936	ZinacantanTzotzil	Mayan	SHAKE	yo7ilan	yo7ilan	j o ʔ i l a n		
+5411	Qeqchi	Mayan	SHAKE	chiq'ok	chiq'ok	tʃ i qʼ o kʰ		
+7395	Otomi	Otomanguean	SHAKE	jwät'i	jwät'i	xʷ ɐ t̪ʼ i		
+7396	Otomi	Otomanguean	SHAKE	jwähmi	jwähmi	xʷ ɐ h m i		
+9114	ImbaburaQuechua	Quechuan	SHAKE	chafsina	chafsina	tʃ a ɸ s i n a	Cuzco Quechua	chhawxchi
+10306	Wichi	Matacoan	SHAKE	isichot	isichot	i s i tʃ o t		
+11589	Mapudungun	Araucanian	SHAKE	mütrowün	mütrowün	m ɨ ʈʂ o w ɨ n		
+641	Spanish	Indo-European	SHIRT	camisa	camisa	k a m i s a		
+2323	Yaqui	Uto-Aztecan	SHIRT	supem	supem	s u p e m		
+3736	ZinacantanTzotzil	Mayan	SHIRT	moketeil	moketeil	m o k e t e i l		
+5104	Qeqchi	Mayan	SHIRT	kamiis	kamiis	k a m iː s	Spanish	camisa
+6980	Otomi	Otomanguean	SHIRT	xayu	xayu	x a j u		
+6981	Otomi	Otomanguean	SHIRT	pahni	pahni	p a h n i		
+8931	ImbaburaQuechua	Quechuan	SHIRT	kamiza	kamiza	k a m i z a	Spanish	camisa
+10115	Wichi	Matacoan	SHIRT	y’eche	y’eche	y ʔ e tʃ e		
+11391	Mapudungun	Araucanian	SHIRT	kamisa	kamisa	k a m i s a	Spanish	camisa
+1546	Spanish	Indo-European	SHOUT	gritar	gritar	g ɾ i t a ɾ		
+3039	Yaqui	Uto-Aztecan	SHOUT	chaae	chaae	tʃ aː e		
+4346	ZinacantanTzotzil	Mayan	SHOUT	7avan	7avan	ʔ a v a n		
+6044	Qeqchi	Mayan	SHOUT	q'ichok e	q'ichok_e	qʼ i tʃ o k + e	Q’anjob’alan	q’ich
+6045	Qeqchi	Mayan	SHOUT	chajok e	chajok_e	tʃ a x o k + e		
+8165	Otomi	Otomanguean	SHOUT	mafi	mafi	m a f i		
+8166	Otomi	Otomanguean	SHOUT	mahni	mahni	m a h n i		
+8167	Otomi	Otomanguean	SHOUT	mat'i	mat'i	m a t̪ʼ i		
+8168	Otomi	Otomanguean	SHOUT	nwe̲t'i	nwe̲t'i	nʷ æ t̪ʼ i		
+9509	ImbaburaQuechua	Quechuan	SHOUT	kaparina	kaparina	k a p a ɾ i n a		
+10728	Wichi	Matacoan	SHOUT	t’on	t’on	t ʔ o n		
+11998	Mapudungun	Araucanian	SHOUT	wirarün	wirarün	w i ɻ a ɻ ɨ n		
+1552	Spanish	Indo-European	SHRIEK	chillar	chillar	tʃ i ʝ a ɾ		
+3043	Yaqui	Uto-Aztecan	SHRIEK	bwaana	bwaana	bʷ aː n a		
+6050	Qeqchi	Mayan	SHRIEK	yaab'ak	yaab'ak	j aː ɓ a kʰ		
+8174	Otomi	Otomanguean	SHRIEK	mafi	mafi	m a f i		
+8175	Otomi	Otomanguean	SHRIEK	nts'ihni	nts'ihni	n tsʼ i h n i		
+9513	ImbaburaQuechua	Quechuan	SHRIEK	kaparina	kaparina	k a p a ɾ i n a		
+476	Spanish	Indo-European	SICK	enfermo	enfermo	e m f ɛ ɾ m o		
+477	Spanish	Indo-European	SICK	enfermedad	enfermedad	e m f ɛ ɾ m e ð a ð		
+2172	Yaqui	Uto-Aztecan	SICK	ko’okoe	ko’okoe	k o ʔ o k o e		
+3592	ZinacantanTzotzil	Mayan	SICK	7ip	7ip	ʔ i p		
+4926	Qeqchi	Mayan	SICK	yaj	yaj	j a x		
+6775	Otomi	Otomanguean	SICK	da̲thi	da̲thi	d ɔ θ i		
+8811	ImbaburaQuechua	Quechuan	SICK	unkushka	unkushka	u ŋ g u ʃ k a		
+9994	Wichi	Matacoan	SICK	lawit’oy ihi	lawit’oy_ihi	l a w i t ʔ o j + i h i		
+11267	Mapudungun	Araucanian	SICK	kutran	kutran	k u ʈʂ a n		
+772	Spanish	Indo-European	SICKLE OR SCYTHE	hoz	hoz	o s		
+773	Spanish	Indo-European	SICKLE OR SCYTHE	guadaɲa	guadaɲa	g w a ð a ɲ a		
+2424	Yaqui	Uto-Aztecan	SICKLE OR SCYTHE	oosam	oosam	oː s a m	Spanish	hoz
+3811	ZinacantanTzotzil	Mayan	SICKLE OR SCYTHE	hos (2)	hos	h o s	Spanish	hoz
+5221	Qeqchi	Mayan	SICKLE OR SCYTHE	k'onk'ookil ch'iich'	k'onk'ookil_ch'iich'	k ʔ o n kʼ oː k i l + tʃʼ iː tʃʼ		
+7130	Otomi	Otomanguean	SICKLE OR SCYTHE	t'e̲xu̲	t'e̲xu̲	t̪ʼ æ x u		
+9005	ImbaburaQuechua	Quechuan	SICKLE OR SCYTHE	usis	usis	u s i s	Spanish	hoz
+10197	Wichi	Matacoan	SICKLE OR SCYTHE	matsetaj	matsetaj	m a ts e t a x	Spanish	machete
+11478	Mapudungun	Araucanian	SICKLE OR SCYTHE	wazaña	wazaña	w a z a ɲ a	Spanish	guadaña
+11479	Mapudungun	Araucanian	SICKLE OR SCYTHE	ichona	ichona	i tʃ o n a	Quechua	ichuna
+906	Spanish	Indo-European	SILVER	plata	plata	p l a t a		
+2520	Yaqui	Uto-Aztecan	SILVER	laata ~ plaata	laata	l aː t a	Spanish	plata
+5357	Qeqchi	Mayan	SILVER	plaat	plaat	p l aː tʰ	Spanish	plata
+5358	Qeqchi	Mayan	SILVER	saqi ch’iich’	saqi_ch’iich’	s a q i + tʃʼ iː tʃʼ		
+7329	Otomi	Otomanguean	SILVER	t'axi (2)	t'axi	t̪ʼ a x i		
+9086	ImbaburaQuechua	Quechuan	SILVER	kulqui	kulqui	k u l q u i		
+10278	Wichi	Matacoan	SILVER	plata	plata	p l a t a	Spanish	plata
+11559	Mapudungun	Araucanian	SILVER	liqen	liqen	l i ɣ e n		
+11560	Mapudungun	Araucanian	SILVER	pulata	pulata	p u l a t a	Spanish	plata
+1381	Spanish	Indo-European	SMOOTH	suave	suave	s w a β e		
+1382	Spanish	Indo-European	SMOOTH	liso	liso	l i s o		
+2919	Yaqui	Uto-Aztecan	SMOOTH	chitabetalai	chitabetalai	tʃ i t a b e t a l a i		
+4236	ZinacantanTzotzil	Mayan	SMOOTH	ch’ulul	ch’ulul	tʃʼ u l u l		
+4237	ZinacantanTzotzil	Mayan	SMOOTH	lich’ich’	lich’ich’	l i tʃʼ i tʃʼ		
+5888	Qeqchi	Mayan	SMOOTH	q'un	q'un	qʼ u n		
+5889	Qeqchi	Mayan	SMOOTH	ji'ji'	ji'ji'	x i ʔ x i ʔ		
+5890	Qeqchi	Mayan	SMOOTH	yolyol	yolyol	j o l j o l		
+5891	Qeqchi	Mayan	SMOOTH	tiik	tiik	t iː kʰ		
+7946	Otomi	Otomanguean	SMOOTH	xi nts'u̲ki	xi_nts'u̲ki	x i + n tsʼ u k i		
+9400	ImbaburaQuechua	Quechuan	SMOOTH	amuklla	amuklla	a m u k ʒ a	Unidentified	amuklla
+10614	Wichi	Matacoan	SMOOTH	talich’i	talich’i	t a l i tʃ ʔ i		
+11884	Mapudungun	Araucanian	SMOOTH	pañush	pañush	p a ɲ u ʃ	Spanish	paño
+80	Spanish	Indo-European	SNOW	nieve	nieve	n j e β e		
+1829	Yaqui	Uto-Aztecan	SNOW	sapam	sapam	s a p a m		
+4533	Qeqchi	Mayan	SNOW	xchu’i keh	xchu’i_keh	ʃ tʃ u ʔ i + k e h		
+6316	Otomi	Otomanguean	SNOW	xija	xija	x i x a		
+8531	ImbaburaQuechua	Quechuan	SNOW	rasu	rasu	ʐ a s u		
+10928	Mapudungun	Araucanian	SNOW	pire	pire	p i ɻ e		
+124	Spanish	Indo-European	SON	hijo	hijo	i x o		
+1867	Yaqui	Uto-Aztecan	SON	uusi	uusi	uː s i		
+1868	Yaqui	Uto-Aztecan	SON	pale ~ paale	pale	p a l e	Spanish	padre
+3302	ZinacantanTzotzil	Mayan	SON	kerem	kerem	k e ɾ e m		
+4579	Qeqchi	Mayan	SON	al	al	a l		
+4580	Qeqchi	Mayan	SON	alal	alal	a l a l	Ch’olan	*alal
+6363	Otomi	Otomanguean	SON	bätsi	bätsi	b ɐ ts i		
+6364	Otomi	Otomanguean	SON	ts'u̲nt'u̲	ts'u̲nt'u̲	ts ʔ u n t̪ʼ u		
+6365	Otomi	Otomanguean	SON	metsi	metsi	m e ts i		
+8565	ImbaburaQuechua	Quechuan	SON	churi	churi	tʃ u ɾ i		
+9721	Wichi	Matacoan	SON	tolhos	tolhos	t o lˠ o s		
+10972	Mapudungun	Araucanian	SON	fotüm	fotüm	f o t ɨ m		
+10973	Mapudungun	Araucanian	SON	wentru püñeñ	wentru_püñeñ	w e n ʈʂ u + p ɨ ɲ e ɲ		
+1297	Spanish	Indo-European	SOON	pronto	pronto	p ɾ o n t o		
+2843	Yaqui	Uto-Aztecan	SOON	lautia	lautia	l a u t i a		
+2844	Yaqui	Uto-Aztecan	SOON	leptia	leptia	l e p t i a		
+2845	Yaqui	Uto-Aztecan	SOON	sepia ~ sep	sepia	s e p i a		
+4169	ZinacantanTzotzil	Mayan	SOON	nopol	nopol	n o p o l		
+5799	Qeqchi	Mayan	SOON	tikto	tikto	t i k t o		
+7827	Otomi	Otomanguean	SOON	'nihi	'nihi	ˀn i h i		
+9334	ImbaburaQuechua	Quechuan	SOON	ñapash	ñapash	ɲ a p a ʃ		
+11825	Mapudungun	Araucanian	SOON	mütamüten	mütamüten	m ɨ t a m ɨ t e n		
+554	Spanish	Indo-European	SPOON	cuchara	cuchara	k u tʃ a ɾ a		
+2237	Yaqui	Uto-Aztecan	SPOON	kucha’ara ~ kucha’a	kucha’ara	k u tʃ a ʔ a r a	Spanish	cuchara
+3656	ZinacantanTzotzil	Mayan	SPOON	kuchara	kuchara	k u tʃʰ a ɾ a	Spanish	cuchara
+5010	Qeqchi	Mayan	SPOON	lekleb'	lekleb'	l e k l e ɓ		
+6875	Otomi	Otomanguean	SPOON	nt'a̲ts'i	nt'a̲ts'i	n t̪ʼ ɔ tsʼ i		
+8862	ImbaburaQuechua	Quechuan	SPOON	kuchara	kuchara	k u tʃ a ɾ a	Spanish	cuchara
+10049	Wichi	Matacoan	SPOON	lanek	lanek	l a n e k	Pilagá	qonek
+10050	Wichi	Matacoan	SPOON	kutsala	kutsala	k u ts a l a	Spanish	cuchara
+11324	Mapudungun	Araucanian	SPOON	wütru	wütru	w ɨ ʈʂ u		
+11325	Mapudungun	Araucanian	SPOON	kuchara	kuchara	k u tʃ a ɻ a	Spanish	cuchara
+1134	Spanish	Indo-European	STAND	poner de pie	poner_de_pie	p o n ɛ ɾ + ð e + p j e		
+2697	Yaqui	Uto-Aztecan	STAND	kikte (1)	kikte	k i k t e		
+2698	Yaqui	Uto-Aztecan	STAND	japte (1)	japte	j a p t e		
+4046	ZinacantanTzotzil	Mayan	STAND	noch'	noch'	n o tʃʰ ʔ		
+5587	Qeqchi	Mayan	STAND	xaqliik	xaqliik	ʃ a q l iː kʰ		
+7617	Otomi	Otomanguean	STAND	'ba̲i	'ba̲i	ˀb ɔ i		
+9222	ImbaburaQuechua	Quechuan	STAND	shayarina	shayarina	ʃ a j a ɾ i n a		
+10434	Wichi	Matacoan	STAND	takasit	takasit	t a k a s i t		
+11704	Mapudungun	Araucanian	STAND	witrapüran	witrapüran	w i ʈʂ a p ɨ ɻ a n		
+1080	Spanish	Indo-European	STINGY	avaro	avaro	a β a ɾ o		
+1081	Spanish	Indo-European	STINGY	mezquino	mezquino	m ɛ s k i n o		
+2659	Yaqui	Uto-Aztecan	STINGY	emo jiokoera	emo_jiokoera	e m o + j i o k o e r a		
+4012	ZinacantanTzotzil	Mayan	STINGY	t’ut’	t’ut’	tʼ u tʼ		
+5539	Qeqchi	Mayan	STINGY	pix	pix	p i ʃ		
+7555	Otomi	Otomanguean	STINGY	zuda	zuda	z u d a		
+7556	Otomi	Otomanguean	STINGY	'bifi	'bifi	ˀb i f i		
+9189	ImbaburaQuechua	Quechuan	STINGY	mitsaj	mitsaj	m i ts a x		
+10396	Wichi	Matacoan	STINGY	atsufwnaj	atsufwnaj	a ts u fʷ n a x		
+11669	Mapudungun	Araucanian	STINGY	rükü	rükü	ɻ ɨ k ɨ		
+1518	Spanish	Indo-European	SUSPECT	sospechar	sospechar	s o s p e tʃ a ɾ		
+3012	Yaqui	Uto-Aztecan	SUSPECT	junentule	junentule	j u n e n t u l e		
+6017	Qeqchi	Mayan	SUSPECT	xk’a’uxlankil	xk’a’uxlankil	ʃ kʼ a ʔ u ʃ l a n k i l		
+8113	Otomi	Otomanguean	SUSPECT	beni	beni	b e n i		
+8114	Otomi	Otomanguean	SUSPECT	ntso̲'mi	ntso̲'mi	n ts ə ˀm i		
+8115	Otomi	Otomanguean	SUSPECT	nsu	nsu	ⁿs u		
+10704	Wichi	Matacoan	SUSPECT	titsefwana	titsefwana	t i ts e fʷ a n a		
+723	Spanish	Indo-European	TABLE	mesa	mesa	m e s a		
+2390	Yaqui	Uto-Aztecan	TABLE	meesa	meesa	m eː s a	Spanish	mesa
+3779	ZinacantanTzotzil	Mayan	TABLE	mesha	mesha	m e ʃ a	Spanish	mesa
+5177	Qeqchi	Mayan	TABLE	meex	meex	m eː ʃ	Spanish	mesa
+7072	Otomi	Otomanguean	TABLE	mexa	mexa	m e x a	Spanish	mesa
+8974	ImbaburaQuechua	Quechuan	TABLE	miza	miza	m i z a	Spanish	mesa
+10170	Wichi	Matacoan	TABLE	mesa	mesa	m e s a	Spanish	mesa
+11440	Mapudungun	Araucanian	TABLE	mesa	mesa	m e s a	Spanish	mesa
+11441	Mapudungun	Araucanian	TABLE	rentrülwe	rentrülwe	ɻ e n ʈʂ ɨ l w e		
+1498	Spanish	Indo-European	TEACH	enseɲar	enseɲar	e n s e ɲ a ɾ		
+2996	Yaqui	Uto-Aztecan	TEACH	majta	majta	m a j t a		
+4308	ZinacantanTzotzil	Mayan	TEACH	chanubtas	chanubtas	tʃʰ a n u ɓ t a s		
+4309	ZinacantanTzotzil	Mayan	TEACH	p’ihubtas	p’ihubtas	pʼ i h u ɓ t a s		
+6000	Qeqchi	Mayan	TEACH	tzolok	tzolok	t z o l o kʰ		
+8080	Otomi	Otomanguean	TEACH	xahni	xahni	x a h n i		
+8081	Otomi	Otomanguean	TEACH	xa̲nbi	xa̲nbi	x ɔ n b i		
+8082	Otomi	Otomanguean	TEACH	udi	udi	u d i		
+8083	Otomi	Otomanguean	TEACH	uti	uti	u t̪ i		
+8084	Otomi	Otomanguean	TEACH	nete	nete	n e t̪ e		
+9472	ImbaburaQuechua	Quechuan	TEACH	yachachina	yachachina	j a tʃ a tʃ i n a		
+10689	Wichi	Matacoan	TEACH	ichefwen	ichefwen	i tʃ e fʷ e n		
+11959	Mapudungun	Araucanian	TEACH	kimelün	kimelün	k i m e l ɨ n		
+1500	Spanish	Indo-European	TEACHER	profesor	profesor	p ɾ o f e s o ɾ		
+1501	Spanish	Indo-European	TEACHER	maestro	maestro	m a ɛ s t ɾ o		
+2998	Yaqui	Uto-Aztecan	TEACHER	maejto	maejto	m a e j t o	Spanish	maestro
+2999	Yaqui	Uto-Aztecan	TEACHER	propesor	propesor	p r o p e s o r	Spanish	profesor
+4311	ZinacantanTzotzil	Mayan	TEACHER	hchanubtavaneh	hchanubtavaneh	h tʃʰ a n u ɓ t a v a n e h		
+4312	ZinacantanTzotzil	Mayan	TEACHER	mayshtro	mayshtro	m a j ʃ t ɾ o	Spanish	maestro
+6003	Qeqchi	Mayan	TEACHER	tzolonel	tzolonel	t z o l o n e l		
+6004	Qeqchi	Mayan	TEACHER	q'usunel	q'usunel	qʼ u s u n e l		
+8087	Otomi	Otomanguean	TEACHER	xa̲mbate	xa̲mbate	x ɔ m b a t̪ e		
+8088	Otomi	Otomanguean	TEACHER	xa̲hnate	xa̲hnate	x ɔ h n a t̪ e		
+8089	Otomi	Otomanguean	TEACHER	mästro	mästro	m ɐ s t̪ r o	Spanish	maestro
+8090	Otomi	Otomanguean	TEACHER	'ñutate	'ñutate	ˀɲ u t̪ a t̪ e		
+9474	ImbaburaQuechua	Quechuan	TEACHER	yachachik	yachachik	j a tʃ a tʃ i k		
+10691	Wichi	Matacoan	TEACHER	mayistalu	mayistalu	m a j i s t a l u	Spanish	maestro
+11962	Mapudungun	Araucanian	TEACHER	kimeltuchefe	kimeltuchefe	k i m e l t u tʃ e f e		
+1476	Spanish	Indo-European	THINK (REFLECT)	pensar	pensar	p e n s a ɾ		
+2982	Yaqui	Uto-Aztecan	THINK (REFLECT)	ea	ea	e a		
+4290	ZinacantanTzotzil	Mayan	THINK (REFLECT)	7a7i	7a7i	ʔ a ʔ i		
+4291	ZinacantanTzotzil	Mayan	THINK (REFLECT)	na7	na7	n a ʔ		
+4292	ZinacantanTzotzil	Mayan	THINK (REFLECT)	nop	nop	n o p		
+5982	Qeqchi	Mayan	THINK (REFLECT)	k'a'uxlak	k'a'uxlak	k ʔ a ʔ u ʃ l a kʰ		
+8052	Otomi	Otomanguean	THINK (REFLECT)	mbeni	mbeni	m b e n i		
+8053	Otomi	Otomanguean	THINK (REFLECT)	'yomfeni	'yomfeni	ˀj o m f e n i		
+9458	ImbaburaQuechua	Quechuan	THINK (REFLECT)	yuyana	yuyana	j u j a n a		
+10675	Wichi	Matacoan	THINK (REFLECT)	tichunlhi	tichunlhi	t i tʃ u n lˠ i		
+11942	Mapudungun	Araucanian	THINK (REFLECT)	rakizuamün	rakizuamün	ɻ a k i z u a m ɨ n		
+388	Spanish	Indo-European	THUMB	pulgar	pulgar	p u l ɣ a ɾ		
+2099	Yaqui	Uto-Aztecan	THUMB	mampusiam	mampusiam	m a m p u s i a m		
+3515	ZinacantanTzotzil	Mayan	THUMB	me7 k’obol	me7_k’obol	m e ʔ + kʼ o ɓ o l		
+4834	Qeqchi	Mayan	THUMB	na' uq'm	na'_uq'm	n a ʔ + u qʼ m		
+6689	Otomi	Otomanguean	THUMB	noku̲nsa'ñe̲	noku̲nsa'ñe̲	n o k u n s a ˀɲ æ		
+9931	Wichi	Matacoan	THUMB	tofwefw lhukwe	tofwefw_lhukwe	t o fʷ e fʷ + lˠ u kʷ e		
+11203	Mapudungun	Araucanian	THUMB	fütra changüll kuwü	fütra_changüll_kuwü	f ɨ ʈʂ a + tʃ a ŋ ɨ ʎ + k u w ɨ		
+808	Spanish	Indo-European	TOBACCO	tabaco	tabaco	t a β a k o		
+2445	Yaqui	Uto-Aztecan	TOBACCO	biiba	biiba	b iː b a		
+3828	ZinacantanTzotzil	Mayan	TOBACCO	moy	moy	m o j		
+5247	Qeqchi	Mayan	TOBACCO	may	may	m a j		
+7167	Otomi	Otomanguean	TOBACCO	tabako	tabako	t̪ a b a k o	Spanish	tabaco
+9025	ImbaburaQuechua	Quechuan	TOBACCO	tabaku	tabaku	t a b a k u	Spanish	tabaco
+10217	Wichi	Matacoan	TOBACCO	yukwas	yukwas	y u kʷ a s		
+11501	Mapudungun	Araucanian	TOBACCO	pütrem	pütrem	p ɨ ʈʂ e m	Guaraní	puthem
+1675	Spanish	Indo-European	TOWER	torre	torre	t o r e		
+6148	Qeqchi	Mayan	TOWER	tore	tore	t o ɾ e	Spanish	torre
+8348	Otomi	Otomanguean	TOWER	ñänijä	ñänijä	ɲ ɐ n i x ɐ		
+8349	Otomi	Otomanguean	TOWER	nts'änijä	nts'änijä	n tsʼ ɐ n i x ɐ		
+8350	Otomi	Otomanguean	TOWER	manijä	manijä	m a n i x ɐ		
+8351	Otomi	Otomanguean	TOWER	denijä	denijä	d e n i x ɐ		
+8352	Otomi	Otomanguean	TOWER	ndehe ar nijä	ndehe_ar_nijä	n d e h e + a r + n i x ɐ		
+9584	ImbaburaQuechua	Quechuan	TOWER	durri	durri	d u ʐ i	Spanish	torre
+1322	Spanish	Indo-European	TUESDAY	martes	martes	m a ɾ t e s		
+2869	Yaqui	Uto-Aztecan	TUESDAY	maates	maates	m aː t e s	Spanish	martes
+4189	ZinacantanTzotzil	Mayan	TUESDAY	martesh	martesh	m a ɾ t e sʰ	Spanish	martes
+5821	Qeqchi	Mayan	TUESDAY	marts	marts	m a ɾ ts	Spanish	martes
+7855	Otomi	Otomanguean	TUESDAY	yopa	yopa	j o p a		
+9353	ImbaburaQuechua	Quechuan	TUESDAY	martis	martis	m a ɾ t i s	Spanish	martes
+10567	Wichi	Matacoan	TUESDAY	maltis	maltis	m a l t i s	Spanish	martes
+941	Spanish	Indo-European	TURN AROUND	dar vuelta	dar_vuelta	d a ɾ + β w ɛ l t a		
+942	Spanish	Indo-European	TURN AROUND	voltear	voltear	b o l t e a ɾ		
+2543	Yaqui	Uto-Aztecan	TURN AROUND	kuakta	kuakta	k u a k t a		
+3915	ZinacantanTzotzil	Mayan	TURN AROUND	7ak’ bwelta	7ak’_bwelta	ʔ a kʼ + ɓʷ e l t a	Spanish	vuelta
+3916	ZinacantanTzotzil	Mayan	TURN AROUND	hoyihes	hoyihes	h o j i h e s		
+5383	Qeqchi	Mayan	TURN AROUND	b’alq’usink	b’alq’usink	ɓ a l qʼ u s i n kʰ		
+5384	Qeqchi	Mayan	TURN AROUND	q’otonk	q’otonk	q ʔ o t o n kʰ		
+7361	Otomi	Otomanguean	TURN AROUND	‘ba̲t'i	‘ba̲t'i	ˀb ɔ t̪ʼ i		
+7362	Otomi	Otomanguean	TURN AROUND	'ba̲hni	'ba̲hni	ˀb ɔ h n i		
+7363	Otomi	Otomanguean	TURN AROUND	mpu̲nts'i	mpu̲nts'i	m p u n tsʼ i		
+7364	Otomi	Otomanguean	TURN AROUND	uni 'nar (n)xint'i	uni_'nar_(n)xint'i	u n i + ˀn a r + n x i n t̪ʼ i		
+7365	Otomi	Otomanguean	TURN AROUND	(n)xint'i	(n)xint'i	n x i n t̪ʼ i		
+9103	ImbaburaQuechua	Quechuan	TURN AROUND	tigrarina (1)	tigrarina	t i g ɾ a ɾ i n a		
+10295	Wichi	Matacoan	TURN AROUND	ilen	ilen	i l e n		
+11576	Mapudungun	Araucanian	TURN AROUND	chüwüzün	chüwüzün	tʃ ɨ w ɨ z ɨ n		
+949	Spanish	Indo-European	TWIST (AROUND)	torcer	torcer	t o ɾ s ɛ ɾ		
+2547	Yaqui	Uto-Aztecan	TWIST (AROUND)	totta	totta	t o t t a		
+3920	ZinacantanTzotzil	Mayan	TWIST (AROUND)	tz’ot	tz’ot	tsʼ o tʰ		
+5393	Qeqchi	Mayan	TWIST (AROUND)	k'onok	k'onok	k ʔ o n o kʰ	Ch’olan	*k’ong
+5394	Qeqchi	Mayan	TWIST (AROUND)	yokosink	yokosink	j o k o s i n kʰ		
+5395	Qeqchi	Mayan	TWIST (AROUND)	siq'ok	siq'ok	s i qʼ o kʰ		
+7374	Otomi	Otomanguean	TWIST (AROUND)	‘bat'i	‘bat'i	ˀb a t̪ʼ i		
+7375	Otomi	Otomanguean	TWIST (AROUND)	käxi	käxi	k ɐ x i		
+9107	ImbaburaQuechua	Quechuan	TWIST (AROUND)	kibina	kibina	k i b i n a		
+10299	Wichi	Matacoan	TWIST (AROUND)	hits’elhkatche	hits’elhkatche	h i ts ʔ e lˠ k a t tʃ e		
+11580	Mapudungun	Araucanian	TWIST (AROUND)	piwünün	piwünün	p i w ɨ n ɨ n		
+407	Spanish	Indo-European	UDDER	ubre	ubre	u β ɾ e		
+2116	Yaqui	Uto-Aztecan	UDDER	pipim	pipim	p i p i m		
+3536	ZinacantanTzotzil	Mayan	UDDER	chu7il	chu7il	tʃʰ u ʔ i l		
+4855	Qeqchi	Mayan	UDDER	xtu’ wakax	xtu’_wakax	ʃ t u ʔ + w a k a ʃ		
+6710	Otomi	Otomanguean	UDDER	mo'ba	mo'ba	m o ˀb a		
+6711	Otomi	Otomanguean	UDDER	txitxi	txitxi	t̪ x i t̪ x i	Spanish	teta
+8767	ImbaburaQuechua	Quechuan	UDDER	chuchu (2)	chuchu	tʃ u tʃ u		
+9948	Wichi	Matacoan	UDDER	tshowet t’atey	tshowet_t’atey	tsʰ o w e t + t ʔ a t e j		
+11220	Mapudungun	Araucanian	UDDER	ngülla	ngülla	ŋ ɨ ʎ a		
+1480	Spanish	Indo-European	UNDERSTAND	entender	entender	e n t e n d ɛ ɾ		
+1481	Spanish	Indo-European	UNDERSTAND	comprender	comprender	k o m p ɾ e n d ɛ ɾ		
+2985	Yaqui	Uto-Aztecan	UNDERSTAND	mammatte	mammatte	m a m m a t t e		
+4295	ZinacantanTzotzil	Mayan	UNDERSTAND	7a7i	7a7i	ʔ a ʔ i		
+5985	Qeqchi	Mayan	UNDERSTAND	tawok xyaalal	tawok_xyaalal	t a w o k + ʃ j aː l a l		
+8058	Otomi	Otomanguean	UNDERSTAND	o̲de	o̲de	ə d e		
+8059	Otomi	Otomanguean	UNDERSTAND	o̲te	o̲te	ə t̪ e		
+9461	ImbaburaQuechua	Quechuan	UNDERSTAND	intindina	intindina	i n d i n d i n a	Spanish	entender
+10678	Wichi	Matacoan	UNDERSTAND	yihanej	yihanej	y i h a n e x		
+11945	Mapudungun	Araucanian	UNDERSTAND	allkün	allkün	a ʎ k ɨ n		
+418	Spanish	Indo-European	WAIST	cintura	cintura	s i n t u ɾ a		
+2127	Yaqui	Uto-Aztecan	WAIST	wikosa	wikosa	w i k o s a		
+3545	ZinacantanTzotzil	Mayan	WAIST	ch’util	ch’util	tʃʼ u t i l		
+3546	ZinacantanTzotzil	Mayan	WAIST	chukbenal	chukbenal	tʃʰ u k ɓ e n a l		
+4864	Qeqchi	Mayan	WAIST	sa' yi	sa'_yi	s a ʔ + j i		
+4865	Qeqchi	Mayan	WAIST	yiib'ej	yiib'ej	j iː ɓ e x		
+4866	Qeqchi	Mayan	WAIST	yiitoq	yiitoq	j iː t o qʰ		
+6720	Otomi	Otomanguean	WAIST	ngu̲t'i	ngu̲t'i	n g u t̪ʼ i		
+8775	ImbaburaQuechua	Quechuan	WAIST	sintura	sintura	s i n d u ɾ a	Spanish	cintura
+9957	Wichi	Matacoan	WAIST	toselak	toselak	t o s e l a k		
+11229	Mapudungun	Araucanian	WAIST	trariwtuwe	trariwtuwe	ʈʂ a ɻ i w t u w e		
+189	Spanish	Indo-European	WE (EXCLUSIVE)	nosotros	nosotros	n o s o t ɾ o s		
+190	Spanish	Indo-European	WE (EXCLUSIVE)	nosotras	nosotras	n o s o t ɾ a s		
+1935	Yaqui	Uto-Aztecan	WE (EXCLUSIVE)	itepo	itepo	i t e p o		
+3348	ZinacantanTzotzil	Mayan	WE (EXCLUSIVE)	vo7otikotik	vo7otikotik	v o ʔ o t i k o t i k		
+4641	Qeqchi	Mayan	WE (EXCLUSIVE)	ka’ajwi’ laa’o	ka’ajwi’_laa’o	k a ʔ a xʷ i ʔ + l aː ʔ o		
+6453	Otomi	Otomanguean	WE (EXCLUSIVE)	nuga'be	nuga'be	n u g a ˀb e		
+6454	Otomi	Otomanguean	WE (EXCLUSIVE)	nuga̲'be	nuga̲'be	n u g ɔ ˀb e		
+6455	Otomi	Otomanguean	WE (EXCLUSIVE)	gek'be	gek'be	g e kʼ b e		
+6456	Otomi	Otomanguean	WE (EXCLUSIVE)	geku̲'be	geku̲'be	g e k u ˀb e		
+6457	Otomi	Otomanguean	WE (EXCLUSIVE)	geka̲'be	geka̲'be	g e k ɔ ˀb e		
+6458	Otomi	Otomanguean	WE (EXCLUSIVE)	nughe	nughe	n u gʰ e		
+6459	Otomi	Otomanguean	WE (EXCLUSIVE)	nugu̲he	nugu̲he	n u g u h e		
+6460	Otomi	Otomanguean	WE (EXCLUSIVE)	nuga̲he	nuga̲he	n u g ɔ h e		
+6461	Otomi	Otomanguean	WE (EXCLUSIVE)	geje	geje	g e x e		
+6462	Otomi	Otomanguean	WE (EXCLUSIVE)	geka̲he	geka̲he	g e k ɔ h e		
+9764	Wichi	Matacoan	WE (EXCLUSIVE)	tolhamilh	tolhamilh	t o lˠ a m i l̥		
+187	Spanish	Indo-European	WE (INCLUSIVE)	nosotros	nosotros	n o s o t ɾ o s		
+188	Spanish	Indo-European	WE (INCLUSIVE)	nosotras	nosotras	n o s o t ɾ a s		
+1934	Yaqui	Uto-Aztecan	WE (INCLUSIVE)	itepo	itepo	i t e p o		
+3347	ZinacantanTzotzil	Mayan	WE (INCLUSIVE)	vo7otik	vo7otik	v o ʔ o t i k		
+4639	Qeqchi	Mayan	WE (INCLUSIVE)	laa’o, aa’o, ha’o	laa’o	l aː ʔ o		
+4640	Qeqchi	Mayan	WE (INCLUSIVE)	haa’o	haa’o	h aː ʔ o		
+6445	Otomi	Otomanguean	WE (INCLUSIVE)	nugawi	nugawi	n u g a w i		
+6446	Otomi	Otomanguean	WE (INCLUSIVE)	nugwi	nugwi	n u gʷ i		
+6447	Otomi	Otomanguean	WE (INCLUSIVE)	gekwi	gekwi	g e kʷ i		
+6448	Otomi	Otomanguean	WE (INCLUSIVE)	geku̲wi	geku̲wi	g e k u w i		
+6449	Otomi	Otomanguean	WE (INCLUSIVE)	geka̲wi	geka̲wi	g e k ɔ w i		
+6450	Otomi	Otomanguean	WE (INCLUSIVE)	nughu̲	nughu̲	n u gʰ u		
+6451	Otomi	Otomanguean	WE (INCLUSIVE)	nugu̲hu̲	nugu̲hu̲	n u g u h u		
+6452	Otomi	Otomanguean	WE (INCLUSIVE)	nuga̲hu̲	nuga̲hu̲	n u g ɔ h u		
+9762	Wichi	Matacoan	WE (INCLUSIVE)	namilh	namilh	n a m i l̥		
+9763	Wichi	Matacoan	WE (INCLUSIVE)	n’lhamilh	n’lhamilh	n ʔ lˠ a m i l̥		
+1541	Spanish	Indo-European	WHICH	cuál	cuál	k w a l		
+3034	Yaqui	Uto-Aztecan	WHICH	jita	jita	j i t a		
+4340	ZinacantanTzotzil	Mayan	WHICH	bu hunukal	bu_hunukal	ɓ u + h u n u k a l		
+6038	Qeqchi	Mayan	WHICH	k’a’ ru	k’a’_ru	kʼ a ʔ + ɾ u		
+6039	Qeqchi	Mayan	WHICH	b’ar wank	b’ar_wank	ɓ a ɾ + w a n kʰ		
+8157	Otomi	Otomanguean	WHICH	tange?	tange?	t̪ a n g e		
+8158	Otomi	Otomanguean	WHICH	tange'ä?	tange'ä?	t̪ a n g e ʔ ɐ		
+9504	ImbaburaQuechua	Quechuan	WHICH	mayjan	mayjan	m a j x a ŋ		
+10723	Wichi	Matacoan	WHICH	at’e	at’e	a t ʔ e		
+11992	Mapudungun	Araucanian	WHICH	¿tuchi?	¿tuchi?	t u tʃ i		
+11993	Mapudungun	Araucanian	WHICH	¿chuchi?	¿chuchi?	tʃ u tʃ i		
+1186	Spanish	Indo-European	WIDE	ancho	ancho	a n tʃ o		
+1187	Spanish	Indo-European	WIDE	amplio	amplio	a m p l j o		
+2741	Yaqui	Uto-Aztecan	WIDE	bweeka	bweeka	bʷ eː k a		
+4088	ZinacantanTzotzil	Mayan	WIDE	hamal	hamal	h a m a l		
+4089	ZinacantanTzotzil	Mayan	WIDE	shemel	shemel	ʃ e m e l		
+5655	Qeqchi	Mayan	WIDE	nim ru	nim_ru	n i m + ɾ u		
+7682	Otomi	Otomanguean	WIDE	xi nxidi	xi_nxidi	x i + n x i d i		
+7683	Otomi	Otomanguean	WIDE	xi maxt'i	xi_maxt'i	x i + m a x t̪ʼ i		
+7684	Otomi	Otomanguean	WIDE	xi xogi	xi_xogi	x i + x o g i		
+9259	ImbaburaQuechua	Quechuan	WIDE	anchu	anchu	a n dʒ u	Spanish	ancho
+10474	Wichi	Matacoan	WIDE	chitsajhu	chitsajhu	tʃ i ts a xʰ u		
+10475	Wichi	Matacoan	WIDE	chitsajpho	chitsajpho	tʃ i ts a x pʰ o		
+11743	Mapudungun	Araucanian	WIDE	fütrarupa	fütrarupa	f ɨ ʈʂ a ɻ u p a		
+710	Spanish	Indo-European	WINDOW	ventana	ventana	b e n t a n a		
+2379	Yaqui	Uto-Aztecan	WINDOW	bentaana	bentaana	b e n t aː n a	Spanish	ventana
+3769	ZinacantanTzotzil	Mayan	WINDOW	ventana	ventana	v e n t a n a	Spanish	ventana
+5161	Qeqchi	Mayan	WINDOW	b’entaan	b’entaan	ɓ e n t aː n	Spanish	ventana
+5162	Qeqchi	Mayan	WINDOW	rokeb’ iq’	rokeb’_iq’	r o k e ɓ + i qʼ		
+7056	Otomi	Otomanguean	WINDOW	hats’i	hats’i	h a tsʼ i		
+7057	Otomi	Otomanguean	WINDOW	bentanä	bentanä	b e n t̪ a n ɐ	Spanish	ventana
+8966	ImbaburaQuechua	Quechuan	WINDOW	bintana	bintana	b i n d a n a	Spanish	ventana
+10161	Wichi	Matacoan	WINDOW	wentana	wentana	w e n t a n a	Spanish	ventana
+11431	Mapudungun	Araucanian	WINDOW	fentana	fentana	f e n t a n a	Spanish	ventana
+608	Spanish	Indo-European	WINE	vino	vino	b i n o		
+2289	Yaqui	Uto-Aztecan	WINE	biino	biino	b iː n o	Spanish	vino
+3707	ZinacantanTzotzil	Mayan	WINE	bino	bino	ɓ i n o	Spanish	vino
+5072	Qeqchi	Mayan	WINE	b’iin	b’iin	ɓ iː n	Spanish	vino
+6937	Otomi	Otomanguean	WINE	binu	binu	b i n u	Spanish	vino
+8905	ImbaburaQuechua	Quechuan	WINE	binu	binu	b i n u	Spanish	vino
+10089	Wichi	Matacoan	WINE	hat’es	hat’es	h a t ʔ e s		
+11366	Mapudungun	Araucanian	WINE	pulku	pulku	p u l k u	Nahuatl	pulque
+11367	Mapudungun	Araucanian	WINE	lamkja	lamkja	l a m k j a	Gününa Yajüch	lam
+422	Spanish	Indo-European	WOMB	matriz	matriz	m a t ɾ i s		
+423	Spanish	Indo-European	WOMB	vientre	vientre	b j e n t ɾ e		
+2130	Yaqui	Uto-Aztecan	WOMB	asoakari	asoakari	a s o a k a r i		
+2131	Yaqui	Uto-Aztecan	WOMB	souka	souka	s o u k a		
+2132	Yaqui	Uto-Aztecan	WOMB	toma	toma	t o m a		
+3551	ZinacantanTzotzil	Mayan	WOMB	7av 7ol	7av_7ol	ʔ a v + ʔ o l		
+3552	ZinacantanTzotzil	Mayan	WOMB	7av 7unen	7av_7unen	ʔ a v + ʔ u n e n		
+4869	Qeqchi	Mayan	WOMB	alob'aal	alob'aal	a l o ɓ aː l		
+6726	Otomi	Otomanguean	WOMB	nt'oxu̲bätsi	nt'oxu̲bätsi	n t̪ʼ o x u b ɐ ts i		
+8778	ImbaburaQuechua	Quechuan	WOMB	madri	madri	m a d ɾ i	Spanish	matriz
+11232	Mapudungun	Araucanian	WOMB	elkoñiwe	elkoñiwe	e l k o ɲ i w e		
+617	Spanish	Indo-European	WOOL	lana	lana	l a n a		
+2299	Yaqui	Uto-Aztecan	WOOL	bwara boa	bwara_boa	bʷ a r a + b o a		
+3716	ZinacantanTzotzil	Mayan	WOOL	tzotz	tzotz	tsʰ o tsʰ	Proto-Yucatecan	*tzo7otz
+5082	Qeqchi	Mayan	WOOL	laan	laan	l aː n	Spanish	lana
+6951	Otomi	Otomanguean	WOOL	xi'yo	xi'yo	x i ˀj o		
+8913	ImbaburaQuechua	Quechuan	WOOL	milma	milma	m i l m a		
+10098	Wichi	Matacoan	WOOL	tsun’ataj wule	tsun’ataj_wule	ts u n ʔ a t a x + w u l e		
+11373	Mapudungun	Araucanian	WOOL	kaḻ	kaḻ	k a l̪		
+1743	Spanish	Indo-European	WORSHIP	adorar	adorar	a ð o ɾ a ɾ		
+1744	Spanish	Indo-European	WORSHIP	culto	culto	k u l t o		
+3184	Yaqui	Uto-Aztecan	WORSHIP	yo’ore	yo’ore	j o ʔ o r e		
+4447	ZinacantanTzotzil	Mayan	WORSHIP	nup kahvaltik	nup_kahvaltik	n u p + k a h v a l t i k		
+4448	ZinacantanTzotzil	Mayan	WORSHIP	nup riosh	nup_riosh	n u p + ɾ i o sʰ	Spanish	dios
+4449	ZinacantanTzotzil	Mayan	WORSHIP	ta ta na7el	ta_ta_na7el	t a + t a + n a ʔ e l		
+4450	ZinacantanTzotzil	Mayan	WORSHIP	tik’ riosh to 7o7on	tik’_riosh_to_7o7on	t i kʼ + ɾ i o ʃ + t o + ʔ o ʔ o n	Spanish	dios
+6217	Qeqchi	Mayan	WORSHIP	xb’aanunkil mayejak	xb’aanunkil_mayejak	ʃ ɓ aː n u n k i l + m a j e x a kʰ		
+8450	Otomi	Otomanguean	WORSHIP	ndäne Jwä	ndäne_Jwä	n d ɐ n e + x w ɐ		
+8451	Otomi	Otomanguean	WORSHIP	emu̲nsu	emu̲nsu	e m u n s u		
+8452	Otomi	Otomanguean	WORSHIP	zofo Jwä	zofo_Jwä	z o f o + x w ɐ		
+8453	Otomi	Otomanguean	WORSHIP	mat'i Jwä	mat'i_Jwä	m a t̪ʼ i + x w ɐ		
+8454	Otomi	Otomanguean	WORSHIP	xa̲tu̲-wi ar tsita	xa̲tu̲-wi_ar_tsita	x ɔ t̪ u + w i + a r + ts i t̪ a		
+9624	ImbaburaQuechua	Quechuan	WORSHIP	kultu	kultu	k u l t u	Spanish	culto
+10845	Wichi	Matacoan	WORSHIP	iwutenecha	iwutenecha	i w u t e n e tʃ a		
+825	Spanish	Indo-European	YAM	ɲame	ɲame	ɲ a m e		
+3839	ZinacantanTzotzil	Mayan	YAM	tz'itesob `at	tz'itesob_`at	tsʰ ʔ i t e s o ɓ + ʔ a tʰ		
+1531	Spanish	Indo-European	YES	sí	sí	s i		
+1532	Spanish	Indo-European	YES	afirmativo	afirmativo	a f i ɾ m a t i β o		
+3024	Yaqui	Uto-Aztecan	YES	jeewi ~ eewi	jeewi	j eː w i		
+3025	Yaqui	Uto-Aztecan	YES	na’aka	na’aka	n a ʔ a k a		
+4329	ZinacantanTzotzil	Mayan	YES	ha7	ha7	h a ʔ		
+4330	ZinacantanTzotzil	Mayan	YES	hi7	hi7	h i ʔ		
+6028	Qeqchi	Mayan	YES	heehe'	heehe'	h eː h e ʔ		
+8138	Otomi	Otomanguean	YES	hä (2)	hä	h ɐ		
+9496	ImbaburaQuechua	Quechuan	YES	ari	ari	a ɾ i		
+10714	Wichi	Matacoan	YES	ha	ha	h a		
+11982	Mapudungun	Araucanian	YES	may	may	m a y		

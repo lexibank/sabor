@@ -192,7 +192,8 @@ def register(parser):
         "--method",
         type=str,
         default="cmsca",
-        choices=['cmsca', 'cmned', 'cbsca', 'cblex', 'clsvcsca'],
+        choices=['cmsca', 'cmned', 'cbsca', 'cblex',
+                 'clsvcdist', 'clsvcdistbytar'],
         help="Code for borrowing detection method."
     )
 
@@ -219,17 +220,36 @@ def run(args):
                     lexstat=True)
     cblex.keywords['func'].__name__ = 'cognate_based_cognate_lexstat'
 
-    clsvcsca = partial(classifier_based_constructor,
-                       clf=SVC(kernel="linear"),
-                       func=lambda x: x,  # Artificial argument for name.
-                       funcs=[classifier.clf_sca],
-                       props=None,
-                       donors=args.donors)
-    clsvcsca.keywords['func'].__name__ = 'classifier_based_SVM_linear_sca'
+    clsvcdist = partial(
+        classifier_based_constructor,
+        clf=SVC(kernel="linear"),
+        func=lambda x: x,  # Artificial argument for name.
+        funcs=[classifier.clf_sca, classifier.clf_ned],
+        props=None,
+        props_tar=None,
+        by_tar=False,
+        donors=args.donors,
+        family="language_family")
+    clsvcdist.keywords['func'].__name__ = \
+        'classifier_based_SVM_linear_sca_ned'
+
+    clsvcdistbytar = partial(
+        classifier_based_constructor,
+        clf=SVC(kernel="linear"),
+        func=lambda x: x,  # Artificial argument for name.
+        funcs=[classifier.clf_sca, classifier.clf_ned],
+        props=None,
+        props_tar=None,
+        by_tar=True,
+        donors=args.donors,
+        family="language_family")
+    clsvcdistbytar.keywords['func'].__name__ = \
+        'classifier_based_SVM_linear_sca_ned_by_tar'
 
     methods = {'cmsca': cmsca, 'cmned': cmned,
                'cbsca': cbsca, 'cblex': cblex,
-               'clsvcsca': clsvcsca}
+               'clsvcdist': clsvcdist,
+               'clsvcdistbytar': clsvcdistbytar}
 
     constructor = methods[args.method]
     func_name = constructor.keywords['func'].__name__
