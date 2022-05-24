@@ -295,11 +295,11 @@ def evaluate_borrowings(wordlist, pred, gold, donors,
                 elif gold_lng in donors: tp += 1
                 else: fp += 1
 
-    precision = tp/(tp + fp)
-    recall = tp/(tp + fn)
-    f1 = tp/(tp + (fp + fn)/2)
+    precision = tp/(tp + fp) if tp + fp else 0
+    recall = tp/(tp + fn) if tp + fn else 0
+    f1 = tp/(tp + (fp + fn)/2) if tp + fp + fn else 0
     fb = (1.0 + beta**2.0) * (precision * recall) / \
-        (beta**2.0 * precision + recall)
+        (beta**2.0 * precision + recall) if (precision + recall) else 0
     accuracy = (tp + tn)/(tp + tn + fp + fn)
 
     return {'fn': fn, 'fp': fp, 'tn': tn, 'tp': tp,
