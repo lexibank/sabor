@@ -102,7 +102,12 @@ def evaluate_fold(constructor, dir, k, fold):
     detector.train(verbose=False)
 
     def get_results_for_wl(wl_):
+        ln_in = len(wl_)
         detector.predict_on_wordlist(wl_)
+        ln_out = len(wl_)
+        if ln_in != ln_out:
+            print("*** In {} and out {} wordlist lengths different".
+                  format(ln_in, ln_out))
         results = evaluate_borrowings(
             wl_,
             pred="source_language",
@@ -192,8 +197,7 @@ def register(parser):
         "--method",
         type=str,
         default="cmsca",
-        choices=['cmsca', 'cmned', 'cbsca', 'cblex',
-                 'clsvcdist', 'clsvcdistbytar'],
+        choices=['cmsca', 'cmned', 'cbsca', 'cblex', 'clsvcdist'],
         help="Code for borrowing detection method."
     )
 
@@ -233,23 +237,9 @@ def run(args):
     clsvcdist.keywords['func'].__name__ = \
         'classifier_based_SVM_linear_sca_ned'
 
-    clsvcdistbytar = partial(
-        classifier_based_constructor,
-        clf=SVC(kernel="linear"),
-        func=lambda x: x,  # Artificial argument for name.
-        funcs=[classifier.clf_sca, classifier.clf_ned],
-        props=None,
-        props_tar=None,
-        by_tar=True,
-        donors=args.donors,
-        family="language_family")
-    clsvcdistbytar.keywords['func'].__name__ = \
-        'classifier_based_SVM_linear_sca_ned_by_tar'
-
     methods = {'cmsca': cmsca, 'cmned': cmned,
                'cbsca': cbsca, 'cblex': cblex,
-               'clsvcdist': clsvcdist,
-               'clsvcdistbytar': clsvcdistbytar}
+               'clsvcdist': clsvcdist}
 
     constructor = methods[args.method]
     func_name = constructor.keywords['func'].__name__

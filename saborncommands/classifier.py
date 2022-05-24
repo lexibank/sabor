@@ -170,6 +170,7 @@ class ClassifierBasedBorrowingDetection(LexStat):
 
     def predict_on_wordlist(self, wordlist):
         B = {idx: "" for idx in wordlist}
+        B_id = {idx: "" for idx in wordlist}
         for concept in wordlist.rows:
             idxs = wordlist.get_list(row=concept, flat=True)
             donors = [idx for idx in idxs if wordlist[idx, self.family] in
@@ -177,8 +178,11 @@ class ClassifierBasedBorrowingDetection(LexStat):
             targets = [idx for idx in idxs if idx not in donors]
             hits = self.predict(donors, targets, wordlist)
             for hit, pair in hits.items():
-                B[hit] = pair[1]
+                if pair[1]:
+                    B[hit] = wordlist[pair[0], 'doculect']
+                    B_id[hit] = pair[0]
         wordlist.add_entries('source_language', B, lambda x: x)
+        wordlist.add_entries('source_id', B_id, lambda x: x)
 
 
 def run(args):
@@ -215,9 +219,7 @@ def run(args):
         #                bor.known_donor]]]
         # print(tabulate(table, tablefmt="plain"))
 
-    print("* overall *")
     analyze_borrowing(wl, wl_test)
     # Store test results.
     file_path = 'store/test-new-predict-CV10-fold-00-test'
     wl_test.output("tsv", filename=file_path, prettify=False, ignore="all")
-    #  Ooops.  Output of source_language is 0/1. No output of source_id.
