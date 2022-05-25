@@ -18,7 +18,9 @@ import csv
 import random
 from tabulate import tabulate
 from lingpy import Wordlist
-from lexibank_sabor import Dataset as SABOR
+from lexibank_sabor import (get_our_wordlist, our_path)
+
+# from lexibank_sabor import Dataset as SABOR
 
 
 def get_train_test_data(k_fold, folder):
@@ -26,31 +28,16 @@ def get_train_test_data(k_fold, folder):
     it = 0
     while it < k_fold:
         full_name = "CV{k:d}-fold-{it:02d}-train.tsv".format(k=k_fold, it=it)
-        file_path = str(SABOR().dir / folder / full_name)
+        # file_path = str(SABOR().dir / folder / full_name)
+        file_path = our_path(folder, full_name)
         train_wl = Wordlist(file_path)
         full_name = "CV{k:d}-fold-{it:02d}-test.tsv".format(k=k_fold, it=it)
-        file_path = str(SABOR().dir / folder / full_name)
+        # file_path = str(SABOR().dir / folder / full_name)
+        file_path = our_path(folder, full_name)
         test_wl = Wordlist(file_path)
 
         yield it, train_wl, test_wl
         it += 1
-
-
-def get_sabor_wordlist():
-    # From get_pairwise_borrowings.
-    # How better to share function between commands?
-    wl = Wordlist.from_cldf(
-        str(SABOR().cldf_dir / "cldf-metadata.json"),
-        columns=[
-            "language_id", "language_family",
-            "concept_name", "value", "form", "segments",
-            "donor_language", "donor_value"],
-    )
-    # donor_language and donor_value fields read as None when empty.
-    for idx in wl:
-        if wl[idx, "donor_language"] is None: wl[idx, "donor_language"] = ""
-        if wl[idx, "donor_value"] is None: wl[idx, "donor_value"] = ""
-    return wl
 
 
 def store_temp_data(file_path, header, data):
@@ -123,11 +110,13 @@ def split_wordlist(wl, k_fold, folder, concept_name='CONCEPT'):
 
             # Save wordlist files into folder.
             full_name = "CV{k:d}-fold-{it:02d}-train".format(k=k_fold, it=it)
-            file_path = str(SABOR().dir / folder / full_name)
+            # file_path = str(SABOR().dir / folder / full_name)
+            file_path = our_path(folder, full_name)
             train_wl.output("tsv", filename=file_path,
                             prettify=False, ignore="all")
             full_name = "CV{k:d}-fold-{it:02d}-test".format(k=k_fold, it=it)
-            file_path = str(SABOR().dir / folder / full_name)
+            # file_path = str(SABOR().dir / folder / full_name)
+            file_path = our_path(folder, full_name)
             test_wl.output("tsv", filename=file_path,
                            prettify=False, ignore="all")
 
@@ -158,7 +147,7 @@ def register(parser):
 
 
 def run(args):
-    wl = get_sabor_wordlist()
+    wl = get_our_wordlist()
     if args.test:
         print("* Reporting {k} train-test splits *".format(k=args.k))
         summary = []

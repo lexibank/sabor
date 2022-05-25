@@ -264,15 +264,26 @@ def edit_distance(seqA, seqB, **kw):
     return lingpy.edit_dist(seqA, seqB, normalized=True)
 
 
-def evaluate_borrowings_fs(wordlist, pred, gold, donors, donor_families, family="family"):
+def evaluate_borrowings_fs(wordlist, pred, gold, donors,
+                           donor_families, family="family"):
     """
-    Return F-Scores for the donor detection.
+    Return F1-Score for the donor detection.
     """
-    # Defensive programming:
+    fs = evaluate_borrowings(wordlist, pred, gold, donors, donor_families, family)
+    return fs['f1']
+
+
+def evaluate_borrowings(wordlist, pred, gold, donors,
+                        donor_families, family="family",
+                        beta=1.0):
+    """
+    Return F1 and related scores for the donor detection.
+    """
     # Check for None and be sure of pred versus gold.
-    # Return F1 score overall.
-    # Evaluation wordlist is from parent.
+    # Return tp, tn, fp, fn, precision, recall, f1score, accuracy.
+    # Evaluation wordlist is from predict function of analysis method.
     fn = fp = tn = tp = 0
+
     for idx, pred_lng, gold_lng in wordlist.iter_rows(pred, gold):
         if wordlist[idx, family] not in donor_families:
             if not pred_lng:
@@ -283,7 +294,20 @@ def evaluate_borrowings_fs(wordlist, pred, gold, donors, donor_families, family=
                 if not gold_lng: fp += 1
                 elif gold_lng in donors: tp += 1
                 else: fp += 1
-    return tp/(tp + (fp + fn)/2)
+
+    precision = tp/(tp + fp) if tp + fp else 0
+    recall = tp/(tp + fn) if tp + fn else 0
+    f1 = tp/(tp + (fp + fn)/2) if tp + fp + fn else 0
+    fb = (1.0 + beta**2.0) * (precision * recall) / \
+        (beta**2.0 * precision + recall) if (precision + recall) else 0
+    accuracy = (tp + tn)/(tp + tn + fp + fn)
+
+    return {'fn': fn, 'fp': fp, 'tn': tn, 'tp': tp,
+            'precision': round(precision, 3),
+            'recall': round(recall, 3),
+            'f1': round(f1, 3),
+            'fb': round(fb, 3),
+            'accuracy': round(accuracy, 3)}
 
 
 def our_path(*comps):

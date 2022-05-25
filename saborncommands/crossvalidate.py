@@ -68,6 +68,7 @@ def classifier_based_constructor(infile,
                                  clf,
                                  funcs,
                                  props,
+                                 props_tar,
                                  family="language_family",
                                  segments="tokens",
                                  known_donor="donor_language",
@@ -78,6 +79,7 @@ def classifier_based_constructor(infile,
         clf=clf,
         funcs=funcs,
         props=props,
+        props_tar=props_tar,
         family=family,
         segments=segments,
         known_donor=known_donor,
@@ -102,7 +104,12 @@ def evaluate_fold(constructor, dir, k, fold):
     detector.train(verbose=False)
 
     def get_results_for_wl(wl_):
+        ln_in = len(wl_)
         detector.predict_on_wordlist(wl_)
+        ln_out = len(wl_)
+        if ln_in != ln_out:
+            print("*** In {} and out {} wordlist lengths different".
+                  format(ln_in, ln_out))
         results = evaluate_borrowings(
             wl_,
             pred="source_language",
@@ -192,7 +199,7 @@ def register(parser):
         "--method",
         type=str,
         default="cmsca",
-        choices=['cmsca', 'cmned', 'cbsca', 'cblex', 'clsvcsca'],
+        choices=['cmsca', 'cmned', 'cbsca', 'cblex', 'clsvcdist'],
         help="Code for borrowing detection method."
     )
 
@@ -215,21 +222,26 @@ def run(args):
     cblex = partial(cognate_based_constructor,
                     func=cognate.cbds_lex,
                     donors=args.donors,
-                    runs=1000,
+                    runs=2000,
                     lexstat=True)
     cblex.keywords['func'].__name__ = 'cognate_based_cognate_lexstat'
 
-    clsvcsca = partial(classifier_based_constructor,
-                       clf=SVC(kernel="linear"),
-                       func=lambda x: x,  # Artificial argument for name.
-                       funcs=[classifier.clf_sca],
-                       props=None,
-                       donors=args.donors)
-    clsvcsca.keywords['func'].__name__ = 'classifier_based_SVM_linear_sca'
+    clsvcdist = partial(
+        classifier_based_constructor,
+        clf=SVC(kernel="linear"),
+        func=lambda x: x,  # Artificial argument for name.
+        funcs=[classifier.clf_sca, classifier.clf_ned],
+        props=None,
+        props_tar=None,
+        by_tar=False,
+        donors=args.donors,
+        family="language_family")
+    clsvcdist.keywords['func'].__name__ = \
+        'classifier_based_SVM_linear_sca_ned'
 
     methods = {'cmsca': cmsca, 'cmned': cmned,
                'cbsca': cbsca, 'cblex': cblex,
-               'clsvcsca': clsvcsca}
+               'clsvcdist': clsvcdist}
 
     constructor = methods[args.method]
     func_name = constructor.keywords['func'].__name__
