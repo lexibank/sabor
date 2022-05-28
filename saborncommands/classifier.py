@@ -4,13 +4,12 @@ Borrowings by Classifier
 from lingpy import *
 from lexibank_sabor import (
         get_our_wordlist, sca_distance, edit_distance,
-        evaluate_borrowings,
-        our_path)
+        evaluate_borrowings, evaluate_borrowings_fs,
+        our_path,
+        subset_wl, get_language_list)
 from sklearn.svm import SVC
 from functools import partial
 import collections
-
-from tabulate import tabulate
 
 
 def distance_by_idx(idxA, idxB, wordlist, distance=None, **kw):
@@ -62,7 +61,6 @@ class ClassifierBasedBorrowingDetection(LexStat):
             funcs=None,
             props=None,
             props_tar=None,
-            family="family",
             segments="tokens",
             ipa="form",
             known_donor="donor_language",
@@ -91,12 +89,10 @@ class ClassifierBasedBorrowingDetection(LexStat):
 
         self.donors = [donors] if isinstance(donors, str) else donors
         # Define wordlist field names.
-        self.family = family
         self.segments = segments
         self.known_donor = known_donor
-        self.donor_families = {fam for (ID, lang, fam)
-                               in self.iter_rows('doculect', self.family)
-                               if lang in self.donors}
+
+        self.best_score = 0
 
     @staticmethod
     def wrap_list(value):
@@ -123,9 +119,8 @@ class ClassifierBasedBorrowingDetection(LexStat):
         for concept in self.rows:
             dt[concept] = [[], []]
             idxs = self.get_list(row=concept, flat=True)
-            dt[concept][0] = [
-                    idx for idx in idxs if self[idx, self.family] in
-                    self.donor_families]
+            dt[concept][0] = [idx for idx in idxs
+                              if self[idx, 'doculect'] in self.donors]
             dt[concept][1] = [
                     idx for idx in idxs if idx not in dt[concept][0]]
             for idxA in dt[concept][0]:
@@ -173,8 +168,8 @@ class ClassifierBasedBorrowingDetection(LexStat):
         B_id = {idx: "" for idx in wordlist}
         for concept in wordlist.rows:
             idxs = wordlist.get_list(row=concept, flat=True)
-            donors = [idx for idx in idxs if wordlist[idx, self.family] in
-                      self.donor_families]
+            donors = [idx for idx in idxs
+                      if wordlist[idx, "doculect"] in self.donors]
             targets = [idx for idx in idxs if idx not in donors]
             hits = self.predict(donors, targets, wordlist)
             for hit, pair in hits.items():
@@ -185,41 +180,94 @@ class ClassifierBasedBorrowingDetection(LexStat):
         wordlist.add_entries('source_id', B_id, lambda x: x)
 
 
+def register(parser):
+    parser.add_argument(
+        "--function",
+        nargs="*",
+        default=["SCA", "NED"],
+        choices=["SCA", "NED", "SCALO", "SCAOV"],
+        help="select similarity functions for use by classifier."
+
+    )
+    parser.add_argument(
+        "--file",
+        default=None,  # e.g., "splits/CV10-fold-00-train.tsv"
+        help="wordlist filename containing donor and target language tokens."
+    )
+    parser.add_argument(
+        "--testfile",
+        default=None,  # e.g., "splits/CV10-fold-00-test.tsv"
+        help="wordlist filename containing donor and target language tokens for test."
+    )
+    parser.add_argument(
+        "--language",
+        nargs="*",
+        type=str,
+        default=None,
+        help="subset of languages to include; default is all languages."
+    )
+    parser.add_argument(
+        "--donor",
+        type=str,
+        nargs="*",
+        default=["Spanish"],
+        help="Donor languages for focused analysis."
+    )
+
+
 def run(args):
-    # wl = get_our_wordlist()
+    function = {"NED": clf_ned, "SCA": clf_sca,
+                "SCALO": clf_sca_lo, "SCAOV": clf_sca_ov}
 
-    wl = Wordlist(our_path("splits", "CV10-fold-00-train.tsv"))
+    if args.file:
+        wl = Wordlist(args.file)
+        args.log.info("Construct classifier from {fl}.".format(fl=args.file))
+    else:
+        wl = get_our_wordlist()
+        args.log.info("Construct classifier from SaBor database.")
 
-    wl_test = Wordlist(our_path("splits", "CV10-fold-00-test.tsv"))
-    args.log.info("Loaded train and test wordlists.")
+    if args.language:
+        args.language = get_language_list(args.language, args.donor)
+        wl = subset_wl(wl, args.language)
+        args.log.info("Subset of languages: {}".format(args.language))
 
-    def analyze_borrowing(wl, wl_test):
-        bor = ClassifierBasedBorrowingDetection(
-            wl, donors="Spanish",
-            clf=SVC(kernel="linear"),
-            funcs=[clf_sca, clf_ned],
-            by_tar=False,
-            family="language_family")
-        bor.train(verbose=False, log=args.log)
-        bor.predict_on_wordlist(wl_test)
-        args.log.info("Evaluation:" + str(evaluate_borrowings(
-            wl_test,
+    functions = [function[key] for key in args.function]
+    bor = ClassifierBasedBorrowingDetection(
+        wl, donors=args.donor, clf=SVC(kernel="linear"),
+        funcs=functions, family="language_family")
+
+    bor.train(verbose=False, log=args.log)
+    args.log.info("Trained with donors {d}, functions {func}".
+                  format(d=bor.donors, func=args.function))
+
+    args.log.info("Predict")
+    bor.predict_on_wordlist(bor)
+    args.log.info("Evaluation:" + str(evaluate_borrowings_fs(
+        bor,
+        "source_language",
+        bor.known_donor,
+        bor.donors)))
+    full_name = "CL-sp-predict--train"
+    file_path = our_path("store", full_name)
+    columns = [column for column in bor.columns
+               if not column.startswith('bor_')]
+    bor.output("tsv", filename=file_path, subset=True, cols=columns,
+               prettify=False, ignore="all")
+
+    if args.testfile:
+        wl = Wordlist(args.testfile)
+        args.log.info("Test classifier from {fl}.".format(fl=args.testfile))
+
+        if args.language:
+            wl = subset_wl(wl, args.language)
+            args.log.info("Subset of languages: {}".format(args.language))
+
+        bor.predict_on_wordlist(wl)
+        args.log.info("Evaluation:" + str(evaluate_borrowings_fs(
+            wl,
             "source_language",
             bor.known_donor,
-            bor.donors,
-            bor.donor_families,
-            family=bor.family)))
-
-        # concepts = bor.rows[:30]
-        # table = []
-        # for concept in concepts:
-        #    if bor.dt[concept][0] and bor.dt[concept][1]:
-        #        for a, b in bor.predict(bor.dt[concept][0], bor.dt[concept][1], bor).items():
-        #            table += [[concept, bor[a, "doculect"], str(bor[a, "tokens"]), b[1], bor[a,
-        #                bor.known_donor]]]
-        # print(tabulate(table, tablefmt="plain"))
-
-    analyze_borrowing(wl, wl_test)
-    # Store test results.
-    file_path = 'store/test-new-predict-CV10-fold-00-test'
-    wl_test.output("tsv", filename=file_path, prettify=False, ignore="all")
+            bor.donors)))
+        full_name = "CL-sp-predict--test"
+        file_path = our_path("store", full_name)
+        wl.output("tsv", filename=file_path, prettify=False, ignore="all")

@@ -28,7 +28,6 @@ from saborncommands import (closest, cognate, classifier)
 def closest_match_constructor(infile,
                               donors,
                               func,
-                              family="language_family",
                               segments="tokens",
                               known_donor="donor_language",
                               **kw):
@@ -36,7 +35,6 @@ def closest_match_constructor(infile,
         infile,
         donors=donors,
         func=func,
-        family=family,
         segments=segments,
         known_donor=known_donor,
         **kw
@@ -69,7 +67,6 @@ def classifier_based_constructor(infile,
                                  funcs,
                                  props,
                                  props_tar,
-                                 family="language_family",
                                  segments="tokens",
                                  known_donor="donor_language",
                                  **kw):
@@ -80,7 +77,6 @@ def classifier_based_constructor(infile,
         funcs=funcs,
         props=props,
         props_tar=props_tar,
-        family=family,
         segments=segments,
         known_donor=known_donor,
         **kw
@@ -114,9 +110,7 @@ def evaluate_fold(constructor, dir, k, fold):
             wl_,
             pred="source_language",
             gold=detector.known_donor,
-            donors=detector.donors,
-            donor_families=detector.donor_families,
-            family=detector.family)
+            donors=detector.donors)
 
         if hasattr(detector, "best_key"):
             results[detector.best_key] = round(detector.best_value, 3)
@@ -189,10 +183,10 @@ def register(parser):
         help="Fold number to select for a 1-shot cross-validation."
     )
     parser.add_argument(
-        "--donors",
+        "--donor",
         type=str,
         nargs="*",
-        default="Spanish",
+        default=["Spanish"],
         help="Donor languages for focused analysis."
     )
     parser.add_argument(
@@ -207,24 +201,17 @@ def register(parser):
 def run(args):
     cmsca = partial(closest_match_constructor,
                     func=sca_distance,
-                    donors=args.donors)
+                    donors=args.donor)
 
     cmned = partial(closest_match_constructor,
                     func=edit_distance,
-                    donors=args.donors)
+                    donors=args.donor)
 
     cbsca = partial(cognate_based_constructor,
                     func=cognate.cbds_sca,
-                    donors=args.donors,
+                    donors=args.donor,
                     runs=None)
     cbsca.keywords['func'].__name__ = 'cognate_based_cognate_sca'
-
-    cblex = partial(cognate_based_constructor,
-                    func=cognate.cbds_lex,
-                    donors=args.donors,
-                    runs=2000,
-                    lexstat=True)
-    cblex.keywords['func'].__name__ = 'cognate_based_cognate_lexstat'
 
     clsvcdist = partial(
         classifier_based_constructor,
@@ -233,15 +220,12 @@ def run(args):
         funcs=[classifier.clf_sca, classifier.clf_ned],
         props=None,
         props_tar=None,
-        by_tar=False,
-        donors=args.donors,
-        family="language_family")
+        donors=args.donor)
     clsvcdist.keywords['func'].__name__ = \
         'classifier_based_SVM_linear_sca_ned'
 
     methods = {'cmsca': cmsca, 'cmned': cmned,
-               'cbsca': cbsca, 'cblex': cblex,
-               'clsvcdist': clsvcdist}
+               'cbsca': cbsca, 'clsvcdist': clsvcdist}
 
     constructor = methods[args.method]
     func_name = constructor.keywords['func'].__name__
