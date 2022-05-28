@@ -1,12 +1,16 @@
 """
 Simple Donor Search based on pairwise sequence comparison.
 """
-from lexibank_sabor import Dataset as SABOR
+
 from lexibank_sabor import (
-        get_our_wordlist, sca_distance, edit_distance,
+        get_our_wordlist, our_path,
+        sca_distance, edit_distance,
         simple_donor_search,
-        evaluate_borrowings_fs, 
-        sds_by_concept)
+        sds_by_concept,
+        evaluate_borrowings_fs,
+        subset_wl,
+        get_language_list
+)
 
 from lingpy import *
 
@@ -17,7 +21,6 @@ class SimpleDonorSearch(Wordlist):
             infile,
             donors,
             func=None,
-            family="family",
             segments="tokens",
             known_donor="donor_language",
             **kw
@@ -31,12 +34,9 @@ class SimpleDonorSearch(Wordlist):
         self.donors = [donors] if isinstance(donors, str) else donors
 
         # Define wordlist field names.
-        self.family = family
         self.segments = segments
         self.known_donor = known_donor
-        self.donor_families = {fam for (ID, lang, fam)
-                               in self.iter_rows('doculect', self.family)
-                               if lang in self.donors}
+
         self.best_value = 0
         self.best_score = 0
         self.best_key = 'threshold'
@@ -45,7 +45,7 @@ class SimpleDonorSearch(Wordlist):
         """
         Train the threshold on the current data.
         """
-        thresholds = thresholds or [i*0.1 for i in range(1, 10)]
+        thresholds = thresholds or [i*0.05 for i in range(1, 20)]
         
         # calculate distances between all pairs, only once, afterwards make a
         # function out of it, so we can pass this to the simple_donor_search
@@ -53,25 +53,24 @@ class SimpleDonorSearch(Wordlist):
         D = {}
         for concept in self.concepts:
             idxs = self.get_list(row=concept, flat=True)
-            donors = [idx for idx in idxs if self[idx, self.family] in \
-                    self.donor_families]
-            recips = [idx for idx in idxs if idx not in donors]
+            donors = [idx for idx in idxs
+                      if self[idx, 'doculect'] in self.donors]
+            targets = [idx for idx in idxs if idx not in donors]
             for idxA in donors:
-                for idxB in recips:
+                for idxB in targets:
                     tksA, tksB = self[idxA, self.segments], self[
                             idxB, self.segments]
                     D[str(tksA), str(tksB)] = self.func(tksA, tksB)
         new_func = lambda x, y: D[str(x), str(y)]
         if verbose: print("computed distances")
 
-        best_t, best_e = 0, 0
+        best_t, best_f = 0, 0
         for i, threshold in enumerate(thresholds):
             if verbose: print("analyzing {0:.2f}".format(threshold))
             tidx = "t_"+str(i+1)
             simple_donor_search(
                     self,
                     self.donors,
-                    family=self.family,
                     concept=self._row_name,
                     segments="tokens",
                     donor_lng=tidx+"_lng",
@@ -79,20 +78,19 @@ class SimpleDonorSearch(Wordlist):
                     func=new_func,
                     threshold=threshold
                     )
-            fs = evaluate_borrowings_fs(
-                    self, 
-                    tidx+"_lng", 
-                    self.known_donor,
-                    self.donors,
-                    self.donor_families,
-                    family=self.family
-                    )
-            if fs > best_e:
-                best_t = threshold
-                best_e = fs
+            if self.known_donor in self.columns:
+                # Calculate F score if known donor column.
+                fs = evaluate_borrowings_fs(
+                        self,
+                        tidx+"_lng",
+                        self.known_donor,
+                        self.donors)
+                if fs > best_f:
+                    best_t = threshold
+                    best_f = fs
             if verbose: print("... {0:.2f}".format(fs))
         self.best_value = best_t
-        self.best_score = best_e
+        self.best_score = best_f
 
     def predict(self, donors, targets):
         """
@@ -109,46 +107,15 @@ class SimpleDonorSearch(Wordlist):
         simple_donor_search(
                 wordlist,
                 self.donors,
-                family=self.family,
                 concept=self._row_name,
                 segments=self.segments,
                 donor_lng=donor_lng,
                 donor_id=donor_id,
                 func=self.func,
                 threshold=self.best_value)
-        
-
-def run_analysis(pairwise, name, threshold, log, report=True):
-    """
-    Shortcut for configuring and running an analysis with specific threshold.
-    """
-    full_name = "{name}-{func}-{thr:.2f}".format(
-        name=name, func=pairwise.func.__name__, thr=threshold)
-    if report:
-        log.info("# ANALYSIS: T={0:.2f}, D={1}, F={2}".format(
-            threshold, pairwise.func.__name__, full_name))
-
-    pairwise.get_borrowings(threshold=threshold, ref="source_id",
-                            ref_lang="source_language",
-                            ref_segs="source_tokens")
-
-    if report:
-        file_path = str(SABOR().dir / "store" / full_name)
-        cols = [col for col in pairwise.columns
-                if col not in ['source_id_', 'source_score_']]
-        pairwise.output("tsv", filename=file_path, prettify=False, ignore="all",
-                        subset=True, cols=cols)
-        log.info("## found {0} borrowings".format(
-            len([x for x in pairwise if pairwise[x, "source_id"]])))
-        log.info("---")
 
 
 def register(parser):
-    parser.add_argument(
-        "--infile",
-        default=None,  # e.g., "splits/CV10-fold-00-train.tsv"
-        help="wordlist filename containing donor and target language tokens."
-    )
     parser.add_argument(
         "--function",
         default="SCA",
@@ -157,19 +124,15 @@ def register(parser):
         )
     parser.add_argument(
         "--threshold",
-        default=0.3,
+        default=[round(i*0.05, 3) for i in range(1, 20)],
+        nargs="*",
         type=float,
-        help="enter <= threshold distance to determine whether likely borrowing."
+        help="threshold distances to determine whether likely borrowing."
     )
     parser.add_argument(
-        "--train",
-        action="store_true",
-        help="train pairwise to optimize F1 score; gold language field required."
-    )
-    parser.add_argument(
-        "--predict",
-        action="store_true",
-        help="predict borrowings based on trained configuration."
+        "--file",
+        default=None,  # e.g., "splits/CV10-fold-00-train.tsv"
+        help="wordlist filename containing donor and target language tokens."
     )
     parser.add_argument(
         "--testfile",
@@ -181,77 +144,67 @@ def register(parser):
         nargs="*",
         type=str,
         default=None,
-        help="languages to use with predict; default is all languages."
+        help="subset of languages to include; default is all languages."
+    )
+    parser.add_argument(
+        "--donor",
+        type=str,
+        nargs="*",
+        default=["Spanish"],
+        help="Donor languages for focused analysis."
     )
 
 
 def run(args):
-    wl = get_our_wordlist()
-    args.log.info("loaded wordlist")
-    bor = SimpleDonorSearch(
-            wl, donors="Spanish", func=sca_distance, family="language_family")
-    bor.train(verbose=True, thresholds=[i*0.05 for i in range(1, 20)])
-    print("best threshold is {0:.2f}".format(bor.best_value))
-    hits = bor.predict(
-            {"Spanish": ["m", "a", "n", "o"]}, 
-            {
-                "FakeX": ["m", "a", "n", "u", "ʃ", "k", "a"],
-                "FakeY": ["p", "e", "p", "e", "l"]
-                }
-            )
-    for idx, donor in hits.items():
-        print(idx, donor)
-    #function = {"NED": edit_distance,
-    #            "SCA": sca_distance}[args.function]
-    #donor = "Spanish"
+    function = {"NED": edit_distance,
+                "SCA": sca_distance}[args.function]
 
-    #if args.infile:
-    #    pw = PairwiseBorrowing(
-    #        infile=args.infile, func=function, donor=donor)
-    #    args.log.info("Constructed pairwise from {fl}.".format(fl=args.infile))
-    #else:
-    #    wl = get_sabor_wordlist()
-    #    pw = PairwiseBorrowing.from_wordlist(
-    #        wordlist=wl, func=function, donor=donor)
-    #    args.log.info("Constructed pairwise from SaBor cldf database.")
+    if args.file:
+        wl = Wordlist(args.file)
+        args.log.info("Construct closest from {fl}.".format(fl=args.file))
+    else:
+        wl = get_our_wordlist()
+        args.log.info("Construct closest from SaBor database.")
 
-    #if args.train:
-    #    pw.train()
-    #    args.log.info("Trained with donor {d}, function {func}".
-    #                  format(d=pw.donor, func=pw.func.__name__))
-    #    args.log.info("Best: threshold {thr:.2f}, F1 score {f1:.3f}".
-    #                  format(thr=pw.best_thr, f1=pw.best_score))
-    #else:
-    #    run_analysis(pw, name="pw-spa", threshold=args.threshold, log=args.log)
+    if args.language:
+        args.language = get_language_list(args.language, args.donor)
+        wl = subset_wl(wl, args.language)
+        args.log.info("Subset of languages: {}".format(args.language))
 
-    #if args.predict:
-    #    languages = "ALL" if args.language is None else args.language
-    #    args.log.info("Predict with languages {l} and threshold {t}.".
-    #                  format(l=languages, t=pw.best_thr))
-    #    wl = pw.predict(testfile=args.testfile, languages=args.language)
-    #    full_name = "pw-sp-predict-{func}-{thr:.2f}".format(
-    #        func=pw.func.__name__, thr=pw.best_thr)
-    #    file_path = str(SABOR().dir / "store" / full_name)
-    #    cols = [col for col in wl.columns
-    #            if col not in ['source_id_', 'source_score_']]
-    #    wl.output("tsv", filename=file_path, prettify=False, ignore="all",
-    #              subset=True, cols=cols)
+    bor = SimpleDonorSearch(wl, func=function, donors=args.donor)
 
-    # bor.predict_on_wordlist(wl)
-    # file_path = 'store/test-new-predict'
-    # wl.output('tsv', filename=file_path, prettify=False, ignore="all")
-    #
-    # bor = SimpleDonorSearch(
-    #     'splits/CV10-fold-00-train.tsv', donors="Spanish",
-    #     func=sca_distance, family="language_family")
-    # bor.train(verbose=True, thresholds=[i*0.02 for i in range(1, 50)])
-    # print("best threshold is {0:.2f}".format(bor.best_t))
-    # bor.predict_on_wordlist(bor)
-    # file_path = 'store/test-new-predict-CV10-fold-00-train'
-    # bor.output('tsv', filename=file_path, prettify=False, ignore="all")
-    #
-    # # Need to create wordlist because predict does not convert infile to wordlist.
-    # wl = Wordlist('splits/CV10-fold-00-test.tsv')
-    # bor.predict_on_wordlist(wl)
-    # file_path = 'store/test-new-predict-CV10-fold-00-test'
-    # wl.output('tsv', filename=file_path, prettify=False, ignore="all")
+    bor.train(thresholds=args.threshold)
+
+    args.log.info("Trained with donors {d}, function {func}".
+                  format(d=bor.donors, func=bor.func.__name__))
+    args.log.info("Best: threshold {thr:.2f}, F1 score {f1:.3f}".
+                  format(thr=bor.best_value, f1=bor.best_score))
+
+    args.log.info("Predict with  threshold {t}.".format(t=bor.best_value))
+    bor.predict_on_wordlist(bor)
+    full_name = "CM-sp-predict-{func}-{thr:.2f}-train".format(
+        func=bor.func.__name__, thr=bor.best_value)
+    file_path = our_path("store", full_name)
+    columns = [column for column in bor.columns
+               if not column.startswith('t_')]
+    bor.output("tsv", filename=file_path, subset=True, cols=columns,
+               prettify=False, ignore="all")
+
+    if args.testfile:
+        wl = Wordlist(args.testfile)
+        args.log.info("Test closest from {fl}.".format(fl=args.testfile))
+
+        if args.language:
+            wl = subset_wl(wl, args.language)
+            args.log.info("Subset of languages: {}".format(args.language))
+
+        bor.predict_on_wordlist(wl)
+        args.log.info("Evaluation:" + str(evaluate_borrowings_fs(
+            wl,
+            "source_language",
+            bor.known_donor,
+            bor.donors)))
+        full_name = "CM-sp-predict-{func}-{thr:.2f}-test".format(
+            func=bor.func.__name__, thr=bor.best_value)
+        file_path = our_path("store", full_name)
+        wl.output("tsv", filename=file_path, prettify=False, ignore="all")

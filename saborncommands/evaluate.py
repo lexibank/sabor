@@ -7,7 +7,8 @@ import os
 from collections import Counter
 from lingpy import *
 from tabulate import tabulate
-from lexibank_sabor import Dataset as SABOR
+
+from lexibank_sabor import (our_path)
 
 
 def add_detection_status(wordlist, languages, donors,
@@ -91,29 +92,13 @@ def construct_detail_evaluation(status_counts):
     return metrics
 
 
-def get_recipient_languages(wl, donors, family):
-    # Need to get list of languages in wl that are not
-    # from donor language families.
-    # These are recipient languages for borrowings from donors.
-
-    # Much more concise and efficient would be from
-    # the language relation, but limited to wordlist.
-    donor_families = {fam for (ID, lang, fam)
-                      in wl.iter_rows('doculect', family)
-                      if lang in donors}
-    return sorted({lang for (ID, lang, fam)
-                   in wl.iter_rows('doculect', family)
-                   if fam not in donor_families})
-
-
 def evaluate_detection(wl,
                        donors,
-                       family="language_family",
                        detection_status="det_status",
                        filename='',
                        report=True):
 
-    languages = get_recipient_languages(wl, donors, family)
+    languages = list(set(wl.cols)-set(donors))
 
     add_detection_status(wl, languages=languages, donors=donors)
 
@@ -147,20 +132,34 @@ def evaluate_detection(wl,
 
 
 def register(parser):
-    parser.add_argument("--file", action="store",
-                        default="store/pw-spa-SCA-0.30.tsv")
-    parser.add_argument("--prefix", action="store",
+    parser.add_argument("--file")
+    parser.add_argument("--prefix",
                         help="Evaluate all files in store with given prefix")
+    parser.add_argument(
+        "--donor",
+        type=str,
+        nargs="*",
+        default=["Spanish"],
+        help="Donor languages for focused analysis."
+    )
 
 
 def run(args):
-    SAB = SABOR()
-
     if args.prefix:  # Prefix for set of files in store.
-        for file in sorted(os.listdir(str(SAB.dir / "store"))):
+        for file in sorted(os.listdir(our_path("store"))):
             if file.startswith(args.prefix):
-                wl = Wordlist(str(SAB.dir / "store" / file))
-                evaluate_detection(wl, donors=["Spanish"], filename=file)
-    else:  # Single file.
-        wl = Wordlist(str(SAB.dir / args.file))
-        evaluate_detection(wl, donors=["Spanish"], filename=args.file)
+                wl = Wordlist(our_path("store", file))
+                if "donor_language" in wl.columns:
+                    evaluate_detection(wl, donors=args.donor, filename=file)
+                else:
+                    args.log.info("Known donor not specified for {}.".
+                                  format(file))
+    elif args.file:  # Single file.
+        wl = Wordlist(our_path(args.file))
+        if "donor_language" in wl.columns:
+            evaluate_detection(wl, donors=args.donor, filename=args.file)
+        else:
+            args.log.info("Known donor not specified for {}.".
+                          format(args.file))
+    else:
+        args.info("No file specified for evaluation.")
