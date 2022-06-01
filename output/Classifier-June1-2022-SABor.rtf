@@ -1,0 +1,77 @@
+{\rtf1\ansi\ansicpg1252\cocoartf2638
+\cocoatextscaling0\cocoaplatform0{\fonttbl\f0\fnil\fcharset0 Menlo-Regular;}
+{\colortbl;\red255\green255\blue255;\red0\green0\blue0;\red47\green180\blue29;}
+{\*\expandedcolortbl;;\csgray\c0;\cssrgb\c20241\c73898\c14950;}
+\paperw11900\paperh16840\margl1440\margr1440\vieww13880\viewh11080\viewkind0
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\pardirnatural\partightenfactor0
+
+\f0\fs22 \cf2 \CocoaLigature0 \
+ALL\
+\
+cldfbench sabor.classifier --method SCA --label all-scafn-lexfn-scamt  \
+\
+\cf3 INFO   \cf2  Construct classifier from SaBor database.\
+\cf3 INFO   \cf2  Trained with donors ['Spanish'], functions ['SCA', 'NED'], methods ['SCA']\
+\cf3 INFO   \cf2  Predict\
+\cf3 INFO   \cf2  Evaluation:0.81\
+[INFO] Data has been written to file <store/CL-sp-predict-SVC_linear-all-scafn-lexfn-scamt-train.tsv>.\
+\
+\
+cldfbench sabor.evaluate --file store/CL-sp-predict-SVC_linear-all-scafn-lexfn-scamt-train.tsv\
+\
+Detection results for: store/CL-sp-predict-SVC_linear-all-scafn-lexfn-scamt-train.tsv.\
+Language             tp    tn    fp    fn    precision    recall    F1 score    accuracy\
+-----------------  ----  ----  ----  ----  -----------  --------  ----------  ----------\
+ZinacantanTzotzil   108  1093     8    57        0.931     0.655       0.769       0.949\
+Otomi               138  2034     9    60        0.939     0.697       0.800       0.969\
+ImbaburaQuechua     231   836    20    69        0.920     0.770       0.838       0.923\
+Wichi               100  1062     5    52        0.952     0.658       0.778       0.953\
+Mapudungun          136  1044     8    54        0.944     0.716       0.814       0.950\
+Yaqui               241  1106    16    70        0.938     0.775       0.849       0.940\
+Qeqchi              100  1606     6    61        0.943     0.621       0.749       0.962\
+Overall            1054  8781    72   423        0.936     0.714       0.810       0.952\
+\
+Overall detection results for: store/CL-sp-predict-SVC_linear-all-scafn-lexfn-scamt-train.tsv\
+                  borrowed    not borrowed    total\
+--------------  ----------  --------------  -------\
+identified            1054              72     1126\
+not identified         423            8781     9204\
+total                 1477            8853    10330\
+[INFO] Data has been written to file <store/CL-sp-predict-SVC_linear-all-scafn-lexfn-scamt-train-evaluate.tsv>.\
+\
+\
+FOLD 0\
+\
+cldfbench sabor.classifier --method SCA --label fold0-scafn-lexfn-scamt --file splits/CV10-fold-00-train.tsv --testfile splits/CV10-fold-00-test.tsv \
+\cf3 INFO   \cf2  Construct classifier from splits/CV10-fold-00-train.tsv.\
+\cf3 INFO   \cf2  Trained with donors ['Spanish'], functions ['SCA', 'NED'], methods ['SCA']\
+\cf3 INFO   \cf2  Predict\
+\cf3 INFO   \cf2  Evaluation:0.811\
+2022-06-01 11:26:19,814 [INFO] Data has been written to file </Users/johnmiller/ling/sabor-installs/sabor/store/CL-sp-predict-SVC_linear-fold0-scafn-lexfn-scamt-train.tsv>.\
+\cf3 INFO   \cf2  Test classifier from splits/CV10-fold-00-test.tsv.\
+\cf3 INFO   \cf2  Evaluation:0.798\
+2022-06-01 11:26:20,330 [INFO] Data has been written to file </Users/johnmiller/ling/sabor-installs/sabor/store/CL-sp-predict-SVC_linear-fold0-scafn-lexfn-scamt-test.tsv>.\
+\
+cldfbench sabor.evaluate --file store/CL-sp-predict-SVC_linear-fold0-scafn-lexfn-scamt-test.tsv\
+\
+Detection results for: store/CL-sp-predict-SVC_linear-fold0-scafn-lexfn-scamt-test.tsv.\
+Language             tp    tn    fp    fn    precision    recall    F1 score    accuracy\
+-----------------  ----  ----  ----  ----  -----------  --------  ----------  ----------\
+Yaqui                18   113     1     7        0.947     0.720       0.818       0.942\
+Otomi                10   205     1     5        0.909     0.667       0.769       0.973\
+Wichi                 7   102     0     4        1.000     0.636       0.778       0.965\
+ImbaburaQuechua      19    84     3     8        0.864     0.704       0.776       0.904\
+Qeqchi               10   176     0     7        1.000     0.588       0.741       0.964\
+ZinacantanTzotzil    15   107     0     3        1.000     0.833       0.909       0.976\
+Mapudungun            8   104     1     4        0.889     0.667       0.762       0.957\
+Overall              87   891     6    38        0.935     0.696       0.798       0.957\
+\
+Overall detection results for: store/CL-sp-predict-SVC_linear-fold0-scafn-lexfn-scamt-test.tsv\
+                  borrowed    not borrowed    total\
+--------------  ----------  --------------  -------\
+identified              87               6       93\
+not identified          38             891      929\
+total                  125             897     1022\
+\
+\
+}
