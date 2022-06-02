@@ -9,10 +9,17 @@ import lingpy
 from lingpy import (Wordlist, LexStat)
 from clldutils.misc import slug
 
-from pylexibank import Lexeme, FormSpec, Concept
+from pylexibank import Lexeme, Language, FormSpec, Concept
 import attr
 
 BOR_CRITICAL_VALUE = 0.67
+
+
+@attr.s
+class CustomLanguage(Language):
+    Spanish_Borrowings = attr.ib(default=None)
+
+
 
 @attr.s
 class CustomLexeme(Lexeme):
@@ -32,6 +39,7 @@ class Dataset(BaseDataset):
     dir = pathlib.Path(__file__).parent
     id = "sabor"
     lexeme_class = CustomLexeme
+    language_class = CustomLanguage
     form_spec = FormSpec(
             replacements=[(" ", "_")], 
             separators="~;,/", missing_data=["∅"], first_form_only=True)
@@ -114,6 +122,16 @@ class Dataset(BaseDataset):
         for name, language in wold_languages.items():
             print("Added: name {name}, language {language}".format(
                 name=name, language=language.id))
+            borrowed = sum(
+                    [1 for form in language.forms_with_sounds if borrowings.get(
+                        form.id[5:], [""])[0] == "Spanish"])
+            args.writer.add_language(
+                    ID=language.id[5:],  # Drop the wold- prefix.
+                    Name=language.name,
+                    Glottocode=language.glottocode,
+                    Latitude=language.latitude,
+                    Longitude=language.longitude,
+                    Spanish_Borrowings=borrowed/len(language.forms_with_sounds))
             args.writer.add_language(
                     ID=language.id[5:],  # Drop the wold- prefix.
                     Name=language.name,
