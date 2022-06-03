@@ -11,7 +11,7 @@
         {
             "rdf:about": "https://github.com/lexibank/sabor",
             "rdf:type": "prov:Entity",
-            "dc:created": "26a320b",
+            "dc:created": "3e084c9",
             "dc:title": "Repository"
         },
         {
@@ -270,6 +270,10 @@
                     {
                         "datatype": "string",
                         "name": "Spanish_Borrowings"
+                    },
+                    {
+                        "datatype": "string",
+                        "name": "Borrowing_Class"
                     }
                 ],
                 "primaryKey": [

@@ -18,6 +18,7 @@ BOR_CRITICAL_VALUE = 0.67
 @attr.s
 class CustomLanguage(Language):
     Spanish_Borrowings = attr.ib(default=None)
+    Borrowing_Class = attr.ib(default=None)
 
 
 
@@ -125,13 +126,17 @@ class Dataset(BaseDataset):
             borrowed = sum(
                     [1 for form in language.forms_with_sounds if borrowings.get(
                         form.id[5:], [""])[0] == "Spanish"])
+            bp = borrowed / len(language.forms_with_sounds)
+            bval = "5%-10%" if bp < 0.1 else "10%-15%" if bp < 0.15 else \
+                    "15%-20%" if bp < 0.2 else "20%-25%" if bp < 0.25 else "25%-30%"
             args.writer.add_language(
                     ID=language.id[5:],  # Drop the wold- prefix.
                     Name=language.name,
                     Glottocode=language.glottocode,
                     Latitude=language.latitude,
                     Longitude=language.longitude,
-                    Spanish_Borrowings=borrowed/len(language.forms_with_sounds))
+                    Spanish_Borrowings=bp,
+                    Borrowing_Class=bval)
             args.writer.add_language(
                     ID=language.id[5:],  # Drop the wold- prefix.
                     Name=language.name,
