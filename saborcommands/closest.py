@@ -2,6 +2,7 @@
 Simple Donor Search based on pairwise sequence comparison.
 """
 import collections
+from functools import partial
 
 from lexibank_sabor import (
         get_our_wordlist, our_path,
@@ -42,8 +43,7 @@ def simple_donor_search(
         donor_lng="source_language",
         donor_id="source_id",
         func=None,
-        threshold=0.45,
-        **kw
+        threshold=0.45
         ):
     """
     Find borrowings by carrying out a pairwise comparison of donor and target words.
@@ -96,6 +96,24 @@ def simple_donor_search(
             donor_id, B, lambda x: x if x != 0 else "")
 
 
+sca_gl = partial(
+        sca_distance,
+        mode='global')
+sca_gl.__name__ = 'closest_match_sca_global'
+
+sca_ov = partial(
+        sca_distance,
+        mode='overlap')
+sca_ov.__name__ = 'closest_match_sca_overlap'
+
+sca_lo = partial(
+        sca_distance,
+        mode='local')
+sca_lo.__name__ = 'closest_match_sca_local'
+
+ned = edit_distance
+
+
 class SimpleDonorSearch(Wordlist):
     def __init__(
             self, 
@@ -111,7 +129,7 @@ class SimpleDonorSearch(Wordlist):
                 simple_donor_search function.
         """
         Wordlist.__init__(self, infile, **kw)
-        self.func = func or sca_distance
+        self.func = func or sca_gl
         self.donors = [donors] if isinstance(donors, str) else donors
 
         # Define wordlist field names.
@@ -141,7 +159,7 @@ class SimpleDonorSearch(Wordlist):
         """
         Train the threshold on the current data.
         """
-        thresholds = thresholds or [i*0.05 for i in range(1, 20)]
+        thresholds = thresholds or [round(i*0.05, 3) for i in range(1, 20)]
         
         # calculate distances between all pairs, only once, afterwards make a
         # function out of it, so we can pass this to the simple_donor_search
@@ -157,6 +175,7 @@ class SimpleDonorSearch(Wordlist):
                     tksA, tksB = self[idxA, self.segments], self[
                             idxB, self.segments]
                     D[str(tksA), str(tksB)] = self.func(tksA, tksB)
+
         new_func = lambda x, y: D[str(x), str(y)]
         if verbose: print("computed distances")
 
@@ -184,7 +203,7 @@ class SimpleDonorSearch(Wordlist):
                 if fs > best_f:
                     best_t = threshold
                     best_f = fs
-            if verbose: print("... {0:.2f}".format(fs))
+                if verbose: print("... {0:.2f}".format(fs))
         self.best_value = best_t
         self.best_score = best_f
 
@@ -215,9 +234,11 @@ def register(parser):
     parser.add_argument(
         "--function",
         type=str,
-        default="SCA",
-        choices=["SCA", "NED"],
-        help="select Needleman edit distance, or sound correspondence alignment."
+        default="sca",
+        choices=["sca", "ned", "sca_ov", "sca_lo"],
+        help="select edit distance (ned), or sound correspondence "
+             "alignment (sca), or sca with overlap (sca_ov), "
+             "or local (sca_lo)."
         )
     parser.add_argument(
         "--threshold",
@@ -259,8 +280,10 @@ def register(parser):
 
 
 def run(args):
-    function = {"NED": edit_distance,
-                "SCA": sca_distance}[args.function]
+    function = {"ned": ned,
+                "sca": sca_gl,
+                "sca_ov": sca_ov,
+                "sca_lo": sca_lo}[args.function]
 
     if args.file:
         wl = Wordlist(args.file)
@@ -283,7 +306,7 @@ def run(args):
     args.log.info("Best: threshold {thr:.2f}, F1 score {f1:.3f}".
                   format(thr=bor.best_value, f1=bor.best_score))
 
-    args.log.info("Predict with  threshold {t}.".format(t=bor.best_value))
+    # args.log.info("Predict with  threshold {t}.".format(t=bor.best_value))
     bor.predict_on_wordlist(bor)
     full_name = "CM-sp-predict-{func}-{thr:.2f}-{lbl}-train".format(
         func=bor.func.__name__, thr=bor.best_value, lbl=args.label)
@@ -303,11 +326,17 @@ def run(args):
 
         wl = bor.construct_wordlist(wl)
         bor.predict_on_wordlist(wl)
-        args.log.info("Evaluation:" + str(evaluate_borrowings_fs(
-            wl,
-            "source_language",
-            bor.known_donor,
-            bor.donors)))
+
+        # Just to remind us after so many cluster messages.
+        args.log.info("Trained with donors {d}, function {func}".
+                      format(d=bor.donors, func=bor.func.__name__))
+        args.log.info("Best: threshold {thr:.2f}, F1 score {f1:.3f}".
+                      format(thr=bor.best_value, f1=bor.best_score))
+        test_f1 = evaluate_borrowings_fs(wl, "source_language",
+                                         bor.known_donor, bor.donors)
+        args.log.info("Test: threshold {thr:.2f}, F1 score {f1:.3f}".
+                      format(thr=bor.best_value, f1=test_f1))
+
         full_name = "CM-sp-predict-{func}-{thr:.2f}-{lbl}-test".format(
             func=bor.func.__name__, thr=bor.best_value, lbl=args.label)
         file_path = our_path("store", full_name)

@@ -192,69 +192,177 @@ def register(parser):
     parser.add_argument(
         "--method",
         type=str,
-        default="cmsca",
-        choices=['cmsca', 'cmned', 'cbsca',
-                 'clsvcfull', 'clsvclean', 'clsvcfast'],
+        default="cm_sca",
+        choices=['cm_sca', 'cm_ned', 'cm_sca_ov', 'cm_sca_lo',
+                 'cb_sca', 'cb_ned', 'cb_lex',
+                 'cb_sca_lo', 'cb_sca_ov', 'cb_lex_lo', 'cb_lex_ov',
+                 'cl_full', 'cl_lean',
+                 'cl_fast', 'cl_simple',
+                 'cl_ned', 'cl_sca',
+                 'cl_simplest', 'cl_all_funcs'],
         help="Code for borrowing detection method."
     )
 
 
 def run(args):
-    cmsca = partial(closest_match_constructor,
-                    func=sca_distance,
-                    donors=args.donor)
+    cm_sca_gl = partial(closest_match_constructor,
+                        func=closest.sca_gl,
+                        donors=args.donor)
+    cm_sca_ov = partial(closest_match_constructor,
+                        func=closest.sca_ov,
+                        donors=args.donor)
+    cm_sca_lo = partial(closest_match_constructor,
+                        func=closest.sca_lo,
+                        donors=args.donor)
 
-    cmned = partial(closest_match_constructor,
-                    func=edit_distance,
-                    donors=args.donor)
+    cm_ned = partial(closest_match_constructor,
+                     func=closest.ned,
+                     donors=args.donor)
 
-    cbsca = partial(cognate_based_constructor,
-                    func=cognate.cbds_sca,
-                    donors=args.donor,
-                    runs=None)
-    cbsca.keywords['func'].__name__ = 'cognate_based_cognate_sca'
+    cb_sca_gl = partial(cognate_based_constructor,
+                        func=cognate.cb_sca_gl,
+                        donors=args.donor)
+    cb_sca_gl.keywords['func'].__name__ = \
+        'cognate_based_cognate_sca_global'
 
-    clsvcfull = partial(
+    cb_sca_ov = partial(cognate_based_constructor,
+                        func=cognate.cb_sca_ov,
+                        donors=args.donor)
+    cb_sca_ov.keywords['func'].__name__ = \
+        'cognate_based_cognate_sca_overlap'
+
+    cb_sca_lo = partial(cognate_based_constructor,
+                        func=cognate.cb_sca_lo,
+                        donors=args.donor)
+    cb_sca_lo.keywords['func'].__name__ = \
+        'cognate_based_cognate_sca_local'
+
+    cb_ned = partial(cognate_based_constructor,
+                     func=cognate.cb_ned,
+                     donors=args.donor)
+    cb_ned.keywords['func'].__name__ = \
+        'cognate_based_cognate_ned'
+
+    cb_lex_gl = partial(cognate_based_constructor,
+                        func=cognate.cb_lex_gl,
+                        donors=args.donor,
+                        lexstat=True,
+                        runs=5000)
+    cb_lex_gl.keywords['func'].__name__ = \
+        'cognate_based_cognate_lex_global'
+
+    cb_lex_ov = partial(cognate_based_constructor,
+                        func=cognate.cb_lex_ov,
+                        donors=args.donor,
+                        lexstat=True,
+                        runs=5000)
+    cb_lex_ov.keywords['func'].__name__ = \
+        'cognate_based_cognate_lex_overlap'
+
+    cb_lex_lo = partial(cognate_based_constructor,
+                        func=cognate.cb_lex_lo,
+                        donors=args.donor,
+                        lexstat=True,
+                        runs=5000)
+    cb_lex_lo.keywords['func'].__name__ = \
+        'cognate_based_cognate_lex_local'
+
+    cl_full = partial(
         classifier_based_constructor,
         clf=SVC(kernel="linear"),
         func=lambda x: x,  # Artificial argument for name.
-        funcs=[classifier.clf_sca, classifier.clf_ned],
-        meths=["SCA", "LEX"],
+        funcs=[classifier.clf_sca_gl, classifier.clf_ned],
+        meths=["sca", "lex"],
         props=None,
         props_tar=None,
         donors=args.donor)
-    clsvcfull.keywords['func'].__name__ = \
-        'classifier_based_SVM_linear_full'
+    cl_full.keywords['func'].__name__ = \
+        'classifier_based_linear_svm_full'
 
-    clsvclean = partial(
-        classifier_based_constructor,
-        clf=SVC(kernel="linear"),
-        func=lambda x: x,  # Artificial argument for name.
-        funcs=[classifier.clf_sca],
-        meths=["LEX"],
-        props=None,
-        props_tar=None,
-        donors=args.donor)
-    clsvclean.keywords['func'].__name__ = \
-        'classifier_based_SVM_linear_lean'
-
-    clsvcfast = partial(
+    cl_fast = partial(
         classifier_based_constructor,
         clf=SVC(kernel="linear"),
         func=lambda x: x,  # Artificial argument for name.
         funcs=[classifier.clf_ned],
-        meths=["SCA"],
+        meths=["sca"],
         props=None,
         props_tar=None,
         donors=args.donor)
-    clsvcfast.keywords['func'].__name__ = \
-        'classifier_based_SVM_linear_fast'
+    cl_fast.keywords['func'].__name__ = \
+        'classifier_based_linear_svm_fast'
 
-    methods = {'cmsca': cmsca, 'cmned': cmned,
-               'cbsca': cbsca,
-               'clsvcfull': clsvcfull,
-               'clsvclean': clsvclean,
-               'clsvcfast': clsvcfast}
+    cl_simple = partial(
+        classifier_based_constructor,
+        clf=SVC(kernel="linear"),
+        func=lambda x: x,  # Artificial argument for name.
+        funcs=[classifier.clf_ned, classifier.clf_sca_gl],
+        meths=None,
+        props=None,
+        props_tar=None,
+        donors=args.donor)
+    cl_simple.keywords['func'].__name__ = \
+        'classifier_based_linear_svm_simple'
+
+    cl_ned = partial(
+        classifier_based_constructor,
+        clf=SVC(kernel="linear"),
+        func=lambda x: x,  # Artificial argument for name.
+        funcs=[classifier.clf_ned],
+        meths=None,
+        props=None,
+        props_tar=None,
+        donors=args.donor)
+    cl_ned.keywords['func'].__name__ = \
+        'classifier_based_linear_svm_ned'
+
+    cl_sca = partial(
+        classifier_based_constructor,
+        clf=SVC(kernel="linear"),
+        func=lambda x: x,  # Artificial argument for name.
+        funcs=[classifier.clf_sca_gl],
+        meths=None,
+        props=None,
+        props_tar=None,
+        donors=args.donor)
+    cl_sca.keywords['func'].__name__ = \
+        'classifier_based_linear_svm_sca'
+
+    cl_no_props = partial(
+        classifier_based_constructor,
+        clf=SVC(kernel="linear"),
+        func=lambda x: x,  # Artificial argument for name.
+        funcs=[classifier.clf_ned, classifier.clf_sca_gl],
+        meths=None,
+        props=[],
+        props_tar=[],
+        donors=args.donor)
+    cl_no_props.keywords['func'].__name__ = \
+        'classifier_based_linear_svm_no_properties'
+
+    cl_all_funcs = partial(
+        classifier_based_constructor,
+        clf=SVC(kernel="linear"),
+        func=lambda x: x,  # Artificial argument for name.
+        funcs=[classifier.clf_ned, classifier.clf_sca_gl,
+               classifier.clf_sca_lo, classifier.clf_sca_ov],
+        meths=None,
+        props=None,
+        props_tar=None,
+        donors=args.donor)
+    cl_all_funcs.keywords['func'].__name__ = \
+        'classifier_based_linear_svm_all_functions'
+
+    methods = {'cm_sca': cm_sca_gl, 'cm_ned': cm_ned,
+               'cm_sca_ov': cm_sca_ov, 'cm_sca_lo': cm_sca_lo,
+               'cb_sca': cb_sca_gl, 'cb_ned': cb_ned, 'cb_lex': cb_lex_gl,
+               'cb_sca_ov': cb_sca_ov, 'cb_lex_ov': cb_lex_ov,
+               'cb_sca_lo': cb_sca_lo, 'cb_lex_lo': cb_lex_lo,
+
+               'cl_full': cl_full, 'cl_fast': cl_fast,
+               'cl_simple': cl_simple,
+               'cl_ned': cl_ned, 'cl_sca': cl_sca,
+               'cl_no_props': cl_no_props,
+               'cl_all_funcs': cl_all_funcs}
 
     constructor = methods[args.method]
     func_name = constructor.keywords['func'].__name__
