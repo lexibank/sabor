@@ -185,17 +185,47 @@ def get_wl_borrowings(wl, donors, family, donor_id, donor_lng, bor_id):
     # Set donor languages and donor indices for this threshold.
 
 
-cbds_sca = partial(cognate_based_donor_search,
-                   method='sca',
-                   mode='global',
-                   cluster_method='upgma')
-cbds_sca.__name__ = 'cognate_based_cognate_sca'
+cb_ned = partial(cognate_based_donor_search,
+                 method='edit-dist',
+                 mode='global',
+                 cluster_method='upgma')
+cb_ned.__name__ = 'cognate_based_cognate_ned'
 
-cbds_lex = partial(cognate_based_donor_search,
-                   method='lexstat',
-                   mode='overlap',
-                   cluster_method='upgma')
-cbds_lex.__name__ = 'cognate_based_cognate_lex'
+cb_sca_gl = partial(cognate_based_donor_search,
+                    method='sca',
+                    mode='global',
+                    cluster_method='upgma')
+cb_sca_gl.__name__ = 'cognate_based_cognate_sca_global'
+
+cb_sca_ov = partial(cognate_based_donor_search,
+                    method='sca',
+                    mode='overlap',
+                    cluster_method='upgma')
+cb_sca_ov.__name__ = 'cognate_based_cognate_sca_overlap'
+
+cb_sca_lo = partial(cognate_based_donor_search,
+                    method='sca',
+                    mode='local',
+                    cluster_method='upgma')
+cb_sca_lo.__name__ = 'cognate_based_cognate_sca_local'
+
+cb_lex_gl = partial(cognate_based_donor_search,
+                    method='lexstat',
+                    mode='global',
+                    cluster_method='upgma')
+cb_lex_gl.__name__ = 'cognate_based_cognate_lex_global'
+
+cb_lex_ov = partial(cognate_based_donor_search,
+                    method='lexstat',
+                    mode='overlap',
+                    cluster_method='upgma')
+cb_lex_ov.__name__ = 'cognate_based_cognate_lex_overlap'
+
+cb_lex_lo = partial(cognate_based_donor_search,
+                    method='lexstat',
+                    mode='local',
+                    cluster_method='upgma')
+cb_lex_lo.__name__ = 'cognate_based_cognate_lex_lo'
 
 
 # Early version of init just for cognate based.
@@ -210,7 +240,7 @@ class CognateBasedBorrowingDetection(LexStat):
             family="language_family",
             segments="tokens",
             ipa="form",
-            runs=10000,
+            runs=None,
             lexstat=False,
             donor_lng="source_language",
             donor_id="source_id",
@@ -233,7 +263,7 @@ class CognateBasedBorrowingDetection(LexStat):
             self.get_scorer(runs=runs)
 
         self.runs = runs
-        self.func = func or cbds_sca
+        self.func = func or cb_sca_gl
         self.donors = [donors] if isinstance(donors, str) else donors
         # Define wordlist field names.
         self.family = family
@@ -314,7 +344,7 @@ class CognateBasedBorrowingDetection(LexStat):
         :param thresholds:
         :param verbose:
         """
-        thresholds = thresholds or [i*0.1 for i in range(1, 10)]
+        thresholds = thresholds or [round(i*0.1, 3) for i in range(1, 10)]
 
         best_idx, best_t, best_fs = 0, 0.0, 0.0
         results = []
@@ -376,17 +406,19 @@ class CognateBasedBorrowingDetection(LexStat):
         :param verbose:
         """
 
-        # if not hasattr(self, "bscorer"):
-        #     wordlist.get_scorer(runs=self.runs)
+        if self.lexstat:
+            wordlist.bscorer = self.bscorer
+            wordlist.cscorer = self.cscorer
 
-        cognate_based_donor_search(
-            wl=wordlist,
+        self.func(
+            wordlist,
             donors=self.donors,
             family=self.family,
             donor_lng=self.donor_lng,
             donor_id=self.donor_id,
             threshold=self.best_value
         )
+
         if verbose: print("evaluation at threshold", self.best_value)
 
 
@@ -400,7 +432,17 @@ class MultiThreshold(CognateBasedBorrowingDetection):
 
 
 def register(parser):
-    # Only use SCA for this generation.
+    parser.add_argument(
+        "--method",
+        type=str,
+        default="sca",
+        choices=["sca", "sca_ov", "sca_lo",
+                 "ned",
+                 "lex", "lex_ov", "lex_lo"],
+        help="select sound correspondence alignment (sca), "
+             "Needleman edit distance (ned), or lexstat (lex) "
+             "with global, overlap (ov), local (lo) mode."
+        )
     parser.add_argument(
         "--threshold",
         default=[round(i*0.1, 3) for i in range(1, 10)],
@@ -433,11 +475,6 @@ def register(parser):
         help="Donor languages for focused analysis."
     )
     parser.add_argument(
-        "--lexstat",
-        action="store_true",
-        help="Use LexStat scorer."
-    )
-    parser.add_argument(
         "--label",
         type=str,
         default='',
@@ -446,6 +483,10 @@ def register(parser):
 
 
 def run(args):
+    function = {'sca': cb_sca_gl, 'sca_ov': cb_sca_ov, 'sca_lo': cb_sca_lo,
+                'ned': cb_ned,
+                'lex': cb_lex_gl, 'lex_ov': cb_lex_ov, 'lex_lo': cb_lex_lo}
+
     if args.file:
         wl = Wordlist(args.file)
         args.log.info("Construct cognate from {fl}.".format(fl=args.file))
@@ -458,10 +499,13 @@ def run(args):
         wl = subset_wl(wl, args.language)
         args.log.info("Subset of languages: {}".format(args.language))
 
-    func = cbds_lex if args.lexstat else cbds_sca
-    lexstat = True if args.lexstat else False
+    func = function[args.method]
+    lexstat = True if args.method.startswith('lex') else False
+    runs = 5000 if lexstat else None
+
     bor = CognateBasedBorrowingDetection(wl, func=func,
                                          lexstat=lexstat,
+                                         runs=runs,
                                          donors=args.donor,
                                          family="language_family")
 
@@ -471,7 +515,7 @@ def run(args):
     args.log.info("Best: threshold {thr:.2f}, F1 score {f1:.3f}".
                   format(thr=bor.best_value, f1=bor.best_score))
 
-    args.log.info("Predict with  threshold {t}.".format(t=bor.best_value))
+    # args.log.info("Predict with  threshold {t}.".format(t=bor.best_value))
     bor.predict_on_wordlist(bor)
     full_name = "CB-sp-predict-{func}-{thr:.2f}-{lbl}-train".format(
         func=bor.func.__name__, thr=bor.best_value, lbl=args.label)
@@ -492,11 +536,17 @@ def run(args):
 
         wl = bor.construct_wordlist(wl)
         bor.predict_on_wordlist(wl)
-        args.log.info("Evaluation:" + str(evaluate_borrowings_fs(
-            wl,
-            "source_language",
-            bor.known_donor,
-            bor.donors)))
+
+        # Just to remind us after so many cluster messages.
+        args.log.info("Trained with donors {d}, function {func}".
+                      format(d=bor.donors, func=bor.func.__name__))
+        args.log.info("Best: threshold {thr:.2f}, F1 score {f1:.3f}".
+                      format(thr=bor.best_value, f1=bor.best_score))
+        test_f1 = evaluate_borrowings_fs(wl, "source_language",
+                                         bor.known_donor, bor.donors)
+        args.log.info("Test: threshold {thr:.2f}, F1 score {f1:.3f}".
+                      format(thr=bor.best_value, f1=test_f1))
+
         full_name = "CB-sp-predict-{func}-{thr:.2f}-{lbl}-test".format(
             func=bor.func.__name__, thr=bor.best_value, lbl=args.label)
         file_path = our_path("store", full_name)

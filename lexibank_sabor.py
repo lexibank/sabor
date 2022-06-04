@@ -21,7 +21,6 @@ class CustomLanguage(Language):
     Borrowing_Class = attr.ib(default=None)
 
 
-
 @attr.s
 class CustomLexeme(Lexeme):
     Value_in_Source = attr.ib(default=None)
@@ -199,7 +198,7 @@ def sca_distance(seqA, seqB, **kw):
     return pair.alignments[0][-1]
 
 
-def edit_distance(seqA, seqB, **kw):
+def edit_distance(seqA, seqB):
     """
     Shortcut normalized edit distance.
     """

@@ -19,7 +19,8 @@ def distance_by_idx(idxA, idxB, wordlist, distance=None, **kw):
             **kw)
 
 
-clf_sca = partial(
+# predefined functions
+clf_sca_gl = partial(
         distance_by_idx,
         distance=sca_distance,
         mode='global')
@@ -74,7 +75,7 @@ class ClassifierBasedBorrowingDetection(LexStat):
         LexStat.__init__(self, infile, ipa=ipa, segments=segments, **kw)
         self.clf = clf or SVC(kernel="linear")
         # Default is linear kernel SVC. Other kernels are rbf, poly, sigmoid.
-        self.funcs = funcs or [clf_sca, clf_ned]
+        self.funcs = funcs or [clf_sca_gl, clf_ned]
         # Funcs involve both donor and target.
 
         # Prop args: x is the entry index, y is the wordlist reference.
@@ -96,25 +97,48 @@ class ClassifierBasedBorrowingDetection(LexStat):
 
         self.best_score = 0
 
-        # self.meths = [meths] if isinstance(meths, str) else meths
         self.meths = meths or []
-        method = {"LEX": self.clf_lex, "SCA": self.clf_sca}
+        method = {"lex": self.clf_lex_gl, "sca": self.clf_sca_gl,
+                  "lex_ov": self.clf_lex_ov, "sca_ov": self.clf_sca_ov,
+                  "lex_lo": self.clf_lex_lo, "sca_lo": self.clf_sca_lo}
         self.obj_meths = [method[name] for name in self.meths]
 
-        if "LEX" in self.meths:
-            self.get_scorer(runs=5000, threshold=0.5)
+        if any(meth.startswith('lex') for meth in self.meths):
+            self.get_scorer(runs=5000)
 
-    clf_sca = partialmethod(LexStat.align_pairs,
-                            method='sca',
-                            mode='overlap',
-                            return_distance=True,
-                            pprint=False)
+    clf_sca_gl = partialmethod(LexStat.align_pairs,
+                               method='sca',
+                               mode='global',
+                               return_distance=True,
+                               pprint=False)
 
-    clf_lex = partialmethod(LexStat.align_pairs,
-                            method='lexstat',
-                            mode='overlap',
-                            return_distance=True,
-                            pprint=False)
+    clf_lex_gl = partialmethod(LexStat.align_pairs,
+                               method='lexstat',
+                               mode='global',
+                               return_distance=True,
+                               pprint=False)
+    clf_sca_ov = partialmethod(LexStat.align_pairs,
+                               method='sca',
+                               mode='overlap',
+                               return_distance=True,
+                               pprint=False)
+
+    clf_lex_ov = partialmethod(LexStat.align_pairs,
+                               method='lexstat',
+                               mode='overlap',
+                               return_distance=True,
+                               pprint=False)
+    clf_sca_lo = partialmethod(LexStat.align_pairs,
+                               method='sca',
+                               mode='local',
+                               return_distance=True,
+                               pprint=False)
+
+    clf_lex_lo = partialmethod(LexStat.align_pairs,
+                               method='lexstat',
+                               mode='local',
+                               return_distance=True,
+                               pprint=False)
 
     def construct_wordlist(self, infile):
         """
@@ -229,15 +253,15 @@ def register(parser):
     parser.add_argument(
         "--function",
         nargs="*",
-        default=["SCA", "NED"],
-        choices=["SCA", "NED", "SCALO", "SCAOV"],
+        default=["sca", "ned"],
+        choices=["sca", "ned", "sca_lo", "sca_ov"],
         help="select similarity functions for use by classifier."
     )
     parser.add_argument(
         "--method",
         nargs="*",
-        default=None,  # ["SCA"],
-        choices=["SCA", "LEX"],
+        default=None,
+        choices=["sca", "lex", "sca_ov", "sca_lo", "lex_ov", "lex_lo"],
         help="select similarity methods for use by classifier."
     )
     parser.add_argument(
@@ -273,8 +297,8 @@ def register(parser):
 
 
 def run(args):
-    function = {"NED": clf_ned, "SCA": clf_sca,
-                "SCALO": clf_sca_lo, "SCAOV": clf_sca_ov}
+    function = {"ned": clf_ned, "sca": clf_sca_gl,
+                "sca_lo": clf_sca_lo, "sca_ov": clf_sca_ov}
 
     if args.file:
         wl = Wordlist(args.file)
@@ -297,14 +321,14 @@ def run(args):
     args.log.info("Trained with donors {d}, functions {func}, methods {m}".
                   format(d=bor.donors, func=args.function, m=args.method))
 
-    args.log.info("Predict")
+    # args.log.info("Predict")
     bor.predict_on_wordlist(bor)
-    args.log.info("Evaluation:" + str(evaluate_borrowings_fs(
-        bor,
-        "source_language",
-        bor.known_donor,
-        bor.donors)))
-    full_name = "CL-sp-predict-SVC_linear-{}-train".format(args.label)
+    test_f1 = evaluate_borrowings_fs(bor, "source_language",
+                                     bor.known_donor, bor.donors)
+    bor.best_score = test_f1
+    args.log.info("Train: F1 score {f1:.3f}".format(f1=bor.best_score))
+
+    full_name = "CL-sp-predict-linear_svm-{}-train".format(args.label)
     file_path = our_path("store", full_name)
     columns = [column for column in bor.columns
                if not column.startswith('bor_')]
@@ -321,11 +345,16 @@ def run(args):
 
         wl = bor.construct_wordlist(wl)
         bor.predict_on_wordlist(wl)
-        args.log.info("Evaluation:" + str(evaluate_borrowings_fs(
-            wl,
-            "source_language",
-            bor.known_donor,
-            bor.donors)))
-        full_name = "CL-sp-predict-SVC_linear-{}-test".format(args.label)
+
+        # Just to remind us after so many cluster messages.
+        args.log.info("Trained with donors {d}, functions {func}, methods {m}".
+                      format(d=bor.donors, func=args.function, m=args.method))
+        args.log.info("Train: F1 score {f1:.3f}".format(f1=bor.best_score))
+
+        test_f1 = evaluate_borrowings_fs(wl, "source_language",
+                                         bor.known_donor, bor.donors)
+        args.log.info("Test: F1 score {f1:.3f}".format(f1=test_f1))
+
+        full_name = "CL-sp-predict-linear_svm-{}-test".format(args.label)
         file_path = our_path("store", full_name)
         wl.output("tsv", filename=file_path, prettify=False, ignore="all")
