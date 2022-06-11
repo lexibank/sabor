@@ -123,11 +123,21 @@ class Dataset(BaseDataset):
             print("Added: name {name}, language {language}".format(
                 name=name, language=language.id))
             borrowed = sum(
-                    [1 for form in language.forms_with_sounds if borrowings.get(
-                        form.id[5:], [""])[0] == "Spanish"])
-            bp = borrowed / len(language.forms_with_sounds)
+                    [1 for form in language.forms_with_sounds
+                        if borrowings.get(form.id[5:], [""])[0] == "Spanish" and
+                        float(form.data["Borrowed_score"]) > BOR_CRITICAL_VALUE and
+                        form.concept and form.concept.concepticon_gloss in concepts])
+            forms_with_concepts = sum(
+                    [1 for form in language.forms_with_sounds
+                        if form.concept and form.concept.concepticon_gloss in concepts])
+            forms_no_concepts = sum(
+                    [1 for form in language.forms_with_sounds
+                        if not form.concept]
+            )
+
+            bp = borrowed / forms_with_concepts
             bval = "5%-10%" if bp < 0.1 else "10%-15%" if bp < 0.15 else \
-                    "15%-20%" if bp < 0.2 else "20%-25%" if bp < 0.25 else "25%-30%"
+                   "15%-20%" if bp < 0.2 else "20%-25%" if bp < 0.25 else "25%-30%"
             args.writer.add_language(
                     ID=language.id[5:],  # Drop the wold- prefix.
                     Name=language.name,
@@ -136,6 +146,13 @@ class Dataset(BaseDataset):
                     Longitude=language.longitude,
                     Spanish_Borrowings=bp,
                     Borrowing_Class=bval)
+            args.log.info("{lang} all forms {f}, forms with concepticon gloss concepts {fwc}, "
+                          "borrowed {b}, prop {p}; forms without any concept {fnc}".
+                          format(lang=language.name,
+                                 f=len(language.forms_with_sounds),
+                                 fwc=forms_with_concepts,
+                                 fnc=forms_no_concepts,
+                                 b=borrowed, p=bp))
             args.writer.add_language(
                     ID=language.id[5:],  # Drop the wold- prefix.
                     Name=language.name,
@@ -205,12 +222,11 @@ def edit_distance(seqA, seqB):
     return lingpy.edit_dist(seqA, seqB, normalized=True)
 
 
-def evaluate_borrowings_fs(wordlist, pred, gold, donors):
+def evaluate_borrowings_fs(wordlist, pred, gold, donors, fs='f1', beta=1.0):
     """
     Return F1-Score for the donor detection.
     """
-    fs = evaluate_borrowings(wordlist, pred, gold, donors)  # , donor_families, family)
-    return fs['f1']
+    return evaluate_borrowings(wordlist, pred, gold, donors, beta=beta)[fs]
 
 
 def evaluate_borrowings(wordlist, pred, gold, donors, beta=1.0):
