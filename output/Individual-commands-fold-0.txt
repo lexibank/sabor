@@ -1,0 +1,133 @@
+CLOSEST 
+
+cldfbench sabor.closest --file splits/CV10-fold-00-train.tsv --testfile splits/CV10-fold-00-test.tsv --function ned
+INFO    Construct closest from splits/CV10-fold-00-train.tsv.
+INFO    Trained with donors ['Spanish'], function edit_distance                                                          
+INFO    Best: threshold 0.65, F1 score 0.767
+2022-06-03 20:15:47,374 [INFO] Data has been written to file </Users/johnmiller/ling/sabor-installs/sabor/store/CM-sp-predict-edit_distance-0.65--train.tsv>.
+INFO    Test closest from splits/CV10-fold-00-test.tsv.
+INFO    Trained with donors ['Spanish'], function edit_distance                                                          
+INFO    Best: threshold 0.65, F1 score 0.767
+INFO    Test: threshold 0.65, F1 score 0.748
+2022-06-03 20:15:47,421 [INFO] Data has been written to file <store/CM-sp-predict-edit_distance-0.65--test.tsv>.
+
+
+
+cldfbench sabor.closest --file splits/CV10-fold-00-train.tsv --testfile splits/CV10-fold-00-test.tsv --function sca
+INFO    Construct closest from splits/CV10-fold-00-train.tsv.
+INFO    Trained with donors ['Spanish'], function closest_match_sca_global                                               
+INFO    Best: threshold 0.40, F1 score 0.790
+2022-06-03 20:18:23,941 [INFO] Data has been written to file </Users/johnmiller/ling/sabor-installs/sabor/store/CM-sp-predict-closest_match_sca_global-0.40--train.tsv>.
+INFO    Test closest from splits/CV10-fold-00-test.tsv.
+INFO    Trained with donors ['Spanish'], function closest_match_sca_global                                               
+INFO    Best: threshold 0.40, F1 score 0.790
+INFO    Test: threshold 0.40, F1 score 0.788
+2022-06-03 20:18:24,119 [INFO] Data has been written to file <store/CM-sp-predict-closest_match_sca_global-0.40--test.tsv>.
+
+cldfbench sabor.closest --file splits/CV10-fold-00-train.tsv --testfile splits/CV10-fold-00-test.tsv --function sca_ov                                    
+INFO    Construct closest from splits/CV10-fold-00-train.tsv.
+INFO    Trained with donors ['Spanish'], function closest_match_sca_overlap                                              
+INFO    Best: threshold 0.40, F1 score 0.789
+2022-06-03 20:19:30,097 [INFO] Data has been written to file </Users/johnmiller/ling/sabor-installs/sabor/store/CM-sp-predict-closest_match_sca_overlap-0.40--train.tsv>.
+INFO    Test closest from splits/CV10-fold-00-test.tsv.
+INFO    Trained with donors ['Spanish'], function closest_match_sca_overlap                                              
+INFO    Best: threshold 0.40, F1 score 0.789
+INFO    Test: threshold 0.40, F1 score 0.784
+2022-06-03 20:19:30,274 [INFO] Data has been written to file <store/CM-sp-predict-closest_match_sca_overlap-0.40--test.tsv>.
+
+
+
+cldfbench sabor.closest --file splits/CV10-fold-00-train.tsv --testfile splits/CV10-fold-00-test.tsv --function sca_lo
+INFO    Construct closest from splits/CV10-fold-00-train.tsv.
+INFO    Trained with donors ['Spanish'], function closest_match_sca_local                                                
+INFO    Best: threshold 0.40, F1 score 0.788
+2022-06-03 20:20:34,704 [INFO] Data has been written to file </Users/johnmiller/ling/sabor-installs/sabor/store/CM-sp-predict-closest_match_sca_local-0.40--train.tsv>.
+INFO    Test closest from splits/CV10-fold-00-test.tsv.
+INFO    Trained with donors ['Spanish'], function closest_match_sca_local                                                
+INFO    Best: threshold 0.40, F1 score 0.788
+INFO    Test: threshold 0.40, F1 score 0.781
+2022-06-03 20:20:34,883 [INFO] Data has been written to file <store/CM-sp-predict-closest_match_sca_local-0.40--test.tsv>.
+
+COGNATE
+
+cldfbench sabor.cognate --file splits/CV10-fold-00-train.tsv --testfile splits/CV10-fold-00-test.tsv --method ned
+INFO    Construct cognate from splits/CV10-fold-00-train.tsv.
+INFO    Trained with donors ['Spanish'], function cognate_based_cognate_ned                                              
+INFO    Best: threshold 0.66, F1 score 0.774
+INFO    Trained with donors ['Spanish'], function cognate_based_cognate_ned                                              
+INFO    Best: threshold 0.66, F1 score 0.774
+INFO    Test: threshold 0.66, F1 score 0.776
+2022-06-03 20:27:28,474 [INFO] Data has been written to file <store/CB-sp-predict-cognate_based_cognate_ned-0.66--test.tsv>.
+
+
+cldfbench sabor.cognate --file splits/CV10-fold-00-train.tsv --testfile splits/CV10-fold-00-test.tsv --method sca
+INFO    Construct cognate from splits/CV10-fold-00-train.tsv.
+INFO    Trained with donors ['Spanish'], function cognate_based_cognate_sca_global                                       
+INFO    Best: threshold 0.46, F1 score 0.786
+INFO    Test: threshold 0.46, F1 score 0.782
+2022-06-03 20:30:20,745 [INFO] Data has been written to file <store/CB-sp-predict-cognate_based_cognate_sca_global-0.46--test.tsv>.
+
+
+cldfbench sabor.cognate --file splits/CV10-fold-00-train.tsv --testfile splits/CV10-fold-00-test.tsv --method sca_ov
+INFO    Construct cognate from splits/CV10-fold-00-train.tsv.INFO    Trained with donors ['Spanish'], function cognate_based_cognate_sca_overlap                                      
+INFO    Best: threshold 0.42, F1 score 0.782
+INFO    Test: threshold 0.42, F1 score 0.783
+2022-06-03 20:32:09,149 [INFO] Data has been written to file <store/CB-sp-predict-cognate_based_cognate_sca_overlap-0.42--test.tsv>.
+
+
+cldfbench sabor.cognate --file splits/CV10-fold-00-train.tsv --testfile splits/CV10-fold-00-test.tsv --method sca_lo
+INFO    Construct cognate from splits/CV10-fold-00-train.tsv.INFO    Trained with donors ['Spanish'], function cognate_based_cognate_sca_local                                        
+INFO    Best: threshold 0.40, F1 score 0.783
+INFO    Test: threshold 0.40, F1 score 0.784
+2022-06-03 20:33:28,430 [INFO] Data has been written to file <store/CB-sp-predict-cognate_based_cognate_sca_local-0.40--test.tsv>.
+
+
+cldfbench sabor.cognate --file splits/CV10-fold-00-train.tsv --testfile splits/CV10-fold-00-test.tsv --method lex
+INFO    Construct cognate from splits/CV10-fold-00-train.tsv.
+INFO    Trained with donors ['Spanish'], function cognate_based_cognate_lex_global                                       
+INFO    Best: threshold 0.74, F1 score 0.808
+INFO    Test: threshold 0.74, F1 score 0.762
+2022-06-03 20:47:46,240 [INFO] Data has been written to file <store/CB-sp-predict-cognate_based_cognate_lex_global-0.74--test.tsv>.
+
+
+cldfbench sabor.cognate --file splits/CV10-fold-00-train.tsv --testfile splits/CV10-fold-00-test.tsv --method lex_ov
+INFO    Construct cognate from splits/CV10-fold-00-train.tsv.
+INFO    Trained with donors ['Spanish'], function cognate_based_cognate_lex_overlap                                      
+INFO    Best: threshold 0.70, F1 score 0.801
+INFO    Test: threshold 0.70, F1 score 0.821
+2022-06-03 20:50:23,454 [INFO] Data has been written to file <store/CB-sp-predict-cognate_based_cognate_lex_overlap-0.70--test.tsv>.
+
+
+cldfbench sabor.cognate --file splits/CV10-fold-00-train.tsv --testfile splits/CV10-fold-00-test.tsv --method lex_lo
+INFO    Construct cognate from splits/CV10-fold-00-train.tsv.
+INFO    Trained with donors ['Spanish'], function cognate_based_cognate_lex_lo                                           
+INFO    Best: threshold 0.68, F1 score 0.801
+INFO    Test: threshold 0.68, F1 score 0.810
+2022-06-03 20:52:44,152 [INFO] Data has been written to file <store/CB-sp-predict-cognate_based_cognate_lex_lo-0.68--test.tsv>.
+
+
+CLASSIFIER
+
+cldfbench sabor.classifier --file splits/CV10-fold-00-train.tsv --testfile splits/CV10-fold-00-test.tsv --function sca ned --method sca lex
+INFO    Construct classifier from splits/CV10-fold-00-train.tsv.
+
+INFO    Trained with donors ['Spanish'], functions ['sca', 'ned'], methods ['sca', 'lex']
+INFO    Train: F1 score 0.812
+INFO    Test: F1 score 0.804
+2022-06-03 21:12:25,632 [INFO] Data has been written to file <store/CL-sp-predict-linear_svm--test.tsv>.
+
+
+
+cldfbench sabor.classifier --file splits/CV10-fold-00-train.tsv --testfile splits/CV10-fold-00-test.tsv --function sca ned sca_ov sca_lo  
+INFO    Construct classifier from splits/CV10-fold-00-train.tsv.
+INFO    Trained with donors ['Spanish'], functions ['sca', 'ned', 'sca_ov', 'sca_lo'], methods None
+INFO    Train: F1 score 0.810
+2022-06-03 21:13:54,800 [INFO] Data has been written to file </Users/johnmiller/ling/sabor-installs/sabor/store/CL-sp-predict-linear_svm--train.tsv>.
+INFO    Test classifier from splits/CV10-fold-00-test.tsv.
+INFO    Trained with donors ['Spanish'], functions ['sca', 'ned', 'sca_ov', 'sca_lo'], methods None
+INFO    Train: F1 score 0.810
+INFO    Test: F1 score 0.798
+2022-06-03 21:13:55,541 [INFO] Data has been written to file <store/CL-sp-predict-linear_svm--test.tsv>.
+
+
+
