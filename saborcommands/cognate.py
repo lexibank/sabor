@@ -209,24 +209,6 @@ cb_sca_lo = partial(cognate_based_donor_search,
                     cluster_method='upgma')
 cb_sca_lo.__name__ = 'cognate_based_cognate_sca_local'
 
-cb_lex_gl = partial(cognate_based_donor_search,
-                    method='lexstat',
-                    mode='global',
-                    cluster_method='upgma')
-cb_lex_gl.__name__ = 'cognate_based_cognate_lex_global'
-
-cb_lex_ov = partial(cognate_based_donor_search,
-                    method='lexstat',
-                    mode='overlap',
-                    cluster_method='upgma')
-cb_lex_ov.__name__ = 'cognate_based_cognate_lex_overlap'
-
-cb_lex_lo = partial(cognate_based_donor_search,
-                    method='lexstat',
-                    mode='local',
-                    cluster_method='upgma')
-cb_lex_lo.__name__ = 'cognate_based_cognate_lex_lo'
-
 
 # Early version of init just for cognate based.
 # Subsequent could include the cognate based function as argument.
@@ -425,10 +407,11 @@ class CognateBasedBorrowingDetection(LexStat):
 class MultiThreshold(CognateBasedBorrowingDetection):
 
     def train(self, thresholds=None, verbose=False):
-        thresholds = [(i*0.1, j*0.1) for i in range(1, 10) for j in range(1, 10)]
-        best_idx, best_t, best_fs = 0, 0.0, 0.0
+        # thresholds = [(i*0.1, j*0.1) for i in range(1, 10) for j in range(1, 10)]
+        # best_idx, best_t, best_fs = 0, 0.0, 0.0
         # WE NEED TO EXTEND THIS LATER AND BREAK OUT STUFF FROM LINGREX TO WORK
         # WELL HERE
+        ...
 
 
 def register(parser):
@@ -436,12 +419,10 @@ def register(parser):
         "--method",
         type=str,
         default="sca",
-        choices=["sca", "sca_ov", "sca_lo",
-                 "ned",
-                 "lex", "lex_ov", "lex_lo"],
-        help="select sound correspondence alignment (sca), "
-             "Needleman edit distance (ned), or lexstat (lex) "
-             "with global, overlap (ov), local (lo) mode."
+        choices=["sca", "sca_ov", "sca_lo", "ned"],
+        help="select sound correspondence alignment (sca) "
+             "or Needleman edit distance (ned) "
+             "with global, overlap (ov), or local (lo) mode."
         )
     parser.add_argument(
         "--threshold",
@@ -483,9 +464,8 @@ def register(parser):
 
 
 def run(args):
-    function = {'sca': cb_sca_gl, 'sca_ov': cb_sca_ov, 'sca_lo': cb_sca_lo,
-                'ned': cb_ned,
-                'lex': cb_lex_gl, 'lex_ov': cb_lex_ov, 'lex_lo': cb_lex_lo}
+    function = {'sca': cb_sca_gl, 'sca_ov': cb_sca_ov,
+                'sca_lo': cb_sca_lo, 'ned': cb_ned}
 
     if args.file:
         wl = Wordlist(args.file)
@@ -500,8 +480,8 @@ def run(args):
         args.log.info("Subset of languages: {}".format(args.language))
 
     func = function[args.method]
-    lexstat = True if args.method.startswith('lex') else False
-    runs = 5000 if lexstat else None
+    lexstat = False
+    runs = None
 
     bor = CognateBasedBorrowingDetection(wl, func=func,
                                          lexstat=lexstat,
@@ -515,7 +495,6 @@ def run(args):
     args.log.info("Best: threshold {thr:.2f}, F1 score {f1:.3f}".
                   format(thr=bor.best_value, f1=bor.best_score))
 
-    # args.log.info("Predict with  threshold {t}.".format(t=bor.best_value))
     bor.predict_on_wordlist(bor)
     full_name = "CB-sp-predict-{func}-{thr:.2f}-{lbl}-train".format(
         func=bor.func.__name__, thr=bor.best_value, lbl=args.label)

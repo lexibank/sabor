@@ -51,6 +51,7 @@ def one_hot(idx, sz, value=1):
 def tar_one_hot(idx, wl, value=1):
     return one_hot(wl.cols.index(
         wl[idx, "doculect"]), len(wl.cols), value)
+    # return one_hot(int(wl[idx, 'langid'])-1, len(wl.cols), value)
 
 
 class ClassifierBasedBorrowingDetection(LexStat):
@@ -258,13 +259,6 @@ def register(parser):
         help="select similarity functions for use by classifier."
     )
     parser.add_argument(
-        "--method",
-        nargs="*",
-        default=None,
-        choices=["sca", "lex", "sca_ov", "sca_lo", "lex_ov", "lex_lo"],
-        help="select similarity methods for use by classifier."
-    )
-    parser.add_argument(
         "--file",
         default=None,  # e.g., "splits/CV10-fold-00-train.tsv"
         help="wordlist filename containing donor and target language tokens."
@@ -315,13 +309,12 @@ def run(args):
     functions = [function[key] for key in args.function]
     bor = ClassifierBasedBorrowingDetection(
         wl, donors=args.donor, clf=SVC(kernel="linear"),
-        funcs=functions, meths=args.method, family="language_family")
+        funcs=functions, family="language_family")
 
     bor.train(verbose=False, log=args.log)
-    args.log.info("Trained with donors {d}, functions {func}, methods {m}".
-                  format(d=bor.donors, func=args.function, m=args.method))
+    args.log.info("Trained with donors {d}, functions {func}".
+                  format(d=bor.donors, func=args.function))
 
-    # args.log.info("Predict")
     bor.predict_on_wordlist(bor)
     test_f1 = evaluate_borrowings_fs(bor, "source_language",
                                      bor.known_donor, bor.donors)
@@ -347,8 +340,8 @@ def run(args):
         bor.predict_on_wordlist(wl)
 
         # Just to remind us after so many cluster messages.
-        args.log.info("Trained with donors {d}, functions {func}, methods {m}".
-                      format(d=bor.donors, func=args.function, m=args.method))
+        args.log.info("Trained with donors {d}, functions {func}".
+                      format(d=bor.donors, func=args.function))
         args.log.info("Train: F1 score {f1:.3f}".format(f1=bor.best_score))
 
         test_f1 = evaluate_borrowings_fs(wl, "source_language",
