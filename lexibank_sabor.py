@@ -1,5 +1,4 @@
 import pathlib
-import collections
 
 import pycldf
 from pylexibank import Dataset as BaseDataset
@@ -153,12 +152,7 @@ class Dataset(BaseDataset):
                                  fwc=forms_with_concepts,
                                  fnc=forms_no_concepts,
                                  b=borrowed, p=bp))
-            args.writer.add_language(
-                    ID=language.id[5:],  # Drop the wold- prefix.
-                    Name=language.name,
-                    Glottocode=language.glottocode,
-                    Latitude=language.latitude,
-                    Longitude=language.longitude)
+
             for form in language.forms_with_sounds:
                 if form.concept and form.concept.concepticon_gloss in concepts:
                     args.writer.add_form_with_segments(

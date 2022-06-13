@@ -131,7 +131,6 @@ def evaluate_detection(wl,
         filename = filename.removesuffix('.tsv') + '-evaluate'
         wl.output("tsv", filename=filename, prettify=False, ignore="all")
 
-
     return summary  # Return summary for use in other app.
 
 
