@@ -145,8 +145,9 @@ class Dataset(BaseDataset):
                     Longitude=language.longitude,
                     Spanish_Borrowings=bp,
                     Borrowing_Class=bval)
-            args.log.info("{lang} all forms {f}, forms with concepticon gloss concepts {fwc}, "
-                          "borrowed {b}, prop {p}; forms without any concept {fnc}".
+
+            args.log.info("{lang}: forms {f}, with concepts {fwc}, "
+                          "borrowed {b}, proportion {p}".
                           format(lang=language.name,
                                  f=len(language.forms_with_sounds),
                                  fwc=forms_with_concepts,
@@ -162,7 +163,7 @@ class Dataset(BaseDataset):
                             # Original form had 5 point Likert type scale of borrowing likelihood.
                             Borrowed_Score=form.data["Borrowed_score"], 
                             # 0.0 not borrowed ~ 1.0 = borrowed
-                            Borrowed=float(form.data["Borrowed_score"]) > 0.90,
+                            Borrowed=float(form.data["Borrowed_score"]) > BOR_CRITICAL_VALUE,
                             Borrowed_Base=form.data["borrowed_base"],  
                             # This sometimes includes source word.
                             Value=form.value,
