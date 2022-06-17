@@ -20,7 +20,7 @@ setup(
             'sabor=lexibank_sabor:Dataset',
         ],
         'cldfbench.commands': [
-            'sabor=saborncommands',
+            'sabor=saborcommands',
         ],
     },
     platforms='any',
