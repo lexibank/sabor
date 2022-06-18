@@ -16,11 +16,8 @@ We use <cite>conda</cite> for managing virtual environments.
 Make sabor your working directory.  
 <code>% cd sabor</code>  
 
-Install <cite>cartopy</cite> first because it fails in pip install for some configurations.  
-<code>% conda install -c conda-forge cartopy</code>  
-
-Install requirements.  
-<code>% pip install -r requirements.txt</code>  
+Install sabor. Developer version (it doesn't get sabor commands otherwise.) 
+<code>% pip install -e .</code>  
 
 Install the datafiles for IDS and WOLD.  
 <code>% cldfbench download lexibank_sabor.py</code>
@@ -32,8 +29,6 @@ Check for access to commands.
 <code>% cldfbench --help  </code>  
 It should show the available sabor commands with prefix <code>sabor.</code>
 
-If not shown, then necessary to perform developer install of sabor.  
-<code>% pip install -e .</code>  
 
 2. [Optional] SPLIT DATA ===
 
