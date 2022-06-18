@@ -10,7 +10,6 @@
     Since the partition can be used over long term, this permits benchmarking various
     methods against the same train and test k-fold dataset.
 
-    John E. Miller, May 5, 2022
 """
 import tempfile
 from pathlib import Path
