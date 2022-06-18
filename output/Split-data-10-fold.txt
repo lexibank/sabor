@@ -1,0 +1,69 @@
+10-fold split, partition  0, test: 130 concepts, 1205 entries; train: 1178 concepts, 10895 entries
+10-fold split, partition  1, test: 131 concepts, 1208 entries; train: 1177 concepts, 10892 entries
+10-fold split, partition  2, test: 131 concepts, 1251 entries; train: 1177 concepts, 10849 entries
+10-fold split, partition  3, test: 131 concepts, 1207 entries; train: 1177 concepts, 10893 entries
+10-fold split, partition  4, test: 131 concepts, 1227 entries; train: 1177 concepts, 10873 entries
+10-fold split, partition  5, test: 130 concepts, 1169 entries; train: 1178 concepts, 10931 entries
+10-fold split, partition  6, test: 131 concepts, 1224 entries; train: 1177 concepts, 10876 entries
+10-fold split, partition  7, test: 131 concepts, 1156 entries; train: 1177 concepts, 10944 entries
+10-fold split, partition  8, test: 131 concepts, 1211 entries; train: 1177 concepts, 10889 entries
+10-fold split, partition  9, test: 131 concepts, 1242 entries; train: 1177 concepts, 10858 entries
+* Constructed 10 train-test splits *
+  k-fold    partition    # test concepts    # test entries    # train concepts    # train entries
+--------  -----------  -----------------  ----------------  ------------------  -----------------
+      10            0                130              1205                1178              10895
+      10            1                131              1208                1177              10892
+      10            2                131              1251                1177              10849
+      10            3                131              1207                1177              10893
+      10            4                131              1227                1177              10873
+      10            5                130              1169                1178              10931
+      10            6                131              1224                1177              10876
+      10            7                131              1156                1177              10944
+      10            8                131              1211                1177              10889
+      10            9                131              1242                1177              10858
+10-fold split, partition  0, test: 130 concepts, 1245 entries; train: 1178 concepts, 10855 entries
+10-fold split, partition  1, test: 131 concepts, 1186 entries; train: 1177 concepts, 10914 entries
+10-fold split, partition  2, test: 131 concepts, 1228 entries; train: 1177 concepts, 10872 entries
+10-fold split, partition  3, test: 131 concepts, 1205 entries; train: 1177 concepts, 10895 entries
+10-fold split, partition  4, test: 131 concepts, 1194 entries; train: 1177 concepts, 10906 entries
+10-fold split, partition  5, test: 130 concepts, 1195 entries; train: 1178 concepts, 10905 entries
+10-fold split, partition  6, test: 131 concepts, 1184 entries; train: 1177 concepts, 10916 entries
+10-fold split, partition  7, test: 131 concepts, 1222 entries; train: 1177 concepts, 10878 entries
+10-fold split, partition  8, test: 131 concepts, 1188 entries; train: 1177 concepts, 10912 entries
+10-fold split, partition  9, test: 131 concepts, 1253 entries; train: 1177 concepts, 10847 entries
+* Constructed 10 train-test splits *
+  k-fold    partition    # test concepts    # test entries    # train concepts    # train entries
+--------  -----------  -----------------  ----------------  ------------------  -----------------
+      10            0                130              1245                1178              10855
+      10            1                131              1186                1177              10914
+      10            2                131              1228                1177              10872
+      10            3                131              1205                1177              10895
+      10            4                131              1194                1177              10906
+      10            5                130              1195                1178              10905
+      10            6                131              1184                1177              10916
+      10            7                131              1222                1177              10878
+      10            8                131              1188                1177              10912
+      10            9                131              1253                1177              10847
+10-fold split, partition  0, test: 130 concepts, 1252 entries; train: 1178 concepts, 10848 entries
+10-fold split, partition  1, test: 131 concepts, 1237 entries; train: 1177 concepts, 10863 entries
+10-fold split, partition  2, test: 131 concepts, 1237 entries; train: 1177 concepts, 10863 entries
+10-fold split, partition  3, test: 131 concepts, 1237 entries; train: 1177 concepts, 10863 entries
+10-fold split, partition  4, test: 131 concepts, 1215 entries; train: 1177 concepts, 10885 entries
+10-fold split, partition  5, test: 130 concepts, 1153 entries; train: 1178 concepts, 10947 entries
+10-fold split, partition  6, test: 131 concepts, 1191 entries; train: 1177 concepts, 10909 entries
+10-fold split, partition  7, test: 131 concepts, 1264 entries; train: 1177 concepts, 10836 entries
+10-fold split, partition  8, test: 131 concepts, 1112 entries; train: 1177 concepts, 10988 entries
+10-fold split, partition  9, test: 131 concepts, 1202 entries; train: 1177 concepts, 10898 entries
+* Constructed 10 train-test splits *
+  k-fold    partition    # test concepts    # test entries    # train concepts    # train entries
+--------  -----------  -----------------  ----------------  ------------------  -----------------
+      10            0                130              1252                1178              10848
+      10            1                131              1237                1177              10863
+      10            2                131              1237                1177              10863
+      10            3                131              1237                1177              10863
+      10            4                131              1215                1177              10885
+      10            5                130              1153                1178              10947
+      10            6                131              1191                1177              10909
+      10            7                131              1264                1177              10836
+      10            8                131              1112                1177              10988
+      10            9                131              1202                1177              10898
