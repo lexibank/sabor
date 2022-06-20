@@ -16,7 +16,10 @@ We use <cite>conda</cite> for managing virtual environments.
 Make sabor your working directory.  
 <code>% cd sabor</code>  
 
-Install sabor. Developer version (it doesn't get sabor commands otherwise.)  
+Install requirements.
+<code>% pip install -r requirements.txt</code>  
+
+Install sabor. Developer version for commands access. 
 <code>% pip install -e .</code>  
 
 Install the datafiles for IDS and WOLD.  
