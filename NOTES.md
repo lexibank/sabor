@@ -6,8 +6,10 @@
 Create virtual environment.  
 We use <cite>conda</cite> for managing virtual environments.
 
-`% conda create -n testsabor python=3`  
-% conda activate testsabor</code>
+```
+% conda create -n testsabor python=3  
+% conda activate testsabor  
+```
 
 1. INSTALL SABOR ===
 - Copy zip file of sabor to local directory.
@@ -16,10 +18,10 @@ We use <cite>conda</cite> for managing virtual environments.
 Make sabor your working directory.  
 `% cd sabor`  
 
-Install requirements.
+Install requirements.  
 `% pip install -r requirements.txt`  
 
-Install sabor. Developer version for commands access. 
+Install sabor. Developer version for commands access.  
 `% pip install -e .`  
 
 Install the datafiles for IDS and WOLD.  
@@ -52,7 +54,7 @@ options:
   --test           Demonstrate loading of train-test datasets in sequence. (default: False)
 ```  
 
-Reproduce the 10-fold split from the paper, but store into a different folder. Save the output!  
+Perform the 10-fold split as in the paper, but store into a different folder. Save the output!  
 `% cldfbench sabor.splitdata --k 10 --folder splits-new >> output/Split-data-10-fold.txt`  
 
 
@@ -119,7 +121,8 @@ INFO    Best: threshold 0.46, F1 score 0.786
 ```  
 
 With edit distance function.  
-```% cldfbench sabor.cognate --method ned --label "All-data"  
+```
+% cldfbench sabor.cognate --method ned --label "All-data"  
 INFO    Trained with donors ['Spanish'], function cognate_based_cognate_ned                           
 INFO    Best: threshold 0.66, F1 score 0.774  
 [INFO] Data has been written to file  
@@ -147,7 +150,8 @@ Access to turn off 1-hot coding for language is not available from the command l
 
 Evaluate writes results to output as well as an evaluation wordlist to the store folder.  
 Here we redirect output to the output folder.  
-```% cldfbench sabor.evaluate --file store/CL-sp-predict-linear_svm-All-data-train.tsv >>  
+```
+% cldfbench sabor.evaluate --file store/CL-sp-predict-linear_svm-All-data-train.tsv >>  
 output/CL-evaluate-All-data-train.txt  
 [INFO] Data has been written to file <store/CL-sp-predict-linear_svm-All-data-train-evaluate.tsv>.  
 ```  
@@ -177,7 +181,8 @@ identified            1055              74     1129
 not identified         422            8779     9201
 total                 1477            8853    10330
 </pre>
-```[INFO] Data has been written to file  
+```
+[INFO] Data has been written to file  
 <store/CL-sp-predict-linear_svm-All-data-train-evaluate.tsv>.  
 ```  
 
@@ -209,7 +214,8 @@ Cognate based:
 Classifier:  
 Cl_simple includes both edit distance and SCA methods.  
 ```
-% cldfbench sabor.crossvalidate 10 --method cl_simple >> output/Classifier-cross-validate-10fold.txt  
+% cldfbench sabor.crossvalidate 10 --method cl_simple >>  
+output/Classifier-cross-validate-10fold.txt  
 INFO    10-fold cross-validation on splits directory using classifier_based_linear_svm_simple.   
 ```  
 
@@ -217,7 +223,8 @@ No_props drops the 1-hot encoding of recipient language for the same analysis.
 ```
 % cldfbench sabor.crossvalidate 10 --method cl_simple_no_props >>  
 output/Classifier-cross-validate-10fold.txt  
-INFO    10-fold cross-validation on splits directory using classifier_based_linear_svm_simple_no_props.  
+INFO    10-fold cross-validation on splits directory using  
+classifier_based_linear_svm_simple_no_props.  
 ```  
 
 
