@@ -6,6 +6,7 @@
 Create virtual environment.  
 We use <cite>conda</cite> for managing virtual environments.
 
+
 ```
 % conda create -n testsabor python=3  
 % conda activate testsabor  
@@ -35,6 +36,7 @@ Check for access to commands.
 It should show the available sabor commands with prefix `sabor`.  
 
 
+
 2. [Optional] SPLIT DATA ===
 
 Optionally run Splits to create train and test datasets for cross validation.
@@ -47,6 +49,7 @@ You can get help on the arguments for each command with the —help argument.
 `usage: cldfbench sabor.splitdata [-h] [--k K] [--folder FOLDER] [--test]`  
 ```
 Partition wordlists into k-fold train and test files for use in cross-validations.  
+
 options:  
   -h, --help       show this help message and exit  
   --k K            Partition factor k to use for cross-validation. (default: 10)  
@@ -56,6 +59,7 @@ options:
 
 Perform the 10-fold split as in the paper, but store into a different folder. Save the output!  
 `% cldfbench sabor.splitdata --k 10 --folder splits-new >> output/Split-data-10-fold.txt`  
+
 
 
 3. PERFORM CLOSEST MATCH BORROWING DETECTION ===
@@ -78,6 +82,7 @@ Analyze train dataset and infer to test dataset for closest match using SCA alig
 --file splits/CV10-fold-00-train.tsv --testfile splits/CV10-fold-00-test.tsv  
 INFO    Construct closest from splits/CV10-fold-00-train.tsv.  
 INFO    Trained with donors ['Spanish'], function closest_match_sca_global  
+
 INFO    Best: threshold 0.40, F1 score 0.790  
 [INFO] Data has been written to file </store/CM-sp-predict-closest_match_sca_global-0.40-Fold-00-data-train.tsv>.  
 INFO    Test closest from splits/CV10-fold-00-test.tsv.  
@@ -128,7 +133,6 @@ INFO    Best: threshold 0.66, F1 score 0.774
 [INFO] Data has been written to file  
 </sabor/store/CB-sp-predict-cognate_based_cognate_ned-0.66-All-data-train.tsv>  
 ```  
-
 
 5. PERFORM CLASSIFIER BASED BORROWING DETECTION ===
 
@@ -226,5 +230,3 @@ output/Classifier-cross-validate-10fold.txt
 INFO    10-fold cross-validation on splits directory using  
 classifier_based_linear_svm_simple_no_props.  
 ```  
-
-
