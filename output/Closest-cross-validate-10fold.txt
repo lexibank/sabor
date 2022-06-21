@@ -1,14 +1,3 @@
-folds: 
-0  
-1  
-2  
-3  
-4  
-5  
-6  
-7  
-8  
-9  
 
 10-fold cross-validation on splits directory using closest_match_sca_global.
   fn    fp     tn     tp    precision    recall     f1     fb    accuracy    threshold  fold
@@ -25,17 +14,7 @@ folds:
 40.0  14.0  881.0  143.0        0.911     0.781  0.841  0.841       0.950         0.40  9
 41.2  15.6  869.7  106.5        0.869     0.720  0.787  0.787       0.945         0.40  mean
  9.3   2.8   43.3   21.5        0.032     0.041  0.033  0.033       0.010         0.00  stdev
-folds: 
-0  
-1  
-2  
-3  
-4  
-5  
-6  
-7  
-8  
-9  
+
 
 10-fold cross-validation on splits directory using edit_distance.
   fn    fp     tn     tp    precision    recall     f1     fb    accuracy    threshold  fold
