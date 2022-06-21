@@ -1,0 +1,19 @@
+
+Detection results for: store/CL-sp-predict-linear_svm-All-data-train.tsv.
+Language             tp    tn    fp    fn    precision    recall    F1 score    accuracy
+-----------------  ----  ----  ----  ----  -----------  --------  ----------  ----------
+Yaqui               242  1106    16    69        0.938     0.778       0.851       0.941
+Qeqchi               99  1605     7    62        0.934     0.615       0.742       0.961
+Mapudungun          136  1044     8    54        0.944     0.716       0.814       0.950
+Otomi               137  2033    10    61        0.932     0.692       0.794       0.968
+ImbaburaQuechua     232   836    20    68        0.921     0.773       0.841       0.924
+ZinacantanTzotzil   109  1093     8    56        0.932     0.661       0.773       0.949
+Wichi               100  1062     5    52        0.952     0.658       0.778       0.953
+Overall            1055  8779    74   422        0.934     0.714       0.810       0.952
+
+Overall detection results for: store/CL-sp-predict-linear_svm-All-data-train.tsv
+                  borrowed    not borrowed    total
+--------------  ----------  --------------  -------
+identified            1055              74     1129
+not identified         422            8779     9201
+total                 1477            8853    10330

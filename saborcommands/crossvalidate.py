@@ -6,7 +6,6 @@ of train and test files.
 Return only overall statistics for each partition, and report
 table of statistics along with means and standard deviations.
 
-John E. Miller, May 18, 2022
 """
 
 from functools import partial
