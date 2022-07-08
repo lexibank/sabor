@@ -10,6 +10,7 @@ from lexibank_sabor import (
 from sklearn.svm import SVC
 from functools import partial, partialmethod
 import collections
+from saborcommands import least
 
 
 def distance_by_idx(idxA, idxB, wordlist, distance=None, **kw):
@@ -99,47 +100,13 @@ class ClassifierBasedBorrowingDetection(LexStat):
         self.best_score = 0
 
         self.meths = meths or []
-        method = {"lex": self.clf_lex_gl, "sca": self.clf_sca_gl,
-                  "lex_ov": self.clf_lex_ov, "sca_ov": self.clf_sca_ov,
-                  "lex_lo": self.clf_lex_lo, "sca_lo": self.clf_sca_lo}
-        self.obj_meths = [method[name] for name in self.meths]
-
-        if any(meth.startswith('lex') for meth in self.meths):
-            self.get_scorer(runs=5000)
-
-    clf_sca_gl = partialmethod(LexStat.align_pairs,
-                               method='sca',
-                               mode='global',
-                               return_distance=True,
-                               pprint=False)
-
-    clf_lex_gl = partialmethod(LexStat.align_pairs,
-                               method='lexstat',
-                               mode='global',
-                               return_distance=True,
-                               pprint=False)
-    clf_sca_ov = partialmethod(LexStat.align_pairs,
-                               method='sca',
-                               mode='overlap',
-                               return_distance=True,
-                               pprint=False)
-
-    clf_lex_ov = partialmethod(LexStat.align_pairs,
-                               method='lexstat',
-                               mode='overlap',
-                               return_distance=True,
-                               pprint=False)
-    clf_sca_lo = partialmethod(LexStat.align_pairs,
-                               method='sca',
-                               mode='local',
-                               return_distance=True,
-                               pprint=False)
-
-    clf_lex_lo = partialmethod(LexStat.align_pairs,
-                               method='lexstat',
-                               mode='local',
-                               return_distance=True,
-                               pprint=False)
+        self.obj_meths = []
+        for name in self.meths:
+            self.obj_meths.append(least.CrossEntropyModel(
+                self, self.donors,
+                approach=name,
+                segments=self.segments,
+                known_donor=self.known_donor))
 
     def construct_wordlist(self, infile):
         """
@@ -165,6 +132,10 @@ class ClassifierBasedBorrowingDetection(LexStat):
         """
         Train the classifier.
         """
+
+        # Train cross_entropy methods before use a methods.
+        for ce_method in self.obj_meths:
+            ce_method.train_markov_word_model(verbose=verbose)
 
         # set up all pairs for the training procedure
         dt, pairs, result = {}, [], []
@@ -215,8 +186,8 @@ class ClassifierBasedBorrowingDetection(LexStat):
             row += self.wrap_list(prop(idx_tar, wl))
         for func in self.funcs:
             row += [func(idx_don, idx_tar, wl)]
-        for meth in wl.obj_meths:
-            row += [meth(idx_don, idx_tar)]
+        for meth in self.obj_meths:  # Only takes target into account.
+            row += meth.calculate_word_cross_entropies(idx_tar, wl)
         return row
 
     def predict(self, donors, targets, wordlist):
@@ -257,6 +228,13 @@ def register(parser):
         default=["sca", "ned"],
         choices=["sca", "ned", "sca_lo", "sca_ov"],
         help="select similarity functions for use by classifier."
+    )
+    parser.add_argument(
+        "--method",
+        nargs="*",
+        default=None,
+        choices=['borrowed', 'dominant'],
+        help="select cross-entropy methods for use by classifier."
     )
     parser.add_argument(
         "--file",
@@ -309,12 +287,13 @@ def run(args):
     functions = [function[key] for key in args.function]
     bor = ClassifierBasedBorrowingDetection(
         wl, donors=args.donor, clf=SVC(kernel="linear"),
-        funcs=functions, family="language_family")
+        funcs=functions, meths=args.method, family="language_family")
 
     bor.train(verbose=False, log=args.log)
-    args.log.info("Trained with donors {d}, functions {func}".
-                  format(d=bor.donors, func=args.function))
-
+    # args.log.info("Trained with donors {d}, functions {func}".
+    #               format(d=bor.donors, func=args.function))
+    args.log.info("Trained with donors {d}, functions {func}, methods {m}".
+                  format(d=bor.donors, func=args.function, m=args.method))
     bor.predict_on_wordlist(bor)
     test_f1 = evaluate_borrowings_fs(bor, "source_language",
                                      bor.known_donor, bor.donors)
@@ -338,11 +317,6 @@ def run(args):
 
         wl = bor.construct_wordlist(wl)
         bor.predict_on_wordlist(wl)
-
-        # Just to remind us after so many cluster messages.
-        args.log.info("Trained with donors {d}, functions {func}".
-                      format(d=bor.donors, func=args.function))
-        args.log.info("Train: F1 score {f1:.3f}".format(f1=bor.best_score))
 
         test_f1 = evaluate_borrowings_fs(wl, "source_language",
                                          bor.known_donor, bor.donors)

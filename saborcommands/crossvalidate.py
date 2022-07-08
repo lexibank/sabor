@@ -14,7 +14,7 @@ from tabulate import tabulate
 from sklearn.svm import SVC
 
 from lexibank_sabor import (our_path, evaluate_borrowings)
-from saborcommands import (closest, cognate, classifier)
+from saborcommands import (closest, cognate, classifier, least)
 
 
 # Constructors for use in cross-validation.
@@ -52,6 +52,25 @@ def cognate_based_constructor(infile,
         donors,
         func=func,
         family=family,
+        segments=segments,
+        known_donor=known_donor,
+        **kw
+    )
+
+
+# Constructor for least cross-entropy base method
+def least_cross_entropy_constructor(infile,
+                                    donors,
+                                    direction="forward",
+                                    approach="dominant",
+                                    segments="tokens",
+                                    known_donor="donor_language",
+                                    **kw):
+    return least.LeastCrossEntropy(
+        infile,
+        donors,
+        direction=direction,
+        approach=approach,
         segments=segments,
         known_donor=known_donor,
         **kw
@@ -140,10 +159,9 @@ def evaluate_k_fold(constructor, dir, k):
     cross_val = []
     print("folds: ")
     for fold in range(k):
-        results = evaluate_fold(
-            constructor, dir=dir, k=k, fold=fold)
-        print(fold, ' ')
+        results = evaluate_fold(constructor, dir=dir, k=k, fold=fold)
         results["fold"] = fold
+        print(results)
         cross_val.append(results)
     print()
     means = dict()
@@ -194,9 +212,12 @@ def register(parser):
         choices=['cm_sca', 'cm_ned', 'cm_sca_ov', 'cm_sca_lo',
                  'cb_sca', 'cb_ned',
                  'cb_sca_lo', 'cb_sca_ov',
+                 'lce_for', 'lce_back',
+                 'lce_for_bor', 'lce_back_bor,'
                  'cl_simple', 'cl_simple_no_props',
                  'cl_ned', 'cl_sca',
-                 'cl_all_funcs', 'cl_all_funcs_no_props'],
+                 'cl_all_funcs', 'cl_all_funcs_no_props',
+                 'cl_simple_ce', 'cl_simple_ce_both'],
         help="Code for borrowing detection method."
     )
 
@@ -239,6 +260,25 @@ def run(args):
                      donors=args.donor)
     cb_ned.keywords['func'].__name__ = \
         'cognate_based_cognate_ned'
+
+    lce_for = partial(least_cross_entropy_constructor,
+                      direction="forward",
+                      approach="dominant",
+                      donors=args.donor)
+
+    lce_back = partial(least_cross_entropy_constructor,
+                       direction="backward",
+                       approach="dominant",
+                       donors=args.donor)
+    lce_for_bor = partial(least_cross_entropy_constructor,
+                          direction="forward",
+                          approach="borrowed",
+                          donors=args.donor)
+
+    lce_back_bor = partial(least_cross_entropy_constructor,
+                           direction="backward",
+                           approach="borrowed",
+                            donors=args.donor)
 
     cl_simple = partial(
         classifier_based_constructor,
@@ -314,21 +354,51 @@ def run(args):
     cl_all_funcs_no_props.keywords['func'].__name__ = \
         'classifier_based_linear_svm_all_funcs_no_props'
 
+    cl_simple_ce = partial(
+        classifier_based_constructor,
+        clf=SVC(kernel="linear"),
+        func=lambda x: x,  # Artificial argument for name.
+        funcs=[classifier.clf_ned, classifier.clf_sca_gl],
+        meths=['dominant'],
+        props=None,
+        props_tar=None,
+        donors=args.donor)
+    cl_simple_ce.keywords['func'].__name__ = \
+        'classifier_based_linear_svm_simple+cross_entropy'
+
+    cl_simple_ce_both = partial(
+        classifier_based_constructor,
+        clf=SVC(kernel="linear"),
+        func=lambda x: x,  # Artificial argument for name.
+        funcs=[classifier.clf_ned, classifier.clf_sca_gl],
+        meths=['dominant', 'borrowed'],
+        props=None,
+        props_tar=None,
+        donors=args.donor)
+    cl_simple_ce_both.keywords['func'].__name__ = \
+        'classifier_based_linear_svm_simple+cross_entropy+both'
+
     methods = {'cm_sca': cm_sca_gl, 'cm_ned': cm_ned,
                'cm_sca_ov': cm_sca_ov, 'cm_sca_lo': cm_sca_lo,
                'cb_sca': cb_sca_gl, 'cb_ned': cb_ned,
                'cb_sca_ov': cb_sca_ov,
                'cb_sca_lo': cb_sca_lo,
-
+               'lce_for': lce_for, 'lce_back': lce_back,
+               'lce_for_bor': lce_for_bor, 'lce_back_bor': lce_back_bor,
                'cl_simple': cl_simple,
                'cl_ned': cl_ned, 'cl_sca': cl_sca,
                'cl_all_funcs': cl_all_funcs,
                'cl_simple_no_props': cl_simple_no_props,
-               'cl_all_funcs_no_props': cl_all_funcs_no_props
+               'cl_all_funcs_no_props': cl_all_funcs_no_props,
+               'cl_simple_ce': cl_simple_ce,
+               'cl_simple_ce_both': cl_simple_ce_both
                }
 
     constructor = methods[args.method]
-    func_name = constructor.keywords['func'].__name__
+    if fn := constructor.keywords.get('func'):
+        func_name = fn.__name__
+    else:
+        func_name = args.method
 
     if args.fold is not None:
         description = "Cross-validation fold {f} of {k}-folds " \
