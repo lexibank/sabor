@@ -14,8 +14,6 @@ from lexibank_sabor import (
 from functools import partial
 from numpy.polynomial import Polynomial
 from tabulate import tabulate
-import lingrex
-from lingrex import borrowing
 
 
 def form_lexstat(donors, targets, families):
@@ -46,60 +44,53 @@ def form_lexstat(donors, targets, families):
     return LexStat(wl)
 
 
-def multi_threshold_based_donor_search(
-        wl,
-        donors=None,
-        family="language_family",
-        donor_lng="source_language",
-        donor_id="source_id",
-        model='sca',
-        threshold=None,
-        int_threshold=None,
-        mode="overlap",
-        cluster_method="upgma",
-        ):
-    """
-    Perform two threshold clustering on wl configured according to arguments.
+class CognateBasedBorrowing(LexStat):
+    def __init__(
+            self,
+            infile,
+            # family="language_family",
+            segments="tokens",
+            ipa="form",
+            thresholds=None,
+            **kw):
+        LexStat.__init__(self, infile, ipa=ipa, segments=segments, **kw)
+        self.bor_ids = []
+        self.thresholds = thresholds or [
+            round(0.3 + i * 0.1, 3) for i in range(0, 4)]
+        self.num_th = len(self.thresholds)
+        print("thresholds:", self.thresholds)
+        self.cognate_based_match()
 
-    :param wl:
-    :param donors:
-    :param family:
-    :param donor_lng:
-    :param donor_id:
-    :param model:
-    :param threshold:
-    :param int_threshold:
-    :param mode:
-    :param cluster_method:
-    """
-    # See paper, section "4 Results" and section "3.2 Methods".
+    def cognate_based_match(
+            # Compute clusters with BorIds.
+            self,
+            method='sca',
+            model='sca',
+            mode="overlap",
+            cluster_method="upgma"
+    ):
+        bor_id_base = "cb_bor_id"
+        self.bor_ids = []
+        for i, threshold in enumerate(self.thresholds):
+            bor_id = bor_id_base+'_{0}'.format(i)
+            self.bor_ids.append(bor_id)
+            print("bor id:", bor_id)
+            self.cluster(method=method,
+                         model=model,
+                         threshold=threshold,
+                         mode=mode,
+                         cluster_method=cluster_method,
+                         ref=bor_id,
+                         override=True)
 
-    cog_id = "cog_id"
-    if cog_id not in wl.columns:
-        lingrex.borrowing.internal_cognates(
-            wl,
-            family=family,
-            partial=False,
-            ref=cog_id,
-            method="lexstat",
-            threshold=int_threshold,
-            cluster_method=cluster_method,
-            model=model)
+    def get_donor_target_similarity(self, idx_don, idx_tar):
+        result = []
+        for t in range(self.num_th):
+            don = self[idx_don, self.bor_ids[t]]
+            tar = self[idx_tar, self.bor_ids[t]]
+            result.append(1 if don and tar and don == tar else 0)
 
-    bor_id = "bor_id"
-    # Can't override name use in wordlist with LingRex.
-    # So number bor_ids in sequence.
-    next_id = len([b for b in wl.columns if b.startswith(bor_id)])
-    bor_id_ = bor_id + "{:d}".format(next_id)
-    lingrex.borrowing.external_cognates(
-        wl,
-        cognates=cog_id,
-        family=family,
-        ref=bor_id_,
-        threshold=threshold,
-        align_mode=mode)
-
-    get_wl_borrowings(wl, donors, family, donor_id, donor_lng, bor_id_)
+        return result
 
 
 # Cluster function - invoked in training.
@@ -335,13 +326,15 @@ class CognateBasedBorrowingDetection(LexStat):
             donor_lng = "trial_{0}".format(i)
             donor_idx = "idx_{0}".format(i)
 
-            fs = self.trial_threshold(threshold=threshold, donor_lng=donor_lng,
+            fs = self.trial_threshold(threshold=threshold,
+                                      donor_lng=donor_lng,
                                       donor_idx=donor_idx)
             results += [[i, threshold, fs]]
-
             if verbose: print("threshold {:.2f}, f1 score {:.3f}".
                               format(threshold, fs))
-            best_t, best_fs = self.get_optimal_threshold_(results)
+
+        # Calculate optimal threshold once.
+        best_t, best_fs = self.get_optimal_threshold_(results)
 
         if verbose:
             print("* Training Results *")
@@ -402,16 +395,6 @@ class CognateBasedBorrowingDetection(LexStat):
         )
 
         if verbose: print("evaluation at threshold", self.best_value)
-
-
-class MultiThreshold(CognateBasedBorrowingDetection):
-
-    def train(self, thresholds=None, verbose=False):
-        # thresholds = [(i*0.1, j*0.1) for i in range(1, 10) for j in range(1, 10)]
-        # best_idx, best_t, best_fs = 0, 0.0, 0.0
-        # WE NEED TO EXTEND THIS LATER AND BREAK OUT STUFF FROM LINGREX TO WORK
-        # WELL HERE
-        ...
 
 
 def register(parser):
@@ -478,6 +461,9 @@ def run(args):
         args.language = get_language_list(args.language, args.donor)
         wl = subset_wl(wl, args.language)
         args.log.info("Subset of languages: {}".format(args.language))
+
+    bor = CognateBasedBorrowing(wl)
+    exit(0)
 
     func = function[args.method]
     lexstat = False

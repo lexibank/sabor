@@ -185,7 +185,6 @@ class CrossEntropyModel(Wordlist):
                 # Alternative might be to use some arbitrary high result value.
                 value = lm_.calculate_cross_entropy(wl[idx, self.segments])
                 result.append(value if value < 8.0 else 8.0)
-        # if any([result_ >= 8.0 for result_ in result]): print(result)
         return result
 
     def train_markov_word_model(self, verbose=False):

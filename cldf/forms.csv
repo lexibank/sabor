@@ -1923,7 +1923,7 @@ Yaqui-STEPMOTHER-1,wold-Yaqui-2-72-1,Yaqui,STEPMOTHER,waim maala,waim_maala,w a 
 Yaqui-STEPSON-1,wold-Yaqui-2-73-1,Yaqui,STEPSON,waim usi,waim_usi,w a i m + u s i,,,,,,,,,False,0.0,,Modern,0.7,,,
 Yaqui-STEPDAUGHTER-1,wold-Yaqui-2-74-1,Yaqui,STEPDAUGHTER,waim mara,waim_mara,w a i m + m a r a,,,,,,,,,False,0.0,,Modern,0.7,,,
 Yaqui-STEPDAUGHTER-2,wold-Yaqui-2-74-2,Yaqui,STEPDAUGHTER,waim asoa,waim_asoa,w a i m + a s o a,,,,,,,,,False,0.0,,Modern,0.7,,,
-Yaqui-ORPHAN-1,wold-Yaqui-2-75-1,Yaqui,ORPHAN,leepe,leepe,l eː p e,,,,,,,,,False,0.75,,Colonial,0.9,Spanish,the one that lives on the streets gaining money easily.,lépero
+Yaqui-ORPHAN-1,wold-Yaqui-2-75-1,Yaqui,ORPHAN,leepe,leepe,l eː p e,,,,,,,,,True,0.75,,Colonial,0.9,Spanish,the one that lives on the streets gaining money easily.,lépero
 Yaqui-WIDOW-1,wold-Yaqui-2-76-1,Yaqui,WIDOW,jokoptui,jokoptui,j o k o p t u i,,,,,,,,,False,0.0,,Proto-Tara-Cahitan,1.0,,,
 Yaqui-WIDOWER-1,wold-Yaqui-2-77-1,Yaqui,WIDOWER,jokoptui,jokoptui,j o k o p t u i,,,,,,,,,False,0.0,,Proto-Tara-Cahitan,1.0,,,
 Yaqui-RELATIVES-1,wold-Yaqui-2-81-1,Yaqui,RELATIVES,wawaira,wawaira,w a w a i r a,,,,,,,,,False,0.0,,Proto-Uto-Aztecan,1.0,,,
@@ -1986,7 +1986,7 @@ Yaqui-DOVE-1,wold-Yaqui-3-594-1,Yaqui,DOVE,wokkoi,wokkoi,w o k k o i,,,,,,,,,Fal
 Yaqui-OWL-1,wold-Yaqui-3-596-1,Yaqui,OWL,muu’u,muu’u,m uː ʔ u,,,,,,,,,False,0.0,,Proto-Tara-Cahitan,1.0,,,
 Yaqui-DOG-1,wold-Yaqui-3-61-1,Yaqui,DOG,chuu’u,chuu’u,tʃ uː ʔ u,,,,,,,,,False,0.0,,Proto-Uto-Aztecan,1.0,,,
 Yaqui-RABBIT-1,wold-Yaqui-3-614-1,Yaqui,RABBIT,taabu,taabu,t aː b u,,,,,,,,,False,0.0,,Proto-Uto-Aztecan,1.0,,,
-Yaqui-CAT-1,wold-Yaqui-3-62-1,Yaqui,CAT,miisi,miisi,m iː s i,,,,,,,,,False,0.75,,Colonial,0.9,Unidentified,the cat,
+Yaqui-CAT-1,wold-Yaqui-3-62-1,Yaqui,CAT,miisi,miisi,m iː s i,,,,,,,,,True,0.75,,Colonial,0.9,Unidentified,the cat,
 Yaqui-OPOSSUM-1,wold-Yaqui-3-622-1,Yaqui,OPOSSUM,takwaachi,takwaachi,t a k w aː tʃ i,,,,,,,,,True,1.0,,Colonial,0.9,Nahuatl,the opossum,"tlacuachi, tlacuatzin"
 Yaqui-MUROIDMOUSEORRAT-1,wold-Yaqui-3-63-1,Yaqui,MUROIDMOUSEORRAT,tori,tori,t o r i,,,,,,,,,False,0.0,,Proto-Uto-Aztecan,1.0,,,
 Yaqui-FISH-1,wold-Yaqui-3-65-1,Yaqui,FISH,kuchu,kuchu,k u tʃ u,,,,,,,,,False,0.0,,Proto-Uto-Aztecan,1.0,,,
@@ -3243,7 +3243,7 @@ ZinacantanTzotzil-SKY-1,wold-ZinacantanTzotzil-1-51-1,ZinacantanTzotzil,SKY,vina
 ZinacantanTzotzil-SUN-1,wold-ZinacantanTzotzil-1-52-1,ZinacantanTzotzil,SUN,k'ak'al,k'ak'al,k ʔ a k ʔ a l,,,,,,,,,False,0.0,,Proto-Tzeltalan,1.0,,,
 ZinacantanTzotzil-MOON-1,wold-ZinacantanTzotzil-1-53-1,ZinacantanTzotzil,MOON,7u,7u,ʔ u,,,,,,,,,False,0.0,,Proto-Mayan,1.0,,,
 ZinacantanTzotzil-MOON-2,wold-ZinacantanTzotzil-1-53-2,ZinacantanTzotzil,MOON,luna,luna,l u n a,,,,,,,,,True,1.0,,Later Colonial,0.9,Spanish,moon,luna
-ZinacantanTzotzil-STAR-1,wold-ZinacantanTzotzil-1-54-1,ZinacantanTzotzil,STAR,k’anal,k’anal,kʼ a n a l,,,,,,,,,False,0.75,,Proto-Tzotzil,1.0,Tojolabal,star,k’anal
+ZinacantanTzotzil-STAR-1,wold-ZinacantanTzotzil-1-54-1,ZinacantanTzotzil,STAR,k’anal,k’anal,kʼ a n a l,,,,,,,,,True,0.75,,Proto-Tzotzil,1.0,Tojolabal,star,k’anal
 ZinacantanTzotzil-LIGHTNING-1,wold-ZinacantanTzotzil-1-55-1,ZinacantanTzotzil,LIGHTNING,saktzeul,saktzeul,s a k tsʰ e u l,,,,,,,,,False,0.0,,Proto-Tzotzil,1.0,,,
 ZinacantanTzotzil-LIGHTNING-2,wold-ZinacantanTzotzil-1-55-2,ZinacantanTzotzil,LIGHTNING,chauk,chauk,tʃʰ a u k,,,,,,,,,False,0.0,,Proto-Mayan,1.0,,,
 ZinacantanTzotzil-THUNDER-1,wold-ZinacantanTzotzil-1-56-1,ZinacantanTzotzil,THUNDER,chauk,chauk,tʃʰ a u k,,,,,,,,,False,0.0,,Proto-Mayan,1.0,,,
@@ -3287,7 +3287,7 @@ ZinacantanTzotzil-GIRL-1,wold-ZinacantanTzotzil-2-26-1,ZinacantanTzotzil,GIRL,tz
 ZinacantanTzotzil-YOUNGWOMAN-1,wold-ZinacantanTzotzil-2-261-1,ZinacantanTzotzil,YOUNGWOMAN,bik’tal 7antz,bik’tal_7antz,ɓ i kʼ t a l + ʔ a n tsʰ,,,,,,,,,False,0.0,,Proto-Tzotzil,1.0,,,
 ZinacantanTzotzil-CHILDYOUNGHUMAN-1,wold-ZinacantanTzotzil-2-27-1,ZinacantanTzotzil,CHILDYOUNGHUMAN,7olol,7olol,ʔ o l o l,,,,,,,,,False,0.0,,Proto-Mayan,1.0,,,
 ZinacantanTzotzil-BABY-1,wold-ZinacantanTzotzil-2-28-1,ZinacantanTzotzil,BABY,nene7,nene7,n e n e ʔ,,,,,,,,,False,0.0,,Proto-Mayan,1.0,,,
-ZinacantanTzotzil-BABY-2,wold-ZinacantanTzotzil-2-28-2,ZinacantanTzotzil,BABY,7unen,7unen,ʔ u n e n,,,,,,,,,False,0.75,,Proto-Mayan,1.0,Proto-Mixe-Zoquean,child,*7unV(k)
+ZinacantanTzotzil-BABY-2,wold-ZinacantanTzotzil-2-28-2,ZinacantanTzotzil,BABY,7unen,7unen,ʔ u n e n,,,,,,,,,True,0.75,,Proto-Mayan,1.0,Proto-Mixe-Zoquean,child,*7unV(k)
 ZinacantanTzotzil-HUSBAND-1,wold-ZinacantanTzotzil-2-31-1,ZinacantanTzotzil,HUSBAND,malalil,malalil,m a l a l i l,,,,,,,,,False,0.0,,Proto-Tzotzil,1.0,,,
 ZinacantanTzotzil-HUSBAND-2,wold-ZinacantanTzotzil-2-31-2,ZinacantanTzotzil,HUSBAND,mol,mol,m o l,,,,,,,,,False,0.0,,Proto-Mayan,1.0,,,
 ZinacantanTzotzil-WIFE-1,wold-ZinacantanTzotzil-2-32-1,ZinacantanTzotzil,WIFE,7ahnilal,7ahnilal,ʔ a h n i l a l,,,,,,,,,False,0.0,,Proto-Tzotzil,1.0,,,
@@ -3424,7 +3424,7 @@ ZinacantanTzotzil-ANT-1,wold-ZinacantanTzotzil-3-817-1,ZinacantanTzotzil,ANT,shi
 ZinacantanTzotzil-SPIDER-1,wold-ZinacantanTzotzil-3-818-1,ZinacantanTzotzil,SPIDER,7om,7om,ʔ o m,,,,,,,,,False,0.0,,Proto-Mayan,1.0,,,
 ZinacantanTzotzil-BEE-1,wold-ZinacantanTzotzil-3-82-1,ZinacantanTzotzil,BEE,chanul pom,chanul_pom,tʃʰ a n u l + p o m,,,,,,,,,False,0.0,,Proto-Tzotzil,1.0,,,
 ZinacantanTzotzil-BEE-2,wold-ZinacantanTzotzil-3-82-2,ZinacantanTzotzil,BEE,kachimpa pom,kachimpa_pom,k a tʃʰ i m p a + p o m,,,,,,,,,False,0.0,kachimpa is from Spanish cachimbo ‘pipe’,colonial,0.5,Spanish,pipe,cachimbo
-ZinacantanTzotzil-BEE-3,wold-ZinacantanTzotzil-3-82-3,ZinacantanTzotzil,BEE,mermeho,mermeho,m e ɾ m e h o,,,,,,,,,False,0.75,,Later Colonial,0.9,Spanish,bright reddish,bermejo
+ZinacantanTzotzil-BEE-3,wold-ZinacantanTzotzil-3-82-3,ZinacantanTzotzil,BEE,mermeho,mermeho,m e ɾ m e h o,,,,,,,,,True,0.75,,Later Colonial,0.9,Spanish,bright reddish,bermejo
 ZinacantanTzotzil-BEE-4,wold-ZinacantanTzotzil-3-82-4,ZinacantanTzotzil,BEE,mishik’ pom,mishik’_pom,m i ʃ i kʼ + p o m,,,,,,,,,False,0.0,,Proto-Tzotzil,1.0,,,
 ZinacantanTzotzil-BEE-5,wold-ZinacantanTzotzil-3-82-5,ZinacantanTzotzil,BEE,ton pom,ton_pom,t o n + p o m,,,,,,,,,False,0.0,,Proto-Tzotzil,1.0,,,
 ZinacantanTzotzil-BEESWAX-1,wold-ZinacantanTzotzil-3-821-1,ZinacantanTzotzil,BEESWAX,sera 7ahapom,sera_7ahapom,s e ɾ a + ʔ a h a p o m,,,,,,,,,False,0.0,sera is from Spanish cera ‘wax’,Proto-Tzotzil,1.0,Spanish,bee’s wax,cera
@@ -3443,7 +3443,7 @@ ZinacantanTzotzil-SNAIL-1,wold-ZinacantanTzotzil-3-94-1,ZinacantanTzotzil,SNAIL,
 ZinacantanTzotzil-SNAIL-2,wold-ZinacantanTzotzil-3-94-2,ZinacantanTzotzil,SNAIL,poshil chuvah,poshil_chuvah,pʰ o ʃ i l + tʃʰ u v a h,,,,,,,,,False,0.0,,Proto-Tzotzil,1.0,,,
 ZinacantanTzotzil-SNAIL-3,wold-ZinacantanTzotzil-3-94-3,ZinacantanTzotzil,SNAIL,puyal 7uk’um,puyal_7uk’um,pʰ u j a l + ʔ u kʼ u m,,,,,,,,,False,0.0,,Proto-Tzotzil,1.0,,,
 ZinacantanTzotzil-FROG-1,wold-ZinacantanTzotzil-3-95-1,ZinacantanTzotzil,FROG,shpokok,shpokok,ʃ p o k o k,,,,,,,,,False,0.0,,Proto-Tzeltalan,1.0,,,
-ZinacantanTzotzil-LIZARD-1,wold-ZinacantanTzotzil-3-96-1,ZinacantanTzotzil,LIZARD,patish,patish,pʰ a t i sʰ,,,,,,,,,False,0.75,,,0.5,Chuj,lizard,patix
+ZinacantanTzotzil-LIZARD-1,wold-ZinacantanTzotzil-3-96-1,ZinacantanTzotzil,LIZARD,patish,patish,pʰ a t i sʰ,,,,,,,,,True,0.75,,,0.5,Chuj,lizard,patix
 ZinacantanTzotzil-LIZARD-2,wold-ZinacantanTzotzil-3-96-2,ZinacantanTzotzil,LIZARD,7okotz,7okotz,ʔ o k o tsʰ,,,,,,,,,False,0.0,,Proto-Tzotzil,1.0,,,
 ZinacantanTzotzil-CROCODILE-1,wold-ZinacantanTzotzil-3-97-1,ZinacantanTzotzil,CROCODILE,lagarto,lagarto,l a g a ɾ t o,,,,,,,,,True,1.0,,Later Colonial,0.9,Spanish,alligator,lagarto
 ZinacantanTzotzil-TURTLE-1,wold-ZinacantanTzotzil-3-98-1,ZinacantanTzotzil,TURTLE,7ok,7ok,ʔ o k,,,,,,,,,False,0.0,,Proto-Mayan,1.0,,,
@@ -3628,7 +3628,7 @@ ZinacantanTzotzil-EAT-3,wold-ZinacantanTzotzil-5-11-3,ZinacantanTzotzil,EAT,ti7,
 ZinacantanTzotzil-FOOD-1,wold-ZinacantanTzotzil-5-12-1,ZinacantanTzotzil,FOOD,ve`el ___,ve`el____,v e ʔ e l,,,,,,,,,False,0.0,,Proto-Mayan,1.0,,,
 ZinacantanTzotzil-COOKED-1,wold-ZinacantanTzotzil-5-121-1,ZinacantanTzotzil,COOKED,tok’on,tok’on,t o kʼ o n,,,,,,,,,False,0.0,,Proto-Mayan,1.0,,,
 ZinacantanTzotzil-RIPE-1,wold-ZinacantanTzotzil-5-123-1,ZinacantanTzotzil,RIPE,tok’on,tok’on,t o kʼ o n,,,,,,,,,False,0.0,,Proto-Mayan,1.0,,,
-ZinacantanTzotzil-UNRIPE-1,wold-ZinacantanTzotzil-5-124-1,ZinacantanTzotzil,UNRIPE,7unen,7unen,ʔ u n e n,,,,,,,,,False,0.75,,Proto-Mayan,1.0,Proto-Mixe-Zoquean,child,*7unV(k)
+ZinacantanTzotzil-UNRIPE-1,wold-ZinacantanTzotzil-5-124-1,ZinacantanTzotzil,UNRIPE,7unen,7unen,ʔ u n e n,,,,,,,,,True,0.75,,Proto-Mayan,1.0,Proto-Mixe-Zoquean,child,*7unV(k)
 ZinacantanTzotzil-UNRIPE-2,wold-ZinacantanTzotzil-5-124-2,ZinacantanTzotzil,UNRIPE,tze,tze,tsʰ e,,,,,,,,,False,0.0,,Proto-Mayan,1.0,,,
 ZinacantanTzotzil-ROTTEN-1,wold-ZinacantanTzotzil-5-125-1,ZinacantanTzotzil,ROTTEN,k’a7al,k’a7al,kʼ a ʔ a l,,,,,,,,,False,0.0,,Proto-Mayan,1.0,,,
 ZinacantanTzotzil-ROTTEN-2,wold-ZinacantanTzotzil-5-125-2,ZinacantanTzotzil,ROTTEN,k’o7,k’o7,kʼ o ʔ,,,,,,,,,False,0.0,,Proto-Mayan,1.0,,,
@@ -3840,7 +3840,7 @@ ZinacantanTzotzil-COCONUT-1,wold-ZinacantanTzotzil-8-82-1,ZinacantanTzotzil,COCO
 ZinacantanTzotzil-YAM-1,wold-ZinacantanTzotzil-8-912-1,ZinacantanTzotzil,YAM,tz'itesob `at,tz'itesob_`at,tsʰ ʔ i t e s o ɓ + ʔ a tʰ,,,,,,,,,False,0.0,,Proto-Tzotzil,1.0,,,
 ZinacantanTzotzil-CASSAVA-1,wold-ZinacantanTzotzil-8-92-1,ZinacantanTzotzil,CASSAVA,tz'in-te7,tz'in-te7,tsʰ ʔ i n + t e ʔ,,,,,,,,,False,0.0,,Proto-Mayan,1.0,,,
 ZinacantanTzotzil-GOURD-1,wold-ZinacantanTzotzil-8-93-1,ZinacantanTzotzil,GOURD,tzu,tzu,tsʰ u,,,,,,,,,False,0.0,,Proto-Mayan,1.0,,,
-ZinacantanTzotzil-PUMPKIN-1,wold-ZinacantanTzotzil-8-931-1,ZinacantanTzotzil,PUMPKIN,su,su,s u,,,,,,,,,False,0.75,,,0.5,Q'eqchi',bottle gourd,su
+ZinacantanTzotzil-PUMPKIN-1,wold-ZinacantanTzotzil-8-931-1,ZinacantanTzotzil,PUMPKIN,su,su,s u,,,,,,,,,True,0.75,,,0.5,Q'eqchi',bottle gourd,su
 ZinacantanTzotzil-BAMBOO-1,wold-ZinacantanTzotzil-8-94-1,ZinacantanTzotzil,BAMBOO,bish,bish,ɓ i sʰ,,,,,,,,,False,0.0,,Proto-Tzotzil,1.0,,,
 ZinacantanTzotzil-BAMBOO-2,wold-ZinacantanTzotzil-8-94-2,ZinacantanTzotzil,BAMBOO,7otot,7otot,ʔ o t o tʰ,,,,,,,,,False,0.0,,Proto-Mayan,1.0,,,
 ZinacantanTzotzil-BAMBOO-3,wold-ZinacantanTzotzil-8-94-3,ZinacantanTzotzil,BAMBOO,taro,taro,t a ɾ o,,,,,,,,,True,1.0,,colonial,0.5,Spanish (Mexican),bamboo,tarro
@@ -3855,7 +3855,7 @@ ZinacantanTzotzil-TIE-1,wold-ZinacantanTzotzil-9-16-1,ZinacantanTzotzil,TIE,tima
 ZinacantanTzotzil-UNTIE-1,wold-ZinacantanTzotzil-9-161-1,ZinacantanTzotzil,UNTIE,titin,titin,t i t i n,,,,,,,,,False,0.0,,Proto-Tzotzil,1.0,,,
 ZinacantanTzotzil-CHAIN-1,wold-ZinacantanTzotzil-9-18-1,ZinacantanTzotzil,CHAIN,karina,karina,k a ɾ i n a,,,,,,,,,True,1.0,,Later Colonial,0.9,Spanish,the chain,cadena
 ZinacantanTzotzil-ROPE-1,wold-ZinacantanTzotzil-9-19-1,ZinacantanTzotzil,ROPE,laso,laso,l a s o,,,,,,,,,True,1.0,,Later Colonial,0.9,Spanish,lasso,laso
-ZinacantanTzotzil-KNOT-1,wold-ZinacantanTzotzil-9-192-1,ZinacantanTzotzil,KNOT,p’ok,p’ok,pʼ o k,,,,,,,,,False,0.75,,Greater Lowland,1.0,Chontal,knot,u p'ok
+ZinacantanTzotzil-KNOT-1,wold-ZinacantanTzotzil-9-192-1,ZinacantanTzotzil,KNOT,p’ok,p’ok,pʼ o k,,,,,,,,,True,0.75,,Greater Lowland,1.0,Chontal,knot,u p'ok
 ZinacantanTzotzil-STRIKEORBEAT-1,wold-ZinacantanTzotzil-9-21-1,ZinacantanTzotzil,STRIKEORBEAT,mah,mah,m a h,,,,,,,,,False,0.0,,Proto-Tzeltalan,1.0,,,
 ZinacantanTzotzil-STRIKEORBEAT-2,wold-ZinacantanTzotzil-9-21-2,ZinacantanTzotzil,STRIKEORBEAT,bah,bah,ɓ a h,,,,,,,,,False,0.0,,Proto-Mayan,1.0,,,
 ZinacantanTzotzil-POUND-1,wold-ZinacantanTzotzil-9-211-1,ZinacantanTzotzil,POUND,t’us,t’us,tʼ u s,,,,,,,,,False,0.0,,Proto-Tzeltalan,1.0,,,
@@ -4146,7 +4146,7 @@ ZinacantanTzotzil-TIME-1,wold-ZinacantanTzotzil-14-11-1,ZinacantanTzotzil,TIME,7
 ZinacantanTzotzil-TIME-2,wold-ZinacantanTzotzil-14-11-2,ZinacantanTzotzil,TIME,tyempo,tyempo,t j e m p o,,,,,,,,,True,1.0,,Later Colonial,0.9,Spanish,"time, weather",tiempo
 ZinacantanTzotzil-AGE-1,wold-ZinacantanTzotzil-14-12-1,ZinacantanTzotzil,AGE,ch’iel,ch’iel,tʃʼ i e l,,,,,,,,,False,0.0,,Proto-Tzotzil,1.0,,,
 ZinacantanTzotzil-NEW-1,wold-ZinacantanTzotzil-14-13-1,ZinacantanTzotzil,NEW,7ach’,7ach’,ʔ a tʃʼ,,,,,,,,,False,0.0,,Proto-Mayan,1.0,,,
-ZinacantanTzotzil-YOUNG-1,wold-ZinacantanTzotzil-14-14-1,ZinacantanTzotzil,YOUNG,7unen,7unen,ʔ u n e n,,,,,,,,,False,0.75,,Proto-Mayan,1.0,Proto-Mixe-Zoquean,child,*7unV(k)
+ZinacantanTzotzil-YOUNG-1,wold-ZinacantanTzotzil-14-14-1,ZinacantanTzotzil,YOUNG,7unen,7unen,ʔ u n e n,,,,,,,,,True,0.75,,Proto-Mayan,1.0,Proto-Mixe-Zoquean,child,*7unV(k)
 ZinacantanTzotzil-OLD-1,wold-ZinacantanTzotzil-14-15-1,ZinacantanTzotzil,OLD,k’a7,k’a7,kʼ a ʔ,,,,,,,,,False,0.0,,Proto-Mayan,1.0,,,
 ZinacantanTzotzil-OLD-2,wold-ZinacantanTzotzil-14-15-2,ZinacantanTzotzil,OLD,mol,mol,m o l,,,,,,,,,False,0.0,,Proto-Mayan,1.0,,,
 ZinacantanTzotzil-NOW-1,wold-ZinacantanTzotzil-14-18-1,ZinacantanTzotzil,NOW,li7,li7,l i ʔ,,,,,,,,,False,0.0,,Proto-Tzeltalan,1.0,,,
@@ -4498,7 +4498,7 @@ Qeqchi-WHIRLPOOL-1,wold-Qeqchi-1-362-1,Qeqchi,WHIRLPOOL,suut ha’,suut_ha’,s 
 Qeqchi-SPRINGORWELL-1,wold-Qeqchi-1-37-1,Qeqchi,SPRINGORWELL,tuq,tuq,t u qʰ,,,,,,,,,False,0.0,,Q'eqchi' + Poqom,1.0,,,
 Qeqchi-SPRINGORWELL-2,wold-Qeqchi-1-37-2,Qeqchi,SPRINGORWELL,ch’ina ha’,ch’ina_ha’,tʃʼ i n a + h a ʔ,,,,,,,,,False,0.0,,Q'eqchi',1.0,,,
 Qeqchi-SPRINGORWELL-3,wold-Qeqchi-1-37-3,Qeqchi,SPRINGORWELL,kumb’,kumb’,k u m ɓ,,,,,,,,,False,0.0,,Q'eqchi',1.0,,,
-Qeqchi-SPRINGORWELL-4,wold-Qeqchi-1-37-4,Qeqchi,SPRINGORWELL,k’ak’naab’,k’ak’naab’,kʼ a kʼ n aː ɓ,,,,,,,,,False,0.75,,Lowland languages,1.0,Ch’olan,sea,k’ahk’-naab’
+Qeqchi-SPRINGORWELL-4,wold-Qeqchi-1-37-4,Qeqchi,SPRINGORWELL,k’ak’naab’,k’ak’naab’,kʼ a kʼ n aː ɓ,,,,,,,,,True,0.75,,Lowland languages,1.0,Ch’olan,sea,k’ahk’-naab’
 Qeqchi-SWAMP-1,wold-Qeqchi-1-38-1,Qeqchi,SWAMP,saab’,saab’,s aː ɓ,,,,,,,,,False,0.0,,proto-Mayan (not Huastec),1.0,,,
 Qeqchi-SWAMP-2,wold-Qeqchi-1-38-2,Qeqchi,SWAMP,k’anha’,k’anha’,kʼ a n + h a ʔ,,,,,,,,,False,0.0,,Q'eqchi',1.0,,,
 Qeqchi-WATERFALL-1,wold-Qeqchi-1-39-1,Qeqchi,WATERFALL,pach’il ha’,pach’il_ha’,p a tʃʼ i l + h a ʔ,,,,,,,,,False,0.0,,Q'eqchi',1.0,,,
@@ -4550,15 +4550,15 @@ Qeqchi-FIREWOOD-1,wold-Qeqchi-1-88-1,Qeqchi,FIREWOOD,si’,si’,s i ʔ,,,,,,,,,
 Qeqchi-CHARCOAL-1,wold-Qeqchi-1-89-1,Qeqchi,CHARCOAL,ruuxam,ruuxam,r uː ʃ a m,,,,,,,,,False,0.0,,Q'eqchi',1.0,,,
 Qeqchi-CHARCOAL-2,wold-Qeqchi-1-89-2,Qeqchi,CHARCOAL,sib’j,sib’j,s i ɓ x,,,,,,,,,False,0.0,,Q'eqchi',1.0,,,
 Qeqchi-PERSON-1,wold-Qeqchi-2-1-1,Qeqchi,PERSON,poyanam,poyanam,p o j a n a m,,,,,,,,,False,0.0,,Q'eqchi',1.0,,,
-Qeqchi-MAN-1,wold-Qeqchi-2-21-1,Qeqchi,MAN,teelom,teelom,t eː l o m,,,,,,,,,False,0.75,,proto-Ch’olan,1.0,Ch’olan,young (?) man,*tehlom
+Qeqchi-MAN-1,wold-Qeqchi-2-21-1,Qeqchi,MAN,teelom,teelom,t eː l o m,,,,,,,,,True,0.75,,proto-Ch’olan,1.0,Ch’olan,young (?) man,*tehlom
 Qeqchi-MAN-2,wold-Qeqchi-2-21-2,Qeqchi,MAN,winq,winq,w i n qʰ,,,,,,,,,False,0.0,,proto-Mayan,1.0,,,
 Qeqchi-WOMAN-1,wold-Qeqchi-2-22-1,Qeqchi,WOMAN,ixq,ixq,i ʃ qʰ,,,,,,,,,False,0.0,,proto-Mayan (not Huastec),1.0,,,
-Qeqchi-MALEOFPERSON-1,wold-Qeqchi-2-23-1,Qeqchi,MALEOFPERSON,teelom,teelom,t eː l o m,,,,,,,,,False,0.75,,proto-Ch’olan,1.0,Ch’olan,young (?) man,*tehlom
+Qeqchi-MALEOFPERSON-1,wold-Qeqchi-2-23-1,Qeqchi,MALEOFPERSON,teelom,teelom,t eː l o m,,,,,,,,,True,0.75,,proto-Ch’olan,1.0,Ch’olan,young (?) man,*tehlom
 Qeqchi-FEMALEOFPERSON-1,wold-Qeqchi-2-24-1,Qeqchi,FEMALEOFPERSON,ixq,ixq,i ʃ qʰ,,,,,,,,,False,0.0,,proto-Mayan (not Huastec),1.0,,,
-Qeqchi-BOY-1,wold-Qeqchi-2-25-1,Qeqchi,BOY,ch’ajom,ch’ajom,tʃʼ a x o m,,,,,,,,,False,0.75,,Lowland languages,1.0,Ch’olan,young man,*ch’ajom
+Qeqchi-BOY-1,wold-Qeqchi-2-25-1,Qeqchi,BOY,ch’ajom,ch’ajom,tʃʼ a x o m,,,,,,,,,True,0.75,,Lowland languages,1.0,Ch’olan,young man,*ch’ajom
 Qeqchi-BOY-2,wold-Qeqchi-2-25-2,Qeqchi,BOY,saaj al,saaj_al,s aː x + a l,,,,,,,,,False,0.0,,Q'eqchi',1.0,,,
 Qeqchi-BOY-3,wold-Qeqchi-2-25-3,Qeqchi,BOY,ch’ina teelom,ch’ina_teelom,tʃʼ i n a + t eː l o m,,,,,,,,,False,0.0,,Q'eqchi',1.0,,,
-Qeqchi-YOUNGMAN-1,wold-Qeqchi-2-251-1,Qeqchi,YOUNGMAN,ch’ajom,ch’ajom,tʃʼ a x o m,,,,,,,,,False,0.75,,Lowland languages,1.0,Ch’olan,young man,*ch’ajom
+Qeqchi-YOUNGMAN-1,wold-Qeqchi-2-251-1,Qeqchi,YOUNGMAN,ch’ajom,ch’ajom,tʃʼ a x o m,,,,,,,,,True,0.75,,Lowland languages,1.0,Ch’olan,young man,*ch’ajom
 Qeqchi-GIRL-1,wold-Qeqchi-2-26-1,Qeqchi,GIRL,saaj ixqa’al,saaj_ixqa’al,s aː x + i ʃ q a ʔ a l,,,,,,,,,False,0.0,,Q'eqchi',1.0,,,
 Qeqchi-GIRL-2,wold-Qeqchi-2-26-2,Qeqchi,GIRL,ch’ina ixqa’al,ch’ina_ixqa’al,tʃʼ i n a + i ʃ q a ʔ a l,,,,,,,,,False,0.0,,Q'eqchi',1.0,,,
 Qeqchi-YOUNGWOMAN-1,wold-Qeqchi-2-261-1,Qeqchi,YOUNGWOMAN,ixqa’al ~ xqa’al ~ qa’al,ixqa’al,i ʃ q a ʔ a l,,,,,,,,,False,0.0,,Q'eqchi',1.0,,,
@@ -4578,8 +4578,8 @@ Qeqchi-PARENTS-1,wold-Qeqchi-2-37-1,Qeqchi,PARENTS,inna’ inyuwa’,inna’_iny
 Qeqchi-MARRIEDMAN-1,wold-Qeqchi-2-38-1,Qeqchi,MARRIEDMAN,sumsuukil,sumsuukil,s u m s uː k i l,,,,,,,,,False,0.0,,Q'eqchi',1.0,,,
 Qeqchi-MARRIEDWOMAN-1,wold-Qeqchi-2-39-1,Qeqchi,MARRIEDWOMAN,sumsuukil,sumsuukil,s u m s uː k i l,,,,,,,,,False,0.0,,Q'eqchi',1.0,,,
 Qeqchi-SON-1,wold-Qeqchi-2-41-1,Qeqchi,SON,al,al,a l,,,,,,,,,False,0.0,,proto-Mayan,1.0,,,
-Qeqchi-SON-2,wold-Qeqchi-2-41-2,Qeqchi,SON,alal,alal,a l a l,,,,,,,,,False,0.75,,proto-Western Mayan,1.0,Ch’olan,child,*alal
-Qeqchi-DAUGHTER-1,wold-Qeqchi-2-42-1,Qeqchi,DAUGHTER,ko’,ko’,k o ʔ,,,,,,,,,False,0.75,,proto-Ch’olan (?),1.0,Ch’olan,grandmother; sister of the mother of the father,ko’
+Qeqchi-SON-2,wold-Qeqchi-2-41-2,Qeqchi,SON,alal,alal,a l a l,,,,,,,,,True,0.75,,proto-Western Mayan,1.0,Ch’olan,child,*alal
+Qeqchi-DAUGHTER-1,wold-Qeqchi-2-42-1,Qeqchi,DAUGHTER,ko’,ko’,k o ʔ,,,,,,,,,True,0.75,,proto-Ch’olan (?),1.0,Ch’olan,grandmother; sister of the mother of the father,ko’
 Qeqchi-DAUGHTER-2,wold-Qeqchi-2-42-2,Qeqchi,DAUGHTER,rab’in,rab’in,r a ɓ i n,,,,,,,,,False,0.0,,Q'eqchi' + Uspantec,1.0,,,
 Qeqchi-CHILDDESCENDANT-1,wold-Qeqchi-2-43-1,Qeqchi,CHILDDESCENDANT,k’ajol,k’ajol,kʼ a x o l,,,,,,,,,False,0.0,,Eastern Mayan + Q’anjob’alan,1.0,,,
 Qeqchi-BROTHER-1,wold-Qeqchi-2-44-1,Qeqchi,BROTHER,as,as,a s,,,,,,,,,False,0.0,,proto-K’iche’an,1.0,,,
@@ -4589,13 +4589,13 @@ Qeqchi-SISTER-1,wold-Qeqchi-2-45-1,Qeqchi,SISTER,anab’,anab’,a n a ɓ,,,,,,,
 Qeqchi-OLDERSISTER-1,wold-Qeqchi-2-454-1,Qeqchi,OLDERSISTER,chaq’na’,chaq’na’,tʃ a qʼ n a ʔ,,,,,,,,,False,0.0,,Q'eqchi',1.0,,,
 Qeqchi-YOUNGERSISTER-1,wold-Qeqchi-2-455-1,Qeqchi,YOUNGERSISTER,iitz’in,iitz’in,iː tsʼ i n,,,,,,,,,False,0.0,,proto-Mayan (not Huastec),1.0,,,
 Qeqchi-SIBLING-1,wold-Qeqchi-2-456-1,Qeqchi,SIBLING,anab’,anab’,a n a ɓ,,,,,,,,,False,0.0,,proto-Mayan (not Huastec),1.0,,,
-Qeqchi-TWINS-1,wold-Qeqchi-2-458-1,Qeqchi,TWINS,lut,lut,l u tʰ,,,,,,,,,False,0.75,,Lowland languages,1.0,Ch’olan,twins,*lut
+Qeqchi-TWINS-1,wold-Qeqchi-2-458-1,Qeqchi,TWINS,lut,lut,l u tʰ,,,,,,,,,True,0.75,,Lowland languages,1.0,Ch’olan,twins,*lut
 Qeqchi-GRANDFATHER-1,wold-Qeqchi-2-46-1,Qeqchi,GRANDFATHER,mama’,mama’,m a m a ʔ,,,,,,,,,False,0.0,,proto-Mayan (not Huastec),1.0,,,
 Qeqchi-GRANDFATHER-2,wold-Qeqchi-2-46-2,Qeqchi,GRANDFATHER,mel,mel,m e l,,,,,,,,,False,0.0,,proto-Mayan (not Huastec),1.0,,,
-Qeqchi-OLDMAN-1,wold-Qeqchi-2-461-1,Qeqchi,OLDMAN,tiix,tiix,t iː ʃ,,,,,,,,,False,0.75,,proto-Ch’olan (?),1.0,Ch’olan,old woman,*ti’ix
+Qeqchi-OLDMAN-1,wold-Qeqchi-2-461-1,Qeqchi,OLDMAN,tiix,tiix,t iː ʃ,,,,,,,,,True,0.75,,proto-Ch’olan (?),1.0,Ch’olan,old woman,*ti’ix
 Qeqchi-GRANDMOTHER-1,wold-Qeqchi-2-47-1,Qeqchi,GRANDMOTHER,ixa’an,ixa’an,i ʃ a ʔ a n,,,,,,,,,False,0.0,,proto-Mayan (not Huastec),1.0,,,
 Qeqchi-GRANDMOTHER-2,wold-Qeqchi-2-47-2,Qeqchi,GRANDMOTHER,na’chin,na’chin,n a ʔ tʃ i n,,,,,,,,,False,0.0,,Q'eqchi',1.0,,,
-Qeqchi-OLDWOMAN-1,wold-Qeqchi-2-471-1,Qeqchi,OLDWOMAN,tiix,tiix,t iː ʃ,,,,,,,,,False,0.75,,proto-Ch’olan (?),1.0,Ch’olan,old woman,*ti’ix
+Qeqchi-OLDWOMAN-1,wold-Qeqchi-2-471-1,Qeqchi,OLDWOMAN,tiix,tiix,t iː ʃ,,,,,,,,,True,0.75,,proto-Ch’olan (?),1.0,Ch’olan,old woman,*ti’ix
 Qeqchi-GRANDSON-1,wold-Qeqchi-2-48-1,Qeqchi,GRANDSON,ii,ii,iː,,,,,,,,,False,0.0,,proto-Mayan (not Huastec),1.0,,,
 Qeqchi-GRANDDAUGHTER-1,wold-Qeqchi-2-49-1,Qeqchi,GRANDDAUGHTER,ii,ii,iː,,,,,,,,,False,0.0,,proto-Mayan (not Huastec),1.0,,,
 Qeqchi-UNCLE-1,wold-Qeqchi-2-51-1,Qeqchi,UNCLE,ikan,ikan,i k a n,,,,,,,,,False,0.0,,proto-Mayan,1.0,,,
@@ -4666,7 +4666,7 @@ Qeqchi-BOARMALEPIG-1,wold-Qeqchi-3-32-1,Qeqchi,BOARMALEPIG,chakow,chakow,tʃ a k
 Qeqchi-SOWFEMALEPIG-1,wold-Qeqchi-3-34-1,Qeqchi,SOWFEMALEPIG,ixqi aaq,ixqi_aaq,i ʃ q i + aː qʰ,,,,,,,,,False,0.0,,Q'eqchi',1.0,,,
 Qeqchi-SOWFEMALEPIG-2,wold-Qeqchi-3-34-2,Qeqchi,SOWFEMALEPIG,xa’an aaq,xa’an_aaq,ʃ a ʔ a n + aː qʰ,,,,,,,,,False,0.0,,Q'eqchi',1.0,,,
 Qeqchi-PIG-1,wold-Qeqchi-3-35-1,Qeqchi,PIG,kuy,kuy,k u j,,,,,,,,,False,0.0,,Q'eqchi',1.0,,,
-Qeqchi-GOAT-1,wold-Qeqchi-3-36-1,Qeqchi,GOAT,yuk,yuk,j u kʰ,,,,,,,,,False,0.75,,Q'eqchi',1.0,Yucatecan,brocket deer,*yuuk
+Qeqchi-GOAT-1,wold-Qeqchi-3-36-1,Qeqchi,GOAT,yuk,yuk,j u kʰ,,,,,,,,,True,0.75,,Q'eqchi',1.0,Yucatecan,brocket deer,*yuuk
 Qeqchi-MALEGOAT-1,wold-Qeqchi-3-37-1,Qeqchi,MALEGOAT,chib’aat,chib’aat,tʃ i ɓ aː tʰ,,,,,,,,,True,1.0,,Colonial Q'eqchi',0.9,Spanish,goat,chivo
 Qeqchi-KID-1,wold-Qeqchi-3-38-1,Qeqchi,KID,ral yuk,ral_yuk,r a l + j u kʰ,,,,,,,,,False,0.0,,Q'eqchi',1.0,,,
 Qeqchi-HORSE-1,wold-Qeqchi-3-41-1,Qeqchi,HORSE,kawaay,kawaay,k a w aː j,,,,,,,,,True,1.0,,Post-Conquest Q’eqchi’,0.9,Spanish,the small horse,caballo
@@ -4684,19 +4684,19 @@ Qeqchi-HEN-2,wold-Qeqchi-3-54-2,Qeqchi,HEN,tux kaxlan,tux_kaxlan,t u ʃ + k a ʃ
 Qeqchi-CHICKEN-1,wold-Qeqchi-3-55-1,Qeqchi,CHICKEN,kaxlan,kaxlan,k a ʃ l a n,,,,,,,,,True,1.0,,Early Colonial Q'eqchi',0.9,Spanish,Castilian,castellano
 Qeqchi-GOOSE-1,wold-Qeqchi-3-56-1,Qeqchi,GOOSE,ganso,ganso,g a n s o,,,,,,,,,True,1.0,,Later Post-Conquest Q’eqchi’,0.9,Spanish,the goose,ganso
 Qeqchi-DUCK-1,wold-Qeqchi-3-57-1,Qeqchi,DUCK,patux,patux,p a t u ʃ,,,,,,,,,True,1.0,,Early Colonial Q'eqchi',0.9,Spanish,duck,patos
-Qeqchi-NEST-1,wold-Qeqchi-3-58-1,Qeqchi,NEST,suk,suk,s u kʰ,,,,,,,,,False,0.75,,Q'eqchi',1.0,Ch’olan,house construction,sik
+Qeqchi-NEST-1,wold-Qeqchi-3-58-1,Qeqchi,NEST,suk,suk,s u kʰ,,,,,,,,,True,0.75,,Q'eqchi',1.0,Ch’olan,house construction,sik
 Qeqchi-BIRD-1,wold-Qeqchi-3-581-1,Qeqchi,BIRD,tz’ik,tz’ik,tsʼ i kʰ,,,,,,,,,False,0.0,,proto-Mayan,1.0,,,
 Qeqchi-HERON-1,wold-Qeqchi-3-583-1,Qeqchi,HERON,jotz,jotz,x o t z,,,,,,,,,False,0.0,,Q'eqchi',1.0,,,
 Qeqchi-HERON-2,wold-Qeqchi-3-583-2,Qeqchi,HERON,saqikil,saqikil,s a q i k i l,,,,,,,,,False,0.0,,Q'eqchi',1.0,,,
 Qeqchi-HERON-3,wold-Qeqchi-3-583-3,Qeqchi,HERON,patux ha’,patux_ha’,p a t u ʃ + h a ʔ,,,,,,,,,False,0.0,,Q'eqchi',1.0,,,
 Qeqchi-EAGLE-1,wold-Qeqchi-3-584-1,Qeqchi,EAGLE,t’iw,t’iw,tʼ i w,,,,,,,,,False,0.0,,proto-Mayan,1.0,,,
 Qeqchi-HAWK-1,wold-Qeqchi-3-585-1,Qeqchi,HAWK,k’uch,k’uch,kʼ u tʃ,,,,,,,,,False,0.0,,proto-Mayan (not Huastec),1.0,,,
-Qeqchi-VULTURE-1,wold-Qeqchi-3-586-1,Qeqchi,VULTURE,so’sol,so’sol,s o ʔ s o l,,,,,,,,,False,0.75,,Q'eqchi',1.0,Ch’olan,zopilote,sosool
+Qeqchi-VULTURE-1,wold-Qeqchi-3-586-1,Qeqchi,VULTURE,so’sol,so’sol,s o ʔ s o l,,,,,,,,,True,0.75,,Q'eqchi',1.0,Ch’olan,zopilote,sosool
 Qeqchi-BAT-1,wold-Qeqchi-3-591-1,Qeqchi,BAT,sotz’,sotz’,s o tsʼ,,,,,,,,,False,0.0,,proto-Mayan,1.0,,,
 Qeqchi-PARROT-1,wold-Qeqchi-3-592-1,Qeqchi,PARROT,loor,loor,l oː r,,,,,,,,,True,1.0,,Post-Conquest Q’eqchi’,0.9,Spanish,the parrot,loro
 Qeqchi-PARROT-2,wold-Qeqchi-3-592-2,Qeqchi,PARROT,chocho’,chocho’,tʃ o tʃ o ʔ,,,,,,,,,False,0.0,,Q'eqchi',1.0,,,
 Qeqchi-CROW-1,wold-Qeqchi-3-593-1,Qeqchi,CROW,qoch,qoch,q o tʃ,,,,,,,,,False,0.0,,proto-K’iche’an,1.0,,,
-Qeqchi-DOVE-1,wold-Qeqchi-3-594-1,Qeqchi,DOVE,mukuy,mukuy,m u k u j,,,,,,,,,False,0.75,,proto-Mayan (not Huastec),1.0,Ch’olan,dove,*mukuy
+Qeqchi-DOVE-1,wold-Qeqchi-3-594-1,Qeqchi,DOVE,mukuy,mukuy,m u k u j,,,,,,,,,True,0.75,,proto-Mayan (not Huastec),1.0,Ch’olan,dove,*mukuy
 Qeqchi-OWL-1,wold-Qeqchi-3-596-1,Qeqchi,OWL,joob’aq,joob’aq,x oː ɓ a qʰ,,,,,,,,,False,0.0,,Q'eqchi',1.0,,,
 Qeqchi-OWL-2,wold-Qeqchi-3-596-2,Qeqchi,OWL,warom,warom,w a ɾ o m,,,,,,,,,False,0.0,,Q'eqchi',1.0,,,
 Qeqchi-DOG-1,wold-Qeqchi-3-61-1,Qeqchi,DOG,tz’i’,tz’i’,tsʼ i ʔ,,,,,,,,,False,0.0,,proto-Mayan,1.0,,,
@@ -4728,7 +4728,7 @@ Qeqchi-NIT-1,wold-Qeqchi-3-812-1,Qeqchi,NIT,k’ot uk’,k’ot_uk’,kʼ o t + 
 Qeqchi-FLEA-1,wold-Qeqchi-3-813-1,Qeqchi,FLEA,k’aq,k’aq,kʼ a qʰ,,,,,,,,,False,0.0,,proto-Mayan (not Huastec),1.0,,,
 Qeqchi-CENTIPEDE-1,wold-Qeqchi-3-814-1,Qeqchi,CENTIPEDE,kojoj,kojoj,k o x o x,,,,,,,,,False,0.0,,Q'eqchi',1.0,,,
 Qeqchi-SCORPION-1,wold-Qeqchi-3-815-1,Qeqchi,SCORPION,xook’,xook’,ʃ oː kʼ,,,,,,,,,False,0.0,,Q'eqchi',1.0,,,
-Qeqchi-COCKROACH-1,wold-Qeqchi-3-816-1,Qeqchi,COCKROACH,paachach,paachach,p aː tʃ a tʃ,,,,,,,,,False,0.75,,Q'eqchi',1.0,Ch’orti’,insect said to resemble the cockroach,pachajk
+Qeqchi-COCKROACH-1,wold-Qeqchi-3-816-1,Qeqchi,COCKROACH,paachach,paachach,p aː tʃ a tʃ,,,,,,,,,True,0.75,,Q'eqchi',1.0,Ch’orti’,insect said to resemble the cockroach,pachajk
 Qeqchi-ANT-1,wold-Qeqchi-3-817-1,Qeqchi,ANT,sank,sank,s a n kʰ,,,,,,,,,False,0.0,,proto-Mayan,1.0,,,
 Qeqchi-SPIDER-1,wold-Qeqchi-3-818-1,Qeqchi,SPIDER,aj am ~ x’am,aj_am,a x + a m,,,,,,,,,False,0.0,,proto-Mayan,1.0,,,
 Qeqchi-SPIDERWEB-1,wold-Qeqchi-3-819-1,Qeqchi,SPIDERWEB,xkem aj am,xkem_aj_am,ʃ k e m + a x + a m,,,,,,,,,False,0.0,,Q'eqchi',1.0,,,
@@ -4744,10 +4744,10 @@ Qeqchi-SANDFLY-2,wold-Qeqchi-3-831-2,Qeqchi,SANDFLY,suq,suq,s u qʰ,,,,,,,,,Fals
 Qeqchi-MOSQUITO-1,wold-Qeqchi-3-832-1,Qeqchi,MOSQUITO,suq,suq,s u qʰ,,,,,,,,,False,0.0,,Q'eqchi',1.0,,,
 Qeqchi-MOSQUITO-2,wold-Qeqchi-3-832-2,Qeqchi,MOSQUITO,kok’ utz’,kok’_utz’,k o kʼ + u tsʼ,,,,,,,,,False,0.0,,Q'eqchi',1.0,,,
 Qeqchi-MOSQUITO-3,wold-Qeqchi-3-832-3,Qeqchi,MOSQUITO,ch’een,ch’een,tʃʼ eː n,,,,,,,,,False,0.0,,Q'eqchi' + Poqom,1.0,,,
-Qeqchi-WORM-1,wold-Qeqchi-3-84-1,Qeqchi,WORM,kuluk,kuluk,k u l u kʰ,,,,,,,,,False,0.75,,Lowland languages,1.0,Ch’olan,hairy worm,*kuluk
+Qeqchi-WORM-1,wold-Qeqchi-3-84-1,Qeqchi,WORM,kuluk,kuluk,k u l u kʰ,,,,,,,,,True,0.75,,Lowland languages,1.0,Ch’olan,hairy worm,*kuluk
 Qeqchi-WORM-2,wold-Qeqchi-3-84-2,Qeqchi,WORM,k’utub’,k’utub’,kʼ u t u ɓ,,,,,,,,,False,0.0,,proto-Mayan,1.0,,,
 Qeqchi-WORM-3,wold-Qeqchi-3-84-3,Qeqchi,WORM,hay,hay,h a j,,,,,,,,,False,0.0,,Q'eqchi',1.0,,,
-Qeqchi-WORM-4,wold-Qeqchi-3-84-4,Qeqchi,WORM,motzo’,motzo’,m o t z o ʔ,,,,,,,,,False,0.75,,proto-Greater Tzeltalan + Q'eqchi',1.0,Ch’olan,worm,motzo’
+Qeqchi-WORM-4,wold-Qeqchi-3-84-4,Qeqchi,WORM,motzo’,motzo’,m o t z o ʔ,,,,,,,,,True,0.75,,proto-Greater Tzeltalan + Q'eqchi',1.0,Ch’olan,worm,motzo’
 Qeqchi-WORM-5,wold-Qeqchi-3-84-5,Qeqchi,WORM,tzonok’,tzonok’,t z o n o kʼ,,,,,,,,,False,0.0,,Q'eqchi',1.0,,,
 Qeqchi-WORM-6,wold-Qeqchi-3-84-6,Qeqchi,WORM,koton is,koton_is,k o t o n + i s,,,,,,,,,False,0.0,,Q'eqchi',1.0,,,
 Qeqchi-WORM-7,wold-Qeqchi-3-84-7,Qeqchi,WORM,chajal,chajal,tʃ a x a l,,,,,,,,,False,0.0,,Q'eqchi',1.0,,,
@@ -4765,7 +4765,7 @@ Qeqchi-SNAIL-2,wold-Qeqchi-3-94-2,Qeqchi,SNAIL,pur,pur,p u r,,,,,,,,,False,0.0,,
 Qeqchi-SNAIL-3,wold-Qeqchi-3-94-3,Qeqchi,SNAIL,tziitzib’,tziitzib’,t z iː t z i ɓ,,,,,,,,,False,0.0,,Q'eqchi',1.0,,,
 Qeqchi-FROG-1,wold-Qeqchi-3-95-1,Qeqchi,FROG,pelpel,pelpel,p e l p e l,,,,,,,,,False,0.0,,Q'eqchi',1.0,,,
 Qeqchi-FROG-2,wold-Qeqchi-3-95-2,Qeqchi,FROG,amoch,amoch,a m o tʃ,,,,,,,,,False,0.25,,Greater Lowland languages + Q'eqchi' + Ixil,1.0,Ch’olan,frog,*amuch
-Qeqchi-LIZARD-1,wold-Qeqchi-3-96-1,Qeqchi,LIZARD,tolokok,tolokok,t o l o k o kʰ,,,,,,,,,False,0.75,,Q'eqchi',1.0,Nahuatl,lizard,*tohloki
+Qeqchi-LIZARD-1,wold-Qeqchi-3-96-1,Qeqchi,LIZARD,tolokok,tolokok,t o l o k o kʰ,,,,,,,,,True,0.75,,Q'eqchi',1.0,Nahuatl,lizard,*tohloki
 Qeqchi-CROCODILE-1,wold-Qeqchi-3-97-1,Qeqchi,CROCODILE,ayin,ayin,a j i n,,,,,,,,,False,0.0,,proto-Mayan,1.0,,,
 Qeqchi-TURTLE-1,wold-Qeqchi-3-98-1,Qeqchi,TURTLE,kok,kok,k o kʰ,,,,,,,,,False,0.0,,proto-Mayan (not Huastec),1.0,,,
 Qeqchi-BODY-1,wold-Qeqchi-4-11-1,Qeqchi,BODY,tz’ejwal,tz’ejwal,tsʼ e xʷ a l,,,,,,,,,False,0.0,,Q'eqchi',1.0,,,
@@ -4781,7 +4781,7 @@ Qeqchi-BLOOD-1,wold-Qeqchi-4-15-1,Qeqchi,BLOOD,kik’,kik’,k i kʼ,,,,,,,,,Fal
 Qeqchi-BLOODVESSEL-1,wold-Qeqchi-4-151-1,Qeqchi,BLOODVESSEL,ich’,ich’,i tʃʼ,,,,,,,,,False,0.0,,Q'eqchi',1.0,,,
 Qeqchi-BONE-1,wold-Qeqchi-4-16-1,Qeqchi,BONE,b’aq,b’aq,ɓ a qʰ,,,,,,,,,False,0.0,,proto-Mayan,1.0,,,
 Qeqchi-RIB-1,wold-Qeqchi-4-162-1,Qeqchi,RIB,poolok'il,poolok'il,p oː l o kʼ i l,,,,,,,,,False,0.0,,Q'eqchi',1.0,,,
-Qeqchi-HORNANATOMY-1,wold-Qeqchi-4-17-1,Qeqchi,HORNANATOMY,xukub',xukub',ʃ u k u ɓ,,,,,,,,,False,0.75,,proto-Ch’olan,1.0,Ch’olan,horno,*xukub’
+Qeqchi-HORNANATOMY-1,wold-Qeqchi-4-17-1,Qeqchi,HORNANATOMY,xukub',xukub',ʃ u k u ɓ,,,,,,,,,True,0.75,,proto-Ch’olan,1.0,Ch’olan,horno,*xukub’
 Qeqchi-TAIL-1,wold-Qeqchi-4-18-1,Qeqchi,TAIL,ye,ye,j e,,,,,,,,,False,0.0,,proto-Mayan,1.0,,,
 Qeqchi-BACK-1,wold-Qeqchi-4-19-1,Qeqchi,BACK,ix,ix,i ʃ,,,,,,,,,False,0.0,,Eastern Mayan + Greater Q’anjob’alan,1.0,,,
 Qeqchi-BACK-2,wold-Qeqchi-4-19-2,Qeqchi,BACK,xaal it,xaal_it,ʃ aː l + i tʰ,,,,,,,,,False,0.0,,Q'eqchi',1.0,,,
@@ -4794,7 +4794,7 @@ Qeqchi-FACE-1,wold-Qeqchi-4-204-1,Qeqchi,FACE,u,u,u,,,,,,,,,False,0.0,,proto-May
 Qeqchi-FOREHEAD-1,wold-Qeqchi-4-205-1,Qeqchi,FOREHEAD,u,u,u,,,,,,,,,False,0.0,,proto-Mayan (not Huastec),1.0,,,
 Qeqchi-FOREHEAD-2,wold-Qeqchi-4-205-2,Qeqchi,FOREHEAD,peekem,peekem,p eː k e m,,,,,,,,,False,0.0,,Q'eqchi',1.0,,,
 Qeqchi-JAW-1,wold-Qeqchi-4-207-1,Qeqchi,JAW,rub'el e,rub'el_e,r u ɓ e l + e,,,,,,,,,False,0.0,,Q'eqchi',1.0,,,
-Qeqchi-CHEEK-1,wold-Qeqchi-4-208-1,Qeqchi,CHEEK,ko,ko,k o,,,,,,,,,False,0.75,,Eastern Mayan + Q'eqchi',1.0,Western Mayan,cheek,*ko:h
+Qeqchi-CHEEK-1,wold-Qeqchi-4-208-1,Qeqchi,CHEEK,ko,ko,k o,,,,,,,,,True,0.75,,Eastern Mayan + Q'eqchi',1.0,Western Mayan,cheek,*ko:h
 Qeqchi-CHIN-1,wold-Qeqchi-4-209-1,Qeqchi,CHIN,"rub’el e, rub’el eh",rub’el_e,r u ɓ e l + e,,,,,,,,,False,0.0,,Q'eqchi',1.0,,,
 Qeqchi-EYE-1,wold-Qeqchi-4-21-1,Qeqchi,EYE,sa’ u,sa’_u,s a ʔ + u,,,,,,,,,False,0.0,,Q'eqchi',1.0,,,
 Qeqchi-EYE-2,wold-Qeqchi-4-21-2,Qeqchi,EYE,xnaq’ u,xnaq’_u,ʃ n a qʼ + u,,,,,,,,,False,0.0,,Q'eqchi',1.0,,,
@@ -4834,7 +4834,7 @@ Qeqchi-PALMOFHAND-1,wold-Qeqchi-4-331-1,Qeqchi,PALMOFHAND,sa’ uq’,sa’_uq�
 Qeqchi-FINGER-1,wold-Qeqchi-4-34-1,Qeqchi,FINGER,ru’uj uq’,ru’uj_uq’,r u ʔ u x + u qʼ,,,,,,,,,False,0.0,,Q'eqchi',1.0,,,
 Qeqchi-THUMB-1,wold-Qeqchi-4-342-1,Qeqchi,THUMB,na' uq'm,na'_uq'm,n a ʔ + u qʼ m,,,,,,,,,False,0.0,,Q'eqchi',1.0,,,
 Qeqchi-FINGERNAIL-1,wold-Qeqchi-4-344-1,Qeqchi,FINGERNAIL,ixi’ij,ixi’ij,i ʃ i ʔ i x,,,,,,,,,False,0.0,,proto-Mayan,1.0,,,
-Qeqchi-CLAW-1,wold-Qeqchi-4-345-1,Qeqchi,CLAW,yax,yax,j a ʃ,,,,,,,,,False,0.75,,Greater Tzeltalan + Chujean + Q'eqchi',1.0,Ch’olan,crab,*yax
+Qeqchi-CLAW-1,wold-Qeqchi-4-345-1,Qeqchi,CLAW,yax,yax,j a ʃ,,,,,,,,,True,0.75,,Greater Tzeltalan + Chujean + Q'eqchi',1.0,Ch’olan,crab,*yax
 Qeqchi-CLAW-2,wold-Qeqchi-4-345-2,Qeqchi,CLAW,ixi’ij,ixi’ij,i ʃ i ʔ i x,,,,,,,,,False,0.0,,proto-Mayan,1.0,,,
 Qeqchi-LEG-1,wold-Qeqchi-4-35-1,Qeqchi,LEG,a’,a’,a ʔ,,,,,,,,,False,0.0,,proto-Mayan (not Huastec),1.0,,,
 Qeqchi-UPPERLEGTHIGH-1,wold-Qeqchi-4-351-1,Qeqchi,UPPERLEGTHIGH,ru a’,ru_a’,r u + a ʔ,,,,,,,,,False,0.0,,Q'eqchi',1.0,,,
@@ -4859,7 +4859,7 @@ Qeqchi-HEART-1,wold-Qeqchi-4-44-1,Qeqchi,HEART,ch'ool,ch'ool,tʃʼ oː l,,,,,,,,
 Qeqchi-LUNG-1,wold-Qeqchi-4-441-1,Qeqchi,LUNG,pospo'oy,pospo'oy,p o s p o ʔ o j,,,,,,,,,False,0.0,,proto-K’iche’an,1.0,,,
 Qeqchi-LIVER-1,wold-Qeqchi-4-45-1,Qeqchi,LIVER,ch'och',ch'och',tʃʼ o tʃʼ,,,,,,,,,False,0.0,,Eastern Mayan + Q’anjob’alan,1.0,,,
 Qeqchi-KIDNEY-1,wold-Qeqchi-4-451-1,Qeqchi,KIDNEY,kenq',kenq',k e n qʼ,,,,,,,,,False,0.0,,proto-Mayan,1.0,,,
-Qeqchi-STOMACH-1,wold-Qeqchi-4-46-1,Qeqchi,STOMACH,job’nil,job’nil,x o ɓ n i l,,,,,,,,,False,0.75,,Lowland languages,1.0,Ch’olan,"entrails, belly",*job’nel
+Qeqchi-STOMACH-1,wold-Qeqchi-4-46-1,Qeqchi,STOMACH,job’nil,job’nil,x o ɓ n i l,,,,,,,,,True,0.75,,Lowland languages,1.0,Ch’olan,"entrails, belly",*job’nel
 Qeqchi-INTESTINES-1,wold-Qeqchi-4-461-1,Qeqchi,INTESTINES,k'amk'ot,k'amk'ot,k ʔ a m kʼ o tʰ,,,,,,,,,False,0.0,,Q'eqchi',1.0,,,
 Qeqchi-INTESTINES-2,wold-Qeqchi-4-461-2,Qeqchi,INTESTINES,sooyom,sooyom,s oː j o m,,,,,,,,,False,0.0,,Q'eqchi',1.0,,,
 Qeqchi-WAIST-1,wold-Qeqchi-4-462-1,Qeqchi,WAIST,sa' yi,sa'_yi,s a ʔ + j i,,,,,,,,,False,0.0,,Q'eqchi',1.0,,,
@@ -4902,7 +4902,7 @@ Qeqchi-SNORE-4,wold-Qeqchi-4-612-4,Qeqchi,SNORE,quusank,quusank,q uː s a n kʰ,
 Qeqchi-SNORE-5,wold-Qeqchi-4-612-5,Qeqchi,SNORE,joq'yank,joq'yank,x o qʼ j a n kʰ,,,,,,,,,False,0.0,,proto-Eastern Mayan,1.0,,,
 Qeqchi-DREAMSOMETHING-1,wold-Qeqchi-4-62-1,Qeqchi,DREAMSOMETHING,matk'ek,matk'ek,m a t kʼ e kʰ,,,,,,,,,False,0.0,,Q'eqchi',1.0,,,
 Qeqchi-DREAMSOMETHING-2,wold-Qeqchi-4-62-2,Qeqchi,DREAMSOMETHING,na' uuchik,na'_uuchik,n a ʔ + uː tʃ i kʰ,,,,,,,,,False,0.0,,Q'eqchi',1.0,,,
-Qeqchi-WAKEUP-1,wold-Qeqchi-4-63-1,Qeqchi,WAKEUP,ajk,ajk,a x kʰ,,,,,,,,,False,0.75,,Yucatecan + Q'eqchi',1.0,Yucatecan,wake up,*aj
+Qeqchi-WAKEUP-1,wold-Qeqchi-4-63-1,Qeqchi,WAKEUP,ajk,ajk,a x kʰ,,,,,,,,,True,0.75,,Yucatecan + Q'eqchi',1.0,Yucatecan,wake up,*aj
 Qeqchi-FART-1,wold-Qeqchi-4-64-1,Qeqchi,FART,kisik,kisik,k i s i kʰ,,,,,,,,,False,0.0,,proto-Mayan (not Huastec),1.0,,,
 Qeqchi-PISS-1,wold-Qeqchi-4-65-1,Qeqchi,PISS,chu'uk,chu'uk,tʃ u ʔ u kʰ,,,,,,,,,False,0.0,,K’iche’an + Q’anjob’alan,1.0,,,
 Qeqchi-SHITDEFECATE-1,wold-Qeqchi-4-66-1,Qeqchi,SHITDEFECATE,k'otak,k'otak,k ʔ o t a kʰ,,,,,,,,,False,0.25,,Q'eqchi',1.0,Q’anjob’alan,to throw,k’ot
@@ -4960,7 +4960,7 @@ Qeqchi-LAME-1,wold-Qeqchi-4-94-1,Qeqchi,LAME,sik,sik,s i kʰ,,,,,,,,,False,0.0,,
 Qeqchi-DEAF-1,wold-Qeqchi-4-95-1,Qeqchi,DEAF,tz'apxik,tz'apxik,tsʼ a p ʃ i kʰ,,,,,,,,,False,0.0,,Q'eqchi',1.0,,,
 Qeqchi-MUTE-1,wold-Qeqchi-4-96-1,Qeqchi,MUTE,mem,mem,m e m,,,,,,,,,False,0.0,,proto-Mayan (not Huastec),1.0,,,
 Qeqchi-BLIND-1,wold-Qeqchi-4-97-1,Qeqchi,BLIND,mutz',mutz',m u tsʼ,,,,,,,,,False,0.0,,proto-Mayan,1.0,,,
-Qeqchi-DRUNK-1,wold-Qeqchi-4-98-1,Qeqchi,DRUNK,kalajenaq,kalajenaq,k a l a x e n a qʰ,,,,,,,,,False,0.75,,Lowland languages,1.0,Ch’olan,to get drunk,*kal
+Qeqchi-DRUNK-1,wold-Qeqchi-4-98-1,Qeqchi,DRUNK,kalajenaq,kalajenaq,k a l a x e n a qʰ,,,,,,,,,True,0.75,,Lowland languages,1.0,Ch’olan,to get drunk,*kal
 Qeqchi-NAKED-1,wold-Qeqchi-4-99-1,Qeqchi,NAKED,mich'mo,mich'mo,m i tʃʼ m o,,,,,,,,,False,0.0,,proto-K’iche’an,1.0,,,
 Qeqchi-NAKED-2,wold-Qeqchi-4-99-2,Qeqchi,NAKED,moq'mo,moq'mo,m o qʼ m o,,,,,,,,,False,0.0,,Q'eqchi',1.0,,,
 Qeqchi-NAKED-3,wold-Qeqchi-4-99-3,Qeqchi,NAKED,t'ust'u,t'ust'u,tʼ u s tʼ u,,,,,,,,,False,0.0,,proto-Mayan (not Huastec),1.0,,,
@@ -4998,20 +4998,20 @@ Qeqchi-ROASTORFRY-2,wold-Qeqchi-5-23-2,Qeqchi,ROASTORFRY,sisank,sisank,s i s a n
 Qeqchi-OVEN-1,wold-Qeqchi-5-25-1,Qeqchi,OVEN,oorn,oorn,oː ɾ n,,,,,,,,,True,1.0,,Post-Conquest Q’eqchi’,0.9,Spanish,the oven,horno
 Qeqchi-PAN-1,wold-Qeqchi-5-28-1,Qeqchi,PAN,xartin,xartin,ʃ a ɾ t i n,,,,,,,,,True,1.0,,Early Colonial Q'eqchi',0.9,Spanish,pan,sartén
 Qeqchi-PAN-2,wold-Qeqchi-5-28-2,Qeqchi,PAN,k’ileb’aal,k’ileb’aal,kʼ i l e ɓ aː l,,,,,,,,,False,0.0,,proto-Mayan (not Huastec),1.0,,,
-Qeqchi-DISH-1,wold-Qeqchi-5-31-1,Qeqchi,DISH,sek’,sek’,s e kʼ,,,,,,,,,False,0.75,,Western Mayan + Ixhil + Q'eqchi',1.0,Western Mayan,plate,sek’ (approximate form)
-Qeqchi-PLATE-1,wold-Qeqchi-5-32-1,Qeqchi,PLATE,sek’,sek’,s e kʼ,,,,,,,,,False,0.75,,Western Mayan + Ixhil + Q'eqchi',1.0,Western Mayan,plate,sek’ (approximate form)
+Qeqchi-DISH-1,wold-Qeqchi-5-31-1,Qeqchi,DISH,sek’,sek’,s e kʼ,,,,,,,,,True,0.75,,Western Mayan + Ixhil + Q'eqchi',1.0,Western Mayan,plate,sek’ (approximate form)
+Qeqchi-PLATE-1,wold-Qeqchi-5-32-1,Qeqchi,PLATE,sek’,sek’,s e kʼ,,,,,,,,,True,0.75,,Western Mayan + Ixhil + Q'eqchi',1.0,Western Mayan,plate,sek’ (approximate form)
 Qeqchi-PLATE-2,wold-Qeqchi-5-32-2,Qeqchi,PLATE,ch’och’ sek’,ch’och’_sek’,tʃʼ o tʃʼ + s e kʼ,,,,,,,,,False,0.0,,Q'eqchi',1.0,,,
 Qeqchi-PLATE-3,wold-Qeqchi-5-32-3,Qeqchi,PLATE,wa’leb’ sek’,wa’leb’_sek’,w a ʔ l e ɓ + s e kʼ,,,,,,,,,False,0.0,,Q'eqchi',1.0,,,
 Qeqchi-JUG-1,wold-Qeqchi-5-34-1,Qeqchi,JUG,puk'xaar,puk'xaar,p u kʼ ʃ aː r,,,,,,,,,False,0.0,,Q'eqchi',1.0,,,
 Qeqchi-JUG-2,wold-Qeqchi-5-34-2,Qeqchi,JUG,xaar,xaar,ʃ aː r,,,,,,,,,True,1.0,,Early Colonial Q'eqchi',0.9,Spanish,jug,jarro
-Qeqchi-CUP-1,wold-Qeqchi-5-35-1,Qeqchi,CUP,sek',sek',s e kʼ,,,,,,,,,False,0.75,,Western Mayan + Ixhil + Q'eqchi',1.0,Western Mayan,plate,sek’ (approximate form)
+Qeqchi-CUP-1,wold-Qeqchi-5-35-1,Qeqchi,CUP,sek',sek',s e kʼ,,,,,,,,,True,0.75,,Western Mayan + Ixhil + Q'eqchi',1.0,Western Mayan,plate,sek’ (approximate form)
 Qeqchi-CUP-2,wold-Qeqchi-5-35-2,Qeqchi,CUP,wa'leb' sek',wa'leb'_sek',w a ʔ l e ɓ + s e kʼ,,,,,,,,,False,0.0,,Q'eqchi',1.0,,,
 Qeqchi-CUP-3,wold-Qeqchi-5-35-3,Qeqchi,CUP,taas,taas,t aː s,,,,,,,,,True,1.0,,Later Post-Conquest Q’eqchi’,0.9,Spanish,the cup,taza
 Qeqchi-SAUCER-1,wold-Qeqchi-5-36-1,Qeqchi,SAUCER,platiiy,platiiy,p l a t iː j,,,,,,,,,True,1.0,,Post-Conquest Q’eqchi’,0.9,Spanish,saucer,platillo
 Qeqchi-SPOON-1,wold-Qeqchi-5-37-1,Qeqchi,SPOON,lekleb',lekleb',l e k l e ɓ,,,,,,,,,False,0.0,,Q'eqchi',1.0,,,
 Qeqchi-KNIFEFOREATING-1,wold-Qeqchi-5-38-1,Qeqchi,KNIFEFOREATING,ch'ina ch'iich',ch'ina_ch'iich',tʃʼ i n a + tʃʼ iː tʃʼ,,,,,,,,,False,0.0,,Q'eqchi',1.0,,,
 Qeqchi-FORK-1,wold-Qeqchi-5-39-1,Qeqchi,FORK,chikleb’,chikleb’,tʃ i k l e ɓ,,,,,,,,,False,0.0,,Q'eqchi',1.0,,,
-Qeqchi-TONGS-1,wold-Qeqchi-5-391-1,Qeqchi,TONGS,yax,yax,j a ʃ,,,,,,,,,False,0.75,,Greater Tzeltalan + Chujean + Q'eqchi',1.0,Ch’olan,crab,*yax
+Qeqchi-TONGS-1,wold-Qeqchi-5-391-1,Qeqchi,TONGS,yax,yax,j a ʃ,,,,,,,,,True,0.75,,Greater Tzeltalan + Chujean + Q'eqchi',1.0,Ch’olan,crab,*yax
 Qeqchi-MEAL-1,wold-Qeqchi-5-41-1,Qeqchi,MEAL,tzakahem,tzakahem,t z a k a h e m,,,,,,,,,False,0.0,,Q'eqchi',1.0,,,
 Qeqchi-MEAL-2,wold-Qeqchi-5-41-2,Qeqchi,MEAL,tzekeem,tzekeem,t z e k eː m,,,,,,,,,False,0.0,,Q'eqchi',1.0,,,
 Qeqchi-MEAL-3,wold-Qeqchi-5-41-3,Qeqchi,MEAL,tib'el wa,tib'el_wa,t i ɓ e l + w a,,,,,,,,,False,0.0,,Q'eqchi',1.0,,,
@@ -5026,7 +5026,7 @@ Qeqchi-PEEL-1,wold-Qeqchi-5-46-1,Qeqchi,PEEL,b'ich'ok,b'ich'ok,ɓ i tʃʼ o kʰ,
 Qeqchi-PEEL-2,wold-Qeqchi-5-46-2,Qeqchi,PEEL,jotzok,jotzok,x o t z o kʰ,,,,,,,,,False,0.0,,proto-Eastern Mayan,1.0,,,
 Qeqchi-SIEVEORSTRAIN-1,wold-Qeqchi-5-47-1,Qeqchi,SIEVEORSTRAIN,tz'ilok,tz'ilok,tsʼ i l o kʰ,,,,,,,,,False,0.25,,Q'eqchi',1.0,Mopan,"to sieve, strain",tz’iil
 Qeqchi-SCRAPE-1,wold-Qeqchi-5-48-1,Qeqchi,SCRAPE,qirok,qirok,q i ɾ o kʰ,,,,,,,,,False,0.0,,proto-K’iche’an,1.0,,,
-Qeqchi-SCRAPE-2,wold-Qeqchi-5-48-2,Qeqchi,SCRAPE,jochok,jochok,x o tʃ o kʰ,,,,,,,,,False,0.75,,Greater Lowland languages,1.0,Ch’olan,"to take off, peal off",*joch
+Qeqchi-SCRAPE-2,wold-Qeqchi-5-48-2,Qeqchi,SCRAPE,jochok,jochok,x o tʃ o kʰ,,,,,,,,,True,0.75,,Greater Lowland languages,1.0,Ch’olan,"to take off, peal off",*joch
 Qeqchi-SCRAPE-3,wold-Qeqchi-5-48-3,Qeqchi,SCRAPE,jokok,jokok,x o k o kʰ,,,,,,,,,False,0.0,,proto-Eastern Mayan,1.0,,,
 Qeqchi-SCRAPE-4,wold-Qeqchi-5-48-4,Qeqchi,SCRAPE,jot'ok,jot'ok,x o tʼ o kʰ,,,,,,,,,False,0.0,,Greater Lowland languages + Q'eqchi' + Ixil,1.0,,,
 Qeqchi-SCRAPE-5,wold-Qeqchi-5-48-5,Qeqchi,SCRAPE,q'oyok,q'oyok,qʼ o j o kʰ,,,,,,,,,False,0.0,,Q'eqchi',1.0,,,
@@ -5038,7 +5038,7 @@ Qeqchi-KNEAD-1,wold-Qeqchi-5-54-1,Qeqchi,KNEAD,yoq'ok,yoq'ok,j o qʼ o kʰ,,,,,,
 Qeqchi-FLOUR-1,wold-Qeqchi-5-55-1,Qeqchi,FLOUR,xk’aj ariin,xk’aj_ariin,ʃ kʼ a x + a ɾ iː n,,,,,,,,,False,0.0,,Q'eqchi',1.0,,,
 Qeqchi-FLOUR-2,wold-Qeqchi-5-55-2,Qeqchi,FLOUR,ariin,ariin,a ɾ iː n,,,,,,,,,True,1.0,,Post-Conquest Q’eqchi’,0.9,Spanish,the flour,harina
 Qeqchi-FLOUR-3,wold-Qeqchi-5-55-3,Qeqchi,FLOUR,k’aj,k’aj,kʼ a x,,,,,,,,,False,0.0,,proto-Mayan,1.0,,,
-Qeqchi-GRIND-1,wold-Qeqchi-5-56-1,Qeqchi,GRIND,tenok,tenok,t e n o kʰ,,,,,,,,,False,0.75,,Greater Tzeltalan + Q’anjob’alan,1.0,Ch’olan,"to hammer, flatten",*ten
+Qeqchi-GRIND-1,wold-Qeqchi-5-56-1,Qeqchi,GRIND,tenok,tenok,t e n o kʰ,,,,,,,,,True,0.75,,Greater Tzeltalan + Q’anjob’alan,1.0,Ch’olan,"to hammer, flatten",*ten
 Qeqchi-GRIND-2,wold-Qeqchi-5-56-2,Qeqchi,GRIND,yab'ok,yab'ok,j a ɓ o kʰ,,,,,,,,,False,0.0,,proto-K’iche’an,1.0,,,
 Qeqchi-GRIND-3,wold-Qeqchi-5-56-3,Qeqchi,GRIND,sob'ok,sob'ok,s o ɓ o kʰ,,,,,,,,,False,0.0,,proto-Mayan (not Huastec),1.0,,,
 Qeqchi-MILL-1,wold-Qeqchi-5-57-1,Qeqchi,MILL,poch’leb’,poch’leb’,p o tʃʼ l e ɓ,,,,,,,,,False,0.0,,Q'eqchi',1.0,,,
@@ -5097,7 +5097,7 @@ Qeqchi-THREAD-1,wold-Qeqchi-6-38-1,Qeqchi,THREAD,noq’,noq’,n o qʼ,,,,,,,,,F
 Qeqchi-DYE-1,wold-Qeqchi-6-39-1,Qeqchi,DYE,b’onok,b’onok,ɓ o n o kʰ,,,,,,,,,False,0.0,,proto-Mayan (not Huastec),1.0,,,
 Qeqchi-PONCHO-1,wold-Qeqchi-6-411-1,Qeqchi,PONCHO,isb’,isb’,i s ɓ,,,,,,,,,False,0.0,,Q'eqchi',1.0,,,
 Qeqchi-LADDER-1,wold-Qeqchi-7-37-1,Qeqchi,LADDER,taqleb’aal,taqleb’aal,t a q l e ɓ aː l,,,,,,,,,False,0.0,,Q'eqchi',1.0,,,
-Qeqchi-LADDER-2,wold-Qeqchi-7-37-2,Qeqchi,LADDER,eeb’,eeb’,eː ɓ,,,,,,,,,False,0.75,,Lowland languages,1.0,Ch’olan,ladder,*e’ehb’
+Qeqchi-LADDER-2,wold-Qeqchi-7-37-2,Qeqchi,LADDER,eeb’,eeb’,eː ɓ,,,,,,,,,True,0.75,,Lowland languages,1.0,Ch’olan,ladder,*e’ehb’
 Qeqchi-LADDER-3,wold-Qeqchi-7-37-3,Qeqchi,LADDER,eskaleer,eskaleer,e s k a l eː r,,,,,,,,,True,1.0,,Later Post-Conquest Q’eqchi’,0.9,Spanish,"ladder, stairs",escalera
 Qeqchi-DRESS-1,wold-Qeqchi-6-42-1,Qeqchi,DRESS,tiqb'al,tiqb'al,t i q ɓ a l,,,,,,,,,False,0.0,,Q'eqchi',1.0,,,
 Qeqchi-DRESS-2,wold-Qeqchi-6-42-2,Qeqchi,DRESS,po'ot,po'ot,p o ʔ o tʰ,,,,,,,,,False,0.0,,proto-K’iche’an,1.0,,,
@@ -5118,7 +5118,7 @@ Qeqchi-BELT-1,wold-Qeqchi-6-57-1,Qeqchi,BELT,nimla sinch,nimla_sinch,n i m l a +
 Qeqchi-GLOVE-1,wold-Qeqchi-6-58-1,Qeqchi,GLOVE,b'atb'a uq',b'atb'a_uq',ɓ a t ɓ a + u qʼ,,,,,,,,,False,0.0,,Q'eqchi',1.0,,,
 Qeqchi-GLOVE-2,wold-Qeqchi-6-58-2,Qeqchi,GLOVE,xta uq',xta_uq',ʃ t a + u qʼ,,,,,,,,,False,0.0,,Q'eqchi',1.0,,,
 Qeqchi-VEIL-1,wold-Qeqchi-6-59-1,Qeqchi,VEIL,"b’elo, b’eel",b’elo,ɓ e l o,,,,,,,,,True,1.0,,Post-Conquest Q’eqchi’,0.9,Spanish,the veil,velo
-Qeqchi-POCKET-1,wold-Qeqchi-6-61-1,Qeqchi,POCKET,b'oox,b'oox,ɓ oː ʃ,,,,,,,,,False,0.75,,Lowland languages,1.0,Ch’olan,round container,*box
+Qeqchi-POCKET-1,wold-Qeqchi-6-61-1,Qeqchi,POCKET,b'oox,b'oox,ɓ oː ʃ,,,,,,,,,True,0.75,,Lowland languages,1.0,Ch’olan,round container,*box
 Qeqchi-BUTTON-1,wold-Qeqchi-6-62-1,Qeqchi,BUTTON,b'otonx,b'otonx,ɓ o t o n ʃ,,,,,,,,,True,1.0,,Early Colonial Q'eqchi',0.9,Spanish,buttons,botones
 Qeqchi-PIN-1,wold-Qeqchi-6-63-1,Qeqchi,PIN,alpiler,alpiler,a l p i l e r,,,,,,,,,True,1.0,,Colonial Q'eqchi',0.9,Spanish,the pin,alfiler
 Qeqchi-JEWEL-1,wold-Qeqchi-6-72-1,Qeqchi,JEWEL,q’ol,q’ol,q ʔ o l,,,,,,,,,False,0.0,,Q'eqchi',1.0,,,
@@ -5126,13 +5126,13 @@ Qeqchi-RING-1,wold-Qeqchi-6-73-1,Qeqchi,RING,matq'ab',matq'ab',m a t qʼ a ɓ,,,
 Qeqchi-RING-2,wold-Qeqchi-6-73-2,Qeqchi,RING,b’ot,b’ot,ɓ o tʰ,,,,,,,,,False,0.0,,Q'eqchi',1.0,,,
 Qeqchi-BRACELET-1,wold-Qeqchi-6-74-1,Qeqchi,BRACELET,pulseer,pulseer,p u l s eː r,,,,,,,,,True,1.0,,Later Post-Conquest Q’eqchi’,0.9,Spanish,the bracelet,pulsera
 Qeqchi-EARRING-1,wold-Qeqchi-6-77-1,Qeqchi,EARRING,ka'xik,ka'xik,k a ʔ ʃ i kʰ,,,,,,,,,False,0.0,,Q'eqchi',1.0,,,
-Qeqchi-HEADBANDORHEADDRESS-1,wold-Qeqchi-6-78-1,Qeqchi,HEADBANDORHEADDRESS,t'upuy,t'upuy,tʼ u p u j,,,,,,,,,False,0.75,,proto-Ch’olan (?),1.0,Ch’olti’,headband,t’upuy
+Qeqchi-HEADBANDORHEADDRESS-1,wold-Qeqchi-6-78-1,Qeqchi,HEADBANDORHEADDRESS,t'upuy,t'upuy,tʼ u p u j,,,,,,,,,True,0.75,,proto-Ch’olan (?),1.0,Ch’olti’,headband,t’upuy
 Qeqchi-TATTOO-1,wold-Qeqchi-6-79-1,Qeqchi,TATTOO,eetalil,eetalil,eː t a l i l,,,,,,,,,False,0.0,,Q'eqchi',1.0,,,
 Qeqchi-RAG-1,wold-Qeqchi-6-81-1,Qeqchi,RAG,sut,sut,s u tʰ,,,,,,,,,False,0.0,,proto-Eastern Mayan,1.0,,,
 Qeqchi-TOWEL-1,wold-Qeqchi-6-82-1,Qeqchi,TOWEL,tuwaay,tuwaay,t u w aː j,,,,,,,,,True,1.0,,Post-Conquest Q’eqchi’,0.9,Spanish,the towel,toalla
 Qeqchi-COMB-1,wold-Qeqchi-6-91-1,Qeqchi,COMB,xiyab',xiyab',ʃ i j a ɓ,,,,,,,,,False,0.0,,proto-Mayan (not Huastec),1.0,,,
 Qeqchi-BRUSH-1,wold-Qeqchi-6-92-1,Qeqchi,BRUSH,sepiiy,sepiiy,s e p iː j,,,,,,,,,True,1.0,,Later Post-Conquest Q’eqchi’,0.9,Spanish,the brush,cepillo
-Qeqchi-BRAID-1,wold-Qeqchi-6-921-1,Qeqchi,BRAID,tz’uluk,tz’uluk,tsʼ u l u kʰ,,,,,,,,,False,0.75,,Q’anjob’alan + Ch’olan + Q'eqchi',1.0,Ch’olti’,"to weave (mat, arch)",*tz’ul
+Qeqchi-BRAID-1,wold-Qeqchi-6-921-1,Qeqchi,BRAID,tz’uluk,tz’uluk,tsʼ u l u kʰ,,,,,,,,,True,0.75,,Q’anjob’alan + Ch’olan + Q'eqchi',1.0,Ch’olti’,"to weave (mat, arch)",*tz’ul
 Qeqchi-RAZOR-1,wold-Qeqchi-6-93-1,Qeqchi,RAZOR,jooleb’,jooleb’,x oː l e ɓ,,,,,,,,,False,0.0,,Q'eqchi',1.0,,,
 Qeqchi-RAZOR-2,wold-Qeqchi-6-93-2,Qeqchi,RAZOR,nawaaj,nawaaj,n a w aː x,,,,,,,,,True,1.0,,Post-Conquest Q’eqchi’,0.9,Spanish,knife,navaja
 Qeqchi-OINTMENT-1,wold-Qeqchi-6-94-1,Qeqchi,OINTMENT,b'anol u,b'anol_u,ɓ a n o l + u,,,,,,,,,False,0.0,,Q'eqchi',1.0,,,
@@ -5141,7 +5141,7 @@ Qeqchi-MIRROR-1,wold-Qeqchi-6-96-1,Qeqchi,MIRROR,lem,lem,l e m,,,,,,,,,False,0.0
 Qeqchi-DWELLLIVERESIDE-1,wold-Qeqchi-7-11-1,Qeqchi,DWELLLIVERESIDE,na'ajink,na'ajink,n a ʔ a x i n kʰ,,,,,,,,,False,0.0,,Q'eqchi',1.0,,,
 Qeqchi-HOUSE-1,wold-Qeqchi-7-12-1,Qeqchi,HOUSE,ochoch,ochoch,o tʃ o tʃ,,,,,,,,,False,0.0,,proto-Mayan,1.0,,,
 Qeqchi-HOUSE-2,wold-Qeqchi-7-12-2,Qeqchi,HOUSE,"kab', kab’l",kab',k a ɓ,,,,,,,,,False,0.0,,proto-Eastern Mayan,1.0,,,
-Qeqchi-HUT-1,wold-Qeqchi-7-13-1,Qeqchi,HUT,po’lem,po’lem,p o ʔ l e m,,,,,,,,,False,0.75,,Ch’olti’,1.0,Ch’olti’,"abandoned house, ruin",*po’lem
+Qeqchi-HUT-1,wold-Qeqchi-7-13-1,Qeqchi,HUT,po’lem,po’lem,p o ʔ l e m,,,,,,,,,True,0.75,,Ch’olti’,1.0,Ch’olti’,"abandoned house, ruin",*po’lem
 Qeqchi-HUT-2,wold-Qeqchi-7-13-2,Qeqchi,HUT,paapa'x,paapa'x,p aː p a ʔ ʃ,,,,,,,,,False,0.0,,Q'eqchi',1.0,,,
 Qeqchi-GARDENHOUSE-1,wold-Qeqchi-7-131-1,Qeqchi,GARDENHOUSE,tz'alam,tz'alam,tsʼ a l a m,,,,,,,,,False,0.0,,proto-Eastern Mayan + Ch’olan,1.0,,,
 Qeqchi-YARD-1,wold-Qeqchi-7-15-1,Qeqchi,YARD,neb'aal,neb'aal,n e ɓ aː l,,,,,,,,,False,0.0,,Q'eqchi',1.0,,,
@@ -5207,7 +5207,7 @@ Qeqchi-FURROW-1,wold-Qeqchi-8-212-1,Qeqchi,FURROW,qeer,qeer,q eː r,,,,,,,,,Fals
 Qeqchi-FURROW-2,wold-Qeqchi-8-212-2,Qeqchi,FURROW,ch’ol,ch’ol,tʃʼ o l,,,,,,,,,False,0.0,,Q'eqchi',1.0,,,
 Qeqchi-FURROW-3,wold-Qeqchi-8-212-3,Qeqchi,FURROW,tzol,tzol,t z o l,,,,,,,,,False,0.5,,proto-Western Mayan + Yucatecan,1.0,Ch’olan,"line, row",*tzohl
 Qeqchi-FURROW-4,wold-Qeqchi-8-212-4,Qeqchi,FURROW,suurk,suurk,s uː ɾ kʰ,,,,,,,,,True,1.0,,Later Post-Conquest Q’eqchi’,0.9,Spanish,the furrow,surco
-Qeqchi-DIG-1,wold-Qeqchi-8-22-1,Qeqchi,DIG,pikok,pikok,p i k o kʰ,,,,,,,,,False,0.75,,proto-Ch’olan,1.0,Ch’olan,to dig,*pik
+Qeqchi-DIG-1,wold-Qeqchi-8-22-1,Qeqchi,DIG,pikok,pikok,p i k o kʰ,,,,,,,,,True,0.75,,proto-Ch’olan,1.0,Ch’olan,to dig,*pik
 Qeqchi-DIG-2,wold-Qeqchi-8-22-2,Qeqchi,DIG,aq'ink,aq'ink,a qʼ i n kʰ,,,,,,,,,False,0.0,,proto-Mayan,1.0,,,
 Qeqchi-DIG-3,wold-Qeqchi-8-22-3,Qeqchi,DIG,b'ekok,b'ekok,ɓ e k o kʰ,,,,,,,,,False,0.0,,proto-Eastern Mayan,1.0,,,
 Qeqchi-SHOVEL-1,wold-Qeqchi-8-24-1,Qeqchi,SHOVEL,paal,paal,p aː l,,,,,,,,,True,1.0,,Post-Conquest Q’eqchi’,0.9,Spanish,"shovel, paddle",pala
@@ -5220,7 +5220,7 @@ Qeqchi-SOWSEEDS-2,wold-Qeqchi-8-31-2,Qeqchi,SOWSEEDS,hirok,hirok,h i ɾ o kʰ,,,
 Qeqchi-SEED-1,wold-Qeqchi-8-311-1,Qeqchi,SEED,iyaj,iyaj,i j a x,,,,,,,,,False,0.0,,proto-Mayan,1.0,,,
 Qeqchi-MOW-1,wold-Qeqchi-8-32-1,Qeqchi,MOW,setok,setok,s e t o kʰ,,,,,,,,,False,0.0,,K’iche’an + Ch’olan,1.0,,,
 Qeqchi-SICKLEORSCYTHE-1,wold-Qeqchi-8-33-1,Qeqchi,SICKLEORSCYTHE,k'onk'ookil ch'iich',k'onk'ookil_ch'iich',k ʔ o n kʼ oː k i l + tʃʼ iː tʃʼ,,,,,,,,,False,0.0,,Q'eqchi',1.0,,,
-Qeqchi-THRESH-1,wold-Qeqchi-8-34-1,Qeqchi,THRESH,pech'ok,pech'ok,p e tʃʼ o kʰ,,,,,,,,,False,0.75,,proto-Ch’olan (?),1.0,Ch’olan,to carve in wood,pech’
+Qeqchi-THRESH-1,wold-Qeqchi-8-34-1,Qeqchi,THRESH,pech'ok,pech'ok,p e tʃʼ o kʰ,,,,,,,,,True,0.75,,proto-Ch’olan (?),1.0,Ch’olan,to carve in wood,pech’
 Qeqchi-THRESH-2,wold-Qeqchi-8-34-2,Qeqchi,THRESH,ch'epok,ch'epok,tʃʼ e p o kʰ,,,,,,,,,False,0.0,,proto-Mayan (not Huastec),1.0,,,
 Qeqchi-THRESH-3,wold-Qeqchi-8-34-3,Qeqchi,THRESH,iximak,iximak,i ʃ i m a kʰ,,,,,,,,,False,0.0,,proto-Mayan,1.0,,,
 Qeqchi-GRAIN-1,wold-Qeqchi-8-42-1,Qeqchi,GRAIN,t'orol,t'orol,tʼ o ɾ o l,,,,,,,,,False,0.0,,Q'eqchi',1.0,,,
@@ -5230,7 +5230,7 @@ Qeqchi-MAIZE-1,wold-Qeqchi-8-47-1,Qeqchi,MAIZE,ixim,ixim,i ʃ i m,,,,,,,,,False,
 Qeqchi-RICE-1,wold-Qeqchi-8-48-1,Qeqchi,RICE,aros,aros,a ɾ o s,,,,,,,,,True,1.0,,Later Post-Conquest Q’eqchi’,0.9,Spanish,the rice,arroz
 Qeqchi-GRASS-1,wold-Qeqchi-8-51-1,Qeqchi,GRASS,pach'aya',pach'aya',p a tʃʼ a j a ʔ,,,,,,,,,False,0.0,,Q'eqchi',1.0,,,
 Qeqchi-GRASS-2,wold-Qeqchi-8-51-2,Qeqchi,GRASS,ichaj,ichaj,i tʃ a x,,,,,,,,,False,0.0,,proto-Mayan (not Huastec),1.0,,,
-Qeqchi-HAY-1,wold-Qeqchi-8-52-1,Qeqchi,HAY,aq (2),aq,a qʰ,,,,,,,,,False,0.75,,,,Ch’olan,"grass, hay",*ak
+Qeqchi-HAY-1,wold-Qeqchi-8-52-1,Qeqchi,HAY,aq (2),aq,a qʰ,,,,,,,,,True,0.75,,,,Ch’olan,"grass, hay",*ak
 Qeqchi-HAY-2,wold-Qeqchi-8-52-2,Qeqchi,HAY,k’im,k’im,kʼ i m,,,,,,,,,False,0.0,,proto-Mayan,1.0,,,
 Qeqchi-HAY-3,wold-Qeqchi-8-52-3,Qeqchi,HAY,tam,tam,t a m,,,,,,,,,False,0.0,,proto-K’iche’an,1.0,,,
 Qeqchi-PLANTVEGETATION-1,wold-Qeqchi-8-53-1,Qeqchi,PLANTVEGETATION,awinq,awinq,a w i n qʰ,,,,,,,,,False,0.0,,Q'eqchi',1.0,,,
@@ -5252,14 +5252,14 @@ Qeqchi-PIPE-1,wold-Qeqchi-8-691-1,Qeqchi,PIPE,kachimp,kachimp,k a tʃ i m pʰ,,,
 Qeqchi-TREESTUMP-1,wold-Qeqchi-8-72-1,Qeqchi,TREESTUMP,toon,toon,t oː n,,,,,,,,,False,0.0,,Q'eqchi',1.0,,,
 Qeqchi-TREETRUNK-1,wold-Qeqchi-8-73-1,Qeqchi,TREETRUNK,toon,toon,t oː n,,,,,,,,,False,0.0,,Q'eqchi',1.0,,,
 Qeqchi-TREETRUNK-2,wold-Qeqchi-8-73-2,Qeqchi,TREETRUNK,roq,roq,r o qʰ,,,,,,,,,False,0.0,,proto-Mayan (not Huastec),1.0,,,
-Qeqchi-FORKEDBRANCH-1,wold-Qeqchi-8-74-1,Qeqchi,FORKEDBRANCH,xaal che',xaal_che',ʃ aː l + tʃ e ʔ,,,,,,,,,False,0.75,,Lowland languages,1.0,Ch’olan,forked branch?,xaal che’
+Qeqchi-FORKEDBRANCH-1,wold-Qeqchi-8-74-1,Qeqchi,FORKEDBRANCH,xaal che',xaal_che',ʃ aː l + tʃ e ʔ,,,,,,,,,True,0.75,,Lowland languages,1.0,Ch’olan,forked branch?,xaal che’
 Qeqchi-FORKEDBRANCH-2,wold-Qeqchi-8-74-2,Qeqchi,FORKEDBRANCH,ra' che',ra'_che',r a ʔ + tʃ e ʔ,,,,,,,,,False,0.0,,Q'eqchi',1.0,,,
 Qeqchi-BARK-1,wold-Qeqchi-8-75-1,Qeqchi,BARK,rix che,rix_che,r i ʃ + tʃ e,,,,,,,,,False,0.0,,proto-Mayan (not Huastec),1.0,,,
 Qeqchi-SAP-1,wold-Qeqchi-8-76-1,Qeqchi,SAP,ya'al,ya'al,j a ʔ a l,,,,,,,,,False,0.25,,proto-Mayan,1.0,K’iche’an,sap,ya’al
 Qeqchi-SAP-2,wold-Qeqchi-8-76-2,Qeqchi,SAP,q'ol,q'ol,qʼ o l,,,,,,,,,False,0.0,,Q'eqchi',1.0,,,
 Qeqchi-PALMTREE-1,wold-Qeqchi-8-81-1,Qeqchi,PALMTREE,kala',kala',k a l a ʔ,,,,,,,,,False,0.0,,Q'eqchi',1.0,,,
 Qeqchi-PALMTREE-2,wold-Qeqchi-8-81-2,Qeqchi,PALMTREE,b’ob’,b’ob’,ɓ o ɓ,,,,,,,,,False,0.25,,Western Mayan + Yucatecan + Ixhil,1.0,Ch’olan,a certain plant with large leaves,b’ob’
-Qeqchi-PALMTREE-3,wold-Qeqchi-8-81-3,Qeqchi,PALMTREE,xeek',xeek',ʃ eː kʼ,,,,,,,,,False,0.75,,Q’anjob’alan + Chujean,1.0,Western Mayan,a kind of palm or palm-like tree,*xeek’el
+Qeqchi-PALMTREE-3,wold-Qeqchi-8-81-3,Qeqchi,PALMTREE,xeek',xeek',ʃ eː kʼ,,,,,,,,,True,0.75,,Q’anjob’alan + Chujean,1.0,Western Mayan,a kind of palm or palm-like tree,*xeek’el
 Qeqchi-COCONUT-1,wold-Qeqchi-8-82-1,Qeqchi,COCONUT,kook,kook,k oː kʰ,,,,,,,,,True,1.0,,Post-Conquest Q’eqchi’,0.9,Spanish,coconut,coco
 Qeqchi-CITRUSFRUIT-1,wold-Qeqchi-8-83-1,Qeqchi,CITRUSFRUIT,lamunx,lamunx,l a m u n ʃ,,,,,,,,,True,1.0,,Early Colonial Q'eqchi',0.9,Spanish,lemon,limones
 Qeqchi-SWEETPOTATO-1,wold-Qeqchi-8-91-1,Qeqchi,SWEETPOTATO,is,is,i s,,,,,,,,,False,0.0,,proto-Mayan,1.0,,,
@@ -5279,7 +5279,7 @@ Qeqchi-BEND-1,wold-Qeqchi-9-14-1,Qeqchi,BEND,k'unuk,k'unuk,k ʔ u n u kʰ,,,,,,,
 Qeqchi-BEND-2,wold-Qeqchi-9-14-2,Qeqchi,BEND,hutzuk,hutzuk,h u t z u kʰ,,,,,,,,,False,0.0,,Q'eqchi',1.0,,,
 Qeqchi-BEND-3,wold-Qeqchi-9-14-3,Qeqchi,BEND,k'onok,k'onok,k ʔ o n o kʰ,,,,,,,,,True,1.0,,Western Mayan + Q'eqchi',1.0,Ch’olan,to bend,*k’ong
 Qeqchi-BEND-4,wold-Qeqchi-9-14-4,Qeqchi,BEND,lokok,lokok,l o k o kʰ,,,,,,,,,False,0.0,,proto-Mayan (not Huastec),1.0,,,
-Qeqchi-BEND-5,wold-Qeqchi-9-14-5,Qeqchi,BEND,b’asok,b’asok,ɓ a s o kʰ,,,,,,,,,False,0.75,,Ch’olan + Ixhil + Q'eqchi',1.0,Ch’olan,to wrap up,*b’as
+Qeqchi-BEND-5,wold-Qeqchi-9-14-5,Qeqchi,BEND,b’asok,b’asok,ɓ a s o kʰ,,,,,,,,,True,0.75,,Ch’olan + Ixhil + Q'eqchi',1.0,Ch’olan,to wrap up,*b’as
 Qeqchi-BEND-6,wold-Qeqchi-9-14-6,Qeqchi,BEND,liq'ok,liq'ok,l i qʼ o kʰ,,,,,,,,,False,0.0,,proto-Eastern Mayan,1.0,,,
 Qeqchi-FOLD-1,wold-Qeqchi-9-15-1,Qeqchi,FOLD,b’olok,b’olok,ɓ o l o kʰ,,,,,,,,,False,0.0,,proto-Eastern Mayan,1.0,,,
 Qeqchi-FOLD-2,wold-Qeqchi-9-15-2,Qeqchi,FOLD,mochok,mochok,m o tʃ o kʰ,,,,,,,,,False,0.0,,Western Mayan + Ixhil + Q'eqchi' + Poqom,1.0,,,
@@ -5295,7 +5295,7 @@ Qeqchi-KNOT-2,wold-Qeqchi-9-192-2,Qeqchi,KNOT,t'ok',t'ok',tʼ o kʼ,,,,,,,,,Fals
 Qeqchi-STRIKEORBEAT-1,wold-Qeqchi-9-21-1,Qeqchi,STRIKEORBEAT,b'ujuk,b'ujuk,ɓ u x u kʰ,,,,,,,,,False,0.0,,proto-Eastern Mayan,1.0,,,
 Qeqchi-STRIKEORBEAT-2,wold-Qeqchi-9-21-2,Qeqchi,STRIKEORBEAT,ketok,ketok,k e t o kʰ,,,,,,,,,False,0.0,,proto-K’iche’an?,1.0,,,
 Qeqchi-STRIKEORBEAT-3,wold-Qeqchi-9-21-3,Qeqchi,STRIKEORBEAT,potz'ok,potz'ok,p o tsʼ o kʰ,,,,,,,,,False,0.0,,proto-Eastern Mayan,1.0,,,
-Qeqchi-STRIKEORBEAT-4,wold-Qeqchi-9-21-4,Qeqchi,STRIKEORBEAT,tenok,tenok,t e n o kʰ,,,,,,,,,False,0.75,,Greater Tzeltalan + Q’anjob’alan,1.0,Ch’olan,"to hammer, flatten",*ten
+Qeqchi-STRIKEORBEAT-4,wold-Qeqchi-9-21-4,Qeqchi,STRIKEORBEAT,tenok,tenok,t e n o kʰ,,,,,,,,,True,0.75,,Greater Tzeltalan + Q’anjob’alan,1.0,Ch’olan,"to hammer, flatten",*ten
 Qeqchi-STRIKEORBEAT-5,wold-Qeqchi-9-21-5,Qeqchi,STRIKEORBEAT,wojok,wojok,w o x o kʰ,,,,,,,,,False,0.0,,Q'eqchi',1.0,,,
 Qeqchi-POUND-1,wold-Qeqchi-9-211-1,Qeqchi,POUND,t'i'ok,t'i'ok,tʼ i ʔ o kʰ,,,,,,,,,False,0.0,,Q'eqchi',1.0,,,
 Qeqchi-CUT-1,wold-Qeqchi-9-22-1,Qeqchi,CUT,kuruk,kuruk,k u ɾ u kʰ,,,,,,,,,False,0.0,,Q'eqchi',1.0,,,
@@ -5304,7 +5304,7 @@ Qeqchi-CHOP-1,wold-Qeqchi-9-222-1,Qeqchi,CHOP,yok'ok,yok'ok,j o kʼ o kʰ,,,,,,,
 Qeqchi-CHOP-2,wold-Qeqchi-9-222-2,Qeqchi,CHOP,jesok,jesok,x e s o kʰ,,,,,,,,,False,0.0,,proto-Eastern Mayan,1.0,,,
 Qeqchi-CHOP-3,wold-Qeqchi-9-222-3,Qeqchi,CHOP,raqink,raqink,r a q i n kʰ,,,,,,,,,False,0.0,,proto-Eastern Mayan,1.0,,,
 Qeqchi-CHOP-4,wold-Qeqchi-9-222-4,Qeqchi,CHOP,qapok,qapok,q a p o kʰ,,,,,,,,,False,0.0,,proto-Eastern Mayan,1.0,,,
-Qeqchi-STABTODEATH-1,wold-Qeqchi-9-223-1,Qeqchi,STABTODEATH,xeq'ok,xeq'ok,ʃ e qʼ o kʰ,,,,,,,,,False,0.75,,proto-Ch’olan + Huastec + Q'eqchi',1.0,Ch’olan,"stab, pierce",xek’
+Qeqchi-STABTODEATH-1,wold-Qeqchi-9-223-1,Qeqchi,STABTODEATH,xeq'ok,xeq'ok,ʃ e qʼ o kʰ,,,,,,,,,True,0.75,,proto-Ch’olan + Huastec + Q'eqchi',1.0,Ch’olan,"stab, pierce",xek’
 Qeqchi-KNIFE-1,wold-Qeqchi-9-23-1,Qeqchi,KNIFE,ch'ina ch'iich',ch'ina_ch'iich',tʃʼ i n a + tʃʼ iː tʃʼ,,,,,,,,,False,0.0,,Q'eqchi',1.0,,,
 Qeqchi-SHEARS-1,wold-Qeqchi-9-24-1,Qeqchi,SHEARS,tixeer,tixeer,t i ʃ eː r,,,,,,,,,True,1.0,,Early Colonial Q'eqchi',0.9,Spanish,scissors,tijera
 Qeqchi-AXE-1,wold-Qeqchi-9-25-1,Qeqchi,AXE,maal,maal,m aː l,,,,,,,,,False,0.0,,Q'eqchi',1.0,,,
@@ -5328,14 +5328,14 @@ Qeqchi-RUB-2,wold-Qeqchi-9-31-2,Qeqchi,RUB,b'iqok,b'iqok,ɓ i q o kʰ,,,,,,,,,Fa
 Qeqchi-STRETCH-1,wold-Qeqchi-9-32-1,Qeqchi,STRETCH,yu'uk,yu'uk,j u ʔ u kʰ,,,,,,,,,False,0.0,,proto-Eastern Mayan,1.0,,,
 Qeqchi-STRETCH-2,wold-Qeqchi-9-32-2,Qeqchi,STRETCH,rinok,rinok,r i n o kʰ,,,,,,,,,False,0.0,,proto-Eastern Mayan,1.0,,,
 Qeqchi-PULL-1,wold-Qeqchi-9-33-1,Qeqchi,PULL,jukunk,jukunk,x u k u n kʰ,,,,,,,,,False,0.0,,proto-Mayan (not Huastec),1.0,,,
-Qeqchi-PULL-2,wold-Qeqchi-9-33-2,Qeqchi,PULL,kelonk,kelonk,k e l o n kʰ,,,,,,,,,False,0.75,,proto-Ch’olan,1.0,Ch’olan,to pull,*kehl
+Qeqchi-PULL-2,wold-Qeqchi-9-33-2,Qeqchi,PULL,kelonk,kelonk,k e l o n kʰ,,,,,,,,,True,0.75,,proto-Ch’olan,1.0,Ch’olan,to pull,*kehl
 Qeqchi-SPREADOUT-1,wold-Qeqchi-9-34-1,Qeqchi,SPREADOUT,chirok,chirok,tʃ i ɾ o kʰ,,,,,,,,,False,0.0,,Q'eqchi',1.0,,,
 Qeqchi-SPREADOUT-2,wold-Qeqchi-9-34-2,Qeqchi,SPREADOUT,helok,helok,h e l o kʰ,,,,,,,,,False,0.0,,Q'eqchi',1.0,,,
 Qeqchi-HANGUP-1,wold-Qeqchi-9-341-1,Qeqchi,HANGUP,t’uyub’ank,t’uyub’ank,tʼ u j u ɓ a n kʰ,,,,,,,,,False,0.0,,proto-Mayan (not Huastec),1.0,,,
 Qeqchi-PRESS-1,wold-Qeqchi-9-342-1,Qeqchi,PRESS,nat'ok,nat'ok,n a tʼ o kʰ,,,,,,,,,False,0.0,,proto-Mayan,1.0,,,
 Qeqchi-SQUEEZE-1,wold-Qeqchi-9-343-1,Qeqchi,SQUEEZE,pitz’ok,pitz’ok,p i tsʼ o kʰ,,,,,,,,,False,0.0,,proto-Mayan (not Huastec),1.0,,,
 Qeqchi-SQUEEZE-2,wold-Qeqchi-9-343-2,Qeqchi,SQUEEZE,yatz'ok,yatz'ok,j a tsʼ o kʰ,,,,,,,,,False,0.0,,proto-Mayan (not Huastec),1.0,,,
-Qeqchi-POUR-1,wold-Qeqchi-9-35-1,Qeqchi,POUR,hoyok,hoyok,h o j o kʰ,,,,,,,,,False,0.75,,Yucatecan + Q'eqchi',1.0,Yucatecan,irrigate,*hoy
+Qeqchi-POUR-1,wold-Qeqchi-9-35-1,Qeqchi,POUR,hoyok,hoyok,h o j o kʰ,,,,,,,,,True,0.75,,Yucatecan + Q'eqchi',1.0,Yucatecan,irrigate,*hoy
 Qeqchi-WASH-1,wold-Qeqchi-9-36-1,Qeqchi,WASH,ch'ajok,ch'ajok,tʃʼ a x o kʰ,,,,,,,,,False,0.0,,proto-Mayan (not Huastec),1.0,,,
 Qeqchi-WASH-2,wold-Qeqchi-9-36-2,Qeqchi,WASH,puch'uk,puch'uk,p u tʃʼ u kʰ,,,,,,,,,False,0.0,,proto-Mayan,1.0,,,
 Qeqchi-SWEEP-1,wold-Qeqchi-9-37-1,Qeqchi,SWEEP,mesunk,mesunk,m e s u n kʰ,,,,,,,,,False,0.0,,proto-Mayan (not Huastec),1.0,,,
@@ -5361,7 +5361,7 @@ Qeqchi-IRON-1,wold-Qeqchi-9-67-1,Qeqchi,IRON,ch'iich',ch'iich',tʃʼ iː tʃʼ,,
 Qeqchi-LEADCHEMICALELEMENT-1,wold-Qeqchi-9-68-1,Qeqchi,LEADCHEMICALELEMENT,rax ch'iich',rax_ch'iich',r a ʃ + tʃʼ iː tʃʼ,,,,,,,,,False,0.0,,Q'eqchi',1.0,,,
 Qeqchi-POTTER-1,wold-Qeqchi-9-71-1,Qeqchi,POTTER,pak'onel,pak'onel,p a kʼ o n e l,,,,,,,,,False,0.0,,Q'eqchi',1.0,,,
 Qeqchi-POTTER-2,wold-Qeqchi-9-71-2,Qeqchi,POTTER,pak'ol,pak'ol,p a kʼ o l,,,,,,,,,False,0.25,,Q'eqchi',1.0,,,
-Qeqchi-MOLD-1,wold-Qeqchi-9-72-1,Qeqchi,MOLD,pak'ok,pak'ok,p a kʼ o kʰ,,,,,,,,,False,0.75,,Western Mayan + Yucatecan,1.0,Ch’olan,to shape,pak’
+Qeqchi-MOLD-1,wold-Qeqchi-9-72-1,Qeqchi,MOLD,pak'ok,pak'ok,p a kʼ o kʰ,,,,,,,,,True,0.75,,Western Mayan + Yucatecan,1.0,Ch’olan,to shape,pak’
 Qeqchi-CLAY-1,wold-Qeqchi-9-73-1,Qeqchi,CLAY,seb’,seb’,s e ɓ,,,,,,,,,False,0.0,,Q'eqchi',1.0,,,
 Qeqchi-GLASS-1,wold-Qeqchi-9-74-1,Qeqchi,GLASS,lem,lem,l e m,,,,,,,,,False,0.0,,proto-Mayan (not Huastec),1.0,,,
 Qeqchi-GLASS-2,wold-Qeqchi-9-74-2,Qeqchi,GLASS,meet,meet,m eː tʰ,,,,,,,,,True,1.0,,Colonial Q'eqchi',0.9,Spanish,bottle of wine,limeta
@@ -5372,7 +5372,7 @@ Qeqchi-MAT-1,wold-Qeqchi-9-77-1,Qeqchi,MAT,aj,aj,a x,,,,,,,,,False,0.0,,proto-Ma
 Qeqchi-MAT-2,wold-Qeqchi-9-77-2,Qeqchi,MAT,poop,poop,p oː pʰ,,,,,,,,,False,0.0,,proto-Mayan (not Huastec),1.0,,,
 Qeqchi-RUG-1,wold-Qeqchi-9-771-1,Qeqchi,RUG,alfombra,alfombra,a l f o m b ɾ a,,,,,,,,,True,1.0,,Post-Conquest Q’eqchi’,0.9,Spanish,rug,alfombra
 Qeqchi-NETBAG-1,wold-Qeqchi-9-78-1,Qeqchi,NETBAG,soq',soq',s o qʼ,,,,,,,,,False,0.0,,Q'eqchi',1.0,,,
-Qeqchi-FANOBJECT-1,wold-Qeqchi-9-79-1,Qeqchi,FANOBJECT,waal,waal,w aː l,,,,,,,,,False,0.75,,Lowland languages,1.0,Ch’olan,fan,*wahl
+Qeqchi-FANOBJECT-1,wold-Qeqchi-9-79-1,Qeqchi,FANOBJECT,waal,waal,w aː l,,,,,,,,,True,0.75,,Lowland languages,1.0,Ch’olan,fan,*wahl
 Qeqchi-FANOBJECT-2,wold-Qeqchi-9-79-2,Qeqchi,FANOBJECT,apusinel na’ajej,apusinel_na’ajej,a p u s i n e l + n a ʔ a x e x,,,,,,,,,False,0.0,,Q'eqchi',1.0,,,
 Qeqchi-FANACTION-1,wold-Qeqchi-9-791-1,Qeqchi,FANACTION,waalesink,waalesink,w aː l e s i n kʰ,,,,,,,,,False,0.0,,Q'eqchi',1.0,,,
 Qeqchi-CARVE-1,wold-Qeqchi-9-81-1,Qeqchi,CARVE,let’ok,let’ok,l e tʼ o kʰ,,,,,,,,,False,0.0,,Q'eqchi',1.0,,,
@@ -5414,7 +5414,7 @@ Qeqchi-FLOW-1,wold-Qeqchi-10-32-1,Qeqchi,FLOW,yo i roq,yo_i_roq,j o + i + ɾ o q
 Qeqchi-SINKDESCEND-1,wold-Qeqchi-10-33-1,Qeqchi,SINKDESCEND,muqunk,muqunk,m u q u n kʰ,,,,,,,,,False,0.0,,proto-Mayan (not Huastec),1.0,,,
 Qeqchi-SINKDESCEND-2,wold-Qeqchi-10-33-2,Qeqchi,SINKDESCEND,nuq'unk,nuq'unk,n u qʼ u n kʰ,,,,,,,,,False,0.0,,proto-Mayan,1.0,,,
 Qeqchi-SINKDESCEND-3,wold-Qeqchi-10-33-3,Qeqchi,SINKDESCEND,sob'e'k,sob'e'k,s o ɓ e ʔ kʰ,,,,,,,,,False,0.0,,proto-K’iche’an,1.0,,,
-Qeqchi-SINKDESCEND-4,wold-Qeqchi-10-33-4,Qeqchi,SINKDESCEND,sub'e'k,sub'e'k,s u ɓ e ʔ kʰ,,,,,,,,,False,0.75,,proto-Ch’olan (?),1.0,Ch’olan,to sink,*suhp’
+Qeqchi-SINKDESCEND-4,wold-Qeqchi-10-33-4,Qeqchi,SINKDESCEND,sub'e'k,sub'e'k,s u ɓ e ʔ kʰ,,,,,,,,,True,0.75,,proto-Ch’olan (?),1.0,Ch’olan,to sink,*suhp’
 Qeqchi-FLOAT-1,wold-Qeqchi-10-34-1,Qeqchi,FLOAT,pamamnak,pamamnak,p a m a m n a kʰ,,,,,,,,,False,0.0,,Q'eqchi',1.0,,,
 Qeqchi-SWIM-1,wold-Qeqchi-10-35-1,Qeqchi,SWIM,numxik,numxik,n u m ʃ i kʰ,,,,,,,,,False,0.0,,proto-Mayan (not Huastec),1.0,,,
 Qeqchi-DIVE-1,wold-Qeqchi-10-351-1,Qeqchi,DIVE,muqa’alik,muqa’alik,m u q a ʔ a l i kʰ,,,,,,,,,False,0.0,,proto-K’iche’an,1.0,,,
@@ -5473,7 +5473,7 @@ Qeqchi-CARRYINHAND-5,wold-Qeqchi-10-612-5,Qeqchi,CARRYINHAND,rininink,rininink,r
 Qeqchi-CARRYONSHOULDER-1,wold-Qeqchi-10-613-1,Qeqchi,CARRYONSHOULDER,telonk,telonk,t e l o n kʰ,,,,,,,,,False,0.0,,proto-Mayan (not Huastec),1.0,,,
 Qeqchi-CARRYONSHOULDER-2,wold-Qeqchi-10-613-2,Qeqchi,CARRYONSHOULDER,jelonk,jelonk,x e l o n kʰ,,,,,,,,,False,0.0,,proto-Mayan (not Huastec),1.0,,,
 Qeqchi-CARRYONSHOULDER-3,wold-Qeqchi-10-613-3,Qeqchi,CARRYONSHOULDER,paqaqnak,paqaqnak,p a q a q n a kʰ,,,,,,,,,False,0.0,,proto-K’iche’an,1.0,,,
-Qeqchi-CARRYONHEAD-1,wold-Qeqchi-10-614-1,Qeqchi,CARRYONHEAD,b'itonk,b'itonk,ɓ i t o n kʰ,,,,,,,,,False,0.75,,proto-Ch’olan (?),1.0,Ch’olan,to carry on head or shoulder,*b’it
+Qeqchi-CARRYONHEAD-1,wold-Qeqchi-10-614-1,Qeqchi,CARRYONHEAD,b'itonk,b'itonk,ɓ i t o n kʰ,,,,,,,,,True,0.75,,proto-Ch’olan (?),1.0,Ch’olan,to carry on head or shoulder,*b’it
 Qeqchi-CARRYUNDERARM-1,wold-Qeqchi-10-615-1,Qeqchi,CARRYUNDERARM,q'alnak,q'alnak,qʼ a l n a kʰ,,,,,,,,,False,0.0,,proto-Mayan,1.0,,,
 Qeqchi-BRING-1,wold-Qeqchi-10-62-1,Qeqchi,BRING,k'amok,k'amok,k ʔ a m o kʰ,,,,,,,,,False,0.0,,proto-Mayan (not Huastec),1.0,,,
 Qeqchi-SEND-1,wold-Qeqchi-10-63-1,Qeqchi,SEND,taqlank,taqlank,t a q l a n kʰ,,,,,,,,,False,0.0,,proto-Mayan (not Huastec),1.0,,,
@@ -5499,11 +5499,11 @@ Qeqchi-SHIP-2,wold-Qeqchi-10-81-2,Qeqchi,SHIP,mama’ jukub’,mama’_jukub’,
 Qeqchi-BOAT-1,wold-Qeqchi-10-83-1,Qeqchi,BOAT,b’arko,b’arko,ɓ a ɾ k o,,,,,,,,,True,1.0,,Post-Conquest Q’eqchi’,0.9,Spanish,the boat,barco
 Qeqchi-CANOE-1,wold-Qeqchi-10-831-1,Qeqchi,CANOE,jukub',jukub',x u k u ɓ,,,,,,,,,False,0.0,,proto-Mayan (not Huastec),1.0,,,
 Qeqchi-OUTRIGGER-1,wold-Qeqchi-10-832-1,Qeqchi,OUTRIGGER,jukub’,jukub’,x u k u ɓ,,,,,,,,,False,0.0,,proto-Mayan (not Huastec),1.0,,,
-Qeqchi-RAFT-1,wold-Qeqchi-10-84-1,Qeqchi,RAFT,poyte',poyte',p o j t e ʔ,,,,,,,,,False,0.75,,Greater Lowland languages,1.0,Ch’olan,raft,pooyte’
+Qeqchi-RAFT-1,wold-Qeqchi-10-84-1,Qeqchi,RAFT,poyte',poyte',p o j t e ʔ,,,,,,,,,True,0.75,,Greater Lowland languages,1.0,Ch’olan,raft,pooyte’
 Qeqchi-OAR-1,wold-Qeqchi-10-85-1,Qeqchi,OAR,paleta,paleta,p a l e t a,,,,,,,,,True,1.0,,Post-Conquest Q’eqchi’,0.9,Spanish,paddle,paleta
 Qeqchi-OAR-2,wold-Qeqchi-10-85-2,Qeqchi,OAR,kanaleta,kanaleta,k a n a l e t a,,,,,,,,,True,1.0,,Post-Conquest Q’eqchi’,0.9,Spanish,"short, broad oar",canaleta
 Qeqchi-PADDLE-1,wold-Qeqchi-10-851-1,Qeqchi,PADDLE,paleta,paleta,p a l e t a,,,,,,,,,True,1.0,,Post-Conquest Q’eqchi’,0.9,Spanish,paddle,paleta
-Qeqchi-ROW-1,wold-Qeqchi-10-852-1,Qeqchi,ROW,juyuk,juyuk,x u j u kʰ,,,,,,,,,False,0.75,,proto-Western Mayan,1.0,Ch’olan,to move,*juy
+Qeqchi-ROW-1,wold-Qeqchi-10-852-1,Qeqchi,ROW,juyuk,juyuk,x u j u kʰ,,,,,,,,,True,0.75,,proto-Western Mayan,1.0,Ch’olan,to move,*juy
 Qeqchi-ROW-2,wold-Qeqchi-10-852-2,Qeqchi,ROW,kojlenk,kojlenk,k o x l e n kʰ,,,,,,,,,False,0.0,,Q'eqchi',1.0,,,
 Qeqchi-SAILCLOTH-1,wold-Qeqchi-10-88-1,Qeqchi,SAILCLOTH,b’ela,b’ela,ɓ e l a,,,,,,,,,True,1.0,,Post-Conquest Q’eqchi’,0.9,Spanish,sail,vela
 Qeqchi-HAVE-1,wold-Qeqchi-11-11-1,Qeqchi,HAVE,wank,wank,w a n kʰ,,,,,,,,,False,0.0,,proto-Mayan (not Huastec),1.0,,,
@@ -5553,7 +5553,7 @@ Qeqchi-EARN-1,wold-Qeqchi-11-79-1,Qeqchi,EARN,echanink,echanink,e tʃ a n i n k�
 Qeqchi-EARN-2,wold-Qeqchi-11-79-2,Qeqchi,EARN,xb’an,xb’an,ʃ ɓ a n,,,,,,,,,False,0.0,,Q'eqchi',1.0,,,
 Qeqchi-EARN-3,wold-Qeqchi-11-79-3,Qeqchi,EARN,numsink kutan,numsink_kutan,n u m s i n k + k u t a n,,,,,,,,,False,0.0,,Q'eqchi',1.0,,,
 Qeqchi-EARN-4,wold-Qeqchi-11-79-4,Qeqchi,EARN,sik’ok ib’,sik’ok_ib’,s i kʼ o k + i ɓ,,,,,,,,,False,0.0,,Q'eqchi',1.0,,,
-Qeqchi-EARN-5,wold-Qeqchi-11-79-5,Qeqchi,EARN,tzakink,tzakink,t z a k i n kʰ,,,,,,,,,False,0.75,,proto-Western Mayan,1.0,,,
+Qeqchi-EARN-5,wold-Qeqchi-11-79-5,Qeqchi,EARN,tzakink,tzakink,t z a k i n kʰ,,,,,,,,,True,0.75,,proto-Western Mayan,1.0,,,
 Qeqchi-BUY-1,wold-Qeqchi-11-81-1,Qeqchi,BUY,loq'ok,loq'ok,l o qʼ o kʰ,,,,,,,,,False,0.0,,proto-Mayan (not Huastec),1.0,,,
 Qeqchi-SELL-1,wold-Qeqchi-11-82-1,Qeqchi,SELL,k'ayink,k'ayink,k ʔ a j i n kʰ,,,,,,,,,False,0.0,,proto-Mayan,1.0,,,
 Qeqchi-TRADEORBARTER-1,wold-Qeqchi-11-83-1,Qeqchi,TRADEORBARTER,jalb’al,jalb’al,x a l ɓ a l,,,,,,,,,False,0.0,,proto-Eastern Mayan,1.0,,,
@@ -5564,7 +5564,7 @@ Qeqchi-STORE-1,wold-Qeqchi-11-86-1,Qeqchi,STORE,k'ayib'aal,k'ayib'aal,k ʔ a j i
 Qeqchi-PRICE-1,wold-Qeqchi-11-87-1,Qeqchi,PRICE,tz'aq,tz'aq,tsʼ a qʰ,,,,,,,,,False,0.0,,Q'eqchi' + Poqom,1.0,,,
 Qeqchi-EXPENSIVE-1,wold-Qeqchi-11-88-1,Qeqchi,EXPENSIVE,terto,terto,t e ɾ t o,,,,,,,,,False,0.0,,Q'eqchi',1.0,,,
 Qeqchi-CHEAP-1,wold-Qeqchi-11-89-1,Qeqchi,CHEAP,kotzko,kotzko,k o t z k o,,,,,,,,,False,0.0,,Q'eqchi',1.0,,,
-Qeqchi-SHARE-1,wold-Qeqchi-11-91-1,Qeqchi,SHARE,jek'ok,jek'ok,x e kʼ o kʰ,,,,,,,,,False,0.75,,Western Mayan + Yucatecan,1.0,Ch’olan,"break off, divide",*jek’
+Qeqchi-SHARE-1,wold-Qeqchi-11-91-1,Qeqchi,SHARE,jek'ok,jek'ok,x e kʼ o kʰ,,,,,,,,,True,0.75,,Western Mayan + Yucatecan,1.0,Ch’olan,"break off, divide",*jek’
 Qeqchi-SHARE-2,wold-Qeqchi-11-91-2,Qeqchi,SHARE,wotzok,wotzok,w o t z o kʰ,,,,,,,,,False,0.0,,Q'eqchi',1.0,,,
 Qeqchi-WEIGH-1,wold-Qeqchi-11-92-1,Qeqchi,WEIGH,b’isok,b’isok,ɓ i s o kʰ,,,,,,,,,False,0.0,,proto-Mayan (not Huastec),1.0,,,
 Qeqchi-AFTER-1,wold-Qeqchi-12-01-1,Qeqchi,AFTER,moqon,moqon,m o q o n,,,,,,,,,False,0.0,,Q'eqchi',1.0,,,
@@ -5619,8 +5619,8 @@ Qeqchi-EDGE-3,wold-Qeqchi-12-353-3,Qeqchi,EDGE,e,e,e,,,,,,,,,False,0.0,,proto-Ma
 Qeqchi-SIDE-1,wold-Qeqchi-12-36-1,Qeqchi,SIDE,pak'al,pak'al,p a kʼ a l,,,,,,,,,False,0.0,,proto-Mayan (not Huastec),1.0,,,
 Qeqchi-SIDE-2,wold-Qeqchi-12-36-2,Qeqchi,SIDE,k'atq sa',k'atq_sa',k ʔ a t q + s a ʔ,,,,,,,,,False,0.0,,Q'eqchi',1.0,,,
 Qeqchi-RIGHT-1,wold-Qeqchi-12-41-1,Qeqchi,RIGHT,sa' nim,sa'_nim,s a ʔ + n i m,,,,,,,,,False,0.0,,Q'eqchi',1.0,,,
-Qeqchi-LEFT-1,wold-Qeqchi-12-42-1,Qeqchi,LEFT,tz'e,tz'e,tsʼ e,,,,,,,,,False,0.75,,Greater Tzeltalan,1.0,Ch’olan,"left, left hand",tz’eh
-Qeqchi-LEFT-2,wold-Qeqchi-12-42-2,Qeqchi,LEFT,sa' tz'e,sa'_tz'e,s a ʔ + tsʼ e,,,,,,,,,False,0.75,,Greater Tzeltalan,1.0,Ch’olan,left,*tz’eh
+Qeqchi-LEFT-1,wold-Qeqchi-12-42-1,Qeqchi,LEFT,tz'e,tz'e,tsʼ e,,,,,,,,,True,0.75,,Greater Tzeltalan,1.0,Ch’olan,"left, left hand",tz’eh
+Qeqchi-LEFT-2,wold-Qeqchi-12-42-2,Qeqchi,LEFT,sa' tz'e,sa'_tz'e,s a ʔ + tsʼ e,,,,,,,,,True,0.75,,Greater Tzeltalan,1.0,Ch’olan,left,*tz’eh
 Qeqchi-NEAR-1,wold-Qeqchi-12-43-1,Qeqchi,NEAR,nach',nach',n a tʃʼ,,,,,,,,,False,0.0,,Q'eqchi',1.0,,,
 Qeqchi-NEAR-2,wold-Qeqchi-12-43-2,Qeqchi,NEAR,rik'in,rik'in,r i kʼ i n,,,,,,,,,False,0.0,,Q'eqchi',1.0,,,
 Qeqchi-FAR-1,wold-Qeqchi-12-44-1,Qeqchi,FAR,najt,najt,n a x tʰ,,,,,,,,,False,0.0,,proto-Mayan,1.0,,,
@@ -5665,23 +5665,23 @@ Qeqchi-THICK-5,wold-Qeqchi-12-63-5,Qeqchi,THICK,t'ikt'o,t'ikt'o,tʼ i k tʼ o,,,
 Qeqchi-THICK-6,wold-Qeqchi-12-63-6,Qeqchi,THICK,b'urux b'urux,b'urux_b'urux,ɓ u ɾ u ʃ + ɓ u ɾ u ʃ,,,,,,,,,False,0.0,,Q'eqchi',1.0,,,
 Qeqchi-THICK-7,wold-Qeqchi-12-63-7,Qeqchi,THICK,leb'lo,leb'lo,l e ɓ l o,,,,,,,,,False,0.0,,proto-K’iche’an,1.0,,,
 Qeqchi-THINOFSHAPEOFOBJECT-1,wold-Qeqchi-12-65-1,Qeqchi,THINOFSHAPEOFOBJECT,b'aq,b'aq,ɓ a qʰ,,,,,,,,,False,0.0,,proto-Mayan (not Huastec),1.0,,,
-Qeqchi-THINOFSHAPEOFOBJECT-2,wold-Qeqchi-12-65-2,Qeqchi,THINOFSHAPEOFOBJECT,jay,jay,x a j,,,,,,,,,False,0.75,,proto-Western Mayan + Yucatecan,1.0,Ch’olan,thin,*jaay
+Qeqchi-THINOFSHAPEOFOBJECT-2,wold-Qeqchi-12-65-2,Qeqchi,THINOFSHAPEOFOBJECT,jay,jay,x a j,,,,,,,,,True,0.75,,proto-Western Mayan + Yucatecan,1.0,Ch’olan,thin,*jaay
 Qeqchi-THINOFSHAPEOFOBJECT-3,wold-Qeqchi-12-65-3,Qeqchi,THINOFSHAPEOFOBJECT,b'arich',b'arich',ɓ a ɾ i tʃʼ,,,,,,,,,False,0.0,,Q'eqchi',1.0,,,
 Qeqchi-DEEP-1,wold-Qeqchi-12-67-1,Qeqchi,DEEP,cham,cham,tʃ a m,,,,,,,,,False,0.0,,proto-Mayan (not Huastec),1.0,,,
 Qeqchi-SHALLOW-1,wold-Qeqchi-12-68-1,Qeqchi,SHALLOW,ink'a’ cham,ink'a’_cham,i n kʼ a ʔ + tʃ a m,,,,,,,,,False,0.0,,Q'eqchi',1.0,,,
-Qeqchi-FLAT-1,wold-Qeqchi-12-71-1,Qeqchi,FLAT,tach'to,tach'to,t a tʃʼ t o,,,,,,,,,False,0.75,,proto-Ch’olan (?),1.0,Ch’olan,be flat,tach’-
+Qeqchi-FLAT-1,wold-Qeqchi-12-71-1,Qeqchi,FLAT,tach'to,tach'to,t a tʃʼ t o,,,,,,,,,True,0.75,,proto-Ch’olan (?),1.0,Ch’olan,be flat,tach’-
 Qeqchi-FLAT-2,wold-Qeqchi-12-71-2,Qeqchi,FLAT,ruutaq'a,ruutaq'a,r uː t a qʼ a,,,,,,,,,False,0.0,,Q'eqchi',1.0,,,
 Qeqchi-STRAIGHT-1,wold-Qeqchi-12-73-1,Qeqchi,STRAIGHT,tiik,tiik,t iː kʰ,,,,,,,,,False,0.0,,Q'eqchi',1.0,,,
-Qeqchi-CROOKED-1,wold-Qeqchi-12-74-1,Qeqchi,CROOKED,k'onk'o,k'onk'o,k ʔ o n kʼ o,,,,,,,,,False,0.75,,proto-Western Mayan,1.0,Ch’olan,twisted,k’on...
+Qeqchi-CROOKED-1,wold-Qeqchi-12-74-1,Qeqchi,CROOKED,k'onk'o,k'onk'o,k ʔ o n kʼ o,,,,,,,,,True,0.75,,proto-Western Mayan,1.0,Ch’olan,twisted,k’on...
 Qeqchi-CROOKED-2,wold-Qeqchi-12-74-2,Qeqchi,CROOKED,jech',jech',x e tʃʼ,,,,,,,,,False,0.0,,proto-Mayan (not Huastec),1.0,,,
 Qeqchi-CROOKED-3,wold-Qeqchi-12-74-3,Qeqchi,CROOKED,yokos,yokos,j o k o s,,,,,,,,,False,0.0,,proto-Eastern Mayan,1.0,,,
-Qeqchi-CROOKED-4,wold-Qeqchi-12-74-4,Qeqchi,CROOKED,b'ech',b'ech',ɓ e tʃʼ,,,,,,,,,False,0.75,,Greater Lowland languages + Tojolab’al,1.0,Ch’olan,roll up,*b’ech’
+Qeqchi-CROOKED-4,wold-Qeqchi-12-74-4,Qeqchi,CROOKED,b'ech',b'ech',ɓ e tʃʼ,,,,,,,,,True,0.75,,Greater Lowland languages + Tojolab’al,1.0,Ch’olan,roll up,*b’ech’
 Qeqchi-CROOKED-5,wold-Qeqchi-12-74-5,Qeqchi,CROOKED,b'ach'b'o,b'ach'b'o,ɓ a tʃʼ ɓ o,,,,,,,,,False,0.0,,proto-K’iche’an,1.0,,,
 Qeqchi-CROOKED-6,wold-Qeqchi-12-74-6,Qeqchi,CROOKED,liq'lo,liq'lo,l i qʼ l o,,,,,,,,,False,0.0,,Q'eqchi',1.0,,,
 Qeqchi-CROOKED-7,wold-Qeqchi-12-74-7,Qeqchi,CROOKED,siq'il,siq'il,s i qʼ i l,,,,,,,,,False,0.0,,Q'eqchi',1.0,,,
 Qeqchi-CROOKED-8,wold-Qeqchi-12-74-8,Qeqchi,CROOKED,rok'ox,rok'ox,r o kʼ o ʃ,,,,,,,,,False,0.0,,proto-K’iche’an,1.0,,,
 Qeqchi-HOOK-1,wold-Qeqchi-12-75-1,Qeqchi,HOOK,lokoch,lokoch,l o k o tʃ,,,,,,,,,False,0.0,,proto-Mayan (not Huastec),1.0,,,
-Qeqchi-CORNER-1,wold-Qeqchi-12-76-1,Qeqchi,CORNER,xuk,xuk,ʃ u kʰ,,,,,,,,,False,0.75,,Greater Lowland languages,1.0,Ch’olan,corner,xuhk’
+Qeqchi-CORNER-1,wold-Qeqchi-12-76-1,Qeqchi,CORNER,xuk,xuk,ʃ u kʰ,,,,,,,,,True,0.75,,Greater Lowland languages,1.0,Ch’olan,corner,xuhk’
 Qeqchi-CORNER-2,wold-Qeqchi-12-76-2,Qeqchi,CORNER,loot',loot',l oː tʼ,,,,,,,,,False,0.0,,proto-Mayan (not Huastec),1.0,,,
 Qeqchi-CROSS-1,wold-Qeqchi-12-77-1,Qeqchi,CROSS,"krus, kurus",krus,k ɾ u s,,,,,,,,,True,1.0,,Later Post-Conquest Q’eqchi’,0.9,Spanish,the cross,cruz
 Qeqchi-SQUARE-1,wold-Qeqchi-12-78-1,Qeqchi,SQUARE,kaaxukuut,kaaxukuut,k aː ʃ u k uː tʰ,,,,,,,,,False,0.0,,Q'eqchi',1.0,,,
@@ -5761,11 +5761,11 @@ Qeqchi-TIME-2,wold-Qeqchi-14-11-2,Qeqchi,TIME,q'iil,q'iil,qʼ iː l,,,,,,,,,Fals
 Qeqchi-AGE-1,wold-Qeqchi-14-12-1,Qeqchi,AGE,xchi hab’,xchi_hab’,ʃ tʃ i + h a ɓ,,,,,,,,,False,0.0,,Q'eqchi',1.0,,,
 Qeqchi-NEW-1,wold-Qeqchi-14-13-1,Qeqchi,NEW,ak’,ak’,a kʼ,,,,,,,,,False,0.0,,proto-Mayan (not Huastec),1.0,,,
 Qeqchi-YOUNG-1,wold-Qeqchi-14-14-1,Qeqchi,YOUNG,al,al,a l,,,,,,,,,False,0.0,,proto-Mayan,1.0,,,
-Qeqchi-YOUNG-2,wold-Qeqchi-14-14-2,Qeqchi,YOUNG,ch'ajom,ch'ajom,tʃʼ a x o m,,,,,,,,,False,0.75,,Lowland languages,1.0,Ch’olan,young man,*ch’ajom
+Qeqchi-YOUNG-2,wold-Qeqchi-14-14-2,Qeqchi,YOUNG,ch'ajom,ch'ajom,tʃʼ a x o m,,,,,,,,,True,0.75,,Lowland languages,1.0,Ch’olan,young man,*ch’ajom
 Qeqchi-YOUNG-3,wold-Qeqchi-14-14-3,Qeqchi,YOUNG,saaj,saaj,s aː x,,,,,,,,,False,0.0,,proto-Mayan,1.0,,,
 Qeqchi-OLD-1,wold-Qeqchi-14-15-1,Qeqchi,OLD,q'eel,q'eel,qʼ eː l,,,,,,,,,False,0.0,,proto-Eastern Mayan + proto-Q’anjob’alan,1.0,,,
 Qeqchi-OLD-2,wold-Qeqchi-14-15-2,Qeqchi,OLD,mama’,mama’,m a m a ʔ,,,,,,,,,False,0.0,,proto-Mayan (not Huastec),1.0,,,
-Qeqchi-OLD-3,wold-Qeqchi-14-15-3,Qeqchi,OLD,tiix,tiix,t iː ʃ,,,,,,,,,False,0.75,,proto-Ch’olan (?),1.0,Ch’olan,old woman,*ti’ix
+Qeqchi-OLD-3,wold-Qeqchi-14-15-3,Qeqchi,OLD,tiix,tiix,t iː ʃ,,,,,,,,,True,0.75,,proto-Ch’olan (?),1.0,Ch’olan,old woman,*ti’ix
 Qeqchi-EARLY-1,wold-Qeqchi-14-16-1,Qeqchi,EARLY,eq'la,eq'la,e qʼ l a,,,,,,,,,False,0.0,,proto-Mayan (not Huastec),1.0,,,
 Qeqchi-LATE-1,wold-Qeqchi-14-17-1,Qeqchi,LATE,najt kutan,najt_kutan,n a x t + k u t a n,,,,,,,,,False,0.0,,Q'eqchi',1.0,,,
 Qeqchi-LATE-2,wold-Qeqchi-14-17-2,Qeqchi,LATE,ewu,ewu,e w u,,,,,,,,,False,0.0,,Q'eqchi',1.0,,,
@@ -5813,7 +5813,7 @@ Qeqchi-TOMORROW-1,wold-Qeqchi-14-48-1,Qeqchi,TOMORROW,hulaj,hulaj,h u l a x,,,,,
 Qeqchi-DAYAFTERTOMORROW-1,wold-Qeqchi-14-481-1,Qeqchi,DAYAFTERTOMORROW,kab'ej,kab'ej,k a ɓ e x,,,,,,,,,False,0.0,,proto-Mayan,1.0,,,
 Qeqchi-YESTERDAY-1,wold-Qeqchi-14-49-1,Qeqchi,YESTERDAY,ewer,ewer,e w e r,,,,,,,,,False,0.0,,proto-Mayan (not Huastec),1.0,,,
 Qeqchi-DAYBEFOREYESTERDAY-1,wold-Qeqchi-14-491-1,Qeqchi,DAYBEFOREYESTERDAY,oxejer,oxejer,o ʃ e x e r,,,,,,,,,False,0.0,,proto-Mayan (not Huastec),1.0,,,
-Qeqchi-HOUR-1,wold-Qeqchi-14-51-1,Qeqchi,HOUR,hoonal,hoonal,h oː n a l,,,,,,,,,False,0.75,,Post-Conquest Q’eqchi’,0.9,Spanish,a day’s wage,jornal
+Qeqchi-HOUR-1,wold-Qeqchi-14-51-1,Qeqchi,HOUR,hoonal,hoonal,h oː n a l,,,,,,,,,True,0.75,,Post-Conquest Q’eqchi’,0.9,Spanish,a day’s wage,jornal
 Qeqchi-HOUR-2,wold-Qeqchi-14-51-2,Qeqchi,HOUR,oor,oor,oː r,,,,,,,,,True,1.0,,Post-Conquest Q’eqchi’,0.9,Spanish,the hour,hora
 Qeqchi-CLOCK-1,wold-Qeqchi-14-53-1,Qeqchi,CLOCK,reloj,reloj,r e l o x,,,,,,,,,True,1.0,,20th century Q'eqchi',0.7,Spanish,"the clock, the watch",reloj
 Qeqchi-WEEK-1,wold-Qeqchi-14-61-1,Qeqchi,WEEK,xamaan,xamaan,ʃ a m aː n,,,,,,,,,True,1.0,,Early Colonial Q'eqchi',0.9,Spanish,the week,semana
@@ -5871,9 +5871,9 @@ Qeqchi-GREEN-1,wold-Qeqchi-15-68-1,Qeqchi,GREEN,rax,rax,r a ʃ,,,,,,,,,False,0.0
 Qeqchi-YELLOW-1,wold-Qeqchi-15-69-1,Qeqchi,YELLOW,q'an,q'an,qʼ a n,,,,,,,,,False,0.0,,proto-Mayan,1.0,,,
 Qeqchi-TOUCH-1,wold-Qeqchi-15-71-1,Qeqchi,TOUCH,ch'e'ok,ch'e'ok,tʃʼ e ʔ o kʰ,,,,,,,,,False,0.0,,Q'eqchi',1.0,,,
 Qeqchi-PINCH-1,wold-Qeqchi-15-712-1,Qeqchi,PINCH,ch'epok,ch'epok,tʃʼ e p o kʰ,,,,,,,,,False,0.0,,proto-Mayan (not Huastec),1.0,,,
-Qeqchi-PINCH-2,wold-Qeqchi-15-712-2,Qeqchi,PINCH,jochok,jochok,x o tʃ o kʰ,,,,,,,,,False,0.75,,Greater Lowland languages,1.0,Ch’olan,"to take off, peal off",*joch
+Qeqchi-PINCH-2,wold-Qeqchi-15-712-2,Qeqchi,PINCH,jochok,jochok,x o tʃ o kʰ,,,,,,,,,True,0.75,,Greater Lowland languages,1.0,Ch’olan,"to take off, peal off",*joch
 Qeqchi-PINCH-3,wold-Qeqchi-15-712-3,Qeqchi,PINCH,ch'uyuk,ch'uyuk,tʃʼ u j u kʰ,,,,,,,,,False,0.0,,Q'eqchi',1.0,,,
-Qeqchi-PINCH-4,wold-Qeqchi-15-712-4,Qeqchi,PINCH,xeb'ok,xeb'ok,ʃ e ɓ o kʰ,,,,,,,,,False,0.75,,Lowland languages,1.0,Ch’olan,to pinch,*xeb’
+Qeqchi-PINCH-4,wold-Qeqchi-15-712-4,Qeqchi,PINCH,xeb'ok,xeb'ok,ʃ e ɓ o kʰ,,,,,,,,,True,0.75,,Lowland languages,1.0,Ch’olan,to pinch,*xeb’
 Qeqchi-FEEL-1,wold-Qeqchi-15-72-1,Qeqchi,FEEL,ch'e'ok,ch'e'ok,tʃʼ e ʔ o kʰ,,,,,,,,,False,0.0,,Q'eqchi',1.0,,,
 Qeqchi-HARD-1,wold-Qeqchi-15-74-1,Qeqchi,HARD,kaw,kaw,k a w,,,,,,,,,False,0.0,,proto-Mayan (not Huastec),1.0,,,
 Qeqchi-SOFT-1,wold-Qeqchi-15-75-1,Qeqchi,SOFT,q'un,q'un,qʼ u n,,,,,,,,,False,0.0,,proto-Mayan (not Huastec),1.0,,,
@@ -5884,7 +5884,7 @@ Qeqchi-SOFT-5,wold-Qeqchi-15-75-5,Qeqchi,SOFT,roq'roq',roq'roq',r o qʼ ɾ o qʼ
 Qeqchi-ROUGH-1,wold-Qeqchi-15-76-1,Qeqchi,ROUGH,b'iqb'iq,b'iqb'iq,ɓ i q ɓ i qʰ,,,,,,,,,False,0.0,,Q'eqchi',1.0,,,
 Qeqchi-ROUGH-2,wold-Qeqchi-15-76-2,Qeqchi,ROUGH,purux,purux,p u ɾ u ʃ,,,,,,,,,False,0.0,,proto-K’iche’an,1.0,,,
 Qeqchi-ROUGH-3,wold-Qeqchi-15-76-3,Qeqchi,ROUGH,b'urux b'urux,b'urux_b'urux,ɓ u ɾ u ʃ + ɓ u ɾ u ʃ,,,,,,,,,False,0.0,,Q'eqchi',1.0,,,
-Qeqchi-ROUGH-4,wold-Qeqchi-15-76-4,Qeqchi,ROUGH,k'urux,k'urux,k ʔ u ɾ u ʃ,,,,,,,,,False,0.75,,proto-Ch’olan (?),1.0,Ch’olan,curly,*k’urux
+Qeqchi-ROUGH-4,wold-Qeqchi-15-76-4,Qeqchi,ROUGH,k'urux,k'urux,k ʔ u ɾ u ʃ,,,,,,,,,True,0.75,,proto-Ch’olan (?),1.0,Ch’olan,curly,*k’urux
 Qeqchi-ROUGH-5,wold-Qeqchi-15-76-5,Qeqchi,ROUGH,turux,turux,t u ɾ u ʃ,,,,,,,,,False,0.0,,Q'eqchi',1.0,,,
 Qeqchi-SMOOTH-1,wold-Qeqchi-15-77-1,Qeqchi,SMOOTH,q'un,q'un,qʼ u n,,,,,,,,,False,0.0,,proto-Mayan (not Huastec),1.0,,,
 Qeqchi-SMOOTH-2,wold-Qeqchi-15-77-2,Qeqchi,SMOOTH,ji'ji',ji'ji',x i ʔ x i ʔ,,,,,,,,,False,0.0,,proto-Mayan (not Huastec),1.0,,,
@@ -5993,7 +5993,7 @@ Qeqchi-IDEA-1,wold-Qeqchi-17-19-1,Qeqchi,IDEA,na'leb',na'leb',n a ʔ l e ɓ,,,,,
 Qeqchi-WISE-1,wold-Qeqchi-17-21-1,Qeqchi,WISE,wan xna'leb',wan_xna'leb',w a n + ʃ n a ʔ l e ɓ,,,,,,,,,False,0.0,,Q'eqchi',1.0,,,
 Qeqchi-STUPID-1,wold-Qeqchi-17-22-1,Qeqchi,STUPID,jip,jip,x i pʰ,,,,,,,,,False,0.0,,Q'eqchi',1.0,,,
 Qeqchi-STUPID-2,wold-Qeqchi-17-22-2,Qeqchi,STUPID,jok,jok,x o kʰ,,,,,,,,,False,0.0,,Q'eqchi',1.0,,,
-Qeqchi-MAD-1,wold-Qeqchi-17-23-1,Qeqchi,MAD,wax ru,wax_ru,w a ʃ + ɾ u,,,,,,,,,False,0.75,,Ch’olti’,1.0,Ch’olti’,mad,wax
+Qeqchi-MAD-1,wold-Qeqchi-17-23-1,Qeqchi,MAD,wax ru,wax_ru,w a ʃ + ɾ u,,,,,,,,,True,0.75,,Ch’olti’,1.0,Ch’olti’,mad,wax
 Qeqchi-MAD-2,wold-Qeqchi-17-23-2,Qeqchi,MAD,look,look,l oː kʰ,,,,,,,,,True,1.0,,Post-Conquest Q’eqchi’,0.9,Spanish,mad,loco
 Qeqchi-MAD-3,wold-Qeqchi-17-23-3,Qeqchi,MAD,kaan ru,kaan_ru,k aː n + ɾ u,,,,,,,,,False,0.0,,Q'eqchi',1.0,,,
 Qeqchi-LEARN-1,wold-Qeqchi-17-24-1,Qeqchi,LEARN,tzolok,tzolok,t z o l o kʰ,,,,,,,,,False,0.0,,proto-Mayan (not Huastec),1.0,,,
@@ -6047,7 +6047,7 @@ Qeqchi-SHOUT-2,wold-Qeqchi-18-13-2,Qeqchi,SHOUT,chajok e,chajok_e,tʃ a x o k + 
 Qeqchi-WHISPER-1,wold-Qeqchi-18-15-1,Qeqchi,WHISPER,hasb'ak,hasb'ak,h a s ɓ a kʰ,,,,,,,,,False,0.0,,proto-Eastern Mayan,1.0,,,
 Qeqchi-MUMBLE-1,wold-Qeqchi-18-16-1,Qeqchi,MUMBLE,hasb’ak,hasb’ak,h a s ɓ a kʰ,,,,,,,,,False,0.0,,proto-Eastern Mayan,1.0,,,
 Qeqchi-MUMBLE-2,wold-Qeqchi-18-16-2,Qeqchi,MUMBLE,haslenk,haslenk,h a s l e n kʰ,,,,,,,,,False,0.0,,proto-Eastern Mayan,1.0,,,
-Qeqchi-WHISTLE-1,wold-Qeqchi-18-17-1,Qeqchi,WHISTLE,xuxb'ak,xuxb'ak,ʃ u ʃ ɓ a kʰ,,,,,,,,,False,0.75,,proto-Western Mayan + Yucatecan,1.0,Ch’olan,to whistle,xuxub’
+Qeqchi-WHISTLE-1,wold-Qeqchi-18-17-1,Qeqchi,WHISTLE,xuxb'ak,xuxb'ak,ʃ u ʃ ɓ a kʰ,,,,,,,,,True,0.75,,proto-Western Mayan + Yucatecan,1.0,Ch’olan,to whistle,xuxub’
 Qeqchi-SHRIEK-1,wold-Qeqchi-18-18-1,Qeqchi,SHRIEK,yaab'ak,yaab'ak,j aː ɓ a kʰ,,,,,,,,,False,0.0,,Q'eqchi',1.0,,,
 Qeqchi-HOWL-1,wold-Qeqchi-18-19-1,Qeqchi,HOWL,oq'lok,oq'lok,o qʼ l o kʰ,,,,,,,,,False,0.0,,proto-Mayan,1.0,,,
 Qeqchi-SPEAK-1,wold-Qeqchi-18-21-1,Qeqchi,SPEAK,aatinamank,aatinamank,aː t i n a m a n kʰ,,,,,,,,,False,0.0,,Q'eqchi',1.0,,,
@@ -6060,7 +6060,7 @@ Qeqchi-SPEECH-1,wold-Qeqchi-18-222-1,Qeqchi,SPEECH,aatin,aatin,aː t i n,,,,,,,,
 Qeqchi-BESILENT-1,wold-Qeqchi-18-23-1,Qeqchi,BESILENT,kulku,kulku,k u l k u,,,,,,,,,False,0.0,,proto-Mayan (not Huastec),1.0,,,
 Qeqchi-LANGUAGE-1,wold-Qeqchi-18-24-1,Qeqchi,LANGUAGE,aatinob'aal,aatinob'aal,aː t i n o ɓ aː l,,,,,,,,,False,0.0,,Q'eqchi',1.0,,,
 Qeqchi-WORD-1,wold-Qeqchi-18-26-1,Qeqchi,WORD,aatin,aatin,aː t i n,,,,,,,,,False,0.0,,proto-Eastern Mayan,1.0,,,
-Qeqchi-NAME-1,wold-Qeqchi-18-28-1,Qeqchi,NAME,k'ab'a'ej,k'ab'a'ej,k ʔ a ɓ a ʔ e x,,,,,,,,,False,0.75,,Lowland languages,1.0,Ch’olan,name,k’aab’a’
+Qeqchi-NAME-1,wold-Qeqchi-18-28-1,Qeqchi,NAME,k'ab'a'ej,k'ab'a'ej,k ʔ a ɓ a ʔ e x,,,,,,,,,True,0.75,,Lowland languages,1.0,Ch’olan,name,k’aab’a’
 Qeqchi-ASKINQUIRE-1,wold-Qeqchi-18-31-1,Qeqchi,ASKINQUIRE,patz'ok,patz'ok,p a tsʼ o kʰ,,,,,,,,,False,0.0,,Q'eqchi',1.0,,,
 Qeqchi-ANSWER-1,wold-Qeqchi-18-32-1,Qeqchi,ANSWER,chaq'b'enk,chaq'b'enk,tʃ a qʼ ɓ e n kʰ,,,,,,,,,False,0.0,,Q'eqchi',1.0,,,
 Qeqchi-ANSWER-2,wold-Qeqchi-18-32-2,Qeqchi,ANSWER,sumenk,sumenk,s u m e n kʰ,,,,,,,,,False,0.0,,Q'eqchi',1.0,,,
@@ -6082,7 +6082,7 @@ Qeqchi-PAPER-1,wold-Qeqchi-18-56-1,Qeqchi,PAPER,hu,hu,h u,,,,,,,,,False,0.0,,pro
 Qeqchi-PEN-1,wold-Qeqchi-18-57-1,Qeqchi,PEN,tz'iib'leb',tz'iib'leb',tsʼ iː ɓ l e ɓ,,,,,,,,,False,0.0,,proto-Mayan,1.0,,,
 Qeqchi-BOOK-1,wold-Qeqchi-18-61-1,Qeqchi,BOOK,hu,hu,h u,,,,,,,,,False,0.0,,proto-Mayan,1.0,,,
 Qeqchi-BOOK-2,wold-Qeqchi-18-61-2,Qeqchi,BOOK,liib'r,liib'r,l iː ɓ r,,,,,,,,,True,1.0,,Post-Conquest Q’eqchi’,0.9,Spanish,the book,libro
-Qeqchi-FLUTE-1,wold-Qeqchi-18-71-1,Qeqchi,FLUTE,xolb',xolb',ʃ o l ɓ,,,,,,,,,False,0.75,,Lowland languages,1.0,Ch’olan,"stick, flute",xool
+Qeqchi-FLUTE-1,wold-Qeqchi-18-71-1,Qeqchi,FLUTE,xolb',xolb',ʃ o l ɓ,,,,,,,,,True,0.75,,Lowland languages,1.0,Ch’olan,"stick, flute",xool
 Qeqchi-DRUM-1,wold-Qeqchi-18-72-1,Qeqchi,DRUM,tamb'or,tamb'or,t a m ɓ o r,,,,,,,,,True,1.0,,Post-Conquest Q’eqchi’,0.9,Spanish,drum,tambor
 Qeqchi-DRUM-2,wold-Qeqchi-18-72-2,Qeqchi,DRUM,moor,moor,m oː r,,,,,,,,,False,0.0,,Q'eqchi',1.0,,,
 Qeqchi-BRASSINSTRUMENTHORNORTRUMPET-1,wold-Qeqchi-18-73-1,Qeqchi,BRASSINSTRUMENTHORNORTRUMPET,trompeet,trompeet,t ɾ o m p eː tʰ,,,,,,,,,True,1.0,,Post-Conquest Q’eqchi’,0.9,Spanish,the trumpet,trompeta
@@ -6091,7 +6091,7 @@ Qeqchi-COUNTRY-1,wold-Qeqchi-19-11-1,Qeqchi,COUNTRY,nimla tenamit,nimla_tenamit,
 Qeqchi-NATIVECOUNTRY-1,wold-Qeqchi-19-12-1,Qeqchi,NATIVECOUNTRY,ch'och'el,ch'och'el,tʃʼ o tʃʼ e l,,,,,,,,,False,0.0,,Q'eqchi',1.0,,,
 Qeqchi-TOWN-1,wold-Qeqchi-19-15-1,Qeqchi,TOWN,nimla tenamit,nimla_tenamit,n i m l a + t e n a m i tʰ,,,,,,,,,False,0.0,,Q'eqchi',1.0,,,
 Qeqchi-VILLAGE-1,wold-Qeqchi-19-16-1,Qeqchi,VILLAGE,tenamit,tenamit,t e n a m i tʰ,,,,,,,,,True,1.0,,Q'eqchi',1.0,Nahuatl,wall,tena:mitl
-Qeqchi-BOUNDARY-1,wold-Qeqchi-19-17-1,Qeqchi,BOUNDARY,"nub'aal, nub’ajl",nub'aal,n u ɓ aː l,,,,,,,,,False,0.75,,Western Mayan + Q'eqchi',1.0,Ch’olan,to join,nub’
+Qeqchi-BOUNDARY-1,wold-Qeqchi-19-17-1,Qeqchi,BOUNDARY,"nub'aal, nub’ajl",nub'aal,n u ɓ aː l,,,,,,,,,True,0.75,,Western Mayan + Q'eqchi',1.0,Ch’olan,to join,nub’
 Qeqchi-PEOPLE-1,wold-Qeqchi-19-21-1,Qeqchi,PEOPLE,tenamitil,tenamitil,t e n a m i t i l,,,,,,,,,False,0.0,"This is derived from tenamit, a Nahuatl loanword. See this.",Q'eqchi',1.0,,,
 Qeqchi-CLAN-1,wold-Qeqchi-19-23-1,Qeqchi,CLAN,triiw (2),triiw,t ɾ iː w,,,,,,,,,True,1.0,,Post-Conquest Q’eqchi’,0.9,Spanish,the clan,tribu
 Qeqchi-CHIEFTAIN-1,wold-Qeqchi-19-24-1,Qeqchi,CHIEFTAIN,jolomil,jolomil,x o l o m i l,,,,,,,,,False,0.0,,Q'eqchi',1.0,,,
@@ -6145,7 +6145,7 @@ Qeqchi-ARROW-2,wold-Qeqchi-20-25-2,Qeqchi,ARROW,tzimaj,tzimaj,t z i m a x,,,,,,,
 Qeqchi-SPEAR-1,wold-Qeqchi-20-26-1,Qeqchi,SPEAR,topleb',topleb',t o p l e ɓ,,,,,,,,,False,0.0,,Q'eqchi',1.0,,,
 Qeqchi-SWORD-1,wold-Qeqchi-20-27-1,Qeqchi,SWORD,makaan,makaan,m a k aː n,,,,,,,,,True,1.0,,Colonial Q'eqchi',0.9,Spanish,club,macana
 Qeqchi-ARMOUR-1,wold-Qeqchi-20-31-1,Qeqchi,ARMOUR,ch’iich’,ch’iich’,tʃʼ iː tʃʼ,,,,,,,,,False,0.0,,proto-Eastern Mayan,1.0,,,
-Qeqchi-SHIELD-1,wold-Qeqchi-20-34-1,Qeqchi,SHIELD,"lak’am, lakam",lak’am,l a kʼ a m,,,,,,,,,False,0.75,,Lowland languages,1.0,Ch’olan,banner,lakam
+Qeqchi-SHIELD-1,wold-Qeqchi-20-34-1,Qeqchi,SHIELD,"lak’am, lakam",lak’am,l a kʼ a m,,,,,,,,,True,0.75,,Lowland languages,1.0,Ch’olan,banner,lakam
 Qeqchi-TOWER-1,wold-Qeqchi-20-36-1,Qeqchi,TOWER,tore,tore,t o ɾ e,,,,,,,,,True,1.0,,Post-Conquest Q’eqchi’,0.9,Spanish,tower,torre
 Qeqchi-VICTORY-1,wold-Qeqchi-20-41-1,Qeqchi,VICTORY,echanink,echanink,e tʃ a n i n kʰ,,,,,,,,,False,0.0,,Q'eqchi',1.0,,,
 Qeqchi-VICTORY-2,wold-Qeqchi-20-41-2,Qeqchi,VICTORY,ketok,ketok,k e t o kʰ,,,,,,,,,False,0.0,,proto-K’iche’an?,1.0,,,
@@ -6167,7 +6167,7 @@ Qeqchi-FISHINGLINE-1,wold-Qeqchi-20-53-1,Qeqchi,FISHINGLINE,kordel,kordel,k o ɾ
 Qeqchi-FISHINGLINE-2,wold-Qeqchi-20-53-2,Qeqchi,FISHINGLINE,k’aam,k’aam,kʼ aː m,,,,,,,,,False,0.0,,proto-Mayan (not Huastec),1.0,,,
 Qeqchi-FISHNET-1,wold-Qeqchi-20-54-1,Qeqchi,FISHNET,ch'antun,ch'antun,tʃʼ a n t u n,,,,,,,,,False,0.25,,Q'eqchi',1.0,Ch’olan,fishnet,*ch’antun
 Qeqchi-FISHNET-2,wold-Qeqchi-20-54-2,Qeqchi,FISHNET,soq' re karab'k,soq'_re_karab'k,s o qʼ + ɾ e + k a ɾ a ɓ kʰ,,,,,,,,,False,0.0,,Q'eqchi',1.0,,,
-Qeqchi-FISHNET-3,wold-Qeqchi-20-54-3,Qeqchi,FISHNET,yooy,yooy,j oː j,,,,,,,,,False,0.75,,Post-Conquest Q’eqchi’,0.9,Spanish,?,yoyo (?)
+Qeqchi-FISHNET-3,wold-Qeqchi-20-54-3,Qeqchi,FISHNET,yooy,yooy,j oː j,,,,,,,,,True,0.75,,Post-Conquest Q’eqchi’,0.9,Spanish,?,yoyo (?)
 Qeqchi-FISHTRAP-1,wold-Qeqchi-20-55-1,Qeqchi,FISHTRAP,traamp,traamp,t ɾ aː m pʰ,,,,,,,,,True,1.0,,Post-Conquest Q’eqchi’,0.9,Spanish,trap,trampa
 Qeqchi-FISHTRAP-2,wold-Qeqchi-20-55-2,Qeqchi,FISHTRAP,ra’l kar,ra’l_kar,r a ʔ l + k a r,,,,,,,,,False,0.0,,Q'eqchi',1.0,,,
 Qeqchi-BAIT-1,wold-Qeqchi-20-56-1,Qeqchi,BAIT,xwah kar,xwah_kar,ʃ w a h + k a r,,,,,,,,,False,0.0,,Q'eqchi',1.0,,,
@@ -6207,7 +6207,7 @@ Qeqchi-ADULTERY-2,wold-Qeqchi-21-43-2,Qeqchi,ADULTERY,muxuk,muxuk,m u ʃ u kʰ,,
 Qeqchi-RAPE-1,wold-Qeqchi-21-44-1,Qeqchi,RAPE,xminb’al ru,xminb’al_ru,ʃ m i n ɓ a l + ɾ u,,,,,,,,,False,0.0,,Q'eqchi',1.0,,,
 Qeqchi-STEAL-1,wold-Qeqchi-21-51-1,Qeqchi,STEAL,uq'mink,uq'mink,u qʼ m i n kʰ,,,,,,,,,False,0.0,,Q'eqchi',1.0,,,
 Qeqchi-STEAL-2,wold-Qeqchi-21-51-2,Qeqchi,STEAL,elq'ak,elq'ak,e l qʼ a kʰ,,,,,,,,,False,0.0,,proto-Mayan (not Huastec),1.0,,,
-Qeqchi-STEAL-3,wold-Qeqchi-21-51-3,Qeqchi,STEAL,jochok,jochok,x o tʃ o kʰ,,,,,,,,,False,0.75,,Greater Lowland languages,1.0,Ch’olan,"to take off, peal off",*joch
+Qeqchi-STEAL-3,wold-Qeqchi-21-51-3,Qeqchi,STEAL,jochok,jochok,x o tʃ o kʰ,,,,,,,,,True,0.75,,Greater Lowland languages,1.0,Ch’olan,"to take off, peal off",*joch
 Qeqchi-STEAL-4,wold-Qeqchi-21-51-4,Qeqchi,STEAL,ixi'jink,ixi'jink,i ʃ i ʔ x i n kʰ,,,,,,,,,False,0.0,,proto-K’iche’an,1.0,,,
 Qeqchi-THIEF-1,wold-Qeqchi-21-52-1,Qeqchi,THIEF,jochonel,jochonel,x o tʃ o n e l,,,,,,,,,False,0.25,,Q'eqchi',1.0,Ch’olan,thief,joch-on-el
 Qeqchi-RELIGION-1,wold-Qeqchi-22-11-1,Qeqchi,RELIGION,paab'aal,paab'aal,p aː ɓ aː l,,,,,,,,,False,0.0,,Q'eqchi',1.0,,,
@@ -6223,7 +6223,7 @@ Qeqchi-HOLY-1,wold-Qeqchi-22-19-1,Qeqchi,HOLY,wankil,wankil,w a n k i l,,,,,,,,,
 Qeqchi-HOLY-2,wold-Qeqchi-22-19-2,Qeqchi,HOLY,osob'tesinb'il,osob'tesinb'il,o s o ɓ t e s i n ɓ i l,,,,,,,,,False,0.0,,Q'eqchi',1.0,,,
 Qeqchi-PREACH-1,wold-Qeqchi-22-22-1,Qeqchi,PREACH,k'eelenk,k'eelenk,k ʔ eː l e n kʰ,,,,,,,,,False,0.0,,Q'eqchi' + Poqom,1.0,,,
 Qeqchi-BLESS-1,wold-Qeqchi-22-23-1,Qeqchi,BLESS,osob'tesink,osob'tesink,o s o ɓ t e s i n kʰ,,,,,,,,,False,0.0,,Q'eqchi',1.0,,,
-Qeqchi-CURSE-1,wold-Qeqchi-22-24-1,Qeqchi,CURSE,hob'ok,hob'ok,h o ɓ o kʰ,,,,,,,,,False,0.75,,proto-Ch’olan,1.0,Ch’olan,to accuse or to lie,*hob’
+Qeqchi-CURSE-1,wold-Qeqchi-22-24-1,Qeqchi,CURSE,hob'ok,hob'ok,h o ɓ o kʰ,,,,,,,,,True,0.75,,proto-Ch’olan,1.0,Ch’olan,to accuse or to lie,*hob’
 Qeqchi-ABSTAINFROMFOOD-1,wold-Qeqchi-22-26-1,Qeqchi,ABSTAINFROMFOOD,kuyuk sa’,kuyuk_sa’,k u j u k + s a ʔ,,,,,,,,,False,0.0,,Q'eqchi',1.0,,,
 Qeqchi-ABSTAINFROMFOOD-2,wold-Qeqchi-22-26-2,Qeqchi,ABSTAINFROMFOOD,ayuunink rix,ayuunink_rix,a j uː n i n k + ɾ i ʃ,,,,,,,,,True,1.0,,Post-Conquest Q’eqchi’,0.9,Spanish,to fast,ayunar
 Qeqchi-HEAVEN-1,wold-Qeqchi-22-31-1,Qeqchi,HEAVEN,"choxa, choxaal",choxa,tʃ o ʃ a,,,,,,,,,False,0.0,,Q'eqchi',1.0,,,
@@ -7710,7 +7710,7 @@ Otomi-CIRCLE-1,wold-Otomi-12-82-1,Otomi,CIRCLE,maxo̲ts'e,maxo̲ts'e,m a x ə ts
 Otomi-BALL-1,wold-Otomi-12-83-1,Otomi,BALL,pelota,pelota,p e l o t̪ a,,,,,,,,,True,1.0,,modern,0.6,Spanish,the ball,pelota
 Otomi-BALL-2,wold-Otomi-12-83-2,Otomi,BALL,pilota,pilota,p i l o t̪ a,,,,,,,,,True,1.0,,modern,0.6,Spanish,the ball,pelota
 Otomi-BALL-3,wold-Otomi-12-83-3,Otomi,BALL,nuhni,nuhni,n u h n i,,,,,,,,,False,0.0,,Urbano (1605),0.9,,,
-Otomi-BALL-4,wold-Otomi-12-83-4,Otomi,BALL,lobo (2),lobo,l o b o,,,,,,,,,False,0.75,,,0.5,Spanish,the sphere,globo
+Otomi-BALL-4,wold-Otomi-12-83-4,Otomi,BALL,lobo (2),lobo,l o b o,,,,,,,,,True,0.75,,,0.5,Spanish,the sphere,globo
 Otomi-BALL-5,wold-Otomi-12-83-5,Otomi,BALL,tsant’i (3),tsant’i,ts a n t̪ʼ i,,,,,,,,,False,0.0,,Urbano (1605),0.9,,,
 Otomi-LINE-1,wold-Otomi-12-84-1,Otomi,LINE,raya,raya,r a j a,,,,,,,,,True,1.0,,modern,0.6,Spanish,the line,raya
 Otomi-LINE-2,wold-Otomi-12-84-2,Otomi,LINE,'ñu,'ñu,ˀɲ u,,,,,,,,,False,0.0,,Urbano (1605),0.9,,,
@@ -8550,7 +8550,7 @@ ImbaburaQuechua-MALEOFPERSON-1,wold-ImbaburaQuechua-2-23-1,ImbaburaQuechua,MALEO
 ImbaburaQuechua-FEMALEOFPERSON-1,wold-ImbaburaQuechua-2-24-1,ImbaburaQuechua,FEMALEOFPERSON,warmi (2),warmi,w a ɾ m i,,,,,,,,,False,0.0,,Pre-Inca,1.0,,,
 ImbaburaQuechua-BOY-1,wold-ImbaburaQuechua-2-25-1,ImbaburaQuechua,BOY,wambra,wambra,w a m b ɾ a,,,,,,,,,False,0.0,,Pre-Inca,1.0,,,
 ImbaburaQuechua-YOUNGMAN-1,wold-ImbaburaQuechua-2-251-1,ImbaburaQuechua,YOUNGMAN,jatun wambra,jatun_wambra,x a t u n + w a m b ɾ a,,,,,,,,,False,0.0,,Early Colonial,0.9,,,
-ImbaburaQuechua-GIRL-1,wold-ImbaburaQuechua-2-26-1,ImbaburaQuechua,GIRL,kuytsa,kuytsa,k u j ts a,,,,,,,,,False,0.75,,Inca,1.0,Unidentified,girl,kuytsa
+ImbaburaQuechua-GIRL-1,wold-ImbaburaQuechua-2-26-1,ImbaburaQuechua,GIRL,kuytsa,kuytsa,k u j ts a,,,,,,,,,True,0.75,,Inca,1.0,Unidentified,girl,kuytsa
 ImbaburaQuechua-YOUNGWOMAN-1,wold-ImbaburaQuechua-2-261-1,ImbaburaQuechua,YOUNGWOMAN,warmi (3),warmi,w a ɾ m i,,,,,,,,,False,0.0,,Pre-Inca,1.0,,,
 ImbaburaQuechua-CHILDYOUNGHUMAN-1,wold-ImbaburaQuechua-2-27-1,ImbaburaQuechua,CHILDYOUNGHUMAN,wawa (1),wawa,w a w a,,,,,,,,,False,0.0,,Pre-Inca,1.0,,,
 ImbaburaQuechua-BABY-1,wold-ImbaburaQuechua-2-28-1,ImbaburaQuechua,BABY,wawa (2),wawa,w a w a,,,,,,,,,False,0.0,,Pre-Inca,1.0,,,
@@ -8624,7 +8624,7 @@ ImbaburaQuechua-CATTLE-1,wold-ImbaburaQuechua-3-2-1,ImbaburaQuechua,CATTLE,wagra
 ImbaburaQuechua-BULL-1,wold-ImbaburaQuechua-3-21-1,ImbaburaQuechua,BULL,wagra,wagra,w a g ɾ a,,,,,,,,,False,0.0,,Pre-Inca,1.0,,,
 ImbaburaQuechua-OX-1,wold-ImbaburaQuechua-3-22-1,ImbaburaQuechua,OX,buyi,buyi,b u j i,,,,,,,,,True,1.0,,Early Republic,0.8,Spanish,the ox,buey
 ImbaburaQuechua-COW-1,wold-ImbaburaQuechua-3-23-1,ImbaburaQuechua,COW,baka,baka,b a k a,,,,,,,,,True,1.0,,Contemporary,0.7,Spanish,the cow,vaca
-ImbaburaQuechua-CALF-1,wold-ImbaburaQuechua-3-24-1,ImbaburaQuechua,CALF,shiku,shiku,ʃ i k u,,,,,,,,,False,0.75,,Late Colonial,0.9,Spanish,small,chico
+ImbaburaQuechua-CALF-1,wold-ImbaburaQuechua-3-24-1,ImbaburaQuechua,CALF,shiku,shiku,ʃ i k u,,,,,,,,,True,0.75,,Late Colonial,0.9,Spanish,small,chico
 ImbaburaQuechua-SHEEP-1,wold-ImbaburaQuechua-3-25-1,ImbaburaQuechua,SHEEP,llama,llama,ʒ a m a,,,,,,,,,False,0.0,,Pre-Inca,1.0,,,
 ImbaburaQuechua-RAM-1,wold-ImbaburaQuechua-3-26-1,ImbaburaQuechua,RAM,karneru,karneru,k a ɾ n e ɾ u,,,,,,,,,True,1.0,,Contemporary,0.7,Spanish,sheep,carnero
 ImbaburaQuechua-EWE-1,wold-ImbaburaQuechua-3-28-1,ImbaburaQuechua,EWE,llama,llama,ʒ a m a,,,,,,,,,False,0.0,,Pre-Inca,1.0,,,
@@ -8632,8 +8632,8 @@ ImbaburaQuechua-LAMB-1,wold-ImbaburaQuechua-3-29-1,ImbaburaQuechua,LAMB,llama,ll
 ImbaburaQuechua-BOARMALEPIG-1,wold-ImbaburaQuechua-3-32-1,ImbaburaQuechua,BOARMALEPIG,sachaguagra,sachaguagra,s a tʃ a g u a g ɾ a,,,,,,,,,False,0.0,,Pre-Inca,1.0,,,
 ImbaburaQuechua-SOWFEMALEPIG-1,wold-ImbaburaQuechua-3-34-1,ImbaburaQuechua,SOWFEMALEPIG,kuchi,kuchi,k u tʃ i,,,,,,,,,False,0.0,,Pre-Inca,1.0,,,
 ImbaburaQuechua-PIG-1,wold-ImbaburaQuechua-3-35-1,ImbaburaQuechua,PIG,kuchi,kuchi,k u tʃ i,,,,,,,,,False,0.0,,Pre-Inca,1.0,,,
-ImbaburaQuechua-GOAT-1,wold-ImbaburaQuechua-3-36-1,ImbaburaQuechua,GOAT,chita,chita,tʃ i t a,,,,,,,,,False,0.75,,Early Colonial,0.9,Unidentified,,
-ImbaburaQuechua-MALEGOAT-1,wold-ImbaburaQuechua-3-37-1,ImbaburaQuechua,MALEGOAT,chita,chita,tʃ i t a,,,,,,,,,False,0.75,,Early Colonial,0.9,Unidentified,,
+ImbaburaQuechua-GOAT-1,wold-ImbaburaQuechua-3-36-1,ImbaburaQuechua,GOAT,chita,chita,tʃ i t a,,,,,,,,,True,0.75,,Early Colonial,0.9,Unidentified,,
+ImbaburaQuechua-MALEGOAT-1,wold-ImbaburaQuechua-3-37-1,ImbaburaQuechua,MALEGOAT,chita,chita,tʃ i t a,,,,,,,,,True,0.75,,Early Colonial,0.9,Unidentified,,
 ImbaburaQuechua-KID-1,wold-ImbaburaQuechua-3-38-1,ImbaburaQuechua,KID,wawa chita,wawa_chita,w a w a + tʃ i t a,,,,,,,,,False,0.0,Probably created on loan basis,Early Colonial,0.9,Unidentified,,
 ImbaburaQuechua-HORSE-1,wold-ImbaburaQuechua-3-41-1,ImbaburaQuechua,HORSE,kaballu,kaballu,k a b a ʒ u,,,,,,,,,True,1.0,,Early Colonial,0.9,Spanish,the small horse,caballo
 ImbaburaQuechua-STALLION-1,wold-ImbaburaQuechua-3-42-1,ImbaburaQuechua,STALLION,kaballu,kaballu,k a b a ʒ u,,,,,,,,,True,1.0,,Early Colonial,0.9,Spanish,the small horse,caballo
@@ -8662,7 +8662,7 @@ ImbaburaQuechua-RABBIT-1,wold-ImbaburaQuechua-3-614-1,ImbaburaQuechua,RABBIT,kun
 ImbaburaQuechua-CAT-1,wold-ImbaburaQuechua-3-62-1,ImbaburaQuechua,CAT,misi,misi,m i s i,,,,,,,,,False,0.0,,Pre-Inca,1.0,,,
 ImbaburaQuechua-OPOSSUM-1,wold-ImbaburaQuechua-3-622-1,ImbaburaQuechua,OPOSSUM,rapusa,rapusa,ʐ a p u s a,,,,,,,,,True,1.0,,Early Republic,0.8,Spanish,oppossum,raposa
 ImbaburaQuechua-MUROIDMOUSEORRAT-1,wold-ImbaburaQuechua-3-63-1,ImbaburaQuechua,MUROIDMOUSEORRAT,ukucha,ukucha,u k u tʃ a,,,,,,,,,False,0.0,,Pre-Inca,1.0,,,
-ImbaburaQuechua-FISH-1,wold-ImbaburaQuechua-3-65-1,ImbaburaQuechua,FISH,piji,piji,p i x i,,,,,,,,,False,0.75,,Late Colonial,0.9,Spanish,fish,pez
+ImbaburaQuechua-FISH-1,wold-ImbaburaQuechua-3-65-1,ImbaburaQuechua,FISH,piji,piji,p i x i,,,,,,,,,True,0.75,,Late Colonial,0.9,Spanish,fish,pez
 ImbaburaQuechua-WOLF-1,wold-ImbaburaQuechua-3-71-1,ImbaburaQuechua,WOLF,atuk,atuk,a t u k,,,,,,,,,False,0.0,,Pre-Inca,1.0,,,
 ImbaburaQuechua-LION-1,wold-ImbaburaQuechua-3-72-1,ImbaburaQuechua,LION,liyón,liyón,l i j o ŋ,,,,,,,,,True,1.0,,Early Republic,0.8,Spanish,lion,león
 ImbaburaQuechua-BEAR-1,wold-ImbaburaQuechua-3-73-1,ImbaburaQuechua,BEAR,usu,usu,u s u,,,,,,,,,True,1.0,,Contemporary,0.7,Spanish,the bear,oso
@@ -8682,7 +8682,7 @@ ImbaburaQuechua-BEESWAX-1,wold-ImbaburaQuechua-3-821-1,ImbaburaQuechua,BEESWAX,m
 ImbaburaQuechua-BEEHIVE-1,wold-ImbaburaQuechua-3-822-1,ImbaburaQuechua,BEEHIVE,mishki puru,mishki_puru,m i ʃ k i + p u ɾ u,,,,,,,,,False,0.0,,Pre-Inca,1.0,,,
 ImbaburaQuechua-WASP-1,wold-ImbaburaQuechua-3-823-1,ImbaburaQuechua,WASP,punpuni,punpuni,p u m b u n i,,,,,,,,,False,0.0,,Pre-Inca,1.0,,,
 ImbaburaQuechua-FLYINSECT-1,wold-ImbaburaQuechua-3-83-1,ImbaburaQuechua,FLYINSECT,chuspi,chuspi,tʃ u s p i,,,,,,,,,False,0.0,,Pre-Inca,1.0,,,
-ImbaburaQuechua-SANDFLY-1,wold-ImbaburaQuechua-3-831-1,ImbaburaQuechua,SANDFLY,waña,waña,w a ɲ a,,,,,,,,,False,0.75,,Inca,1.0,Cuzco Quechua,mosquito,wanwa
+ImbaburaQuechua-SANDFLY-1,wold-ImbaburaQuechua-3-831-1,ImbaburaQuechua,SANDFLY,waña,waña,w a ɲ a,,,,,,,,,True,0.75,,Inca,1.0,Cuzco Quechua,mosquito,wanwa
 ImbaburaQuechua-MOSQUITO-1,wold-ImbaburaQuechua-3-832-1,ImbaburaQuechua,MOSQUITO,chuspigu,chuspigu,tʃ u s p i g u,,,,,,,,,False,0.0,,Pre-Inca,1.0,,,
 ImbaburaQuechua-WORM-1,wold-ImbaburaQuechua-3-84-1,ImbaburaQuechua,WORM,kuika,kuika,k u i k a,,,,,,,,,False,0.0,,Pre-Inca,1.0,,,
 ImbaburaQuechua-SNAKE-1,wold-ImbaburaQuechua-3-85-1,ImbaburaQuechua,SNAKE,kulibra,kulibra,k u l i b ɾ a,,,,,,,,,True,1.0,,Contemporary,0.7,Spanish,snake,culebra
@@ -8779,7 +8779,7 @@ ImbaburaQuechua-BUTTOCKS-1,wold-ImbaburaQuechua-4-464-1,ImbaburaQuechua,BUTTOCKS
 ImbaburaQuechua-WOMB-1,wold-ImbaburaQuechua-4-47-1,ImbaburaQuechua,WOMB,madri,madri,m a d ɾ i,,,,,,,,,True,1.0,,Late Colonial,0.9,Spanish,womb,matriz
 ImbaburaQuechua-TESTICLES-1,wold-ImbaburaQuechua-4-49-1,ImbaburaQuechua,TESTICLES,lulun,lulun,l u l u ŋ,,,,,,,,,False,0.0,,Pre-Inca,1.0,,,
 ImbaburaQuechua-PENIS-1,wold-ImbaburaQuechua-4-492-1,ImbaburaQuechua,PENIS,pishku (2),pishku,p i ʃ k u,,,,,,,,,False,0.0,,Pre-Inca,1.0,,,
-ImbaburaQuechua-YAWN-1,wold-ImbaburaQuechua-4-52-1,ImbaburaQuechua,YAWN,amfana,amfana,a m ɸ a n a,,,,,,,,,False,0.75,,Early Colonial,0.9,Unidentified,unknown,amfana
+ImbaburaQuechua-YAWN-1,wold-ImbaburaQuechua-4-52-1,ImbaburaQuechua,YAWN,amfana,amfana,a m ɸ a n a,,,,,,,,,True,0.75,,Early Colonial,0.9,Unidentified,unknown,amfana
 ImbaburaQuechua-HICCOUGH-1,wold-ImbaburaQuechua-4-521-1,ImbaburaQuechua,HICCOUGH,jikiana,jikiana,x i k i a n a,,,,,,,,,False,0.0,,Pre-Inca,1.0,,,
 ImbaburaQuechua-COUGH-1,wold-ImbaburaQuechua-4-53-1,ImbaburaQuechua,COUGH,ujuna,ujuna,u x u n a,,,,,,,,,False,0.0,,Pre-Inca,1.0,,,
 ImbaburaQuechua-SNEEZE-1,wold-ImbaburaQuechua-4-54-1,ImbaburaQuechua,SNEEZE,atsiana,atsiana,a ts i a n a,,,,,,,,,False,0.0,,Pre-Inca,1.0,,,
@@ -8853,7 +8853,7 @@ ImbaburaQuechua-ROASTORFRY-1,wold-ImbaburaQuechua-5-23-1,ImbaburaQuechua,ROASTOR
 ImbaburaQuechua-BAKE-1,wold-ImbaburaQuechua-5-24-1,ImbaburaQuechua,BAKE,kusana (2),kusana,k u s a n a,,,,,,,,,False,0.0,,Pre-Inca,1.0,,,
 ImbaburaQuechua-OVEN-1,wold-ImbaburaQuechua-5-25-1,ImbaburaQuechua,OVEN,jurnu,jurnu,x u ɾ n u,,,,,,,,,True,1.0,,Late Colonial,0.9,Spanish,the oven,horno
 ImbaburaQuechua-KETTLE-1,wold-ImbaburaQuechua-5-27-1,ImbaburaQuechua,KETTLE,manga,manga,m a ŋ g a,,,,,,,,,False,0.0,,Pre-Inca,1.0,,,
-ImbaburaQuechua-PAN-1,wold-ImbaburaQuechua-5-28-1,ImbaburaQuechua,PAN,bichi,bichi,b i tʃ i,,,,,,,,,False,0.75,,Early Colonial,0.9,Spanish,bowl,pilche
+ImbaburaQuechua-PAN-1,wold-ImbaburaQuechua-5-28-1,ImbaburaQuechua,PAN,bichi,bichi,b i tʃ i,,,,,,,,,True,0.75,,Early Colonial,0.9,Spanish,bowl,pilche
 ImbaburaQuechua-DISH-1,wold-ImbaburaQuechua-5-31-1,ImbaburaQuechua,DISH,platu,platu,p l a t u,,,,,,,,,True,1.0,,Early Republic,0.8,Spanish,"the plate, the dish",plato
 ImbaburaQuechua-PLATE-1,wold-ImbaburaQuechua-5-32-1,ImbaburaQuechua,PLATE,platu,platu,p l a t u,,,,,,,,,True,1.0,,Early Republic,0.8,Spanish,"the plate, the dish",plato
 ImbaburaQuechua-BOWL-1,wold-ImbaburaQuechua-5-33-1,ImbaburaQuechua,BOWL,pilchi,pilchi,p i l tʃ i,,,,,,,,,False,0.0,,Pre-Inca,1.0,,,
@@ -9092,7 +9092,7 @@ ImbaburaQuechua-CLAY-1,wold-ImbaburaQuechua-9-73-1,ImbaburaQuechua,CLAY,turu (2)
 ImbaburaQuechua-BRAIDVERBORWEAVEBASKET-1,wold-ImbaburaQuechua-9-75-1,ImbaburaQuechua,BRAIDVERBORWEAVEBASKET,awana (2),awana,a w a n a,,,,,,,,,False,0.0,,Pre-Inca,1.0,,,
 ImbaburaQuechua-BASKET-1,wold-ImbaburaQuechua-9-76-1,ImbaburaQuechua,BASKET,kanastu,kanastu,k a n a s t u,,,,,,,,,True,1.0,,Contemporary,0.7,Spanish,basket,canasto
 ImbaburaQuechua-MAT-1,wold-ImbaburaQuechua-9-77-1,ImbaburaQuechua,MAT,ishtira,ishtira,i ʃ t i ɾ a,,,,,,,,,True,1.0,,Late Colonial,0.9,Spanish,mat,estera
-ImbaburaQuechua-NETBAG-1,wold-ImbaburaQuechua-9-78-1,ImbaburaQuechua,NETBAG,shigra,shigra,ʃ i g ɾ a,,,,,,,,,False,0.75,,Inca,1.0,Quechua,netbag,shicra
+ImbaburaQuechua-NETBAG-1,wold-ImbaburaQuechua-9-78-1,ImbaburaQuechua,NETBAG,shigra,shigra,ʃ i g ɾ a,,,,,,,,,True,0.75,,Inca,1.0,Quechua,netbag,shicra
 ImbaburaQuechua-FANOBJECT-1,wold-ImbaburaQuechua-9-79-1,ImbaburaQuechua,FANOBJECT,wayrachina (2),wayrachina,w a j ɾ a tʃ i n a,,,,,,,,,False,0.0,,Pre-Inca,1.0,,,
 ImbaburaQuechua-FANACTION-1,wold-ImbaburaQuechua-9-791-1,ImbaburaQuechua,FANACTION,wayrachina (1),wayrachina,w a j ɾ a tʃ i n a,,,,,,,,,False,0.0,,Pre-Inca,1.0,,,
 ImbaburaQuechua-CARVE-1,wold-ImbaburaQuechua-9-81-1,ImbaburaQuechua,CARVE,llagllana,llagllana,ʒ a g ʒ a n a,,,,,,,,,False,0.0,,Pre-Inca,1.0,,,
@@ -9810,7 +9810,7 @@ Wichi-PARROT-1,wold-Wichi-3-592-1,Wichi,PARROT,ele,ele,e l e,,,,,,,,,False,0.5,,
 Wichi-CROW-1,wold-Wichi-3-593-1,Wichi,CROW,tsetwu,tsetwu,ts e t w u,,,,,,,,,False,0.0,,1850-1900,0.8,,,
 Wichi-DOVE-1,wold-Wichi-3-594-1,Wichi,DOVE,hukwinataj,hukwinataj,h u kʷ i n a t a x,,,,,,,,,False,0.0,,1850-1900,0.8,,,
 Wichi-OWL-1,wold-Wichi-3-596-1,Wichi,OWL,sinalhchu’,sinalhchu’,s i n a lˠ tʃ u ʔ,,,,,,,,,False,0.0,,1900-1940,0.7,,,
-Wichi-OWL-2,wold-Wichi-3-596-2,Wichi,OWL,wuk’u,wuk’u,w u k ʔ u,,,,,,,,,False,0.75,,1940-present,0.7,Quechua,owl,juku
+Wichi-OWL-2,wold-Wichi-3-596-2,Wichi,OWL,wuk’u,wuk’u,w u k ʔ u,,,,,,,,,True,0.75,,1940-present,0.7,Quechua,owl,juku
 Wichi-OWL-3,wold-Wichi-3-596-3,Wichi,OWL,chilechakw,chilechakw,tʃ i l e tʃ a kʷ,,,,,,,,,False,0.0,,1900-1940,0.7,,,
 Wichi-OWL-4,wold-Wichi-3-596-4,Wichi,OWL,amyolo,amyolo,a m j o l o,,,,,,,,,False,0.0,,1900-1940,0.7,,,
 Wichi-DOG-1,wold-Wichi-3-61-1,Wichi,DOG,asinoj,asinoj,a s i n o x,,,,,,,,,False,0.0,,1850-1900,0.8,,,
@@ -10839,7 +10839,7 @@ Wichi-PRISON-1,wold-Wichi-21-39-1,Wichi,PRISON,tonaintsekhi,tonaintsekhi,t o n a
 Wichi-MURDER-1,wold-Wichi-21-42-1,Wichi,MURDER,tolonek,tolonek,t o l o n e k,,,,,,,,,False,0.0,,1940-present,0.7,,,
 Wichi-ARSON-1,wold-Wichi-21-46-1,Wichi,ARSON,tiwenhu,tiwenhu,t i w e n̥ u,,,,,,,,,False,0.0,,1850-1900,0.8,,,
 Wichi-STEAL-1,wold-Wichi-21-51-1,Wichi,STEAL,iskat,iskat,i s k a t,,,,,,,,,False,0.0,,1850-1900,0.8,,,
-Wichi-THIEF-1,wold-Wichi-21-52-1,Wichi,THIEF,malewu,malewu,m a l e w u,,,,,,,,,False,0.75,,1940-present,0.7,Spanish,malicious,malevo
+Wichi-THIEF-1,wold-Wichi-21-52-1,Wichi,THIEF,malewu,malewu,m a l e w u,,,,,,,,,True,0.75,,1940-present,0.7,Spanish,malicious,malevo
 Wichi-TEMPLE-1,wold-Wichi-22-13-1,Wichi,TEMPLE,tohesew’et,tohesew’et,t o h e s e w ʔ e t,,,,,,,,,False,0.0,,1850-1900,0.8,,,
 Wichi-ALTAR-1,wold-Wichi-22-14-1,Wichi,ALTAR,altal,altal,a l t a l,,,,,,,,,True,1.0,,1940-present,0.7,Spanish,the altar,altar
 Wichi-SACRIFICE-1,wold-Wichi-22-15-1,Wichi,SACRIFICE,totw’ayhat,totw’ayhat,t o t wˀ a j h a t,,,,,,,,,False,0.0,,1940-present,0.7,,,
@@ -10868,7 +10868,7 @@ Mapudungun-SAND-1,wold-Mapudungun-1-215-1,Mapudungun,SAND,kuyüm,kuyüm,k u y ɨ
 Mapudungun-SAND-2,wold-Mapudungun-1-215-2,Mapudungun,SAND,achef kuyüm,achef_kuyüm,a tʃ e f + k u y ɨ m,,,,,,,,,False,0.0,,Pre-1606,1.0,,,
 Mapudungun-MOUNTAINORHILL-1,wold-Mapudungun-1-22-1,Mapudungun,MOUNTAINORHILL,mawiza,mawiza,m a w i z a,,,,,,,,,False,0.0,,Pre-1606,1.0,,,
 Mapudungun-MOUNTAINORHILL-2,wold-Mapudungun-1-22-2,Mapudungun,MOUNTAINORHILL,wingkul,wingkul,w i ŋ k u l,,,,,,,,,False,0.0,,Pre-1606,1.0,,,
-Mapudungun-MOUNTAINORHILL-3,wold-Mapudungun-1-22-3,Mapudungun,MOUNTAINORHILL,kalel,kalel,k a l e l,,,,,,,,,False,0.75,,,0.5,Gününa Yajüch,"mountain, hill",kalïl
+Mapudungun-MOUNTAINORHILL-3,wold-Mapudungun-1-22-3,Mapudungun,MOUNTAINORHILL,kalel,kalel,k a l e l,,,,,,,,,True,0.75,,,0.5,Gününa Yajüch,"mountain, hill",kalïl
 Mapudungun-PRECIPICE-1,wold-Mapudungun-1-222-1,Mapudungun,PRECIPICE,lil,lil,l i l,,,,,,,,,False,0.0,,Pre-1606,1.0,,,
 Mapudungun-PLAIN-1,wold-Mapudungun-1-23-1,Mapudungun,PLAIN,laf mapu,laf_mapu,l a f + m a p u,,,,,,,,,False,0.0,,Pre-1606,1.0,,,
 Mapudungun-PLAIN-2,wold-Mapudungun-1-23-2,Mapudungun,PLAIN,lelfün,lelfün,l e l f ɨ n,,,,,,,,,False,0.0,,Pre-1606,1.0,,,
@@ -10936,7 +10936,7 @@ Mapudungun-ASH-1,wold-Mapudungun-1-84-1,Mapudungun,ASH,trufken,trufken,ʈʂ u f 
 Mapudungun-ASH-2,wold-Mapudungun-1-84-2,Mapudungun,ASH,liq kuyüm,liq_kuyüm,l i ɣ + k u y ɨ m,,,,,,,,,False,0.0,,Pre-1606,1.0,,,
 Mapudungun-EMBERS-1,wold-Mapudungun-1-841-1,Mapudungun,EMBERS,ayḻen,ayḻen,a y l̪ e n,,,,,,,,,False,0.0,,Pre-1606,1.0,,,
 Mapudungun-BURNSOMETHING-1,wold-Mapudungun-1-851-1,Mapudungun,BURNSOMETHING,pütren,pütren,p ɨ ʈʂ e n,,,,,,,,,False,0.0,,Pre-1606,1.0,,,
-Mapudungun-BURNSOMETHING-2,wold-Mapudungun-1-851-2,Mapudungun,BURNSOMETHING,lüpümün,lüpümün,l ɨ p ɨ m ɨ n,,,,,,,,,False,0.75,,Pre-1606,1.0,Quechua,burn,rupa
+Mapudungun-BURNSOMETHING-2,wold-Mapudungun-1-851-2,Mapudungun,BURNSOMETHING,lüpümün,lüpümün,l ɨ p ɨ m ɨ n,,,,,,,,,True,0.75,,Pre-1606,1.0,Quechua,burn,rupa
 Mapudungun-BURNING-1,wold-Mapudungun-1-852-1,Mapudungun,BURNING,üyün,üyün,ɨ y ɨ n,,,,,,,,,False,0.0,,Pre-1606,1.0,,,
 Mapudungun-LIGHTIGNITE-1,wold-Mapudungun-1-86-1,Mapudungun,LIGHTIGNITE,üyümün,üyümün,ɨ y ɨ m ɨ n,,,,,,,,,False,0.0,,Pre-1606,1.0,,,
 Mapudungun-EXTINGUISH-1,wold-Mapudungun-1-861-1,Mapudungun,EXTINGUISH,chongümün,chongümün,tʃ o ŋ ɨ m ɨ n,,,,,,,,,False,0.0,,Pre-1606,1.0,,,
@@ -10984,7 +10984,7 @@ Mapudungun-YOUNGERBROTHER-1,wold-Mapudungun-2-445-1,Mapudungun,YOUNGERBROTHER,in
 Mapudungun-YOUNGERBROTHER-2,wold-Mapudungun-2-445-2,Mapudungun,YOUNGERBROTHER,inan wentru lamngen,inan_wentru_lamngen,i n a n + w e n ʈʂ u + l a m ŋ e n,,,,,,,,,False,0.0,,Pre-1606,1.0,,,
 Mapudungun-SISTER-1,wold-Mapudungun-2-45-1,Mapudungun,SISTER,lamngen,lamngen,l a m ŋ e n,,,,,,,,,False,0.0,,Pre-1606,1.0,,,
 Mapudungun-SISTER-2,wold-Mapudungun-2-45-2,Mapudungun,SISTER,zomo lamngen,zomo_lamngen,z o m o + l a m ŋ e n,,,,,,,,,False,0.0,,Pre-1606,1.0,,,
-Mapudungun-SISTER-3,wold-Mapudungun-2-45-3,Mapudungun,SISTER,ñaña,ñaña,ɲ a ɲ a,,,,,,,,,False,0.75,,Post-1606,0.9,Quechua,sister,ñaña
+Mapudungun-SISTER-3,wold-Mapudungun-2-45-3,Mapudungun,SISTER,ñaña,ñaña,ɲ a ɲ a,,,,,,,,,True,0.75,,Post-1606,0.9,Quechua,sister,ñaña
 Mapudungun-OLDERSISTER-1,wold-Mapudungun-2-454-1,Mapudungun,OLDERSISTER,wünen lamngen,wünen_lamngen,w ɨ n e n + l a m ŋ e n,,,,,,,,,False,0.0,,Pre-1606,1.0,,,
 Mapudungun-OLDERSISTER-2,wold-Mapudungun-2-454-2,Mapudungun,OLDERSISTER,wünen zomo lamngen,wünen_zomo_lamngen,w ɨ n e n + z o m o + l a m ŋ e n,,,,,,,,,False,0.0,,Pre-1606,1.0,,,
 Mapudungun-YOUNGERSISTER-1,wold-Mapudungun-2-455-1,Mapudungun,YOUNGERSISTER,inan lamngen,inan_lamngen,i n a n + l a m ŋ e n,,,,,,,,,False,0.0,,Pre-1606,1.0,,,
@@ -11011,7 +11011,7 @@ Mapudungun-GRANDDAUGHTER-5,wold-Mapudungun-2-49-5,Mapudungun,GRANDDAUGHTER,chech
 Mapudungun-MATERNALUNCLEMOTHERSBROTHER-1,wold-Mapudungun-2-511-1,Mapudungun,MATERNALUNCLEMOTHERSBROTHER,weku,weku,w e k u,,,,,,,,,False,0.0,,Pre-1606,1.0,,,
 Mapudungun-PATERNALUNCLEFATHERSBROTHER-1,wold-Mapudungun-2-512-1,Mapudungun,PATERNALUNCLEFATHERSBROTHER,malle,malle,m a ʎ e,,,,,,,,,False,0.0,,Pre-1606,1.0,,,
 Mapudungun-MATERNALAUNTMOTHERSSISTER-1,wold-Mapudungun-2-521-1,Mapudungun,MATERNALAUNTMOTHERSSISTER,ñukentu,ñukentu,ɲ u k e n t u,,,,,,,,,False,0.0,,Pre-1606,1.0,,,
-Mapudungun-MATERNALAUNTMOTHERSSISTER-2,wold-Mapudungun-2-521-2,Mapudungun,MATERNALAUNTMOTHERSSISTER,kaka,kaka,k a k a,,,,,,,,,False,0.75,,Post-1606,0.9,Quechua,mother’s sister,kaka
+Mapudungun-MATERNALAUNTMOTHERSSISTER-2,wold-Mapudungun-2-521-2,Mapudungun,MATERNALAUNTMOTHERSSISTER,kaka,kaka,k a k a,,,,,,,,,True,0.75,,Post-1606,0.9,Quechua,mother’s sister,kaka
 Mapudungun-PATERNALAUNTFATHERSSISTER-1,wold-Mapudungun-2-522-1,Mapudungun,PATERNALAUNTFATHERSSISTER,paḻu,paḻu,p a l̪ u,,,,,,,,,False,0.0,,Pre-1606,1.0,,,
 Mapudungun-NEPHEW-1,wold-Mapudungun-2-53-1,Mapudungun,NEPHEW,malle fotüm,malle_fotüm,m a ʎ e + f o t ɨ m,,,,,,,,,False,0.0,,Pre-1606,1.0,,,
 Mapudungun-NEPHEW-2,wold-Mapudungun-2-53-2,Mapudungun,NEPHEW,choküm,choküm,tʃ o k ɨ m,,,,,,,,,False,0.0,,Pre-1606,1.0,,,
@@ -11040,7 +11040,7 @@ Mapudungun-STEPMOTHER-1,wold-Mapudungun-2-72-1,Mapudungun,STEPMOTHER,ñeñe,ñe�
 Mapudungun-STEPSON-1,wold-Mapudungun-2-73-1,Mapudungun,STEPSON,malle fotüm,malle_fotüm,m a ʎ e + f o t ɨ m,,,,,,,,,False,0.0,,Pre-1606,1.0,,,
 Mapudungun-STEPDAUGHTER-1,wold-Mapudungun-2-74-1,Mapudungun,STEPDAUGHTER,malle ñawe,malle_ñawe,m a ʎ e + ɲ a w e,,,,,,,,,False,0.0,,Pre-1606,1.0,,,
 Mapudungun-ORPHAN-1,wold-Mapudungun-2-75-1,Mapudungun,ORPHAN,kuñifall,kuñifall,k u ɲ i f a ʎ,,,,,,,,,False,0.0,,Pre-1606,1.0,,,
-Mapudungun-ORPHAN-2,wold-Mapudungun-2-75-2,Mapudungun,ORPHAN,wachol,wachol,w a tʃ o l,,,,,,,,,False,0.75,,Post-1606,0.9,Quechua,poor,wakcha
+Mapudungun-ORPHAN-2,wold-Mapudungun-2-75-2,Mapudungun,ORPHAN,wachol,wachol,w a tʃ o l,,,,,,,,,True,0.75,,Post-1606,0.9,Quechua,poor,wakcha
 Mapudungun-WIDOW-1,wold-Mapudungun-2-76-1,Mapudungun,WIDOW,ḻantu zomo,ḻantu_zomo,l̪ a n t u + z o m o,,,,,,,,,False,0.0,,Pre-1606,1.0,,,
 Mapudungun-WIDOWER-1,wold-Mapudungun-2-77-1,Mapudungun,WIDOWER,ḻantu wentru,ḻantu_wentru,l̪ a n t u + w e n ʈʂ u,,,,,,,,,False,0.0,,Pre-1606,1.0,,,
 Mapudungun-RELATIVES-1,wold-Mapudungun-2-81-1,Mapudungun,RELATIVES,reñma,reñma,ɻ e ɲ m a,,,,,,,,,False,0.0,,Pre-1606,1.0,,,
@@ -11076,7 +11076,7 @@ Mapudungun-BOARMALEPIG-1,wold-Mapudungun-3-32-1,Mapudungun,BOARMALEPIG,sañi,sa�
 Mapudungun-BOARMALEPIG-2,wold-Mapudungun-3-32-2,Mapudungun,BOARMALEPIG,foraku,foraku,f o ɻ a k u,,,,,,,,,True,1.0,,Post-1883,0.8,Spanish,the boar,verraco
 Mapudungun-SOWFEMALEPIG-1,wold-Mapudungun-3-34-1,Mapudungun,SOWFEMALEPIG,zomo sanchu,zomo_sanchu,z o m o + s a n tʃ u,,,,,,,,,True,1.0,Nominal construction of adjective (Mapudungun) + noun (Spanish loanword),Post-1606,0.9,Spanish,pig,chancho
 Mapudungun-PIG-1,wold-Mapudungun-3-35-1,Mapudungun,PIG,sanchu,sanchu,s a n tʃ u,,,,,,,,,True,1.0,,Post-1606,0.9,Spanish,pig,chancho
-Mapudungun-PIG-2,wold-Mapudungun-3-35-2,Mapudungun,PIG,sañwe,sañwe,s a ɲ w e,,,,,,,,,False,0.75,,Post-1606,0.9,Spanish,pig,chancho
+Mapudungun-PIG-2,wold-Mapudungun-3-35-2,Mapudungun,PIG,sañwe,sañwe,s a ɲ w e,,,,,,,,,True,0.75,,Post-1606,0.9,Spanish,pig,chancho
 Mapudungun-GOAT-1,wold-Mapudungun-3-36-1,Mapudungun,GOAT,kapüra,kapüra,k a p ɨ ɻ a,,,,,,,,,True,1.0,,Post-1606,0.9,Spanish,the goat,cabra
 Mapudungun-MALEGOAT-1,wold-Mapudungun-3-37-1,Mapudungun,MALEGOAT,kapüra,kapüra,k a p ɨ ɻ a,,,,,,,,,True,1.0,,Post-1606,0.9,Spanish,the goat,cabra
 Mapudungun-MALEGOAT-2,wold-Mapudungun-3-37-2,Mapudungun,MALEGOAT,chifu,chifu,tʃ i f u,,,,,,,,,True,1.0,,Post-1883,0.8,Spanish,goat,chivo
@@ -11089,8 +11089,8 @@ Mapudungun-FOAL-1,wold-Mapudungun-3-45-1,Mapudungun,FOAL,potrillo,potrillo,p o �
 Mapudungun-DONKEY-1,wold-Mapudungun-3-46-1,Mapudungun,DONKEY,furiku,furiku,f u ɻ i k u,,,,,,,,,True,1.0,,Post-1883,0.8,Spanish,little donkey,borrico
 Mapudungun-FOWL-1,wold-Mapudungun-3-5-1,Mapudungun,FOWL,üñüm,üñüm,ɨ ɲ ɨ m,,,,,,,,,False,0.0,,Pre-1606,1.0,,,
 Mapudungun-ROOSTER-1,wold-Mapudungun-3-52-1,Mapudungun,ROOSTER,alka,alka,a l k a,,,,,,,,,False,0.0,,Pre-1606,1.0,,,
-Mapudungun-HEN-1,wold-Mapudungun-3-54-1,Mapudungun,HEN,zomo achawall,zomo_achawall,z o m o + a tʃ a w a ʎ,,,,,,,,,False,0.75,,Pre-1606,1.0,Quechua,hen,wallpa
-Mapudungun-CHICKEN-1,wold-Mapudungun-3-55-1,Mapudungun,CHICKEN,achawall,achawall,a tʃ a w a ʎ,,,,,,,,,False,0.75,,Post-1606,0.9,Quechua,hen,wallpa
+Mapudungun-HEN-1,wold-Mapudungun-3-54-1,Mapudungun,HEN,zomo achawall,zomo_achawall,z o m o + a tʃ a w a ʎ,,,,,,,,,True,0.75,,Pre-1606,1.0,Quechua,hen,wallpa
+Mapudungun-CHICKEN-1,wold-Mapudungun-3-55-1,Mapudungun,CHICKEN,achawall,achawall,a tʃ a w a ʎ,,,,,,,,,True,0.75,,Post-1606,0.9,Quechua,hen,wallpa
 Mapudungun-GOOSE-1,wold-Mapudungun-3-56-1,Mapudungun,GOOSE,kansu,kansu,k a n s u,,,,,,,,,True,1.0,,Post-1606,0.9,Spanish,the goose,ganso
 Mapudungun-DUCK-1,wold-Mapudungun-3-57-1,Mapudungun,DUCK,patu,patu,p a t u,,,,,,,,,True,1.0,,Post-1606,0.9,Spanish,the duck,pato
 Mapudungun-DUCK-2,wold-Mapudungun-3-57-2,Mapudungun,DUCK,wala,wala,w a l a,,,,,,,,,False,0.0,,Pre-1606,1.0,,,
@@ -11110,7 +11110,7 @@ Mapudungun-OWL-1,wold-Mapudungun-3-596-1,Mapudungun,OWL,pekeñ,pekeñ,p e k e ɲ
 Mapudungun-DOG-1,wold-Mapudungun-3-61-1,Mapudungun,DOG,trewa,trewa,ʈʂ e w a,,,,,,,,,False,0.0,,Pre-1606,1.0,,,
 Mapudungun-CAT-1,wold-Mapudungun-3-62-1,Mapudungun,CAT,narki,narki,n a ɻ k i,,,,,,,,,False,0.0,,Pre-1606,1.0,,,
 Mapudungun-MUROIDMOUSEORRAT-1,wold-Mapudungun-3-63-1,Mapudungun,MUROIDMOUSEORRAT,zewü,zewü,z e w ɨ,,,,,,,,,False,0.0,,Pre-1606,1.0,,,
-Mapudungun-FISH-1,wold-Mapudungun-3-65-1,Mapudungun,FISH,challwa,challwa,tʃ a ʎ w a,,,,,,,,,False,0.75,,Pre-1606,1.0,Quechua,fish,challwa
+Mapudungun-FISH-1,wold-Mapudungun-3-65-1,Mapudungun,FISH,challwa,challwa,tʃ a ʎ w a,,,,,,,,,True,0.75,,Pre-1606,1.0,Quechua,fish,challwa
 Mapudungun-SHELL-1,wold-Mapudungun-3-655-1,Mapudungun,SHELL,chakantu,chakantu,tʃ a k a n t u,,,,,,,,,False,0.0,,Pre-1606,1.0,,,
 Mapudungun-WHALE-1,wold-Mapudungun-3-663-1,Mapudungun,WHALE,yenü,yenü,y e n ɨ,,,,,,,,,False,0.0,,Pre-1606,1.0,,,
 Mapudungun-LION-1,wold-Mapudungun-3-72-1,Mapudungun,LION,pangi,pangi,p a ŋ i,,,,,,,,,False,0.0,,Pre-1606,1.0,,,
@@ -11127,7 +11127,7 @@ Mapudungun-SPIDER-1,wold-Mapudungun-3-818-1,Mapudungun,SPIDER,lalüng,lalüng,l 
 Mapudungun-SPIDERWEB-1,wold-Mapudungun-3-819-1,Mapudungun,SPIDERWEB,ngüren lalüng,ngüren_lalüng,ŋ ɨ ɻ e n + l a l ɨ ŋ,,,,,,,,,False,0.0,,Pre-1606,1.0,,,
 Mapudungun-BEE-1,wold-Mapudungun-3-82-1,Mapudungun,BEE,ziwlliñ,ziwlliñ,z i w ʎ i ɲ,,,,,,,,,False,0.0,,Pre-1606,1.0,,,
 Mapudungun-BEE-2,wold-Mapudungun-3-82-2,Mapudungun,BEE,kolmenia,kolmenia,k o l m e n i a,,,,,,,,,True,1.0,,Post-1606,0.9,Spanish,the beehive,colmena
-Mapudungun-BEESWAX-1,wold-Mapudungun-3-821-1,Mapudungun,BEESWAX,müski,müski,m ɨ s k i,,,,,,,,,False,0.75,,Pre-1606,1.0,Quechua,honey,mishki
+Mapudungun-BEESWAX-1,wold-Mapudungun-3-821-1,Mapudungun,BEESWAX,müski,müski,m ɨ s k i,,,,,,,,,True,0.75,,Pre-1606,1.0,Quechua,honey,mishki
 Mapudungun-WASP-1,wold-Mapudungun-3-823-1,Mapudungun,WASP,püḻü,püḻü,p ɨ l̪ ɨ,,,,,,,,,False,0.0,,Pre-1606,1.0,,,
 Mapudungun-FLYINSECT-1,wold-Mapudungun-3-83-1,Mapudungun,FLYINSECT,püḻü,püḻü,p ɨ l̪ ɨ,,,,,,,,,False,0.0,,Pre-1606,1.0,,,
 Mapudungun-MOSQUITO-1,wold-Mapudungun-3-832-1,Mapudungun,MOSQUITO,pichike püḻü,pichike_püḻü,p i tʃ i k e + p ɨ l̪ ɨ,,,,,,,,,False,0.0,,Pre-1606,1.0,,,
@@ -11140,9 +11140,9 @@ Mapudungun-GRASSHOPPER-1,wold-Mapudungun-3-93-1,Mapudungun,GRASSHOPPER,chori,cho
 Mapudungun-SNAIL-1,wold-Mapudungun-3-94-1,Mapudungun,SNAIL,müta piru,müta_piru,m ɨ t a + p i ɻ u,,,,,,,,,False,0.0,,Pre-1606,1.0,,,
 Mapudungun-FROG-1,wold-Mapudungun-3-95-1,Mapudungun,FROG,llüngki,llüngki,ʎ ɨ ŋ k i,,,,,,,,,False,0.0,,Pre-1606,1.0,,,
 Mapudungun-LIZARD-1,wold-Mapudungun-3-96-1,Mapudungun,LIZARD,fillkuñ,fillkuñ,f i ʎ k u ɲ,,,,,,,,,False,0.0,,Pre-1606,1.0,,,
-Mapudungun-LIZARD-2,wold-Mapudungun-3-96-2,Mapudungun,LIZARD,kelesia,kelesia,k e l e s i a,,,,,,,,,False,0.75,,,0.5,Gününa Yajüch,lizard,kelésia
-Mapudungun-LIZARD-3,wold-Mapudungun-3-96-3,Mapudungun,LIZARD,palum,palum,p a l u m,,,,,,,,,False,0.75,,Post-1606,0.9,Quechua,"lizard, alligator",palu
-Mapudungun-LIZARD-4,wold-Mapudungun-3-96-4,Mapudungun,LIZARD,charaypuka,charaypuka,tʃ a ɻ a y p u k a,,,,,,,,,False,0.75,,,0.5,Quechua,lizard,qaraypuka
+Mapudungun-LIZARD-2,wold-Mapudungun-3-96-2,Mapudungun,LIZARD,kelesia,kelesia,k e l e s i a,,,,,,,,,True,0.75,,,0.5,Gününa Yajüch,lizard,kelésia
+Mapudungun-LIZARD-3,wold-Mapudungun-3-96-3,Mapudungun,LIZARD,palum,palum,p a l u m,,,,,,,,,True,0.75,,Post-1606,0.9,Quechua,"lizard, alligator",palu
+Mapudungun-LIZARD-4,wold-Mapudungun-3-96-4,Mapudungun,LIZARD,charaypuka,charaypuka,tʃ a ɻ a y p u k a,,,,,,,,,True,0.75,,,0.5,Quechua,lizard,qaraypuka
 Mapudungun-TURTLE-1,wold-Mapudungun-3-98-1,Mapudungun,TURTLE,peyu,peyu,p e y u,,,,,,,,,False,0.0,,Pre-1606,1.0,,,
 Mapudungun-BODY-1,wold-Mapudungun-4-11-1,Mapudungun,BODY,kalül,kalül,k a l ɨ l,,,,,,,,,False,0.0,,Pre-1606,1.0,,,
 Mapudungun-SKIN-1,wold-Mapudungun-4-12-1,Mapudungun,SKIN,trawa,trawa,ʈʂ a w a,,,,,,,,,False,0.0,,Pre-1606,1.0,,,
@@ -11225,7 +11225,7 @@ Mapudungun-LUNG-1,wold-Mapudungun-4-441-1,Mapudungun,LUNG,poṉon,poṉon,p o n�
 Mapudungun-LIVER-1,wold-Mapudungun-4-45-1,Mapudungun,LIVER,ke,ke,k e,,,,,,,,,False,0.0,,Pre-1606,1.0,,,
 Mapudungun-KIDNEY-1,wold-Mapudungun-4-451-1,Mapudungun,KIDNEY,kuzakuza,kuzakuza,k u z a k u z a,,,,,,,,,False,0.0,,Pre-1606,1.0,,,
 Mapudungun-KIDNEY-2,wold-Mapudungun-4-451-2,Mapudungun,KIDNEY,kushalkiñ,kushalkiñ,k u ʃ a l k i ɲ,,,,,,,,,False,0.0,,Pre-1606,1.0,,,
-Mapudungun-STOMACH-1,wold-Mapudungun-4-46-1,Mapudungun,STOMACH,pütra,pütra,p ɨ ʈʂ a,,,,,,,,,False,0.75,,Pre-1606,1.0,Quechua,belly,patra
+Mapudungun-STOMACH-1,wold-Mapudungun-4-46-1,Mapudungun,STOMACH,pütra,pütra,p ɨ ʈʂ a,,,,,,,,,True,0.75,,Pre-1606,1.0,Quechua,belly,patra
 Mapudungun-INTESTINES-1,wold-Mapudungun-4-461-1,Mapudungun,INTESTINES,küllche,küllche,k ɨ ʎ tʃ e,,,,,,,,,False,0.0,,Pre-1606,1.0,,,
 Mapudungun-WAIST-1,wold-Mapudungun-4-462-1,Mapudungun,WAIST,trariwtuwe,trariwtuwe,ʈʂ a ɻ i w t u w e,,,,,,,,,False,0.0,,Pre-1606,1.0,,,
 Mapudungun-HIP-1,wold-Mapudungun-4-463-1,Mapudungun,HIP,trutre,trutre,ʈʂ u ʈʂ e,,,,,,,,,False,0.0,,Pre-1606,1.0,,,
@@ -11272,7 +11272,7 @@ Mapudungun-COMMONCOLDDISEASE-2,wold-Mapudungun-4-843-2,Mapudungun,COMMONCOLDDISE
 Mapudungun-WOUND-1,wold-Mapudungun-4-85-1,Mapudungun,WOUND,allfeñ,allfeñ,a ʎ f e ɲ,,,,,,,,,False,0.0,,Pre-1606,1.0,,,
 Mapudungun-BRUISE-1,wold-Mapudungun-4-852-1,Mapudungun,BRUISE,allfeñ,allfeñ,a ʎ f e ɲ,,,,,,,,,False,0.0,,Pre-1606,1.0,,,
 Mapudungun-SWELLING-1,wold-Mapudungun-4-853-1,Mapudungun,SWELLING,iñchalen,iñchalen,i ɲ tʃ a l e n,,,,,,,,,True,1.0,,Post-1883,0.8,Spanish,swelling,hinchazón
-Mapudungun-SWELLING-2,wold-Mapudungun-4-853-2,Mapudungun,SWELLING,ponkwin,ponkwin,p o n k w i n,,,,,,,,,False,0.75,,Post-1606,0.9,Quechua,the swelling,punquiy
+Mapudungun-SWELLING-2,wold-Mapudungun-4-853-2,Mapudungun,SWELLING,ponkwin,ponkwin,p o n k w i n,,,,,,,,,True,0.75,,Post-1606,0.9,Quechua,the swelling,punquiy
 Mapudungun-ITCH-1,wold-Mapudungun-4-854-1,Mapudungun,ITCH,üna,üna,ɨ n a,,,,,,,,,False,0.0,,Pre-1606,1.0,,,
 Mapudungun-BLISTER-1,wold-Mapudungun-4-855-1,Mapudungun,BLISTER,pitraw,pitraw,p i ʈʂ a w,,,,,,,,,False,0.0,,Pre-1606,1.0,,,
 Mapudungun-BOILOFSKIN-1,wold-Mapudungun-4-856-1,Mapudungun,BOILOFSKIN,pitru,pitru,p i ʈʂ u,,,,,,,,,False,0.0,,Pre-1606,1.0,,,
@@ -11338,7 +11338,7 @@ Mapudungun-SCRAPE-1,wold-Mapudungun-5-48-1,Mapudungun,SCRAPE,kafürün,kafürün
 Mapudungun-MIX-1,wold-Mapudungun-5-49-1,Mapudungun,MIX,reyfün,reyfün,ɻ e y f ɨ n,,,,,,,,,False,0.0,,Pre-1606,1.0,,,
 Mapudungun-BREAD-1,wold-Mapudungun-5-51-1,Mapudungun,BREAD,kofke,kofke,k o f k e,,,,,,,,,False,0.0,,Pre-1606,1.0,,,
 Mapudungun-BREAD-2,wold-Mapudungun-5-51-2,Mapudungun,BREAD,pan,pan,p a n,,,,,,,,,True,1.0,,Post-1883,0.8,Spanish,the bread,pan
-Mapudungun-BREAD-3,wold-Mapudungun-5-51-3,Mapudungun,BREAD,patay,patay,p a t a y,,,,,,,,,False,0.75,,,0.5,Quechua,bread made of algarroba flour,patay
+Mapudungun-BREAD-3,wold-Mapudungun-5-51-3,Mapudungun,BREAD,patay,patay,p a t a y,,,,,,,,,True,0.75,,,0.5,Quechua,bread made of algarroba flour,patay
 Mapudungun-DOUGH-1,wold-Mapudungun-5-53-1,Mapudungun,DOUGH,masa,masa,m a s a,,,,,,,,,True,1.0,,Post-1606,0.9,Spanish,to knead,amasar
 Mapudungun-KNEAD-1,wold-Mapudungun-5-54-1,Mapudungun,KNEAD,sofalün,sofalün,s o f a l ɨ n,,,,,,,,,True,1.0,,Post-1606,0.9,Spanish,to knead,sobar
 Mapudungun-KNEAD-2,wold-Mapudungun-5-54-2,Mapudungun,KNEAD,masan,masan,m a s a n,,,,,,,,,True,1.0,,Post-1606,0.9,Spanish,to knead,amasar
@@ -11347,7 +11347,7 @@ Mapudungun-GRIND-1,wold-Mapudungun-5-56-1,Mapudungun,GRIND,rüngümün,rüngüm�
 Mapudungun-MILL-1,wold-Mapudungun-5-57-1,Mapudungun,MILL,molinu,molinu,m o l i n u,,,,,,,,,True,1.0,,Post-1883,0.8,Spanish,the mill,molino
 Mapudungun-MORTAR-1,wold-Mapudungun-5-58-1,Mapudungun,MORTAR,tranawe,tranawe,ʈʂ a n a w e,,,,,,,,,False,0.0,,Pre-1606,1.0,,,
 Mapudungun-MEAT-1,wold-Mapudungun-5-61-1,Mapudungun,MEAT,ilo,ilo,i l o,,,,,,,,,False,0.0,,Pre-1606,1.0,,,
-Mapudungun-MEAT-2,wold-Mapudungun-5-61-2,Mapudungun,MEAT,charki,charki,tʃ a ɻ k i,,,,,,,,,False,0.75,,Post-1606,0.9,Quechua,jerked beef or other meat,ch’arki
+Mapudungun-MEAT-2,wold-Mapudungun-5-61-2,Mapudungun,MEAT,charki,charki,tʃ a ɻ k i,,,,,,,,,True,0.75,,Post-1606,0.9,Quechua,jerked beef or other meat,ch’arki
 Mapudungun-SOUP-1,wold-Mapudungun-5-64-1,Mapudungun,SOUP,korü,korü,k o ɻ ɨ,,,,,,,,,False,0.0,,Pre-1606,1.0,,,
 Mapudungun-VEGETABLES-1,wold-Mapudungun-5-65-1,Mapudungun,VEGETABLES,ketran,ketran,k e ʈʂ a n,,,,,,,,,False,0.0,,Pre-1606,1.0,,,
 Mapudungun-BEAN-1,wold-Mapudungun-5-66-1,Mapudungun,BEAN,zengüll,zengüll,z e ŋ ɨ ʎ,,,,,,,,,False,0.0,,Pre-1606,1.0,,,
@@ -11358,13 +11358,13 @@ Mapudungun-GRAPE-1,wold-Mapudungun-5-76-1,Mapudungun,GRAPE,ofaz,ofaz,o f a z,,,,
 Mapudungun-FATORGANICSUBSTANCE-1,wold-Mapudungun-5-791-1,Mapudungun,FATORGANICSUBSTANCE,iwiñ,iwiñ,i w i ɲ,,,,,,,,,False,0.0,,Pre-1606,1.0,,,
 Mapudungun-SALT-1,wold-Mapudungun-5-81-1,Mapudungun,SALT,chazi,chazi,tʃ a z i,,,,,,,,,False,0.0,,Pre-1606,1.0,,,
 Mapudungun-CHILIPEPPER-1,wold-Mapudungun-5-821-1,Mapudungun,CHILIPEPPER,trapi,trapi,ʈʂ a p i,,,,,,,,,False,0.0,,Pre-1606,1.0,,,
-Mapudungun-HONEY-1,wold-Mapudungun-5-84-1,Mapudungun,HONEY,müski,müski,m ɨ s k i,,,,,,,,,False,0.75,,Pre-1606,1.0,Quechua,honey,mishki
+Mapudungun-HONEY-1,wold-Mapudungun-5-84-1,Mapudungun,HONEY,müski,müski,m ɨ s k i,,,,,,,,,True,0.75,,Pre-1606,1.0,Quechua,honey,mishki
 Mapudungun-SUGAR-1,wold-Mapudungun-5-85-1,Mapudungun,SUGAR,asukura,asukura,a s u k u ɻ a,,,,,,,,,True,1.0,,Post-1606,0.9,Spanish,the sugar,azúcar
 Mapudungun-MILK-1,wold-Mapudungun-5-86-1,Mapudungun,MILK,lichi,lichi,l i tʃ i,,,,,,,,,True,1.0,,Post-1606,0.9,Spanish,milk,leche
 Mapudungun-DRAWMILK-1,wold-Mapudungun-5-87-1,Mapudungun,DRAWMILK,entulichin,entulichin,e n t u l i tʃ i n,,,,,,,,,True,1.0,,Post-1606,0.9,Spanish,milk,leche
 Mapudungun-CHEESE-1,wold-Mapudungun-5-88-1,Mapudungun,CHEESE,kesu,kesu,k e s u,,,,,,,,,True,1.0,,Post-1606,0.9,Spanish,the cheese,queso
 Mapudungun-BEVERAGE-1,wold-Mapudungun-5-9-1,Mapudungun,BEVERAGE,putupeyel,putupeyel,p u t u p e y e l,,,,,,,,,False,0.0,,Pre-1606,1.0,,,
-Mapudungun-WINE-1,wold-Mapudungun-5-92-1,Mapudungun,WINE,pulku,pulku,p u l k u,,,,,,,,,False,0.75,,Post-1606,0.9,Nahuatl,chicha (juice) from the maguey,pulque
+Mapudungun-WINE-1,wold-Mapudungun-5-92-1,Mapudungun,WINE,pulku,pulku,p u l k u,,,,,,,,,True,0.75,,Post-1606,0.9,Nahuatl,chicha (juice) from the maguey,pulque
 Mapudungun-WINE-2,wold-Mapudungun-5-92-2,Mapudungun,WINE,lamkja,lamkja,l a m k j a,,,,,,,,,False,0.25,,,0.5,Gününa Yajüch,alcoholic drink,lam
 Mapudungun-EGG-1,wold-Mapudungun-5-97-1,Mapudungun,EGG,kuram,kuram,k u ɻ a m,,,,,,,,,False,0.0,,Pre-1606,1.0,,,
 Mapudungun-YOLK-1,wold-Mapudungun-5-971-1,Mapudungun,YOLK,choz kuram,choz_kuram,tʃ o z + k u ɻ a m,,,,,,,,,False,0.0,,Pre-1606,1.0,,,
@@ -11384,7 +11384,7 @@ Mapudungun-NEEDLEFORSEWING-1,wold-Mapudungun-6-36-1,Mapudungun,NEEDLEFORSEWING,a
 Mapudungun-AWL-1,wold-Mapudungun-6-37-1,Mapudungun,AWL,rütriñ,rütriñ,ɻ ɨ ʈʂ i ɲ,,,,,,,,,False,0.0,,Pre-1606,1.0,,,
 Mapudungun-THREAD-1,wold-Mapudungun-6-38-1,Mapudungun,THREAD,füw,füw,f ɨ w,,,,,,,,,False,0.0,,Pre-1606,1.0,,,
 Mapudungun-DYE-1,wold-Mapudungun-6-39-1,Mapudungun,DYE,tulün,tulün,t u l ɨ n,,,,,,,,,False,0.0,,Pre-1606,1.0,,,
-Mapudungun-CLOAK-1,wold-Mapudungun-6-41-1,Mapudungun,CLOAK,ükülla,ükülla,ɨ k ɨ ʎ a,,,,,,,,,False,0.75,,Post-1606,0.9,Quechua,blanket,lliklla
+Mapudungun-CLOAK-1,wold-Mapudungun-6-41-1,Mapudungun,CLOAK,ükülla,ükülla,ɨ k ɨ ʎ a,,,,,,,,,True,0.75,,Post-1606,0.9,Quechua,blanket,lliklla
 Mapudungun-PONCHO-1,wold-Mapudungun-6-411-1,Mapudungun,PONCHO,makuñ,makuñ,m a k u ɲ,,,,,,,,,False,0.0,,Pre-1606,1.0,,,
 Mapudungun-LADDER-1,wold-Mapudungun-7-37-1,Mapudungun,LADDER,pürapürawe,pürapürawe,p ɨ ɻ a p ɨ ɻ a w e,,,,,,,,,False,0.0,,Pre-1606,1.0,,,
 Mapudungun-LADDER-2,wold-Mapudungun-7-37-2,Mapudungun,LADDER,kalera,kalera,k a l e ɻ a,,,,,,,,,True,1.0,,Post-1883,0.8,Spanish,"ladder, stairs",escalera
@@ -11403,7 +11403,7 @@ Mapudungun-POCKET-1,wold-Mapudungun-6-61-1,Mapudungun,POCKET,fonsiku,fonsiku,f o
 Mapudungun-BUTTON-1,wold-Mapudungun-6-62-1,Mapudungun,BUTTON,foton,foton,f o t o n,,,,,,,,,True,1.0,,Post-1606,0.9,Spanish,the button,botón
 Mapudungun-PIN-1,wold-Mapudungun-6-63-1,Mapudungun,PIN,alfiler,alfiler,a l f i l e ɻ,,,,,,,,,True,1.0,,Post-1606,0.9,Spanish,the pin,alfiler
 Mapudungun-PIN-2,wold-Mapudungun-6-63-2,Mapudungun,PIN,sükill,sükill,s ɨ k i ʎ,,,,,,,,,False,0.0,,Pre-1606,1.0,,,
-Mapudungun-PIN-3,wold-Mapudungun-6-63-3,Mapudungun,PIN,tupu,tupu,t u p u,,,,,,,,,False,0.75,,Post-1606,0.9,Quechua,ornamental clasp of silver,tupu
+Mapudungun-PIN-3,wold-Mapudungun-6-63-3,Mapudungun,PIN,tupu,tupu,t u p u,,,,,,,,,True,0.75,,Post-1606,0.9,Quechua,ornamental clasp of silver,tupu
 Mapudungun-ORNAMENT-1,wold-Mapudungun-6-71-1,Mapudungun,ORNAMENT,peshkiñ,peshkiñ,p e ʃ k i ɲ,,,,,,,,,False,0.0,,Pre-1606,1.0,,,
 Mapudungun-RING-1,wold-Mapudungun-6-73-1,Mapudungun,RING,iwüḻ kuwü,iwüḻ_kuwü,i w ɨ l̪ + k u w ɨ,,,,,,,,,False,0.0,,Pre-1606,1.0,,,
 Mapudungun-NECKLACE-1,wold-Mapudungun-6-75-1,Mapudungun,NECKLACE,llangkatu,llangkatu,ʎ a ŋ k a t u,,,,,,,,,False,0.0,,Pre-1606,1.0,,,
@@ -11420,7 +11420,7 @@ Mapudungun-SOAP-1,wold-Mapudungun-6-95-1,Mapudungun,SOAP,kafon,kafon,k a f o n,,
 Mapudungun-SOAP-2,wold-Mapudungun-6-95-2,Mapudungun,SOAP,küllay,küllay,k ɨ ʎ a y,,,,,,,,,False,0.0,,Pre-1606,1.0,,,
 Mapudungun-MIRROR-1,wold-Mapudungun-6-96-1,Mapudungun,MIRROR,komütuwe,komütuwe,k o m ɨ t u w e,,,,,,,,,False,0.0,,Pre-1606,1.0,,,
 Mapudungun-MIRROR-2,wold-Mapudungun-6-96-2,Mapudungun,MIRROR,espeko,espeko,e s p e k o,,,,,,,,,True,1.0,,Post-1606,0.9,Spanish,the mirror,espejo
-Mapudungun-MIRROR-3,wold-Mapudungun-6-96-3,Mapudungun,MIRROR,lilpu,lilpu,l i l p u,,,,,,,,,False,0.75,,Post-1883,0.8,Quechua,mirror,rirpu
+Mapudungun-MIRROR-3,wold-Mapudungun-6-96-3,Mapudungun,MIRROR,lilpu,lilpu,l i l p u,,,,,,,,,True,0.75,,Post-1883,0.8,Quechua,mirror,rirpu
 Mapudungun-DWELLLIVERESIDE-1,wold-Mapudungun-7-11-1,Mapudungun,DWELLLIVERESIDE,mülen,mülen,m ɨ l e n,,,,,,,,,False,0.0,,Pre-1606,1.0,,,
 Mapudungun-HOUSE-1,wold-Mapudungun-7-12-1,Mapudungun,HOUSE,ruka,ruka,ɻ u k a,,,,,,,,,False,0.0,,Pre-1606,1.0,,,
 Mapudungun-HUT-1,wold-Mapudungun-7-13-1,Mapudungun,HUT,ruka,ruka,ɻ u k a,,,,,,,,,False,0.0,,Pre-1606,1.0,,,
@@ -11641,8 +11641,8 @@ Mapudungun-YOKE-1,wold-Mapudungun-10-78-1,Mapudungun,YOKE,yuku,yuku,y u k u,,,,,
 Mapudungun-BOAT-1,wold-Mapudungun-10-83-1,Mapudungun,BOAT,fote,fote,f o t e,,,,,,,,,True,1.0,,Post-1883,0.8,Spanish,boat,bote
 Mapudungun-CANOE-1,wold-Mapudungun-10-831-1,Mapudungun,CANOE,wampo,wampo,w a m p o,,,,,,,,,True,1.0,,Pre-1606,1.0,Quechua,canoe,wampu
 Mapudungun-OAR-1,wold-Mapudungun-10-85-1,Mapudungun,OAR,remo,remo,ɻ e m o,,,,,,,,,True,1.0,,Post-1606,0.9,Spanish,the oar,remo
-Mapudungun-OAR-2,wold-Mapudungun-10-85-2,Mapudungun,OAR,kawewe,kawewe,k a w e w e,,,,,,,,,False,0.75,,Post-1606,0.9,Quechua,to row,qawiy
-Mapudungun-ROW-1,wold-Mapudungun-10-852-1,Mapudungun,ROW,kawen,kawen,k a w e n,,,,,,,,,False,0.75,,Post-1606,0.9,Quechua,to row,qawiy
+Mapudungun-OAR-2,wold-Mapudungun-10-85-2,Mapudungun,OAR,kawewe,kawewe,k a w e w e,,,,,,,,,True,0.75,,Post-1606,0.9,Quechua,to row,qawiy
+Mapudungun-ROW-1,wold-Mapudungun-10-852-1,Mapudungun,ROW,kawen,kawen,k a w e n,,,,,,,,,True,0.75,,Post-1606,0.9,Quechua,to row,qawiy
 Mapudungun-PORT-1,wold-Mapudungun-10-91-1,Mapudungun,PORT,fotetuwe,fotetuwe,f o t e t u w e,,,,,,,,,True,1.0,fote ‘boat’ is a loanword from Spanish,Post-1883,0.8,Spanish,boat,bote
 Mapudungun-HAVE-1,wold-Mapudungun-11-11-1,Mapudungun,HAVE,nien,nien,n i e n,,,,,,,,,False,0.0,,Pre-1606,1.0,,,
 Mapudungun-OWN-1,wold-Mapudungun-11-12-1,Mapudungun,OWN,nien,nien,n i e n,,,,,,,,,False,0.0,,Pre-1606,1.0,,,
@@ -11856,10 +11856,10 @@ Mapudungun-FRAGRANT-1,wold-Mapudungun-15-25-1,Mapudungun,FRAGRANT,küme ṉümü
 Mapudungun-STINKING-1,wold-Mapudungun-15-26-1,Mapudungun,STINKING,weza ṉümüṉngey,weza_ṉümüṉngey,w e z a + n̪ ɨ m ɨ n̪ ŋ e y,,,,,,,,,False,0.0,,Pre-1606,1.0,,,
 Mapudungun-TASTESOMETHING-1,wold-Mapudungun-15-31-1,Mapudungun,TASTESOMETHING,kümentun,kümentun,k ɨ m e n t u n,,,,,,,,,False,0.0,,Pre-1606,1.0,,,
 Mapudungun-SWEET-1,wold-Mapudungun-15-35-1,Mapudungun,SWEET,kochü,kochü,k o tʃ ɨ,,,,,,,,,False,0.0,,Pre-1606,1.0,,,
-Mapudungun-SALTY-1,wold-Mapudungun-15-36-1,Mapudungun,SALTY,kotrü,kotrü,k o ʈʂ ɨ,,,,,,,,,False,0.75,,,0.5,Gününa Yajüch,salt,xïtran
+Mapudungun-SALTY-1,wold-Mapudungun-15-36-1,Mapudungun,SALTY,kotrü,kotrü,k o ʈʂ ɨ,,,,,,,,,True,0.75,,,0.5,Gününa Yajüch,salt,xïtran
 Mapudungun-BITTER-1,wold-Mapudungun-15-37-1,Mapudungun,BITTER,mukür,mukür,m u k ɨ ɻ,,,,,,,,,False,0.0,,Pre-1606,1.0,,,
-Mapudungun-SOUR-1,wold-Mapudungun-15-38-1,Mapudungun,SOUR,kotrü,kotrü,k o ʈʂ ɨ,,,,,,,,,False,0.75,,,0.5,Gününa Yajüch,salt,xïtran
-Mapudungun-BRACKISH-1,wold-Mapudungun-15-39-1,Mapudungun,BRACKISH,kotrü ko,kotrü_ko,k o ʈʂ ɨ + k o,,,,,,,,,False,0.75,,,0.5,Gününa Yajüch,salt,xïtran
+Mapudungun-SOUR-1,wold-Mapudungun-15-38-1,Mapudungun,SOUR,kotrü,kotrü,k o ʈʂ ɨ,,,,,,,,,True,0.75,,,0.5,Gününa Yajüch,salt,xïtran
+Mapudungun-BRACKISH-1,wold-Mapudungun-15-39-1,Mapudungun,BRACKISH,kotrü ko,kotrü_ko,k o ʈʂ ɨ + k o,,,,,,,,,True,0.75,,,0.5,Gününa Yajüch,salt,xïtran
 Mapudungun-HEAR-1,wold-Mapudungun-15-41-1,Mapudungun,HEAR,allkün,allkün,a ʎ k ɨ n,,,,,,,,,False,0.0,,Pre-1606,1.0,,,
 Mapudungun-LISTEN-1,wold-Mapudungun-15-42-1,Mapudungun,LISTEN,allkütun,allkütun,a ʎ k ɨ t u n,,,,,,,,,False,0.0,,Pre-1606,1.0,,,
 Mapudungun-SOUNDORNOISE-1,wold-Mapudungun-15-44-1,Mapudungun,SOUNDORNOISE,zungun,zungun,z u ŋ u n,,,,,,,,,False,0.0,,Pre-1606,1.0,,,
@@ -11873,7 +11873,7 @@ Mapudungun-WHITE-1,wold-Mapudungun-15-64-1,Mapudungun,WHITE,liq,liq,l i ɣ,,,,,,
 Mapudungun-WHITE-2,wold-Mapudungun-15-64-2,Mapudungun,WHITE,fülang,fülang,f ɨ l a ŋ,,,,,,,,,True,1.0,,Post-1883,0.8,Spanish,white,blanco
 Mapudungun-WHITE-3,wold-Mapudungun-15-64-3,Mapudungun,WHITE,plan,plan,p l a n,,,,,,,,,True,1.0,,Post-1883,0.8,Spanish,white,blanco
 Mapudungun-BLACK-1,wold-Mapudungun-15-65-1,Mapudungun,BLACK,kurü,kurü,k u ɻ ɨ,,,,,,,,,False,0.0,,Pre-1606,1.0,,,
-Mapudungun-RED-1,wold-Mapudungun-15-66-1,Mapudungun,RED,kelü,kelü,k e l ɨ,,,,,,,,,False,0.75,,Post-1606,0.9,Quechua,red,kolli
+Mapudungun-RED-1,wold-Mapudungun-15-66-1,Mapudungun,RED,kelü,kelü,k e l ɨ,,,,,,,,,True,0.75,,Post-1606,0.9,Quechua,red,kolli
 Mapudungun-BLUE-1,wold-Mapudungun-15-67-1,Mapudungun,BLUE,kallfü,kallfü,k a ʎ f ɨ,,,,,,,,,False,0.0,,Pre-1606,1.0,,,
 Mapudungun-GREEN-1,wold-Mapudungun-15-68-1,Mapudungun,GREEN,karü,karü,k a ɻ ɨ,,,,,,,,,False,0.0,,Pre-1606,1.0,,,
 Mapudungun-YELLOW-1,wold-Mapudungun-15-69-1,Mapudungun,YELLOW,choz,choz,tʃ o z,,,,,,,,,False,0.0,,Pre-1606,1.0,,,
@@ -11904,14 +11904,14 @@ Mapudungun-PLAY-1,wold-Mapudungun-16-26-1,Mapudungun,PLAY,awkantun,awkantun,a w 
 Mapudungun-LOVE-1,wold-Mapudungun-16-27-1,Mapudungun,LOVE,ayün,ayün,a y ɨ n,,,,,,,,,False,0.0,,Pre-1606,1.0,,,
 Mapudungun-LOVE-2,wold-Mapudungun-16-27-2,Mapudungun,LOVE,poyen,poyen,p o y e n,,,,,,,,,False,0.0,,Pre-1606,1.0,,,
 Mapudungun-KISS-1,wold-Mapudungun-16-29-1,Mapudungun,KISS,truyun,truyun,ʈʂ u y u n,,,,,,,,,False,0.0,,Pre-1606,1.0,,,
-Mapudungun-KISS-2,wold-Mapudungun-16-29-2,Mapudungun,KISS,muchan,muchan,m u tʃ a n,,,,,,,,,False,0.75,,Post-1883,0.8,Quechua,to kiss,muchay
+Mapudungun-KISS-2,wold-Mapudungun-16-29-2,Mapudungun,KISS,muchan,muchan,m u tʃ a n,,,,,,,,,True,0.75,,Post-1883,0.8,Quechua,to kiss,muchay
 Mapudungun-EMBRACE-1,wold-Mapudungun-16-3-1,Mapudungun,EMBRACE,pangkon,pangkon,p a ŋ k o n,,,,,,,,,False,0.0,,Pre-1606,1.0,,,
 Mapudungun-PAIN-1,wold-Mapudungun-16-31-1,Mapudungun,PAIN,kutran,kutran,k u ʈʂ a n,,,,,,,,,False,0.0,,Pre-1606,1.0,,,
 Mapudungun-GRIEF-1,wold-Mapudungun-16-32-1,Mapudungun,GRIEF,llazken,llazken,ʎ a z k e n,,,,,,,,,False,0.0,,Pre-1606,1.0,,,
 Mapudungun-ANXIETY-1,wold-Mapudungun-16-33-1,Mapudungun,ANXIETY,weñangkün,weñangkün,w e ɲ a ŋ k ɨ n,,,,,,,,,False,0.0,,Pre-1606,1.0,,,
 Mapudungun-PITY-1,wold-Mapudungun-16-35-1,Mapudungun,PITY,kutranyen,kutranyen,k u ʈʂ a n y e n,,,,,,,,,False,0.0,,Pre-1606,1.0,,,
 Mapudungun-CRY-1,wold-Mapudungun-16-37-1,Mapudungun,CRY,ngüman,ngüman,ŋ ɨ m a n,,,,,,,,,False,0.0,,Pre-1606,1.0,,,
-Mapudungun-CRY-2,wold-Mapudungun-16-37-2,Mapudungun,CRY,waylü-,waylü-,w a y l ɨ,,,,,,,,,False,0.75,,,0.5,Gününa Yajüch,to cry,-wjalï
+Mapudungun-CRY-2,wold-Mapudungun-16-37-2,Mapudungun,CRY,waylü-,waylü-,w a y l ɨ,,,,,,,,,True,0.75,,,0.5,Gününa Yajüch,to cry,-wjalï
 Mapudungun-TEAROFEYE-1,wold-Mapudungun-16-38-1,Mapudungun,TEAROFEYE,külleñu,külleñu,k ɨ ʎ e ɲ u,,,,,,,,,False,0.0,,Pre-1606,1.0,,,
 Mapudungun-GROAN-1,wold-Mapudungun-16-39-1,Mapudungun,GROAN,etüngün,etüngün,e t ɨ ŋ ɨ n,,,,,,,,,False,0.0,,Pre-1606,1.0,,,
 Mapudungun-HATE-1,wold-Mapudungun-16-41-1,Mapudungun,HATE,üzen,üzen,ɨ z e n,,,,,,,,,False,0.0,,Pre-1606,1.0,,,
@@ -12070,7 +12070,7 @@ Mapudungun-SURRENDER-1,wold-Mapudungun-20-46-1,Mapudungun,SURRENDER,entrekawün,
 Mapudungun-PRISONER-1,wold-Mapudungun-20-47-1,Mapudungun,PRISONER,kawtifangey,kawtifangey,k a w t i f a ŋ e y,,,,,,,,,True,1.0,,Post-1883,0.8,Spanish,captive,"cautiva, cautivar"
 Mapudungun-PRISONER-2,wold-Mapudungun-20-47-2,Mapudungun,PRISONER,pürezu,pürezu,p ɨ ɻ e z u,,,,,,,,,True,1.0,,Post-1883,0.8,Spanish,captive,preso
 Mapudungun-AMBUSH-1,wold-Mapudungun-20-49-1,Mapudungun,AMBUSH,lloftun,lloftun,ʎ o f t u n,,,,,,,,,False,0.0,,Pre-1606,1.0,,,
-Mapudungun-FISHERMAN-1,wold-Mapudungun-20-51-1,Mapudungun,FISHERMAN,challwafe,challwafe,tʃ a ʎ w a f e,,,,,,,,,False,0.75,challwa  ‘fish’ is a loanword from Quechua,Post-1606,0.9,Quechua,fish,challwa
+Mapudungun-FISHERMAN-1,wold-Mapudungun-20-51-1,Mapudungun,FISHERMAN,challwafe,challwafe,tʃ a ʎ w a f e,,,,,,,,,True,0.75,challwa  ‘fish’ is a loanword from Quechua,Post-1606,0.9,Quechua,fish,challwa
 Mapudungun-FISHHOOK-1,wold-Mapudungun-20-52-1,Mapudungun,FISHHOOK,küli,küli,k ɨ l i,,,,,,,,,False,0.0,,Pre-1606,1.0,,,
 Mapudungun-HUNT-1,wold-Mapudungun-20-61-1,Mapudungun,HUNT,nün,nün,n ɨ n,,,,,,,,,False,0.0,,Pre-1606,1.0,,,
 Mapudungun-HUNT-2,wold-Mapudungun-20-61-2,Mapudungun,HUNT,tun,tun,t u n,,,,,,,,,False,0.0,,Pre-1606,1.0,,,
@@ -12089,13 +12089,13 @@ Mapudungun-FINEPENALTY-1,wold-Mapudungun-21-38-1,Mapudungun,FINEPENALTY,multa,mu
 Mapudungun-PRISON-1,wold-Mapudungun-21-39-1,Mapudungun,PRISON,karsel,karsel,k a ɻ s e l,,,,,,,,,True,1.0,,Post-1883,0.8,Spanish,prison,cárcel
 Mapudungun-MURDER-1,wold-Mapudungun-21-42-1,Mapudungun,MURDER,ḻangümchen,ḻangümchen,l̪ a ŋ ɨ m tʃ e n,,,,,,,,,False,0.0,,Pre-1606,1.0,,,
 Mapudungun-RAPE-1,wold-Mapudungun-21-44-1,Mapudungun,RAPE,nüntungen,nüntungen,n ɨ n t u ŋ e n,,,,,,,,,False,0.0,,Pre-1606,1.0,,,
-Mapudungun-ARSON-1,wold-Mapudungun-21-46-1,Mapudungun,ARSON,lüftukun,lüftukun,l ɨ f t u k u n,,,,,,,,,False,0.75,,Pre-1606,1.0,Quechua,burn,rupa
+Mapudungun-ARSON-1,wold-Mapudungun-21-46-1,Mapudungun,ARSON,lüftukun,lüftukun,l ɨ f t u k u n,,,,,,,,,True,0.75,,Pre-1606,1.0,Quechua,burn,rupa
 Mapudungun-STEAL-1,wold-Mapudungun-21-51-1,Mapudungun,STEAL,weñen,weñen,w e ɲ e n,,,,,,,,,False,0.0,,Pre-1606,1.0,,,
 Mapudungun-THIEF-1,wold-Mapudungun-21-52-1,Mapudungun,THIEF,weñefe,weñefe,w e ɲ e f e,,,,,,,,,False,0.0,,Pre-1606,1.0,,,
 Mapudungun-RELIGION-1,wold-Mapudungun-22-11-1,Mapudungun,RELIGION,relijion,relijion,ɻ e l i j i o n,,,,,,,,,True,1.0,,Post-1883,0.8,Spanish,the religion,religión
 Mapudungun-CURSE-1,wold-Mapudungun-22-24-1,Mapudungun,CURSE,malisian,malisian,m a l i s i a n,,,,,,,,,True,1.0,,Post-1883,0.8,Spanish,to curse,maldecir
-Mapudungun-MAGIC-1,wold-Mapudungun-22-42-1,Mapudungun,MAGIC,kalkutun,kalkutun,k a l k u t u n,,,,,,,,,False,0.75,,Pre-1606,1.0,Quechua,ill omen,qarqu
-Mapudungun-MAGICIAN-1,wold-Mapudungun-22-43-1,Mapudungun,MAGICIAN,kalku,kalku,k a l k u,,,,,,,,,False,0.75,,Pre-1606,1.0,Quechua,ill omen,qarqu
+Mapudungun-MAGIC-1,wold-Mapudungun-22-42-1,Mapudungun,MAGIC,kalkutun,kalkutun,k a l k u t u n,,,,,,,,,True,0.75,,Pre-1606,1.0,Quechua,ill omen,qarqu
+Mapudungun-MAGICIAN-1,wold-Mapudungun-22-43-1,Mapudungun,MAGICIAN,kalku,kalku,k a l k u,,,,,,,,,True,0.75,,Pre-1606,1.0,Quechua,ill omen,qarqu
 Mapudungun-GHOST-1,wold-Mapudungun-22-45-1,Mapudungun,GHOST,witranalwe,witranalwe,w i ʈʂ a n a l w e,,,,,,,,,False,0.0,,Pre-1606,1.0,,,
 Mapudungun-OMEN-1,wold-Mapudungun-22-47-1,Mapudungun,OMEN,perimol,perimol,p e ɻ i m o l,,,,,,,,,False,0.0,,Pre-1606,1.0,,,
-Mapudungun-DAYNOTNIGHT-1,wold-Mapudungun-14-411-1,Mapudungun,DAYNOTNIGHT,antü,antü,a n t ɨ,,,,,,,,,False,0.75,,Pre-1606,1.0,Aymara,sun,inti
+Mapudungun-DAYNOTNIGHT-1,wold-Mapudungun-14-411-1,Mapudungun,DAYNOTNIGHT,antü,antü,a n t ɨ,,,,,,,,,True,0.75,,Pre-1606,1.0,Aymara,sun,inti

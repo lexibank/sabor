@@ -82,7 +82,8 @@ def classifier_based_constructor(infile,
                                  donors,
                                  clf,
                                  funcs,
-                                 meths,
+                                 least_ce,
+                                 cognate_cf,
                                  props,
                                  props_tar,
                                  segments="tokens",
@@ -93,7 +94,8 @@ def classifier_based_constructor(infile,
         donors,
         clf=clf,
         funcs=funcs,
-        meths=meths,
+        least_ce=least_ce,
+        cognate_cf=cognate_cf,
         props=props,
         props_tar=props_tar,
         segments=segments,
@@ -102,18 +104,18 @@ def classifier_based_constructor(infile,
     )
 
 
-def evaluate_fold(constructor, dir, k, fold):
+def evaluate_fold(constructor, folder, k, fold):
     """
     Evaluate single fold of k-fold train, test datasets,
     using analysis function instantiated by constructor function.
     :param constructor:
-    :param dir:
+    :param folder:
     :param k:
     :param fold:
     :return:
     """
     train_name = "CV{k:d}-fold-{it:02d}-train.tsv".format(k=k, it=fold)
-    file_path = our_path(dir, train_name)
+    file_path = our_path(folder, train_name)
 
     detector = constructor(file_path)
     detector.train(verbose=False)
@@ -138,7 +140,7 @@ def evaluate_fold(constructor, dir, k, fold):
         return results
 
     test_name = "CV{k:d}-fold-{it:02d}-test.tsv".format(k=k, it=fold)
-    file_path = our_path(dir, test_name)
+    file_path = our_path(folder, test_name)
     wl = detector.construct_wordlist(file_path)
 
     results_test = get_results_for_wl(wl)
@@ -146,12 +148,12 @@ def evaluate_fold(constructor, dir, k, fold):
     return results_test
 
 
-def evaluate_k_fold(constructor, dir, k):
+def evaluate_k_fold(constructor, folder, k):
     """
     Perform k-fold cross-validation using analysis function instantiated by
     constructor function.
     :param constructor:
-    :param dir:
+    :param folder:
     :param k:
     :return:
     """
@@ -159,7 +161,7 @@ def evaluate_k_fold(constructor, dir, k):
     cross_val = []
     print("folds: ")
     for fold in range(k):
-        results = evaluate_fold(constructor, dir=dir, k=k, fold=fold)
+        results = evaluate_fold(constructor, folder=folder, k=k, fold=fold)
         results["fold"] = fold
         print(results)
         cross_val.append(results)
@@ -213,11 +215,14 @@ def register(parser):
                  'cb_sca', 'cb_ned',
                  'cb_sca_lo', 'cb_sca_ov',
                  'lce_for', 'lce_back',
-                 'lce_for_bor', 'lce_back_bor,'
+                 'lce_for_bor', 'lce_back_bor',
                  'cl_simple', 'cl_simple_no_props',
                  'cl_ned', 'cl_sca',
                  'cl_all_funcs', 'cl_all_funcs_no_props',
-                 'cl_simple_ce', 'cl_simple_ce_both'],
+                 'cl_simple_least', 'cl_least',
+                 'cl_simple_cognate', 'cl_cognate',
+                 'cl_simple_cognate_least', 'cl_cognate_least',
+                 'cl_simple_least_no_props'],
         help="Code for borrowing detection method."
     )
 
@@ -278,14 +283,15 @@ def run(args):
     lce_back_bor = partial(least_cross_entropy_constructor,
                            direction="backward",
                            approach="borrowed",
-                            donors=args.donor)
+                           donors=args.donor)
 
     cl_simple = partial(
         classifier_based_constructor,
         clf=SVC(kernel="linear"),
         func=lambda x: x,  # Artificial argument for name.
         funcs=[classifier.clf_ned, classifier.clf_sca_gl],
-        meths=None,
+        least_ce=None,
+        cognate_cf=None,
         props=None,
         props_tar=None,
         donors=args.donor)
@@ -297,7 +303,8 @@ def run(args):
         clf=SVC(kernel="linear"),
         func=lambda x: x,  # Artificial argument for name.
         funcs=[classifier.clf_ned],
-        meths=None,
+        least_ce=None,
+        cognate_cf=None,
         props=None,
         props_tar=None,
         donors=args.donor)
@@ -309,7 +316,8 @@ def run(args):
         clf=SVC(kernel="linear"),
         func=lambda x: x,  # Artificial argument for name.
         funcs=[classifier.clf_sca_gl],
-        meths=None,
+        least_ce=None,
+        cognate_cf=None,
         props=None,
         props_tar=None,
         donors=args.donor)
@@ -322,7 +330,8 @@ def run(args):
         func=lambda x: x,  # Artificial argument for name.
         funcs=[classifier.clf_ned, classifier.clf_sca_gl,
                classifier.clf_sca_lo, classifier.clf_sca_ov],
-        meths=None,
+        least_ce=None,
+        cognate_cf=None,
         props=None,
         props_tar=None,
         donors=args.donor)
@@ -334,7 +343,8 @@ def run(args):
         clf=SVC(kernel="linear"),
         func=lambda x: x,  # Artificial argument for name.
         funcs=[classifier.clf_ned, classifier.clf_sca_gl],
-        meths=None,
+        least_ce=None,
+        cognate_cf=None,
         props=[],
         props_tar=[],
         donors=args.donor)
@@ -347,36 +357,104 @@ def run(args):
         func=lambda x: x,  # Artificial argument for name.
         funcs=[classifier.clf_ned, classifier.clf_sca_gl,
                classifier.clf_sca_ov, classifier.clf_sca_lo],
-        meths=None,
+        least_ce=None,
+        cognate_cf=None,
         props=[],
         props_tar=[],
         donors=args.donor)
     cl_all_funcs_no_props.keywords['func'].__name__ = \
         'classifier_based_linear_svm_all_funcs_no_props'
 
-    cl_simple_ce = partial(
+    cl_simple_least = partial(
         classifier_based_constructor,
         clf=SVC(kernel="linear"),
         func=lambda x: x,  # Artificial argument for name.
         funcs=[classifier.clf_ned, classifier.clf_sca_gl],
-        meths=['dominant'],
+        least_ce=['dominant'],
+        cognate_cf=None,
         props=None,
         props_tar=None,
         donors=args.donor)
-    cl_simple_ce.keywords['func'].__name__ = \
-        'classifier_based_linear_svm_simple+cross_entropy'
+    cl_simple_least.keywords['func'].__name__ = \
+        'classifier_based_linear_svm_simple+least_cross_entropy_dominant'
 
-    cl_simple_ce_both = partial(
+    cl_simple_least_no_props = partial(
         classifier_based_constructor,
         clf=SVC(kernel="linear"),
         func=lambda x: x,  # Artificial argument for name.
         funcs=[classifier.clf_ned, classifier.clf_sca_gl],
-        meths=['dominant', 'borrowed'],
+        least_ce=['dominant'],
+        cognate_cf=None,
+        props=[],
+        props_tar=[],
+        donors=args.donor)
+    cl_simple_least_no_props.keywords['func'].__name__ = \
+        'classifier_based_linear_svm_simple+least_cross_entropy_dominant-props'
+
+    cl_least = partial(
+        classifier_based_constructor,
+        clf=SVC(kernel="linear"),
+        func=lambda x: x,  # Artificial argument for name.
+        funcs=[],
+        least_ce=['dominant'],
+        cognate_cf=None,
         props=None,
         props_tar=None,
         donors=args.donor)
-    cl_simple_ce_both.keywords['func'].__name__ = \
-        'classifier_based_linear_svm_simple+cross_entropy+both'
+    cl_least.keywords['func'].__name__ = \
+        'classifier_based_linear_svm_least_cross_entropy_dominant'
+
+    cl_simple_cognate = partial(
+        classifier_based_constructor,
+        clf=SVC(kernel="linear"),
+        func=lambda x: x,  # Artificial argument for name.
+        funcs=[classifier.clf_ned, classifier.clf_sca_gl],
+        least_ce=None,
+        cognate_cf='standard',
+        props=None,
+        props_tar=None,
+        donors=args.donor)
+    cl_simple_cognate.keywords['func'].__name__ = \
+        'classifier_based_linear_svm_simple+cognate_based_standard'
+
+    cl_cognate = partial(
+        classifier_based_constructor,
+        clf=SVC(kernel="linear"),
+        func=lambda x: x,  # Artificial argument for name.
+        funcs=[],
+        least_ce=None,
+        cognate_cf='standard',
+        props=None,
+        props_tar=None,
+        donors=args.donor)
+    cl_cognate.keywords['func'].__name__ = \
+        'classifier_based_linear_svm_cognate_based_standard'
+
+    cl_simple_cognate_least = partial(
+        classifier_based_constructor,
+        clf=SVC(kernel="linear"),
+        func=lambda x: x,  # Artificial argument for name.
+        funcs=[classifier.clf_ned, classifier.clf_sca_gl],
+        least_ce=['dominant'],
+        cognate_cf='standard',
+        props=None,
+        props_tar=None,
+        donors=args.donor)
+    cl_simple_cognate_least.keywords['func'].__name__ = \
+        'classifier_based_linear_svm_simple+cognate_based_standard'
+
+    cl_cognate_least = partial(
+        classifier_based_constructor,
+        clf=SVC(kernel="linear"),
+        func=lambda x: x,  # Artificial argument for name.
+        funcs=[],
+        least_ce=['dominant'],
+        cognate_cf='standard',
+        props=None,
+        props_tar=None,
+        donors=args.donor)
+    cl_cognate_least.keywords['func'].__name__ = \
+        'classifier_based_linear_svm_cognate_based_standard+least_cross_entropy'
 
     methods = {'cm_sca': cm_sca_gl, 'cm_ned': cm_ned,
                'cm_sca_ov': cm_sca_ov, 'cm_sca_lo': cm_sca_lo,
@@ -390,8 +468,13 @@ def run(args):
                'cl_all_funcs': cl_all_funcs,
                'cl_simple_no_props': cl_simple_no_props,
                'cl_all_funcs_no_props': cl_all_funcs_no_props,
-               'cl_simple_ce': cl_simple_ce,
-               'cl_simple_ce_both': cl_simple_ce_both
+               'cl_simple_least': cl_simple_least,
+               'cl_least': cl_least,
+               'cl_simple_cognate': cl_simple_cognate,
+               'cl_cognate': cl_cognate,
+               'cl_simple_cognate_least': cl_simple_cognate_least,
+               'cl_cognate_least': cl_cognate_least,
+               'cl_simple_least_no_props': cl_simple_least_no_props
                }
 
     constructor = methods[args.method]
@@ -405,7 +488,7 @@ def run(args):
                       "on {d} directory using {fn}".\
             format(f=args.fold, k=args.k, d=args.dir, fn=func_name)
         args.log.info(description)
-        results = evaluate_fold(constructor, dir=args.dir,
+        results = evaluate_fold(constructor, folder=args.dir,
                                 k=args.k, fold=args.fold)
         print(description)
         print(results)
@@ -414,7 +497,7 @@ def run(args):
                       "on {d} directory using {fn}.".\
             format(k=args.k, d=args.dir, fn=func_name)
         args.log.info(description)
-        results = evaluate_k_fold(constructor, dir=args.dir, k=args.k)
+        results = evaluate_k_fold(constructor, folder=args.dir, k=args.k)
 
         print(description)
         print(tabulate(results, headers='keys',
