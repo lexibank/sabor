@@ -19,19 +19,15 @@ from tabulate import tabulate
 from lingpy import Wordlist
 from lexibank_sabor import (get_our_wordlist, our_path)
 
-# from lexibank_sabor import Dataset as SABOR
-
 
 def get_train_test_data(k_fold, folder):
     # Yield train and test datasets from folder based on k_fold naming.
     it = 0
     while it < k_fold:
         full_name = "CV{k:d}-fold-{it:02d}-train.tsv".format(k=k_fold, it=it)
-        # file_path = str(SABOR().dir / folder / full_name)
         file_path = our_path(folder, full_name)
         train_wl = Wordlist(file_path)
         full_name = "CV{k:d}-fold-{it:02d}-test.tsv".format(k=k_fold, it=it)
-        # file_path = str(SABOR().dir / folder / full_name)
         file_path = our_path(folder, full_name)
         test_wl = Wordlist(file_path)
 

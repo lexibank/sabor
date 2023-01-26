@@ -8,6 +8,7 @@ from lexibank_sabor import (
         our_path,
         subset_wl, get_language_list)
 from sklearn.svm import SVC
+from sklearn.linear_model import LogisticRegression
 from functools import partial, partialmethod
 import collections
 from saborcommands import (least, cognate)
@@ -65,7 +66,7 @@ class ClassifierBasedBorrowingDetection(LexStat):
             funcs=None,
             least_ce=None,
             cognate_cf=None,
-            props=None,
+            props=[],
             props_tar=None,
             segments="tokens",
             ipa="form",
@@ -307,7 +308,10 @@ def run(args):
 
     functions = [function[key] for key in args.function]
     bor = ClassifierBasedBorrowingDetection(
-        wl, donors=args.donor, clf=SVC(kernel="linear"),
+        wl, donors=args.donor,
+        # clf=SVC(kernel="linear", class_weight="balanced"),
+        clf=SVC(kernel="linear"),
+        # clf=LogisticRegression(solver='lbfgs', class_weight=None),
         funcs=functions, least_ce=args.least,
         cognate_cf=args.cognate, family="language_family")
 

@@ -35,7 +35,7 @@ class MarkovWordModel:
     tokens = attr.ib(default=[], repr=False)
     model = attr.ib(default='kni')
     order = attr.ib(default=3)
-    smoothing = attr.ib(default=0.1)
+    smoothing = attr.ib(default=0.9)
     direction = attr.ib(default='forward')
     """
     Use 2nd or 3rd order ngrams (1st or 2nd order dependency) to calculate word entropies.
@@ -92,6 +92,21 @@ class MarkovWordModel:
         )
         self.lm.fit(train)
 
+        # Count of n-gram estimates.
+        # cnt1 = self.lm.counts._counts[1]
+        # B1 = cnt1.B()
+        # cnt2 = self.lm.counts._counts[2]
+        # B2sum = 0
+        # for val in cnt2.values():
+        #     B2sum += val.B()
+        # cnt3 = self.lm.counts._counts[3]
+        # B3sum = 0
+        # for val in cnt3.values():
+        #     B3sum += val.B()
+        # print("N-gram estimates: ", self.language,
+        #       "1-gram", B1, "2-gram", B2sum, "3-gram", B3sum,
+        #       "Total", B1 + B2sum + B3sum)
+
     def calculate_cross_entropies(self, tokens):
         """
         Calculate cross-entropies for list of tokens.
@@ -110,7 +125,8 @@ class MarkovWordModel:
             ngrams_ = list(ngrams(padded_token, self.order))
             # Correction to exclude final transition with prob=1.
             # Cross-entropy is calculated base 2.
-            return lm_.entropy(ngrams_)*len(ngrams_)/(len(ngrams_)-1)
+            ce = lm_.entropy(ngrams_)*len(ngrams_)/(len(ngrams_)-1)
+            return ce if ce < 10.0 else 10.0
 
         if self.direction == 'backward': token = token[::-1]
         return calculate_cross_entropy_(token, self.lm)
@@ -118,6 +134,7 @@ class MarkovWordModel:
 
 class CrossEntropyModel(Wordlist):
     # For now - shell to invoke Markov language model.
+    # Entry point from classifier, or cross-validation via classifier.
     def __init__(
             self,
             infile,
@@ -127,7 +144,8 @@ class CrossEntropyModel(Wordlist):
             segments="tokens",
             known_donor="donor_language",
             donor_lng="source_language",
-            donor_id="source_id"
+            donor_id="source_id",
+            smoothing=0.9  # Best is 0.9 for inference beyond training.
             ):
         """
             Invoke Markov chain to learn language models and calculate
@@ -145,6 +163,8 @@ class CrossEntropyModel(Wordlist):
         self.known_donor = known_donor
         self.donor_lng = donor_lng
         self.donor_id = donor_id
+
+        self.smoothing = smoothing
 
         # List recipient languages.
         self.languages = [lang for lang in self.cols
@@ -183,8 +203,8 @@ class CrossEntropyModel(Wordlist):
             if lm_:
                 # Assume that only 1 donor language model per target language
                 # Alternative might be to use some arbitrary high result value.
-                value = lm_.calculate_cross_entropy(wl[idx, self.segments])
-                result.append(value if value < 8.0 else 8.0)
+                result.append(
+                    lm_.calculate_cross_entropy(wl[idx, self.segments]))
         return result
 
     def train_markov_word_model(self, verbose=False):
@@ -215,7 +235,8 @@ class CrossEntropyModel(Wordlist):
             self.language_models[(lang, source)] = \
                 MarkovWordModel(lang, vocab, tokens,
                                 direction=self.direction,
-                                model='kni', smoothing=0.9)
+                                model='kni',
+                                smoothing=self.smoothing)
 
             if verbose:
                 # Calculated by the language model.  Not here.
@@ -242,7 +263,8 @@ class LeastCrossEntropy(CrossEntropyModel):
             segments="tokens",
             known_donor="donor_language",
             donor_lng="source_language",
-            donor_id="source_id"
+            donor_id="source_id",
+            smoothing=0.9  # Smoothing parameter for Markov chain.
             ):
         """
             Invoke Markov chain to learn language models and calculate
@@ -252,7 +274,8 @@ class LeastCrossEntropy(CrossEntropyModel):
             [all, dominant, borrowed, inherited, each]
         """
         CrossEntropyModel.__init__(self, infile, donors, direction, approach,
-                                   segments, known_donor, donor_lng, donor_id)
+                                   segments, known_donor, donor_lng, donor_id,
+                                   smoothing)
 
         self.best_value = None
         self.best_score = None
@@ -434,6 +457,12 @@ def register(parser):
         choices=["ipa", "sca"],
         help="Encoding used for segments."
     )
+    parser.add_argument(
+        "--smoothing",
+        default=0.75,
+        type=float,
+        help="Kneser-Ney smoothing parameter."
+    )
 
 
 def run(args):
@@ -452,7 +481,9 @@ def run(args):
         encode_segments_as_sca(wl)
 
     bor = LeastCrossEntropy(wl, direction=args.direction,
-                            donors=args.donor, approach=args.approach)
+                            donors=args.donor,
+                            approach=args.approach,
+                            smoothing=args.smoothing)
     bor.train(thresholds=args.threshold, verbose=True)
 
     args.log.info("Trained with donors {d}, approach {appr}".
