@@ -2,13 +2,13 @@
 Detection results for: store/CM-sp-predict-closest_match_sca_global-0.40-Fold-00-data-test.tsv.
 Language             tp    tn    fp    fn    precision    recall    F1 score    accuracy
 -----------------  ----  ----  ----  ----  -----------  --------  ----------  ----------
-ZinacantanTzotzil    14   105     2     4        0.875     0.778       0.824       0.952
-Qeqchi               11   175     1     6        0.917     0.647       0.759       0.964
-Otomi                10   203     3     5        0.769     0.667       0.714       0.964
 Wichi                10   101     1     1        0.909     0.909       0.909       0.982
+ZinacantanTzotzil    14   105     2     4        0.875     0.778       0.824       0.952
+Otomi                10   203     3     5        0.769     0.667       0.714       0.964
 ImbaburaQuechua      21    82     5     6        0.808     0.778       0.792       0.904
 Yaqui                18   113     1     7        0.947     0.720       0.818       0.942
 Mapudungun            7   103     2     5        0.778     0.583       0.667       0.940
+Qeqchi               11   175     1     6        0.917     0.647       0.759       0.964
 Overall              91   882    15    34        0.858     0.728       0.788       0.952
 
 Overall detection results for: store/CM-sp-predict-closest_match_sca_global-0.40-Fold-00-data-test.tsv

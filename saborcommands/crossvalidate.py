@@ -7,13 +7,20 @@ Return only overall statistics for each partition, and report
 table of statistics along with means and standard deviations.
 
 """
-
+import time
 from functools import partial
 import statistics
 from tabulate import tabulate
-from sklearn.svm import SVC
+import unicodedata
+import re
 
-from lexibank_sabor import (our_path, evaluate_borrowings)
+from sklearn.svm import SVC
+from sklearn.linear_model import LogisticRegression
+
+from lingpy import Wordlist
+from lexibank_sabor import (
+        our_path, evaluate_borrowings,
+        get_language_list, subset_wl)
 from saborcommands import (closest, cognate, classifier)
 
 
@@ -63,7 +70,7 @@ def classifier_based_constructor(infile,
                                  donors,
                                  clf,
                                  funcs,
-                                 meths,
+                                 cognate_cf,
                                  props,
                                  props_tar,
                                  segments="tokens",
@@ -74,7 +81,7 @@ def classifier_based_constructor(infile,
         donors,
         clf=clf,
         funcs=funcs,
-        meths=meths,
+        cognate_cf=cognate_cf,
         props=props,
         props_tar=props_tar,
         segments=segments,
@@ -83,20 +90,37 @@ def classifier_based_constructor(infile,
     )
 
 
-def evaluate_fold(constructor, dir, k, fold):
+# Language names are normalized within the database split.
+def normalize_names(names):
+    # strip off accents
+    names = [''.join(c for c in unicodedata.normalize('NFD', s)
+                     if unicodedata.category(c) != 'Mn')
+             for s in names]
+    # strip special characters
+    names = [re.sub(r'\W+', '', s) for s in names]
+    return names
+
+
+def evaluate_fold(constructor, folder, k, fold, languages=None):
     """
     Evaluate single fold of k-fold train, test datasets,
     using analysis function instantiated by constructor function.
     :param constructor:
-    :param dir:
+    :param folder:
     :param k:
     :param fold:
+    :param languages:
     :return:
     """
-    train_name = "CV{k:d}-fold-{it:02d}-train.tsv".format(k=k, it=fold)
-    file_path = our_path(dir, train_name)
+    train_name = "CV{k:d}-fold-{f:02d}-train.tsv".format(k=k, f=fold)
+    file_path = our_path(folder, train_name)
 
-    detector = constructor(file_path)
+    # Subset language here
+    wl = Wordlist(file_path)
+    if languages:
+        wl = subset_wl(wl, languages)
+    detector = constructor(wl)
+
     detector.train(verbose=False)
 
     def get_results_for_wl(wl_):
@@ -118,22 +142,28 @@ def evaluate_fold(constructor, dir, k, fold):
 
         return results
 
-    test_name = "CV{k:d}-fold-{it:02d}-test.tsv".format(k=k, it=fold)
-    file_path = our_path(dir, test_name)
-    wl = detector.construct_wordlist(file_path)
+    test_name = "CV{k:d}-fold-{f:02d}-test.tsv".format(k=k, f=fold)
+    file_path = our_path(folder, test_name)
+
+    # Subset language here
+    wl = Wordlist(file_path)
+    if languages:
+        wl = subset_wl(wl, languages)
+    wl = detector.construct_wordlist(wl)
 
     results_test = get_results_for_wl(wl)
 
     return results_test
 
 
-def evaluate_k_fold(constructor, dir, k):
+def evaluate_k_fold(constructor, folder, k, languages=None):
     """
     Perform k-fold cross-validation using analysis function instantiated by
     constructor function.
     :param constructor:
-    :param dir:
+    :param folder:
     :param k:
+    :param languages:
     :return:
     """
 
@@ -141,9 +171,9 @@ def evaluate_k_fold(constructor, dir, k):
     print("folds: ")
     for fold in range(k):
         results = evaluate_fold(
-            constructor, dir=dir, k=k, fold=fold)
-        print(fold, ' ')
+            constructor, folder=folder, k=k, fold=fold, languages=languages)
         results["fold"] = fold
+        print(' ', fold)
         cross_val.append(results)
     print()
     means = dict()
@@ -181,6 +211,16 @@ def register(parser):
         help="Fold number to select for a 1-shot cross-validation."
     )
     parser.add_argument(
+        "--language",
+        nargs="*",
+        type=str,
+        default=None,
+        choices=["Yaqui", "Zinacantán Tzotzil", "Q'eqchi'",
+                 "Otomi", "Imbabura Quechua", "Wichí",
+                 "Mapudungun"],
+        help="Subset of languages to include; default is all languages."
+    )
+    parser.add_argument(
         "--donor",
         type=str,
         nargs="*",
@@ -191,17 +231,26 @@ def register(parser):
         "--method",
         type=str,
         default="cm_sca",
-        choices=['cm_sca', 'cm_ned', 'cm_sca_ov', 'cm_sca_lo',
+        choices=['cm_sca', 'cm_ned', 
+                 'cm_sca_ov', 'cm_sca_lo',
                  'cb_sca', 'cb_ned',
                  'cb_sca_lo', 'cb_sca_ov',
-                 'cl_simple', 'cl_simple_no_props',
                  'cl_ned', 'cl_sca',
-                 'cl_all_funcs', 'cl_all_funcs_no_props'],
+                 'cl_simple', 'cl_rbf_simple',
+                 'cl_poly_simple', 'cl_lr_simple',
+                 'cl_simple_no_props',
+                 'cl_simple_balanced',
+                 'cl_all_funcs', 
+                 'cl_all_funcs_no_props',
+                 'cl_cognate',
+                 'cl_simple_cognate'
+                 ],
         help="Code for borrowing detection method."
     )
 
 
 def run(args):
+
     cm_sca_gl = partial(closest_match_constructor,
                         func=closest.sca_gl,
                         donors=args.donor)
@@ -240,25 +289,13 @@ def run(args):
     cb_ned.keywords['func'].__name__ = \
         'cognate_based_cognate_ned'
 
-    cl_simple = partial(
-        classifier_based_constructor,
-        clf=SVC(kernel="linear"),
-        func=lambda x: x,  # Artificial argument for name.
-        funcs=[classifier.clf_ned, classifier.clf_sca_gl],
-        meths=None,
-        props=None,
-        props_tar=None,
-        donors=args.donor)
-    cl_simple.keywords['func'].__name__ = \
-        'classifier_based_linear_svm_simple'
-
     cl_ned = partial(
         classifier_based_constructor,
         clf=SVC(kernel="linear"),
         func=lambda x: x,  # Artificial argument for name.
         funcs=[classifier.clf_ned],
-        meths=None,
-        props=None,
+        cognate_cf=None,
+        props=[],
         props_tar=None,
         donors=args.donor)
     cl_ned.keywords['func'].__name__ = \
@@ -269,37 +306,97 @@ def run(args):
         clf=SVC(kernel="linear"),
         func=lambda x: x,  # Artificial argument for name.
         funcs=[classifier.clf_sca_gl],
-        meths=None,
-        props=None,
+        cognate_cf=None,
+        props=[],
         props_tar=None,
         donors=args.donor)
     cl_sca.keywords['func'].__name__ = \
         'classifier_based_linear_svm_sca'
 
-    cl_all_funcs = partial(
+    cl_simple = partial(
         classifier_based_constructor,
         clf=SVC(kernel="linear"),
         func=lambda x: x,  # Artificial argument for name.
-        funcs=[classifier.clf_ned, classifier.clf_sca_gl,
-               classifier.clf_sca_lo, classifier.clf_sca_ov],
-        meths=None,
-        props=None,
+        funcs=[classifier.clf_ned, classifier.clf_sca_gl],
+        cognate_cf=None,
+        props=[],
         props_tar=None,
         donors=args.donor)
-    cl_all_funcs.keywords['func'].__name__ = \
-        'classifier_based_linear_svm_all_functions'
+    cl_simple.keywords['func'].__name__ = \
+        'classifier_based_linear_svm_simple'
+
+    cl_rbf_simple = partial(
+        classifier_based_constructor,
+        clf=SVC(kernel="rbf"),
+        func=lambda x: x,  # Artificial argument for name.
+        funcs=[classifier.clf_ned, classifier.clf_sca_gl],
+        cognate_cf=None,
+        props=[],
+        props_tar=None,
+        donors=args.donor)
+    cl_rbf_simple.keywords['func'].__name__ = \
+        'classifier_based_rbf_svm_simple'
+
+    cl_poly_simple = partial(
+        classifier_based_constructor,
+        clf=SVC(kernel="poly"),
+        func=lambda x: x,  # Artificial argument for name.
+        funcs=[classifier.clf_ned, classifier.clf_sca_gl],
+        cognate_cf=None,
+        props=[],
+        props_tar=None,
+        donors=args.donor)
+    cl_poly_simple.keywords['func'].__name__ = \
+        'classifier_based_poly_svm_simple'
+
+    cl_lr_simple = partial(
+        classifier_based_constructor,
+        clf=LogisticRegression(solver='lbfgs', max_iter=1000),
+        func=lambda x: x,  # Artificial argument for name.
+        funcs=[classifier.clf_ned, classifier.clf_sca_gl],
+        cognate_cf=None,
+        props=[],
+        props_tar=None,
+        donors=args.donor)
+    cl_lr_simple.keywords['func'].__name__ = \
+        'classifier_based_lr_simple'
+
+    cl_simple_balanced = partial(
+        classifier_based_constructor,
+        clf=SVC(kernel="linear", class_weight='balanced'),
+        func=lambda x: x,  # Artificial argument for name.
+        funcs=[classifier.clf_ned, classifier.clf_sca_gl],
+        cognate_cf=None,
+        props=[],
+        props_tar=None,
+        donors=args.donor)
+    cl_simple_balanced.keywords['func'].__name__ = \
+        'classifier_based_linear_svm_simple_balanced'
 
     cl_simple_no_props = partial(
         classifier_based_constructor,
         clf=SVC(kernel="linear"),
         func=lambda x: x,  # Artificial argument for name.
         funcs=[classifier.clf_ned, classifier.clf_sca_gl],
-        meths=None,
+        cognate_cf=None,
         props=[],
         props_tar=[],
         donors=args.donor)
     cl_simple_no_props.keywords['func'].__name__ = \
         'classifier_based_linear_svm_simple_no_props'
+        
+    cl_all_funcs = partial(
+        classifier_based_constructor,
+        clf=SVC(kernel="linear"),
+        func=lambda x: x,  # Artificial argument for name.
+        funcs=[classifier.clf_ned, classifier.clf_sca_gl,
+               classifier.clf_sca_lo, classifier.clf_sca_ov],
+        cognate_cf=None,
+        props=[],
+        props_tar=None,
+        donors=args.donor)
+    cl_all_funcs.keywords['func'].__name__ = \
+        'classifier_based_linear_svm_all_functions'
 
     cl_all_funcs_no_props = partial(
         classifier_based_constructor,
@@ -307,46 +404,101 @@ def run(args):
         func=lambda x: x,  # Artificial argument for name.
         funcs=[classifier.clf_ned, classifier.clf_sca_gl,
                classifier.clf_sca_ov, classifier.clf_sca_lo],
-        meths=None,
+        cognate_cf=None,
         props=[],
         props_tar=[],
         donors=args.donor)
     cl_all_funcs_no_props.keywords['func'].__name__ = \
         'classifier_based_linear_svm_all_funcs_no_props'
 
+    cl_cognate = partial(
+        classifier_based_constructor,
+        clf=SVC(kernel="linear"),
+        func=lambda x: x,  # Artificial argument for name.
+        funcs=[],
+        cognate_cf='standard',
+        props=[],
+        props_tar=None,
+        donors=args.donor)
+    cl_cognate.keywords['func'].__name__ = \
+        'classifier_based_linear_svm_cognate_based'
+    
+    cl_simple_cognate = partial(
+        classifier_based_constructor,
+        clf=SVC(kernel="linear"),
+        func=lambda x: x,  # Artificial argument for name.
+        funcs=[classifier.clf_ned, classifier.clf_sca_gl],
+        cognate_cf='standard',
+        props=[],
+        props_tar=None,
+        donors=args.donor)
+    cl_simple_cognate.keywords['func'].__name__ = \
+        'classifier_based_linear_svm_simple+cognate_based'
+
     methods = {'cm_sca': cm_sca_gl, 'cm_ned': cm_ned,
                'cm_sca_ov': cm_sca_ov, 'cm_sca_lo': cm_sca_lo,
                'cb_sca': cb_sca_gl, 'cb_ned': cb_ned,
                'cb_sca_ov': cb_sca_ov,
                'cb_sca_lo': cb_sca_lo,
-
-               'cl_simple': cl_simple,
                'cl_ned': cl_ned, 'cl_sca': cl_sca,
-               'cl_all_funcs': cl_all_funcs,
+               'cl_simple': cl_simple,
+               'cl_rbf_simple': cl_rbf_simple,
+               'cl_lr_simple': cl_lr_simple,
+               'cl_poly_simple': cl_poly_simple,
                'cl_simple_no_props': cl_simple_no_props,
-               'cl_all_funcs_no_props': cl_all_funcs_no_props
+               'cl_simple_balanced': cl_simple_balanced,
+               'cl_all_funcs': cl_all_funcs,
+               'cl_all_funcs_no_props': cl_all_funcs_no_props,
+               'cl_cognate': cl_cognate,
+               'cl_simple_cognate': cl_simple_cognate
                }
 
+    start_time = time.time()
+
     constructor = methods[args.method]
-    func_name = constructor.keywords['func'].__name__
+    if fn := constructor.keywords.get('func'):
+        func_name = fn.__name__
+    else:
+        func_name = args.method
+
+    if args.language:
+        args.language = get_language_list(args.language, args.donor)
+        args.log.info("Languages: {l}, donors: {d}".
+                      format(l=args.language, d=args.donor))
+        language_ids = normalize_names(args.language)
+    else:
+        language_ids = None
 
     if args.fold is not None:
         description = "Cross-validation fold {f} of {k}-folds " \
                       "on {d} directory using {fn}".\
             format(f=args.fold, k=args.k, d=args.dir, fn=func_name)
         args.log.info(description)
-        results = evaluate_fold(constructor, dir=args.dir,
-                                k=args.k, fold=args.fold)
+        results = evaluate_fold(constructor, folder=args.dir,
+                                k=args.k, fold=args.fold,
+                                languages=language_ids)
         print(description)
+        if args.language:
+            print("Languages: {l}, donors: {d}".
+                  format(l=args.language, d=args.donor))
         print(results)
     else:
         description = "{k}-fold cross-validation " \
                       "on {d} directory using {fn}.".\
             format(k=args.k, d=args.dir, fn=func_name)
         args.log.info(description)
-        results = evaluate_k_fold(constructor, dir=args.dir, k=args.k)
+        results = evaluate_k_fold(constructor, folder=args.dir,
+                                  k=args.k, languages=language_ids)
 
         print(description)
+        if args.language:
+            print("Languages: {l}, donors: {d}".
+                  format(l=args.language, d=args.donor))
         print(tabulate(results, headers='keys',
                        floatfmt=('.1f', '.1f', '.1f', '.1f',
                                  '.3f', '.3f', '.3f', '.3f', '.3f', '.2f')))
+
+    # print("--- %s seconds ---" % (time.time() - start_time))
+    secs = time.time() - start_time
+    print(f'--- seconds --- {int(secs) // 3600:02}:'
+          f'{(int(secs) % 3600) // 60:02}:{secs % 60:02.2f}')

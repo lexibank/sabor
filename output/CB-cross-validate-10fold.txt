@@ -1,3 +1,14 @@
+folds: 
+  0
+  1
+  2
+  3
+  4
+  5
+  6
+  7
+  8
+  9
 
 10-fold cross-validation on splits directory using cognate_based_cognate_sca_global.
   fn    fp     tn     tp    precision    recall     f1     fb    accuracy    threshold  fold
@@ -14,7 +25,18 @@
 42.0  15.0  880.0  141.0        0.904     0.770  0.832  0.832       0.947         0.44  9
 41.2  16.4  868.9  106.5        0.862     0.719  0.783  0.783       0.944         0.46  mean
  9.2   2.4   42.6   22.4        0.036     0.050  0.038  0.038       0.009         0.01  stdev
-
+--- seconds --- 00:04:49.20
+folds: 
+  0
+  1
+  2
+  3
+  4
+  5
+  6
+  7
+  8
+  9
 
 10-fold cross-validation on splits directory using cognate_based_cognate_ned.
   fn    fp     tn     tp    precision    recall     f1     fb    accuracy    threshold  fold
@@ -31,3 +53,4 @@
 42.0  17.0  878.0  141.0        0.892     0.770  0.827  0.827       0.945         0.66  9
 43.3  17.5  867.8  104.4        0.853     0.705  0.771  0.771       0.941         0.66  mean
  8.5   4.8   42.0   21.6        0.043     0.036  0.028  0.028       0.008         0.00  stdev
+--- seconds --- 00:01:47.42

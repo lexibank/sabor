@@ -2244,7 +2244,7 @@ ID	DOCULECT	LANGUAGE_FAMILY	CONCEPT	VALUE	FORM	TOKENS	BORROWED_SCORE	DONOR_LANGU
 9607	ImbaburaQuechua	Quechuan	CONVICT	juchachina (2)	juchachina	x u tʃ a tʃ i n a	0.0			3 7 1 7 1 7 4 7	AXBYBYBZ	GYTATINA	1	1.G.C 1.Y.V 1.T.C 1.A.V 1.T.C 1.I.V 1.N.C 1.A.V	2.0 1.5 1.75 1.3 1.75 1.3 1.75 0.8	xutʃatʃina	1			tn
 12084	Mapudungun	Araucanian	CONVICT	kulpatun	kulpatun	k u l p a t u n	1.0	Spanish	culpar	1 7 5 1 7 1 7 4	AXMBYBYN	KYLPATYN	2	2.K.C 2.Y.V 2.L.c 2.P.C 2.A.V 2.T.C 2.Y.V 2.N.c	2.0 1.5 1.1 1.75 1.3 1.75 1.3 0.8	kulpatun	0			fn
 535	Spanish	Indo-European	COOK (SOMETHING)	cocinar	cocinar	k o s i n a ɾ				1 7 3 7 4 7 5	AXBYBYN	KUSINAR	5	5.K.C 5.U.V 5.S.C 5.I.V 5.N.C 5.A.V 5.R.c	2.0 1.5 1.75 1.3 1.75 1.3 0.8	kosinaɾ	0			
-2219	Yaqui	Uto-Aztecan	COOK (SOMETHING)	kisaroa	kisaroa	k i s a r o a	1.0	Spanish	guisar	1 7 3 7 5 7 7	AXBYBYZ	KISARUA	7	7.K.C 7.I.V 7.S.C 7.A.V 7.R.C 7.U.V 7.A.V	2.0 1.5 1.75 1.3 1.75 1.3 0.8	kisaroa	0	Spanish	535	tp
+2219	Yaqui	Uto-Aztecan	COOK (SOMETHING)	kisaroa	kisaroa	k i s a r o a	1.0	Spanish	guisar	1 7 3 7 5 7 7	AXBYBYZ	KISARUA	7	7.K.C 7.I.V 7.S.C 7.A.V 7.R.C 7.U.V 7.A.V	2.0 1.5 1.75 1.3 1.75 1.3 0.8	kisaroa	0			fn
 2220	Yaqui	Uto-Aztecan	COOK (SOMETHING)	bwasa	bwasa	bʷ a s a	0.0			1 7 3 7	AXBZ	PASA	7	7.P.C 7.A.V 7.S.C 7.A.V	2.0 1.5 1.75 0.8	bʷasa	0			tn
 3641	ZinacantanTzotzil	Mayan	COOK (SOMETHING)	ta7ahes	ta7ahes	t a ʔ a h e s	0.0			1 7 1 7 3 7 3	AXBYBYN	TAHAHES	8	8.T.C 8.A.V 8.H.C 8.A.V 8.H.C 8.E.V 8.S.c	2.0 1.5 1.75 1.3 1.75 1.3 0.8	taʔahes	0			tn
 4993	Qeqchi	Mayan	COOK (SOMETHING)	chiqok	chiqok	tʃ i q o kʰ	0.0			1 7 1 7 1	AXBYN	TIKUK	4	4.T.C 4.I.V 4.K.C 4.U.V 4.K.c	2.0 1.5 1.75 1.3 0.8	tʃiqokʰ	0			tn
@@ -2382,7 +2382,7 @@ ID	DOCULECT	LANGUAGE_FAMILY	CONCEPT	VALUE	FORM	TOKENS	BORROWED_SCORE	DONOR_LANGU
 1948	Yaqui	Uto-Aztecan	COW	waakas	waakas	w aː k a s	1.0	Spanish	vacas	6 7 1 7 3	AXBYN	WAKAS	7	7.W.C 7.A.V 7.K.C 7.A.V 7.S.c	2.0 1.5 1.75 1.3 0.8	waːkas	0	Spanish	208	tp
 3362	ZinacantanTzotzil	Mayan	COW	vaca	vaca	v a c a	1.0	Spanish	vaca	3 7 1 7	AXBZ	BACA	8	8.B.C 8.A.V 8.C.C 8.A.V	2.0 1.5 1.75 0.8	vaca	0	Spanish	208	tp
 3363	ZinacantanTzotzil	Mayan	COW	me7 baka	me7_baka	m e ʔ + ɓ a k a	0.0			4 7 1 9 1 7 1 7	AXN_AXBZ	MEH_PAKA	8	8.M.C 8.E.V 8.H.c 8._._ 8.P.C 8.A.V 8.K.C 8.A.V	2.0 1.5 0.8 0.0 2.0 1.5 1.75 0.8	meʔ+ɓaka	0	Spanish	208	fp
-3364	ZinacantanTzotzil	Mayan	COW	vacash	vacash	v a c a sʰ	1.0	Spanish	vaca	3 7 1 7 3	AXBYN	BACAS	8	8.B.C 8.A.V 8.C.C 8.A.V 8.S.c	2.0 1.5 1.75 1.3 0.8	vacasʰ	0			fn
+3364	ZinacantanTzotzil	Mayan	COW	vacash	vacash	v a c a sʰ	1.0	Spanish	vaca	3 7 1 7 3	AXBYN	BACAS	8	8.B.C 8.A.V 8.C.C 8.A.V 8.S.c	2.0 1.5 1.75 1.3 0.8	vacasʰ	0	Spanish	208	tp
 4656	Qeqchi	Mayan	COW	b’aak	b’aak	ɓ aː kʰ	1.0	Spanish	vaca	1 7 1	AXN	PAK	4	4.P.C 4.A.V 4.K.c	2.0 1.5 0.8	ɓaːkʰ	0			fn
 6490	Otomi	Otomanguean	COW	baga	baga	b a g a	1.0	Spanish	vaca	1 7 1 7	AXBZ	PAKA	3	3.P.C 3.A.V 3.K.C 3.A.V	2.0 1.5 1.75 0.8	baga	0	Spanish	208	tp
 8625	ImbaburaQuechua	Quechuan	COW	baka	baka	b a k a	1.0	Spanish	vaca	1 7 1 7	AXBZ	PAKA	1	1.P.C 1.A.V 1.K.C 1.A.V	2.0 1.5 1.75 0.8	baka	0	Spanish	208	tp
@@ -3334,7 +3334,7 @@ ID	DOCULECT	LANGUAGE_FAMILY	CONCEPT	VALUE	FORM	TOKENS	BORROWED_SCORE	DONOR_LANGU
 7814	Otomi	Otomanguean	END (OF TIME)	ngäts'i	ngäts'i	n g ɐ tsʼ i	0.0			4 1 7 1 7	ACYBZ	NKETI	3	3.N.C 3.K.C 3.E.V 3.T.C 3.I.V	2.0 1.5 1.3 1.75 0.8	ngɐtsʼi	1			tn
 9327	ImbaburaQuechua	Quechuan	END (OF TIME)	tukuri	tukuri	t u k u ɾ i	0.0			1 7 1 7 5 7	AXBYBZ	TYKYRI	1	1.T.C 1.Y.V 1.K.C 1.Y.V 1.R.C 1.I.V	2.0 1.5 1.75 1.3 1.75 0.8	tukuɾi	1			tn
 10544	Wichi	Matacoan	END (OF TIME)	lapes	lapes	l a p e s	0.0			5 7 1 7 3	AXBYN	LAPES	6	6.L.C 6.A.V 6.P.C 6.E.V 6.S.c	2.0 1.5 1.75 1.3 0.8	lapes	1			tn
-11817	Mapudungun	Araucanian	END (OF TIME)	afpun	afpun	a f p u n	0.0			7 3 1 7 4	XMBYN	ABPYN	2	2.A.V 2.B.c 2.P.C 2.Y.V 2.N.c	1.5 1.1 1.75 1.3 0.8	afpun	0			tn
+11817	Mapudungun	Araucanian	END (OF TIME)	afpun	afpun	a f p u n	0.0			7 3 1 7 4	XMBYN	ABPYN	2	2.A.V 2.B.c 2.P.C 2.Y.V 2.N.c	1.5 1.1 1.75 1.3 0.8	afpun	0	Spanish	1284	fp
 1633	Spanish	Indo-European	ENEMY	enemigo	enemigo	e n e m i ɣ o				7 4 7 4 7 3 7	XBYBYBZ	ENEMIGU	5	5.E.V 5.N.C 5.E.V 5.M.C 5.I.V 5.G.C 5.U.V	1.5 1.75 1.3 1.75 1.3 1.75 0.8	enemiɣo	0			
 3101	Yaqui	Uto-Aztecan	ENEMY	enemiko	enemiko	e n e m i k o	1.0	Spanish	enemigo	7 4 7 4 7 1 7	XBYBYBZ	ENEMIKU	7	7.E.V 7.N.C 7.E.V 7.M.C 7.I.V 7.K.C 7.U.V	1.5 1.75 1.3 1.75 1.3 1.75 0.8	enemiko	0	Spanish	1633	tp
 4394	ZinacantanTzotzil	Mayan	ENEMY	krontail	krontail	k ɾ o n t a i l	1.0	Spanish	contra	1 5 7 4 1 7 7 5	ACXMBYYN	KRUNTAIL	8	8.K.C 8.R.C 8.U.V 8.N.c 8.T.C 8.A.V 8.I.V 8.L.c	2.0 1.5 1.5 1.1 1.75 1.3 1.3 0.8	kɾontail	0			fn
@@ -4557,7 +4557,7 @@ ID	DOCULECT	LANGUAGE_FAMILY	CONCEPT	VALUE	FORM	TOKENS	BORROWED_SCORE	DONOR_LANGU
 3320	ZinacantanTzotzil	Mayan	GRANDSON	momil	momil	m o m i l	0.0			4 7 4 7 5	AXBYN	MUMIL	8	8.M.C 8.U.V 8.M.C 8.I.V 8.L.c	2.0 1.5 1.75 1.3 0.8	momil	0			tn
 4598	Qeqchi	Mayan	GRANDSON	ii	ii	iː	0.0			7	X	I	4	4.I.V	1.5	iː	0			tn
 6389	Otomi	Otomanguean	GRANDSON	'be̲to	'be̲to	ˀb æ t̪ o	0.0			1 7 1 7	AXBZ	PETU	3	3.P.C 3.E.V 3.T.C 3.U.V	2.0 1.5 1.75 0.8	ˀbæt̪o	0			tn
-8579	ImbaburaQuechua	Quechuan	GRANDSON	ñitu	ñitu	ɲ i t u	1.0	Spanish	nieto	4 7 1 7	AXBZ	NITY	1	1.N.C 1.I.V 1.T.C 1.Y.V	2.0 1.5 1.75 0.8	ɲitu	0			fn
+8579	ImbaburaQuechua	Quechuan	GRANDSON	ñitu	ñitu	ɲ i t u	1.0	Spanish	nieto	4 7 1 7	AXBZ	NITY	1	1.N.C 1.I.V 1.T.C 1.Y.V	2.0 1.5 1.75 0.8	ɲitu	0	Spanish	144	tp
 9733	Wichi	Matacoan	GRANDSON	tocheyos	tocheyos	t o tʃ e j o s	0.0			1 7 1 7 6 7 3	AXBYBYN	TUTEJUS	6	6.T.C 6.U.V 6.T.C 6.E.V 6.J.C 6.U.V 6.S.c	2.0 1.5 1.75 1.3 1.75 1.3 0.8	totʃejos	0			tn
 11001	Mapudungun	Araucanian	GRANDSON	ḻaku	ḻaku	l̪ a k u	0.0			5 7 1 7	AXBZ	LAKY	2	2.L.C 2.A.V 2.K.C 2.Y.V	2.0 1.5 1.75 0.8	l̪aku	1			tn
 11002	Mapudungun	Araucanian	GRANDSON	kuku	kuku	k u k u	0.0			1 7 1 7	AXBZ	KYKY	2	2.K.C 2.Y.V 2.K.C 2.Y.V	2.0 1.5 1.75 0.8	kuku	1			tn
@@ -4668,7 +4668,7 @@ ID	DOCULECT	LANGUAGE_FAMILY	CONCEPT	VALUE	FORM	TOKENS	BORROWED_SCORE	DONOR_LANGU
 1687	Spanish	Indo-European	GUARD	centinela	centinela	s e n t i n e l a				3 7 4 1 7 4 7 5 7	AXMBYBYBZ	SENTINELA	5	5.S.C 5.E.V 5.N.c 5.T.C 5.I.V 5.N.C 5.E.V 5.L.C 5.A.V	2.0 1.5 1.1 1.75 1.3 1.75 1.3 1.75 0.8	sentinela	0			
 3135	Yaqui	Uto-Aztecan	GUARD	waaria	waaria	w aː r i a	1.0	Spanish	guardia	6 7 5 7 7	AXBYZ	WARIA	7	7.W.C 7.A.V 7.R.C 7.I.V 7.A.V	2.0 1.5 1.75 1.3 0.8	waːria	0			fn
 4421	ZinacantanTzotzil	Mayan	GUARD	hchabivaneh	hchabivaneh	h tʃʰ a ɓ i v a n e h	0.0			3 1 7 1 7 3 7 4 7 3	ACYBYBYBYN	HTAPIBANEH	8	8.H.C 8.T.C 8.A.V 8.P.C 8.I.V 8.B.C 8.A.V 8.N.C 8.E.V 8.H.c	2.0 1.5 1.3 1.75 1.3 1.75 1.3 1.75 1.3 0.8	htʃʰaɓivaneh	0			tn
-6160	Qeqchi	Mayan	GUARD	taaqinel	taaqinel	t aː q i n e l	0.0			1 7 1 7 4 7 5	AXBYBYN	TAKINEL	4	4.T.C 4.A.V 4.K.C 4.I.V 4.N.C 4.E.V 4.L.c	2.0 1.5 1.75 1.3 1.75 1.3 0.8	taːqinel	0	Spanish	1687	fp
+6160	Qeqchi	Mayan	GUARD	taaqinel	taaqinel	t aː q i n e l	0.0			1 7 1 7 4 7 5	AXBYBYN	TAKINEL	4	4.T.C 4.A.V 4.K.C 4.I.V 4.N.C 4.E.V 4.L.c	2.0 1.5 1.75 1.3 1.75 1.3 0.8	taːqinel	0			tn
 8363	Otomi	Otomanguean	GUARD	heti	heti	h e t̪ i	0.0			3 7 1 7	AXBZ	HETI	3	3.H.C 3.E.V 3.T.C 3.I.V	2.0 1.5 1.75 0.8	het̪i	0			tn
 8364	Otomi	Otomanguean	GUARD	do̲'mte	do̲'mte	d ə ˀm t̪ e	0.0			1 7 4 1 7	AXMBZ	TEMTE	3	3.T.C 3.E.V 3.M.c 3.T.C 3.E.V	2.0 1.5 1.1 1.75 0.8	dəˀmt̪e	0			tn
 8365	Otomi	Otomanguean	GUARD	do̲'munguu	do̲'munguu	d ə ˀm u n g uː	0.0			1 7 4 7 4 1 7	AXBYMBZ	TEMYNKY	3	3.T.C 3.E.V 3.M.C 3.Y.V 3.N.c 3.K.C 3.Y.V	2.0 1.5 1.75 1.3 1.1 1.75 0.8	dəˀmunguː	0			tn
@@ -5538,7 +5538,7 @@ ID	DOCULECT	LANGUAGE_FAMILY	CONCEPT	VALUE	FORM	TOKENS	BORROWED_SCORE	DONOR_LANGU
 1613	Spanish	Indo-European	KING	rey	rey	r e i				5 7 7	AXZ	REI	5	5.R.C 5.E.V 5.I.V	2.0 1.5 0.8	rei	0			
 1614	Spanish	Indo-European	KING	gobernante	gobernante	g o β ɛ ɾ n a n t e				1 7 3 7 5 4 7 4 1 7	AXBYMBYMBZ	KUBERNANTE	5	5.K.C 5.U.V 5.B.C 5.E.V 5.R.c 5.N.C 5.A.V 5.N.c 5.T.C 5.E.V	2.0 1.5 1.75 1.3 1.1 1.75 1.3 1.1 1.75 0.8	goβɛɾnante	0			
 3091	Yaqui	Uto-Aztecan	KING	ya’ut	ya’ut	j a ʔ u t	0.0			6 7 1 7 1	AXBYN	JAHYT	7	7.J.C 7.A.V 7.H.C 7.Y.V 7.T.c	2.0 1.5 1.75 1.3 0.8	jaʔut	1			tn
-3092	Yaqui	Uto-Aztecan	KING	kobanaao	kobanaao	k o b a n aː o	0.0			1 7 1 7 4 7 7	AXBYBYZ	KUPANAU	7	7.K.C 7.U.V 7.P.C 7.A.V 7.N.C 7.A.V 7.U.V	2.0 1.5 1.75 1.3 1.75 1.3 0.8	kobanaːo	0	Spanish	1614	fp
+3092	Yaqui	Uto-Aztecan	KING	kobanaao	kobanaao	k o b a n aː o	0.0			1 7 1 7 4 7 7	AXBYBYZ	KUPANAU	7	7.K.C 7.U.V 7.P.C 7.A.V 7.N.C 7.A.V 7.U.V	2.0 1.5 1.75 1.3 1.75 1.3 0.8	kobanaːo	0			tn
 4389	ZinacantanTzotzil	Mayan	KING	rey	rey	ɾ e j	1.0	Spanish	rey	5 7 6	AXN	REJ	8	8.R.C 8.E.V 8.J.c	2.0 1.5 0.8	ɾej	0	Spanish	1613	tp
 6101	Qeqchi	Mayan	KING	ajaw	ajaw	a x a w	0.0			7 3 7 6	XBYN	AGAW	4	4.A.V 4.G.C 4.A.V 4.W.c	1.5 1.75 1.3 0.8	axaw	0			tn
 8265	Otomi	Otomanguean	KING	ndä (2)	ndä	n d ɐ	0.0			4 1 7	ACZ	NTE	3	3.N.C 3.T.C 3.E.V	2.0 1.5 0.8	ndɐ	1			tn
@@ -5858,7 +5858,7 @@ ID	DOCULECT	LANGUAGE_FAMILY	CONCEPT	VALUE	FORM	TOKENS	BORROWED_SCORE	DONOR_LANGU
 3566	ZinacantanTzotzil	Mayan	LICK	lek’	lek’	l e kʼ	0.0			5 7 1	AXN	LEK	8	8.L.C 8.E.V 8.K.c	2.0 1.5 0.8	lekʼ	0			tn
 4894	Qeqchi	Mayan	LICK	req'ok	req'ok	r e qʼ o kʰ	0.0			5 7 1 7 1	AXBYN	REKUK	4	4.R.C 4.E.V 4.K.C 4.U.V 4.K.c	2.0 1.5 1.75 1.3 0.8	reqʼokʰ	0			tn
 6742	Otomi	Otomanguean	LICK	tet'e	tet'e	t̪ e t̪ʼ e	0.0			1 7 1 7	AXBZ	TETE	3	3.T.C 3.E.V 3.T.C 3.E.V	2.0 1.5 1.75 0.8	t̪et̪ʼe	0			tn
-8789	ImbaburaQuechua	Quechuan	LICK	lambina	lambina	l a m b i n a	1.0	Spanish	lamer	5 7 4 1 7 4 7	AXMBYBZ	LAMPINA	1	1.L.C 1.A.V 1.M.c 1.P.C 1.I.V 1.N.C 1.A.V	2.0 1.5 1.1 1.75 1.3 1.75 0.8	lambina	0			fn
+8789	ImbaburaQuechua	Quechuan	LICK	lambina	lambina	l a m b i n a	1.0	Spanish	lamer	5 7 4 1 7 4 7	AXMBYBZ	LAMPINA	1	1.L.C 1.A.V 1.M.c 1.P.C 1.I.V 1.N.C 1.A.V	2.0 1.5 1.1 1.75 1.3 1.75 0.8	lambina	0	Spanish	437	tp
 9970	Wichi	Matacoan	LICK	inap’e	inap’e	i n a p ʔ e	0.0			7 4 7 1 1 7	XBYMBZ	INAPHE	6	6.I.V 6.N.C 6.A.V 6.P.c 6.H.C 6.E.V	1.5 1.75 1.3 1.1 1.75 0.8	inapʔe	0			tn
 11243	Mapudungun	Araucanian	LICK	küllman	küllman	k ɨ ʎ m a n	0.0			1 7 5 4 7 4	AXMBYN	KILMAN	2	2.K.C 2.I.V 2.L.c 2.M.C 2.A.V 2.N.c	2.0 1.5 1.1 1.75 1.3 0.8	kɨʎman	0			tn
 1451	Spanish	Indo-European	LIE (MISLEAD)	mentir	mentir	m e n t i ɾ				4 7 4 1 7 5	AXMBYN	MENTIR	5	5.M.C 5.E.V 5.N.c 5.T.C 5.I.V 5.R.c	2.0 1.5 1.1 1.75 1.3 0.8	mentiɾ	0			
@@ -6464,7 +6464,7 @@ ID	DOCULECT	LANGUAGE_FAMILY	CONCEPT	VALUE	FORM	TOKENS	BORROWED_SCORE	DONOR_LANGU
 1475	Spanish	Indo-European	MIND	pensamiento	pensamiento	p e n s a m j e n t o				1 7 4 3 7 4 6 7 4 1 7	AXMBYBCYMBZ	PENSAMJENTU	5	5.P.C 5.E.V 5.N.c 5.S.C 5.A.V 5.M.C 5.J.C 5.E.V 5.N.c 5.T.C 5.U.V	2.0 1.5 1.1 1.75 1.3 1.75 1.5 1.3 1.1 1.75 0.8	pensamjento	0			
 2981	Yaqui	Uto-Aztecan	MIND	kobanamyai	kobanamyai	k o b a n a m j a i	0.0			1 7 1 7 4 7 4 6 7 7	AXBYBYBCYZ	KUPANAMJAI	7	7.K.C 7.U.V 7.P.C 7.A.V 7.N.C 7.A.V 7.M.C 7.J.C 7.A.V 7.I.V	2.0 1.5 1.75 1.3 1.75 1.3 1.75 1.5 1.3 0.8	kobanamjai	0			tn
 5981	Qeqchi	Mayan	MIND	k'a'ux	k'a'ux	k ʔ a ʔ u ʃ	0.0			1 1 7 1 7 3	ACYBYN	KHAHYS	4	4.K.C 4.H.C 4.A.V 4.H.C 4.Y.V 4.S.c	2.0 1.5 1.3 1.75 1.3 0.8	kʔaʔuʃ	0			tn
-8051	Otomi	Otomanguean	MIND	mfeni	mfeni	m f e n i	0.0			4 3 7 4 7	ACYBZ	MBENI	3	3.M.C 3.B.C 3.E.V 3.N.C 3.I.V	2.0 1.5 1.3 1.75 0.8	mfeni	1			tn
+8051	Otomi	Otomanguean	MIND	mfeni	mfeni	m f e n i	0.0			4 3 7 4 7	ACYBZ	MBENI	3	3.M.C 3.B.C 3.E.V 3.N.C 3.I.V	2.0 1.5 1.3 1.75 0.8	mfeni	1	Spanish	1474	fp
 9457	ImbaburaQuechua	Quechuan	MIND	yuyay (2)	yuyay	j u j a j	0.0			6 7 6 7 6	AXBYN	JYJAJ	1	1.J.C 1.Y.V 1.J.C 1.A.V 1.J.c	2.0 1.5 1.75 1.3 0.8	jujaj	0			tn
 10674	Wichi	Matacoan	MIND	totichunhayaj	totichunhayaj	t o t i tʃ u n̥ a j a x	0.0			1 7 1 7 1 7 4 7 6 7 3	AXBYBYBYBYN	TUTITYNAJAG	6	6.T.C 6.U.V 6.T.C 6.I.V 6.T.C 6.Y.V 6.N.C 6.A.V 6.J.C 6.A.V 6.G.c	2.0 1.5 1.75 1.3 1.75 1.3 1.75 1.3 1.75 1.3 0.8	totitʃun̥ajax	0			tn
 11941	Mapudungun	Araucanian	MIND	rakizuam	rakizuam	ɻ a k i z u a m	0.0			5 7 1 7 3 7 7 4	AXBYBYYN	RAKISYAM	2	2.R.C 2.A.V 2.K.C 2.I.V 2.S.C 2.Y.V 2.A.V 2.M.c	2.0 1.5 1.75 1.3 1.75 1.3 1.3 0.8	ɻakizuam	0			tn
@@ -7547,7 +7547,7 @@ ID	DOCULECT	LANGUAGE_FAMILY	CONCEPT	VALUE	FORM	TOKENS	BORROWED_SCORE	DONOR_LANGU
 3698	ZinacantanTzotzil	Mayan	PEPPER	pimenta	pimenta	pʰ i m e n t a	1.0	Spanish	pimienta	1 7 4 7 4 1 7	AXBYMBZ	PIMENTA	8	8.P.C 8.I.V 8.M.C 8.E.V 8.N.c 8.T.C 8.A.V	2.0 1.5 1.75 1.3 1.1 1.75 0.8	pʰimenta	0	Spanish	597	tp
 5062	Qeqchi	Mayan	PEPPER	kaxlan q’een	kaxlan_q’een	k a ʃ l a n + qʼ eː n	0.0			1 7 3 5 7 4 9 1 7 4	AXBCYN_AXN	KASLAN_KEN	4	4.K.C 4.A.V 4.S.C 4.L.C 4.A.V 4.N.c 4._._ 4.K.C 4.E.V 4.N.c	2.0 1.5 1.75 1.5 1.3 0.8 0.0 2.0 1.5 0.8	kaʃlan+qʼeːn	0			tn
 6925	Otomi	Otomanguean	PEPPER	nthänts'i	nthänts'i	n θ ɐ n tsʼ i	0.0			4 3 7 4 1 7	ACYMBZ	NDENTI	3	3.N.C 3.D.C 3.E.V 3.N.c 3.T.C 3.I.V	2.0 1.5 1.3 1.1 1.75 0.8	nθɐntsʼi	0			tn
-10080	Wichi	Matacoan	PEPPER	ponhontaj	ponhontaj	p o n̥ o n t a x	0.0			1 7 4 7 4 1 7 3	AXBYMBYN	PUNUNTAG	6	6.P.C 6.U.V 6.N.C 6.U.V 6.N.c 6.T.C 6.A.V 6.G.c	2.0 1.5 1.75 1.3 1.1 1.75 1.3 0.8	pon̥ontax	0	Spanish	597	fp
+10080	Wichi	Matacoan	PEPPER	ponhontaj	ponhontaj	p o n̥ o n t a x	0.0			1 7 4 7 4 1 7 3	AXBYMBYN	PUNUNTAG	6	6.P.C 6.U.V 6.N.C 6.U.V 6.N.c 6.T.C 6.A.V 6.G.c	2.0 1.5 1.75 1.3 1.1 1.75 1.3 0.8	pon̥ontax	0			tn
 1733	Spanish	Indo-European	PERJURY	perjurio	perjurio	p ɛ ɾ x u ɾ j o				1 7 5 3 7 5 6 7	AXMBYBCZ	PERGYRJU	5	5.P.C 5.E.V 5.R.c 5.G.C 5.Y.V 5.R.C 5.J.C 5.U.V	2.0 1.5 1.1 1.75 1.3 1.75 1.5 0.8	pɛɾxuɾjo	0			
 3177	Yaqui	Uto-Aztecan	PERJURY	anoki’ichia	anoki’ichia	a n o k i ʔ i tʃ i a	0.0			7 4 7 1 7 1 7 1 7 7	XBYBYBYBYZ	ANUKIHITIA	7	7.A.V 7.N.C 7.U.V 7.K.C 7.I.V 7.H.C 7.I.V 7.T.C 7.I.V 7.A.V	1.5 1.75 1.3 1.75 1.3 1.75 1.3 1.75 1.3 0.8	anokiʔitʃia	0			tn
 8433	Otomi	Otomanguean	PERJURY	nts'oni	nts'oni	n tsʼ o n i	0.0			4 1 7 4 7	ACYBZ	NTUNI	3	3.N.C 3.T.C 3.U.V 3.N.C 3.I.V	2.0 1.5 1.3 1.75 0.8	ntsʼoni	1			tn
@@ -9089,7 +9089,7 @@ ID	DOCULECT	LANGUAGE_FAMILY	CONCEPT	VALUE	FORM	TOKENS	BORROWED_SCORE	DONOR_LANGU
 1029	Spanish	Indo-European	SHIP	barco	barco	b a ɾ k o				1 7 5 1 7	AXMBZ	PARKU	5	5.P.C 5.A.V 5.R.c 5.K.C 5.U.V	2.0 1.5 1.1 1.75 0.8	baɾko	0			
 2618	Yaqui	Uto-Aztecan	SHIP	bajut	bajut	b a j u t	0.0			1 7 6 7 1	AXBYN	PAJYT	7	7.P.C 7.A.V 7.J.C 7.Y.V 7.T.c	2.0 1.5 1.75 1.3 0.8	bajut	0			tn
 2619	Yaqui	Uto-Aztecan	SHIP	barko	barko	b a r k o	1.0	Spanish	barco	1 7 5 1 7	AXMBZ	PARKU	7	7.P.C 7.A.V 7.R.c 7.K.C 7.U.V	2.0 1.5 1.1 1.75 0.8	barko	0	Spanish	1028	tp
-5496	Qeqchi	Mayan	SHIP	b’arko	b’arko	ɓ a ɾ k o	1.0	Spanish	barco	1 7 5 1 7	AXMBZ	PARKU	4	4.P.C 4.A.V 4.R.c 4.K.C 4.U.V	2.0 1.5 1.1 1.75 0.8	ɓaɾko	0	Spanish	1029	tp
+5496	Qeqchi	Mayan	SHIP	b’arko	b’arko	ɓ a ɾ k o	1.0	Spanish	barco	1 7 5 1 7	AXMBZ	PARKU	4	4.P.C 4.A.V 4.R.c 4.K.C 4.U.V	2.0 1.5 1.1 1.75 0.8	ɓaɾko	0	Spanish	1028	tp
 5497	Qeqchi	Mayan	SHIP	mama’ jukub’	mama’_jukub’	m a m a ʔ + x u k u ɓ	0.0			4 7 4 7 1 9 3 7 1 7 1	AXBYN_AXBYN	MAMAH_GYKYP	4	4.M.C 4.A.V 4.M.C 4.A.V 4.H.c 4._._ 4.G.C 4.Y.V 4.K.C 4.Y.V 4.P.c	2.0 1.5 1.75 1.3 0.8 0.0 2.0 1.5 1.75 1.3 0.8	mamaʔ+xukuɓ	0			tn
 7500	Otomi	Otomanguean	SHIP	motsa dehe	motsa_dehe	m o ts a + d e h e	0.0			4 7 2 7 9 1 7 3 7	AXBZ_AXBZ	MUCA_TEHE	3	3.M.C 3.U.V 3.C.C 3.A.V 3._._ 3.T.C 3.E.V 3.H.C 3.E.V	2.0 1.5 1.75 0.8 0.0 2.0 1.5 1.75 0.8	motsa+dehe	0			tn
 7501	Otomi	Otomanguean	SHIP	bojä dehe	bojä_dehe	b o x ɐ + d e h e	0.0			1 7 3 7 9 1 7 3 7	AXBZ_AXBZ	PUGE_TEHE	3	3.P.C 3.U.V 3.G.C 3.E.V 3._._ 3.T.C 3.E.V 3.H.C 3.E.V	2.0 1.5 1.75 0.8 0.0 2.0 1.5 1.75 0.8	boxɐ+dehe	0			tn
@@ -9138,7 +9138,7 @@ ID	DOCULECT	LANGUAGE_FAMILY	CONCEPT	VALUE	FORM	TOKENS	BORROWED_SCORE	DONOR_LANGU
 11397	Mapudungun	Araucanian	SHOE	sumel	sumel	s u m e l	0.0			3 7 4 7 5	AXBYN	SYMEL	2	2.S.C 2.Y.V 2.M.C 2.E.V 2.L.c	2.0 1.5 1.75 1.3 0.8	sumel	0			tn
 651	Spanish	Indo-European	SHOEMAKER	zapatero	zapatero	s a p a t ɛ ɾ o				3 7 1 7 1 7 5 7	AXBYBYBZ	SAPATERU	5	5.S.C 5.A.V 5.P.C 5.A.V 5.T.C 5.E.V 5.R.C 5.U.V	2.0 1.5 1.75 1.3 1.75 1.3 1.75 0.8	sapatɛɾo	0			
 2334	Yaqui	Uto-Aztecan	SHOEMAKER	sapateo	sapateo	s a p a t e o	1.0	Spanish	zapatero	3 7 1 7 1 7 7	AXBYBYZ	SAPATEU	7	7.S.C 7.A.V 7.P.C 7.A.V 7.T.C 7.E.V 7.U.V	2.0 1.5 1.75 1.3 1.75 1.3 0.8	sapateo	0	Spanish	651	tp
-2335	Yaqui	Uto-Aztecan	SHOEMAKER	bochareo	bochareo	b o tʃ a r e o	1.0	Spanish	botas	1 7 1 7 5 7 7	AXBYBYZ	PUTAREU	7	7.P.C 7.U.V 7.T.C 7.A.V 7.R.C 7.E.V 7.U.V	2.0 1.5 1.75 1.3 1.75 1.3 0.8	botʃareo	0	Spanish	651	tp
+2335	Yaqui	Uto-Aztecan	SHOEMAKER	bochareo	bochareo	b o tʃ a r e o	1.0	Spanish	botas	1 7 1 7 5 7 7	AXBYBYZ	PUTAREU	7	7.P.C 7.U.V 7.T.C 7.A.V 7.R.C 7.E.V 7.U.V	2.0 1.5 1.75 1.3 1.75 1.3 0.8	botʃareo	0			fn
 5114	Qeqchi	Mayan	SHOEMAKER	aj yiib’om xaab’	aj_yiib’om_xaab’	a x + j iː ɓ o m + ʃ aː ɓ	0.0			7 3 9 6 7 1 7 4 9 3 7 1	XN_AXBYN_AXN	AG_JIPUM_SAP	4	4.A.V 4.G.c 4._._ 4.J.C 4.I.V 4.P.C 4.U.V 4.M.c 4._._ 4.S.C 4.A.V 4.P.c	1.5 0.8 0.0 2.0 1.5 1.75 1.3 0.8 0.0 2.0 1.5 0.8	ax+jiːɓom+ʃaːɓ	0			tn
 6991	Otomi	Otomanguean	SHOEMAKER	mot’uzexthi	mot’uzexthi	m o t̪ʼ u z e x θ i	0.0			4 7 1 7 3 7 3 3 7	AXBYBYMBZ	MUTYSEGDI	3	3.M.C 3.U.V 3.T.C 3.Y.V 3.S.C 3.E.V 3.G.c 3.D.C 3.I.V	2.0 1.5 1.75 1.3 1.75 1.3 1.1 1.75 0.8	mot̪ʼuzexθi	0			tn
 6992	Otomi	Otomanguean	SHOEMAKER	mazexthi	mazexthi	m a z e x θ i	0.0			4 7 3 7 3 3 7	AXBYMBZ	MASEGDI	3	3.M.C 3.A.V 3.S.C 3.E.V 3.G.c 3.D.C 3.I.V	2.0 1.5 1.75 1.3 1.1 1.75 0.8	mazexθi	0			tn
@@ -10809,7 +10809,7 @@ ID	DOCULECT	LANGUAGE_FAMILY	CONCEPT	VALUE	FORM	TOKENS	BORROWED_SCORE	DONOR_LANGU
 7203	Otomi	Otomanguean	TIE	thät'i	thät'i	θ ɐ t̪ʼ i	0.0			3 7 1 7	AXBZ	DETI	3	3.D.C 3.E.V 3.T.C 3.I.V	2.0 1.5 1.75 0.8	θɐt̪ʼi	0			tn
 7204	Otomi	Otomanguean	TIE	xo̲t'e	xo̲t'e	x ə t̪ʼ e	0.0			3 7 1 7	AXBZ	GETE	3	3.G.C 3.E.V 3.T.C 3.E.V	2.0 1.5 1.75 0.8	xət̪ʼe	0			tn
 7205	Otomi	Otomanguean	TIE	tuts'i (2)	tuts'i	t̪ u tsʼ i	0.0			1 7 1 7	AXBZ	TYTI	3	3.T.C 3.Y.V 3.T.C 3.I.V	2.0 1.5 1.75 0.8	t̪utsʼi	0			tn
-9045	ImbaburaQuechua	Quechuan	TIE	watana	watana	w a t a n a	0.0			6 7 1 7 4 7	AXBYBZ	WATANA	1	1.W.C 1.A.V 1.T.C 1.A.V 1.N.C 1.A.V	2.0 1.5 1.75 1.3 1.75 0.8	watana	0			tn
+9045	ImbaburaQuechua	Quechuan	TIE	watana	watana	w a t a n a	0.0			6 7 1 7 4 7	AXBYBZ	WATANA	1	1.W.C 1.A.V 1.T.C 1.A.V 1.N.C 1.A.V	2.0 1.5 1.75 1.3 1.75 0.8	watana	0	Spanish	844	fp
 10237	Wichi	Matacoan	TIE	inayhit	inayhit	i n a j h i t	0.0			7 4 7 6 3 7 1	XBYMBYN	INAJHIT	6	6.I.V 6.N.C 6.A.V 6.J.c 6.H.C 6.I.V 6.T.c	1.5 1.75 1.3 1.1 1.75 1.3 0.8	inajhit	0			tn
 11513	Mapudungun	Araucanian	TIE	trarin	trarin	ʈʂ a ɻ i n	0.0			2 7 5 7 4	AXBYN	CARIN	2	2.C.C 2.A.V 2.R.C 2.I.V 2.N.c	2.0 1.5 1.75 1.3 0.8	ʈʂaɻin	0			tn
 1261	Spanish	Indo-European	TIME	tiempo	tiempo	t j e m p o				1 6 7 4 1 7	ACXMBZ	TJEMPU	5	5.T.C 5.J.C 5.E.V 5.M.c 5.P.C 5.U.V	2.0 1.5 1.5 1.1 1.75 0.8	tjempo	1			

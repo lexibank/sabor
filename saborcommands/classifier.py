@@ -8,8 +8,10 @@ from lexibank_sabor import (
         our_path,
         subset_wl, get_language_list)
 from sklearn.svm import SVC
+from sklearn.linear_model import LogisticRegression
 from functools import partial, partialmethod
 import collections
+from saborcommands import (cognate)
 
 
 def distance_by_idx(idxA, idxB, wordlist, distance=None, **kw):
@@ -62,8 +64,8 @@ class ClassifierBasedBorrowingDetection(LexStat):
             donors,
             clf=None,
             funcs=None,
-            meths=None,
-            props=None,
+            cognate_cf=None,
+            props=[],
             props_tar=None,
             segments="tokens",
             ipa="form",
@@ -76,7 +78,7 @@ class ClassifierBasedBorrowingDetection(LexStat):
         LexStat.__init__(self, infile, ipa=ipa, segments=segments, **kw)
         self.clf = clf or SVC(kernel="linear")
         # Default is linear kernel SVC. Other kernels are rbf, poly, sigmoid.
-        self.funcs = funcs or [clf_sca_gl, clf_ned]
+        self.funcs = [clf_sca_gl, clf_ned] if funcs is None else funcs
         # Funcs involve both donor and target.
 
         # Prop args: x is the entry index, y is the wordlist reference.
@@ -98,48 +100,11 @@ class ClassifierBasedBorrowingDetection(LexStat):
 
         self.best_score = 0
 
-        self.meths = meths or []
-        method = {"lex": self.clf_lex_gl, "sca": self.clf_sca_gl,
-                  "lex_ov": self.clf_lex_ov, "sca_ov": self.clf_sca_ov,
-                  "lex_lo": self.clf_lex_lo, "sca_lo": self.clf_sca_lo}
-        self.obj_meths = [method[name] for name in self.meths]
+        self.cognate_cf = cognate_cf or None
+        self.cognate_obj = None
+        if self.cognate_cf:
+            self.cognate_obj = cognate.CognateBasedBorrowing(self)
 
-        if any(meth.startswith('lex') for meth in self.meths):
-            self.get_scorer(runs=5000)
-
-    clf_sca_gl = partialmethod(LexStat.align_pairs,
-                               method='sca',
-                               mode='global',
-                               return_distance=True,
-                               pprint=False)
-
-    clf_lex_gl = partialmethod(LexStat.align_pairs,
-                               method='lexstat',
-                               mode='global',
-                               return_distance=True,
-                               pprint=False)
-    clf_sca_ov = partialmethod(LexStat.align_pairs,
-                               method='sca',
-                               mode='overlap',
-                               return_distance=True,
-                               pprint=False)
-
-    clf_lex_ov = partialmethod(LexStat.align_pairs,
-                               method='lexstat',
-                               mode='overlap',
-                               return_distance=True,
-                               pprint=False)
-    clf_sca_lo = partialmethod(LexStat.align_pairs,
-                               method='sca',
-                               mode='local',
-                               return_distance=True,
-                               pprint=False)
-
-    clf_lex_lo = partialmethod(LexStat.align_pairs,
-                               method='lexstat',
-                               mode='local',
-                               return_distance=True,
-                               pprint=False)
 
     def construct_wordlist(self, infile):
         """
@@ -153,7 +118,7 @@ class ClassifierBasedBorrowingDetection(LexStat):
             self.donors,
             clf=self.clf,
             funcs=self.funcs,
-            meths=self.meths,
+            cognate_cf=self.cognate_cf,
             props=self.props,
             props_tar=self.props_tar,
             segments=self.segments,
@@ -195,8 +160,9 @@ class ClassifierBasedBorrowingDetection(LexStat):
             matrix += [self.get_x_row(idxA, idxB, self)]
 
         if verbose:  # Look at first few rows.
-            log.info("Length of x {}.".format(len(matrix[0])))
-            log.info(matrix[:5])
+            log.info("Languages: {}".format(self.cols))
+            log.info("Length of row = {}.".format(len(matrix[0])))
+            for row in matrix[:5]: log.info(row)
 
         self.clf.fit(matrix, result)
         if verbose:
@@ -215,8 +181,12 @@ class ClassifierBasedBorrowingDetection(LexStat):
             row += self.wrap_list(prop(idx_tar, wl))
         for func in self.funcs:
             row += [func(idx_don, idx_tar, wl)]
-        for meth in wl.obj_meths:
-            row += [meth(idx_don, idx_tar)]
+        if self.cognate_obj:
+            # Uses same thresholds for both train and test, and
+            # clusters over current wl - whether train or test.
+            # Learning is for the classifier over train data.
+            row += wl.cognate_obj.\
+                get_donor_target_similarity(idx_don, idx_tar)
         return row
 
     def predict(self, donors, targets, wordlist):
@@ -257,6 +227,12 @@ def register(parser):
         default=["sca", "ned"],
         choices=["sca", "ned", "sca_lo", "sca_ov"],
         help="select similarity functions for use by classifier."
+    )
+    parser.add_argument(
+        "--cognate",
+        default=None,
+        choices=['standard'],
+        help="select cognate based method cluster arguments."
     )
     parser.add_argument(
         "--file",
@@ -308,17 +284,20 @@ def run(args):
 
     functions = [function[key] for key in args.function]
     bor = ClassifierBasedBorrowingDetection(
-        wl, donors=args.donor, clf=SVC(kernel="linear"),
-        funcs=functions, family="language_family")
+        wl, donors=args.donor, 
+        clf=SVC(kernel="linear"),
+        funcs=functions, 
+        cognate_cf=args.cognate, 
+        family="language_family")
 
     bor.train(verbose=False, log=args.log)
     args.log.info("Trained with donors {d}, functions {func}".
                   format(d=bor.donors, func=args.function))
 
     bor.predict_on_wordlist(bor)
-    test_f1 = evaluate_borrowings_fs(bor, "source_language",
-                                     bor.known_donor, bor.donors)
-    bor.best_score = test_f1
+    train_f1 = evaluate_borrowings_fs(bor, "source_language",
+                                      bor.known_donor, bor.donors)
+    bor.best_score = train_f1
     args.log.info("Train: F1 score {f1:.3f}".format(f1=bor.best_score))
 
     full_name = "CL-sp-predict-linear_svm-{}-train".format(args.label)

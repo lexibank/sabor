@@ -135,7 +135,7 @@ class Dataset(BaseDataset):
             )
 
             bp = borrowed / forms_with_concepts
-            bval = "5%-10%" if bp < 0.1 else "10%-15%" if bp < 0.15 else \
+            bval = "05%-10%" if bp < 0.1 else "10%-15%" if bp < 0.15 else \
                    "15%-20%" if bp < 0.2 else "20%-25%" if bp < 0.25 else "25%-30%"
             args.writer.add_language(
                     ID=language.id[5:],  # Drop the wold- prefix.
