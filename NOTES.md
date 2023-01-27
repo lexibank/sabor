@@ -12,9 +12,11 @@ We use <cite>conda</cite> for managing virtual environments.
 % conda activate testsabor  
 ```
 
-1. INSTALL SABOR ===
-- Copy zip file of sabor to local directory.
-- [Optional] Rename unzipped folder to sabor.  
+1. INSTALL SABOR ===  
+
+Copy zip file of sabor to local directory.
+
+[Optional] Rename unzipped folder to sabor.  
 
 Make sabor your working directory.  
 `% cd sabor`  
