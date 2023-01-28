@@ -33,7 +33,7 @@ setup(
         'cltoolkit>=0.1.1',
         'cldfviz>=0.3.0',
         'cldfzenodo',
-        'collabutils[googlesheets]',
+        'GitPython>=3.1.27'
         'csvw>=3.1.3',
         'lingpy>=2.6.8',
         'numpy>=1.22.4',
