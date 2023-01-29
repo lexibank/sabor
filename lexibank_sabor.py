@@ -61,7 +61,7 @@ class Dataset(BaseDataset):
             args.log.info("clone failed, repository already downloaded")
 
     def cmd_makecldf(self, args):
-        
+        args.writer.add_sources()
         borrowings = {
                 form.data["Target_Form_ID"]: (
                     form.data["Source_languoid"],
@@ -71,6 +71,10 @@ class Dataset(BaseDataset):
                         self.raw_dir / "wold" / "cldf" / "cldf-metadata.json").objects(
                             "BorrowingTable")}
         args.log.info("loaded borrowings")
+
+        # concepticon mapping for IDS just in case
+        cid2cgl = {c.id: c.gloss for c in
+                   self.concepticon.conceptsets.values()}
 
         languages = {}
         for language in self.languages:
@@ -101,7 +105,7 @@ class Dataset(BaseDataset):
                             ID=slug(concept.id, lowercase=False),
                             Name=concept.concepticon_gloss,
                             Concepticon_ID=concept.concepticon_id,
-                            Concepticon_Gloss=concept.concepticon_gloss
+                            Concepticon_Gloss=cid2cgl[concept.concepticon_id]
                             )
             for form in language.forms:
                 args.writer.add_forms_from_value(
@@ -110,6 +114,7 @@ class Dataset(BaseDataset):
                         Value=form.form,
                         Value_in_Source=form.value,
                         Local_ID=form.id,
+                        Source=["IDS", "Miller2023"]
                         )
         args.log.info("added {}".format(list(ids_languages.keys())))
 
@@ -173,7 +178,9 @@ class Dataset(BaseDataset):
                             Age_Score=form.data["Age_score"],
                             Donor_Language=borrowings.get(form.id[5:], [""])[0],
                             Donor_Meaning=borrowings.get(form.id[5:], ["", ""])[1],
-                            Donor_Value=borrowings.get(form.id[5:], ["", "", ""])[2]
+                            Donor_Value=borrowings.get(form.id[5:], ["", "",
+                                                                     ""])[2],
+                            Source=["WOLD", "Miller2020"]
                             )
 
 

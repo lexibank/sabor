@@ -1,11 +1,18 @@
 {
-    "title": "Borrowing in South American Languages",
+    "title": "CLDF dataset accompanying Miller and List's \"Borrowing in South American Languages\" from 2023",
     "access_right": "open",
     "keywords": [
         "cldf:Wordlist",
         "linguistics"
     ],
-    "creators": [],
+    "creators": [
+        {
+            "name": "John Miller"
+        },
+        {
+            "name": "Johann-Mattis List"
+        }
+    ],
     "contributors": [],
     "communities": [
         {
@@ -15,5 +22,6 @@
     "upload_type": "dataset",
     "license": {
         "id": "CC-BY-4.0"
-    }
+    },
+    "description": "<p>Cite the source of the dataset as:</p>\n\n<blockquote>\n<p>Miller, John and List, Johann-Mattis (2023): Detecting Lexical Borrowings from Dominant Languages in Multilingual Wordlists. In: Proceedings of the 15th Conference of the European Chapter of the Association for Computational Linguistics. Short Papers.</p>\n</blockquote>"
 }
