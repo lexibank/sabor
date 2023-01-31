@@ -25,7 +25,7 @@ We recommend handling data with GIT:
 ```
 $ git clone https://github.com/lexibank/sabor
 $ cd sabor
-$ git checkout v1.0
+$ git checkout v1.0.0
 ```
 
 Install requirements using PIP:  
