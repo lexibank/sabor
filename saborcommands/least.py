@@ -459,7 +459,7 @@ def register(parser):
     )
     parser.add_argument(
         "--smoothing",
-        default=0.75,
+        default=0.9,
         type=float,
         help="Kneser-Ney smoothing parameter."
     )
@@ -468,10 +468,10 @@ def register(parser):
 def run(args):
     if args.file:
         wl = Wordlist(args.file)
-        args.log.info("Construct smallest from {fl}.".format(fl=args.file))
+        args.log.info("Construct least from {fl}.".format(fl=args.file))
     else:
         wl = get_our_wordlist()
-        args.log.info("Construct smallest from SaBor database.")
+        args.log.info("Construct least from SABor database.")
 
     if args.language:
         args.language = get_language_list(args.language, args.donor)

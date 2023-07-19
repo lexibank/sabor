@@ -66,8 +66,8 @@ class ClassifierBasedBorrowingDetection(LexStat):
             funcs=None,
             least_ce=None,
             cognate_cf=None,
-            props=[],
-            props_tar=None,
+            props=[],  # Empty list means default len(tokens) not used.
+            props_tar=None,  # None means that tar_one_hot is used.
             segments="tokens",
             ipa="form",
             known_donor="donor_language",
@@ -309,11 +309,14 @@ def run(args):
     functions = [function[key] for key in args.function]
     bor = ClassifierBasedBorrowingDetection(
         wl, donors=args.donor,
-        # clf=SVC(kernel="linear", class_weight="balanced"),
+        props_tar=None,  # Means props_tar is coded as one_hot.
         clf=SVC(kernel="linear"),
+        # clf=SVC(kernel="linear", class_weight="balanced"),
         # clf=LogisticRegression(solver='lbfgs', class_weight=None),
-        funcs=functions, least_ce=args.least,
-        cognate_cf=args.cognate, family="language_family")
+        funcs=functions,
+        least_ce=args.least,
+        cognate_cf=args.cognate,
+        family="language_family")
 
     bor.train(verbose=True, log=args.log)
     args.log.info("Trained with donors {d}, closest {func}, "

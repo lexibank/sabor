@@ -462,9 +462,6 @@ def run(args):
         wl = subset_wl(wl, args.language)
         args.log.info("Subset of languages: {}".format(args.language))
 
-    bor = CognateBasedBorrowing(wl)
-    exit(0)
-
     func = function[args.method]
     lexstat = False
     runs = None

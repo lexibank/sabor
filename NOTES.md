@@ -218,15 +218,45 @@ Cognate based:
 Classifier:  
 Cl_simple includes both edit distance and SCA methods.  
 ```
-% cldfbench sabor.crossvalidate 10 --method cl_simple >>  
-output/Classifier-cross-validate-10fold.txt  
-INFO    10-fold cross-validation on splits directory using classifier_based_linear_svm_simple.   
+% cldfbench sabor.crossvalidate 10 --method cl_simple >> output/Classifier-cross-validate-10fold.txt  
 ```  
 
 No_props drops the 1-hot encoding of recipient language for the same analysis.  
 ```
-% cldfbench sabor.crossvalidate 10 --method cl_simple_no_props >>  
-output/Classifier-cross-validate-10fold.txt  
-INFO    10-fold cross-validation on splits directory using  
-classifier_based_linear_svm_simple_no_props.  
+% cldfbench sabor.crossvalidate 10 --method cl_simple_no_props >> output/Classifier-cross-validate-10fold.txt  
 ```  
+
+Least cross-entropy:
+By itself, this duplicates Pybor1 Markov chain functionality,
+but with dominant donor implementation and evaluation.
+```
+% cldfbench sabor.crossvalidate 10 --method lce_for >> output/LCE-CV-10fold.txt  
+```
+
+Classifier with least cross-entropy:
+```
+% cldfbench sabor.crossvalidate 10 --method cl_least >> output/CL-least-CV-10fold.txt  
+
+% cldfbench sabor.crossvalidate 10 --method cl_rbf_least >> output/CL-rbf-least-CV-10fold.txt  
+
+% cldfbench sabor.crossvalidate 10 --method cl_least_no_props >> output/CL-least-np-CV-10fold.txt  
+
+% cldfbench sabor.crossvalidate 10 --method cl_rbf_least_no_props >> output/CL-rbf-least-np-CV-10fold.txt  
+
+```
+
+Classifier with least cross-entropy and simple:
+```
+% cldfbench sabor.crossvalidate 10 --method cl_simple_least >> output/CL-simple-least-CV-10fold.txt  
+
+% cldfbench sabor.crossvalidate 10 --method cl_rbf_simple_least >> output/CL-rbf-simple-least-CV-10fold.txt  
+
+% cldfbench sabor.crossvalidate 10 --method cl_simple_least_no_props >> output/CL-simple-least-np-CV-10fold.txt  
+
+% cldfbench sabor.crossvalidate 10 --method cl_rbf_simple_least_no_props >> output/CL-rbf-simple-least-np-CV-10fold.txt  
+
+% cldfbench sabor.crossvalidate 10 --method cl_lr_simple_least >> output/CL-lr-simple-least-CV-10fold.txt  
+
+% cldfbench sabor.crossvalidate 10 --method cl_lr_simple_least_no_props >> output/CL-lr-simple-least-np-CV-10fold.txt  
+
+```

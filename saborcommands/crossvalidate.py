@@ -80,6 +80,7 @@ def least_cross_entropy_constructor(infile,
         approach=approach,
         segments=segments,
         known_donor=known_donor,
+        smoothing=0.9,
         **kw
     )
 
@@ -142,7 +143,6 @@ def evaluate_fold(constructor, folder, k, fold, languages=None):
         wl = subset_wl(wl, languages)
     detector = constructor(wl)
 
-    # detector = constructor(file_path)
     detector.train(verbose=False)
 
     def get_results_for_wl(wl_):
@@ -195,7 +195,7 @@ def evaluate_k_fold(constructor, folder, k, languages=None):
         results = evaluate_fold(
             constructor, folder=folder, k=k, fold=fold, languages=languages)
         results["fold"] = fold
-        print(results)
+        print(' ', fold)
         cross_val.append(results)
     print()
     means = dict()

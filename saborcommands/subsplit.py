@@ -24,8 +24,8 @@ def split_data(in_path, train_path, test_path, k_fold):
     divider = int(round(len(data)*1/k_fold))
     print('Data:', len(data), divider, in_path)
 
-    train = data[:divider]
-    test = data[divider:]
+    test = data[:divider]
+    train = data[divider:]
 
     store_data(train_path, hdr, train)
     print('Train:', len(train), train_path)
