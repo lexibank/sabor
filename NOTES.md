@@ -95,7 +95,7 @@ $ cldfbench sabor.splitdata --k 10 --folder splits-new >> output/Split-data-10-f
 ```
 
 
-#### 4 Perform Closest Match Borrowing Detection
+#### 5 Perform Closest Match Borrowing Detection
 
 Analyze complete sabor dataset for closest match using SCA alignment method.  
 Add `--label` argument to qualify the stored wordlist filename.  
@@ -144,7 +144,7 @@ INFO    Best: threshold 0.65, F1 score 0.765
 ```  
 
 
-#### 5 Perform Cognate-Based Borrowing Detection
+#### 6 Perform Cognate-Based Borrowing Detection
 
 All previous options to label output, perform train and test steps, evaluate language details are still available.  
 
@@ -175,7 +175,7 @@ INFO    Test: threshold 0.46, F1 score 0.782
 2023-01-26 19:59:27,835 [INFO] Data has been written to file </sabor/store/CB-sp-predict-cognate_based_cognate_sca_global-0.46-cognate based train-test-test.tsv>.
 ```
 
-#### 6 Perform Classifier-Based Borrowing Detection
+#### 7 Perform Classifier-Based Borrowing Detection
 
 All previous options to label output, perform train and test steps, evaluate language details are still available.  
 
@@ -191,7 +191,7 @@ INFO    Train: F1 score 0.810
 Access to turn off 1-hot coding for language is not available from the command line.  
 
 
-#### 7 Evaluate Language Details
+#### 8 Evaluate Language Details
 
 Evaluate writes results to output as well as an evaluation wordlist to the store folder.  
 Here we redirect output to the output folder.  
@@ -233,7 +233,7 @@ total                 1477            8853    10330
 This evaluation file may be inspected to help diagnose what are the errors in borrowing detection.
 
 
-#### 8 Cross-Validation
+#### 9 Cross-Validation
 
 Perform 10 fold cross-validations for closest match, cognate based and classifier systems.  
 Redirect output to the output folder.  
@@ -263,11 +263,9 @@ INFO    10-fold cross-validation on splits directory using classifier_based_line
 
 `no_props` drops the 1-hot encoding of recipient language for the same analysis.  
 ```
-$ cldfbench sabor.crossvalidate 10 --method cl_simple_no_props >> output/CL-cross-validate-10fold.txt  
-INFO    10-fold cross-validation on splits directory using  
-classifier_based_linear_svm_simple_no_props.  
-```  
 
+% cldfbench sabor.crossvalidate 10 --method cl_simple_no_props >> output/CL-cross-validate-10fold.txt  
+```  
 To use the SVM classifier with a radial basis function.
 ```
 $ cldfbench sabor.crossvalidate 10 --method cl_rbf_simple >> output/CL-extras-cross-validate-10fold.txt  
@@ -285,3 +283,38 @@ To use a the SVM classifier with weighted training observations to balance inher
 $ cldfbench sabor.crossvalidate 10 --method cl_simple_balanced >> output/CL-extras-cross-validate-10fold.txt  
 INFO    10-fold cross-validation on splits directory using classifier_based_linear_svm_simple_balanced. 
 ```  
+
+Least cross-entropy:
+By itself, this duplicates Pybor1 Markov chain functionality,
+but with dominant donor implementation and evaluation.
+```
+% cldfbench sabor.crossvalidate 10 --method lce_for >> output/LCE-CV-10fold.txt  
+```
+
+Classifier with least cross-entropy:
+```
+% cldfbench sabor.crossvalidate 10 --method cl_least >> output/CL-least-CV-10fold.txt  
+
+% cldfbench sabor.crossvalidate 10 --method cl_rbf_least >> output/CL-rbf-least-CV-10fold.txt  
+
+% cldfbench sabor.crossvalidate 10 --method cl_least_no_props >> output/CL-least-np-CV-10fold.txt  
+
+% cldfbench sabor.crossvalidate 10 --method cl_rbf_least_no_props >> output/CL-rbf-least-np-CV-10fold.txt  
+
+```
+
+Classifier with least cross-entropy and simple:
+```
+% cldfbench sabor.crossvalidate 10 --method cl_simple_least >> output/CL-simple-least-CV-10fold.txt  
+
+% cldfbench sabor.crossvalidate 10 --method cl_rbf_simple_least >> output/CL-rbf-simple-least-CV-10fold.txt  
+
+% cldfbench sabor.crossvalidate 10 --method cl_simple_least_no_props >> output/CL-simple-least-np-CV-10fold.txt  
+
+% cldfbench sabor.crossvalidate 10 --method cl_rbf_simple_least_no_props >> output/CL-rbf-simple-least-np-CV-10fold.txt  
+
+% cldfbench sabor.crossvalidate 10 --method cl_lr_simple_least >> output/CL-lr-simple-least-CV-10fold.txt  
+
+% cldfbench sabor.crossvalidate 10 --method cl_lr_simple_least_no_props >> output/CL-lr-simple-least-np-CV-10fold.txt  
+
+```

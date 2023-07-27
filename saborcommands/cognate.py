@@ -330,7 +330,6 @@ class CognateBasedBorrowingDetection(LexStat):
                                       donor_lng=donor_lng,
                                       donor_idx=donor_idx)
             results += [[i, threshold, fs]]
-
             if verbose: print("threshold {:.2f}, f1 score {:.3f}".
                               format(threshold, fs))
 

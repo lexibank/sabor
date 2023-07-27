@@ -21,7 +21,7 @@ from lingpy import Wordlist
 from lexibank_sabor import (
         our_path, evaluate_borrowings,
         get_language_list, subset_wl)
-from saborcommands import (closest, cognate, classifier)
+from saborcommands import (closest, cognate, classifier, least)
 
 
 # Constructors for use in cross-validation.
@@ -65,11 +65,32 @@ def cognate_based_constructor(infile,
     )
 
 
+# Constructor for least cross-entropy base method
+def least_cross_entropy_constructor(infile,
+                                    donors,
+                                    direction="forward",
+                                    approach="dominant",
+                                    segments="tokens",
+                                    known_donor="donor_language",
+                                    **kw):
+    return least.LeastCrossEntropy(
+        infile,
+        donors,
+        direction=direction,
+        approach=approach,
+        segments=segments,
+        known_donor=known_donor,
+        smoothing=0.9,
+        **kw
+    )
+
+
 # Constructor for classifier based method.
 def classifier_based_constructor(infile,
                                  donors,
                                  clf,
                                  funcs,
+                                 least_ce,
                                  cognate_cf,
                                  props,
                                  props_tar,
@@ -81,6 +102,7 @@ def classifier_based_constructor(infile,
         donors,
         clf=clf,
         funcs=funcs,
+        least_ce=least_ce,
         cognate_cf=cognate_cf,
         props=props,
         props_tar=props_tar,
@@ -235,16 +257,34 @@ def register(parser):
                  'cm_sca_ov', 'cm_sca_lo',
                  'cb_sca', 'cb_ned',
                  'cb_sca_lo', 'cb_sca_ov',
-                 'cl_ned', 'cl_sca',
+                 'lce_for', 'lce_back',
+                 'lce_for_bor', 'lce_back_bor',
                  'cl_simple', 'cl_rbf_simple',
                  'cl_poly_simple', 'cl_lr_simple',
-                 'cl_simple_no_props',
                  'cl_simple_balanced',
-                 'cl_all_funcs', 
+                 'cl_simple_no_props', 'cl_rbf_simple_no_props',
+                 'cl_poly_simple_no_props', 'cl_lr_simple_no_props',
+                 'cl_ned', 'cl_sca',
+                 'cl_all_funcs',
                  'cl_all_funcs_no_props',
-                 'cl_cognate',
-                 'cl_simple_cognate'
-                 ],
+                 'cl_least', 'cl_least_no_props',
+                 'cl_rbf_least', 'cl_rbf_least_no_props',
+                 'cl_lr_least', 'cl_lr_least_no_props',
+                 'cl_simple_least',
+                 'cl_rbf_simple_least',
+                 'cl_lr_simple_least',
+                 'cl_simple_least_balanced',
+                 'cl_simple_least_no_props',
+                 'cl_rbf_simple_least_no_props',
+                 'cl_lr_simple_least_no_props',
+                 'cl_simple_cognate', 'cl_cognate',
+                 'cl_simple_cognate_least',
+                 'cl_rbf_simple_cognate_least',
+                 'cl_lr_simple_cognate_least',
+                 'cl_simple_cognate_least_balanced',
+                 'cl_cognate_least',
+                 'cl_simple_cognate_least_no_props',
+                 'cl_lr_simple_cognate_least_no_props'],
         help="Code for borrowing detection method."
     )
 
@@ -289,11 +329,96 @@ def run(args):
     cb_ned.keywords['func'].__name__ = \
         'cognate_based_cognate_ned'
 
+    lce_for = partial(least_cross_entropy_constructor,
+                      direction="forward",
+                      approach="dominant",
+                      donors=args.donor)
+
+    lce_back = partial(least_cross_entropy_constructor,
+                       direction="backward",
+                       approach="dominant",
+                       donors=args.donor)
+    lce_for_bor = partial(least_cross_entropy_constructor,
+                          direction="forward",
+                          approach="borrowed",
+                          donors=args.donor)
+
+    lce_back_bor = partial(least_cross_entropy_constructor,
+                           direction="backward",
+                           approach="borrowed",
+                           donors=args.donor)
+
+    cl_simple = partial(
+        classifier_based_constructor,
+        clf=SVC(kernel="linear"),
+        func=lambda x: x,  # Artificial argument for name.
+        funcs=[classifier.clf_ned, classifier.clf_sca_gl],
+        least_ce=None,
+        cognate_cf=None,
+        props=[],
+        props_tar=None,
+        donors=args.donor)
+    cl_simple.keywords['func'].__name__ = \
+        'classifier_based_linear_svm_simple'
+
+    cl_simple_balanced = partial(
+        classifier_based_constructor,
+        clf=SVC(kernel="linear", class_weight='balanced'),
+        func=lambda x: x,  # Artificial argument for name.
+        funcs=[classifier.clf_ned, classifier.clf_sca_gl],
+        least_ce=None,
+        cognate_cf=None,
+        props=[],
+        props_tar=None,
+        donors=args.donor)
+    cl_simple_balanced.keywords['func'].__name__ = \
+        'classifier_based_linear_svm_simple_balanced'
+
+    cl_rbf_simple = partial(
+        classifier_based_constructor,
+        clf=SVC(kernel="rbf"),
+        func=lambda x: x,  # Artificial argument for name.
+        funcs=[classifier.clf_ned, classifier.clf_sca_gl],
+        least_ce=None,
+        cognate_cf=None,
+        props=[],
+        props_tar=None,
+        donors=args.donor)
+    cl_rbf_simple.keywords['func'].__name__ = \
+        'classifier_based_rbf_svm_simple'
+
+    cl_poly_simple = partial(
+        classifier_based_constructor,
+        clf=SVC(kernel="poly"),
+        func=lambda x: x,  # Artificial argument for name.
+        funcs=[classifier.clf_ned, classifier.clf_sca_gl],
+        least_ce=None,
+        cognate_cf=None,
+        props=[],
+        props_tar=None,
+        donors=args.donor)
+    cl_poly_simple.keywords['func'].__name__ = \
+        'classifier_based_poly_svm_simple'
+
+    cl_lr_simple = partial(
+        classifier_based_constructor,
+        clf=LogisticRegression(solver='lbfgs', max_iter=1000),
+        func=lambda x: x,  # Artificial argument for name.
+        funcs=[classifier.clf_ned, classifier.clf_sca_gl],
+        least_ce=None,
+        cognate_cf=None,
+        props=[],
+        props_tar=None,
+        donors=args.donor)
+    cl_lr_simple.keywords['func'].__name__ = \
+        'classifier_based_lr_simple'
+
     cl_ned = partial(
         classifier_based_constructor,
         clf=SVC(kernel="linear"),
         func=lambda x: x,  # Artificial argument for name.
         funcs=[classifier.clf_ned],
+        least_ce=None,
         cognate_cf=None,
         props=[],
         props_tar=None,
@@ -306,6 +431,7 @@ def run(args):
         clf=SVC(kernel="linear"),
         func=lambda x: x,  # Artificial argument for name.
         funcs=[classifier.clf_sca_gl],
+        least_ce=None,
         cognate_cf=None,
         props=[],
         props_tar=None,
@@ -317,7 +443,9 @@ def run(args):
         classifier_based_constructor,
         clf=SVC(kernel="linear"),
         func=lambda x: x,  # Artificial argument for name.
-        funcs=[classifier.clf_ned, classifier.clf_sca_gl],
+        funcs=[classifier.clf_ned, classifier.clf_sca_gl,
+               classifier.clf_sca_lo, classifier.clf_sca_ov],
+        least_ce=None,
         cognate_cf=None,
         props=[],
         props_tar=None,
@@ -378,6 +506,7 @@ def run(args):
         clf=SVC(kernel="linear"),
         func=lambda x: x,  # Artificial argument for name.
         funcs=[classifier.clf_ned, classifier.clf_sca_gl],
+        least_ce=None,
         cognate_cf=None,
         props=[],
         props_tar=[],
@@ -398,12 +527,52 @@ def run(args):
     cl_all_funcs.keywords['func'].__name__ = \
         'classifier_based_linear_svm_all_functions'
 
+    cl_rbf_simple_no_props = partial(
+        classifier_based_constructor,
+        clf=SVC(kernel="rbf"),
+        func=lambda x: x,  # Artificial argument for name.
+        funcs=[classifier.clf_ned, classifier.clf_sca_gl],
+        least_ce=None,
+        cognate_cf=None,
+        props=[],
+        props_tar=[],
+        donors=args.donor)
+    cl_rbf_simple_no_props.keywords['func'].__name__ = \
+        'classifier_based_rbf_svm_simple_no_props'
+
+    cl_poly_simple_no_props = partial(
+        classifier_based_constructor,
+        clf=SVC(kernel="poly"),
+        func=lambda x: x,  # Artificial argument for name.
+        funcs=[classifier.clf_ned, classifier.clf_sca_gl],
+        least_ce=None,
+        cognate_cf=None,
+        props=[],
+        props_tar=[],
+        donors=args.donor)
+    cl_poly_simple_no_props.keywords['func'].__name__ = \
+        'classifier_based_poly_svm_simple_no_props'
+
+    cl_lr_simple_no_props = partial(
+        classifier_based_constructor,
+        clf=LogisticRegression(solver='lbfgs', max_iter=1000),
+        func=lambda x: x,  # Artificial argument for name.
+        funcs=[classifier.clf_ned, classifier.clf_sca_gl],
+        least_ce=None,
+        cognate_cf=None,
+        props=[],
+        props_tar=[],
+        donors=args.donor)
+    cl_lr_simple_no_props.keywords['func'].__name__ = \
+        'classifier_based_lr_simple_no_props'
+
     cl_all_funcs_no_props = partial(
         classifier_based_constructor,
         clf=SVC(kernel="linear"),
         func=lambda x: x,  # Artificial argument for name.
         funcs=[classifier.clf_ned, classifier.clf_sca_gl,
                classifier.clf_sca_ov, classifier.clf_sca_lo],
+        least_ce=None,
         cognate_cf=None,
         props=[],
         props_tar=[],
@@ -411,23 +580,155 @@ def run(args):
     cl_all_funcs_no_props.keywords['func'].__name__ = \
         'classifier_based_linear_svm_all_funcs_no_props'
 
-    cl_cognate = partial(
+    cl_simple_least = partial(
+        classifier_based_constructor,
+        clf=SVC(kernel="linear"),
+        func=lambda x: x,  # Artificial argument for name.
+        funcs=[classifier.clf_ned, classifier.clf_sca_gl],
+        least_ce=['dominant'],
+        cognate_cf=None,
+        props=[],
+        props_tar=None,
+        donors=args.donor)
+    cl_simple_least.keywords['func'].__name__ = \
+        'classifier_based_linear_svm_simple+least_CE'
+
+    cl_rbf_simple_least = partial(
+        classifier_based_constructor,
+        clf=SVC(kernel="rbf"),
+        func=lambda x: x,  # Artificial argument for name.
+        funcs=[classifier.clf_ned, classifier.clf_sca_gl],
+        least_ce=['dominant'],
+        cognate_cf=None,
+        props=[],
+        props_tar=None,
+        donors=args.donor)
+    cl_rbf_simple_least.keywords['func'].__name__ = \
+        'classifier_based_rbf_svm_simple+least_CE'
+
+    cl_lr_simple_least = partial(
+        classifier_based_constructor,
+        clf=LogisticRegression(solver='lbfgs', max_iter=1000),
+        func=lambda x: x,  # Artificial argument for name.
+        funcs=[classifier.clf_ned, classifier.clf_sca_gl],
+        least_ce=['dominant'],
+        cognate_cf=None,
+        props=[],
+        props_tar=None,
+        donors=args.donor)
+    cl_lr_simple_least.keywords['func'].__name__ = \
+        'classifier_based_lr_simple+least_CE'
+
+    cl_simple_least_balanced = partial(
+        classifier_based_constructor,
+        clf=SVC(kernel="linear", class_weight='balanced'),
+        func=lambda x: x,  # Artificial argument for name.
+        funcs=[classifier.clf_ned, classifier.clf_sca_gl],
+        least_ce=['dominant'],
+        cognate_cf=None,
+        props=[],
+        props_tar=None,
+        donors=args.donor)
+    cl_simple_least_balanced.keywords['func'].__name__ = \
+        'classifier_based_linear_svm_simple+least_CE_balanced'
+
+    cl_simple_least_no_props = partial(
+        classifier_based_constructor,
+        clf=SVC(kernel="linear"),
+        func=lambda x: x,  # Artificial argument for name.
+        funcs=[classifier.clf_ned, classifier.clf_sca_gl],
+        least_ce=['dominant'],
+        cognate_cf=None,
+        props=[],
+        props_tar=[],
+        donors=args.donor)
+    cl_simple_least_no_props.keywords['func'].__name__ = \
+        'classifier_based_linear_svm_simple+least_CE_no_props'
+
+    cl_rbf_simple_least_no_props = partial(
+        classifier_based_constructor,
+        clf=SVC(kernel="rbf"),
+        func=lambda x: x,  # Artificial argument for name.
+        funcs=[classifier.clf_ned, classifier.clf_sca_gl],
+        least_ce=['dominant'],
+        cognate_cf=None,
+        props=[],
+        props_tar=[],
+        donors=args.donor)
+    cl_rbf_simple_least_no_props.keywords['func'].__name__ = \
+        'classifier_based_rbf_svm_simple+least_CE_no_props'
+
+    cl_lr_simple_least_no_props = partial(
+        classifier_based_constructor,
+        clf=LogisticRegression(solver='lbfgs', max_iter=1000),
+        func=lambda x: x,  # Artificial argument for name.
+        funcs=[classifier.clf_ned, classifier.clf_sca_gl],
+        least_ce=['dominant'],
+        cognate_cf=None,
+        props=[],
+        props_tar=[],
+        donors=args.donor)
+    cl_lr_simple_least_no_props.keywords['func'].__name__ = \
+        'classifier_based_lr_simple+least_CE_no_props'
+
+    cl_least = partial(
         classifier_based_constructor,
         clf=SVC(kernel="linear"),
         func=lambda x: x,  # Artificial argument for name.
         funcs=[],
-        cognate_cf='standard',
+        least_ce=['dominant'],
+        cognate_cf=None,
         props=[],
         props_tar=None,
         donors=args.donor)
-    cl_cognate.keywords['func'].__name__ = \
-        'classifier_based_linear_svm_cognate_based'
-    
+    cl_least.keywords['func'].__name__ = \
+        'classifier_based_linear_svm_least_CE'
+
+    cl_rbf_least = partial(
+        classifier_based_constructor,
+        clf=SVC(kernel="rbf"),
+        func=lambda x: x,  # Artificial argument for name.
+        funcs=[],
+        least_ce=['dominant'],
+        cognate_cf=None,
+        props=[],
+        props_tar=None,
+        donors=args.donor)
+    cl_rbf_least.keywords['func'].__name__ = \
+        'classifier_based_rbf_svm_least_CE'
+
+    cl_least_no_props = partial(
+        classifier_based_constructor,
+        clf=SVC(kernel="linear"),
+        func=lambda x: x,  # Artificial argument for name.
+        funcs=[],
+        least_ce=['dominant'],
+        cognate_cf=None,
+        props=[],
+        props_tar=[],
+        donors=args.donor)
+    cl_least_no_props.keywords['func'].__name__ = \
+        'classifier_based_linear_svm_least_CE_no_props'
+
+    cl_rbf_least_no_props = partial(
+        classifier_based_constructor,
+        clf=SVC(kernel="rbf"),
+        func=lambda x: x,  # Artificial argument for name.
+        funcs=[],
+        least_ce=['dominant'],
+        cognate_cf=None,
+        props=[],
+        props_tar=[],
+        donors=args.donor)
+    cl_rbf_least_no_props.keywords['func'].__name__ = \
+        'classifier_based_rbf_svm_least_CE_no_props'
+
     cl_simple_cognate = partial(
         classifier_based_constructor,
         clf=SVC(kernel="linear"),
         func=lambda x: x,  # Artificial argument for name.
         funcs=[classifier.clf_ned, classifier.clf_sca_gl],
+        least_ce=None,
         cognate_cf='standard',
         props=[],
         props_tar=None,
@@ -435,22 +736,153 @@ def run(args):
     cl_simple_cognate.keywords['func'].__name__ = \
         'classifier_based_linear_svm_simple+cognate_based'
 
+    cl_cognate = partial(
+        classifier_based_constructor,
+        clf=SVC(kernel="linear"),
+        func=lambda x: x,  # Artificial argument for name.
+        funcs=[],
+        least_ce=None,
+        cognate_cf='standard',
+        props=[],
+        props_tar=None,
+        donors=args.donor)
+    cl_cognate.keywords['func'].__name__ = \
+        'classifier_based_linear_svm_cognate_based'
+
+    cl_simple_cognate_least = partial(
+        classifier_based_constructor,
+        clf=SVC(kernel="linear"),
+        func=lambda x: x,  # Artificial argument for name.
+        funcs=[classifier.clf_ned, classifier.clf_sca_gl],
+        least_ce=['dominant'],
+        cognate_cf='standard',
+        props=[],
+        props_tar=None,
+        donors=args.donor)
+    cl_simple_cognate_least.keywords['func'].__name__ = \
+        'classifier_based_linear_svm_simple+cognate_based+least_CE'
+
+    cl_rbf_simple_cognate_least = partial(
+        classifier_based_constructor,
+        clf=SVC(kernel="rbf"),
+        func=lambda x: x,  # Artificial argument for name.
+        funcs=[classifier.clf_ned, classifier.clf_sca_gl],
+        least_ce=['dominant'],
+        cognate_cf='standard',
+        props=[],
+        props_tar=None,
+        donors=args.donor)
+    cl_rbf_simple_cognate_least.keywords['func'].__name__ = \
+        'classifier_based_linear_svm_simple+cognate_based+least_CE'
+
+    cl_simple_cognate_least_balanced = partial(
+        classifier_based_constructor,
+        clf=SVC(kernel="linear", class_weight='balanced'),
+        func=lambda x: x,  # Artificial argument for name.
+        funcs=[classifier.clf_ned, classifier.clf_sca_gl],
+        least_ce=['dominant'],
+        cognate_cf='standard',
+        props=[],
+        props_tar=None,
+        donors=args.donor)
+    cl_simple_cognate_least_balanced.keywords['func'].__name__ = \
+        'classifier_based_linear_svm_simple+cognate_based+least_CE_balanced'
+
+
+    cl_simple_cognate_least_no_props = partial(
+        classifier_based_constructor,
+        clf=SVC(kernel="linear"),
+        func=lambda x: x,  # Artificial argument for name.
+        funcs=[classifier.clf_ned, classifier.clf_sca_gl],
+        least_ce=['dominant'],
+        cognate_cf='standard',
+        props=[],
+        props_tar=[],
+        donors=args.donor)
+    cl_simple_cognate_least_no_props.keywords['func'].__name__ = \
+        'classifier_based_linear_svm_simple+cognate+least_CE_no_props'
+
+    cl_lr_simple_cognate_least = partial(
+        classifier_based_constructor,
+        clf=LogisticRegression(solver='lbfgs', max_iter=1000),
+        func=lambda x: x,  # Artificial argument for name.
+        funcs=[classifier.clf_ned, classifier.clf_sca_gl],
+        least_ce=['dominant'],
+        cognate_cf='standard',
+        props=[],
+        props_tar=None,
+        donors=args.donor)
+    cl_lr_simple_cognate_least.keywords['func'].__name__ = \
+        'classifier_based_linear_svm_simple+cognate_based+least_CE'
+
+    cl_lr_simple_cognate_least_no_props = partial(
+        classifier_based_constructor,
+        clf=LogisticRegression(solver='lbfgs', max_iter=1000),
+        func=lambda x: x,  # Artificial argument for name.
+        funcs=[classifier.clf_ned, classifier.clf_sca_gl],
+        least_ce=['dominant'],
+        cognate_cf='standard',
+        props=[],
+        props_tar=[],
+        donors=args.donor)
+    cl_lr_simple_cognate_least_no_props.keywords['func'].__name__ = \
+        'classifier_based_lr_simple+cognate+least_CE_no_props'
+
+    cl_cognate_least = partial(
+        classifier_based_constructor,
+        clf=SVC(kernel="linear"),
+        func=lambda x: x,  # Artificial argument for name.
+        funcs=[],
+        least_ce=['dominant'],
+        cognate_cf='standard',
+        props=[],
+        props_tar=None,
+        donors=args.donor)
+    cl_cognate_least.keywords['func'].__name__ = \
+        'classifier_based_linear_svm_cognate_based+least_CE'
+
     methods = {'cm_sca': cm_sca_gl, 'cm_ned': cm_ned,
                'cm_sca_ov': cm_sca_ov, 'cm_sca_lo': cm_sca_lo,
                'cb_sca': cb_sca_gl, 'cb_ned': cb_ned,
                'cb_sca_ov': cb_sca_ov,
                'cb_sca_lo': cb_sca_lo,
+               'lce_for': lce_for, 'lce_back': lce_back,
+               'lce_for_bor': lce_for_bor, 'lce_back_bor': lce_back_bor,
+               'cl_simple': cl_simple,
+               'cl_rbf_simple': cl_rbf_simple,
+               'cl_poly_simple': cl_poly_simple,
+               'cl_lr_simple': cl_lr_simple,
+               'cl_simple_balanced': cl_simple_balanced,
                'cl_ned': cl_ned, 'cl_sca': cl_sca,
                'cl_simple': cl_simple,
                'cl_rbf_simple': cl_rbf_simple,
                'cl_lr_simple': cl_lr_simple,
                'cl_poly_simple': cl_poly_simple,
                'cl_simple_no_props': cl_simple_no_props,
-               'cl_simple_balanced': cl_simple_balanced,
-               'cl_all_funcs': cl_all_funcs,
+               'cl_rbf_simple_no_props': cl_rbf_simple_no_props,
+               'cl_poly_simple_no_props': cl_poly_simple_no_props,
+               'cl_lr_simple_no_props': cl_lr_simple_no_props,
                'cl_all_funcs_no_props': cl_all_funcs_no_props,
+               'cl_simple_least': cl_simple_least,
+               'cl_rbf_simple_least': cl_rbf_simple_least,
+               'cl_lr_simple_least': cl_lr_simple_least,
+               'cl_simple_least_balanced': cl_simple_least_balanced,
+               'cl_simple_least_no_props': cl_simple_least_no_props,
+               'cl_rbf_simple_least_no_props': cl_rbf_simple_least_no_props,
+               'cl_lr_simple_least_no_props': cl_lr_simple_least_no_props,
+               'cl_least': cl_least,
+               'cl_rbf_least': cl_rbf_least,
+               'cl_least_no_props': cl_least_no_props,
+               'cl_rbf_least_no_props': cl_rbf_least_no_props,
+               'cl_simple_cognate': cl_simple_cognate,
                'cl_cognate': cl_cognate,
-               'cl_simple_cognate': cl_simple_cognate
+               'cl_simple_cognate_least': cl_simple_cognate_least,
+               'cl_rbf_simple_cognate_least': cl_rbf_simple_cognate_least,
+               'cl_lr_simple_cognate_least': cl_lr_simple_cognate_least,
+               'cl_simple_cognate_least_balanced': cl_simple_cognate_least_balanced,
+               'cl_cognate_least': cl_cognate_least,
+               'cl_simple_cognate_least_no_props': cl_simple_cognate_least_no_props,
+               'cl_lr_simple_cognate_least_no_props': cl_lr_simple_cognate_least_no_props
                }
 
     start_time = time.time()

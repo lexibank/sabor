@@ -11,7 +11,7 @@ from sklearn.svm import SVC
 from sklearn.linear_model import LogisticRegression
 from functools import partial, partialmethod
 import collections
-from saborcommands import (cognate)
+from saborcommands import (least, cognate)
 
 
 def distance_by_idx(idxA, idxB, wordlist, distance=None, **kw):
@@ -64,9 +64,10 @@ class ClassifierBasedBorrowingDetection(LexStat):
             donors,
             clf=None,
             funcs=None,
+            least_ce=None,
             cognate_cf=None,
-            props=[],
-            props_tar=None,
+            props=[],  # Empty list means default len(tokens) not used.
+            props_tar=None,  # None means that tar_one_hot is used.
             segments="tokens",
             ipa="form",
             known_donor="donor_language",
@@ -100,11 +101,19 @@ class ClassifierBasedBorrowingDetection(LexStat):
 
         self.best_score = 0
 
+        self.least_ce = least_ce or []
+        self.ce_objs = []
+        for name in self.least_ce:
+            self.ce_objs.append(least.CrossEntropyModel(
+                self, self.donors,
+                approach=name,
+                segments=self.segments,
+                known_donor=self.known_donor))
+
         self.cognate_cf = cognate_cf or None
         self.cognate_obj = None
         if self.cognate_cf:
             self.cognate_obj = cognate.CognateBasedBorrowing(self)
-
 
     def construct_wordlist(self, infile):
         """
@@ -118,6 +127,7 @@ class ClassifierBasedBorrowingDetection(LexStat):
             self.donors,
             clf=self.clf,
             funcs=self.funcs,
+            least_ce=self.least_ce,
             cognate_cf=self.cognate_cf,
             props=self.props,
             props_tar=self.props_tar,
@@ -130,6 +140,10 @@ class ClassifierBasedBorrowingDetection(LexStat):
         """
         Train the classifier.
         """
+
+        # Train cross_entropy methods.
+        for ce_method in self.ce_objs:
+            ce_method.train_markov_word_model(verbose=verbose)
 
         # set up all pairs for the training procedure
         dt, pairs, result = {}, [], []
@@ -181,6 +195,9 @@ class ClassifierBasedBorrowingDetection(LexStat):
             row += self.wrap_list(prop(idx_tar, wl))
         for func in self.funcs:
             row += [func(idx_don, idx_tar, wl)]
+        for meth in self.ce_objs:
+            # Uses language models from training and infers to wl.
+            row += meth.calculate_word_cross_entropies(idx_tar, wl)
         if self.cognate_obj:
             # Uses same thresholds for both train and test, and
             # clusters over current wl - whether train or test.
@@ -227,6 +244,13 @@ def register(parser):
         default=["sca", "ned"],
         choices=["sca", "ned", "sca_lo", "sca_ov"],
         help="select similarity functions for use by classifier."
+    )
+    parser.add_argument(
+        "--least",
+        nargs="*",
+        default=None,
+        choices=['borrowed', 'dominant'],
+        help="select cross-entropy methods for use by classifier."
     )
     parser.add_argument(
         "--cognate",
@@ -284,16 +308,21 @@ def run(args):
 
     functions = [function[key] for key in args.function]
     bor = ClassifierBasedBorrowingDetection(
-        wl, donors=args.donor, 
+        wl, donors=args.donor,
+        props_tar=None,  # Means props_tar is coded as one_hot.
         clf=SVC(kernel="linear"),
-        funcs=functions, 
-        cognate_cf=args.cognate, 
+        # clf=SVC(kernel="linear", class_weight="balanced"),
+        # clf=LogisticRegression(solver='lbfgs', class_weight=None),
+        funcs=functions,
+        least_ce=args.least,
+        cognate_cf=args.cognate,
         family="language_family")
 
-    bor.train(verbose=False, log=args.log)
-    args.log.info("Trained with donors {d}, functions {func}".
-                  format(d=bor.donors, func=args.function))
-
+    bor.train(verbose=True, log=args.log)
+    args.log.info("Trained with donors {d}, closest {func}, "
+                  "least_ce {l}, cognate_cf {c}".
+                  format(d=bor.donors, func=args.function,
+                         l=args.least, c=args.cognate))
     bor.predict_on_wordlist(bor)
     train_f1 = evaluate_borrowings_fs(bor, "source_language",
                                       bor.known_donor, bor.donors)
@@ -318,11 +347,7 @@ def run(args):
         wl = bor.construct_wordlist(wl)
         bor.predict_on_wordlist(wl)
 
-        # Just to remind us after so many cluster messages.
-        args.log.info("Trained with donors {d}, functions {func}".
-                      format(d=bor.donors, func=args.function))
-        args.log.info("Train: F1 score {f1:.3f}".format(f1=bor.best_score))
-
+        args.log.info("Train: F1 score {f1:.3f}".format(f1=train_f1))
         test_f1 = evaluate_borrowings_fs(wl, "source_language",
                                          bor.known_donor, bor.donors)
         args.log.info("Test: F1 score {f1:.3f}".format(f1=test_f1))
