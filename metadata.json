@@ -1,7 +1,7 @@
 {
-    "url": "",
+    "url": "https://github.com/lexibank/sabor",
     "id": "sabor",
-    "citation": "",
+    "citation": "Miller, John and List, Johann-Mattis (2023): Detecting Lexical Borrowings from Dominant Languages in Multilingual Wordlists. In: Proceedings of the 15th Conference of the European Chapter of the Association for Computational Linguistics. Short Papers.",
     "license": "CC-BY-4.0",
-    "title": "Borrowing in South American Languages"
+    "title": "CLDF dataset accompanying Miller and List's \"Borrowing in South American Languages\" from 2023"
 }

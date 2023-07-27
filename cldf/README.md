@@ -1,16 +1,20 @@
 <a name="ds-cldfmetadatajson"> </a>
 
-# Wordlist Borrowing in South American Languages
+# Wordlist CLDF dataset accompanying Miller and List's "Borrowing in South American Languages" from 2023
 
 **CLDF Metadata**: [cldf-metadata.json](./cldf-metadata.json)
 
+**Sources**: [sources.bib](./sources.bib)
+
 property | value
  --- | ---
+[dc:bibliographicCitation](http://purl.org/dc/terms/bibliographicCitation) | Miller, John and List, Johann-Mattis (2023): Detecting Lexical Borrowings from Dominant Languages in Multilingual Wordlists. In: Proceedings of the 15th Conference of the European Chapter of the Association for Computational Linguistics. Short Papers.
 [dc:conformsTo](http://purl.org/dc/terms/conformsTo) | [CLDF Wordlist](http://cldf.clld.org/v1.0/terms.rdf#Wordlist)
+[dc:identifier](http://purl.org/dc/terms/identifier) | https://github.com/lexibank/sabor
 [dc:license](http://purl.org/dc/terms/license) | https://creativecommons.org/licenses/by/4.0/
 [dcat:accessURL](http://www.w3.org/ns/dcat#accessURL) | https://github.com/lexibank/sabor
-[prov:wasDerivedFrom](http://www.w3.org/ns/prov#wasDerivedFrom) | <ol><li><a href="https://github.com/lexibank/sabor/tree/45a96de">lexibank/sabor 45a96de</a></li><li><a href="https://github.com/glottolog/glottolog/tree/f6531fcec3">Glottolog v4.4-20-gf6531fcec3</a></li><li><a href="https://github.com/concepticon/concepticon-data/tree/ea3a6c8">Concepticon v2.5.0-2-gea3a6c8</a></li><li><a href="https://github.com/cldf-clts/clts/tree/7b06b38">CLTS v2.1.0-17-g7b06b38</a></li><li><a href="https://github.com/lexibank/wold/tree/v4.0">lexibank/wold v4.0</a></li><li><a href="https://github.com/intercontinental-dictionary-series/ids/tree/v4.2">intercontinental-dictionary-series/ids v4.2</a></li></ol>
-[prov:wasGeneratedBy](http://www.w3.org/ns/prov#wasGeneratedBy) | <ol><li><strong>lingpy-rcParams</strong>: <a href="./lingpy-rcParams.json">lingpy-rcParams.json</a></li><li><strong>python</strong>: 3.10.4</li><li><strong>python-packages</strong>: <a href="./requirements.txt">requirements.txt</a></li></ol>
+[prov:wasDerivedFrom](http://www.w3.org/ns/prov#wasDerivedFrom) | <ol><li><a href="https://github.com/lexibank/sabor/tree/3e99f2a">lexibank/sabor 3e99f2a</a></li><li><a href="https://github.com/glottolog/glottolog/tree/v4.7">Glottolog v4.7</a></li><li><a href="https://github.com/concepticon/concepticon-data/tree/v3.0.0">Concepticon v3.0.0</a></li><li><a href="https://github.com/cldf-clts/clts//tree/v2.2.0">CLTS v2.2.0</a></li><li><a href="https://github.com/lexibank/wold/tree/v4.0">lexibank/wold v4.0</a></li><li><a href="https://github.com/intercontinental-dictionary-series/ids/tree/v4.2">intercontinental-dictionary-series/ids v4.2</a></li></ol>
+[prov:wasGeneratedBy](http://www.w3.org/ns/prov#wasGeneratedBy) | <ol><li><strong>lingpy-rcParams</strong>: <a href="./lingpy-rcParams.json">lingpy-rcParams.json</a></li><li><strong>python</strong>: 3.10.9</li><li><strong>python-packages</strong>: <a href="./requirements.txt">requirements.txt</a></li></ol>
 [rdf:ID](http://www.w3.org/1999/02/22-rdf-syntax-ns#ID) | sabor
 [rdf:type](http://www.w3.org/1999/02/22-rdf-syntax-ns#type) | http://www.w3.org/ns/dcat#Distribution
 
@@ -35,7 +39,7 @@ Name/Property | Datatype | Description
 [Form](http://cldf.clld.org/v1.0/terms.rdf#form) | `string` | 
 [Segments](http://cldf.clld.org/v1.0/terms.rdf#segments) | list of `string` (separated by ` `) | 
 [Comment](http://cldf.clld.org/v1.0/terms.rdf#comment) | `string` | 
-[Source](http://cldf.clld.org/v1.0/terms.rdf#source) | list of `string` (separated by `;`) | 
+[Source](http://cldf.clld.org/v1.0/terms.rdf#source) | list of `string` (separated by `;`) | References [sources.bib::BibTeX-key](./sources.bib)
 `Cognacy` | `string` | 
 `Loan` | `boolean` | 
 `Graphemes` | `string` | 

@@ -253,7 +253,8 @@ def register(parser):
         "--method",
         type=str,
         default="cm_sca",
-        choices=['cm_sca', 'cm_ned', 'cm_sca_ov', 'cm_sca_lo',
+        choices=['cm_sca', 'cm_ned', 
+                 'cm_sca_ov', 'cm_sca_lo',
                  'cb_sca', 'cb_ned',
                  'cb_sca_lo', 'cb_sca_ov',
                  'lce_for', 'lce_back',
@@ -438,7 +439,7 @@ def run(args):
     cl_sca.keywords['func'].__name__ = \
         'classifier_based_linear_svm_sca'
 
-    cl_all_funcs = partial(
+    cl_simple = partial(
         classifier_based_constructor,
         clf=SVC(kernel="linear"),
         func=lambda x: x,  # Artificial argument for name.
@@ -449,8 +450,56 @@ def run(args):
         props=[],
         props_tar=None,
         donors=args.donor)
-    cl_all_funcs.keywords['func'].__name__ = \
-        'classifier_based_linear_svm_all_functions'
+    cl_simple.keywords['func'].__name__ = \
+        'classifier_based_linear_svm_simple'
+
+    cl_rbf_simple = partial(
+        classifier_based_constructor,
+        clf=SVC(kernel="rbf"),
+        func=lambda x: x,  # Artificial argument for name.
+        funcs=[classifier.clf_ned, classifier.clf_sca_gl],
+        cognate_cf=None,
+        props=[],
+        props_tar=None,
+        donors=args.donor)
+    cl_rbf_simple.keywords['func'].__name__ = \
+        'classifier_based_rbf_svm_simple'
+
+    cl_poly_simple = partial(
+        classifier_based_constructor,
+        clf=SVC(kernel="poly"),
+        func=lambda x: x,  # Artificial argument for name.
+        funcs=[classifier.clf_ned, classifier.clf_sca_gl],
+        cognate_cf=None,
+        props=[],
+        props_tar=None,
+        donors=args.donor)
+    cl_poly_simple.keywords['func'].__name__ = \
+        'classifier_based_poly_svm_simple'
+
+    cl_lr_simple = partial(
+        classifier_based_constructor,
+        clf=LogisticRegression(solver='lbfgs', max_iter=1000),
+        func=lambda x: x,  # Artificial argument for name.
+        funcs=[classifier.clf_ned, classifier.clf_sca_gl],
+        cognate_cf=None,
+        props=[],
+        props_tar=None,
+        donors=args.donor)
+    cl_lr_simple.keywords['func'].__name__ = \
+        'classifier_based_lr_simple'
+
+    cl_simple_balanced = partial(
+        classifier_based_constructor,
+        clf=SVC(kernel="linear", class_weight='balanced'),
+        func=lambda x: x,  # Artificial argument for name.
+        funcs=[classifier.clf_ned, classifier.clf_sca_gl],
+        cognate_cf=None,
+        props=[],
+        props_tar=None,
+        donors=args.donor)
+    cl_simple_balanced.keywords['func'].__name__ = \
+        'classifier_based_linear_svm_simple_balanced'
 
     cl_simple_no_props = partial(
         classifier_based_constructor,
@@ -464,6 +513,19 @@ def run(args):
         donors=args.donor)
     cl_simple_no_props.keywords['func'].__name__ = \
         'classifier_based_linear_svm_simple_no_props'
+        
+    cl_all_funcs = partial(
+        classifier_based_constructor,
+        clf=SVC(kernel="linear"),
+        func=lambda x: x,  # Artificial argument for name.
+        funcs=[classifier.clf_ned, classifier.clf_sca_gl,
+               classifier.clf_sca_lo, classifier.clf_sca_ov],
+        cognate_cf=None,
+        props=[],
+        props_tar=None,
+        donors=args.donor)
+    cl_all_funcs.keywords['func'].__name__ = \
+        'classifier_based_linear_svm_all_functions'
 
     cl_rbf_simple_no_props = partial(
         classifier_based_constructor,
@@ -792,7 +854,10 @@ def run(args):
                'cl_lr_simple': cl_lr_simple,
                'cl_simple_balanced': cl_simple_balanced,
                'cl_ned': cl_ned, 'cl_sca': cl_sca,
-               'cl_all_funcs': cl_all_funcs,
+               'cl_simple': cl_simple,
+               'cl_rbf_simple': cl_rbf_simple,
+               'cl_lr_simple': cl_lr_simple,
+               'cl_poly_simple': cl_poly_simple,
                'cl_simple_no_props': cl_simple_no_props,
                'cl_rbf_simple_no_props': cl_rbf_simple_no_props,
                'cl_poly_simple_no_props': cl_poly_simple_no_props,
